@@ -8,9 +8,9 @@ export default function Home() {
   return <main>
     <LiveTicker /><Masthead />
     <section className="lead" aria-labelledby="lead-title">
-      <div className="lead-copy"><StoryMeta article={lead} inverse /><h1 id="lead-title">THE ROUTE<br />EVERYONE<br /><span className="revealed-word">MISSED</span></h1><p>{lead.subtitle}</p><Link className="arrow-link inverse" href={`/article/${lead.slug}`}>Read the record <ArrowUpRight /></Link><div className="lead-index" aria-label="Story position"><strong>01</strong><span>02</span><span>03</span><span>04</span></div></div>
-      <Link href={`/article/${lead.slug}`} className="lead-image image-sea" aria-label={`Read ${lead.title}`}><span className="image-caption">THE MOZAMBIQUE CHANNEL<br />15° 37′ S, 41° 44′ E</span><span className="image-credit">FIELD IMAGE / O.R ARCHIVE</span></Link>
-      <aside className="now-rail"><p>NOW / LIVE DESK</p>{articles.slice(1,5).map((story,i)=><Link key={story.slug} href={`/article/${story.slug}`}><time>{["11:24","10:17","08:53","07:41"][i]}</time><span>{story.title}</span></Link>)}</aside>
+      <div className="lead-copy"><StoryMeta article={lead} inverse /><h1 id="lead-title">THE HIJACKING<br />THAT BECAME<br /><span className="revealed-word">COMBAT</span></h1><p>{lead.subtitle}</p><Link className="arrow-link inverse" href={`/article/${lead.slug}`}>Read the record <ArrowUpRight /></Link><div className="lead-index" aria-label="Story position"><strong>01</strong><span>02</span><span>03</span><span>04</span></div></div>
+      <Link href={`/article/${lead.slug}`} className="lead-image image-sea" style={lead.cover?{backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.5)),url('${lead.cover}')`}:undefined} aria-label={`Read ${lead.title}`}><span className="image-caption">MCDONNELL DOUGLAS DC-10<br />REGISTRATION N306FE</span><span className="image-credit">{lead.coverCredit}</span></Link>
+      <aside className="now-rail"><p>NEW / IN THE ARCHIVE</p>{articles.slice(1,5).map((story,i)=><Link key={story.slug} href={`/article/${story.slug}`}><time>RECORD {story.recordId}</time><span>{story.title}</span></Link>)}</aside>
     </section>
 
     <section className="paper-section latest-section"><SectionHeader number="01" title="Latest" note="Dispatches, signals and the context behind them." /><div className="latest-grid">

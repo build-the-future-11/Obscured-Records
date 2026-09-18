@@ -33,7 +33,7 @@ export const articles:Article[]=[
 articles[0].cover="/fedex-705.jpg";
 articles[0].coverCredit="Tango India / CC BY-SA 4.0 / Wikimedia Commons";
 const wirecard=articles.find(a=>a.slug==="wirecard-missing-billions");
-if(wirecard){wirecard.cover="/wirecard.jpg";wirecard.coverCredit="Michael Wolf / CC BY-SA 3.0 / Wikimedia Commons";}
+if(wirecard){wirecard.cover="https://upload.wikimedia.org/wikipedia/commons/9/9d/Wirecard-aschheim-2019.jpg";wirecard.coverCredit="Michael Wolf / CC BY-SA 3.0 / Wikimedia Commons";}
 export const worldUpdates=[{time:"14 SEP",city:"Flight 705",text:"New cockpit record added to the aviation archive."},{time:"13 SEP",city:"Goiânia",text:"Radiological accident record expanded with IAEA sources."},{time:"12 SEP",city:"Wirecard",text:"Parliamentary inquiry documents added."},{time:"11 SEP",city:"Lake Nyos",text:"The science of limnic eruptions, explained."},{time:"10 SEP",city:"Minamata",text:"Mercury, delay and the cost of institutional denial."}];
 export const sections=["World","Business","Technology","Science","Culture","Underreported"];
 export function getArticle(slug:string){return articles.find(a=>a.slug===slug)}

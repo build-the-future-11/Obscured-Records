@@ -1,9 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
 import { Check, Copy, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
+
+const subscribeToLocation = () => () => {};
+const getLocationHref = () => window.location.href;
+const getServerLocationHref = () => "";
 
 const sectionLinks = [
   ["World", "/world"],
@@ -56,9 +60,8 @@ export function ReadingProgress() {
 }
 
 export function ShareTools({ title }: { title: string }) {
-  const [url, setUrl] = useState("");
+  const url = useSyncExternalStore(subscribeToLocation, getLocationHref, getServerLocationHref);
   const [copied, setCopied] = useState(false);
-  useEffect(() => setUrl(window.location.href), []);
   const links = useMemo(() => ({
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
     x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,

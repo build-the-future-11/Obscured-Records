@@ -60,9 +60,8 @@ export function ReadingProgress() {
 }
 
 export function ShareTools({ title }: { title: string }) {
-  const [url, setUrl] = useState("");
+  const url = useSyncExternalStore(subscribeToLocation, getLocationHref, getServerLocationHref);
   const [copied, setCopied] = useState(false);
-  useEffect(() => setUrl(window.location.href), []);
   const links = useMemo(() => ({
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
     x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,

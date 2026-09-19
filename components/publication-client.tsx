@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
 import { Check, Copy, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
 
-const sectionLinks = [
+const subscribeToLocation = () => () => {};\nconst getLocationHref = () => window.location.href;\nconst getServerLocationHref = () => "";\n\nconst sectionLinks = [
   ["World", "/world"],
   ["Business", "/business"],
   ["Technology", "/technology"],

@@ -5,7 +5,11 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
 import { Check, Copy, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
 
-const subscribeToLocation = () => () => {};\nconst getLocationHref = () => window.location.href;\nconst getServerLocationHref = () => "";\n\nconst sectionLinks = [
+const subscribeToLocation = () => () => {};
+const getLocationHref = () => window.location.href;
+const getServerLocationHref = () => "";
+
+const sectionLinks = [
   ["World", "/world"],
   ["Business", "/business"],
   ["Technology", "/technology"],

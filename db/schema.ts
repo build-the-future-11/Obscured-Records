@@ -1,4 +1,11 @@
-// Intentionally empty by default.
-// Add Drizzle tables here when the site actually needs a database.
-// See examples/d1/db/schema.ts for an opt-in example.
-export {};
+import { integer, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
+
+export const newsletterSubscribers = sqliteTable("newsletter_subscribers", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  email: text("email").notNull(),
+  status: text("status").notNull().default("active"),
+  consentedAt: text("consented_at").notNull(),
+  source: text("source").notNull().default("website"),
+}, (table) => [
+  uniqueIndex("idx_newsletter_subscribers_email").on(table.email),
+]);

@@ -33,7 +33,19 @@ export const articles:Article[]=[
 articles[0].cover="/fedex-705.jpg";
 articles[0].coverCredit="Tango India / CC BY-SA 4.0 / Wikimedia Commons";
 const wirecard=articles.find(a=>a.slug==="wirecard-missing-billions");
-if(wirecard){wirecard.cover="https://upload.wikimedia.org/wikipedia/commons/9/9d/Wirecard-aschheim-2019.jpg";wirecard.coverCredit="Michael Wolf / CC BY-SA 3.0 / Wikimedia Commons";}
-export const worldUpdates=[{time:"14 SEP",city:"Flight 705",text:"New cockpit record added to the aviation archive."},{time:"13 SEP",city:"Goiânia",text:"Radiological accident record expanded with IAEA sources."},{time:"12 SEP",city:"Wirecard",text:"Parliamentary inquiry documents added."},{time:"11 SEP",city:"Lake Nyos",text:"The science of limnic eruptions, explained."},{time:"10 SEP",city:"Minamata",text:"Mercury, delay and the cost of institutional denial."}];
+if(wirecard){wirecard.cover="/wirecard.jpg";wirecard.coverCredit="Michael Wolf / CC BY-SA 3.0 / Wikimedia Commons";}
+const nyos=articles.find(a=>a.slug==="lake-nyos");
+if(nyos){nyos.cover="/lake-nyos.jpg";nyos.coverCredit="Bill Evans / USGS / Public domain";}
+const goiania=articles.find(a=>a.slug==="goiania-blue-powder");
+if(goiania){goiania.cover="/goiania-source.jpg";goiania.coverCredit="IAEA Imagebank / CC BY 2.0";}
+const therac=articles.find(a=>a.slug==="therac-25");
+if(therac){therac.cover="/therac-25.png";therac.coverCredit="U.S. Government work / Public domain";}
+export const archiveLocations=[
+  {event:"7 Apr 1994",city:"Memphis",text:"An employee attack aboard FedEx Flight 705 tests the limits of a DC-10 crew."},
+  {event:"Sep 1987",city:"Goiânia",text:"An abandoned medical source spreads caesium-137 through homes and a scrapyard."},
+  {event:"Jun 2020",city:"Aschheim",text:"Wirecard admits that €1.9 billion reported as cash probably did not exist."},
+  {event:"Aug 1986",city:"Lake Nyos",text:"Carbon dioxide escapes from deep water and moves into surrounding valleys."},
+  {event:"1956–1968",city:"Minamata",text:"Industrial mercury exposure is documented while official recognition lags."},
+];
 export const sections=["World","Business","Technology","Science","Culture","Underreported"];
 export function getArticle(slug:string){return articles.find(a=>a.slug===slug)}

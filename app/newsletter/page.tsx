@@ -1,1 +1,9 @@
-import {Footer,Masthead,NewsletterCTA} from "@/components/editorial";export const metadata={title:"Newsletter"};export default function Newsletter(){return <main><Masthead/><section className="brief-page"><span>Sunday / 06:00 UTC</span><h1>The stories worth knowing<br/><em>before everyone else does.</em></h1><p>The Obscured Brief is one sharp weekly dispatch: five emerging stories, the context missing from the headlines, and one record from the archive.</p></section><NewsletterCTA/><Footer/></main>}
+import Link from "next/link";
+import { Footer, Masthead } from "@/components/editorial";
+import { NewsletterForm } from "@/components/publication-client";
+
+export const metadata = { title: "Newsletter", description: "Subscribe to The Obscured Brief." };
+
+export default function Newsletter() {
+  return <main><Masthead/><section className="brief-page newsletter-page"><div><span>A quiet weekly dispatch</span><h1>One record.<br/><em>Read properly.</em></h1><p>The Obscured Brief brings one documented event, its source trail and the context most summaries leave out. No manufactured urgency and no daily inbox noise.</p></div><aside><span>Join the list</span><NewsletterForm/><p className="newsletter-privacy">Your address is used only for the publication list. <Link href="/privacy">Read the privacy note.</Link></p></aside></section><section className="brief-manifesto"><span>Every dispatch contains</span><ol><li><b>01</b><h2>The record</h2><p>A concise, readable account of what happened.</p></li><li><b>02</b><h2>The evidence</h2><p>Direct links to the reports and research underneath it.</p></li><li><b>03</b><h2>The missing context</h2><p>Why the story was overlooked, simplified or remembered incorrectly.</p></li></ol></section><Footer/></main>;
+}

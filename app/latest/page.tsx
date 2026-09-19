@@ -1,3 +1,18 @@
-import Link from "next/link";import {articles} from "@/lib/articles";import {Footer,LiveTicker,Masthead,NewsletterCTA,SectionHeader} from "@/components/editorial";
-export const metadata={title:"Latest",description:"The latest reporting and analysis from Obscured Records."};
-export default function Latest(){return <main><LiveTicker/><Masthead/><section className="listing-hero"><span>Continuous record / Updated 11:24</span><h1>Latest</h1><p>The day’s signals, dispatches and deeper reads—filed in order.</p></section><section className="latest-stream"><SectionHeader number="00" title="News desk" note="14 September 2026"/>{articles.map((a,i)=><article key={a.slug}><time>{["11:24","10:58","10:17","09:32","08:53","08:05","07:41","06:12"][i]}</time><span className="stream-section">{a.section}</span><div><h2><Link href={`/article/${a.slug}`}>{a.title}</Link></h2><p>{a.excerpt}</p></div><span className={`stream-thumb visual-${i%5+1}`}/></article>)}</section><NewsletterCTA/><Footer/></main>}
+import Link from "next/link";
+import { articles } from "@/lib/articles";
+import { getFeature, getReadingLabel } from "@/lib/features";
+import { ArchiveTicker, Footer, Masthead, NewsletterCTA, SectionHeader } from "@/components/editorial";
+
+export const metadata = { title: "Archive", description: "Every filed record from Obscured Records, ordered by record number." };
+
+export default function Latest() {
+  return <main><ArchiveTicker/><Masthead/>
+    <section className="listing-hero"><span>Complete index / 28 records</span><h1>Archive</h1><p>Every feature and brief currently filed. Entries are ordered by record number, not by invented urgency.</p></section>
+    <section className="latest-stream"><SectionHeader number="00" title="All records" note="Published 14 September 2026. Expanded features updated 19 September 2026."/>
+      {articles.map((article) => <article key={article.slug}>
+        <time>#{article.recordId}</time><span className="stream-section">{article.section}</span>
+        <div><span className="format-label">{getFeature(article.slug)?"Expanded feature":"Brief record"}</span><h2><Link href={`/article/${article.slug}`}>{article.title}</Link></h2><p>{article.excerpt}</p></div>
+        <span className="stream-reading">{getReadingLabel(article.slug)}</span>
+      </article>)}
+    </section><NewsletterCTA/><Footer/></main>;
+}

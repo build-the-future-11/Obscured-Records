@@ -1,0 +1,94 @@
+{
+  "as_of": "2026-09-20",
+  "allowed_states": ["READY", "IN_PROGRESS", "HOLD", "BLOCKED", "DONE"],
+  "items": [
+    {
+      "id": "OR-RL-001",
+      "priority": "P0",
+      "area": "content_qa",
+      "title": "Keep MDX archive and runtime article registry synchronized",
+      "state": "IN_PROGRESS",
+      "owner": "editorial_engineering",
+      "evidence": ["content/articles/", "lib/articles.ts", "scripts/editorial-integrity.mjs"],
+      "next_action": "Make the editorial integrity CI gate green on the exact PR head.",
+      "done_when": "Every public article has one matching MDX record and runtime registry entry with unique slug/record ID, matching dates, required source metadata, and green exact-head CI."
+    },
+    {
+      "id": "OR-RL-002",
+      "priority": "P0",
+      "area": "metadata_seo",
+      "title": "Remove release-wide date placeholders from article metadata, RSS and sitemap",
+      "state": "BLOCKED",
+      "owner": "editorial_engineering",
+      "evidence": ["app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
+      "next_action": "Choose one canonical date source and wire article-specific publication/modified dates through metadata, JSON-LD, RSS and sitemap without creating a third content source of truth.",
+      "done_when": "A newly added article automatically emits its own correct published/modified dates across all discovery surfaces."
+    },
+    {
+      "id": "OR-RL-003",
+      "priority": "P0",
+      "area": "newsletter",
+      "title": "Prove newsletter subscription and send path end to end",
+      "state": "BLOCKED",
+      "owner": "editorial_operations",
+      "evidence": ["app/api/newsletter/route.ts", "lib/newsletter-store.ts", "db/schema.ts", "docs/NEWSLETTER_AUDIO_PIPELINE.md"],
+      "next_action": "Verify the intended production D1 migration/binding, choose the actual sending provider, document unsubscribe/suppression behavior, then run one internal test address only after human approval.",
+      "done_when": "Subscription storage, provider sync/import, unsubscribe, one internal delivery, and send receipt are all verified on the intended production path."
+    },
+    {
+      "id": "OR-RL-004",
+      "priority": "P0",
+      "area": "submissions",
+      "title": "Make submission intake operational rather than mail-only",
+      "state": "HOLD",
+      "owner": "editorial_operations",
+      "evidence": ["app/submit/page.tsx", "docs/RELAUNCH_OPERATING_SYSTEM.md"],
+      "next_action": "Choose a monitored intake backend/workflow that keeps personal or confidential submissions out of the public repository; then add an acknowledgement and triage receipt path.",
+      "done_when": "A normal submission can be received, acknowledged, classified, assigned and tracked without publishing sender PII or confidential material."
+    },
+    {
+      "id": "OR-RL-005",
+      "priority": "P1",
+      "area": "analytics",
+      "title": "Implement privacy-preserving relaunch analytics",
+      "state": "HOLD",
+      "owner": "editorial_engineering",
+      "evidence": ["ops/analytics_contract.json"],
+      "next_action": "Select an analytics storage/provider path and implement only the approved event taxonomy with normalized public identifiers and no free-text/PII payloads.",
+      "done_when": "Exact-revision production receipts prove allowed events arrive with the specified schema and forbidden fields are absent."
+    },
+    {
+      "id": "OR-RL-006",
+      "priority": "P1",
+      "area": "audio",
+      "title": "Complete one private audio dry run",
+      "state": "READY",
+      "owner": "editorial_operations",
+      "evidence": ["docs/NEWSLETTER_AUDIO_PIPELINE.md"],
+      "next_action": "Take one already-approved record through script, fact check, rights check, recording, edit and transcript QA; stop before upload.",
+      "done_when": "A locally retained audio master, transcript and QA packet exist for one approved record without any public release."
+    },
+    {
+      "id": "OR-RL-007",
+      "priority": "P1",
+      "area": "sponsors",
+      "title": "Maintain a claims-safe sponsor inventory",
+      "state": "READY",
+      "owner": "editorial_operations",
+      "evidence": ["ops/sponsor_inventory.json"],
+      "next_action": "Record only verified prospect/discussion state; do not add public partner/sponsor language until a commitment is confirmed and approved.",
+      "done_when": "Every real sponsor/prospect thread has a dated owner, state, next action, terms status, editorial-conflict review and claim authority."
+    },
+    {
+      "id": "OR-RL-008",
+      "priority": "P0",
+      "area": "launch",
+      "title": "Run exact-release-candidate public smoke checklist",
+      "state": "HOLD",
+      "owner": "editorial_engineering",
+      "evidence": ["docs/RELAUNCH_OPERATING_SYSTEM.md", ".github/workflows/ci.yml"],
+      "next_action": "After the launch candidate is fixed, run CI plus home/article/search/newsletter/submit/corrections/standards/RSS/sitemap/robots smoke checks on that same immutable revision.",
+      "done_when": "All P0 checks are green and deployment attribution points to the exact verified source revision."
+    }
+  ]
+}

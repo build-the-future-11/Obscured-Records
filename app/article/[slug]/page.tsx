@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { articles, getArticle } from "@/lib/articles";
+import { toIsoEditorialDate } from "@/lib/editorial-dates";
 import { getFeature, getReadingLabel } from "@/lib/features";
 import { Footer, Masthead, NewsletterCTA, RecordId } from "@/components/editorial";
 import { ReadingProgress, ShareTools } from "@/components/publication-client";
@@ -14,12 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return {};
+  const feature = getFeature(slug);
   const image = article.cover ? (article.cover.startsWith("http") ? article.cover : `${base}${article.cover}`) : undefined;
+  const publishedTime = toIsoEditorialDate(article.date);
+  const modifiedTime = toIsoEditorialDate(feature?.updated || article.updated);
   return {
     title: article.title,
     description: article.excerpt,
     alternates: { canonical: `/article/${article.slug}` },
-    openGraph: { title: article.title, description: article.excerpt, type: "article", publishedTime: "2026-09-14", modifiedTime: getFeature(slug) ? "2026-09-19" : "2026-09-14", images: image ? [{ url: image }] : [] },
+    openGraph: { title: article.title, description: article.excerpt, type: "article", publishedTime, modifiedTime, images: image ? [{ url: image }] : [] },
     twitter: { card: image ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, images: image ? [image] : [] },
   };
 }
@@ -31,14 +35,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const feature = getFeature(slug);
   const next = articles[(articles.indexOf(article) + 1) % articles.length];
   const updated = feature?.updated || article.updated;
+  const publishedIso = toIsoEditorialDate(article.date);
+  const updatedIso = toIsoEditorialDate(updated);
   const sources = feature?.sources || [{ label: article.source, publisher: article.source, url: article.sourceUrl, kind: "Primary source" as const }];
   const schema = {
     "@context": "https://schema.org",
     "@type": feature ? "NewsArticle" : "Article",
     headline: article.title,
     description: article.excerpt,
-    datePublished: "2026-09-14",
-    dateModified: feature ? "2026-09-19" : "2026-09-14",
+    datePublished: publishedIso,
+    dateModified: updatedIso,
     mainEntityOfPage: `${base}/article/${article.slug}`,
     image: article.cover ? (article.cover.startsWith("http") ? article.cover : `${base}${article.cover}`) : undefined,
     author: { "@type": "Person", name: article.author, url: `${base}/author/${article.authorSlug}` },

@@ -45,6 +45,9 @@ jobs:
         shell: bash
         run: git diff --exit-code -- package.json package-lock.json
 
+      - name: Editorial content integrity
+        run: npm run check:editorial
+
       - name: Lint
         run: npm run lint
 

@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       return Response.json({ message: "Enter a valid email address." }, { status: 400 });
     }
     await saveNewsletterSubscriber(email);
-    return Response.json({ message: "You are on the list. The first brief will arrive by email." });
+    return Response.json({ message: "You are on the list." });
   } catch (error) {
     console.error("Newsletter signup failed", error);
     return Response.json({ message: "Subscriptions are temporarily unavailable. Please try again shortly." }, { status: 503 });

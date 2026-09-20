@@ -13,8 +13,21 @@ const monthNumbers: Record<string, string> = {
   Dec: "12",
 };
 
+function requireCanonicalIsoDate(value: string): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    throw new Error(`Unsupported editorial date: ${value}`);
+  }
+
+  const parsed = new Date(`${value}T00:00:00.000Z`);
+  if (Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== value) {
+    throw new Error(`Invalid editorial calendar date: ${value}`);
+  }
+
+  return value;
+}
+
 export function toIsoEditorialDate(value: string): string {
-  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return requireCanonicalIsoDate(value);
 
   const match = value.match(/^(\d{1,2}) ([A-Z][a-z]{2}) (\d{4})$/);
   if (!match) throw new Error(`Unsupported editorial date: ${value}`);
@@ -22,7 +35,7 @@ export function toIsoEditorialDate(value: string): string {
   const month = monthNumbers[match[2]];
   if (!month) throw new Error(`Unsupported editorial month: ${match[2]}`);
 
-  return `${match[3]}-${month}-${match[1].padStart(2, "0")}`;
+  return requireCanonicalIsoDate(`${match[3]}-${month}-${match[1].padStart(2, "0")}`);
 }
 
 export function toRssEditorialDate(value: string): string {

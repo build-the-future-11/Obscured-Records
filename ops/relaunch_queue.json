@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-21",
   "allowed_states": ["READY", "IN_PROGRESS", "HOLD", "BLOCKED", "DONE"],
   "items": [
     {
@@ -10,7 +10,7 @@
       "state": "IN_PROGRESS",
       "owner": "editorial_engineering",
       "evidence": ["content/articles/", "lib/articles.ts", "scripts/editorial-integrity.mjs"],
-      "next_action": "Make the editorial integrity CI gate green on the exact PR head.",
+      "next_action": "Keep the editorial integrity CI gate green on the latest exact PR head after every relaunch-control change.",
       "done_when": "Every public article has one matching MDX record and runtime registry entry with unique slug/record ID, matching dates, required source metadata, and green exact-head CI."
     },
     {
@@ -89,6 +89,17 @@
       "evidence": ["docs/RELAUNCH_OPERATING_SYSTEM.md", ".github/workflows/ci.yml"],
       "next_action": "After the launch candidate is fixed, run CI plus home/article/search/newsletter/submit/corrections/standards/RSS/sitemap/robots smoke checks on that same immutable revision.",
       "done_when": "All P0 checks are green and deployment attribution points to the exact verified source revision."
+    },
+    {
+      "id": "OR-RL-009",
+      "priority": "P0",
+      "area": "deployment",
+      "title": "Resolve canonical public origin and exact-revision deployment attribution",
+      "state": "BLOCKED",
+      "owner": "editorial_engineering",
+      "evidence": ["app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
+      "next_action": "Choose one authoritative public origin, bind it to one deployed immutable source revision, update public profiles and generated canonical/RSS/sitemap origins to the same URL, then collect live smoke receipts from that exact revision.",
+      "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     }
   ]
 }

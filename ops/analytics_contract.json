@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "status": "SPEC_ONLY_NOT_DEPLOYED",
+  "purpose": "Define a minimal relaunch event vocabulary without free-text reader tracking or identity-based advertising data.",
+  "common_fields": ["event", "occurred_at", "route_class", "source_revision"],
+  "forbidden_fields": [
+    "email",
+    "name",
+    "ip",
+    "user_agent",
+    "precise_location",
+    "search_query",
+    "submission_body",
+    "article_body",
+    "cross_site_id",
+    "advertising_id"
+  ],
+  "events": [
+    {
+      "event": "page_view",
+      "allowed_fields": ["route_class", "record_id", "article_slug", "referrer_class"]
+    },
+    {
+      "event": "newsletter_submit",
+      "allowed_fields": ["placement", "result", "error_class"]
+    },
+    {
+      "event": "source_link_click",
+      "allowed_fields": ["record_id", "article_slug", "source_kind", "source_host"]
+    },
+    {
+      "event": "search_submit",
+      "allowed_fields": ["result_count_bucket"]
+    },
+    {
+      "event": "correction_click",
+      "allowed_fields": ["record_id", "article_slug"]
+    },
+    {
+      "event": "share_action",
+      "allowed_fields": ["record_id", "article_slug", "channel"]
+    },
+    {
+      "event": "audio_progress",
+      "allowed_fields": ["record_id", "episode_id", "milestone"]
+    }
+  ],
+  "claim_rules": [
+    "Do not call an event schema instrumentation until a deployed exact-revision path has been verified.",
+    "Do not equate page views with unique readers unless a separately reviewed measurement method exists.",
+    "Do not publish reach or audience claims without a dated measurement window, denominator, and source receipt."
+  ]
+}

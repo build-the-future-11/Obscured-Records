@@ -40,11 +40,11 @@
       "priority": "P0",
       "area": "submissions",
       "title": "Make submission intake operational rather than mail-only",
-      "state": "HOLD",
+      "state": "READY",
       "owner": "editorial_operations",
-      "evidence": ["app/submit/page.tsx", "docs/RELAUNCH_OPERATING_SYSTEM.md"],
-      "next_action": "Choose a monitored intake backend/workflow that keeps personal or confidential submissions out of the public repository; then add an acknowledgement and triage receipt path.",
-      "done_when": "A normal submission can be received, acknowledged, classified, assigned and tracked without publishing sender PII or confidential material."
+      "evidence": ["app/submit/page.tsx", "docs/SUBMISSION_TRIAGE.md", "docs/RELAUNCH_OPERATING_SYSTEM.md"],
+      "next_action": "Run one internal submission through delivery, classification, acknowledgement, sanitized triage and closure using the manual relaunch procedure; keep private material out of GitHub.",
+      "done_when": "A normal submission can be received, acknowledged, classified, assigned and tracked without publishing sender PII or confidential material, with one recorded internal dry-run receipt."
     },
     {
       "id": "OR-RL-005",

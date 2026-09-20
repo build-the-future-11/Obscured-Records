@@ -18,11 +18,11 @@
       "priority": "P0",
       "area": "metadata_seo",
       "title": "Remove release-wide date placeholders from article metadata, RSS and sitemap",
-      "state": "BLOCKED",
+      "state": "DONE",
       "owner": "editorial_engineering",
-      "evidence": ["app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
-      "next_action": "Choose one canonical date source and wire article-specific publication/modified dates through metadata, JSON-LD, RSS and sitemap without creating a third content source of truth.",
-      "done_when": "A newly added article automatically emits its own correct published/modified dates across all discovery surfaces."
+      "evidence": ["lib/editorial-dates.ts", "app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
+      "next_action": "Keep the date paths covered by exact-head build and editorial integrity checks.",
+      "done_when": "A newly added article automatically emits its own correct published/modified dates across article metadata, JSON-LD, RSS and sitemap."
     },
     {
       "id": "OR-RL-003",

@@ -48,6 +48,12 @@ function parseFrontmatter(filePath) {
   return result;
 }
 
+function isCanonicalIsoDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value ?? "")) return false;
+  const parsed = new Date(`${value}T00:00:00.000Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
+
 function humanDateToIso(value) {
   const months = {
     Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
@@ -55,7 +61,17 @@ function humanDateToIso(value) {
   };
   const match = value?.match(/^(\d{1,2}) ([A-Z][a-z]{2}) (\d{4})$/);
   if (!match || !months[match[2]]) return null;
-  return `${match[3]}-${months[match[2]]}-${match[1].padStart(2, "0")}`;
+  const iso = `${match[3]}-${months[match[2]]}-${match[1].padStart(2, "0")}`;
+  return isCanonicalIsoDate(iso) ? iso : null;
+}
+
+function isSafeSourceUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" && Boolean(parsed.hostname) && !parsed.username && !parsed.password;
+  } catch {
+    return false;
+  }
 }
 
 const files = fs.readdirSync(articlesDir)
@@ -89,15 +105,15 @@ for (const file of files) {
     seenRecordIds.add(frontmatter.recordId);
   }
   for (const field of ["date", "updated"]) {
-    if (frontmatter[field] && !/^\d{4}-\d{2}-\d{2}$/.test(frontmatter[field])) {
-      fail(`${file}: ${field} must use YYYY-MM-DD`);
+    if (frontmatter[field] && !isCanonicalIsoDate(frontmatter[field])) {
+      fail(`${file}: ${field} must be a valid YYYY-MM-DD calendar date`);
     }
   }
   if (frontmatter.date && frontmatter.updated && frontmatter.updated < frontmatter.date) {
     fail(`${file}: updated date precedes publication date`);
   }
-  if (frontmatter.sourceUrl && !/^https:\/\//.test(frontmatter.sourceUrl)) {
-    fail(`${file}: sourceUrl must use HTTPS`);
+  if (frontmatter.sourceUrl && !isSafeSourceUrl(frontmatter.sourceUrl)) {
+    fail(`${file}: sourceUrl must be a valid credential-free HTTPS URL`);
   }
   if (frontmatter.readingTime && !/^\d+ min$/.test(frontmatter.readingTime)) {
     fail(`${file}: readingTime must use '<n> min'`);
@@ -118,11 +134,13 @@ for (const slug of registrySlugs) {
 }
 
 const byMatch = registry.match(/const by=\{[^}]*date:\s*"([^"]+)"[^}]*updated:\s*"([^"]+)"/);
-if (byMatch) {
+if (!byMatch) {
+  fail("lib/articles.ts base date/updated values are missing or not in the expected deterministic shape");
+} else {
   const registryDate = humanDateToIso(byMatch[1]);
   const registryUpdated = humanDateToIso(byMatch[2]);
   if (!registryDate || !registryUpdated) {
-    fail("lib/articles.ts base date/updated format is not deterministic");
+    fail("lib/articles.ts base date/updated values must be valid calendar dates in deterministic format");
   } else {
     for (const record of records) {
       if (record.date !== registryDate) fail(`${record.slug}: MDX date ${record.date} differs from registry base date ${registryDate}`);

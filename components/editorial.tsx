@@ -45,7 +45,7 @@ export function SectionHeader({ number, title, note, inverse = false }: { number
 
 export function NewsletterCTA() {
   return <section className="newsletter" aria-labelledby="newsletter-title">
-    <span className="newsletter-label">A quiet weekly dispatch</span>
+    <span className="newsletter-label">A quiet email brief</span>
     <div><h2 id="newsletter-title">The Obscured<br />Brief</h2><p>One documented story, the evidence behind it and the context most summaries leave out.</p></div>
     <NewsletterForm compact />
     <blockquote>“History is full of stories<br />that never got a fair record.”</blockquote>
@@ -57,7 +57,7 @@ export function Footer() {
     <div className="footer-wordmark"><span>OBSCURED</span><span>RECORDS</span></div>
     <div className="footer-bottom">
       <nav>
-        <Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/submit">Submit a record</Link><a href="mailto:ryangomez.hsl@gmail.com">Contact <ArrowUpRight /></a>
+        <Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/submit">Submit a record</Link><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a>
       </nav>
       <p>Written and edited by Ryan Gomez.</p><span>© 2026 O.R</span>
     </div>

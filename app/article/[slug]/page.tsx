@@ -3,11 +3,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { articles, getArticle } from "@/lib/articles";
 import { toIsoEditorialDate } from "@/lib/editorial-dates";
+import { siteUrl } from "@/lib/site";
 import { getFeature, getReadingLabel } from "@/lib/features";
 import { Footer, Masthead, NewsletterCTA, RecordId } from "@/components/editorial";
 import { ReadingProgress, ShareTools } from "@/components/publication-client";
 
-const base = "https://obscured-records.ryangomez-hs.chatgpt.site";
+const base = siteUrl;
 
 export function generateStaticParams() { return articles.map((article) => ({ slug: article.slug })); }
 
@@ -22,6 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: article.title,
     description: article.excerpt,
+    authors: [{ name: article.author, url: `/author/${article.authorSlug}` }],
+    keywords: article.tags,
     alternates: { canonical: `/article/${article.slug}` },
     openGraph: { title: article.title, description: article.excerpt, type: "article", publishedTime, modifiedTime, images: image ? [{ url: image }] : [] },
     twitter: { card: image ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, images: image ? [image] : [] },
@@ -33,7 +36,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = getArticle(slug);
   if (!article) notFound();
   const feature = getFeature(slug);
-  const next = articles[(articles.indexOf(article) + 1) % articles.length];
+  const next = articles
+    .filter((candidate) => candidate.slug !== article.slug)
+    .map((candidate) => ({
+      article: candidate,
+      score:
+        candidate.tags.filter((tag) => article.tags.includes(tag)).length * 3 +
+        (candidate.section === article.section ? 2 : 0) +
+        (Boolean(getFeature(candidate.slug)) === Boolean(feature) ? 1 : 0),
+    }))
+    .sort((a, b) => b.score - a.score)[0]?.article || articles[(articles.indexOf(article) + 1) % articles.length];
   const updated = feature?.updated || article.updated;
   const publishedIso = toIsoEditorialDate(article.date);
   const updatedIso = toIsoEditorialDate(updated);

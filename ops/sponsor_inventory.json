@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "allowed_states": ["PROSPECT", "QUALIFIED", "DISCUSSION", "TERMS_REVIEW", "CONFIRMED", "ACTIVE", "COMPLETE", "DECLINED"],
+  "required_fields_per_record": [
+    "id",
+    "organization",
+    "owner",
+    "state",
+    "last_verified_at",
+    "next_action",
+    "next_action_date",
+    "proposed_value_exchange",
+    "terms_status",
+    "editorial_conflict_review",
+    "public_claim_authorized"
+  ],
+  "rules": [
+    "A reply, introduction, call, credit offer, or proposal is not a sponsorship.",
+    "public_claim_authorized must remain false until the relationship and wording are explicitly approved.",
+    "Never enter guessed monetary values, audience guarantees, exclusivity, or deliverables.",
+    "Editorial conflict review is required before CONFIRMED or ACTIVE.",
+    "Do not store private contact details in this public repository. Use a stable external thread reference instead."
+  ],
+  "records": []
+}

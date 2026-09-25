@@ -34,7 +34,7 @@ export default function Home() {
       </article>)}</div>
     </section>
 
-    <section className="dark-section underreported-section"><SectionHeader number="02" title="Deep record" note="Eight expanded features. Each one includes a timeline, multiple source types and a clear account of uncertainty." inverse />
+    <section className="dark-section underreported-section"><SectionHeader number="02" title="Deep record" note="Four expanded features. Each one includes a timeline, multiple source types and a clear account of uncertainty." inverse />
       <div className="under-grid">{dossiers.map((story, index) => <article key={story.slug} className={`under-story under-${index + 1}`}>
         <Link href={`/article/${story.slug}`} className={`under-visual ${story.cover ? "has-cover" : `visual-${index + 1}`}`} style={story.cover ? {backgroundImage:`linear-gradient(180deg,transparent,rgba(20,8,10,.5)),url('${story.cover}')`} : undefined} aria-label={`Read ${story.title}`}><span>0{index + 1}</span></Link>
         <RecordId id={story.recordId} inverse /><h3><Link href={`/article/${story.slug}`}>{story.title}</Link></h3><p>{story.excerpt}</p><StoryMeta article={story} inverse />

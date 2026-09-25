@@ -1,0 +1,67 @@
+name: Relaunch release-candidate smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: HTTPS public origin to certify
+        required: true
+        default: https://obscured-records-tawny.vercel.app
+      expected_revision:
+        description: Deployed immutable 40-character git SHA; defaults to dispatched source SHA when blank
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+env:
+  SOURCE_SHA: ${{ github.sha }}
+  OBSCURED_BASE_URL: ${{ inputs.base_url }}
+  EXPECTED_OBSCURED_REVISION: ${{ inputs.expected_revision || github.sha }}
+
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.SOURCE_SHA }}
+          persist-credentials: false
+
+      - name: Verify exact source binding
+        run: test "$(git rev-parse HEAD)" = "${SOURCE_SHA}"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.19.0
+
+      - name: Run public exact-revision smoke
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p release-evidence
+          node scripts/relaunch-smoke.mjs 2>&1 | tee release-evidence/relaunch-smoke.log
+
+      - name: Record certification receipt
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "source_sha=${SOURCE_SHA}"
+            echo "expected_deployed_revision=${EXPECTED_OBSCURED_REVISION}"
+            echo "base_url=${OBSCURED_BASE_URL}"
+            echo "workflow_run=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          } > release-evidence/release-receipt.txt
+
+      - name: Retain release evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: obscured-relaunch-smoke-${{ github.sha }}
+          retention-days: 30
+          if-no-files-found: error
+          path: release-evidence/**

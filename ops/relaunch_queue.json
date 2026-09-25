@@ -1,6 +1,12 @@
 {
-  "as_of": "2026-09-21",
-  "allowed_states": ["READY", "IN_PROGRESS", "HOLD", "BLOCKED", "DONE"],
+  "as_of": "2026-09-25",
+  "allowed_states": [
+    "READY",
+    "IN_PROGRESS",
+    "HOLD",
+    "BLOCKED",
+    "DONE"
+  ],
   "items": [
     {
       "id": "OR-RL-001",
@@ -9,7 +15,11 @@
       "title": "Keep MDX archive and runtime article registry synchronized",
       "state": "IN_PROGRESS",
       "owner": "editorial_engineering",
-      "evidence": ["content/articles/", "lib/articles.ts", "scripts/editorial-integrity.mjs"],
+      "evidence": [
+        "content/articles/",
+        "lib/articles.ts",
+        "scripts/editorial-integrity.mjs"
+      ],
       "next_action": "Keep the editorial integrity CI gate green on the latest exact PR head after every relaunch-control change.",
       "done_when": "Every public article has one matching MDX record and runtime registry entry with unique slug/record ID, matching dates, required source metadata, and green exact-head CI."
     },
@@ -20,7 +30,12 @@
       "title": "Remove release-wide date placeholders from article metadata, RSS and sitemap",
       "state": "DONE",
       "owner": "editorial_engineering",
-      "evidence": ["lib/editorial-dates.ts", "app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
+      "evidence": [
+        "lib/editorial-dates.ts",
+        "app/article/[slug]/page.tsx",
+        "app/rss.xml/route.ts",
+        "app/sitemap.ts"
+      ],
       "next_action": "Keep the date paths covered by exact-head build and editorial integrity checks.",
       "done_when": "A newly added article automatically emits its own correct published/modified dates across article metadata, JSON-LD, RSS and sitemap."
     },
@@ -31,7 +46,12 @@
       "title": "Prove newsletter subscription and send path end to end",
       "state": "BLOCKED",
       "owner": "editorial_operations",
-      "evidence": ["app/api/newsletter/route.ts", "lib/newsletter-store.ts", "db/schema.ts", "docs/NEWSLETTER_AUDIO_PIPELINE.md"],
+      "evidence": [
+        "app/api/newsletter/route.ts",
+        "lib/newsletter-store.ts",
+        "db/schema.ts",
+        "docs/NEWSLETTER_AUDIO_PIPELINE.md"
+      ],
       "next_action": "Verify the intended production D1 migration/binding, choose the actual sending provider, document unsubscribe/suppression behavior, then run one internal test address only after human approval.",
       "done_when": "Subscription storage, provider sync/import, unsubscribe, one internal delivery, and send receipt are all verified on the intended production path."
     },
@@ -42,7 +62,11 @@
       "title": "Make submission intake operational rather than mail-only",
       "state": "READY",
       "owner": "editorial_operations",
-      "evidence": ["app/submit/page.tsx", "docs/SUBMISSION_TRIAGE.md", "docs/RELAUNCH_OPERATING_SYSTEM.md"],
+      "evidence": [
+        "app/submit/page.tsx",
+        "docs/SUBMISSION_TRIAGE.md",
+        "docs/RELAUNCH_OPERATING_SYSTEM.md"
+      ],
       "next_action": "Run one internal submission through delivery, classification, acknowledgement, sanitized triage and closure using the manual relaunch procedure; keep private material out of GitHub.",
       "done_when": "A normal submission can be received, acknowledged, classified, assigned and tracked without publishing sender PII or confidential material, with one recorded internal dry-run receipt."
     },
@@ -53,7 +77,9 @@
       "title": "Implement privacy-preserving relaunch analytics",
       "state": "HOLD",
       "owner": "editorial_engineering",
-      "evidence": ["ops/analytics_contract.json"],
+      "evidence": [
+        "ops/analytics_contract.json"
+      ],
       "next_action": "Select an analytics storage/provider path and implement only the approved event taxonomy with normalized public identifiers and no free-text/PII payloads.",
       "done_when": "Exact-revision production receipts prove allowed events arrive with the specified schema and forbidden fields are absent."
     },
@@ -64,7 +90,9 @@
       "title": "Complete one private audio dry run",
       "state": "READY",
       "owner": "editorial_operations",
-      "evidence": ["docs/NEWSLETTER_AUDIO_PIPELINE.md"],
+      "evidence": [
+        "docs/NEWSLETTER_AUDIO_PIPELINE.md"
+      ],
       "next_action": "Take one already-approved record through script, fact check, rights check, recording, edit and transcript QA; stop before upload.",
       "done_when": "A locally retained audio master, transcript and QA packet exist for one approved record without any public release."
     },
@@ -75,7 +103,9 @@
       "title": "Maintain a claims-safe sponsor inventory",
       "state": "READY",
       "owner": "editorial_operations",
-      "evidence": ["ops/sponsor_inventory.json"],
+      "evidence": [
+        "ops/sponsor_inventory.json"
+      ],
       "next_action": "Record only verified prospect/discussion state; do not add public partner/sponsor language until a commitment is confirmed and approved.",
       "done_when": "Every real sponsor/prospect thread has a dated owner, state, next action, terms status, editorial-conflict review and claim authority."
     },
@@ -84,10 +114,16 @@
       "priority": "P0",
       "area": "launch",
       "title": "Run exact-release-candidate public smoke checklist",
-      "state": "HOLD",
+      "state": "IN_PROGRESS",
       "owner": "editorial_engineering",
-      "evidence": ["docs/RELAUNCH_OPERATING_SYSTEM.md", ".github/workflows/ci.yml"],
-      "next_action": "After the launch candidate is fixed, run CI plus home/article/search/newsletter/submit/corrections/standards/RSS/sitemap/robots smoke checks on that same immutable revision.",
+      "evidence": [
+        "docs/RELAUNCH_OPERATING_SYSTEM.md",
+        ".github/workflows/ci.yml",
+        ".github/workflows/relaunch-smoke.yml",
+        "scripts/relaunch-smoke.mjs",
+        "app/api/revision/route.ts"
+      ],
+      "next_action": "Deploy one fixed release-candidate SHA, then dispatch the relaunch smoke against the intended HTTPS origin with that exact expected revision. Do not certify if the deployed revision endpoint cannot prove the same 40-character SHA.",
       "done_when": "All P0 checks are green and deployment attribution points to the exact verified source revision."
     },
     {
@@ -97,8 +133,13 @@
       "title": "Resolve canonical public origin and exact-revision deployment attribution",
       "state": "BLOCKED",
       "owner": "editorial_engineering",
-      "evidence": ["app/article/[slug]/page.tsx", "app/rss.xml/route.ts", "app/sitemap.ts"],
-      "next_action": "Choose one authoritative public origin, bind it to one deployed immutable source revision, update public profiles and generated canonical/RSS/sitemap origins to the same URL, then collect live smoke receipts from that exact revision.",
+      "evidence": [
+        "lib/site.ts",
+        "app/api/revision/route.ts",
+        ".github/workflows/relaunch-smoke.yml",
+        "scripts/relaunch-smoke.mjs"
+      ],
+      "next_action": "Choose one authoritative public origin, deploy one immutable source revision with a provider commit-SHA environment variable, set NEXT_PUBLIC_SITE_URL/SITE_URL to the same origin, then retain a passing exact-revision smoke receipt.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     }
   ]

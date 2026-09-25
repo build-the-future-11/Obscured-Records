@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
-import { Check, Copy, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
+import { Check, Copy, Mail, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
 
 const subscribeToLocation = () => () => {};
 const getLocationHref = () => window.location.href;
@@ -63,6 +63,7 @@ export function ShareTools({ title }: { title: string }) {
   const url = useSyncExternalStore(subscribeToLocation, getLocationHref, getServerLocationHref);
   const [copied, setCopied] = useState(false);
   const links = useMemo(() => ({
+    email: `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${title}\n\n${url}`)}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
     x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
     whatsapp: `https://wa.me/?text=${encodeURIComponent(`${title} ${url}`)}`,
@@ -87,6 +88,7 @@ export function ShareTools({ title }: { title: string }) {
   return <aside className="share" aria-label="Share this record">
     <span>Share</span>
     <button onClick={copyLink} aria-label="Copy article link" title="Copy link">{copied ? <Check /> : <Copy />}</button>
+    <a href={links.email} aria-label="Share by email" title="Share by email"><Mail /></a>
     <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn"><Share2 /></a>
     <a href={links.x} target="_blank" rel="noreferrer" aria-label="Share on X" title="Share on X"><Send /></a>
     <a href={links.whatsapp} target="_blank" rel="noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp"><MessageCircle /></a>

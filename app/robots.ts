@@ -1,1 +1,14 @@
-import type {MetadataRoute} from "next";export default function robots():MetadataRoute.Robots{return {rules:{userAgent:"*",allow:"/"},sitemap:"https://obscured-records.ryangomez-hs.chatgpt.site/sitemap.xml"}}
+import type { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/api/"],
+    },
+    sitemap: [`${siteUrl}/sitemap.xml`, `${siteUrl}/news-sitemap.xml`],
+    host: siteUrl,
+  };
+}

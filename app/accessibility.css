@@ -1,0 +1,16 @@
+/* Targeted accessibility fixes; retain the existing publication design. */
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 1000; padding: 12px 18px; color: var(--text); background: var(--paper); border: 2px solid currentColor; transform: translateY(-200%); }
+.skip-link:focus { transform: none; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.newsletter input:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.menu-panel { overflow-y: auto; overscroll-behavior: contain; }
+.share { flex-wrap: wrap; }
+.share small { max-width: 200px; }
+.feed-image, .section-lead-image, .evidence-image { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+.footer-bottom nav { flex-wrap: wrap; }
+#main-content { scroll-margin-top: 88px; }

@@ -1,47 +1,38 @@
-# Obscured Records: website repair and launch closure
+# Obscured Records website: integrated handoff
 
-## Start with the actual code, not a new redesign
+## Start here
 
 Repository: `build-the-future-11/Obscured-Records`.
-Repair base: `a8eba914bbec9e601ceb7c233503a45c7baf1bd7` on `main`.
-Repair branch: `fix/codex-website-hardening-20260926`.
-This is a code-review candidate, not permission to merge or deploy.
+Working PR: #8, `fix/codex-website-hardening-20260926`.
+Read the latest PR #8 verification receipt and issue #4 before continuing.
+Fetch the actual branch head; do not reset it to an older SHA from this document.
 
-Read this file, `docs/VERCEL.md`, the current diff, and issue #4 before working.
-Preserve the publication identity, existing editorial layout, article URLs,
-archive, sourcing, correction policy and approved content. Do not publish new
-articles, invent audience metrics, or replace real functionality with a demo.
+This branch combines the Vercel build repair at
+`07b09336cafb0b79ad92e378cb42b33023c70efb` and the reconciled relaunch work from
+PR #7 at `6b744f8be51d37a3bbf15171e342d3a2bb539158`.
+Do not merge the older PR #7 over this integration or regenerate a new design.
+The previous 07b0933 head passed both framework builds and 32 runtime checks.
+That receipt does not certify any newer head: use its own CI results.
 
-## Diagnosed failure and this repair
+## Implemented integration
 
-CI run `36217529097`, job `108336382091`, passed lint, TypeScript and the
-Vinext/Cloudflare build, then failed collecting Next.js page data for
-`/api/newsletter`. `lib/newsletter-store.ts` imported `cloudflare:workers` at
-module evaluation time. That runtime does not exist in Node/Vercel.
+- Preserves lazy Workers binding discovery and the stricter streamed signup handler.
+- Preserves exact-source, locked-install, lint, typecheck, both builds and runtime gates.
+- Adds editorial integrity, discovery/date/serialization regressions and Chromium tests.
+- Corrects contact-address typos, page-specific canonicals and article dates.
+- Adds safe JSON-LD/XML serialization, feed discovery and current-window news sitemap.
+- Adds email sharing using canonical article URLs without tracking parameters.
+- Adds skip navigation, inert modal background, responsive modal cleanup and reduced motion.
+- Prevents no-JavaScript signup forms from submitting email in the URL; offers RSS.
+- Preserves PR #7's editorial, intake, analytics, newsletter/audio and sponsor controls.
 
-The repair defers Workers binding discovery until a storage operation. It does
-not create a Vercel newsletter database. Missing storage returns 503, never a
-fake successful subscription. D1 writes must explicitly confirm success.
-
-The signup handler now limits streamed bodies to 4096 bytes, rejects malformed
-JSON and non-object payloads, checks media type and request origin, preserves
-the honeypot, normalizes email, avoids PII in logs, and marks responses no-store.
-
-Search handles repeated `q` parameters, limits query length to 200 characters,
-and derives its archive count from the data. The client adds menu focus trapping
-and restoration, bounded signup requests, duplicate-submit protection, unique
-form IDs, accessible feedback and honest clipboard fallback handling.
-
-## Verify without spending or touching production
-
-Use one build/test process at a time. Do not terminate unrelated applications.
-A Node heap limit is not a guarantee of total machine memory use.
+## Verification
 
 ```sh
-export NODE_OPTIONS="--max-old-space-size=4096"
 npm run install:ci
 node --test scripts/run-framework.test.mjs
-node --experimental-strip-types --test scripts/newsletter.test.mjs scripts/search-query.test.mjs
+node --experimental-strip-types --test scripts/newsletter.test.mjs scripts/search-query.test.mjs scripts/discovery.test.mjs
+npm run check:editorial
 npm run lint
 npx tsc --noEmit
 npm run build
@@ -49,48 +40,34 @@ npm run build:vercel
 node scripts/next-runtime-smoke.mjs
 ```
 
-The two new regression suites passed 42 tests in the isolated authoring
-environment. The runtime smoke script must run against a real Next.js build;
-syntax checks and CLI doubles do not count as production evidence. CI retains
-both builds and adds the real local-server smoke. Read exact-head results.
+For browser validation, install Playwright 1.56.0 in an isolated directory as CI
+shows, set `BROWSER_TOOLS_DIR`, install Chromium, then run `npm run smoke:browser`.
+This tests the local built application and records screenshots plus a JSON
+receipt under `browser-artifacts/`. The successful-signup fixture is explicitly
+mocked. No test creates a production subscriber or sends an email.
+Run one heavy build at a time. Do not kill unrelated applications or weaken checks.
 
-The smoke checks local pages, a real article, 404s, search with repeated
-parameters, feed/sitemap/robots routes, JavaScript and CSS responses, runtime
-revision, and newsletter 400/413/415/503 behavior. It starts and stops only its
-own local process. It never calls a production newsletter endpoint.
+## Release boundary
 
-## Finish the following in order
+A branch push is not a release. No main merge, deploy, provider/DNS changes,
+newsletter send, production data mutation or new article publication is authorized
+by this handoff. Article registry, article bodies, MDX archive and media assets
+are preserved. The public repository must not contain confidential submissions.
 
-1. Obtain passing exact-head CI with both framework builds and runtime smoke.
-   Diagnose actual failing steps. Never disable checks, suppress type errors,
-   weaken assertions, or mark skipped jobs successful.
-2. Reconcile draft PR #7 (`relaunch-current-main-restack-20260925`) with current
-   main and this repair using a three-way diff. Its inspected head was
-   `6b744f8be51d37a3bbf15171e342d3a2bb539158`; do not assume that is still current.
-   Preserve its editorial checks, canonical-origin work, discovery/feed changes
-   and intake controls. Do not overwrite this repair's CI or request validation
-   with an older version. PR #3 is an older draft, not a second release to merge.
-3. Test the rendered site at 375, 768 and 1440 pixels. Verify article reading,
-   navigation, search/empty states, overflow, keyboard-only menu operation,
-   focus return, Escape, clipboard denial, API failure, timeout and duplicate
-   submissions. Capture screenshots and console/network errors. Repair defects,
-   not the visual identity. This browser validation remains outstanding.
-4. Verify the production project and approved origin. Historical public URL:
-   `https://obscured-records-tawny.vercel.app/`. Do not replace it with an assumed
-   domain. Check metadata, canonical links, OpenGraph, RSS, sitemap and robots
-   against the approved origin, not merely a local success response.
-5. Close backend release gates with real evidence: approved newsletter provider,
-   durable storage, consent and unsubscribe behavior; authorized submission dry
-   run; content/rights review; privacy-reviewed analytics; audio requirements
-   where accepted. Do not send a newsletter or create production subscribers
-   just to make a test green. Do not log private data or invent credentials.
-6. Record one release SHA, deployment attribution, rollback target, exact tests,
-   screenshots and remaining human gates under issue #4. A GitHub commit is not
-   a deployed website. Only an explicitly authorized release may merge/deploy.
+Vercel newsletter persistence remains unconfigured in this code path and returns
+503 honestly. Do not substitute memory storage, a fake success response or a
+new paid provider. Real storage, consent, suppression/unsubscribe and delivery
+need separately retained evidence.
 
-## Required finish report
+The canonical fallback is the previously recorded Vercel candidate origin;
+set NEXT_PUBLIC_SITE_URL/SITE_URL to the approved origin at build time. Do not
+claim authoritative production attribution without a real deployment receipt.
 
-Report implemented files and commit, exact-head checks with links, runtime
-smoke result, browser checks actually run, remaining launch blockers, and the
-single next owner action. No speculative claims of live traffic, delivery,
-production deployment, or full end-to-end certification.
+## Remaining closure
+
+Read exact-head CI including browser logs and screenshots. Fix failures rather
+than bypassing tests. Confirm the chosen live origin and matching deployed SHA,
+complete human editorial/rights and intake checks, and record provider and
+rollback evidence in issue #4. Do not mark every launch gate closed because CI
+passes. Report implemented commit, actual passing tests, browser artifact links,
+and remaining external/human gates separately.

@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
-import { Check, Copy, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
+import { Check, Copy, Mail, Menu, MessageCircle, Search, Send, Share2, X } from "lucide-react";
 
-const subscribeToLocation = () => () => {};
-const getLocationHref = () => window.location.href;
-const getServerLocationHref = () => "";
+const subscribeToHydration = () => () => {};
+const getHydrated = () => true;
+const getServerHydrated = () => false;
 
 const sectionLinks = [
   ["World", "/world"], ["Business", "/business"], ["Technology", "/technology"],
@@ -27,6 +27,22 @@ export function MobileMenu() {
     const panel = panelRef.current;
     document.body.style.overflow = "hidden";
     panel?.querySelector<HTMLButtonElement>("button")?.focus();
+    // Mark every outside branch inert without hiding the dialog's ancestors.
+    const inertState: Array<[HTMLElement, boolean]> = [];
+    let branch: HTMLElement | null = panel;
+    while (branch && branch !== document.body) {
+      const parent: HTMLElement | null = branch.parentElement;
+      if (!parent) break;
+      for (const sibling of parent.children) {
+        if (sibling !== branch && sibling instanceof HTMLElement) {
+          inertState.push([sibling, sibling.inert]); sibling.inert = true;
+        }
+      }
+      branch = parent;
+    }
+    const desktop = window.matchMedia("(min-width: 1101px)");
+    const closeOnDesktop = (event: MediaQueryListEvent) => { if (event.matches) setOpen(false); };
+    desktop.addEventListener("change", closeOnDesktop);
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") { event.preventDefault(); setOpen(false); return; }
       if (event.key !== "Tab" || !panel) return;
@@ -44,6 +60,8 @@ export function MobileMenu() {
     };
     document.addEventListener("keydown", onKeyDown);
     return () => {
+      desktop.removeEventListener("change", closeOnDesktop);
+      for (const [element, wasInert] of inertState) element.inert = wasInert;
       document.body.style.overflow = previousOverflow;
       document.removeEventListener("keydown", onKeyDown);
       if (returnFocus?.isConnected) returnFocus.focus();
@@ -85,13 +103,13 @@ export function ReadingProgress() {
   return <div className="reading-progress" aria-hidden="true"><span style={{ width: `${progress}%` }} /></div>;
 }
 
-export function ShareTools({ title }: { title: string }) {
-  const url = useSyncExternalStore(subscribeToLocation, getLocationHref, getServerLocationHref);
+export function ShareTools({ title, url }: { title: string; url: string }) {
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState("");
   const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   useEffect(() => () => { if (resetTimer.current) clearTimeout(resetTimer.current); }, []);
   const links = useMemo(() => ({
+    email: `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${title}\n\n${url}`)}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
     x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
     whatsapp: `https://wa.me/?text=${encodeURIComponent(`${title} ${url}`)}`,
@@ -123,6 +141,7 @@ export function ShareTools({ title }: { title: string }) {
   return <aside className="share" aria-label="Share this record">
     <span>Share</span>
     <button type="button" onClick={copyLink} aria-label="Copy article link" title="Copy link">{copied ? <Check /> : <Copy />}</button>
+    <a href={links.email} aria-label="Share by email" title="Share by email"><Mail /></a>
     <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn"><Share2 /></a>
     <a href={links.x} target="_blank" rel="noreferrer" aria-label="Share on X" title="Share on X"><Send /></a>
     <a href={links.whatsapp} target="_blank" rel="noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp"><MessageCircle /></a>
@@ -133,6 +152,7 @@ export function ShareTools({ title }: { title: string }) {
 
 export function NewsletterForm({ compact = false }: { compact?: boolean }) {
   const id = useId();
+  const hydrated = useSyncExternalStore(subscribeToHydration, getHydrated, getServerHydrated);
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
@@ -173,12 +193,13 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
     }
   }
 
-  return <form className={compact ? "newsletter-form compact" : "newsletter-form"} onSubmit={submit} aria-busy={status === "loading"}>
+  return <form method="post" action="/api/newsletter" className={compact ? "newsletter-form compact" : "newsletter-form"} onSubmit={submit} aria-busy={status === "loading"}>
+    <noscript><p>Newsletter signup requires JavaScript. You can <a href="/rss.xml">follow the RSS feed</a> instead.</p></noscript>
     <label htmlFor={`${id}-email`}>Email address</label>
     <input name="website" className="hp-field" tabIndex={-1} autoComplete="off" aria-hidden="true" />
     <div>
-      <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
-      <button type="submit" disabled={status === "loading"}>{status === "loading" ? "Saving…" : "Subscribe"}</button>
+      <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={!hydrated || status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
+      <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Subscribe"}</button>
     </div>
     <small id={`${id}-hint`}>Subscribe to the Obscured Brief. <Link href="/privacy">Read our privacy policy.</Link></small>
     {message && <p id={`${id}-status`} className={`form-status ${status}`} role={status === "error" ? "alert" : "status"}>{message}</p>}

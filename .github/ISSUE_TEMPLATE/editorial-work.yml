@@ -1,0 +1,99 @@
+name: Editorial work item
+description: Track a sanitized editorial task without placing confidential or personal material in the public repository.
+title: "[editorial] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for internal/public-safe tracking only. Do not paste private contact details, confidential sources, embargoed documents, unpublished allegations, or submission bodies into this public repository.
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      options:
+        - Correction review
+        - Source verification
+        - Reporting / research
+        - Fact check
+        - Copy edit
+        - Metadata / SEO
+        - Newsletter
+        - Audio
+        - Contributor handoff
+        - Launch QA
+        - Sponsor / conflict review
+    validations:
+      required: true
+  - type: input
+    id: record
+    attributes:
+      label: Public record ID or slug
+      description: Leave blank if the work item is not tied to a public record yet.
+  - type: dropdown
+    id: state
+    attributes:
+      label: Editorial state
+      options:
+        - SUBMITTED
+        - TRIAGE
+        - ASSIGNED
+        - REPORTING
+        - DRAFT
+        - FACT_CHECK
+        - COPY_EDIT
+        - APPROVED
+        - SCHEDULED
+        - PUBLISHED
+        - CORRECTED
+        - ARCHIVED
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Bounded scope
+      description: State exactly what can be completed without changing publication state or making external claims.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Existing evidence
+      description: Link only public-safe repo paths or public source URLs. Reference private material by an external thread/file ID, not by copying it here.
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Accountable owner
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer / fact checker
+      description: Use TBD if one has not yet accepted the review scope.
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: Due date
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: Describe the artifact or receipt that closes this item.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety boundary
+      options:
+        - label: I have not included confidential source material, personal contact details, or unpublished allegations in this issue.
+          required: true
+        - label: This issue does not itself authorize publication, deployment, newsletter send, sponsor outreach, or production-data mutation.
+          required: true

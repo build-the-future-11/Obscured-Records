@@ -194,7 +194,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
   }
 
   return <form method="post" action="/api/newsletter" className={compact ? "newsletter-form compact" : "newsletter-form"} onSubmit={submit} aria-busy={status === "loading"}>
-    <noscript><p>Newsletter signup requires JavaScript. You can <a href="/rss.xml">follow the RSS feed</a> instead.</p></noscript>
+    {!hydrated && <p>Newsletter signup requires JavaScript. You can <a href="/rss.xml">follow the RSS feed</a> instead.</p>}
     <label htmlFor={`${id}-email`}>Email address</label>
     <input name="website" className="hp-field" tabIndex={-1} autoComplete="off" aria-hidden="true" />
     <div>

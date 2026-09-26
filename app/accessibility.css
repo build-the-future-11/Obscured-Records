@@ -19,3 +19,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .newsletter-page .form-status.error { color: var(--ivory); }
 /* Utility links wrap rather than widening the modal at tablet widths. */
 .menu-panel-meta { flex-wrap: wrap; }
+
+/* Fixed cover backgrounds create parallax even when reduced motion is enabled. */
+@media (prefers-reduced-motion: reduce), (max-width: 720px) {
+  .special-article .article-cover { background-attachment: scroll; }
+}

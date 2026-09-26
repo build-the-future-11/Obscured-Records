@@ -41,6 +41,9 @@ jobs:
       - name: Test deployment routing
         run: node --test scripts/run-framework.test.mjs
 
+      - name: Test signup and archive regressions
+        run: node --experimental-strip-types --test scripts/newsletter.test.mjs scripts/search-query.test.mjs
+
       - name: Install locked dependencies
         run: npm run install:ci
 
@@ -69,3 +72,6 @@ jobs:
           test -s .next/BUILD_ID
           test -s .next/routes-manifest.json
           test -s .next/server/app-paths-manifest.json
+
+      - name: Smoke test built Next.js application
+        run: node scripts/next-runtime-smoke.mjs

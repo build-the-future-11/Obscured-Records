@@ -43,7 +43,8 @@ async function inspectPage(page, path, width) {
   const canonical = new URL(await page.locator('link[rel="canonical"]').getAttribute('href'));
   assert.equal(canonical.pathname, path.split('?')[0]);
   assert.equal(canonical.search, '');
-  assert.equal(await page.locator('meta[property="og:url"]').getAttribute('content'), canonical.href);
+  const openGraphUrl = new URL(await page.locator('meta[property="og:url"]').getAttribute('content'));
+  assert.equal(openGraphUrl.href, canonical.href, `${path}: canonical and Open Graph identify the same URL`);
   const overflow = await page.evaluate(() => ({
     extra: document.documentElement.scrollWidth - innerWidth,
     elements: [...document.querySelectorAll('body *')].filter((element) => {
@@ -83,14 +84,22 @@ try {
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
   const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez'];
+  const layoutFailures = [];
   for (const width of [375, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const path of paths) await inspectPage(page, path, width);
+    for (const path of paths) {
+      try { await inspectPage(page, path, width); }
+      catch (error) {
+        layoutFailures.push(`${width}px ${path}: ${error.message}`);
+        console.error(`FAIL browser layout: ${layoutFailures.at(-1)}`);
+      }
+    }
     for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter']]) {
       await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
       await page.screenshot({ path: resolve(outputDir, `${name}-${width}.png`), fullPage: true, animations: 'disabled' });
     }
   }
+  assert.deepEqual(layoutFailures, [], 'Every responsive route must pass all layout and metadata assertions.');
   await page.setViewportSize({ width: 375, height: 850 });
   await page.goto(base);
   await page.keyboard.press('Tab');

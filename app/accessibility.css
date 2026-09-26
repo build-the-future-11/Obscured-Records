@@ -14,3 +14,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 
 .footer-bottom nav { flex-wrap: wrap; }
 #main-content { scroll-margin-top: 88px; }
+
+/* Error messages must stay readable on the dark standalone newsletter page. */
+.newsletter-page .form-status.error { color: var(--ivory); }
+/* Utility links wrap rather than widening the modal at tablet widths. */
+.menu-panel-meta { flex-wrap: wrap; }

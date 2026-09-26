@@ -41,12 +41,18 @@ jobs:
       - name: Test deployment routing
         run: node --test scripts/run-framework.test.mjs
 
+      - name: Test signup and archive regressions
+        run: node --experimental-strip-types --test scripts/newsletter.test.mjs scripts/search-query.test.mjs scripts/discovery.test.mjs
+
       - name: Install locked dependencies
         run: npm run install:ci
 
       - name: Verify dependency inputs unchanged
         shell: bash
         run: git diff --exit-code -- package.json package-lock.json
+
+      - name: Editorial content integrity
+        run: node scripts/editorial-integrity.mjs
 
       - name: Lint
         run: npm run lint
@@ -69,3 +75,28 @@ jobs:
           test -s .next/BUILD_ID
           test -s .next/routes-manifest.json
           test -s .next/server/app-paths-manifest.json
+
+      - name: Smoke test built Next.js application
+        run: node scripts/next-runtime-smoke.mjs
+
+      - name: Install isolated browser test tools
+        env:
+          BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
+        run: |
+          mkdir -p "$BROWSER_TOOLS_DIR"
+          npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0
+          node "$BROWSER_TOOLS_DIR/node_modules/playwright/cli.js" install --with-deps chromium
+
+      - name: Browser interaction and responsive checks
+        env:
+          BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
+        run: node scripts/browser-smoke.mjs
+
+      - name: Retain browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: obscured-browser-${{ env.SOURCE_SHA }}
+          path: browser-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7

@@ -4,7 +4,11 @@ import { readExecutionProfile } from "./execution-profile.mjs";
 
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
-const managedLinux = readExecutionProfile() === "managed-linux";
+
+// Vercel needs Next.js output, not a Cloudflare worker in dist/server.
+// Check the deployment target before reading any checkout-local preview profile.
+const vercel = process.env.VERCEL === "1";
+const managedLinux = !vercel && readExecutionProfile() === "managed-linux";
 
 if (managedLinux && command === "build") {
   const result = spawnSync("bash", [
@@ -15,9 +19,11 @@ if (managedLinux && command === "build") {
 }
 
 // Import in this process so the preview owner retains its PID and signals.
-const cli = new URL(managedLinux
-  ? "../node_modules/vite/bin/vite.js"
-  : "../node_modules/vinext/dist/cli.js", import.meta.url);
+const cli = new URL(vercel
+  ? "../node_modules/next/dist/bin/next"
+  : managedLinux
+    ? "../node_modules/vite/bin/vite.js"
+    : "../node_modules/vinext/dist/cli.js", import.meta.url);
 process.argv = [process.execPath, fileURLToPath(cli), command,
-  ...(!managedLinux && command === "dev" ? ["--port", "5173"] : []), ...args];
+  ...(!vercel && !managedLinux && command === "dev" ? ["--port", "5173"] : []), ...args];
 await import(cli.href);

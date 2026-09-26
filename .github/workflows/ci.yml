@@ -38,6 +38,9 @@ jobs:
           node-version: 22.19.0
           cache: npm
 
+      - name: Test deployment routing
+        run: node --test scripts/run-framework.test.mjs
+
       - name: Install locked dependencies
         run: npm run install:ci
 
@@ -53,3 +56,16 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Build for Vercel
+        env:
+          VERCEL: "1"
+        run: npm run build
+
+      - name: Verify Next.js server output
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s .next/BUILD_ID
+          test -s .next/routes-manifest.json
+          test -s .next/server/app-paths-manifest.json

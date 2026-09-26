@@ -11,7 +11,6 @@ const { d1, r2 } = hostingConfig;
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
-const managedLinux = readExecutionProfile() === "managed-linux";
 
 const localBindingConfig = {
   main: "vinext/server/fetch-handler",
@@ -36,6 +35,17 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  // This config produces a Cloudflare worker, not Vercel Functions. The
+  // repository's vercel.json uses Next.js for the same App Router source.
+  // Fail early if a stale dashboard override still invokes Vite on Vercel.
+  if (process.env.VERCEL === "1") {
+    throw new Error(
+      "Vercel builds must use npm run build:vercel (Next.js), not vite/vinext build. " +
+      "Use the committed vercel.json with the nextjs framework and .next output.",
+    );
+  }
+  const managedLinux = readExecutionProfile() === "managed-linux";
+
   // Use Miniflare's local Request.cf placeholder unless fetching is requested.
   process.env.CLOUDFLARE_CF_FETCH_ENABLED ??= "false";
   process.env.WRANGLER_SEND_METRICS ??= "false";

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { createNewsletterHandler } from '../lib/newsletter-handler.ts';
+import { createNewsletterHandler, isSameOriginSignup } from '../lib/newsletter-handler.ts';
 import { createNewsletterStore, saveNewsletterSubscriber } from '../lib/newsletter-store.ts';
 
 function request(body, headers = {}) {
@@ -134,3 +134,38 @@ test('negative D1 acknowledgment is not treated as success', async () => {
   const store = createNewsletterStore(async () => ({ prepare() { return { bind() { return { async run() { return { success: false }; } }; } }; } }));
   await assert.rejects(store('a@example.com'), /did not confirm/);
 });
+
+
+test('accepts a real Host when Next.js reconstructs an internal URL', async () => {
+  const writes = [];
+  const response = await createNewsletterHandler(async (email) => writes.push(email))(new Request('http://localhost:3000/api/newsletter', {
+    method: 'POST', headers: { 'content-type': 'application/json', host: '127.0.0.1:4100', origin: 'http://127.0.0.1:4100' },
+    body: '{"email":"a@example.com"}',
+  }));
+  assert.equal(response.status, 200);
+  assert.deepEqual(writes, ['a@example.com']);
+});
+
+for (const [name, headers, expected] of [
+  ['public host behind internal hostname', { host: 'publication.example', origin: 'https://publication.example' }, true],
+  ['default HTTPS port normalized', { host: 'publication.example:443', origin: 'https://publication.example' }, true],
+  ['host case normalized', { host: 'PUBLICATION.EXAMPLE', origin: 'https://publication.example' }, true],
+  ['another host rejected', { host: 'publication.example', origin: 'https://attacker.example' }, false],
+  ['subdomain suffix not sufficient', { host: 'publication.example', origin: 'https://publication.example.attacker.example' }, false],
+  ['wrong port rejected', { host: 'publication.example:4100', origin: 'https://publication.example:4200' }, false],
+  ['wrong scheme rejected', { host: 'publication.example', origin: 'http://publication.example' }, false],
+  ['opaque origin rejected', { host: 'publication.example', origin: 'null' }, false],
+  ['origin credentials rejected', { host: 'publication.example', origin: 'https://user@publication.example' }, false],
+  ['origin path rejected', { host: 'publication.example', origin: 'https://publication.example/path' }, false],
+  ['forwarded host cannot authorize', { host: 'publication.example', origin: 'https://attacker.example', 'x-forwarded-host': 'attacker.example' }, false],
+  ['forwarded scheme cannot authorize', { host: 'publication.example', origin: 'http://publication.example', 'x-forwarded-proto': 'http' }, false],
+  ['internal URL cannot override a different Host', { host: 'publication.example', origin: 'https://internal.example' }, false],
+  ['host list rejected', { host: 'publication.example,attacker.example', origin: 'https://publication.example' }, false],
+  ['host path rejected', { host: 'publication.example/path', origin: 'https://publication.example' }, false],
+  ['host userinfo rejected', { host: 'user@publication.example', origin: 'https://publication.example' }, false],
+  ['cross-site metadata rejected even without Origin', { host: 'publication.example', 'sec-fetch-site': 'cross-site' }, false],
+]) {
+  test(`origin validation: ${name}`, () => {
+    assert.equal(isSameOriginSignup(new Request('https://internal.example/api/newsletter', { headers })), expected);
+  });
+}

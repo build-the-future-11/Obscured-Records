@@ -39,13 +39,37 @@ async function readBody(request: Request) {
   return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
 }
 
+/** Compare the browser's origin with the actual request authority. Next.js may
+ * reconstruct request.url with an internal hostname. Never trust forwarded-host
+ * headers supplied by an arbitrary caller, or accept an origin by substring. */
+export function isSameOriginSignup(request: Request): boolean {
+  if (request.headers.get("sec-fetch-site") === "cross-site") return false;
+  const origin = request.headers.get("origin");
+  // Preserve non-browser clients; this public endpoint does not authenticate users.
+  if (origin === null) return true;
+  try {
+    const source = new URL(origin);
+    if (!["http:", "https:"].includes(source.protocol) || source.origin !== origin) return false;
+    const target = new URL(request.url);
+    const host = request.headers.get("host");
+    if (host !== null) {
+      if (!host || /[\s,\\/@?#]/.test(host)) return false;
+      const authority = new URL(`${target.protocol}//${host}`);
+      if (authority.username || authority.password || authority.pathname !== "/") return false;
+      return source.origin === authority.origin;
+    }
+    return source.origin === target.origin;
+  } catch {
+    return false;
+  }
+}
+
 export function createNewsletterHandler(save: (email: string) => Promise<unknown>) {
   return async (request: Request): Promise<Response> => {
     const mediaType = request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
     if (mediaType !== "application/json") return json("Send newsletter signups as JSON.", 415);
 
-    const origin = request.headers.get("origin");
-    if (origin && origin !== new URL(request.url).origin) {
+    if (!isSameOriginSignup(request)) {
       return json("Submit this form from the publication website.", 403);
     }
 

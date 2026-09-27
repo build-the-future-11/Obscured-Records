@@ -9,11 +9,11 @@ export type IntakeDatabase = {
 };
 
 export const rateLimitSql = `
-  INSERT INTO intake_limits (bucket, hits, expires_at) VALUES (?1, 1, ?2)
+  INSERT INTO intake_limits (bucket, hits, expires_at) VALUES (?, 1, ?)
   ON CONFLICT(bucket) DO UPDATE SET
-    hits = CASE WHEN expires_at <= ?3 THEN 1 ELSE hits + 1 END,
-    expires_at = CASE WHEN expires_at <= ?3 THEN ?2 ELSE expires_at END
-  WHERE expires_at <= ?3 OR hits < ?4
+    hits = CASE WHEN expires_at <= ? THEN 1 ELSE hits + 1 END,
+    expires_at = CASE WHEN expires_at <= ? THEN ? ELSE expires_at END
+  WHERE expires_at <= ? OR hits < ?
 `;
 
 /** Shared database counters, not isolate-local memory. Never store raw IPs. */
@@ -22,7 +22,10 @@ export async function enforceIntakeLimit(database: IntakeDatabase, email: string
   const key = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
   // A global cap bounds floods that rotate addresses; per-address cap bounds repeats.
   for (const [bucket, duration, limit] of [[`${channel}:global`, 60000, 60], [`${channel}:${key}`, 3600000, 3]] as const) {
-    const result = await database.prepare(rateLimitSql).bind(bucket, now + duration, now, limit).run();
+    const expiresAt = now + duration;
+    const result = await database.prepare(rateLimitSql)
+      .bind(bucket, expiresAt, now, now, expiresAt, now, limit)
+      .run();
     if (!result.success || typeof result.meta?.changes !== "number") throw new Error("Intake limiter unavailable.");
     if (result.meta.changes === 0) throw new IntakeRateLimit("Please wait before submitting again.");
   }

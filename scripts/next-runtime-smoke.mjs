@@ -1,18 +1,21 @@
+import { sourceIdentity } from './source-identity.mjs';
+import fs from 'node:fs';
+import { getPublicArticles, sections } from '../lib/articles.ts';
+import { readDraft } from './editorial-content.mjs';
 import assert from 'node:assert/strict';
-import { spawn, execFileSync } from 'node:child_process';
+import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import { setTimeout as delay } from 'node:timers/promises';
 
 // Start only a local, owned Next.js process. Never target a live deployment.
-const sourceSha = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-assert.match(sourceSha, /^[0-9a-f]{40}$/);
+const { revision: sourceSha, sourceDigest } = sourceIdentity();
 const probe = createServer();
 await new Promise((resolve, reject) => { probe.once('error', reject); probe.listen(0, '127.0.0.1', resolve); });
 const { port } = probe.address();
 await new Promise((resolve) => probe.close(resolve));
 const base = `http://127.0.0.1:${port}`;
 const server = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
-  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha },
+  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha ?? "" },
   stdio: ['ignore', 'pipe', 'pipe'],
 });
 let output = '';
@@ -55,7 +58,27 @@ try {
   const { text: story } = await check(article[1]);
   assert.match(story, /<h1(?:\s|>)/);
   await check('/article/__nonexistent_smoke_record__', 404);
+  await check('/article/triangle-exits-and-power', 404);
+  await check('/api/submissions', 400, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' });
   await check('/__nonexistent_smoke_section__', 404);
+  const internalLinks = new Set();
+  for (const path of [...getPublicArticles().map((a) => `/article/${a.slug}`), ...sections.map((s) => `/${s.toLowerCase()}`), '/author/ryan-gomez']) {
+    const { text } = await check(path);
+    for (const match of text.matchAll(/href="(\/(?!\/)[^"<>]+)"/g)) {
+      if (!match[1].startsWith('/_next/')) internalLinks.add(match[1].replaceAll('&amp;', '&').split('#')[0]);
+    }
+  }
+  for (const path of internalLinks) await check(path);
+  const publicSlugs = new Set(getPublicArticles().map((a) => a.slug));
+  for (const file of fs.readdirSync('content/drafts')) {
+    const { metadata } = readDraft(`content/drafts/${file}`);
+    if (!publicSlugs.has(metadata.slug)) await check(`/article/${metadata.slug}`, 404);
+  }
+  for (const path of ['/rss.xml', '/sitemap.xml', '/search?q=triangle-exits-and-power']) {
+    const { text } = await check(path);
+    assert.ok(!text.includes('/article/triangle-exits-and-power'), 'Draft must not enter discovery surfaces');
+  }
+  await check('/api/submissions', 405);
 
   const assets = [...new Set([...home.matchAll(/(?:src|href)="(\/_next\/static\/[^"<>]+)"/g)].map((match) => match[1]))];
   assert.ok(assets.some((asset) => /\.js(?:\?|$)/.test(asset)), 'Missing JavaScript assets.');
@@ -65,14 +88,14 @@ try {
     assert.doesNotMatch(response.headers.get('content-type') ?? '', /text\/html/, 'An asset returned an HTML fallback.');
   }
 
-  const { text: revision } = await check('/api/revision');
+  const { text: revision } = await check('/api/revision', sourceSha ? 200 : 503);
   assert.equal(JSON.parse(revision).revision, sourceSha, 'Runtime revision must match this checkout.');
   for (const [body, status, type] of [['null', 400, 'application/json'], ['{', 400, 'application/json'], ['{}', 415, 'text/plain'], [' '.repeat(4097), 413, 'application/json'], ['{"email":"smoke@example.invalid","website":""}', 503, 'application/json']]) {
     // Next.js has no Workers D1 binding. This test must not persist a signup.
     const { response } = await check('/api/newsletter', status, { method: 'POST', headers: { 'content-type': type }, body });
     assert.match(response.headers.get('cache-control') ?? '', /no-store/);
   }
-  console.log(`PASS: ${checks} built Next.js runtime checks at ${sourceSha}`);
+  console.log(`PASS: ${checks} built Next.js runtime checks at ${sourceSha ?? `export SHA-256 ${sourceDigest}`}`);
 } catch (error) {
   console.error(output);
   throw error;

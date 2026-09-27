@@ -1,16 +1,18 @@
+import { IntakeRateLimit } from "./intake-policy.ts";
 const maxRequestBytes = 4096;
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function json(message: string, status = 200) {
+export function intakeJson(message: string, status = 200) {
   return Response.json({ message }, {
     status,
-    headers: { "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" },
+    headers: { "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff", ...(status === 429 ? { "Retry-After": "3600" } : {}) },
   });
 }
 
-class RequestTooLarge extends Error {}
+const json = intakeJson;
+export class RequestTooLarge extends Error {}
 
-async function readBody(request: Request) {
+export async function readBody(request: Request, limit = maxRequestBytes) {
   if (!request.body) return "";
   const reader = request.body.getReader();
   const chunks: Uint8Array[] = [];
@@ -20,7 +22,7 @@ async function readBody(request: Request) {
       const { done, value } = await reader.read();
       if (done) break;
       size += value.byteLength;
-      if (size > maxRequestBytes) {
+      if (size > limit) {
         // Do not wait for an untrusted stream's cancellation hook.
         void reader.cancel().catch(() => {});
         throw new RequestTooLarge();
@@ -104,7 +106,8 @@ export function createNewsletterHandler(save: (email: string) => Promise<unknown
       await save(email);
       // Persistence is not evidence that an email was sent or delivered.
       return json("Your signup has been saved.");
-    } catch {
+    } catch (error) {
+      if (error instanceof IntakeRateLimit) return json("Too many requests. Please try again in an hour.", 429);
       // Do not log email addresses, request bodies, or provider exceptions.
       console.error("Newsletter persistence unavailable.");
       return json("Subscriptions are temporarily unavailable. Please try again shortly.", 503);

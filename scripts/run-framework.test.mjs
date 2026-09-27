@@ -119,6 +119,6 @@ test("Vercel configuration explicitly selects Next.js and its output", () => {
   assert.equal(config.buildCommand, "npm run build:vercel");
   assert.equal(config.installCommand, "npm run install:ci");
   assert.equal(config.outputDirectory, ".next");
-  assert.equal(pkg.scripts["build:vercel"], "next build");
+  assert.equal(pkg.scripts["build:vercel"], "next build --webpack");
   assert.equal(pkg.scripts["start:vercel"], "next start");
 });

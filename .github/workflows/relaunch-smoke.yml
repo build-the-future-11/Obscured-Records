@@ -6,7 +6,7 @@ on:
       base_url:
         description: HTTPS public origin to certify
         required: true
-        default: https://obscured-records-tawny.vercel.app
+        default: https://obscured-records.ryangomez-hs.chatgpt.site
       expected_revision:
         description: Deployed immutable 40-character git SHA; defaults to dispatched source SHA when blank
         required: false

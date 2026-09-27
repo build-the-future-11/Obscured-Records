@@ -4,7 +4,7 @@ Status: internal operating procedure. This document does not authorize publicati
 
 ## Intake boundary
 
-The public submission page routes corrections, source leads, rights notes, and pitches to the monitored Obscured Records editor inbox. Ordinary email is not a secure channel for confidential source material; the public page must continue to say so.
+The public submission form stores corrections, source leads, rights notes and pitches in private D1 records when its Workers binding is configured. The page also provides the existing editor email alternative. An operator must verify inbox monitoring; it is not established by this implementation. See [Editorial workflow](EDITORIAL_WORKFLOW.md) for local triage commands. Ordinary email is not a secure channel for confidential source material; the public page must continue to say so.
 
 Accepted subject prefixes:
 
@@ -21,7 +21,7 @@ A submission may enter the public GitHub editorial queue only after the work ite
 
 ## Manual relaunch procedure
 
-1. Confirm the message reached the intended editor inbox.
+1. Confirm the form receipt matches a private D1 record, or that an email reached the intended inbox.
 2. Classify it as Correction, Source, Rights, Pitch, or Out of Scope.
 3. Send a short acknowledgement that receipt does not imply acceptance or publication.
 4. For a correction or rights claim, record the relevant public article/record ID and prioritize review.
@@ -47,4 +47,4 @@ Run one internal test message through the full path:
 - sanitized public-safe work item when appropriate;
 - closure without exposing sender PII.
 
-The public Submit route is launch-ready only after that dry run is recorded. Automation may replace this manual path later, but automation is not required for the first credible relaunch if the monitored manual workflow is actually followed.
+Local persistence and triage are exercised by the Workers integration smoke. The public Submit route still requires a controlled production dry run and monitored operator. Automated acknowledgement or assignment is not implemented.

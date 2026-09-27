@@ -36,7 +36,7 @@ If the provider fails or the list cannot be verified, stop at `SEND_APPROVAL`; d
 
 ## Subscriber handling
 
-Current website signup stores a normalized email, subscription status, consent time, and source in D1. That is a list-membership write, not an email-delivery system.
+Current website signup stores a normalized email, subscription status, consent time, and source in D1. New captures have `pending_confirmation` status. Existing active rows remain active; other resubmissions stay pending. This is consent capture, not proof of address ownership, sendable membership or email delivery. Confirmation and suppression workflows must be implemented with the selected sender before activation.
 
 Required before the first real newsletter send:
 

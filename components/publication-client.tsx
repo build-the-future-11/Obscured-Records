@@ -1,5 +1,6 @@
 "use client";
 
+import { editorialEvent } from "@/lib/editorial-events";
 import Link from "next/link";
 import { useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
@@ -76,7 +77,7 @@ export function MobileMenu() {
       <div className="menu-panel-top"><span>Browse the record</span><button type="button" aria-label="Close menu" onClick={() => setOpen(false)}><X /></button></div>
       <nav>{sectionLinks.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{label}</Link>)}</nav>
       <div className="menu-panel-meta">
-        <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link>
+        <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link><Link href="/archive" onClick={() => setOpen(false)}>Archive</Link><Link href="/topics" onClick={() => setOpen(false)}>Topics</Link><Link href="/series" onClick={() => setOpen(false)}>Reading series</Link><Link href="/authors" onClick={() => setOpen(false)}>Authors</Link><Link href="/saved" onClick={() => setOpen(false)}>Saved stories</Link>
         <Link href="/search" onClick={() => setOpen(false)}><Search /> Search the archive</Link>
         <Link href="/newsletter" onClick={() => setOpen(false)}>Newsletter</Link>
         <Link href="/submit" onClick={() => setOpen(false)}>Submit a record</Link>
@@ -89,11 +90,17 @@ export function MobileMenu() {
 }
 
 export function ReadingProgress() {
+  const reported = useRef(new Set<number>());
   const [progress, setProgress] = useState(0);
   useEffect(() => {
     const update = () => {
-      const total = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(total > 0 ? Math.min(100, Math.max(0, (window.scrollY / total) * 100)) : 0);
+      const article = document.getElementById("reading-body");
+      if (!article) return;
+      const bounds = article.getBoundingClientRect();
+      const total = bounds.height - window.innerHeight + 100;
+      const value = total > 0 ? Math.min(100, Math.max(0, ((100 - bounds.top) / total) * 100)) : (bounds.bottom <= window.innerHeight ? 100 : 0);
+      setProgress(value);
+      for (const depth of [25, 50, 75, 100]) if (value >= depth && !reported.current.has(depth)) { reported.current.add(depth); editorialEvent(depth === 100 ? "completion_proxy" : "article_depth", { depth }); }
     };
     update();
     window.addEventListener("scroll", update, { passive: true });
@@ -136,10 +143,12 @@ export function ShareTools({ title, url }: { title: string; url: string }) {
     }
     if (!success) { setCopyError("Copy unavailable. Copy the address from your browser."); return; }
     setCopied(true);
+    editorialEvent("share", { action: "copy" });
     resetTimer.current = setTimeout(() => setCopied(false), 1800);
   }
   return <aside className="share" aria-label="Share this record">
     <span>Share</span>
+    <button type="button" aria-label="Share article" onClick={async () => { if (navigator.share) { try { await navigator.share({ title, url }); editorialEvent("share", { action: "native" }); } catch (error) { if (!(error instanceof DOMException && error.name === "AbortError")) await copyLink(); } } else await copyLink(); }}><Share2 /></button>
     <button type="button" onClick={copyLink} aria-label="Copy article link" title="Copy link">{copied ? <Check /> : <Copy />}</button>
     <a href={links.email} aria-label="Share by email" title="Share by email"><Mail /></a>
     <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn"><Share2 /></a>
@@ -181,6 +190,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       if (!response.ok || !responseMessage) throw new Error(responseMessage || "Unable to subscribe right now. Please try again.");
       if (requestRef.current !== controller) return;
       setStatus("success");
+      editorialEvent("newsletter_capture");
       setMessage(responseMessage);
       setEmail("");
     } catch (error) {
@@ -201,7 +211,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={!hydrated || status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
       <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Subscribe"}</button>
     </div>
-    <small id={`${id}-hint`}>Subscribe to the Obscured Brief. <Link href="/privacy">Read our privacy policy.</Link></small>
+    <small id={`${id}-hint`}>Your signup is saved for the list; email delivery is not yet enabled. <Link href="/privacy">Read our privacy policy.</Link></small>
     {message && <p id={`${id}-status`} className={`form-status ${status}`} role={status === "error" ? "alert" : "status"}>{message}</p>}
   </form>;
 }

@@ -44,3 +44,18 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+
+/.cache/
+/browser-artifacts/
+*.tsbuildinfo
+
+# Retained original exports and local verification evidence are not release source.
+/verification/astra-2026-09-27/
+/verification/launch-2026-09-27/
+/release-evidence/
+
+# Local agent state is not project source.
+/.serena/
+
+# Retain publication QA screenshots and intermediate failures locally.
+/verification/publication-experience-2026-09-27/

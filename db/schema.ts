@@ -9,3 +9,19 @@ export const newsletterSubscribers = sqliteTable("newsletter_subscribers", {
 }, (table) => [
   uniqueIndex("idx_newsletter_subscribers_email").on(table.email),
 ]);
+
+export const intakeLimits = sqliteTable("intake_limits", {
+  bucket: text("bucket").primaryKey(),
+  hits: integer("hits").notNull(),
+  expiresAt: integer("expires_at").notNull(),
+});
+export const editorialSubmissions = sqliteTable("editorial_submissions", {
+  id: text("id").primaryKey(),
+  email: text("email").notNull(),
+  kind: text("kind").notNull(),
+  title: text("title").notNull(),
+  message: text("message").notNull(),
+  sourceUrl: text("source_url").notNull(),
+  status: text("status").notNull().default("received"),
+  consentedAt: text("consented_at").notNull(),
+});

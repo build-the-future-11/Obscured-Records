@@ -1,141 +1,49 @@
 # Obscured Records
 
-Obscured Records is an independent editorial archive for deeply sourced stories, historical records, and underreported events. The current relaunch emphasizes evidence, source transparency, corrections, durable archives, and a publication workflow that can expand without blurring draft material into published reporting.
+**Local reader-experience update, 27 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. See [the implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). These working-tree changes have not been deployed and do not change the editorial or public-launch gates below.
 
-## Current product surface
+An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
-The application currently includes:
+**27 September 2026: private hosted release verified; public launch remains HOLD.** There are 28 existing public records (eight expanded features and 20 briefs), plus 42 review drafts. Twenty drafts expand existing briefs; 22 introduce new subjects. That is **50 distinct subjects**, not 70 articles or 50 approved publications. New drafts are AI-assisted archival analysis, have no assigned human author, and are not served by the application.
 
-- a front page built around evidence files, long-form dossiers, an archive atlas, and an editor's desk;
-- article pages under `/article/[slug]`;
-- section archives under `/[section]`;
-- author pages under `/author/[slug]`;
-- `/latest`, `/underreported`, `/about`, `/corrections`, `/privacy`, and `/newsletter` surfaces;
-- RSS and crawler metadata;
-- source-aware article records in `lib/articles.ts`;
-- Cloudflare-compatible full-stack hosting through Vinext;
-- optional D1/Drizzle persistence for workflows that need durable state.
+The latest content pass improves all reader records and carries targeted corrections into their expansion drafts. See [content changes and source evidence](docs/CONTENT_IMPROVEMENTS_2026-09-27.md). Publishing draft files in this repository does not approve them for the website.
 
-The current article corpus is repository-backed. Editorial claims must remain traceable to the source fields retained with each article rather than being inferred from page design or generated copy.
+Start with [STATUS](STATUS.md), [the final report](ASTRA_FINAL_REPORT.md), [reproduction commands](REPRODUCE.md), and [the editorial inventory](docs/EDITORIAL_INVENTORY_2026-09-27.md).
 
-## Editorial contract
+## Reader, contributor and editor workflows
 
-Obscured Records should treat publication as an explicit state transition, not as "file exists = public".
+Readers can browse six sections, search the archive, follow related records, inspect source links and corrections, use canonical sharing, and subscribe through RSS. Public discovery and article routes use explicitly published records with valid, nonfuture dates. Held/draft/review records are excluded; changing repository content requires a rebuild.
 
-Recommended operating states:
+Contributors can send corrections, source leads, rights notes and pitches through `/submit`. The form validates input, requires consent and an HTTPS reference, bounds request size, and retains text if saving fails. A receipt means a private D1 write succeeded. It does not mean acceptance, publication or acknowledgement by an editor. Ordinary form/email intake is not a confidential-source channel.
 
-`SUBMITTED -> TRIAGE -> EDITING -> FACT_CHECK -> APPROVED -> SCHEDULED -> PUBLISHED -> CORRECTED/ARCHIVED`
+Editors review local private intake through `scripts/intake-admin.mjs`, and review repository drafts through `npm run editorial`. [Editorial workflow](docs/EDITORIAL_WORKFLOW.md) describes review, approval and deliberate publication. There is no public editor dashboard and no browser-supplied role grants editorial authority.
 
-For any future database-backed editorial workflow, public rendering must require an explicit published state. Draft, review, rejected, held, and scheduled material must fail closed from public routes, feeds, sitemaps, and search indexes until the publication condition is satisfied.
+Newsletter signup stores `pending_confirmation` and consent metadata in D1. The application sends no email. Both intake channels use durable, shared counters, a honeypot, same-origin checks and bounded bodies. Missing storage produces a visible 503 failure; no in-memory success substitute is used.
 
-For every published record, retain at minimum:
+## Run locally
 
-- canonical slug and title;
-- author identity;
-- publication and update timestamps;
-- section/tags;
-- source title and source URL;
-- cover-image credit when used;
-- correction history when facts materially change.
+Node >=22.13.0 and npm are required; Node 26.8.2 was used for retained local checks. CI is configured for Node 22.19.0. Check the pull request for the exact source revision and current hosted result.
 
-Do not silently rewrite a published factual claim without retaining an update/correction trail.
-
-## Repository layout
-
-- `app/` — routes, metadata, article/archive pages, newsletter/corrections/privacy surfaces
-- `components/` — shared editorial UI
-- `content/` — content assets and editorial material
-- `lib/articles.ts` — current repository-backed article records
-- `db/` — D1/Drizzle database access
-- `drizzle/` — generated/local migration files
-- `.github/` — repository verification workflows
-- `scripts/` — install/build/runtime helpers
-
-## Local development
-
-Requirements:
-
-- Node.js `>=22.13.0`
-- npm
-
-Install dependencies with the repository's locked install path:
-
-```bash
+```sh
 npm run install:ci
-```
-
-Start a local development server:
-
-```bash
 npm run dev
-```
-
-Run the primary repository checks before review:
-
-```bash
+npm test
+npm run check:editorial
 npm run lint
+npm run typecheck
 npm run build
 ```
 
-The build uses Vinext and produces the Cloudflare-compatible worker artifact used by the local built preview.
+The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to migrate an isolated local D1 database and verify actual persistence. `npm run build:vercel` builds with Next.js webpack. The Vercel/Node reader site works, but intake deliberately returns 503 because a Workers D1 binding is not available there. The existing owner-only Sites deployment uses Workers/D1. Enabling public intake still requires the operational gates in the release checklist.
 
-## Local D1 / Drizzle
+## Content and operations
 
-When a feature genuinely requires persisted editorial state, update `db/schema.ts`, generate a migration, and review the SQL before applying it anywhere:
+- `lib/articles.ts`: authoritative public registry; `lib/features.ts`: expanded feature copy.
+- `content/articles/`: synchronized companion MDX metadata and brief text; not the source of the feature renderer.
+- `content/drafts/`: Markdown/JSON-frontmatter review material, never application imports. A public repository would expose these files; they are private only to the reader site.
+- `lib/corrections.ts`: dated material correction log, displayed on the record and corrections page.
+- `db/`, `drizzle/`: schema and additive local-tested migrations.
+- `docs/`: editorial procedures, inventory and prior operating plans.
+- `verification/astra-2026-09-27/`: preserved original source, failures, link audit and final checks.
 
-```bash
-npm run db:generate
-```
-
-For local preview only, apply the reviewed migration against the local D1 binding after a build has generated `dist/server/wrangler.json`.
-
-Do not treat a successful local migration as production migration evidence. Production data changes require their own reviewed deployment/apply path and rollback ownership.
-
-## Authentication boundary
-
-`app/chatgpt-auth.ts` exposes optional workspace-auth helpers for user-specific surfaces. Authentication proves identity only; it does not automatically prove editorial role, contributor approval, or workspace membership.
-
-If admin/editor/contributor write surfaces are added, authorize them server-side with explicit role or membership checks. Do not use email, client state, route visibility, or a signed-in UI as the authorization boundary.
-
-Public article/archive routes should remain readable without requiring account state unless product requirements deliberately change.
-
-## Editorial QA before release
-
-Before publishing a release that changes reporting or editorial behavior, verify:
-
-1. every article route resolves its canonical record;
-2. source links and image credits render correctly;
-3. draft/held material cannot leak into public routes, RSS, sitemap, or search metadata;
-4. corrections remain visible and attributable;
-5. canonical URLs and metadata are stable;
-6. RSS output contains only intended public records;
-7. `robots` behavior matches the release intent;
-8. newsletter capture does not imply subscription success before the backend confirms it;
-9. mobile and keyboard navigation still work on the core archive/article surfaces;
-10. `npm run lint` and `npm run build` pass on the exact review head.
-
-## Research and historical-evaluation boundary
-
-Engineering correctness is not evidence that a historical-corroboration system or editorial method is accurate. Any outcome-bearing historical evaluation must use a prospectively frozen corpus, labels, metrics, evaluator identity/code, and retention plan before outcomes are opened.
-
-Do not convert a green build, alias fix, editorial redesign, or successful smoke test into a claim about historical accuracy, newsroom adoption, corroboration quality, or research validation.
-
-## Deployment boundary
-
-This repository should not infer that a production deployment is current merely because `main` is green. A release is attributable only when the hosting provider serves a known immutable source revision and the public site passes the intended smoke/transport checks on that same revision.
-
-Do not publish, deploy, mutate production data, or change DNS/provider configuration from unattended repository maintenance.
-
-## Relaunch priority order
-
-For the current relaunch, prefer:
-
-1. truth-preserving editorial workflow and publication boundaries;
-2. article/source/correction integrity;
-3. RSS, sitemap, metadata, and discoverability;
-4. submission and contributor operations;
-5. newsletter/audio workflows;
-6. analytics that measure real reader behavior without inflating readership claims;
-7. sponsor inventory only after editorial independence and labeling rules are explicit.
-
-The site should remain publishable even when optional newsletter, analytics, sponsor, or database services are unavailable.
+An earlier code revision was deployed to owner-only Sites, with an additive D1 migration and controlled persistence checks. See [deployment evidence](docs/LAUNCH_EXECUTION_2026-09-27.md). This content pass is not automatically a new deployed version. No email send, analytics event or audio release is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.

@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { classifySourceResponse } from './source-link-policy.mjs';
-import { articles } from '../lib/articles.ts';
+import { getPublicArticles } from '../lib/articles.ts';
 import { features } from '../lib/features.ts';
 import { readDraft } from './editorial-content.mjs';
-const sources = [...articles.map((a) => a.sourceUrl), ...Object.values(features).flatMap((f) => f.sources.map((s) => s.url)), ...fs.readdirSync('content/drafts').flatMap((file) => readDraft(`content/drafts/${file}`).metadata.sources.map((s) => s.url))];
+const sources = [...getPublicArticles().map((a) => a.sourceUrl), ...Object.values(features).flatMap((f) => f.sources.map((s) => s.url)), ...fs.readdirSync('content/drafts').flatMap((file) => readDraft(`content/drafts/${file}`).metadata.sources.map((s) => s.url))];
 const queue = [...new Set(sources)];
 const results = [];
 async function worker() {

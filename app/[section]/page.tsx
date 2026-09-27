@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { articles, sections } from "@/lib/articles";
+import { getPublicArticles, sections } from "@/lib/articles";
 import { pageMetadata } from "@/lib/page-metadata";
 import { Footer, ArchiveTicker, Masthead, NewsletterCTA, RecordId, SectionHeader, StoryMeta } from "@/components/editorial";
 const copy: Record<string,string> = {world:"Power, borders, conflict, diplomacy—and the lives caught between them.",business:"Capital, labor, markets and the systems that decide who gets what.",technology:"Systems, machines, platforms, infrastructure and the people building them.",science:"Evidence, discovery, climate and the changing limits of what we know.",culture:"Ideas, art, memory and the institutions that shape how we see.",underreported:"The overlooked stories. The missing context. The records that still matter.",people:"Conversations with people worth knowing.",opinion:"Arguments and analysis from independent minds."};
@@ -15,7 +15,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
   const { section } = await params;
   if (!valid.includes(section)) notFound();
   const title = section.toUpperCase();
-  const stories = articles.filter((article) => section === "underreported" ? article.underreported : article.section.toLowerCase() === section);
+  const stories = getPublicArticles().filter((article) => section === "underreported" ? article.underreported : article.section.toLowerCase() === section);
   const lead = stories[0];
   if (!lead) notFound();
   return <main className={section === "underreported" ? "section-dark" : ""}><ArchiveTicker/><Masthead/>

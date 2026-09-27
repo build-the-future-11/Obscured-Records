@@ -31,16 +31,19 @@ const records:Article[]=[
 {...by,title:"The Bomb in a Suitcase That Changed Airline Security",subtitle:"United Air Lines Flight 629 was destroyed in 1955 by a man targeting his mother for insurance money.",slug:"flight-629-suitcase-bomb",section:"World",excerpt:"The investigation connected debris, insurance policies and a Denver luggage counter.",underreported:true,recordId:"0395",readingTime:"1 min",tags:["aviation","investigation"],eventDate:"1 November 1955",opening:"United Air Lines Flight 629 departed Denver and broke apart minutes later, killing all 44 people aboard. Investigators found evidence of an explosion in checked baggage.",context:"The FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.",significance:"The case sits behind modern assumptions about checked luggage and explosives. It showed that aviation security had to account not only for political attacks but for private violence amplified by a shared transport system.",source:"FBI History — Jack Gilbert Graham",sourceUrl:"https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham"},
 {...by,title:"The City That Disappeared Into Centralia’s Fire",subtitle:"A coal-seam fire beneath a Pennsylvania town outlasted evacuations, demolition and decades of attempted control.",slug:"centralia-underground-fire",section:"Underreported",excerpt:"The streets were removed from maps long before the fire beneath them went out.",underreported:true,recordId:"0394",readingTime:"1 min",tags:["mining","pennsylvania"],eventDate:"1962–present",opening:"A fire entered abandoned coal workings beneath Centralia, Pennsylvania, and spread through a network of seams and mine passages. Smoke, heat and dangerous gases began reaching the surface.",context:"After years of failed containment efforts and growing concern about subsidence and exposure, government buyouts relocated most residents. Buildings were demolished and roads closed, leaving fragments of a town above a fire expected to burn for generations.",significance:"Centralia is a slow disaster, which makes it harder to narrate than an explosion. Its record is about time: extraction created an underground geography that continued governing life on the surface long after the mines closed.",source:"Pennsylvania Department of Environmental Protection",sourceUrl:"https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources"},
 ];
-export const articles: Article[] = records.filter((record) => isPublicRecord(record));
-const fedex = articles.find((article) => article.slug === "fedex-flight-705");
+// Evaluate publication dates during a request, never while a Worker initializes.
+export function getPublicArticles(now = Date.now()): Article[] {
+  return records.filter((record) => isPublicRecord(record, now));
+}
+const fedex = records.find((article) => article.slug === "fedex-flight-705");
 if (fedex) { fedex.cover="/fedex-705.webp"; fedex.coverCredit="Tango India / CC BY-SA 4.0 / Wikimedia Commons"; }
-const wirecard=articles.find(a=>a.slug==="wirecard-missing-billions");
+const wirecard=records.find(a=>a.slug==="wirecard-missing-billions");
 if(wirecard){wirecard.cover="/wirecard.webp";wirecard.coverCredit="Kaethe17 / CC BY-SA 4.0 / Wikimedia Commons";}
-const nyos=articles.find(a=>a.slug==="lake-nyos");
+const nyos=records.find(a=>a.slug==="lake-nyos");
 if(nyos){nyos.cover="/lake-nyos.webp";nyos.coverCredit="Bill Evans / USGS / Public domain";}
-const goiania=articles.find(a=>a.slug==="goiania-blue-powder");
+const goiania=records.find(a=>a.slug==="goiania-blue-powder");
 if(goiania){goiania.cover="/goiania-source.webp";goiania.coverCredit="IAEA Imagebank / CC BY 2.0";}
-const therac=articles.find(a=>a.slug==="therac-25");
+const therac=records.find(a=>a.slug==="therac-25");
 if(therac){therac.cover="/therac-25.webp";therac.coverCredit="U.S. Government work / Public domain";}
 export const archiveLocations=[
   {event:"7 Apr 1994",city:"Memphis",text:"An employee attack aboard FedEx Flight 705 tests the limits of a DC-10 crew."},
@@ -50,4 +53,4 @@ export const archiveLocations=[
   {event:"1956–1968",city:"Minamata",text:"Industrial mercury exposure is documented while official recognition lags."},
 ];
 export const sections=["World","Business","Technology","Science","Culture","Underreported"];
-export function getArticle(slug:string){return articles.find(a=>a.slug===slug)}
+export function getArticle(slug:string, now = Date.now()){return getPublicArticles(now).find(a=>a.slug===slug)}

@@ -2,10 +2,10 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import fs from 'node:fs';
 import { readDraft, validateDraft } from './editorial-content.mjs';
-import { articles, getArticle } from '../lib/articles.ts';
+import { getPublicArticles, getArticle } from '../lib/articles.ts';
 
 test('every new draft stays out of public lookup and every draft has usable metadata', () => {
-  const existing = new Set(articles.map((a) => a.slug));
+  const existing = new Set(getPublicArticles().map((a) => a.slug));
   let newCount = 0;
   for (const file of fs.readdirSync('content/drafts')) {
     const { metadata, body } = readDraft(`content/drafts/${file}`);

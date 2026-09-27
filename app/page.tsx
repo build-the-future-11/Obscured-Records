@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { archiveLocations, articles, getArticle } from "@/lib/articles";
+import { archiveLocations, getPublicArticles, getArticle } from "@/lib/articles";
 import { getReadingLabel } from "@/lib/features";
 import { pageMetadata } from "@/lib/page-metadata";
 import { Footer, ArchiveTicker, Masthead, NewsletterCTA, RecordId, SectionHeader, StoryMeta } from "@/components/editorial";
 
 export const metadata = { ...pageMetadata("/", "Obscured Records", "Documented histories that were overlooked, flattened into trivia or never explained with enough care."), title: { absolute: "Obscured Records" } };
-const picks = (slugs: string[]) => articles.filter((article) => slugs.includes(article.slug));
+const picks = (slugs: string[]) => getPublicArticles().filter((article) => slugs.includes(article.slug));
 export default function Home() {
-  const lead = getArticle("fedex-flight-705") ?? articles[0];
+  const lead = getArticle("fedex-flight-705") ?? getPublicArticles()[0];
   if (!lead) return <main><Masthead /><section className="paper-section" id="main-content" tabIndex={-1}><h1>The archive is being reviewed</h1><p>Records will appear here after publication.</p></section><Footer /></main>;
   const evidence = picks(["goiania-blue-powder", "wirecard-missing-billions", "lake-nyos"]);
   const dossiers = picks(["therac-25", "minamata-food-chain", "move-bombing", "aral-sea"]);

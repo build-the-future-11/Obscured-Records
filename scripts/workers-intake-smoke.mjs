@@ -4,6 +4,7 @@ import { createServer } from 'node:net';
 import fs from 'node:fs';
 import { setTimeout as delay } from 'node:timers/promises';
 import { sourceIdentity } from './source-identity.mjs';
+import { getPublicArticles, sections } from '../lib/articles.ts';
 
 const identity = sourceIdentity();
 const evidenceDirectory = process.env.VERIFICATION_DIR || `verification/workers-intake-${Date.now()}`;
@@ -38,6 +39,11 @@ try {
     try { const response = await fetch(base + '/api/revision', { signal: AbortSignal.timeout(500) }); await response.text(); ready = true; break; } catch { await delay(250); }
   }
   assert.ok(ready, 'Local Workers server did not become ready.');
+  for (const path of [...sections.map((section) => `/${section.toLowerCase()}`), ...getPublicArticles().map((article) => `/article/${article.slug}`)]) {
+    const response = await fetch(base + path, { signal: AbortSignal.timeout(10000) });
+    assert.equal(response.status, 200, `Workers reader route ${path}`);
+    await response.text(); checks.push(`Reader route ${path}: 200`);
+  }
   const newsletter = { email: 'newsletter-smoke@example.invalid', website: '' };
   for (let i = 0; i < 3; i++) await send('/api/newsletter', newsletter, 200);
   await send('/api/newsletter', newsletter, 429);

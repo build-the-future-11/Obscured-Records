@@ -3,7 +3,7 @@ import { corrections } from "@/lib/corrections";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { articles, getArticle } from "@/lib/articles";
+import { getPublicArticles, getArticle } from "@/lib/articles";
 import { toIsoEditorialDate } from "@/lib/editorial-dates";
 import { serializeJsonLd } from "@/lib/discovery";
 import { absoluteUrl, siteUrl } from "@/lib/site";
@@ -11,7 +11,7 @@ import { getFeature, getReadingLabel } from "@/lib/features";
 import { Footer, Masthead, NewsletterCTA, RecordId } from "@/components/editorial";
 import { ReadingProgress, ShareTools } from "@/components/publication-client";
 
-export function generateStaticParams() { return articles.map((article) => ({ slug: article.slug })); }
+export function generateStaticParams() { return getPublicArticles().map((article) => ({ slug: article.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
@@ -32,7 +32,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = getArticle(slug);
   if (!article) notFound();
   const feature = getFeature(slug);
-  const next = articles.filter((candidate) => candidate.slug !== article.slug).map((candidate) => ({
+  const next = getPublicArticles().filter((candidate) => candidate.slug !== article.slug).map((candidate) => ({
     article: candidate,
     score: candidate.tags.filter((tag) => article.tags.includes(tag)).length * 3 + (candidate.section === article.section ? 2 : 0) + (Boolean(getFeature(candidate.slug)) === Boolean(feature) ? 1 : 0),
   })).sort((a, b) => b.score - a.score || a.article.slug.localeCompare(b.article.slug))[0]?.article;

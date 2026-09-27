@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { ArrowUpRight, Search } from "lucide-react";
 import type { Article } from "@/lib/articles";
-import { articles, sections } from "@/lib/articles";
+import { getPublicArticles, sections } from "@/lib/articles";
 import { getFeature, getReadingLabel } from "@/lib/features";
 import { MobileMenu, NewsletterForm } from "@/components/publication-client";
 
 export function ArchiveTicker() {
-  const notes = [`${articles.length} documented records`, `${articles.filter((article) => getFeature(article.slug)).length} expanded features`, "Sources attached to every file", "Corrections remain open"];
+  const notes = [`${getPublicArticles().length} documented records`, `${getPublicArticles().filter((article) => getFeature(article.slug)).length} expanded features`, "Sources attached to every file", "Corrections remain open"];
   return <div className="ticker" aria-label="Publication status">
     <span className="live"><i /> Independent archive</span>
     <div className="ticker-track" aria-hidden="true">{[...notes, ...notes].map((note, index) => <span key={index}>{note}</span>)}</div>

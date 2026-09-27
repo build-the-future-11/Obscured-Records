@@ -1,6 +1,6 @@
 import { sourceIdentity } from './source-identity.mjs';
 import fs from 'node:fs';
-import { articles, sections } from '../lib/articles.ts';
+import { getPublicArticles, sections } from '../lib/articles.ts';
 import { readDraft } from './editorial-content.mjs';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
@@ -62,14 +62,14 @@ try {
   await check('/api/submissions', 400, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' });
   await check('/__nonexistent_smoke_section__', 404);
   const internalLinks = new Set();
-  for (const path of [...articles.map((a) => `/article/${a.slug}`), ...sections.map((s) => `/${s.toLowerCase()}`), '/author/ryan-gomez']) {
+  for (const path of [...getPublicArticles().map((a) => `/article/${a.slug}`), ...sections.map((s) => `/${s.toLowerCase()}`), '/author/ryan-gomez']) {
     const { text } = await check(path);
     for (const match of text.matchAll(/href="(\/(?!\/)[^"<>]+)"/g)) {
       if (!match[1].startsWith('/_next/')) internalLinks.add(match[1].replaceAll('&amp;', '&').split('#')[0]);
     }
   }
   for (const path of internalLinks) await check(path);
-  const publicSlugs = new Set(articles.map((a) => a.slug));
+  const publicSlugs = new Set(getPublicArticles().map((a) => a.slug));
   for (const file of fs.readdirSync('content/drafts')) {
     const { metadata } = readDraft(`content/drafts/${file}`);
     if (!publicSlugs.has(metadata.slug)) await check(`/article/${metadata.slug}`, 404);

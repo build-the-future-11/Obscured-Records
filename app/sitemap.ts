@@ -1,3 +1,4 @@
+import { corrections } from "@/lib/corrections";
 import type { MetadataRoute } from "next";
 import { articles, sections } from "@/lib/articles";
 import { toIsoEditorialDate } from "@/lib/editorial-dates";
@@ -9,6 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...routes.map((route) => ({ url: absoluteUrl(`/${route}`) })),
     ...authors.map((slug) => ({ url: absoluteUrl(`/author/${slug}`) })),
-    ...articles.map((article) => ({ url: absoluteUrl(`/article/${article.slug}`), lastModified: new Date(`${toIsoEditorialDate(getFeature(article.slug)?.updated || article.updated)}T00:00:00.000Z`) })),
+    ...articles.map((article) => ({ url: absoluteUrl(`/article/${article.slug}`), lastModified: new Date(`${toIsoEditorialDate(corrections.filter((item) => item.slug === article.slug).at(-1)?.date || getFeature(article.slug)?.updated || article.updated)}T00:00:00.000Z`) })),
   ];
 }

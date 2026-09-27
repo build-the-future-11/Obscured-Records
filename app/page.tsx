@@ -1,27 +1,28 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { archiveLocations, getArticle } from "@/lib/articles";
+import { archiveLocations, articles, getArticle } from "@/lib/articles";
 import { getReadingLabel } from "@/lib/features";
 import { pageMetadata } from "@/lib/page-metadata";
 import { Footer, ArchiveTicker, Masthead, NewsletterCTA, RecordId, SectionHeader, StoryMeta } from "@/components/editorial";
 
 export const metadata = { ...pageMetadata("/", "Obscured Records", "Documented histories that were overlooked, flattened into trivia or never explained with enough care."), title: { absolute: "Obscured Records" } };
-const pick = (slug: string) => getArticle(slug)!;
+const picks = (slugs: string[]) => articles.filter((article) => slugs.includes(article.slug));
 export default function Home() {
-  const lead = pick("fedex-flight-705");
-  const evidence = [pick("goiania-blue-powder"), pick("wirecard-missing-billions"), pick("lake-nyos")];
-  const dossiers = [pick("therac-25"), pick("minamata-food-chain"), pick("move-bombing"), pick("aral-sea")];
-  const desk = [pick("1mdb-global-trail"), pick("banqiao-dam-failure"), pick("petrov-false-alarm"), pick("ss-eastland"), pick("iraq-poison-grain")];
+  const lead = getArticle("fedex-flight-705") ?? articles[0];
+  if (!lead) return <main><Masthead /><section className="paper-section" id="main-content" tabIndex={-1}><h1>The archive is being reviewed</h1><p>Records will appear here after publication.</p></section><Footer /></main>;
+  const evidence = picks(["goiania-blue-powder", "wirecard-missing-billions", "lake-nyos"]);
+  const dossiers = picks(["therac-25", "minamata-food-chain", "move-bombing", "aral-sea"]);
+  const desk = picks(["1mdb-global-trail", "banqiao-dam-failure", "petrov-false-alarm", "ss-eastland", "iraq-poison-grain"]);
   return <main>
     <ArchiveTicker /><Masthead />
     <section className="lead" id="main-content" tabIndex={-1} aria-labelledby="lead-title">
       <div className="lead-copy"><StoryMeta article={lead} inverse />
-        <h1 id="lead-title">THE HIJACKING<br />THAT BECAME<br /><span className="revealed-word">COMBAT</span></h1>
+        <h1 id="lead-title">{lead.title}</h1>
         <p>{lead.subtitle}</p><Link className="arrow-link inverse" href={`/article/${lead.slug}`}>Read the full feature <ArrowUpRight /></Link>
         <div className="lead-index" aria-label="Publication promise"><strong>01</strong><span>Evidence</span><span>Context</span><span>Record</span></div>
       </div>
       <Link href={`/article/${lead.slug}`} className="lead-image image-sea" style={{backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.58)),url('${lead.cover}')`}} aria-label={`Read ${lead.title}`}>
-        <span className="image-caption">MCDONNELL DOUGLAS DC-10<br />REGISTRATION N306FE</span><span className="image-credit">{lead.coverCredit}</span>
+        <span className="image-caption">{lead.eventDate}<br />RECORD {lead.recordId}</span><span className="image-credit">{lead.coverCredit}</span>
       </Link>
       <aside className="now-rail"><p>FEATURE DOSSIERS</p>{dossiers.map((story) => <Link key={story.slug} href={`/article/${story.slug}`}><time>RECORD {story.recordId}</time><span>{story.title}</span></Link>)}</aside>
     </section>

@@ -44,3 +44,12 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+
+/.cache/
+/browser-artifacts/
+*.tsbuildinfo
+
+# Retained original exports and local verification evidence are not release source.
+/verification/astra-2026-09-27/
+/verification/launch-2026-09-27/
+/release-evidence/

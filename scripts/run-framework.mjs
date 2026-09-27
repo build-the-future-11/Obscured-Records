@@ -25,5 +25,6 @@ const cli = new URL(vercel
     ? "../node_modules/vite/bin/vite.js"
     : "../node_modules/vinext/dist/cli.js", import.meta.url);
 process.argv = [process.execPath, fileURLToPath(cli), command,
+  ...(vercel && command === "build" && !args.includes("--webpack") && !args.includes("--turbopack") ? ["--webpack"] : []),
   ...(!vercel && !managedLinux && command === "dev" ? ["--port", "5173"] : []), ...args];
 await import(cli.href);

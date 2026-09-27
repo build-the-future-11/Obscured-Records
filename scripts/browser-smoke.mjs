@@ -1,5 +1,6 @@
+import { sourceIdentity } from './source-identity.mjs';
 import assert from 'node:assert/strict';
-import { spawn, execFileSync } from 'node:child_process';
+import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import { createRequire } from 'node:module';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -11,8 +12,7 @@ assert.ok(process.env.BROWSER_TOOLS_DIR, 'Set BROWSER_TOOLS_DIR to the isolated 
 const requireTools = createRequire(resolve(process.env.BROWSER_TOOLS_DIR, 'package.json'));
 const { chromium } = requireTools('playwright');
 assert.equal(requireTools('playwright/package.json').version, '1.56.0');
-const sourceSha = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-assert.match(sourceSha, /^[0-9a-f]{40}$/);
+const { revision: sourceSha, sourceDigest } = sourceIdentity();
 const outputDir = resolve('browser-artifacts');
 await mkdir(outputDir, { recursive: true });
 const portProbe = createServer();
@@ -21,7 +21,7 @@ const { port } = portProbe.address();
 await new Promise((resolve) => portProbe.close(resolve));
 const base = `http://127.0.0.1:${port}`;
 const server = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
-  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha },
+  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha ?? "" },
   stdio: ['ignore', 'pipe', 'pipe'],
 });
 let serverOutput = '', launchError;
@@ -30,7 +30,7 @@ server.stderr.on('data', (chunk) => { serverOutput = (serverOutput + chunk).slic
 server.on('error', (error) => { launchError = error; });
 const exited = new Promise((resolve) => server.once('exit', resolve));
 let browser, activePage;
-const checks = [], errors = [], consoleMessages = [];
+const checks = [], errors = [], consoleMessages = [], performanceSamples = [];
 function pass(name) { checks.push(name); console.log(`PASS browser: ${name}`); }
 
 async function inspectPage(page, path, width) {
@@ -57,6 +57,11 @@ async function inspectPage(page, path, width) {
   assert.equal(brokenContact, 0, `${path}: stale contact address`);
   const emptyLinks = await page.locator('a').evaluateAll((links) => links.filter((link) => !link.textContent.trim() && !link.getAttribute('aria-label') && !link.querySelector('img[alt]')).map((link) => link.getAttribute('href')));
   assert.deepEqual(emptyLinks, [], `${path}: links without accessible names`);
+  performanceSamples.push({ path, width, ...await page.evaluate(() => {
+    const navigation = performance.getEntriesByType('navigation')[0];
+    const resources = performance.getEntriesByType('resource');
+    return { domContentLoadedMs: Math.round(navigation.domContentLoadedEventEnd), documentBytes: navigation.decodedBodySize, observedResourceCount: resources.length, sameOriginTransferredBytes: resources.filter((r) => new URL(r.name).origin === location.origin).reduce((n, r) => n + r.transferSize, 0) };
+  }) });
   pass(`${width}px ${path}: headings, canonical, contacts, labels, overflow`);
 }
 
@@ -71,7 +76,7 @@ try {
     } catch { await delay(250); }
   }
   assert.ok(ready, 'Local Next.js startup deadline exceeded.');
-  browser = await chromium.launch();
+  browser = await chromium.launch(process.env.BROWSER_EXECUTABLE ? { executablePath: process.env.BROWSER_EXECUTABLE } : {});
   const context = await browser.newContext({ reducedMotion: 'reduce' });
   // External images may load. Never permit an external write or submission.
   await context.route('**/*', (route) => {
@@ -149,6 +154,24 @@ try {
   pass('canonical sharing and honest clipboard-denial feedback');
 
   await page.goto(`${base}/newsletter`);
+  await page.goto(`${base}/submit`);
+  const submission = page.locator('.submission-form');
+  await submission.locator('[name=email]').fill('browser-smoke@example.invalid');
+  await submission.locator('[name=title]').fill('Local browser submission');
+  await submission.locator('[name=sourceUrl]').fill('https://example.invalid/source');
+  await submission.locator('[name=message]').fill('A local browser fixture with sufficient detail to test the contributor form and its storage-unavailable state.');
+  await submission.locator('[name=consent]').check();
+  await submission.getByRole('button', { name: 'Send for review' }).click();
+  await submission.getByRole('alert').filter({ hasText: 'temporarily unavailable' }).waitFor();
+  assert.match(await submission.locator('[name=message]').inputValue(), /local browser fixture/);
+  pass('real Node submission fails closed and retains contributor text');
+  await context.route('**/api/submissions', (route) => route.fulfill({ status: 201, contentType: 'application/json', body: JSON.stringify({ message: 'Fixture receipt: saved for review.' }) }));
+  await submission.getByRole('button', { name: 'Send for review' }).click();
+  await submission.getByRole('status').filter({ hasText: 'Fixture receipt' }).waitFor();
+  assert.equal(await submission.locator('[name=message]').inputValue(), '');
+  pass('mocked submission acknowledgment clears text only after receipt');
+  await context.unroute('**/api/submissions');
+  await page.goto(`${base}/newsletter`);
   const form = page.locator('.newsletter-form');
   const input = form.locator('input[type="email"]');
   await input.fill('smoke@example.invalid');
@@ -209,11 +232,11 @@ try {
   console.error(serverOutput);
   throw error;
 } finally {
-  await writeFile(resolve(outputDir, 'receipt.json'), JSON.stringify({ sourceSha, browser: 'Chromium via Playwright 1.56.0', checks, errors, consoleMessages, providerPersistenceVerified: false }, null, 2));
+  await writeFile(resolve(outputDir, 'receipt.json'), JSON.stringify({ sourceSha, sourceDigest, browser: `Chromium via Playwright 1.56.0 (${process.env.BROWSER_EXECUTABLE || 'bundled'})`, checks, errors, consoleMessages, performanceSamples, performanceScope: "Local browser observations, warm and cold caches mixed; not Core Web Vitals or field performance certification", providerPersistenceVerified: false }, null, 2));
   if (browser) await browser.close();
   if (server.exitCode === null) {
     server.kill('SIGTERM'); await Promise.race([exited, delay(2000)]);
     if (server.exitCode === null && server.signalCode === null) server.kill('SIGKILL');
   }
 }
-console.log(`PASS: ${checks.length} browser checks at ${sourceSha}`);
+console.log(`PASS: ${checks.length} browser checks at ${sourceSha ?? `export SHA-256 ${sourceDigest}`}`);

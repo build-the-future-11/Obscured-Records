@@ -1,5 +1,5 @@
 import { createNewsletterHandler } from "@/lib/newsletter-handler";
-import { saveNewsletterSubscriber } from "@/lib/newsletter-store";
+import { saveLimitedNewsletterSubscriber } from "@/lib/newsletter-store";
 
 export const dynamic = "force-dynamic";
-export const POST = createNewsletterHandler(saveNewsletterSubscriber);
+export const POST = createNewsletterHandler(saveLimitedNewsletterSubscriber);

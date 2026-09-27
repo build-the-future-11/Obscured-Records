@@ -1,3 +1,5 @@
+import { mediaCredits } from "@/lib/media";
+import { corrections } from "@/lib/corrections";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -21,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: article.title, description: article.excerpt,
     authors: [{ name: article.author, url: absoluteUrl(`/author/${article.authorSlug}`) }], keywords: article.tags,
     alternates: { canonical: url, types: { "application/rss+xml": absoluteUrl("/rss.xml") } },
-    openGraph: { title: article.title, description: article.excerpt, type: "article", url, publishedTime: toIsoEditorialDate(article.date), modifiedTime: toIsoEditorialDate(feature?.updated || article.updated), images: image ? [{ url: image, alt: article.coverCredit || article.title }] : [] },
+    openGraph: { title: article.title, description: article.excerpt, type: "article", url, publishedTime: toIsoEditorialDate(article.date), modifiedTime: toIsoEditorialDate(corrections.filter((item) => item.slug === slug).at(-1)?.date || feature?.updated || article.updated), images: image ? [{ url: image, alt: article.coverCredit || article.title }] : [] },
     twitter: { card: image ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, images: image ? [image] : [] },
   };
 }
@@ -34,8 +36,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     article: candidate,
     score: candidate.tags.filter((tag) => article.tags.includes(tag)).length * 3 + (candidate.section === article.section ? 2 : 0) + (Boolean(getFeature(candidate.slug)) === Boolean(feature) ? 1 : 0),
   })).sort((a, b) => b.score - a.score || a.article.slug.localeCompare(b.article.slug))[0]?.article;
-  const updated = feature?.updated || article.updated;
-  const sources = feature?.sources || [{ label: article.source, publisher: article.source, url: article.sourceUrl, kind: "Primary source" as const }];
+  const recordCorrections = corrections.filter((item) => item.slug === slug);
+  const updated = recordCorrections.at(-1)?.date || feature?.updated || article.updated;
+  const sources = Array.from(new Map((feature?.sources || [{ label: article.source, publisher: article.source, url: article.sourceUrl, kind: "Source record" }]).map((source) => [source.url, source])).values());
   const schema = {
     "@context": "https://schema.org", "@type": feature ? "NewsArticle" : "Article",
     headline: article.title, description: article.excerpt,
@@ -53,7 +56,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <h1>{article.title}</h1><p className="article-deck">{feature?.standfirst || article.subtitle}</p>
       <div className="article-byline"><div className="author-avatar">RG</div><p>By <Link href={`/author/${article.authorSlug}`}>{article.author}</Link><br/><span>{getReadingLabel(article.slug)} · Updated {updated}</span></p></div>
     </header>
-    <figure className={`article-cover ${article.cover ? "has-cover" : "visual-3"}`} style={article.cover ? { backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.35)),url('${article.cover}')`, backgroundSize:"cover", backgroundPosition:"center" } : undefined}>
+    <figure aria-label={mediaCredits[article.slug]?.description} className={`article-cover ${article.cover ? "has-cover" : "visual-3"}`} style={article.cover ? { backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.35)),url('${article.cover}')`, backgroundSize:"cover", backgroundPosition:"center" } : undefined}>
       <figcaption>{article.eventDate} / Archival record. <span>{article.coverCredit || "OBSCURED RECORDS / SOURCE FILE"}</span></figcaption>
     </figure>
     <div className="article-layout">
@@ -66,12 +69,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {feature.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
         </> : <>
           <h2>What happened</h2><p>{article.context}</p>
-          <blockquote>“{article.excerpt}”</blockquote>
+          <p className="record-summary">{article.excerpt}</p>
           <figure className="inline-figure record-figure"><span>RECORD {article.recordId}</span><strong>{article.eventDate}</strong><figcaption>A concise entry in the archive. This brief will expand when more primary material is reviewed.</figcaption></figure>
           <h2>Why this record matters</h2><p>{article.significance}</p>
         </>}
-        <div className="method-note"><span>Method</span><p>{feature ? "This feature separates the documented sequence from interpretation and links the reports used to reconstruct it. Source labels describe the role of each document, not an endorsement of every conclusion inside it." : "This is a brief record: a verified starting point, not a finished long-form investigation. The reading label and format are intentionally explicit."}</p><Link href="/standards">Read our editorial standards →</Link></div>
+        <div className="method-note"><span>Method</span><p>{feature ? "This feature separates the documented sequence from interpretation and links the reports used to reconstruct it. Source labels describe the role of each document, not an endorsement of every conclusion inside it." : "This is a brief record with a source trail, not a finished long-form investigation. Source presence is not a guarantee that every claim has been independently checked."}</p><Link href="/standards">Read our editorial standards →</Link></div>
         <div className="sources"><h3>Sources &amp; further reading</h3><ol>{sources.map((source) => <li key={source.url}><span>{source.kind}</span><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>{"publisher" in source && source.publisher !== source.label ? <small>{source.publisher}</small> : null}</li>)}</ol></div>
+        {mediaCredits[article.slug] && <aside className="method-note"><span>Image source &amp; reuse</span><p>{mediaCredits[article.slug].note}</p><a href={mediaCredits[article.slug].source}>Original image record</a>{" · "}<a href={mediaCredits[article.slug].licenseUrl}>{mediaCredits[article.slug].license}</a></aside>}
+        {recordCorrections.map((item) => <aside className="method-note" key={item.date}><span>Correction · {item.date}</span><p>{item.note}</p><a href={item.sourceUrl}>Supporting record →</a></aside>)}
         <div className="correction-line"><span>See something wrong or incomplete?</span><Link href={`/corrections?record=${article.recordId}`}>Send a correction</Link></div>
         <div className="author-block"><div className="author-avatar large">RG</div><div><span>Founder &amp; editor</span><h3>Ryan Gomez</h3><p>Ryan publishes evidence-led records of events that were overlooked, flattened into trivia or never explained with enough care.</p></div></div>
       </article>

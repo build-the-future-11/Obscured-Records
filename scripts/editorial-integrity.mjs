@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { readDraft, validateDraft, wordCount } from "./editorial-content.mjs";
 
 const root = process.cwd();
 const articlesDir = path.join(root, "content", "articles");
@@ -19,6 +20,7 @@ const requiredFields = [
   "eventDate",
   "source",
   "sourceUrl",
+  "status",
 ];
 
 const fail = (message) => {
@@ -87,11 +89,15 @@ const records = [];
 for (const file of files) {
   const filePath = path.join(articlesDir, file);
   const frontmatter = parseFrontmatter(filePath);
+  if (!["draft", "review", "published", "held"].includes(frontmatter.status)) fail(`${file}: explicit editorial status required`);
 
   for (const field of requiredFields) {
     if (!frontmatter[field]) fail(`${file}: missing required field ${field}`);
   }
 
+  const registryLine = fs.readFileSync(articleRegistryPath, "utf8").split("\n").find((line) => line.includes(`slug:"${frontmatter.slug}"`));
+  const registryStatus = registryLine?.match(/status:\s*"([^"]+)"/)?.[1] || "published";
+  if (frontmatter.status !== registryStatus) fail(`${file}: registry status mismatch`);
   if (frontmatter.slug && file !== `${frontmatter.slug}.mdx`) {
     fail(`${file}: filename does not match slug ${frontmatter.slug}`);
   }
@@ -153,5 +159,19 @@ if (registrySlugs.length !== records.length) {
   fail(`registry/MDX article count mismatch (${registrySlugs.length} vs ${records.length})`);
 }
 
+const drafts = fs.readdirSync(path.join(root, "content/drafts")).filter((name) => name.endsWith(".md"));
+const draftSlugs = new Set();
+let draftWords = 0;
+for (const file of drafts) {
+  try {
+    const { metadata, body } = readDraft(path.join(root, "content/drafts", file));
+    validateDraft(metadata, body);
+    if (file !== `${metadata.slug}.md` || draftSlugs.has(metadata.slug)) throw new Error("Duplicate or mismatched draft slug");
+    draftSlugs.add(metadata.slug); draftWords += wordCount(body);
+  } catch (error) { fail(`${file}: ${error.message}`); }
+}
+const subjects = new Set([...seenSlugs, ...draftSlugs]);
+if (subjects.size < 50) fail(`Expected at least 50 distinct editorial subjects, found ${subjects.size}`);
 if (process.exitCode) process.exit(process.exitCode);
 console.log(`editorial-integrity: PASS (${records.length} article records; slugs, IDs, dates and source URLs checked)`);
+console.log(`editorial-integrity: ${drafts.length} unpublished drafts, ${draftWords} draft words, ${subjects.size} distinct subjects; no fact-check approval implied`);

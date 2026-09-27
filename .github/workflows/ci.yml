@@ -41,11 +41,11 @@ jobs:
       - name: Test deployment routing
         run: node --test scripts/run-framework.test.mjs
 
-      - name: Test signup and archive regressions
-        run: node --experimental-strip-types --test scripts/newsletter.test.mjs scripts/search-query.test.mjs scripts/discovery.test.mjs
-
       - name: Install locked dependencies
         run: npm run install:ci
+
+      - name: Test signup and archive regressions
+        run: npm test
 
       - name: Verify dependency inputs unchanged
         shell: bash
@@ -62,6 +62,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Verify local Workers intake persistence
+        run: node scripts/workers-intake-smoke.mjs
 
       - name: Build for Vercel
         env:

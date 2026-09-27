@@ -34,7 +34,7 @@ export function NewsletterCTA() {
     <span className="newsletter-label">A quiet email brief</span>
     <div><h2 id="newsletter-title">The Obscured<br />Brief</h2><p>One documented story, the evidence behind it and the context most summaries leave out.</p></div>
     <NewsletterForm compact />
-    <blockquote>“History is full of stories<br />that never got a fair record.”</blockquote>
+    <p className="newsletter-motto">History is full of stories<br />that never got a fair record.</p>
   </section>;
 }
 export function Footer() {

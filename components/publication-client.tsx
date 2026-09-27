@@ -201,7 +201,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={!hydrated || status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
       <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Subscribe"}</button>
     </div>
-    <small id={`${id}-hint`}>Subscribe to the Obscured Brief. <Link href="/privacy">Read our privacy policy.</Link></small>
+    <small id={`${id}-hint`}>Your signup is saved for the list; email delivery is not yet enabled. <Link href="/privacy">Read our privacy policy.</Link></small>
     {message && <p id={`${id}-status`} className={`form-status ${status}`} role={status === "error" ? "alert" : "status"}>{message}</p>}
   </form>;
 }

@@ -1,3 +1,4 @@
+import { enforceIntakeLimit } from "./intake-policy.ts";
 type NewsletterDatabase = {
   prepare(sql: string): {
     bind(...values: unknown[]): { run(): Promise<{ success: boolean }> };
@@ -13,8 +14,10 @@ export function createNewsletterStore(
     if (!database) throw new Error("Newsletter storage is unavailable.");
     const result = await database.prepare(`
       INSERT INTO newsletter_subscribers (email, status, consented_at, source)
-      VALUES (?, 'active', ?, 'website')
-      ON CONFLICT(email) DO UPDATE SET status = 'active', consented_at = excluded.consented_at
+      VALUES (?, 'pending_confirmation', ?, 'website')
+      ON CONFLICT(email) DO UPDATE SET
+        status = CASE WHEN newsletter_subscribers.status IN ('active', 'unsubscribed', 'suppressed', 'bounced', 'complained') THEN newsletter_subscribers.status ELSE 'pending_confirmation' END,
+        consented_at = excluded.consented_at
     `).bind(email, new Date().toISOString()).run();
     if (!result.success) throw new Error("Newsletter storage did not confirm the write.");
   };
@@ -26,3 +29,10 @@ export const saveNewsletterSubscriber = createNewsletterStore(async () => {
   const { env } = await import("cloudflare:workers");
   return env.DB;
 });
+
+export async function saveLimitedNewsletterSubscriber(email: string) {
+  const { env } = await import("cloudflare:workers");
+  if (!env.DB) throw new Error("Newsletter storage is unavailable.");
+  await enforceIntakeLimit(env.DB, email, "newsletter");
+  return createNewsletterStore(async () => env.DB)(email);
+}

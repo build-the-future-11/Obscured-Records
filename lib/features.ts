@@ -1,3 +1,4 @@
+import { getArticle } from "./articles.ts";
 export type FeatureSection = {
   heading: string;
   paragraphs: string[];
@@ -258,7 +259,7 @@ export const features: Record<string, FeatureRecord> = {
     sources: [
       { label: "Aral Sea, Kazakhstan and Uzbekistan — Earthshots", publisher: "U.S. Geological Survey EROS", url: "https://eros.usgs.gov/earthshots/aral-sea-kazakhstan-and-uzbekistan", kind: "Official report" },
       { label: "Aral Sea water resources satellite comparison", publisher: "U.S. Geological Survey", url: "https://pubs.usgs.gov/unnumbered/70048798/report.pdf", kind: "Primary document" },
-      { label: "World of Change: Shrinking Aral Sea", publisher: "NASA Earth Observatory", url: "https://earthobservatory.nasa.gov/world-of-change/aral-sea", kind: "Research" },
+      { label: "World of Change: Shrinking Aral Sea", publisher: "NASA Earth Observatory", url: "https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/", kind: "Research" },
     ],
   },
   "minamata-food-chain": {
@@ -336,9 +337,9 @@ export const features: Record<string, FeatureRecord> = {
       },
     ],
     sources: [
-      { label: "MOVE bombing documents", publisher: "City of Philadelphia", url: "https://www.phila.gov/documents/move-bombing-documents/", kind: "Primary document" },
+      { label: "Philadelphia Special Investigation Commission collection guide", publisher: "Temple University Special Collections", url: "https://findingaids.library.upenn.edu/records/TUSCRC_SCRC605", kind: "Primary document" },
       { label: "Independent report on the handling of MOVE victims' remains", publisher: "City of Philadelphia", url: "https://www.phila.gov/documents/independent-report-on-the-history-and-handling-of-move-victims-remains/", kind: "Official report" },
-      { label: "Philadelphia Special Investigation Commission archive", publisher: "City of Philadelphia", url: "https://www.phila.gov/documents/move-bombing-documents/", kind: "Official report" },
+      { label: "Philadelphia Special Investigation Commission archive", publisher: "Temple University Special Collections", url: "https://findingaids.library.upenn.edu/records/TUSCRC_SCRC605", kind: "Official report" },
     ],
   },
 };
@@ -349,10 +350,10 @@ export function getFeature(slug: string) {
 
 export function getReadingLabel(slug: string) {
   const feature = getFeature(slug);
-  if (!feature) return "Brief · 2 min";
-  const words = [feature.standfirst, ...feature.sections.flatMap((section) => section.paragraphs)]
+  const article = getArticle(slug);
+  const words = (feature ? [article?.opening || "", feature.standfirst, ...feature.timeline.map((item) => item.event), ...feature.sections.flatMap((section) => section.paragraphs)] : [article?.opening || "", article?.context || "", article?.significance || ""])
     .join(" ")
     .trim()
     .split(/\s+/).length;
-  return `Feature · ${Math.max(4, Math.ceil(words / 210))} min`;
+  return `${feature ? "Feature" : "Brief"} · ${Math.max(1, Math.ceil(words / 210))} min`;
 }

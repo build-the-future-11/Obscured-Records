@@ -1,8 +1,8 @@
 ---
 {
   "slug": "flight-629-suitcase-bomb",
-  "title": "The Bomb in a Suitcase That Changed Airline Security",
-  "dek": "United Air Lines Flight 629 was destroyed in 1955 by a man targeting his mother for insurance money.",
+  "title": "United Flight 629: The Baggage Bomb and the Investigation",
+  "dek": "An explosion destroyed the aircraft after departure from Denver in 1955, killing all 44 people aboard.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "aviation",
     "investigation"
   ],
-  "description": "United Air Lines Flight 629 was destroyed in 1955 by a man targeting his mother for insurance money.",
-  "socialPreview": "United Air Lines Flight 629 was destroyed in 1955 by a man targeting his mother for insurance money.",
+  "description": "Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",
+  "socialPreview": "Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 United Air Lines Flight 629 departed Denver and broke apart minutes later, killing all 44 people aboard. Investigators found evidence of an explosion in checked baggage.
 
@@ -52,4 +57,4 @@ The people aboard the aircraft should remain present in the account as more than
 
 The strongest version of the story therefore has two movements: the evidence that established a particular crime, and the wider questions the case raises about personal violence in shared infrastructure. The second should grow from the first rather than replace it with a sweeping claim about everything that changed afterward.
 
-The case sits behind modern assumptions about checked luggage and explosives. It showed that aviation security had to account not only for political attacks but for private violence amplified by a shared transport system.
+The case shows how an attack aimed at one person killed everyone aboard a shared aircraft. Its place in the history of security needs specific evidence of later policy changes; the investigation alone does not establish when a particular safeguard was introduced.

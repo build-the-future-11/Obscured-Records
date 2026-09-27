@@ -1,8 +1,8 @@
 ---
 {
   "slug": "petrov-false-alarm",
-  "title": "The Officer Who Waited Before Calling It Nuclear War",
-  "dek": "A Soviet warning system reported incoming U.S. missiles in 1983. Stanislav Petrov judged the signal did not make sense.",
+  "title": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong",
+  "dek": "In September 1983, Petrov judged that a satellite alert did not reliably indicate an American attack.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "cold war",
     "systems"
   ],
-  "description": "A Soviet warning system reported incoming U.S. missiles in 1983. Stanislav Petrov judged the signal did not make sense.",
-  "socialPreview": "A Soviet warning system reported incoming U.S. missiles in 1983. Stanislav Petrov judged the signal did not make sense.",
+  "description": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
+  "socialPreview": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Inside a Soviet early-warning bunker, alarms indicated that the United States had launched an intercontinental ballistic missile, then several more. Lieutenant Colonel Stanislav Petrov was responsible for reporting the alert upward.
 
@@ -52,4 +57,4 @@ Heroic narratives can obscure that design problem. If the lesson becomes that sa
 
 The record should therefore retain both its drama and its boundary. A warning was assessed and a consequential judgment was made. The alternative future remains something to analyze cautiously, not something the archive can report as if it happened.
 
-The episode is often reduced to one man saving the world. Its real lesson is about automation and authority: a high-confidence alert was still an interpretation of sensor data, and the human in the loop needed both judgment and permission to doubt it.
+The account is about evaluating a warning under pressure. The claim that one decision certainly prevented nuclear war goes beyond what the surviving record can establish. The alert, its handling and any counterfactual outcome are different questions.

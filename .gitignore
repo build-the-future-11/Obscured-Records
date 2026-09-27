@@ -53,3 +53,6 @@ next-env.d.ts
 /verification/astra-2026-09-27/
 /verification/launch-2026-09-27/
 /release-evidence/
+
+# Local agent state is not project source.
+/.serena/

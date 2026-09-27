@@ -1,8 +1,8 @@
 ---
 {
   "slug": "ethiopian-airlines-961",
-  "title": "A Hijacked Boeing 767 Ran Out of Fuel Above the Indian Ocean",
-  "dek": "Ethiopian Airlines Flight 961 became one of the rare wide-body ditchings captured on film—and a case study in why passengers must not inflate life vests inside an aircraft.",
+  "title": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching",
+  "dek": "The hijacked Boeing 767 ran out of fuel near the Comoros on 23 November 1996. Fifty of the 175 people aboard survived.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "aviation",
     "survival"
   ],
-  "description": "Ethiopian Airlines Flight 961 became one of the rare wide-body ditchings captured on film—and a case study in why passengers must not inflate life vests inside an aircraft.",
-  "socialPreview": "Ethiopian Airlines Flight 961 became one of the rare wide-body ditchings captured on film—and a case study in why passengers must not inflate life vests inside an aircraft.",
+  "description": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
+  "socialPreview": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Three men seized Ethiopian Airlines Flight 961 after takeoff from Addis Ababa and demanded Australia. Captain Leul Abate told them the Boeing 767 did not carry enough fuel. They insisted the aircraft continue over the Indian Ocean.
 
@@ -50,4 +55,4 @@ Passenger actions deserve the same care. Advice about survival should not be imp
 
 The aviation occurrence record is a starting point for these distinctions. A fuller treatment would compare it with an investigation report and attributable survivor accounts. Keeping those sources separate allows an account to retain both the physical limits of the flight and the human uncertainty inside it. Neither needs embellishment to explain why the event matters.
 
-The crash endures because it compresses several aviation lessons into minutes: cockpit coercion, fuel reality, ditching technique and evacuation discipline. The beach video made the impact visible; the less-seen record is how survival depended on decisions made long before the water arrived.
+The record brings together coercion in the cockpit, fuel limits and evacuation after a water landing. The widely circulated film shows the impact; it cannot establish what every passenger or crew member experienced inside the aircraft.

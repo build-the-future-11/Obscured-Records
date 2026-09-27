@@ -1,8 +1,8 @@
 ---
 {
   "slug": "centralia-underground-fire",
-  "title": "The City That Disappeared Into Centralia’s Fire",
-  "dek": "A coal-seam fire beneath a Pennsylvania town outlasted evacuations, demolition and decades of attempted control.",
+  "title": "Centralia: The Mine Fire That Forced a Town’s Relocation",
+  "dek": "A fire in abandoned coal workings led to containment efforts, property buyouts and the displacement of most residents.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "mining",
     "pennsylvania"
   ],
-  "description": "A coal-seam fire beneath a Pennsylvania town outlasted evacuations, demolition and decades of attempted control.",
-  "socialPreview": "A coal-seam fire beneath a Pennsylvania town outlasted evacuations, demolition and decades of attempted control.",
+  "description": "The state’s chronology records decades of decisions about a hazard beneath the town.",
+  "socialPreview": "The state’s chronology records decades of decisions about a hazard beneath the town.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -22,6 +22,13 @@
       "status": "inherited-unverified",
       "checkedAt": "2026-09-27",
       "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+    },
+    {
+      "title": "Pennsylvania DEP — Centralia mine fire chronology",
+      "url": "https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology",
+      "status": "located",
+      "checkedAt": "2026-09-27",
+      "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
     }
   ],
   "reviewChecklist": [
@@ -30,13 +37,18 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
 
+
 A fire entered abandoned coal workings beneath Centralia, Pennsylvania, and spread through a network of seams and mine passages. Smoke, heat and dangerous gases began reaching the surface.
 
-After years of failed containment efforts and growing concern about subsidence and exposure, government buyouts relocated most residents. Buildings were demolished and roads closed, leaving fragments of a town above a fire expected to burn for generations.
+Pennsylvania’s official chronology dates the fire to May 1962 and records repeated control efforts, air-quality monitoring and damage from subsidence. In 1984, Congress funded voluntary acquisition and relocation of affected homes and businesses.
 
 ## The town and the underground geography
 
@@ -52,4 +64,4 @@ Centralia's appeal in popular culture can turn the town into an eerie landscape 
 
 Its unusual timescale is the key. A fire that moves through inaccessible workings can outlast political terms, household plans and familiar landmarks. The record should follow how institutions make decisions when the hazard's duration exceeds the calendars through which ordinary life is organized.
 
-Centralia is a slow disaster, which makes it harder to narrate than an explosion. Its record is about time: extraction created an underground geography that continued governing life on the surface long after the mines closed.
+Centralia is a record of decisions made over decades rather than a single evacuation. The state’s chronology identifies official actions; residents’ accounts are also needed to understand how people experienced relocation and the loss of community.

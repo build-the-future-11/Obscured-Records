@@ -2,7 +2,9 @@
 
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
-**27 September 2026: local implementation complete; public release remains HOLD.** There are 28 existing public records (eight expanded features and 20 briefs), plus 42 review drafts. Twenty drafts expand existing briefs; 22 introduce new subjects. That is **50 distinct subjects**, not 70 articles or 50 approved publications. New drafts are AI-assisted archival analysis, have no assigned human author, and are not served by the application.
+**27 September 2026: private hosted release verified; public launch remains HOLD.** There are 28 existing public records (eight expanded features and 20 briefs), plus 42 review drafts. Twenty drafts expand existing briefs; 22 introduce new subjects. That is **50 distinct subjects**, not 70 articles or 50 approved publications. New drafts are AI-assisted archival analysis, have no assigned human author, and are not served by the application.
+
+The latest content pass improves all reader records and carries targeted corrections into their expansion drafts. See [content changes and source evidence](docs/CONTENT_IMPROVEMENTS_2026-09-27.md). Publishing draft files in this repository does not approve them for the website.
 
 Start with [STATUS](STATUS.md), [the final report](ASTRA_FINAL_REPORT.md), [reproduction commands](REPRODUCE.md), and [the editorial inventory](docs/EDITORIAL_INVENTORY_2026-09-27.md).
 
@@ -18,7 +20,7 @@ Newsletter signup stores `pending_confirmation` and consent metadata in D1. The 
 
 ## Run locally
 
-Node >=22.13.0 and npm are required; Node 26.8.2 was used for retained local checks. CI is configured for Node 22.19.0; that hosted job was not run here.
+Node >=22.13.0 and npm are required; Node 26.8.2 was used for retained local checks. CI is configured for Node 22.19.0. Check the pull request for the exact source revision and current hosted result.
 
 ```sh
 npm run install:ci
@@ -30,7 +32,7 @@ npm run typecheck
 npm run build
 ```
 
-The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to migrate an isolated local D1 database and verify actual persistence. `npm run build:vercel` builds with Next.js webpack. The Vercel/Node reader site works, but intake deliberately returns 503 because a Workers D1 binding is not available there. A production host/backend choice is required before enabling intake publicly.
+The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to migrate an isolated local D1 database and verify actual persistence. `npm run build:vercel` builds with Next.js webpack. The Vercel/Node reader site works, but intake deliberately returns 503 because a Workers D1 binding is not available there. The existing owner-only Sites deployment uses Workers/D1. Enabling public intake still requires the operational gates in the release checklist.
 
 ## Content and operations
 
@@ -42,4 +44,4 @@ The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to 
 - `docs/`: editorial procedures, inventory and prior operating plans.
 - `verification/astra-2026-09-27/`: preserved original source, failures, link audit and final checks.
 
-No deployment, production migration, email send, analytics event or audio release was performed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.
+An earlier code revision was deployed to owner-only Sites, with an additive D1 migration and controlled persistence checks. See [deployment evidence](docs/LAUNCH_EXECUTION_2026-09-27.md). This content pass is not automatically a new deployed version. No email send, analytics event or audio release is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.

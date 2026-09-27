@@ -1,8 +1,8 @@
 ---
 {
   "slug": "air-france-8969",
-  "title": "The Four Days Air France 8969 Never Reached Paris",
-  "dek": "A hijacking in Algiers became a hostage crisis, a diplomatic standoff and the operation that defined France’s modern counterterrorism doctrine.",
+  "title": "Air France 8969: From the Algiers Hijacking to the Marseille Rescue",
+  "dek": "Seized on 24 December 1994, the aircraft reached Marseille two days later, where a GIGN assault ended the hostage crisis.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "aviation",
     "terrorism"
   ],
-  "description": "A hijacking in Algiers became a hostage crisis, a diplomatic standoff and the operation that defined France’s modern counterterrorism doctrine.",
-  "socialPreview": "A hijacking in Algiers became a hostage crisis, a diplomatic standoff and the operation that defined France’s modern counterterrorism doctrine.",
+  "description": "Three hostages were killed before the aircraft left Algiers. The remaining hostages survived the assault in Marseille.",
+  "socialPreview": "Three hostages were killed before the aircraft left Algiers. The remaining hostages survived the assault in Marseille.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -22,6 +22,13 @@
       "status": "inherited-unverified",
       "checkedAt": "2026-09-27",
       "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+    },
+    {
+      "title": "French National Gendarmerie retrospective",
+      "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/histoire/26-decembre-1994-l-assaut-spectaculaire-du-gign-a-marignane",
+      "status": "located",
+      "checkedAt": "2026-09-27",
+      "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
     }
   ],
   "reviewChecklist": [
@@ -30,13 +37,18 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
 
-Air France Flight 8969 was meant to carry 220 people from Algiers to Paris. Instead, four armed men from Algeria’s Armed Islamic Group seized the Airbus A300 before departure, killed three passengers and demanded clearance to fly.
 
-Algerian authorities refused to let the aircraft leave. After two days of negotiations, the plane flew to Marseille under the stated need for fuel. French officials believed the hijackers intended to destroy the aircraft over Paris. The GIGN assault that followed rescued every remaining hostage; all four hijackers were killed and multiple passengers and officers were wounded.
+Four armed men seized Air France Flight 8969 in Algiers on 24 December 1994. They killed three hostages before the aircraft was allowed to leave for France.
+
+The aircraft reached Marseille on 26 December. Negotiations continued on the ground before the GIGN intervened that evening. The remaining hostages survived; all four hijackers were killed.
 
 ## The difference between an objective and an outcome
 
@@ -50,4 +62,4 @@ The available television archive brings another complication. Images show what a
 
 The strongest version of this story would preserve those distinct layers without weakening the urgency of the event. Readers can understand a dangerous situation without being given invented dialogue. They can also recognize an operational success while asking what is actually documented about the threat it interrupted.
 
-The operation became a template for aircraft intervention: isolate the plane, exhaust the attackers, rehearse the cabin, strike from several doors at once. Its fame in security circles contrasts with how little the wider public remembers the crisis that helped shape airport counterterrorism in Europe.
+The French gendarmerie’s retrospective describes how negotiation, observation and rehearsal informed the operation. It is an account by the organization that carried out the rescue, and should be read alongside independent reporting when assessing the wider consequences.

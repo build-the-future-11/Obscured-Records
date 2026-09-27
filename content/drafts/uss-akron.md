@@ -1,8 +1,8 @@
 ---
 {
   "slug": "uss-akron",
-  "title": "The Airship Disaster Before the Hindenburg",
-  "dek": "The USS Akron crashed into the Atlantic in 1933, killing 73 people and ending the idea that giant rigid airships could scout safely for fleets.",
+  "title": "USS Akron: The 1933 Airship Loss and the Rescue at Sea",
+  "dek": "Seventy-three people died when the Navy airship crashed off New Jersey. The rigid-airship program continued with USS Macon.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "airships",
     "navy"
   ],
-  "description": "The USS Akron crashed into the Atlantic in 1933, killing 73 people and ending the idea that giant rigid airships could scout safely for fleets.",
-  "socialPreview": "The USS Akron crashed into the Atlantic in 1933, killing 73 people and ending the idea that giant rigid airships could scout safely for fleets.",
+  "description": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
+  "socialPreview": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -22,6 +22,13 @@
       "status": "inherited-unverified",
       "checkedAt": "2026-09-27",
       "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+    },
+    {
+      "title": "Naval History and Heritage Command — Akron and Macon",
+      "url": "https://www.history.navy.mil/content/history/nhhc/news-and-events/news/2021/nhm-062221.html",
+      "status": "located",
+      "checkedAt": "2026-09-27",
+      "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
     }
   ],
   "reviewChecklist": [
@@ -30,9 +37,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 The U.S. Navy airship Akron entered severe weather off New Jersey, descended uncontrollably and struck the Atlantic. Seventy-three of the 76 people aboard died.
 
@@ -50,4 +62,4 @@ Akron also invites comparison with the Hindenburg because one event is much more
 
 The practical question running through the record is what a system assumes about survivability after failure. An airship is designed to fly, but its safety case also has to consider the conditions people may face when flight ends unexpectedly. That second environment can govern the outcome. A careful account follows the transition from one to the other without allowing the spectacular destruction of the vehicle to stand in for the entire human event.
 
-Akron is overshadowed by the Hindenburg’s filmed fire four years later. But its quieter disaster closed a different technological branch: the dream of using enormous flying aircraft carriers as routine naval infrastructure.
+Akron’s loss did not immediately end the Navy’s rigid-airship program: Macon entered service later in 1933. The Navy’s history identifies Macon’s subsequent loss as the end of those operations. The accident and the program’s end should not be collapsed into one event.

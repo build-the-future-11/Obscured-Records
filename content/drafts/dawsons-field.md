@@ -1,8 +1,8 @@
 ---
 {
   "slug": "dawsons-field",
-  "title": "When Four Airliners Became Bargaining Chips in the Jordanian Desert",
-  "dek": "The Dawson’s Field hijackings did more than dominate a week of television. They accelerated the international legal architecture of aviation security.",
+  "title": "The Dawson’s Field Hijackings and the International Response",
+  "dek": "In September 1970, a series of hijackings brought three passenger aircraft to an airstrip in Jordan.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "aviation",
     "diplomacy"
   ],
-  "description": "The Dawson’s Field hijackings did more than dominate a week of television. They accelerated the international legal architecture of aviation security.",
-  "socialPreview": "The Dawson’s Field hijackings did more than dominate a week of television. They accelerated the international legal architecture of aviation security.",
+  "description": "The destruction of evacuated airliners became a highly visible part of a larger hostage crisis.",
+  "socialPreview": "The destruction of evacuated airliners became a highly visible part of a larger hostage crisis.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -22,6 +22,13 @@
       "status": "inherited-unverified",
       "checkedAt": "2026-09-27",
       "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+    },
+    {
+      "title": "U.S. government situation report, 9 September 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve01/d52",
+      "status": "located",
+      "checkedAt": "2026-09-27",
+      "supports": "The BOAC aircraft joined two aircraft already held at the Jordanian airfield on 9 September; this does not verify every hostage claim."
     }
   ],
   "reviewChecklist": [
@@ -30,11 +37,16 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
 
-Members of the Popular Front for the Liberation of Palestine attempted to seize five airliners on the same day. Three aircraft ultimately reached Dawson’s Field, a former Royal Air Force strip in Jordan; another was destroyed in Cairo after evacuation.
+
+In September 1970, the Popular Front for the Liberation of Palestine carried out a series of aircraft hijackings. Three aircraft were taken to Dawson’s Field in Jordan, while a Pan Am aircraft was taken to Cairo and destroyed after evacuation.
 
 Passengers were separated, bargaining stretched across borders, and television cameras recorded empty aircraft being blown apart in the desert. The crisis fed directly into Jordan’s confrontation with Palestinian organizations and into a new international urgency around unlawful seizure of aircraft.
 
@@ -50,4 +62,4 @@ Nor should the passage of an international instrument be treated as proof that t
 
 The visual record deserves similar discipline. Images of aircraft in a remote landscape are powerful because they detach familiar vehicles from ordinary travel. But the image must remain connected to its date, its sequence and the status of the people who had been aboard. Otherwise the spectacle consumes the history it is supposed to help preserve.
 
-Hijacking is often remembered through individual flights. Dawson’s Field matters as a system event: coordinated attacks turned civil aviation into leverage and forced states to treat security as an international legal problem, not merely an airline procedure.
+The episode belongs to both aviation history and the political conflict in Jordan. ICAO’s historical account helps trace the international legal response; it does not by itself establish every claim about the hostages or the subsequent fighting.

@@ -1,8 +1,8 @@
 ---
 {
   "slug": "vela-incident",
-  "title": "The Flash in the South Atlantic No Country Claimed",
-  "dek": "In 1979, a U.S. satellite detected the signature of a possible nuclear test. The Vela Incident remains an unresolved record of intelligence and politics.",
+  "title": "The Vela Incident: A Double Flash and a Disputed Explanation",
+  "dek": "A U.S. satellite recorded a signal in September 1979 that prompted competing nuclear and non-nuclear explanations.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "nuclear",
     "intelligence"
   ],
-  "description": "In 1979, a U.S. satellite detected the signature of a possible nuclear test. The Vela Incident remains an unresolved record of intelligence and politics.",
-  "socialPreview": "In 1979, a U.S. satellite detected the signature of a possible nuclear test. The Vela Incident remains an unresolved record of intelligence and politics.",
+  "description": "The observation is documented; its cause and any state responsibility remain disputed.",
+  "socialPreview": "The observation is documented; its cause and any state responsibility remain disputed.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,13 +30,18 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
 
+
 Vela satellite 6911 detected a characteristic double flash over the South Atlantic, a pattern associated with an atmospheric nuclear explosion.
 
-Analysts considered a covert test the most likely explanation, with suspicion focusing on South Africa and Israel. An official U.S. scientific panel argued the signal might have had a non-nuclear cause. Other intelligence and environmental traces remained contested.
+Some analysts interpreted the signal as a possible nuclear test. A U.S. scientific panel considered a non-nuclear explanation. Attribution to a particular country remains disputed and should not be presented as an established finding.
 
 ## An unresolved signal is not an empty page
 
@@ -52,4 +57,4 @@ The writer's task is to describe the available evidence and the disagreement wit
 
 Uncertainty can be the subject of a finished article. It should not be disguised as suspense waiting for a sensational reveal. The most durable version of this record may be a careful map of what remains known, disputed and inaccessible. Such a map is a contribution precisely because it prevents confidence from outrunning the archive.
 
-The Vela Incident is a study in evidence under political pressure. Sensors can record an event more clearly than institutions are willing—or able—to name it, leaving historians to distinguish uncertainty from convenient ambiguity.
+The record requires separating what a sensor measured from the explanations proposed for it. Conflicting assessments and incomplete access to evidence leave uncertainty; they do not, by themselves, prove either a test or a cover-up.

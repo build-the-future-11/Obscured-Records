@@ -1,8 +1,8 @@
 ---
 {
   "slug": "satyam-confession",
-  "title": "The Confession That Erased India’s Model Company",
-  "dek": "Satyam’s chairman admitted that years of profits and cash had been invented—after a failed deal threatened to expose the gap.",
+  "title": "Satyam’s Accounting Confession and the Collapse of Its Reported Cash",
+  "dek": "In January 2009, chairman B. Ramalinga Raju admitted overstating revenue, profits and cash balances.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "india",
     "accounting"
   ],
-  "description": "Satyam’s chairman admitted that years of profits and cash had been invented—after a failed deal threatened to expose the gap.",
-  "socialPreview": "Satyam’s chairman admitted that years of profits and cash had been invented—after a failed deal threatened to expose the gap.",
+  "description": "A letter to the board forced investors to reconsider the accounts of a major Indian technology company.",
+  "socialPreview": "A letter to the board forced investors to reconsider the accounts of a major Indian technology company.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 For years, Satyam Computer Services appeared to embody India’s technology ascent. Then chairman B. Ramalinga Raju wrote to the board and confessed that revenue, margins and cash balances had been overstated.
 
@@ -50,4 +55,4 @@ There is also a difference between explaining a deception and explaining why it 
 
 For the reader, a useful explanation follows one reported balance backward: what statement carried it, what supporting record purported to justify it and what independent evidence was available. That path is more informative than treating a large number as self-explanatory. The scandal matters not because cash is mysterious, but because an apparently simple asset can become a story people accept instead of a fact they verify.
 
-Satyam demonstrates why fraud can become self-sustaining. Each false period makes the next correction more painful, until preserving the appearance of success becomes the company’s real business model.
+Satyam shows how false balances can accumulate across reporting periods. The confession is a starting point for examining the accounts and the response by directors, auditors and regulators; it is not a substitute for those separate records.

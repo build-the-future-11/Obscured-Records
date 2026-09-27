@@ -1,8 +1,8 @@
 ---
 {
   "slug": "1mdb-global-trail",
-  "title": "How a Sovereign Fund Became a Global Laundering Machine",
-  "dek": "Money raised for Malaysian development moved through shell companies, banks, luxury property, art and Hollywood.",
+  "title": "Tracing the Diversion of Money from Malaysia’s 1MDB Fund",
+  "dek": "U.S. prosecutors described funds moving through accounts and shell companies into property, art and entertainment investments.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "malaysia",
     "money laundering"
   ],
-  "description": "Money raised for Malaysian development moved through shell companies, banks, luxury property, art and Hollywood.",
-  "socialPreview": "Money raised for Malaysian development moved through shell companies, banks, luxury property, art and Hollywood.",
+  "description": "A cross-border financial trail linked a development fund to assets far from Malaysia.",
+  "socialPreview": "A cross-border financial trail linked a development fund to assets far from Malaysia.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 1Malaysia Development Berhad was created to pursue national development. According to prosecutors, billions of dollars raised through bonds were instead diverted through a network of accounts and shell companies.
 
@@ -50,4 +55,4 @@ The article should also distinguish the public institution whose resources were 
 
 A useful archive would preserve a dated map of the allegations alongside later outcomes: what property was sought, what was recovered and what remained contested at each stage. It would not treat the most dramatic asset as proof of the entire case. The financial trail is a sequence of claims about movement and control. Its credibility depends on making those claims inspectable, one connection at a time.
 
-1MDB is a map of modern financial opacity. Sovereignty gave the fund credibility, global banking gave the money speed and jurisdictional borders ensured that no single gatekeeper saw the entire record.
+Following the money requires connecting transactions across jurisdictions and distinguishing allegations from judgments and settlements. A forfeiture complaint sets out the government’s case; it should not be described as a verdict against every person it names.

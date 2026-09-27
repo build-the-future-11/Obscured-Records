@@ -16,6 +16,7 @@ export type FeatureRecord = {
   updated: string;
   location: string;
   standfirst: string;
+  evidenceNote: string;
   timeline: Array<{ date: string; event: string }>;
   sections: FeatureSection[];
   sources: FeatureSource[];
@@ -24,14 +25,15 @@ export type FeatureRecord = {
 export const features: Record<string, FeatureRecord> = {
   "fedex-flight-705": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Memphis, Tennessee",
-    standfirst: "The violence aboard Flight 705 is remembered as an impossible cockpit fight. The record also exposes a security system built on employee trust, a plan designed around insurance, and an aircraft pushed far beyond its operating limits.",
+    standfirst: "The attack on Flight 705 left three crew members severely injured. The court record describes their resistance, the emergency return and the prosecution’s account of Calloway’s plan.",
+    evidenceNote: "The appellate opinion concerns the convictions and legal issues before the court. The FBI page is a catalogue of files; its presence does not mean every file has been reviewed. The security analysis here is interpretation.",
     timeline: [
       { date: "7 Apr 1994 · 14:50", event: "FedEx Flight 705 departs Memphis for San Jose with three operating crew and Auburn Calloway in the jump seat." },
       { date: "Minutes after takeoff", event: "Calloway attacks the crew. First Officer James Tucker keeps control while the aircraft enters extreme banks and dives." },
       { date: "About 30 minutes later", event: "The damaged DC-10 returns to Memphis. Police and medical teams meet the aircraft." },
-      { date: "1995–1997", event: "Calloway is convicted and his life sentence is upheld by the Sixth Circuit Court of Appeals." },
+      { date: "1995–1997", event: "Calloway is convicted. The later appeal addresses the relationship between the charged offences as well as the sentence." },
     ],
     sections: [
       {
@@ -49,7 +51,7 @@ export const features: Record<string, FeatureRecord> = {
         ],
       },
       {
-        heading: "What the case changed",
+        heading: "The question of employee access",
         paragraphs: [
           "The case sits at the boundary between aviation security and workplace access. Screening systems are often designed around strangers carrying prohibited items. Flight 705 showed how credentials, familiarity and organizational trust can allow a determined insider to move differently through the same environment.",
           "The aircraft itself returned to service, but the three crew members lived with lasting injuries. Their survival should not erase the institutional lesson: security is not only a perimeter. It is also the set of assumptions an organization makes about people already inside it.",
@@ -64,9 +66,10 @@ export const features: Record<string, FeatureRecord> = {
   },
   "wirecard-missing-billions": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Aschheim, Germany",
-    standfirst: "Wirecard did not collapse because one number went missing. It collapsed after warnings, unusual margins and opaque third-party business repeatedly failed to trigger an effective response from auditors, supervisors and political institutions.",
+    standfirst: "Wirecard’s collapse exposed a gap between cash reported in company accounts and evidence that auditors could obtain. Later inquiries examined how supervision failed to resolve warning signs.",
+    evidenceNote: "ESMA’s review assesses financial-reporting supervision by BaFin and FREP. It does not decide individual criminal liability or explain every part of Wirecard’s business.",
     timeline: [
       { date: "2015", event: "Public reporting begins raising sustained questions about Wirecard's accounting and third-party acquiring business." },
       { date: "2019", event: "German authorities impose a temporary ban on short selling Wirecard shares while scrutiny of critics intensifies." },
@@ -104,13 +107,14 @@ export const features: Record<string, FeatureRecord> = {
   },
   "goiania-blue-powder": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Goiânia, Brazil",
-    standfirst: "A stolen radiotherapy source passed through homes and a scrapyard because the danger was invisible and the material inside appeared beautiful. The accident became a case study in what happens when hazardous equipment outlives the institution responsible for it.",
+    standfirst: "An abandoned radiotherapy source entered the scrap trade in Goiânia in 1987. Radioactive material moved through homes before health authorities recognized the emergency.",
+    evidenceNote: "The IAEA report distinguishes the movement of the source, recognition of the radiation hazard and the subsequent response. Its recorded deaths, contamination measurements and screening totals describe different populations.",
     timeline: [
       { date: "13 Sep 1987", event: "Two men remove part of an abandoned radiotherapy unit from a former clinic." },
-      { date: "Mid-September", event: "The capsule is opened at a scrapyard. Glowing caesium chloride fragments are shared with relatives and neighbours." },
-      { date: "28 Sep 1987", event: "The material is taken to public-health authorities and the radiological emergency is recognized." },
+      { date: "Mid-September", event: "After dismantling and damage to the capsule, the source reaches a scrapyard. Fragments are subsequently shared with relatives and neighbours." },
+      { date: "28–29 Sep 1987", event: "Material is taken to public-health authorities; the radiation hazard is then identified." },
       { date: "Following months", event: "Large-scale monitoring, decontamination and waste removal continue across Goiânia." },
     ],
     sections: [
@@ -118,7 +122,7 @@ export const features: Record<string, FeatureRecord> = {
         heading: "An orphaned source",
         paragraphs: [
           "The radiotherapy institute had moved, but a teletherapy unit containing caesium-137 remained behind. The building was partly demolished and insufficiently secured. When scavengers entered and removed the rotating assembly, they were not breaching a working nuclear facility. They were taking metal from a place that looked abandoned.",
-          "The source capsule eventually reached a scrapyard. When it was opened, the caesium chloride inside produced a blue glow in the dark. Pieces were handled, carried home and shown to other people. Because the material could be divided and dissolved, contamination moved through ordinary contact long before anyone recognized a radiological pattern.",
+          "The source capsule was damaged during dismantling and eventually reached a scrapyard. The caesium chloride inside produced a blue glow in the dark. Pieces were handled, carried home and shown to other people. Because the material could be divided and dissolved, contamination moved through ordinary contact long before anyone recognized a radiological pattern.",
         ],
       },
       {
@@ -131,7 +135,7 @@ export const features: Record<string, FeatureRecord> = {
       {
         heading: "The lesson of equipment left behind",
         paragraphs: [
-          "The International Atomic Energy Agency's account emphasized failures of security, regulatory control, communication and preparedness. A dangerous source had effectively become ownerless while remaining physically intact. The accident changed how governments thought about sealed sources used in medicine and industry after facilities close or equipment is discarded.",
+          "The International Atomic Energy Agency’s account examines source security, regulatory control, communication and preparedness. A source can be outside effective control even when its ownership has not legally disappeared. The practical question is who secures it and who acts when a facility closes.",
           "Goiânia remains a warning against treating disposal as an administrative afterthought. A device can stop producing medical value without stopping its radiation. Institutions can close, ownership can become disputed and records can vanish, but the physical hazard keeps its own schedule.",
         ],
       },
@@ -139,14 +143,15 @@ export const features: Record<string, FeatureRecord> = {
     sources: [
       { label: "The Radiological Accident in Goiânia", publisher: "International Atomic Energy Agency", url: "https://www.iaea.org/publications/3684/the-radiological-accident-in-goiania", kind: "Official report" },
       { label: "Radioactive source involved in the Goiânia accident", publisher: "IAEA Imagebank / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:02010019_radioactive_cesium_source_Goi%C3%A2nia_accident.jpg", kind: "Public record" },
-      { label: "Medical handling of the accident", publisher: "IAEA", url: "https://www.iaea.org/publications/3684/the-radiological-accident-in-goiania", kind: "Research" },
+      { label: "Radiological Accident in Goiânia — full report", publisher: "International Atomic Energy Agency", url: "https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf", kind: "Official report" },
     ],
   },
   "lake-nyos": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Northwest Cameroon",
-    standfirst: "Lake Nyos killed without fire, lava or visible destruction. Carbon dioxide stored in deep water escaped into the night and followed the landscape downhill, turning a geological process into a mass-casualty event.",
+    standfirst: "Gas dissolved in Lake Nyos’s deep water escaped on 21 August 1986 and reached nearby valleys. The investigation eventually informed a system for releasing the gas gradually.",
+    evidenceNote: "The reports identify carbon dioxide as the lethal agent. The precise initial trigger remains uncertain; explanations of the gas-release process should not be presented as proof of one trigger.",
     timeline: [
       { date: "21 Aug 1986", event: "A catastrophic release of carbon dioxide begins at Lake Nyos." },
       { date: "That night", event: "Dense gas moves through nearby valleys, asphyxiating residents and livestock in low-lying communities." },
@@ -184,9 +189,10 @@ export const features: Record<string, FeatureRecord> = {
   },
   "therac-25": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "United States and Canada",
-    standfirst: "The Therac-25 accidents are often reduced to a software bug. The fuller record is about a safety architecture that placed too much trust in code, weak incident reporting, and a manufacturer that initially treated each injury as an isolated anomaly.",
+    standfirst: "The Therac-25 accidents exposed the consequences of unsafe machine states, unclear feedback and incomplete incident reporting. A detailed engineering study brought the scattered records together.",
+    evidenceNote: "Leveson and Turner reconstructed events from available records and acknowledged gaps in the evidence. Different incidents involved different faults; the rapid-editing sequence does not explain the entire series.",
     timeline: [
       { date: "1982", event: "The Therac-25 enters clinical use as a computer-controlled radiation therapy system." },
       { date: "1985–1987", event: "Six known accidents expose patients to massive radiation overdoses." },
@@ -198,7 +204,7 @@ export const features: Record<string, FeatureRecord> = {
         heading: "Software inherited authority",
         paragraphs: [
           "Earlier machines in the Therac family combined computer control with independent hardware interlocks. In the Therac-25, more safety responsibility moved into software. That choice was not inherently reckless, but it changed the consequences of software failure: code was no longer merely assisting an operator; it was helping determine whether a hazardous beam configuration could exist.",
-          "Operators worked through a text interface and often entered treatment data quickly. Particular sequences of rapid editing could leave parts of the system in inconsistent states. The machine could display cryptic malfunction messages while delivering far more radiation than intended, and the interface did not give operators a clear account of what had physically happened.",
+          "Operators worked through a text interface and often entered treatment data quickly. Particular sequences of rapid editing could leave parts of the system in inconsistent states. That sequence is one part of the accident history, not an explanation for every incident. Malfunction messages did not give operators a clear account of the physical state of the machine.",
         ],
       },
       {
@@ -217,16 +223,17 @@ export const features: Record<string, FeatureRecord> = {
       },
     ],
     sources: [
-      { label: "An Investigation of the Therac-25 Accidents", publisher: "IEEE Computer", url: "https://publications.computer.org/computer-magazine/from-the-archives-computers-legacy/", kind: "Research" },
+      { label: "An Investigation of the Therac-25 Accidents", publisher: "IEEE Computer", url: "https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html", kind: "Research" },
       { label: "The Therac-25: 30 Years Later", publisher: "IEEE Computer Society", url: "https://publications.computer.org/computer-magazine/2017/11/17/therac-25-30-years-later/", kind: "Research" },
-      { label: "Therac-25 machine photograph", publisher: "Wikimedia Commons / public domain", url: "https://commons.wikimedia.org/wiki/File:Therac_25.png", kind: "Public record" },
+      { label: "Therac-25 machine photograph", publisher: "Wikimedia Commons — reuse provenance unresolved", url: "https://commons.wikimedia.org/wiki/File:Therac_25.png", kind: "Public record" },
     ],
   },
   "aral-sea": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Kazakhstan and Uzbekistan",
-    standfirst: "The Aral Sea did not simply dry up. Rivers were redirected to serve an agricultural system, costs were displaced onto fishing towns and public health, and later recovery divided the former sea into sharply different futures.",
+    standfirst: "River diversions reduced inflow to the Aral Sea. Its retreat damaged fishing communities, while the North Aral’s partial recovery showed how later water-management decisions could change one part of the basin.",
+    evidenceNote: "NASA’s imagery documents changes in surface water. Broader claims about health, livelihoods and policy require the accompanying reports; a satellite image cannot establish them on its own.",
     timeline: [
       { date: "1960s", event: "Large-scale irrigation diversions sharply reduce inflow from the Amu Darya and Syr Darya." },
       { date: "1980s", event: "The retreating shoreline becomes visible in satellite records and the fishing economy collapses." },
@@ -264,9 +271,10 @@ export const features: Record<string, FeatureRecord> = {
   },
   "minamata-food-chain": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Minamata, Japan",
-    standfirst: "Minamata disease was recognized through sick families and animals before institutions accepted the industrial pathway. The delay between evidence and action became part of the harm.",
+    standfirst: "Factory wastewater carried methylmercury into Minamata’s food supply. The history follows the identification of illness, delayed protective action and the demands of affected families.",
+    evidenceNote: "Official Japanese accounts document the disease and the policy response. They are institutional retrospectives, and should be read alongside patients’ testimony and the relevant court records when assessing contested decisions.",
     timeline: [
       { date: "1956", event: "Minamata disease is officially identified after patients with severe neurological symptoms are reported." },
       { date: "1959", event: "Researchers present strong evidence connecting organic mercury and factory effluent to the disease." },
@@ -304,9 +312,10 @@ export const features: Record<string, FeatureRecord> = {
   },
   "move-bombing": {
     label: "Feature",
-    updated: "19 Sep 2026",
+    updated: "27 Sep 2026",
     location: "Philadelphia, Pennsylvania",
-    standfirst: "On 13 May 1985, a police operation ended with an explosive dropped on a row house and a fire that destroyed a neighbourhood block. The official investigations are also a record of how institutions described their own decisions afterward.",
+    standfirst: "The 1985 police bombing of the MOVE house caused a fire that spread through a Philadelphia block. The investigations examine decisions during the operation and later failures in the handling of victims’ remains.",
+    evidenceNote: "The Temple University finding aid describes an archival collection; it is not the full commission report. The city’s later report concerns victims’ remains and has a different scope from the investigation of the bombing.",
     timeline: [
       { date: "13 May 1985 · morning", event: "Police begin an operation at the MOVE house on Osage Avenue." },
       { date: "13 May · evening", event: "A police helicopter drops an explosive device on the roof bunker." },
@@ -337,9 +346,8 @@ export const features: Record<string, FeatureRecord> = {
       },
     ],
     sources: [
-      { label: "Philadelphia Special Investigation Commission collection guide", publisher: "Temple University Special Collections", url: "https://findingaids.library.upenn.edu/records/TUSCRC_SCRC605", kind: "Primary document" },
+      { label: "Philadelphia Special Investigation Commission collection guide", publisher: "Temple University Special Collections", url: "https://findingaids.library.upenn.edu/records/TUSCRC_SCRC605", kind: "Public record" },
       { label: "Independent report on the handling of MOVE victims' remains", publisher: "City of Philadelphia", url: "https://www.phila.gov/documents/independent-report-on-the-history-and-handling-of-move-victims-remains/", kind: "Official report" },
-      { label: "Philadelphia Special Investigation Commission archive", publisher: "Temple University Special Collections", url: "https://findingaids.library.upenn.edu/records/TUSCRC_SCRC605", kind: "Official report" },
     ],
   },
 };

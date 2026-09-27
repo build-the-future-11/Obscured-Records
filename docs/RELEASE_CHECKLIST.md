@@ -12,7 +12,7 @@ The user's instruction to execute this checklist authorized implementation and t
 - [x] Configure the actual site origin and release revision through the provider.
 - [x] Build and push the exact candidate to the private Sites source repository.
 - [x] Deploy that candidate and retain the provider's successful deployment receipt.
-- [ ] Obtain explicit permission before a public GitHub push exposes 42 drafts and internal review documents. Automatic approval review rejected this disclosure.
+- [x] Obtain explicit permission for public GitHub disclosure of the 42 drafts and internal review documents. The user authorized the complete push after the earlier automatic rejection.
 - [ ] Run hosted GitHub CI once an approved source-publication path is available. Local and Sites build-workflow checks passed; these are not a hosted CI receipt.
 - [ ] Name and obtain acceptance from the human release/incident owner.
 

@@ -1,8 +1,8 @@
 ---
 {
   "slug": "banqiao-dam-failure",
-  "title": "The Dam Failure Hidden Behind a Typhoon",
-  "dek": "When Typhoon Nina struck China in 1975, the collapse of Banqiao and dozens of other dams multiplied a weather disaster into a cascading catastrophe.",
+  "title": "Banqiao: Extreme Rainfall and Cascading Dam Failures",
+  "dek": "Typhoon Nina’s rainfall in 1975 overwhelmed dams in Henan, turning a severe storm into a much larger flood disaster.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "china",
     "infrastructure"
   ],
-  "description": "When Typhoon Nina struck China in 1975, the collapse of Banqiao and dozens of other dams multiplied a weather disaster into a cascading catastrophe.",
-  "socialPreview": "When Typhoon Nina struck China in 1975, the collapse of Banqiao and dozens of other dams multiplied a weather disaster into a cascading catastrophe.",
+  "description": "The immediate flooding and the deaths attributed to its aftermath must be counted separately.",
+  "socialPreview": "The immediate flooding and the deaths attributed to its aftermath must be counted separately.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Typhoon Nina stalled over Henan province and delivered extraordinary rainfall. The Banqiao Dam failed, releasing a wall of water; downstream dams and flood controls then failed in sequence.
 
@@ -50,4 +55,4 @@ A system perspective also changes the meaning of protection. A structure can be 
 
 The publication should resist two easy stories: nature made the loss unavoidable, or a single decision explains everything. Both can conceal the chain of conditions between an extreme event and the harm experienced downstream. A careful chronology is less dramatic but more useful. It shows what was known at each stage, which options existed and which parts of the account remain uncertain. The scale of the disaster demands that precision rather than excusing its absence.
 
-Banqiao is a systems story disguised as a natural disaster. Each protective structure changed the load on the next. When assumptions broke, the network transmitted failure faster than authorities could transmit information.
+A dam can affect the water reaching the next structure downstream. The disaster raises questions about design assumptions, warnings and emergency response. Death estimates vary by source and by whether they include subsequent disease and food shortages.

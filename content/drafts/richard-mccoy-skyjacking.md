@@ -1,8 +1,8 @@
 ---
 {
   "slug": "richard-mccoy-skyjacking",
-  "title": "The Copycat Who Solved the D.B. Cooper Method",
-  "dek": "Five months after Cooper vanished, Richard McCoy used the same rear stairway, the same ransom logic—and left enough evidence to show how the trick worked.",
+  "title": "Richard McCoy’s Parachute Hijacking and the Evidence He Left",
+  "dek": "In April 1972, a ransom hijacking ended with a parachute escape and an arrest two days later.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "aviation",
     "fbi"
   ],
-  "description": "Five months after Cooper vanished, Richard McCoy used the same rear stairway, the same ransom logic—and left enough evidence to show how the trick worked.",
-  "socialPreview": "Five months after Cooper vanished, Richard McCoy used the same rear stairway, the same ransom logic—and left enough evidence to show how the trick worked.",
+  "description": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
+  "socialPreview": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Richard Floyd McCoy boarded United Airlines Flight 855 carrying a fake grenade and an empty pistol. He demanded $500,000 and parachutes, then escaped through the Boeing 727’s rear stairs over Utah.
 
@@ -50,6 +55,6 @@ This distinction does not make a public history worthless. It prevents a polishe
 
 The story's attraction is partly mechanical: money, an aircraft, a parachute and an escape plan. But method should not overwhelm consequence. People were threatened, an investigation followed and claims about identity require a standard of proof. The archive is strongest when it makes room for uncertainty without turning that uncertainty into permission for an endlessly expanding legend.
 
-McCoy’s case is the overlooked control experiment beside an American legend. It shows that the audacious mechanics of Cooper’s escape were repeatable—and that the enduring mystery may owe as much to missing evidence as to unmatched criminal genius.
+McCoy’s case shows how physical evidence and witness accounts can turn an airborne escape into an identifiable criminal case. Similarities with the Cooper hijacking are a comparison, not proof that the two men were the same person.
 
 A comparison can remain interesting without becoming a conclusion.

@@ -1,8 +1,8 @@
 ---
 {
   "slug": "parmalat-fictional-cash",
-  "title": "The Dairy Empire With a Fictional Bank Account",
-  "dek": "Parmalat hid debt through shell companies and false documents until a €3.95 billion cash balance was revealed as fiction.",
+  "title": "Parmalat’s Missing Cash and the False Bank Confirmation",
+  "dek": "A purported multibillion-euro bank balance became central to the Italian dairy group’s collapse in 2003.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "italy",
     "fraud"
   ],
-  "description": "Parmalat hid debt through shell companies and false documents until a €3.95 billion cash balance was revealed as fiction.",
-  "socialPreview": "Parmalat hid debt through shell companies and false documents until a €3.95 billion cash balance was revealed as fiction.",
+  "description": "The central question was straightforward: did the reported money exist?",
+  "socialPreview": "The central question was straightforward: did the reported money exist?",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Parmalat sold milk in supermarkets around the world while presenting investors with a balance sheet that implied enormous liquidity. A purported Bank of America account for a Cayman Islands subsidiary appeared to hold billions of euros.
 
@@ -50,4 +55,4 @@ The international structure also needs concrete explanation. Saying that money w
 
 A company's geographic complexity may make verification harder, but it does not make verification conceptually optional. The article should keep returning to that ordinary question: where was the money, and what evidence established its presence? The spectacular scale of a missing balance can distract from the simplicity of what was supposed to be checked. A record that follows the confirmation process can make the failure legible without pretending that every corporate structure involved was inherently illegitimate.
 
-Parmalat matters because the fraud was not concealed by an exotic product. It was concealed by paperwork, fragmented responsibility and the comforting ordinariness of a household brand.
+A familiar brand can coexist with accounts that are difficult to verify. Parmalat’s case makes the origin and authentication of financial documents central to the story, alongside the responsibilities of the institutions that relied on them.

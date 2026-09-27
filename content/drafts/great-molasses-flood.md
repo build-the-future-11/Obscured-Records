@@ -1,8 +1,8 @@
 ---
 {
   "slug": "great-molasses-flood",
-  "title": "When 2.2 Million Gallons of Molasses Moved Like a Wave",
-  "dek": "Boston’s 1919 industrial disaster sounds absurd until the physics, weak regulation and crowded neighbourhood come into view.",
+  "title": "Boston’s Molasses Flood: An Industrial Tank Failure in a Crowded District",
+  "dek": "A storage tank ruptured in the North End on 15 January 1919, sending molasses and debris through nearby streets.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "boston",
     "industry"
   ],
-  "description": "Boston’s 1919 industrial disaster sounds absurd until the physics, weak regulation and crowded neighbourhood come into view.",
-  "socialPreview": "Boston’s 1919 industrial disaster sounds absurd until the physics, weak regulation and crowded neighbourhood come into view.",
+  "description": "Twenty-one people died. The unusual material can distract from the industrial failure that released it.",
+  "socialPreview": "Twenty-one people died. The unusual material can distract from the industrial failure that released it.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 A steel tank holding roughly 2.2 million gallons of molasses ruptured in Boston’s North End. The contents surged through nearby streets, destroying structures, carrying debris and trapping people in a fluid that became harder to escape as it cooled.
 
@@ -50,4 +55,4 @@ NOAA's spill history helps locate the event within a wider class of releases. It
 
 The city setting matters because an industrial failure entered ordinary routes of movement. A street is not simply empty space available to receive a spill. It contains workers, transport and people with no reason to know the state of the storage nearby. The account should restore those stakes to an event often remembered as a curiosity. An unexpected material can make a story memorable; it should not make the consequences seem less serious.
 
-The flood survives as strange trivia, which can obscure its importance. Litigation that followed helped establish expectations that industrial design needed qualified engineering, testing and accountable evidence—not confidence alone.
+The disaster is best understood through the tank, its construction and the damage around it. Claims that the case directly created a particular engineering rule need a documented legal or regulatory link, not simply the fact that litigation followed.

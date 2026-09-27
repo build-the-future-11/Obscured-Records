@@ -1,8 +1,8 @@
 ---
 {
   "slug": "yodogo-hijacking",
-  "title": "The Japanese Hijackers Who Asked to Fly to North Korea",
-  "dek": "Japan Airlines Flight 351 began with samurai swords and ended with nine radicals building new lives in Pyongyang.",
+  "title": "The Yodogo Hijacking: A Flight Redirected to North Korea",
+  "dek": "In March 1970, Japanese hijackers seized a domestic flight and demanded passage to North Korea.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "japan",
     "aviation"
   ],
-  "description": "Japan Airlines Flight 351 began with samurai swords and ended with nine radicals building new lives in Pyongyang.",
-  "socialPreview": "Japan Airlines Flight 351 began with samurai swords and ended with nine radicals building new lives in Pyongyang.",
+  "description": "The route from Japan to North Korea became a negotiation involving passengers, crew and several governments.",
+  "socialPreview": "The route from Japan to North Korea became a negotiation involving passengers, crew and several governments.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Nine members of the Japanese Red Army Faction seized a Japan Airlines Boeing 727 on a domestic flight, armed with swords and a homemade bomb. They demanded to be flown to North Korea—a destination the crew had neither maps nor experience to reach.
 
@@ -50,4 +55,4 @@ Borders complicate the record as well as the response. Material may be preserved
 
 For readers, the useful chronology has more than one endpoint. It separates the end of immediate danger to passengers from the subsequent legal and diplomatic history. Doing so avoids suggesting that landing the aircraft settled everything that had begun aboard it. The flight can end while the questions created by it remain open.
 
-The episode is more than an eccentric hijacking. It captures the point where domestic student radicalism crossed borders and hardened into an international network, leaving families and governments to negotiate with the consequences for generations.
+The case connects the security of a domestic flight with disputes that crossed national borders. Its later history requires separate attention to the people involved and to the evidence behind subsequent allegations.

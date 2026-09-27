@@ -16,12 +16,12 @@ All 28 existing reader records require human approval for this launch. This queu
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0420: The Four Days Air France 8969 Never Reached Paris
+## 0420: Air France 8969: From the Algiers Hijacking to the Marseille Rescue
 
 - Slug: `air-france-8969`
 - Existing form: brief
 - Event date to verify: 24–26 December 1994
-- Primary review starting point: [French National Audiovisual Institute archive](https://www.ina.fr/ina-eclaire-actu/prise-otage-alger-1994-marignane)
+- Primary review starting point: [French National Gendarmerie retrospective](https://www.gendarmerie.interieur.gouv.fr/gendinfo/histoire/26-decembre-1994-l-assaut-spectaculaire-du-gign-a-marignane)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.
@@ -30,7 +30,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0419: A Hijacked Boeing 767 Ran Out of Fuel Above the Indian Ocean
+## 0419: Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching
 
 - Slug: `ethiopian-airlines-961`
 - Existing form: brief
@@ -44,7 +44,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0418: When Four Airliners Became Bargaining Chips in the Jordanian Desert
+## 0418: The Dawson’s Field Hijackings and the International Response
 
 - Slug: `dawsons-field`
 - Existing form: brief
@@ -58,7 +58,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0417: The Copycat Who Solved the D.B. Cooper Method
+## 0417: Richard McCoy’s Parachute Hijacking and the Evidence He Left
 
 - Slug: `richard-mccoy-skyjacking`
 - Existing form: brief
@@ -72,7 +72,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0416: The Japanese Hijackers Who Asked to Fly to North Korea
+## 0416: The Yodogo Hijacking: A Flight Redirected to North Korea
 
 - Slug: `yodogo-hijacking`
 - Existing form: brief
@@ -86,7 +86,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0415: The €1.9 Billion That Never Existed
+## 0415: Wirecard and the €1.9 Billion Its Auditors Could Not Verify
 
 - Slug: `wirecard-missing-billions`
 - Existing form: expanded feature
@@ -100,7 +100,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0414: The Confession That Erased India’s Model Company
+## 0414: Satyam’s Accounting Confession and the Collapse of Its Reported Cash
 
 - Slug: `satyam-confession`
 - Existing form: brief
@@ -114,7 +114,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0413: The Dairy Empire With a Fictional Bank Account
+## 0413: Parmalat’s Missing Cash and the False Bank Confirmation
 
 - Slug: `parmalat-fictional-cash`
 - Existing form: brief
@@ -128,7 +128,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0412: The Camera Company That Hid Losses for Two Decades
+## 0412: Olympus: Acquisition Payments and a Long-Running Loss Concealment
 
 - Slug: `olympus-two-decade-coverup`
 - Existing form: brief
@@ -142,7 +142,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0411: Seven Years of Profit Built on Postponed Losses
+## 0411: Toshiba’s Profit Overstatements and Pressure to Meet Targets
 
 - Slug: `toshiba-impossible-targets`
 - Existing form: brief
@@ -156,7 +156,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0410: How a Sovereign Fund Became a Global Laundering Machine
+## 0410: Tracing the Diversion of Money from Malaysia’s 1MDB Fund
 
 - Slug: `1mdb-global-trail`
 - Existing form: brief
@@ -170,7 +170,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0409: The Blue Powder That Poisoned a City
+## 0409: Goiânia: How an Abandoned Medical Source Spread Radiation
 
 - Slug: `goiania-blue-powder`
 - Existing form: expanded feature
@@ -184,7 +184,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0408: The Night a Lake Exhaled
+## 0408: Lake Nyos and the Carbon Dioxide Release That Reached Nearby Villages
 
 - Slug: `lake-nyos`
 - Existing form: expanded feature
@@ -198,7 +198,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0407: The Factory Waste That Entered a Fishing Town’s Food Chain
+## 0407: Minamata: Industrial Mercury in a Community’s Food Supply
 
 - Slug: `minamata-food-chain`
 - Existing form: expanded feature
@@ -212,7 +212,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0406: The Town Sprayed With Dioxin to Keep the Dust Down
+## 0406: Times Beach: Contaminated Road Oil and the Decision to Relocate
 
 - Slug: `times-beach-dioxin`
 - Existing form: brief
@@ -226,7 +226,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0405: When 2.2 Million Gallons of Molasses Moved Like a Wave
+## 0405: Boston’s Molasses Flood: An Industrial Tank Failure in a Crowded District
 
 - Slug: `great-molasses-flood`
 - Existing form: brief
@@ -240,12 +240,12 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0404: The Machine That Told Operators It Could Not Fail
+## 0404: Therac-25: Radiation Overdoses and the Limits of Software Safety
 
 - Slug: `therac-25`
 - Existing form: expanded feature
 - Event date to verify: 1985–1987
-- Primary review starting point: [International Atomic Energy Agency training record](https://gnssn.iaea.org/main/ANNuR/Activity%20Documents%20%20Public/Regional%20Training%20Course%20on%20Authorization%20and%20Inspection%20of%20Radiotherapy%20Facilities%20with%20Linear%20Accelerators/Day%205%20Linear%20Accelerators%20Medical%20Events%20and%20Emergencies.pdf)
+- Primary review starting point: [Leveson and Turner, IEEE Computer (1993), MIT-hosted text](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.
@@ -254,7 +254,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0403: The Sea That Became a Desert
+## 0403: The Aral Sea: River Diversions, Retreat and Partial Recovery
 
 - Slug: `aral-sea`
 - Existing form: expanded feature
@@ -268,7 +268,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0402: The Dam Failure Hidden Behind a Typhoon
+## 0402: Banqiao: Extreme Rainfall and Cascading Dam Failures
 
 - Slug: `banqiao-dam-failure`
 - Existing form: brief
@@ -282,7 +282,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0401: The Officer Who Waited Before Calling It Nuclear War
+## 0401: Stanislav Petrov and the Soviet Missile Warning That Was Wrong
 
 - Slug: `petrov-false-alarm`
 - Existing form: brief
@@ -296,7 +296,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0400: The Flash in the South Atlantic No Country Claimed
+## 0400: The Vela Incident: A Double Flash and a Disputed Explanation
 
 - Slug: `vela-incident`
 - Existing form: brief
@@ -310,7 +310,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0399: The Day Philadelphia Bombed a Row House
+## 0399: The MOVE Bombing and the Fire That Destroyed a Philadelphia Block
 
 - Slug: `move-bombing`
 - Existing form: expanded feature
@@ -324,7 +324,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0398: The Ship That Capsized Without Leaving the Dock
+## 0398: The Eastland Disaster: A Passenger Ship Capsizes at the Dock
 
 - Slug: `ss-eastland`
 - Existing form: brief
@@ -338,7 +338,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0397: The Grain Meant for Planting That Families Ate
+## 0397: Iraq’s Mercury Poisoning Outbreak from Treated Seed Grain
 
 - Slug: `iraq-poison-grain`
 - Existing form: brief
@@ -352,12 +352,12 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0396: The Airship Disaster Before the Hindenburg
+## 0396: USS Akron: The 1933 Airship Loss and the Rescue at Sea
 
 - Slug: `uss-akron`
 - Existing form: brief
 - Event date to verify: 4 April 1933
-- Primary review starting point: [U.S. Naval History and Heritage Command](https://www.history.navy.mil/content/history/museums/nmusn/pamphlets/uss-akron-zrs-4.html)
+- Primary review starting point: [Naval History and Heritage Command — Akron and Macon](https://www.history.navy.mil/content/history/nhhc/news-and-events/news/2021/nhm-062221.html)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.
@@ -366,7 +366,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0395: The Bomb in a Suitcase That Changed Airline Security
+## 0395: United Flight 629: The Baggage Bomb and the Investigation
 
 - Slug: `flight-629-suitcase-bomb`
 - Existing form: brief
@@ -380,12 +380,12 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 
 Decision: **PENDING**. Reviewer: **unassigned**.
 
-## 0394: The City That Disappeared Into Centralia’s Fire
+## 0394: Centralia: The Mine Fire That Forced a Town’s Relocation
 
 - Slug: `centralia-underground-fire`
 - Existing form: brief
 - Event date to verify: 1962–present
-- Primary review starting point: [Pennsylvania Department of Environmental Protection](https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources)
+- Primary review starting point: [Pennsylvania DEP — Centralia mine fire chronology](https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.

@@ -1,8 +1,8 @@
 ---
 {
   "slug": "iraq-poison-grain",
-  "title": "The Grain Meant for Planting That Families Ate",
-  "dek": "In Iraq, mercury-treated seed arrived during a poor harvest. Warning labels could not bridge hunger, language and distribution failure.",
+  "title": "Iraq’s Mercury Poisoning Outbreak from Treated Seed Grain",
+  "dek": "Grain intended for planting entered the food supply during 1971–1972, causing widespread illness.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "iraq",
     "public health"
   ],
-  "description": "In Iraq, mercury-treated seed arrived during a poor harvest. Warning labels could not bridge hunger, language and distribution failure.",
-  "socialPreview": "In Iraq, mercury-treated seed arrived during a poor harvest. Warning labels could not bridge hunger, language and distribution failure.",
+  "description": "The history includes toxic treatment, distribution, warning labels and the decisions facing recipient families.",
+  "socialPreview": "The history includes toxic treatment, distribution, warning labels and the decisions facing recipient families.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Iraq imported grain treated with a mercury fungicide for planting. It arrived late in the season, and some families ground the seed into flour or fed it to animals despite warning markings.
 
@@ -52,4 +57,4 @@ The story's wider significance lies in the difference between a product being ma
 
 A fuller article should follow the grain through those stages, preserving evidence at each handoff. It should not treat the moment of consumption as if the entire disaster began with an isolated personal choice.
 
-The disaster is often framed as misuse by recipients. The fuller record includes late delivery, hunger, inaccessible warnings and a product whose danger moved invisibly through food and pregnancy. Safety communication failed because it was designed for distribution, not for people.
+The outbreak should not be reduced to a story about recipients ignoring instructions. A useful account examines delivery timing, the meaning and accessibility of warnings, and the evidence behind reported illness and death totals.

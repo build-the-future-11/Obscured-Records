@@ -1,3 +1,9 @@
+# Content revision and GitHub publication — 27 September 2026
+
+The user authorized publication of the full project, including draft files and internal review documents. The [content pass](docs/CONTENT_IMPROVEMENTS_2026-09-27.md) revises all 28 reader records, eight features and 20 overlapping drafts; the website still excludes all 42 drafts. The public-source approval blocker below is historical and has been resolved by this authorization. GitHub branch/CI receipts will identify the published revision. These changes do not by themselves redeploy the website or grant human editorial approval.
+
+The following private deployment evidence applies to the earlier runtime revision explicitly named below.
+
 # Status — 27 September 2026
 
 **Private hosted release: verified. Public launch: HOLD. Editorial approval: pending.**

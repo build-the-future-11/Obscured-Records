@@ -1,8 +1,8 @@
 ---
 {
   "slug": "times-beach-dioxin",
-  "title": "The Town Sprayed With Dioxin to Keep the Dust Down",
-  "dek": "Times Beach hired an oil hauler to treat its unpaved roads. The oil contained industrial waste that made the town uninhabitable.",
+  "title": "Times Beach: Contaminated Road Oil and the Decision to Relocate",
+  "dek": "Waste oil used to suppress road dust left dioxin contamination in a Missouri community later struck by flooding.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "pollution",
     "missouri"
   ],
-  "description": "Times Beach hired an oil hauler to treat its unpaved roads. The oil contained industrial waste that made the town uninhabitable.",
-  "socialPreview": "Times Beach hired an oil hauler to treat its unpaved roads. The oil contained industrial waste that made the town uninhabitable.",
+  "description": "Sampling, flood damage and the federal buyout shaped the end of the town as a residential community.",
+  "socialPreview": "Sampling, flood damage and the federal buyout shaped the end of the town as a residential community.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 To suppress dust on unpaved roads, Times Beach, Missouri, used waste oil. Years later, investigators discovered that some of the oil was contaminated with dioxin.
 
@@ -50,4 +55,4 @@ EPA's retrospective account offers an institutional chronology. A fuller article
 
 Cleanup itself needs a definition. Removing a contaminant, restricting land use and making a site suitable for a particular new purpose are different claims. The article should say which was achieved and on what evidence. Otherwise the word restored can imply that an earlier community has been returned intact. Environmental work may make a place usable again while the town that lived there remains a historical absence.
 
-Times Beach shows how environmental risk is experienced through uncertainty as much as exposure. A routine municipal service, an invisible contaminant and a flood combined into the permanent disappearance of a community.
+The history requires separating the contamination from the flood and the decisions made afterward. Residents had to act on technical advice while facing the loss of their homes; that uncertainty is part of the record, not evidence that the hazard was imaginary.

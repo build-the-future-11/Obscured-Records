@@ -1,8 +1,8 @@
 ---
 {
   "slug": "ss-eastland",
-  "title": "The Ship That Capsized Without Leaving the Dock",
-  "dek": "The SS Eastland rolled onto its side in the Chicago River while packed with families headed for a company picnic.",
+  "title": "The Eastland Disaster: A Passenger Ship Capsizes at the Dock",
+  "dek": "A company excursion ended in catastrophe before the vessel left the Chicago River boarding point.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "chicago",
     "maritime"
   ],
-  "description": "The SS Eastland rolled onto its side in the Chicago River while packed with families headed for a company picnic.",
-  "socialPreview": "The SS Eastland rolled onto its side in the Chicago River while packed with families headed for a company picnic.",
+  "description": "The proximity of shore did not prevent hundreds of passengers from becoming trapped.",
+  "socialPreview": "The proximity of shore did not prevent hundreds of passengers from becoming trapped.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Workers and their families boarded the SS Eastland for a Western Electric company excursion. Before departure, the vessel listed sharply and rolled onto its side in the Chicago River.
 
@@ -50,4 +55,4 @@ The setting of a company excursion also matters. A passenger list is a record of
 
 Images of a ship on its side beside a city invite the question of why rescue was not simple. The answer must come from the actual access, compartment layout and conditions, not from what seems obvious at the riverbank. Proximity is not the same as reachability. Keeping that distinction visible helps explain how a journey can become lethal before it has properly begun.
 
-The Eastland disaster complicates familiar stories of maritime tragedy. The water was shallow and land was close, yet stability problems, loading and regulation created lethal conditions before the journey even began.
+The Eastland record connects stability, loading and oversight with the conditions faced by people below deck. A nearby riverbank offered little protection to those who could not escape the vessel.

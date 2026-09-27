@@ -1,8 +1,8 @@
 ---
 {
   "slug": "toshiba-impossible-targets",
-  "title": "Seven Years of Profit Built on Postponed Losses",
-  "dek": "Toshiba’s accounting scandal showed how impossible targets travel downward until ordinary pressure becomes organized misstatement.",
+  "title": "Toshiba’s Profit Overstatements and Pressure to Meet Targets",
+  "dek": "An independent investigation connected accounting irregularities with management demands and weak internal challenge.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "japan",
     "accounting"
   ],
-  "description": "Toshiba’s accounting scandal showed how impossible targets travel downward until ordinary pressure becomes organized misstatement.",
-  "socialPreview": "Toshiba’s accounting scandal showed how impossible targets travel downward until ordinary pressure becomes organized misstatement.",
+  "description": "The inquiry examined how earnings targets affected decisions across several business units.",
+  "socialPreview": "The inquiry examined how earnings targets affected decisions across several business units.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Toshiba overstated profits across several business units over years. The methods varied—premature recognition, delayed losses, stretched assumptions—but the pressure came from a common source: targets employees understood could not be refused.
 
@@ -50,4 +55,4 @@ It is also necessary to separate formal authority from practical influence. An e
 
 The useful question for readers is what happens when a report disappoints. Can it still be accepted as an accurate description, or must it be changed until it fits the expectation? That question is broader than this company, but the answer in this case must remain grounded in its documents. The story becomes concrete when the demanded number and the evidenced number can be seen separately, along with the process that brought them into conflict.
 
-The scandal’s durable lesson is that controls can exist on paper while organizational power routes around them. Fraud does not always begin with a secret plan; sometimes it grows from a target that everyone knows must be met.
+Written controls matter only if people can use them to challenge decisions. The Toshiba investigation offers a way to examine that gap through specific accounting practices and management conduct, without assuming that every ambitious target produces fraud.

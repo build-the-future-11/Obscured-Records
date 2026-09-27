@@ -1,13 +1,13 @@
 ---
 status: "published"
-title: "The Machine That Told Operators It Could Not Fail"
-subtitle: "Therac-25 delivered massive radiation overdoses after software replaced hardware safety systems without replacing their certainty."
+title: "Therac-25: Radiation Overdoses and the Limits of Software Safety"
+subtitle: "Six known accidents in 1985–1987 exposed failures in machine design, software safeguards and incident reporting."
 slug: "therac-25"
 author: "Ryan Gomez"
 date: "2026-09-14"
-updated: "2026-09-14"
+updated: "2026-09-27"
 section: "Technology"
-excerpt: "Six accidents changed how engineers think about software inside safety-critical machines."
+excerpt: "The published investigation describes several interacting failures, not one bug that explains every accident."
 featured: false
 breaking: false
 underreported: false
@@ -16,20 +16,20 @@ recordId: "0404"
 readingTime: "2 min"
 tags: ["software", "medicine"]
 eventDate: "1985–1987"
-source: "International Atomic Energy Agency training record"
-sourceUrl: "https://gnssn.iaea.org/main/ANNuR/Activity%20Documents%20%20Public/Regional%20Training%20Course%20on%20Authorization%20and%20Inspection%20of%20Radiotherapy%20Facilities%20with%20Linear%20Accelerators/Day%205%20Linear%20Accelerators%20Medical%20Events%20and%20Emergencies.pdf"
+source: "Leveson and Turner, IEEE Computer (1993), MIT-hosted text"
+sourceUrl: "https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html"
 ---
 
-The Therac-25 radiation therapy machine could produce different kinds of treatment beams. Under a rare sequence of fast operator inputs, its software could enter an unsafe state and expose patients to enormous overdoses.
+The Therac-25 delivered radiation for cancer treatment. Between 1985 and 1987, six known accidents involved severe overdoses. Nancy Leveson and Clark Turner’s investigation traces faults in the machine and the handling of injury reports.
 
 ## What happened
 
-Operators initially struggled to believe the machine was responsible. Error messages were cryptic, earlier designs had used physical interlocks, and incidents at different hospitals were not rapidly connected. Six patients were massively overdosed; several later died.
+Some accidents involved timing-sensitive software faults. The machine relied more heavily on software safety controls than earlier designs, while confusing feedback and fragmented reporting made the incidents harder to recognize.
 
 ## Why this record matters
 
-Therac-25 is taught as a software failure, but its record is wider: design assumptions, weak incident reporting, overconfidence in reuse and an interface that hid the system’s true state all aligned. Safety was not one missing check; it was a missing system.
+The case asks how a dangerous system remains constrained when its software or assumptions fail. It also shows why an inability to reproduce an injury report immediately does not establish that the equipment is safe.
 
 ### Source
 
-[International Atomic Energy Agency training record](https://gnssn.iaea.org/main/ANNuR/Activity%20Documents%20%20Public/Regional%20Training%20Course%20on%20Authorization%20and%20Inspection%20of%20Radiotherapy%20Facilities%20with%20Linear%20Accelerators/Day%205%20Linear%20Accelerators%20Medical%20Events%20and%20Emergencies.pdf)
+[Leveson and Turner, IEEE Computer (1993), MIT-hosted text](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html)

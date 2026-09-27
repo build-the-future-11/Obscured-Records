@@ -38,7 +38,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   })).sort((a, b) => b.score - a.score || a.article.slug.localeCompare(b.article.slug))[0]?.article;
   const recordCorrections = corrections.filter((item) => item.slug === slug);
   const updated = recordCorrections.at(-1)?.date || feature?.updated || article.updated;
-  const sources = Array.from(new Map((feature?.sources || [{ label: article.source, publisher: article.source, url: article.sourceUrl, kind: "Source record" }]).map((source) => [source.url, source])).values());
+  const sources = Array.from(new Map([...(feature?.sources || [{ label: article.source, publisher: article.source, url: article.sourceUrl, kind: "Source record" }]), ...(article.additionalSources || []).map(source => ({ ...source, publisher: "", kind: "Primary document" }))].map((source) => [source.url, source])).values());
   const schema = {
     "@context": "https://schema.org", "@type": feature ? "NewsArticle" : "Article",
     headline: article.title, description: article.excerpt,
@@ -73,7 +73,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <figure className="inline-figure record-figure"><span>RECORD {article.recordId}</span><strong>{article.eventDate}</strong><figcaption>A concise entry in the archive. This brief will expand when more primary material is reviewed.</figcaption></figure>
           <h2>Why this record matters</h2><p>{article.significance}</p>
         </>}
-        <div className="method-note"><span>Method</span><p>{feature ? "This feature separates the documented sequence from interpretation and links the reports used to reconstruct it. Source labels describe the role of each document, not an endorsement of every conclusion inside it." : "This is a brief record with a source trail, not a finished long-form investigation. Source presence is not a guarantee that every claim has been independently checked."}</p><Link href="/standards">Read our editorial standards →</Link></div>
+        <div className="method-note"><span>Method</span><p>{feature ? "This is an AI-assisted archival synthesis, not original reporting. Sources are linked for readers to examine; their presence does not mean every claim has received independent human review." : "This AI-assisted brief introduces the event and its source trail. It is not original reporting or a claim that every detail has been independently checked."}</p>{feature && <p>{feature.evidenceNote}</p>}<Link href="/standards">Read our editorial standards →</Link></div>
         <div className="sources"><h3>Sources &amp; further reading</h3><ol>{sources.map((source) => <li key={source.url}><span>{source.kind}</span><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>{"publisher" in source && source.publisher !== source.label ? <small>{source.publisher}</small> : null}</li>)}</ol></div>
         {mediaCredits[article.slug] && <aside className="method-note"><span>Image source &amp; reuse</span><p>{mediaCredits[article.slug].note}</p><a href={mediaCredits[article.slug].source}>Original image record</a>{" · "}<a href={mediaCredits[article.slug].licenseUrl}>{mediaCredits[article.slug].license}</a></aside>}
         {recordCorrections.map((item) => <aside className="method-note" key={item.date}><span>Correction · {item.date}</span><p>{item.note}</p><a href={item.sourceUrl}>Supporting record →</a></aside>)}

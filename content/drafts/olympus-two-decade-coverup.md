@@ -1,8 +1,8 @@
 ---
 {
   "slug": "olympus-two-decade-coverup",
-  "title": "The Camera Company That Hid Losses for Two Decades",
-  "dek": "At Olympus, an inexplicable acquisition fee led a newly appointed chief executive into a $1.7 billion accounting cover-up.",
+  "title": "Olympus: Acquisition Payments and a Long-Running Loss Concealment",
+  "dek": "Questions about unusual payments helped expose investment losses that had been concealed for years.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -11,8 +11,8 @@
     "japan",
     "governance"
   ],
-  "description": "At Olympus, an inexplicable acquisition fee led a newly appointed chief executive into a $1.7 billion accounting cover-up.",
-  "socialPreview": "At Olympus, an inexplicable acquisition fee led a newly appointed chief executive into a $1.7 billion accounting cover-up.",
+  "description": "Michael Woodford’s dismissal brought an internal accounting dispute into public view.",
+  "socialPreview": "Michael Woodford’s dismissal brought an internal accounting dispute into public view.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
@@ -30,9 +30,14 @@
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-09-27",
+  "editNotes": [
+    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ]
 }
 ---
+
 
 Michael Woodford had just become chief executive of Olympus when he began asking about unusual acquisition payments. The board responded by firing him.
 
@@ -50,4 +55,4 @@ The broader analytical issue is the relationship between continuity and correcti
 
 This does not allow a writer to infer what any individual privately feared. Those motives need testimony or documentary support. The structural point is sufficient: once a false representation survives into later periods, correcting the present may require reopening the past. An archive should make that reopening visible, preserving the sequence of disclosures rather than replacing it with one retrospective narrative in which everything appears to have been known from the beginning.
 
-The case is a record of governance as culture: loyalty, hierarchy and consensus did not merely fail to expose the fraud; they helped make sustained dissent nearly impossible.
+The investigation concerns particular transactions, executives and control failures. Describing those findings precisely is more useful than treating the scandal as evidence that an entire national business culture behaves the same way.

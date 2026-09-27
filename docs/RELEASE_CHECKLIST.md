@@ -1,89 +1,82 @@
-# Website launch checklist — HOLD
+# Website launch checklist — private release verified; public launch HOLD
 
-Updated 27 September 2026. Local implementation is verified; editorial clearance and production release remain open. The old Vercel address serves an older SPA. The existing owner-only Sites deployment is the selected target; its current access restriction is preserved. See LAUNCH_OPERATIONS_2026-09-27.md for identity, migration and rollback details.
+Updated 27 September 2026. Runtime revision: `bfd7158f7d19aa5094c90dba3d7c2c9e72f24379`. [Execution report](LAUNCH_EXECUTION_2026-09-27.md) · [Operations](LAUNCH_OPERATIONS_2026-09-27.md).
 
-Work through the numbered stages in order. Editorial review can proceed alongside production setup. Assign an owner to each stage and record dated evidence before marking any item complete. Preparing this checklist does not authorize deployment, production database changes, publishing drafts or sending messages.
+The user's instruction to execute this checklist authorized implementation and the existing owner-only deployment. It did not supply human editorial approval or explicit permission to disclose unpublished drafts in a public repository.
 
-## Verified local baseline
+## 1. Repository and hosting
 
-- [x] Reader routes, sections, search, related records, feeds and corrections are implemented.
-- [x] Public content is separated from unpublished drafts: 28 public records and 42 drafts cover 50 distinct subjects; drafts are not approved publications.
-- [x] Tests, editorial checks, lint and typechecking passed again during the latest status review.
-- [x] Current application source digest matches retained successful Workers/Next.js builds, browser checks and actual local D1 persistence evidence.
+- [x] Recover authoritative Git history and reconcile all 194 original exported files without overwriting local work.
+- [x] Create a release branch and immutable source commits.
+- [x] Select the existing owner-only Sites/Workers deployment and intended D1 database; preserve its audience.
+- [x] Configure the actual site origin and release revision through the provider.
+- [x] Build and push the exact candidate to the private Sites source repository.
+- [x] Deploy that candidate and retain the provider's successful deployment receipt.
+- [ ] Obtain explicit permission before a public GitHub push exposes 42 drafts and internal review documents. Automatic approval review rejected this disclosure.
+- [ ] Run hosted GitHub CI once an approved source-publication path is available. Local and Sites build-workflow checks passed; these are not a hosted CI receipt.
+- [ ] Name and obtain acceptance from the human release/incident owner.
 
-These checks establish local behavior only. Detailed evidence and scope: [final report](../ASTRA_FINAL_REPORT.md), [limitations](../LIMITATIONS.md), [product audit](PRODUCT_AUDIT_2026-09-27.md).
+## 2. Editorial and media
 
-## 1. Establish the repository and production setup
+- [x] Preserve the 28 existing public records and keep all 42 review drafts unpublished.
+- [x] Repair the NASA Aral Sea and CDC Tuskegee links that redirected to generic pages.
+- [x] Strengthen source auditing so generic redirects and HTTP 202 challenges cannot count as verified access; retain failed receipts.
+- [x] Audit 70 cited URLs: 54 direct reachable and 16 direct access-unverified, with separate browser-access evidence for eight of those 16.
+- [x] Record image-source/licence links, correct Wirecard attribution and disclose transformations.
+- [x] Reduce the five served images from 3,238,479 to 597,420 bytes (81.6%) while preserving original files and dimensions.
+- [x] Prepare record-by-record editorial approval and media-rights review queues.
+- [ ] Obtain a named human editor's launch selection and claim-level approval for the existing records.
+- [ ] Close remaining source-to-claim gaps. URL reachability is not fact-check approval.
+- [ ] Verify actual authorship/reviewer credits and retain AI-assistance disclosures.
+- [ ] Resolve Therac-25's contradictory image provenance and final Wirecard/Lake Nyos derivative provenance before public launch.
+- [ ] Review and approve any draft individually before publishing it; publishing all 42 is not required for launch.
 
-- [x] Recover and confirm the authoritative Git repository; preserve this exported folder and reconcile its changes without overwriting existing work.
-- [ ] Confirm the production domain/origin, hosting account and person responsible for releases.
-- [x] Choose the production host and database arrangement. Existing intake uses Cloudflare D1; Vercel/Node needs a compatible backend before forms can work.
-- [ ] If retaining Vercel/Node, implement and test that backend while preserving validation, consent, private storage and durable rate limits. If using Workers, configure the real production D1 binding.
-- [ ] Configure production settings and secrets through the hosting provider; replace local placeholder bindings and verify canonical URLs.
-- [ ] Create an immutable release revision and run the repository's checks in hosted CI on its configured Node version.
+See [source review](SOURCE_REVIEW_2026-09-27.md), [media review](MEDIA_REVIEW_2026-09-27.md), and [editorial queue](LAUNCH_EDITORIAL_REVIEW_2026-09-27.md).
 
-Completion evidence: repository/revision, confirmed origin, host/backend decision, configuration verification without secret values, and successful CI receipt.
+## 3. Production storage and operations
 
-## 2. Complete editorial and media clearance
+- [x] Inspect the intended live database before deployment and retain its complete empty-newsletter-table snapshot.
+- [x] Apply the additive release migration through Sites; verify the new submission and rate-limit tables exist.
+- [x] Verify controlled live signup and submission writes using clearly labelled example.invalid test records.
+- [x] Confirm private database reads: one `pending_confirmation` signup and one `received` submission; duplicate signups did not create more rows.
+- [x] Verify live validation, repeated-signup throttling, unavailable public submission reads, and owner-only access.
+- [x] Exercise storage failures, retry behavior, suppressed-status preservation and local triage in automated tests; retain local evidence separately from live evidence.
+- [x] Document additive migration handling and the exact prior saved version for application rollback.
+- [ ] Complete a provider-supported backup/restore rehearsal; the empty pre-deployment snapshot is not restore certification.
+- [ ] Obtain a monitored human operator's acceptance and perform acknowledgement, triage, escalation and closure of a controlled submission.
+- [ ] Assign retention/deletion responsibility and confirm the published handling policy against real operations.
 
-- [ ] Assign a named human editor and define which records are included in the launch.
-- [ ] Review factual claims and attribution in the existing public records; the local engineering checks did not recertify their content.
-- [ ] Review each draft selected for publication against claim-level sources, accurate attribution and the editorial approval checklist. Keep unapproved drafts unpublished; launching does not require publishing all 42.
-- [ ] Resolve remaining source-access and claim gaps; the stricter new audit has 16 access-unverified URLs, with separate browser-access evidence for eight and close source-to-claim gaps. A reachable URL alone is insufficient evidence.
-- [ ] Verify actual authorship/reviewer credits and retain appropriate AI-assistance disclosure; do not assign a human author without their involvement.
-- [ ] Record licences or other documented reuse permission for every launch image, with accurate credits and stable hosting.
-- [ ] Optimize large images and verify dimensions, alternative text, loading behavior and usable failure states.
+The two live test records are retained and clearly labelled; no email or external acknowledgement was sent.
 
-Completion evidence: dated editor approvals, claim/source review notes, resolved-source records and image-rights inventory for the launch content.
+## 4. Newsletter scope
 
-## 3. Verify production storage and submission operations
+- [x] Keep the implementation in pending capture-only mode with no email-sending promise.
+- [x] Verify durable live capture, pending status, duplicate behavior and rate limiting.
+- [x] Repair repeated-signup storage so unsubscribe, suppression, bounce and complaint statuses are preserved.
+- [ ] Obtain the owner's explicit acceptance of capture-only scope. This is the current working assumption, not an invented decision.
+- [ ] Deferred unless sending is selected: confirmation tokens and verified opt-in, authenticated sender/provider, unsubscribe/suppression delivery integration, and controlled end-to-end delivery checks.
 
-- [ ] Review production database state and additive migrations before applying them; establish a backup, restoration procedure and rollback owner.
-- [ ] Apply the reviewed migrations to the intended production database and retain migration receipts.
-- [ ] Verify controlled newsletter-capture and contributor-submission writes and private operator reads against the real backend.
-- [ ] Verify production access controls and that submission data cannot be read through public routes or unauthorized clients.
-- [ ] Verify validation, rate limits, storage failures and retry behavior; issue a success receipt only after saving succeeds.
-- [ ] Assign a monitored submission operator and document acknowledgement, triage, escalation and closure procedures.
-- [ ] Complete a controlled submission-to-closure dry run and retain evidence without exposing personal information.
-- [ ] Assign retention/deletion responsibility and ensure the published privacy information matches actual storage and handling.
+## 5. Exact live release verification
 
-Completion evidence: migration/backup receipts, controlled persistence and access checks, named operator, and completed triage dry run.
+- [x] Fix the production-only empty archive/section 404 issue by evaluating publication dates during requests rather than Worker initialization; add an epoch-zero regression.
+- [x] Pass 137 automated tests, editorial integrity, lint, typecheck and both Workers/Next.js production builds.
+- [x] Pass 41 local Workers/D1 integration checks and 167 built Next.js runtime checks after the fix.
+- [x] Retain the earlier 50 responsive browser checks; the request-time fix was subsequently verified through hosted route/content checks.
+- [x] Pass 58 authenticated live checks covering every section and public article, search, policy pages, feeds, draft/unknown 404s, validation and real persistence.
+- [x] Match the live revision endpoint to the deployed source SHA and confirm anonymous access is rejected with HTTP 401.
+- [x] Verify live canonical origin, author page, news sitemap, RSS/sitemap coverage and draft exclusion.
+- [x] Verify actual live Chrome rendering: five decoded images, desktop/mobile layouts, article heading and no runtime errors; retain screenshots.
+- [ ] Correct and reverify the hosted WebP Content-Type (`application/octet-stream` observed). Restore the missing Sites packaging helper before another release; keep the strict failed check.
+- [ ] Complete representative physical-device and screen-reader review; automated viewport checks do not substitute for these.
+- [ ] Measure representative live slow-network behavior and obtain field performance evidence when enough real traffic exists.
+- [ ] Confirm recurring uptime/error monitoring. The creation attempt returned no completion receipt; check for an existing automation before retrying.
+- [ ] Rehearse application rollback/restore with the accepted incident owner.
+- [ ] Obtain final editorial and operational sign-off before changing the site's audience or declaring public launch readiness.
 
-## 4. Decide and verify the newsletter launch scope
+## Optional after core launch
 
-- [ ] Explicitly choose pending signup capture only or a functioning email newsletter for this release.
-- [ ] For capture only, verify durable production storage and clear pending-confirmation messaging; make no delivery promise and do not send to pending subscribers.
-- [ ] If sending email, implement confirmation tokens and a verified opt-in lifecycle.
-- [ ] If sending email, configure the delivery provider and authenticated sender.
-- [ ] If sending email, implement unsubscribe and suppression, including delivery-failure handling, and review consent for existing rows before treating them as sendable.
-- [ ] If sending email, verify confirmation, delivery, unsubscribe and suppression using controlled internal recipients before enabling general sends.
+- [ ] Real analytics with verified collection and appropriate privacy handling.
+- [ ] Reviewed, playable audio episodes.
+- [ ] Verified sponsorship arrangements and disclosures.
 
-Completion evidence: recorded scope decision plus verified capture, or complete controlled delivery lifecycle receipts. If capture-only is selected, mark sending items deferred with the decision date rather than checked as complete.
-
-## 5. Verify the exact live release
-
-- [ ] Deploy the approved revision and retain the provider's deployment identity and matching source revision.
-- [ ] Verify HTTPS, the intended domain, canonical URLs and the live revision endpoint.
-- [ ] Check home, sections, every public article, search, related links, policy pages, RSS and sitemaps on the real host.
-- [ ] Verify unknown and unpublished article routes remain unavailable and drafts stay out of search and feeds.
-- [ ] Test the live forms against the production backend, including visible failure/retry states and private data handling.
-- [ ] Review representative real mobile/desktop devices and browsers, keyboard navigation, focus behavior and screen-reader usability.
-- [ ] Check media on slow connections and measure live loading/layout behavior; record field performance when enough real traffic exists and do not infer it from local timings.
-- [ ] Set up uptime/error monitoring, name the incident owner and verify the release rollback procedure.
-- [ ] Record final editorial and operational sign-off, linking the exact release to the evidence above and documenting any deferred optional features.
-
-Completion evidence: exact-revision live check report, device/accessibility findings resolved or explicitly assessed, operational monitoring and rollback records, and dated launch sign-off.
-
-## Optional work after core launch
-
-- [ ] Analytics: implement and verify real event collection with appropriate privacy handling before reporting audience metrics.
-- [ ] Audio: produce, review and verify actual playable episodes before advertising an audio release.
-- [ ] Sponsorship: verify real arrangements and disclosures before displaying sponsor claims or inventory as sold.
-
-These optional features do not block a reader-site launch unless explicitly included in its scope. No item is complete solely because code, a plan or a local test exists.
-
-## Execution update — 27 September 2026
-
-Completed locally: restored verified Git history; identified the existing Workers/D1 host; preserved an empty live newsletter-table snapshot; repaired two generic-landing-page source redirects; added source-check regressions and suppression-preservation regression; compressed the five reader images; added image source/licence links and corrected Wirecard attribution; prepared a record-by-record human review queue and operational runbook. Automated checks and deployment receipts are recorded separately under verification/launch-2026-09-27/.
-
-Human editor/operator acceptance, full claim review, uncertain media provenance and public-release approval remain open. Newsletter delivery is deferred while capture-only is the working scope. Do not mark these complete from a successful deployment.
+These optional features remain unlaunched and do not block a reader-site launch unless explicitly selected. No unresolved human or external gate is marked complete by a passing local test or private deployment.

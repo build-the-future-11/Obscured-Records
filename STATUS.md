@@ -1,23 +1,15 @@
-# Launch closure in progress — 27 September 2026
-
-Git history is restored from the authoritative repository. The existing owner-only Sites/Workers/D1 deployment is the selected target. The old Vercel address serves a different version. See [launch operations](docs/LAUNCH_OPERATIONS_2026-09-27.md), [current checklist](docs/RELEASE_CHECKLIST.md), [media review](docs/MEDIA_REVIEW_2026-09-27.md) and [source review](docs/SOURCE_REVIEW_2026-09-27.md). Exact candidate deployment/CI receipts are retained locally under `verification/launch-2026-09-27/`. Public release remains HOLD pending human/editorial/operational gates.
-
-The report below describes the earlier local-only ASTRA snapshot; its missing-Git/deployment statements are historical.
-
 # Status — 27 September 2026
 
-**Local implementation: verified. Editorial publication: HOLD. Production release: BLOCKED.**
+**Private hosted release: verified. Public launch: HOLD. Editorial approval: pending.**
 
-The reader site, content safeguards, contributor form and operator review tools are implemented. The corpus spans 50 distinct subjects: eight existing expanded features plus 42 substantial review drafts, 20 of which expand existing public briefs. The public site still contains 28 existing records. No new draft was approved or published.
+The existing owner-only [Obscured Records site](https://obscured-records.ryangomez-hs.chatgpt.site) now runs revision `bfd7158f7d19aa5094c90dba3d7c2c9e72f24379`. All 28 existing public records are accessible to the owner; all 42 review drafts remain unpublished. No new article received invented editorial approval.
 
-Local tests, lint, typecheck, both production builds, route checks, responsive browser checks and real local Workers/D1 persistence passed. See [ASTRA_FINAL_REPORT](ASTRA_FINAL_REPORT.md) for evidence and exact scope.
+Completed: Git recovery, private source push and deployment, production D1 migration and controlled persistence checks, the production-only empty-archive/404 repair, source-link fixes, newsletter suppression preservation, and an 81.6% reduction in served image bytes. The final source passes 137 tests, lint/typecheck/editorial checks, both builds, 41 local Workers checks and 167 Next.js checks. The actual deployment passed 58 authenticated route/form checks; anonymous access remains rejected.
 
-Ordered remaining gates:
+A supplemental media check found that the host serves WebP files as `application/octet-stream`; correct MIME delivery remains unverified. Actual Chrome checks confirm that all five images render, desktop/mobile layouts fit, and the article has no runtime errors. The Sites packaging helper disappeared from the installed plugin cache during final verification and must be restored before another deployment.
 
-1. Named human editorial review, claim-level sources, accurate attribution and image rights. Twelve cited URLs remain access-unverified in the automated audit.
-2. Authoritative repository/release identity and production host/backend choice. This folder has no `.git`; Node/Vercel cannot use the existing Workers D1 binding.
-3. Production database migration/backup/rollback evidence and private submission triage dry run with a monitored operator.
-4. Newsletter confirmation, sender, unsubscribe/suppression and controlled delivery if newsletter sending is to be launched. Current signup is pending capture only.
-5. Exact-revision live smoke, real-device/accessibility review and field performance checks before claiming public release readiness.
+Remaining gates: human editorial and claim review; unresolved media provenance; accepted release/operator/retention ownership; real-device/assistive review; monitoring confirmation; rollback/restore rehearsal; and explicit approval for any public disclosure of drafts/internal documents. The public GitHub push was rejected by automatic approval review, so hosted GitHub CI was not run. Newsletter sending remains deferred; capture-only is the working scope.
 
-Optional audio, analytics and sponsorship remain explicitly unlaunched. Paper/preprint/research readiness is not applicable. No commit, push, deployment, production migration or external message was performed.
+See the [completed/open checklist](docs/RELEASE_CHECKLIST.md), [execution report](docs/LAUNCH_EXECUTION_2026-09-27.md), [operations runbook](docs/LAUNCH_OPERATIONS_2026-09-27.md), [media review](docs/MEDIA_REVIEW_2026-09-27.md), and [source review](docs/SOURCE_REVIEW_2026-09-27.md). Detailed dated receipts are retained locally under `verification/launch-2026-09-27/`.
+
+The [ASTRA report](ASTRA_FINAL_REPORT.md) and its original verification directory remain preserved as the earlier local-only snapshot. Its missing-Git/deployment statements and older source-access count are historical, superseded by this status.

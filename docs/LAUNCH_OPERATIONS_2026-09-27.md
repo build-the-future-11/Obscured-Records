@@ -12,7 +12,7 @@ The older Vercel address responds, but serves a different SPA and has no `/api/r
 
 Before this release, the live Sites database exposed only `newsletter_subscribers`, with columns `id`, `email`, `status`, `consented_at`, `source`. A complete, untruncated read on 27 September found zero rows and no further page. The retained local receipt is `verification/launch-2026-09-27/database-before.json`. No existing subscriber data needed exporting. This observation is a pre-deployment empty-data snapshot, not a general backup/restore certification.
 
-Migration `0001_bent_roland_deschain.sql` adds `editorial_submissions` and `intake_limits`. It does not drop, rename or rewrite the existing subscriber table. Sites receives the existing Drizzle migration journal with the build archive. After deployment, inspect live table names and verify controlled writes; do not infer application from packaging alone.
+Migration `0001_bent_roland_deschain.sql` adds `editorial_submissions` and `intake_limits`. It does not drop, rename or rewrite the existing subscriber table. Sites receives the existing Drizzle migration journal with the build archive. The deployed database now exposes all three expected tables. Private reads confirmed one controlled pending newsletter signup and one controlled received submission; the evidence has no truncation or further page. The records use example.invalid addresses and remain retained as operational tests.
 
 For application rollback, redeploy the prior saved version above through Sites and verify deployment status. Preserve new additive tables and any submitted records; do not drop tables as part of rollback. A database incident requires a provider-supported snapshot/export and owner-approved restoration, not replaying migration SQL blindly. A practical restore exercise and accepted incident owner remain open.
 
@@ -34,8 +34,16 @@ The automated persistence checks do not constitute human acknowledgement or inbo
 
 ## Monitoring and incident response
 
-Use the provider deployment log and worker logs for failures. Run `scripts/relaunch-smoke.mjs` against an approved public origin and exact deployed SHA when public access is enabled. The existing owner-only site must continue rejecting anonymous access; do not weaken sharing to make a public smoke test pass. No recurring monitor has been activated and no notification destination is invented. Human acceptance of monitoring and incident ownership remains open.
+Use the provider deployment log and worker logs for failures. Run `scripts/relaunch-smoke.mjs` against an approved public origin and exact deployed SHA when public access is enabled. The existing owner-only site must continue rejecting anonymous access; do not weaken sharing to make a public smoke test pass. A recurring monitor creation attempt did not return a completion receipt. Its activation is unconfirmed; inspect existing app automations before retrying to avoid duplicates. No notification destination is invented. Human acceptance of monitoring and incident ownership remains open.
 
 ## Evidence and open gates
 
 Retain provider IDs, source SHA, actual checks and failures in `verification/launch-2026-09-27/`. Public launch still needs accepted editorial/operator ownership, claim-level review, unresolved image provenance, real-device/assistive-technology review and a practical rollback/restore exercise. Audio, analytics, sponsorship and email sending are deferred.
+
+## Verified deployed candidate
+
+Source: `bfd7158f7d19aa5094c90dba3d7c2c9e72f24379`. Saved version: `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_54dedfecd954819193076a0bc61de909`. Successful deployment: `appgdep_6ab8c1ed0100819194238d3771c61311`, environment revision 3. The live revision endpoint matched; 58 private hosted checks passed and anonymous access returned 401.
+
+The initial candidate `3aa1e5479466cbf40d3e6f006559ab296c76e985` deployed but failed live section/article availability. Its failure receipts remain preserved. The correction evaluates publication dates during requests so Worker initialization at epoch zero cannot permanently empty the archive. The later successful live checks establish recovery.
+
+The public GitHub push was automatically rejected because it would expose unpublished drafts and internal review material. No public push, new public PR or hosted GitHub CI success is claimed. Private Sites source publication and owner-only deployment succeeded without changing audience.

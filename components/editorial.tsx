@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight, Search } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { SearchTrigger } from "@/components/search-palette";
 import type { Article } from "@/lib/articles";
 import { getPublicArticles, sections } from "@/lib/articles";
 import { getFeature, getReadingLabel } from "@/lib/features";
@@ -9,15 +10,15 @@ export function ArchiveTicker() {
   const notes = [`${getPublicArticles().length} documented records`, `${getPublicArticles().filter((article) => getFeature(article.slug)).length} expanded features`, "Sources attached to every file", "Corrections remain open"];
   return <div className="ticker" aria-label="Publication status">
     <span className="live"><i /> Independent archive</span>
-    <div className="ticker-track" aria-hidden="true">{[...notes, ...notes].map((note, index) => <span key={index}>{note}</span>)}</div>
+    <div className="ticker-track">{notes.map((note, index) => <span key={index}>{note}</span>)}</div>
   </div>;
 }
 export const LiveTicker = ArchiveTicker;
 export function Masthead() {
   return <header className="masthead">
     <Link className="brand" href="/" aria-label="Obscured Records home"><b>O.R</b><span>Obscured Records</span></Link>
-    <nav aria-label="Primary navigation">{sections.map((section) => <Link key={section} href={`/${section.toLowerCase()}`}>{section}</Link>)}</nav>
-    <div className="header-actions"><Link href="/search" aria-label="Search the archive"><Search /></Link><Link className="subscribe" href="/newsletter">Subscribe</Link><MobileMenu /></div>
+    <nav aria-label="Primary navigation"><Link href="/latest">Latest</Link><details className="section-nav"><summary>Sections</summary><div>{sections.map((section) => <Link key={section} href={`/${section.toLowerCase()}`}>{section}</Link>)}</div></details><Link href="/topics">Topics</Link><Link href="/series">Series</Link><Link href="/archive">Archive</Link><Link href="/about">About</Link></nav>
+    <div className="header-actions"><SearchTrigger /><Link className="saved-nav" href="/saved">Saved</Link><Link className="subscribe" href="/newsletter">Subscribe</Link><MobileMenu /></div>
   </header>;
 }
 export function StoryMeta({ article, inverse = false }: { article: Article; inverse?: boolean }) {
@@ -39,7 +40,7 @@ export function NewsletterCTA() {
 }
 export function Footer() {
   return <footer><div className="footer-wordmark"><span>OBSCURED</span><span>RECORDS</span></div><div className="footer-bottom">
-    <nav aria-label="Footer navigation"><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
+    <nav aria-label="Footer navigation"><Link href="/archive">Archive</Link><Link href="/topics">Topics</Link><Link href="/authors">Authors</Link><Link href="/series">Series</Link><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
     <p>Written and edited by Ryan Gomez.</p><span>© 2026 O.R</span>
   </div></footer>;
 }

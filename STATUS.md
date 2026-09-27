@@ -1,3 +1,7 @@
+# Local publication-experience implementation — 27 September 2026
+
+Reader/discovery improvements are implemented in this working tree. They are not a new hosted deployment. See [the dated report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md) and [audit](docs/PUBLICATION_EXPERIENCE_AUDIT_2026-09-27.md) for scope, verification and remaining gates. The source content, review-draft exclusion and capture-only newsletter boundary are preserved. Historical deployment evidence follows.
+
 # Content revision and GitHub publication — 27 September 2026
 
 The user authorized publication of the full project, including draft files and internal review documents. The [content pass](docs/CONTENT_IMPROVEMENTS_2026-09-27.md) revises all 28 reader records, eight features and 20 overlapping drafts; the website still excludes all 42 drafts. The public-source approval blocker below is historical and has been resolved by this authorization. GitHub branch/CI receipts will identify the published revision. These changes do not by themselves redeploy the website or grant human editorial approval.

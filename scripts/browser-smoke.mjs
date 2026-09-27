@@ -13,7 +13,7 @@ const requireTools = createRequire(resolve(process.env.BROWSER_TOOLS_DIR, 'packa
 const { chromium } = requireTools('playwright');
 assert.equal(requireTools('playwright/package.json').version, '1.56.0');
 const { revision: sourceSha, sourceDigest } = sourceIdentity();
-const outputDir = resolve('browser-artifacts');
+const outputDir = resolve(process.env.BROWSER_ARTIFACTS_DIR || 'browser-artifacts');
 await mkdir(outputDir, { recursive: true });
 const portProbe = createServer();
 await new Promise((resolve, reject) => { portProbe.once('error', reject); portProbe.listen(0, '127.0.0.1', resolve); });
@@ -88,9 +88,9 @@ try {
   page.setDefaultTimeout(12000);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
-  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez'];
+  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
   const layoutFailures = [];
-  for (const width of [375, 768, 1440]) {
+  for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 375, 768, 1440])) {
     await page.setViewportSize({ width, height: 900 });
     for (const path of paths) {
       try { await inspectPage(page, path, width); }
@@ -101,12 +101,14 @@ try {
     }
     for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter']]) {
       await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
+      await page.locator('h1').waitFor();
+      await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map((image) => image.decode().catch(() => {}))); });
       await page.screenshot({ path: resolve(outputDir, `${name}-${width}.png`), fullPage: true, animations: 'disabled' });
     }
   }
   assert.deepEqual(layoutFailures, [], 'Every responsive route must pass all layout and metadata assertions.');
   await page.setViewportSize({ width: 375, height: 850 });
-  await page.goto(base);
+  await page.goto(base); await page.locator('h1').waitFor();
   await page.keyboard.press('Tab');
   assert.equal(await page.locator('.skip-link').evaluate((element) => element === document.activeElement), true);
   await page.keyboard.press('Enter');
@@ -134,11 +136,75 @@ try {
   pass('desktop resize releases mobile overlay and scroll lock');
 
   await page.goto(`${base}/search?q=aviation&q=mercury`);
-  assert.equal(await page.locator('#q').inputValue(), 'aviation');
+  assert.equal(await page.locator('#archive-q').inputValue(), 'aviation');
   assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /noindex/);
-  await page.locator('#q').fill('zzzz-no-such-record-zzzz'); await page.locator('#q').press('Enter');
-  await page.getByText('No record matches that search.').waitFor();
+  await page.locator('#archive-q').fill('zzzz-no-such-record-zzzz'); await page.locator('#archive-q').press('Enter');
+  await page.getByText('No matching records').waitFor();
   pass('repeated search parameters and empty-state search navigation');
+
+  await page.goto(`${base}/archive`);
+  await page.locator('select[name=topic]').selectOption('aviation');
+  await page.locator('select[name=format]').selectOption('feature');
+  assert.equal(await page.locator('.archive-results .record-card').count(), 1);
+  assert.match(page.url(), /topic=aviation/);
+  await page.reload();
+  assert.equal(await page.locator('select[name=topic]').inputValue(), 'aviation');
+  await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+  assert.equal(await page.locator('.archive-results .record-card').count(), 28);
+  pass('archive intersects filters, persists URL and restores after reload');
+
+  await page.goto(base); await page.locator('h1').waitFor();
+  await page.keyboard.press('Control+k');
+  const palette = page.getByRole('dialog', { name: 'Search Obscured Records' });
+  await palette.waitFor();
+  await page.locator('#palette-query').fill('aviation');
+  await palette.getByRole('heading', { name: 'Stories', exact: true }).waitFor();
+  await palette.getByRole('heading', { name: 'Topics', exact: true }).waitFor();
+  await page.keyboard.press('ArrowDown');
+  assert.equal(await page.evaluate(() => document.activeElement.hasAttribute('data-result')), true);
+  await page.keyboard.press('Escape');
+  await palette.waitFor({ state: 'hidden' });
+  pass('keyboard search opens a modal, groups real results and supports arrow traversal/Escape');
+
+  await page.goto(`${base}/article/fedex-flight-705`);
+  const save = page.getByRole('button', { name: '+ Save story', exact: true });
+  await save.click();
+  await page.getByRole('button', { name: '✓ Saved', exact: true }).waitFor();
+  await page.reload();
+  await page.getByRole('button', { name: '✓ Saved', exact: true }).waitFor();
+  await page.locator('.reader-settings summary').click();
+  await page.getByLabel('Text size', { exact: true }).selectOption('large');
+  await page.getByLabel('Reading theme', { exact: true }).selectOption('dark');
+  assert.equal(await page.locator('.article-page').getAttribute('data-reader-theme'), 'dark');
+  await page.getByLabel('Reading theme', { exact: true }).selectOption('light');
+  await page.locator('#opening').evaluate((element) => {
+    const range = document.createRange(); range.selectNodeContents(element);
+    const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+    document.dispatchEvent(new Event('selectionchange'));
+  });
+  await page.getByRole('button', { name: 'Highlight selected text' }).click();
+  const note = page.getByRole('dialog', { name: 'Keep this passage' });
+  await note.waitFor(); await note.getByLabel('Private note (optional)').fill('Browser verification note');
+  await note.getByRole('button', { name: 'Save highlight', exact: true }).click();
+  await page.getByRole('status').filter({ hasText: 'Passage saved' }).waitFor();
+  assert.equal(await page.evaluate(() => CSS.highlights?.get('saved-passages')?.size), 1);
+  await page.getByRole('button', { name: /^Preview source 1:/ }).click();
+  const source = page.locator('.sources dialog[open]');
+  await source.waitFor();
+  assert.match(await source.getByRole('link', { name: 'Open source' }).getAttribute('href'), /^https:/);
+  await page.keyboard.press('Escape');
+  assert.equal(await page.getByRole('button', { name: /^Preview source 1:/ }).evaluate((e) => e === document.activeElement), true);
+  await page.locator('.contents a').nth(1).click();
+  assert.match(page.url(), /#section-1$/);
+  await page.goto(`${base}/saved`);
+  await page.getByText('Browser verification note', { exact: true }).waitFor();
+  await page.locator('.saved-actions select').selectOption('Finished');
+  await page.reload(); assert.equal(await page.locator('.saved-actions select').inputValue(), 'Finished');
+  await page.getByRole('button', { name: 'Delete highlight', exact: true }).click();
+  assert.equal(await page.getByText('Browser verification note', { exact: true }).count(), 0);
+  await page.getByRole('button', { name: 'Remove saved story', exact: true }).click();
+  await page.getByRole('heading', { name: 'A place for your next read' }).waitFor();
+  pass('saved states, reload persistence, reader preferences, private highlights, source focus return and removal');
 
   await page.goto(`${base}/article/fedex-flight-705?utm_source=smoke`);
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
@@ -230,10 +296,12 @@ try {
 } catch (error) {
   if (activePage) await activePage.screenshot({ path: resolve(outputDir, 'failure.png'), fullPage: true }).catch(() => {});
   console.error(serverOutput);
+  console.error(error);
+  await writeFile(resolve(outputDir, "failure.txt"), String(error.stack || error));
   throw error;
 } finally {
   await writeFile(resolve(outputDir, 'receipt.json'), JSON.stringify({ sourceSha, sourceDigest, browser: `Chromium via Playwright 1.56.0 (${process.env.BROWSER_EXECUTABLE || 'bundled'})`, checks, errors, consoleMessages, performanceSamples, performanceScope: "Local browser observations, warm and cold caches mixed; not Core Web Vitals or field performance certification", providerPersistenceVerified: false }, null, 2));
-  if (browser) await browser.close();
+  if (browser) await Promise.race([browser.close(), delay(2500)]);
   if (server.exitCode === null) {
     server.kill('SIGTERM'); await Promise.race([exited, delay(2000)]);
     if (server.exitCode === null && server.signalCode === null) server.kill('SIGKILL');

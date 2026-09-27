@@ -1,26 +1,17 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPublicArticles, sections } from "@/lib/articles";
+import { sections, getPublicArticles } from "@/lib/articles";
+import { getCatalog, getTopics } from "@/lib/catalog";
 import { pageMetadata } from "@/lib/page-metadata";
-import { Footer, ArchiveTicker, Masthead, NewsletterCTA, RecordId, SectionHeader, StoryMeta } from "@/components/editorial";
-const copy: Record<string,string> = {world:"Power, borders, conflict, diplomacy—and the lives caught between them.",business:"Capital, labor, markets and the systems that decide who gets what.",technology:"Systems, machines, platforms, infrastructure and the people building them.",science:"Evidence, discovery, climate and the changing limits of what we know.",culture:"Ideas, art, memory and the institutions that shape how we see.",underreported:"The overlooked stories. The missing context. The records that still matter.",people:"Conversations with people worth knowing.",opinion:"Arguments and analysis from independent minds."};
-const valid = sections.map((section) => section.toLowerCase());
-export function generateStaticParams() { return valid.map((section) => ({ section })); }
-export async function generateMetadata({ params }: { params: Promise<{ section: string }> }) {
-  const { section } = await params;
-  const title = sections.find((name) => name.toLowerCase() === section);
-  return title ? pageMetadata(`/${section}`, title, copy[section]) : {};
-}
-export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {
-  const { section } = await params;
-  if (!valid.includes(section)) notFound();
-  const title = section.toUpperCase();
-  const stories = getPublicArticles().filter((article) => section === "underreported" ? article.underreported : article.section.toLowerCase() === section);
-  const lead = stories[0];
-  if (!lead) notFound();
-  return <main className={section === "underreported" ? "section-dark" : ""}><ArchiveTicker/><Masthead/>
-    <section className="listing-hero" id="main-content" tabIndex={-1}><span>O.R / Section archive</span><h1>{title}</h1><p>{copy[section]}</p></section>
-    <section className="section-lead"><Link href={`/article/${lead.slug}`} aria-label={`Read ${lead.title}`} className={`section-lead-image ${lead.cover ? "has-cover" : "visual-2"}`} style={lead.cover ? {backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.45)),url('${lead.cover}')`} : undefined}><RecordId id={lead.recordId} inverse/></Link><div><StoryMeta article={lead}/><h2><Link href={`/article/${lead.slug}`}>{lead.title}</Link></h2><p>{lead.subtitle}</p><Link href={`/article/${lead.slug}`} className="arrow-link">Read record →</Link></div></section>
-    <section className="section-feed"><SectionHeader number="01" title={`${stories.length} records`} note="Only records filed to this section—no filler from unrelated desks."/><div className="feed-grid">{stories.slice(1).map((article, index) => <article key={article.slug}><Link href={`/article/${article.slug}`} aria-label={`Read ${article.title}`} className={`feed-image ${article.cover ? "has-cover" : `visual-${index % 5 + 1}`}`} style={article.cover ? {backgroundImage:`linear-gradient(180deg,transparent,rgba(10,10,10,.34)),url('${article.cover}')`} : undefined}/><RecordId id={article.recordId}/><h3><Link href={`/article/${article.slug}`}>{article.title}</Link></h3><p>{article.excerpt}</p><StoryMeta article={article}/></article>)}</div></section><NewsletterCTA/><Footer/>
-  </main>;
+import { DiscoveryShell, SeriesLinks } from "@/components/discovery";
+import { StoryCard } from "@/components/story-card";
+const copy: Record<string, string> = { world: "Power, borders, conflict and the lives caught between them.", business: "Accounts, institutions and the distance between what was reported and what could be verified.", technology: "Systems, machines and the decisions built into them.", science: "Evidence, uncertainty and the consequences of hazards we struggle to see.", culture: "Ideas, memory and the institutions that shape the public record.", underreported: "Overlooked histories, missing context and records that reward a closer reading." };
+export function generateStaticParams() { return sections.map((section) => ({ section: section.toLowerCase() })); }
+export async function generateMetadata({ params }: { params: Promise<{ section: string }> }) { const { section } = await params; const title = sections.find((name) => name.toLowerCase() === section); return title ? pageMetadata(`/${section}`, title, copy[section]) : {}; }
+export default async function Section({ params }: { params: Promise<{ section: string }> }) {
+  const { section } = await params; const title = sections.find((name) => name.toLowerCase() === section); if (!title) notFound();
+  const slugs = getPublicArticles().filter((a) => section === "underreported" ? a.underreported : a.section.toLowerCase() === section).map((a) => a.slug);
+  const stories = getCatalog().filter((s) => slugs.includes(s.slug)); const lead = stories.find((s) => s.format === "feature") || stories[0];
+  const topics = getTopics().filter((t) => stories.some((s) => s.tags.includes(t.tag)));
+  return <DiscoveryShell eyebrow="Section / Obscured Records" title={title} description={copy[section]}><nav className="topic-links" aria-label="Subjects in this section">{topics.map((t) => <Link key={t.slug} href={`/topic/${t.slug}`}>{t.name}</Link>)}</nav>{lead && <StoryCard story={lead} variant="feature" />}<div className="module-heading"><h2>From the section</h2><span>{stories.length} published records</span></div>{stories.filter((s) => s.slug !== lead?.slug).map((story) => <StoryCard key={story.slug} story={story} variant="horizontal" />)}<SeriesLinks slugs={slugs} /></DiscoveryShell>;
 }

@@ -56,3 +56,6 @@ next-env.d.ts
 
 # Local agent state is not project source.
 /.serena/
+
+# Retain publication QA screenshots and intermediate failures locally.
+/verification/publication-experience-2026-09-27/

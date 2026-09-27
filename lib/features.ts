@@ -359,7 +359,7 @@ export function getFeature(slug: string) {
 export function getReadingLabel(slug: string) {
   const feature = getFeature(slug);
   const article = getArticle(slug);
-  const words = (feature ? [article?.opening || "", feature.standfirst, ...feature.timeline.map((item) => item.event), ...feature.sections.flatMap((section) => section.paragraphs)] : [article?.opening || "", article?.context || "", article?.significance || ""])
+  const words = (feature ? [article?.opening || "", feature.standfirst, ...feature.timeline.map((item) => item.event), ...feature.sections.flatMap((section) => [section.heading, ...section.paragraphs]), feature.evidenceNote] : [article?.opening || "", article?.context || "", article?.excerpt || "", article?.significance || ""])
     .join(" ")
     .trim()
     .split(/\s+/).length;

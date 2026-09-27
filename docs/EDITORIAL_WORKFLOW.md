@@ -34,3 +34,7 @@ After a local Workers build/migration, `node scripts/intake-admin.mjs list` list
 This CLI always targets `.wrangler/state` locally. The integration smoke uses a different, isolated directory and cannot be mistaken for live inbox data. Live triage requires authorized D1 access and a named operator; no remote operator workflow or mail delivery was exercised here.
 
 Keep acknowledgement/assignment outside the public site, preserve consent, and review closed submissions for deletion after 90 days unless an active matter requires retention. The retention policy is an operator procedure, not an automated deletion job.
+
+## Reader-experience pass: a clearer private inbox
+
+`npm run editorial -- inbox` groups existing drafts by their actual state and shows headline, author, section, source-review progress, outstanding checks, assigned reviewer and last transition. `npm run editorial -- inspect <slug>` prints SEO/social descriptions, remaining review work and transition history for one record. Both commands are read-only. An absent reviewer or transition remains explicitly absent. These views add no publication authority and do not expose draft material through public routes. Scheduled publishing and browser autosave remain inapplicable to this repository-backed editing workflow.

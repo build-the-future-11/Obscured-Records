@@ -1,5 +1,7 @@
 # Obscured Records
 
+**Local reader-experience update, 27 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. See [the implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). These working-tree changes have not been deployed and do not change the editorial or public-launch gates below.
+
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
 **27 September 2026: private hosted release verified; public launch remains HOLD.** There are 28 existing public records (eight expanded features and 20 briefs), plus 42 review drafts. Twenty drafts expand existing briefs; 22 introduce new subjects. That is **50 distinct subjects**, not 70 articles or 50 approved publications. New drafts are AI-assisted archival analysis, have no assigned human author, and are not served by the application.

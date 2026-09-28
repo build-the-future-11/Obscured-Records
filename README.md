@@ -1,6 +1,6 @@
 # Obscured Records
 
-**Local reader-experience update, 27 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. See [the implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). These working-tree changes have not been deployed and do not change the editorial or public-launch gates below.
+**Deployed reader-experience update, 28 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. The content and UI are merged into GitHub `main` and deployed to the existing owner-only site. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) and [implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). Editorial and public-launch decisions remain open.
 
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
@@ -46,4 +46,4 @@ The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to 
 - `docs/`: editorial procedures, inventory and prior operating plans.
 - `verification/astra-2026-09-27/`: preserved original source, failures, link audit and final checks.
 
-An earlier code revision was deployed to owner-only Sites, with an additive D1 migration and controlled persistence checks. See [deployment evidence](docs/LAUNCH_EXECUTION_2026-09-27.md). This content pass is not automatically a new deployed version. No email send, analytics event or audio release is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.
+The latest content and UI are deployed to owner-only Sites; [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) identifies the exact version. An earlier release applied the additive D1 migration and verified controlled persistence; its [deployment evidence](docs/LAUNCH_EXECUTION_2026-09-27.md) remains historical. No email send, collected analytics or audio release is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.

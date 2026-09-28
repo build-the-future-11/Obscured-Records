@@ -1,3 +1,9 @@
+# Current release — 28 September 2026
+
+**The latest content and UI are deployed successfully to the existing owner-only site.** Application source `052ee569f0b75bcc1baafbb52e7a1f2afe270092` matches the tree merged into GitHub `main` through PR #9. Hosted CI passed; 30 additional local accessibility states passed. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) for deployment identity and remaining editorial/operational decisions. Email sending and public audience expansion remain unenabled.
+
+Everything below is a dated historical snapshot; statements that the UI was local-only, the deployment helper was unavailable or GitHub CI had not run are superseded by the receipt above.
+
 # Local publication-experience implementation — 27 September 2026
 
 Reader/discovery improvements are implemented in this working tree. They are not a new hosted deployment. See [the dated report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md) and [audit](docs/PUBLICATION_EXPERIENCE_AUDIT_2026-09-27.md) for scope, verification and remaining gates. The source content, review-draft exclusion and capture-only newsletter boundary are preserved. Historical deployment evidence follows.

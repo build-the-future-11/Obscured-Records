@@ -1,5 +1,7 @@
 # Obscured Records — publication experience implementation
 
+**28 September follow-up:** the implementation described below is now merged into GitHub `main` and deployed to the existing owner-only site. CI and 30 additional automated accessibility states passed. See [the completion receipt](SITE_COMPLETION_2026-09-28.md). The dated local-only statements below describe the original implementation snapshot.
+
 This is a local implementation on top of `cef35d1`, not a deployment or editorial approval. The 28 published records, eight expanded features, 42 unpublished drafts, source disclosures and corrections remain intact. The earlier release reports describe earlier revisions.
 
 ## What changed

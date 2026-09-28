@@ -1,5 +1,7 @@
 # Website launch checklist — private release verified; public launch HOLD
 
+**28 September update:** the latest content/UI are merged into GitHub `main` and deployed successfully to the unchanged owner-only site. See [the completion receipt](SITE_COMPLETION_2026-09-28.md). Dated checks below retain their original revision scope.
+
 Updated 27 September 2026. Runtime revision: `bfd7158f7d19aa5094c90dba3d7c2c9e72f24379`. [Execution report](LAUNCH_EXECUTION_2026-09-27.md) · [Operations](LAUNCH_OPERATIONS_2026-09-27.md).
 
 The user's instruction to execute this checklist authorized implementation and the existing owner-only deployment. It did not supply human editorial approval or explicit permission to disclose unpublished drafts in a public repository.
@@ -13,7 +15,7 @@ The user's instruction to execute this checklist authorized implementation and t
 - [x] Build and push the exact candidate to the private Sites source repository.
 - [x] Deploy that candidate and retain the provider's successful deployment receipt.
 - [x] Obtain explicit permission for public GitHub disclosure of the 42 drafts and internal review documents. The user authorized the complete push after the earlier automatic rejection.
-- [ ] Run hosted GitHub CI once an approved source-publication path is available. Local and Sites build-workflow checks passed; these are not a hosted CI receipt.
+- [x] Run hosted GitHub CI: [run 36332084874](https://github.com/build-the-future-11/Obscured-Records/actions/runs/36332084874) passed for source `052ee56`, including both builds, persistence, runtime and browser checks.
 - [ ] Name and obtain acceptance from the human release/incident owner.
 
 ## 2. Editorial and media
@@ -66,7 +68,9 @@ The two live test records are retained and clearly labelled; no email or externa
 - [x] Match the live revision endpoint to the deployed source SHA and confirm anonymous access is rejected with HTTP 401.
 - [x] Verify live canonical origin, author page, news sitemap, RSS/sitemap coverage and draft exclusion.
 - [x] Verify actual live Chrome rendering: five decoded images, desktop/mobile layouts, article heading and no runtime errors; retain screenshots.
-- [ ] Correct and reverify the hosted WebP Content-Type (`application/octet-stream` observed). Restore the missing Sites packaging helper before another release; keep the strict failed check.
+- [x] Restore availability of the Sites packaging workflow and deploy the latest content/UI; provider success recorded on 28 September.
+- [x] Complete 30 additional local automated accessibility states with zero axe violations; retain their bounded scope separately from human review.
+- [ ] Correct and reverify the hosted WebP Content-Type (`application/octet-stream` observed in the earlier release); keep the strict failed check.
 - [ ] Complete representative physical-device and screen-reader review; automated viewport checks do not substitute for these.
 - [ ] Measure representative live slow-network behavior and obtain field performance evidence when enough real traffic exists.
 - [ ] Confirm recurring uptime/error monitoring. The creation attempt returned no completion receipt; check for an existing automation before retrying.

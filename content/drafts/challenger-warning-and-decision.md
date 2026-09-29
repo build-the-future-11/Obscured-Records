@@ -10,7 +10,7 @@
   "tags": ["space", "institutions", "risk", "decision-making"],
   "description": "A source-led account of the Challenger launch decision, the O-ring warning, the Thiokol recommendation reversal, and the information that failed to reach senior decision-makers.",
   "socialPreview": "Challenger is often remembered as a warning ignored. The Rogers Commission documented something more precise: key decision-makers did not receive the full warning record.",
-  "readingTime": "5 min",
+  "readingTime": "4 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {

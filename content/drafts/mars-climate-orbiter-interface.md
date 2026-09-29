@@ -2,7 +2,7 @@
 {
   "slug": "mars-climate-orbiter-interface",
   "title": "The Unit Was Part of the Data",
-  "dek": "Mars Climate Orbiter shows why a number without a shared meaning is an unfinished measurement.",
+  "dek": "Mars Climate Orbiter was lost after an interface delivered pound-force seconds where navigation software expected Newton-seconds. The deeper failure was that the mismatch survived the systems built to catch it.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
   "status": "draft",
@@ -10,24 +10,34 @@
   "tags": [
     "space",
     "software",
-    "measurement"
+    "measurement",
+    "systems engineering"
   ],
-  "description": "Mars Climate Orbiter shows why a number without a shared meaning is an unfinished measurement.",
-  "socialPreview": "Mars Climate Orbiter shows why a number without a shared meaning is an unfinished measurement.",
-  "readingTime": "3 min",
+  "description": "A source-led reconstruction of the Mars Climate Orbiter unit mismatch and the verification, communication and interface failures documented by NASA's mishap board.",
+  "socialPreview": "Mars Climate Orbiter is remembered as a metric-versus-imperial mistake. NASA's mishap report describes a larger systems failure: the wrong units crossed an interface and the process failed to stop them.",
+  "readingTime": "5 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
       "title": "NASA Science: Mars Climate Orbiter",
       "url": "https://science.nasa.gov/mission/mars-climate-orbiter/",
       "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "1999 mission loss and incompatible measurement units."
+      "checkedAt": "2026-09-29",
+      "supports": "Mission purpose, 23 September 1999 loss, and NASA's current summary of the English-unit/metric-unit navigation error."
+    },
+    {
+      "title": "Mars Climate Orbiter Mishap Investigation Board — Phase I Report",
+      "url": "https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf",
+      "status": "located",
+      "checkedAt": "2026-09-29",
+      "supports": "Root cause, Newton-second versus pound-force-second interface mismatch, factor-of-4.45 trajectory underestimation, lower-than-planned trajectory, contributing causes, and verification/validation findings."
     }
   ],
   "reviewChecklist": [
-    "Compare interface details with the Phase I mishap report.",
-    "Keep this analysis distinct from a complete causal investigation."
+    "Human editor: verify each causal statement against the Phase I report rather than relying on the shorter NASA mission summary.",
+    "Decide whether to use the mishap board's cautious loss language or NASA Science's later 'burned up' summary, and keep the wording consistent.",
+    "Keep general engineering lessons explicitly framed as analysis rather than as NASA findings.",
+    "Confirm rights and credit before using any NASA/JPL mission image."
   ],
   "completedChecks": [],
   "approvedBy": null,
@@ -35,24 +45,62 @@
 }
 ---
 
-A number can be perfectly legible and still be unusable. It needs a quantity, a unit, a reference and a context. Remove those, and the digits offer the appearance of precision without an agreement about what they mean.
+A number can be numerically precise and still be wrong for the system that receives it. The value needs a quantity, a unit, a reference and a shared interpretation. Mars Climate Orbiter is remembered because one of those agreements failed at exactly the wrong boundary.
 
-NASA identifies a failure to translate between English and metric units as the navigation error behind the loss of Mars Climate Orbiter. Contact ended on 23 September 1999 as the spacecraft arrived at Mars. The agency's mission summary provides a concise account of the mismatch. It does not make the entire organizational investigation reducible to a schoolroom lesson about conversion.
+NASA lost contact with the spacecraft on 23 September 1999 as it arrived at Mars. The shorthand version of the story is familiar: one team used English units while another expected metric units. That summary is true, but the agency's own mishap report is more specific and more useful.
 
-## A boundary that looked ordinary
+The failure crossed a software interface.
 
-The interesting unit of analysis is the handoff. One system produces information; another accepts it. Each can behave consistently according to its own assumptions while the combined operation fails. A calculation being correct inside a program is therefore a narrower claim than a mission being correct across programs.
+## What the interface was supposed to mean
 
-This is why interface specifications should be read as agreements about meaning. They are not clerical appendices attached to the real engineering. A field called impulse carries a physical interpretation, and the receiving system needs more than a familiar name before treating a value as safe to use.
+During the cruise to Mars, the spacecraft periodically fired thrusters to unload angular momentum from its reaction wheels. Ground software called SM_FORCES processed information about those events and wrote the results into an Angular Momentum Desaturation, or AMD, file used by the navigation team.
 
-There are several ways to make that agreement visible. A type can encode a unit. A test can compare a known input with an independently calculated result. A review can follow one measurement from its origin to its eventual use. These are general engineering possibilities, not a retrospective assertion that any one device would certainly have saved this mission.
+The interface specification required the impulse values in that file to be expressed in Newton-seconds.
 
-The distinction between a safeguard and a guarantee matters. It is easy to write a proposed fix after knowing the outcome. It is harder to show that the fix would have detected the actual fault under the information, workload and timing available before the loss. An honest reconstruction needs the latter test.
+They were delivered in pound-force seconds.
 
-## Why the joke is too small
+The navigation software then treated those values as if they already satisfied the metric specification. NASA's mishap board reported that the effect of the thruster firings was therefore underestimated by a factor of 4.45. The board identified this failure to use metric units in the ground software file as the mission's root cause.
 
-The metric-versus-imperial punchline offers a satisfying villain: an obvious mistake that knowledgeable people should never make. But familiarity is exactly what can make an assumption difficult to notice. A value that looks plausible may pass through several layers without anyone asking whether plausibility is the right check.
+That description matters because it changes the lesson. The problem was not simply that two measurement systems existed. The problem was that a defined interface said one thing, an implementation produced another, and downstream software accepted the data without the discrepancy being stopped.
 
-Treating the event as stupidity also removes its relevance. Readers can reassure themselves that their organization knows how to convert units. The more difficult question is whether it knows where assumptions cross boundaries, who owns those boundaries, and how disagreement becomes visible before an irreversible operation.
+## The mismatch survived for months
 
-Mars Climate Orbiter is not evidence that complex missions are doomed by small errors. It is a reason to take the apparently small agreements seriously. The unit was never extra information. It was part of the data all along.
+The report also complicates the idea of a single, isolated mistake.
+
+The small-forces files had earlier format and spacecraft-attitude problems. For the first four months of cruise, the navigation team did not use them in orbit determination. When correctly formatted files began to be used, the report says anomalous data indicating underestimated trajectory perturbations became apparent within about a week.
+
+The anomaly still did not lead to the unit mismatch being identified before Mars arrival.
+
+By the time the loss was reconstructed, the board estimated that the trajectory at insertion was roughly 170 kilometers lower than planned. A later navigation reconstruction produced a periapsis of about 57 kilometers, a level judged too low for the spacecraft to survive.
+
+This is not a story in which the organization had no signals. It is a story in which signals, assumptions and ownership did not combine into a successful correction.
+
+## NASA's report was about more than units
+
+The mishap board listed eight contributing causes in addition to the root cause. They included undetected mismodeling of spacecraft velocity changes, an operations navigation team that was not sufficiently familiar with the spacecraft, a trajectory-correction maneuver that was not performed, weaknesses in the transition from development to operations, inadequate communication, insufficient navigation staffing, inadequate training, and verification-and-validation shortcomings in the ground software.
+
+The verification section is especially direct. The board wrote that the Software Interface Specification existed but was not properly used in development and testing. It also found that end-to-end testing of the small-forces ground software against the specification did not appear to have been completed, and that interface-control verification was incomplete or insufficiently rigorous.
+
+That makes the popular metric-versus-imperial joke too small.
+
+A conversion error explains the numerical mismatch. It does not, by itself, explain why the mismatch survived a mission organization, a written interface specification, software development, testing, navigation analysis and months of operations.
+
+## An interface is an engineering object
+
+A software interface can look administrative: a field name, a file format, a unit written in a specification. But for a system whose components are built and operated by different teams, that document carries physical meaning.
+
+A value labelled as impulse is not complete simply because it contains a number. The receiving side needs to know what physical quantity the number represents and in what units. If that meaning is implicit, a syntactically valid file can still carry semantically wrong data.
+
+Several engineering practices can make such disagreements harder to hide. Units can be represented in types rather than comments. Tests can inject known values and compare outputs with independent calculations. Interface checks can trace one measurement from its source through every transformation to its final consumer. Independent validation can ask whether the integrated system behaves according to the contract rather than whether each component appears internally consistent.
+
+Those are general engineering lessons, not claims that one particular safeguard would certainly have saved Mars Climate Orbiter. Retrospective fixes are easy to propose once the failure is known. The stronger question is whether a safeguard would have exposed the actual discrepancy under the conditions that existed before the loss.
+
+## Why the story still matters
+
+Reducing the mission to a joke about units invites an easy conclusion: competent teams know how to convert pounds to Newtons.
+
+The NASA report points toward a harder question. Does an organization know where assumptions cross boundaries, who owns those boundaries, how interface requirements are verified, and what happens when observed behavior begins to disagree with the model?
+
+Mars Climate Orbiter did not fail because numbers are unreliable. It failed in part because a number crossed an interface with the wrong physical meaning and the surrounding system failed to catch the discrepancy in time.
+
+The unit was not extra information attached to the data. It was part of the data.

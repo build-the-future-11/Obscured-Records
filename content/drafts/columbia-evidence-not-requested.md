@@ -10,7 +10,7 @@
   "tags": ["space", "evidence", "decision-making", "risk"],
   "description": "A source-led analysis of Columbia's foam-strike assessment, the requests for on-orbit imagery, and the organizational decisions documented by the Columbia Accident Investigation Board.",
   "socialPreview": "After Columbia's foam strike, engineers wanted better imagery. The CAIB found that three imagery requests were initiated and that communication and management failures shaped what happened next.",
-  "readingTime": "5 min",
+  "readingTime": "4 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {

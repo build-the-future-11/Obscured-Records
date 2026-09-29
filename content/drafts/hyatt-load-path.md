@@ -10,7 +10,7 @@
   "tags": ["structures", "design review", "kansas city", "load path"],
   "description": "A cautious source-led explanation of the Hyatt Regency walkway collapse, centered on the box beam-hanger rod connections and the load path through the suspended walkways.",
   "socialPreview": "The Hyatt walkway collapse is often told through a changed hanger-rod detail. NBS's core finding is more fundamental: the critical box beam-hanger rod connections lacked sufficient capacity.",
-  "readingTime": "4 min",
+  "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {

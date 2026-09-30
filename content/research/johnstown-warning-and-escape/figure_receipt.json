@@ -1,0 +1,10 @@
+{
+  "rows": 5,
+  "source_csv_sha256": "3332474b595b81ac06cb8dc3bb9f68a413187d3965af9d27996eccbb0f692433",
+  "kind": "historical event timeline",
+  "fitted_model": false,
+  "interpolation": false,
+  "simulated_data": false,
+  "clock_time_policy": "Reported local clock labels; no unsupported timezone conversion",
+  "matplotlib_version": "3.10.8"
+}

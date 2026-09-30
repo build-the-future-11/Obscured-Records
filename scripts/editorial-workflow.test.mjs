@@ -13,7 +13,7 @@ test('every new draft stays out of public lookup and every draft has usable meta
     assert.notEqual(metadata.status, 'published');
     if (!existing.has(metadata.slug)) { newCount++; assert.equal(getArticle(metadata.slug), undefined); }
   }
-  assert.equal(newCount, 23);
+  assert.equal(newCount, 25);
 });
 test('review cannot be turned into approval without actual reviewer and source/checklist fields', () => {
   const { metadata, body } = readDraft('content/drafts/triangle-exits-and-power.md');

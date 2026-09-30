@@ -1,0 +1,64 @@
+{
+  "slug": "equifax-inventory-of-responsibility",
+  "inspectedAt": "2026-09-30",
+  "sources": [
+    {
+      "title": "GAO-18-559: Actions Taken by Equifax and Federal Agencies, August 2018",
+      "url": "https://www.gao.gov/products/gao-18-559",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Highlights and methodology: four factors, agency response and explicit dependence on Equifax investigation."
+    },
+    {
+      "title": "FTC complaint against Equifax, July 22, 2019",
+      "url": "https://www.ftc.gov/system/files/documents/cases/172_3203_equifax_complaint_7-22-19.pdf",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Paragraphs 14–22: patch notice, scan scope, network segmentation and credentials. Allegations, not judicial factual findings."
+    },
+    {
+      "title": "House Oversight Committee Republican staff report announcement, December 10, 2018",
+      "url": "https://oversight.house.gov/report/committee-releases-report-revealing-new-information-on-equifax-data-breach/",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Key findings: accountability gap, legacy complexity, certificate maintenance, consumer support. Announcement inspected; full staff report not claimed."
+    },
+    {
+      "title": "Equifax stipulated court order, July 23, 2019",
+      "url": "https://www.ftc.gov/system/files/documents/cases/172_3203_equifax_order_signed_7-23-19.pdf",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Findings paragraph 3; affected-consumer definition; section II A–E, printed pages 2 and 12–15. Obligations not proof of compliance."
+    },
+    {
+      "title": "FTC Equifax case docket",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/172-3203-equifax-inc",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Case summary and dated complaint/order entries; global settlement range, not consumer payout per person."
+    }
+  ],
+  "claim_map": {
+    "patch and lateral access allegations": [
+      2
+    ],
+    "settlement posture and obligations": [
+      4
+    ],
+    "GAO methods, categories, agencies": [
+      1
+    ],
+    "Republican staff findings": [
+      3
+    ],
+    "global settlement range": [
+      5
+    ]
+  },
+  "body_words_excluding_metadata_headings_references": 724,
+  "human_review": false,
+  "published": false,
+  "direct_quotations": 0,
+  "coverage": "Selected official source passages and summaries, not every page of each report. FTC news release timed out; case docket and signed order were inspected instead.",
+  "source_budget_note": "Each cited source contributes fewer than 200 words of paraphrase; no direct quotations."
+}

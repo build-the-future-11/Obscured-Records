@@ -1,0 +1,74 @@
+{
+  "slug": "walkerton-when-results-stopped-short",
+  "checkedAt": "2026-09-30",
+  "reviewStatus": "inspected-ai-review-pending",
+  "method": "Selected passages inspected through web document extraction. This is not human verification. Passage locators use printed page numbers for PDFs.",
+  "sources": [
+    {
+      "title": "Walkerton Inquiry, Part One: A Summary (2002), official report reproduced by the Water Supply Association of B.C.",
+      "url": "https://wsabc.ca/wp/wp-content/uploads/2019/07/Walkerton-Report-1-Summary.pdf",
+      "supports": "Printed pp. 2–4, 9–10 and 31–33: toll, Well 5, farm practices, adverse results, disclosure and notification requirements.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Summary printed pp. 2–4; PDF pp. 3–5",
+        "Summary printed pp. 9–10; PDF pp. 10–11",
+        "Summary printed pp. 31–33; PDF pp. 32–34"
+      ],
+      "claimEvidence": [
+        "Well 5 and farm-practice finding; later toll; concealed results; absent binding notification"
+      ]
+    },
+    {
+      "title": "Bruce-Grey-Owen Sound Health Unit and Health Canada, Waterborne Outbreak of Gastroenteritis, CCDR 26-20 (October 15, 2000)",
+      "url": "https://publications.gc.ca/collections/Collection/H12-21-26-20.pdf",
+      "supports": "Printed pp. 170–171: epidemiologic investigation, advisory, reported versus estimated case totals and contemporary death count.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "CCDR printed pp. 170–171; PDF pp. 6–7"
+      ],
+      "claimEvidence": [
+        "Advisory timestamp; reported/estimated distinction; six deaths in this dated report"
+      ]
+    },
+    {
+      "title": "Clark and colleagues, Characterization of Waterborne Outbreak–associated Campylobacter jejuni, Walkerton, Ontario (2003)",
+      "url": "https://wwwnc.cdc.gov/eid/article/9/10/02-0584_article",
+      "supports": "Environmental Specimens, Results and Discussion: sampling dates, 57 water samples, typing evidence and limits of attribution.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Environmental Specimens; Results opening paragraphs; Discussion paragraphs 1–5 and molecular-surveillance caveat"
+      ],
+      "claimEvidence": [
+        "Delayed farm sampling; two principal strain groups; 57 negative water samples; qualified source attribution"
+      ]
+    },
+    {
+      "title": "Health Canada, Guidance on waterborne pathogens in drinking water",
+      "url": "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/reports-publications/water-quality/guidance-waterborne-pathogens-drinking-water.html",
+      "supports": "Sections A.3.2–A.3.3: treatment, concentration and contact time, multiple operating parameters, training and distribution-system risks.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "A.3.2 Water treatment plant, numbered operating elements",
+        "A.3.3 Drinking water distribution system, entry mechanisms and operating practices"
+      ],
+      "claimEvidence": [
+        "Disinfection exposure and process monitoring; training; downstream entry and controls"
+      ]
+    }
+  ],
+  "limitations": [
+    "Ontario archive URLs inspected during discovery now redirect to an archive landing page; the reproduced government report is transparently identified as a mirror.",
+    "The full inquiry was not reviewed; no claim is made of exhaustive archival coverage.",
+    "No explanation for the six-versus-seven death-count difference was established from inspected passages.",
+    "No causal percentages, present-day compliance judgment or individual medical advice is offered."
+  ],
+  "rights": {
+    "directQuotationWords": 0,
+    "sourceSummaryPolicy": "Body uses compact paraphrases from four independent documents; evidence locators avoid reproducing source passages."
+  },
+  "bodyWordsExcludingMetadataHeadingsReferences": 766
+}

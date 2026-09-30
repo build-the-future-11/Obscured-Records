@@ -1,0 +1,64 @@
+{
+  "slug": "knight-capital-order-boundary",
+  "inspectedAt": "2026-09-30",
+  "coverage": "Selected passages via official web pages and parsed report text. No full-report legal review or interviews.",
+  "sources": [
+    {
+      "title": "SEC administrative order, Release 70694, October 16, 2013",
+      "url": "https://www.sec.gov/litigation/admin/2013/34-70694.pdf",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Sections II; paragraphs 12–17, 19–27: settlement posture, router, deployment and response. Selected passages, not full legal review."
+    },
+    {
+      "title": "SEC announces Knight Capital settlement, October 16, 2013",
+      "url": "https://www.sec.gov/newsroom/press-releases/2013-222",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Opening and closing paragraphs: $12 million penalty and independent consultant. Same investigation as source 1, not independent corroboration."
+    },
+    {
+      "title": "Knight Capital Group 2012 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1060749/000119312513087636/d449921d10k.htm",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "August 1, 2012 Loss discussion; results footnote; Note 3; risk-factor discussion. Company-reported figures and confidence risks."
+    },
+    {
+      "title": "SEC adopts market-access rule, November 3, 2010",
+      "url": "https://www.sec.gov/newsroom/press-releases/2010-210-sec-adopts-new-rule-preventing-unfiltered-market-access",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Requirements Under the Rule: prevention before routing, direct control, regular review."
+    },
+    {
+      "title": "SEC staff market-access questions and answers",
+      "url": "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/divisionsmarketregfaq-0",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Questions 5, 8, 16 and 18: third-party controls, thresholds, cancellation versus rejection, documented changes. Staff guidance, not incident findings."
+    }
+  ],
+  "claim_map": {
+    "deployment and settlement posture": [
+      1
+    ],
+    "reported losses, costs, financing and confidence risk": [
+      3
+    ],
+    "historical pre-trade rule framework": [
+      4
+    ],
+    "rule interpretation and boundaries": [
+      5
+    ],
+    "penalty and consultant": [
+      2
+    ]
+  },
+  "body_words_excluding_metadata_headings_references_figure": 723,
+  "direct_quotations": 0,
+  "source_budget_note": "Order/press-release combined narrative paraphrase below 200 words; company filing below 200; rule announcement and staff FAQ each below 200. Analysis is explicitly distinguished.",
+  "human_review": false,
+  "published": false
+}

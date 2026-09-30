@@ -1,0 +1,83 @@
+{
+  "slug": "silver-bridge-hidden-fracture",
+  "checkedAt": "2026-09-30",
+  "reviewStatus": "inspected-ai-review-pending",
+  "method": "Official pages and selected PDF passages inspected; no human verification claimed.",
+  "sources": [
+    {
+      "title": "NTSB, Collapse of U.S. 35 Highway Bridge, investigation 80267",
+      "url": "https://www.ntsb.gov/investigations/Pages/80267.aspx",
+      "supports": "What Happened and What We Found: casualty count, joint failure sequence, corrosion mechanisms and historical inspection limits.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "What Happened, paragraphs 1–3",
+        "What We Found, causal finding and three contributing causes"
+      ],
+      "claimEvidence": [
+        "Toll; eyebar 330/C13N; fracture sequence; inaccessible flaw"
+      ]
+    },
+    {
+      "title": "NIST, A Unique Institution: The National Bureau of Standards 1950–1969, pp. 576–579",
+      "url": "https://nistdigitalarchives.contentdm.oclc.org/digital/api/collection/p15421coll1/id/9820/download",
+      "supports": "Official institutional history: eyebar geometry and steel; Bennett investigation; crack-surface evidence and full-scale testing.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Printed pp. 576–579 (four-page digital excerpt), particularly p. 577 and p. 579"
+      ],
+      "claimEvidence": [
+        "Paired eyebars; steel response; fracture surfaces; validating full-scale test"
+      ]
+    },
+    {
+      "title": "FHWA, Happy 50th Anniversary: National Bridge Inspection Standards (2021)",
+      "url": "https://www.fhwa.dot.gov/highwayhistory/national_bridge_inspection_standards.cfm",
+      "supports": "1968 legislation, April 27, 1971 regulation, reporting, inspector training and inventory.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Paragraphs beginning The modern highway bridge safety program, The lessons learned, Section 26, State highway agencies, and When FHWA enacted"
+      ],
+      "claimEvidence": [
+        "Legislative/regulatory dates; methods, training, reporting and inventory"
+      ]
+    },
+    {
+      "title": "FHWA, National Bridge Inspection Standards, final rule, May 6, 2022",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2022-05-06/pdf/2022-09512.pdf",
+      "supports": "87 FR 27399 and 27430: replacement terminology, redundancy considerations, definition of NSTM and hands-on inspection.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "87 FR 27399, discussion of Nonredundant member",
+        "87 FR 27430, definitions of load-path redundancy, NSTM and NSTM inspection"
+      ],
+      "claimEvidence": [
+        "2022 terminology and conditional structural definition, not a prediction of failure"
+      ]
+    }
+  ],
+  "additionalInspection": {
+    "url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR7101.pdf",
+    "passages": [
+      "Cover: adopted December 16, 1970",
+      "Foreword, printed pp. 1–2: interim versus final investigation and contemporary detection limits"
+    ],
+    "method": "Downloaded official scan and inspected OCR of these selected pages; OCR errors checked against matching NTSB page/search extraction where used. Entire report not read.",
+    "use": "Context check only; article relies on directly readable official case summary for the failure finding."
+  },
+  "limitations": [
+    "Four-page NBS history is an institutional retrospective, not the underlying laboratory report.",
+    "No claim about legal compliance or present condition of any existing bridge.",
+    "The 1971 inspection interval and 2022 terminology are expressly dated.",
+    "No numerical crack dimension is used because inspected public summaries describe different dimensions and levels of rounding.",
+    "No causal percentages or quantitative risk estimates are supplied."
+  ],
+  "rights": {
+    "directQuotationWords": 0,
+    "sourceSummaryPolicy": "Compact paraphrases; no source photographs or diagrams reproduced."
+  },
+  "bodyWordsExcludingMetadataHeadingsReferences": 755
+}

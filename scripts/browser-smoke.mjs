@@ -35,6 +35,7 @@ const checks = [], errors = [], consoleMessages = [], performanceSamples = [], a
 function pass(name) { checks.push(name); console.log(`PASS browser: ${name}`); }
 
 async function auditAccessibility(page, path, width, state = 'default') {
+  width = page.viewportSize()?.width ?? width;
   await page.addScriptTag({ path: axeScript });
   const violations = await page.evaluate(async () => (await window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.map((n) => ({ target: n.target, summary: n.failureSummary })) })));
   accessibility.push({ path, width, state, violations });

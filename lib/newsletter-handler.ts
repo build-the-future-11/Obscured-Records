@@ -99,18 +99,19 @@ export function createNewsletterHandler(save: (email: string) => Promise<unknown
     // Preserve the existing honeypot response without writing subscriber data.
     if (typeof fields.website === "string" && fields.website.trim()) return json("You are on the list.");
 
+    if (fields.consent !== true) return json("Confirm that your email may be stored for the newsletter waitlist.", 400);
     const email = typeof fields.email === "string" ? fields.email.trim().toLowerCase() : "";
     const hasControlCharacter = Array.from(email).some((character) => character.charCodeAt(0) < 32 || character.charCodeAt(0) === 127);
     if (email.length > 254 || hasControlCharacter || !emailPattern.test(email)) return json("Enter a valid email address.", 400);
     try {
       await save(email);
       // Persistence is not evidence that an email was sent or delivered.
-      return json("Your signup has been saved.");
+      return json("Your waitlist request has been saved. Email delivery is not enabled; you have not been added to an active mailing list.");
     } catch (error) {
       if (error instanceof IntakeRateLimit) return json("Too many requests. Please try again in an hour.", 429);
       // Do not log email addresses, request bodies, or provider exceptions.
       console.error("Newsletter persistence unavailable.");
-      return json("Subscriptions are temporarily unavailable. Please try again shortly.", 503);
+      return json("Waitlist signups are temporarily unavailable. Please try again shortly.", 503);
     }
   };
 }

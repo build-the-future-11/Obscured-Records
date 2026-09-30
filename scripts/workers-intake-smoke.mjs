@@ -44,7 +44,7 @@ try {
     assert.equal(response.status, 200, `Workers reader route ${path}`);
     await response.text(); checks.push(`Reader route ${path}: 200`);
   }
-  const newsletter = { email: 'newsletter-smoke@example.invalid', website: '' };
+  const newsletter = { email: 'newsletter-smoke@example.invalid', website: '', consent: true };
   for (let i = 0; i < 3; i++) await send('/api/newsletter', newsletter, 200);
   await send('/api/newsletter', newsletter, 429);
   const submission = { email: 'writer-smoke@example.invalid', kind: 'Source', title: 'Local integration test only', message: 'This is a retained local test submission that checks database persistence without contacting a live service.', sourceUrl: 'https://example.invalid/source', consent: true, website: '' };

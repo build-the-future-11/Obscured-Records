@@ -1,3 +1,4 @@
+import { displayCover } from "./media-policy.ts";
 import { getPublicArticles } from "./articles.ts";
 import { getFeature, getReadingLabel } from "./features.ts";
 import { toIsoEditorialDate } from "./editorial-dates.ts";
@@ -30,7 +31,7 @@ export function getCatalog() {
     author: article.author, authorSlug: article.authorSlug, tags: article.tags, recordId: article.recordId,
     date: article.date, isoDate: toIsoEditorialDate(article.date), eventDate: article.eventDate,
     format: getFeature(article.slug) ? "feature" : "brief", readingLabel: getReadingLabel(article.slug),
-    cover: article.cover, coverCredit: article.coverCredit,
+    cover: displayCover(article), coverCredit: displayCover(article) ? article.coverCredit : undefined,
     series: collections.filter((series) => series.slugs.includes(article.slug)).map((series) => series.slug),
   })).sort((a, b) => b.isoDate.localeCompare(a.isoDate) || b.recordId.localeCompare(a.recordId));
 }

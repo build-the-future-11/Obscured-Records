@@ -1,3 +1,4 @@
+import { loadIntakeDatabase } from "./intake-database.ts";
 import { enforceIntakeLimit } from "./intake-policy.ts";
 type NewsletterDatabase = {
   prepare(sql: string): {
@@ -23,16 +24,11 @@ export function createNewsletterStore(
   };
 }
 
-export const saveNewsletterSubscriber = createNewsletterStore(async () => {
-  // D1 is a Workers binding, not a Node/Vercel environment variable. Do not
-  // replace it with in-memory storage or claim success when it is absent.
-  const { env } = await import("cloudflare:workers");
-  return env.DB;
-});
+export const saveNewsletterSubscriber = createNewsletterStore(loadIntakeDatabase);
 
 export async function saveLimitedNewsletterSubscriber(email: string) {
-  const { env } = await import("cloudflare:workers");
-  if (!env.DB) throw new Error("Newsletter storage is unavailable.");
-  await enforceIntakeLimit(env.DB, email, "newsletter");
-  return createNewsletterStore(async () => env.DB)(email);
+  const database = await loadIntakeDatabase();
+  if (!database) throw new Error("Newsletter storage is unavailable.");
+  await enforceIntakeLimit(database, email, "newsletter");
+  return createNewsletterStore(async () => database)(email);
 }

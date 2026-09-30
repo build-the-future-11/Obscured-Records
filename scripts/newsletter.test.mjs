@@ -21,17 +21,17 @@ async function expectResponse(body, expectedStatus, headers = {}) {
 
 for (const [name, body] of [
   ['malformed JSON', '{'], ['null', 'null'], ['array', '[]'], ['string', '"x"'],
-  ['number', '42'], ['boolean', 'false'], ['missing email', '{}'],
-  ['wrong email type', '{"email":42}'], ['invalid email', '{"email":"bad"}'],
-  ['control characters', JSON.stringify({ email: 'a\u0000@example.com' })],
-  ['oversized email', JSON.stringify({ email: 'a'.repeat(250) + '@example.com' })],
-  ['wrong honeypot type', '{"email":"a@example.com","website":[]}' ],
+  ['number', '42'], ['boolean', 'false'], ['missing email', '{"consent":true}'],
+  ['wrong email type', '{"email":42,"consent":true}'], ['invalid email', '{"email":"bad","consent":true}'],
+  ['control characters', JSON.stringify({ email: 'a\u0000@example.com', consent: true })],
+  ['oversized email', JSON.stringify({ email: 'a'.repeat(250) + '@example.com', consent: true })],
+  ['wrong honeypot type', '{"email":"a@example.com","consent":true,"website":[]}' ],
 ]) {
   test(`rejects ${name} without storage`, async () => assert.deepEqual(await expectResponse(body, 400), []));
 }
 
 test('accepts JSON charset parameters and normalizes email', async () => {
-  assert.deepEqual(await expectResponse('{"email":"  A@EXAMPLE.COM ","website":""}', 200,
+  assert.deepEqual(await expectResponse('{"email":"  A@EXAMPLE.COM ","consent":true,"website":""}', 200,
     { 'content-type': 'Application/JSON; charset=utf-8', origin: 'https://publication.example' }), ['a@example.com']);
 });
 
@@ -40,11 +40,11 @@ test('rejects a content-type prefix impostor', async () => {
 });
 
 test('rejects another origin', async () => {
-  assert.deepEqual(await expectResponse('{"email":"a@example.com"}', 403, { origin: 'https://other.example' }), []);
+  assert.deepEqual(await expectResponse('{"email":"a@example.com","consent":true}', 403, { origin: 'https://other.example' }), []);
 });
 
 test('honeypot never writes', async () => {
-  assert.deepEqual(await expectResponse('{"email":"a@example.com","website":"spam"}', 200), []);
+  assert.deepEqual(await expectResponse('{"email":"a@example.com","consent":true,"website":"spam"}', 200), []);
 });
 
 test('rejects declared oversized requests before reading', async () => {
@@ -79,7 +79,7 @@ test('does not trust a forged small content length', async () => {
 });
 
 test('accepts an exactly 4096-byte valid request', async () => {
-  const body = JSON.stringify({ email: 'a@example.com' });
+  const body = JSON.stringify({ email: 'a@example.com', consent: true });
   assert.deepEqual(await expectResponse(body.padEnd(4096, ' '), 200), ['a@example.com']);
 });
 
@@ -88,7 +88,7 @@ test('invalid UTF-8 is rejected', async () => {
 });
 
 test('storage failure returns 503 without exposing provider details', async () => {
-  const response = await createNewsletterHandler(async () => { throw new Error('private@example.com secret-provider-detail'); })(request('{"email":"a@example.com"}'));
+  const response = await createNewsletterHandler(async () => { throw new Error('private@example.com secret-provider-detail'); })(request('{"email":"a@example.com","consent":true}'));
   assert.equal(response.status, 503);
   assert.equal(response.headers.get('cache-control'), 'no-store');
   assert.doesNotMatch(await response.text(), /private|secret-provider-detail/);
@@ -98,7 +98,7 @@ test('success waits for persistence and makes no delivery promise', async () => 
   let complete;
   const persisted = new Promise((resolve) => { complete = resolve; });
   let settled = false;
-  const pending = createNewsletterHandler(() => persisted)(request('{"email":"a@example.com"}')).then((response) => { settled = true; return response; });
+  const pending = createNewsletterHandler(() => persisted)(request('{"email":"a@example.com","consent":true}')).then((response) => { settled = true; return response; });
   await new Promise((resolve) => setImmediate(resolve));
   assert.equal(settled, false);
   complete();
@@ -140,7 +140,7 @@ test('accepts a real Host when Next.js reconstructs an internal URL', async () =
   const writes = [];
   const response = await createNewsletterHandler(async (email) => writes.push(email))(new Request('http://localhost:3000/api/newsletter', {
     method: 'POST', headers: { 'content-type': 'application/json', host: '127.0.0.1:4100', origin: 'http://127.0.0.1:4100' },
-    body: '{"email":"a@example.com"}',
+    body: '{"email":"a@example.com","consent":true}',
   }));
   assert.equal(response.status, 200);
   assert.deepEqual(writes, ['a@example.com']);

@@ -43,6 +43,9 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+      - name: Remove temporary source archive
+        run: rm -f site-source.tar.gz
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -98,7 +101,7 @@ jobs:
           BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
         run: |
           mkdir -p "$BROWSER_TOOLS_DIR"
-          npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0
+          npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0 axe-core@4.10.3
           node "$BROWSER_TOOLS_DIR/node_modules/playwright/cli.js" install --with-deps chromium
 
       - name: Browser interaction and responsive checks

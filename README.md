@@ -1,5 +1,7 @@
 # Obscured Records
 
+**30 September website implementation:** configurable homepage, real-author attribution, contributor introductions, explicit newsletter-waitlist consent, optional Node/Vercel D1 connectivity, sharing images and regression coverage. See [implementation and configuration](docs/WEBSITE_UPDATE_2026-09-30.md). This source update does not itself prove deployment or remove the public-launch HOLD.
+
 **Deployed reader-experience update, 28 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. The content and UI are merged into GitHub `main` and deployed to the existing owner-only site. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) and [implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). Editorial and public-launch decisions remain open.
 
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
@@ -14,7 +16,7 @@ Start with [STATUS](STATUS.md), [the final report](ASTRA_FINAL_REPORT.md), [repr
 
 Readers can browse six sections, search the archive, follow related records, inspect source links and corrections, use canonical sharing, and subscribe through RSS. Public discovery and article routes use explicitly published records with valid, nonfuture dates. Held/draft/review records are excluded; changing repository content requires a rebuild.
 
-Contributors can send corrections, source leads, rights notes and pitches through `/submit`. The form validates input, requires consent and an HTTPS reference, bounds request size, and retains text if saving fails. A receipt means a private D1 write succeeded. It does not mean acceptance, publication or acknowledgement by an editor. Ordinary form/email intake is not a confidential-source channel.
+Contributors can send corrections, source leads, rights notes and pitches through `/submit`. The form validates input, requires consent and an HTTPS reference (optional for contributor introductions through `/contribute`), bounds request size, and retains text if saving fails. A receipt means a private D1 write succeeded. It does not mean acceptance, publication or acknowledgement by an editor. Ordinary form/email intake is not a confidential-source channel.
 
 Editors review local private intake through `scripts/intake-admin.mjs`, and review repository drafts through `npm run editorial`. [Editorial workflow](docs/EDITORIAL_WORKFLOW.md) describes review, approval and deliberate publication. There is no public editor dashboard and no browser-supplied role grants editorial authority.
 
@@ -34,7 +36,7 @@ npm run typecheck
 npm run build
 ```
 
-The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to migrate an isolated local D1 database and verify actual persistence. `npm run build:vercel` builds with Next.js webpack. The Vercel/Node reader site works, but intake deliberately returns 503 because a Workers D1 binding is not available there. The existing owner-only Sites deployment uses Workers/D1. Enabling public intake still requires the operational gates in the release checklist.
+The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to migrate an isolated local D1 database and verify actual persistence. `npm run build:vercel` builds with Next.js webpack. The Vercel/Node reader site works. Intake uses a native Workers D1 binding or an explicitly configured server-only D1 REST connection; without either, it deliberately returns 503. See the 30 September configuration guide before enabling that connection. The existing owner-only Sites deployment uses Workers/D1. Enabling public intake still requires the operational gates in the release checklist.
 
 ## Content and operations
 

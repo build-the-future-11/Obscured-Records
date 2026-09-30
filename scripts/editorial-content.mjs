@@ -45,6 +45,12 @@ export function validateDraft(metadata, body) {
   if (words < 350) throw new Error('Draft must contain at least 350 words of substantive copy');
   if (metadata.readingTime !== `${Math.max(1, Math.ceil(words / 210))} min`) throw new Error('Reading time differs from body');
   if (!isTextList(metadata.reviewChecklist)) throw new Error('Retain specific editorial review work as nonempty text entries');
+  // The read-only inbox consumes this field in every state. Reject strings
+  // before substring membership can falsely report a completed review.
+  if (metadata.completedChecks !== undefined
+    && (!Array.isArray(metadata.completedChecks) || !Array.from(metadata.completedChecks).every(isText))) {
+    throw new Error('Approval completed checks must be an array of nonempty strings');
+  }
   if (metadata.status === 'approved') {
     // A string also has .includes(): require arrays before checking completion.
     // Structural validation does not itself establish real human approval.

@@ -11,6 +11,7 @@ import { setTimeout as delay } from 'node:timers/promises';
 assert.ok(process.env.BROWSER_TOOLS_DIR, 'Set BROWSER_TOOLS_DIR to the isolated Playwright installation.');
 const requireTools = createRequire(resolve(process.env.BROWSER_TOOLS_DIR, 'package.json'));
 const { chromium } = requireTools('playwright');
+const axeScript = requireTools.resolve('axe-core/axe.min.js');
 assert.equal(requireTools('playwright/package.json').version, '1.56.0');
 const { revision: sourceSha, sourceDigest } = sourceIdentity();
 const outputDir = resolve(process.env.BROWSER_ARTIFACTS_DIR || 'browser-artifacts');
@@ -30,8 +31,16 @@ server.stderr.on('data', (chunk) => { serverOutput = (serverOutput + chunk).slic
 server.on('error', (error) => { launchError = error; });
 const exited = new Promise((resolve) => server.once('exit', resolve));
 let browser, activePage;
-const checks = [], errors = [], consoleMessages = [], performanceSamples = [];
+const checks = [], errors = [], consoleMessages = [], performanceSamples = [], accessibility = [];
 function pass(name) { checks.push(name); console.log(`PASS browser: ${name}`); }
+
+async function auditAccessibility(page, path, width, state = 'default') {
+  width = page.viewportSize()?.width ?? width;
+  await page.addScriptTag({ path: axeScript });
+  const violations = await page.evaluate(async () => (await window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] } })).violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.map((n) => ({ target: n.target, summary: n.failureSummary })) })));
+  accessibility.push({ path, width, state, violations });
+  assert.deepEqual(violations, [], `${path} ${state} accessibility at ${width}px`);
+}
 
 async function inspectPage(page, path, width) {
   const response = await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
@@ -53,6 +62,7 @@ async function inspectPage(page, path, width) {
     }).slice(0, 8).map((element) => ({ tag: element.tagName, class: element.className })),
   }));
   assert.ok(overflow.extra <= 1, `${path} at ${width}px overflow: ${JSON.stringify(overflow)}`);
+  if ([375, 1440].includes(width)) await auditAccessibility(page, path, width);
   const brokenContact = await page.locator('a[href*="ryangomez.hsl"]').count();
   assert.equal(brokenContact, 0, `${path}: stale contact address`);
   const emptyLinks = await page.locator('a').evaluateAll((links) => links.filter((link) => !link.textContent.trim() && !link.getAttribute('aria-label') && !link.querySelector('img[alt]')).map((link) => link.getAttribute('href')));
@@ -88,7 +98,7 @@ try {
   page.setDefaultTimeout(12000);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
-  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
+  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
   const layoutFailures = [];
   for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 375, 768, 1440])) {
     await page.setViewportSize({ width, height: 900 });
@@ -99,7 +109,7 @@ try {
         console.error(`FAIL browser layout: ${layoutFailures.at(-1)}`);
       }
     }
-    for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter']]) {
+    for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter'], ['/contribute', 'contribute'], ['/about', 'about']]) {
       await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
       await page.locator('h1').waitFor();
       await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map((image) => image.decode().catch(() => {}))); });
@@ -219,7 +229,36 @@ try {
   assert.equal(await page.getByText('Copied', { exact: true }).count(), 0);
   pass('canonical sharing and honest clipboard-denial feedback');
 
-  await page.goto(`${base}/newsletter`);
+  await page.goto(`${base}/contribute`);
+  const introduction = page.locator('.submission-form');
+  assert.equal(await introduction.locator('[name=sourceUrl]').getAttribute('required'), null);
+  await introduction.locator('[name=email]').fill('contributor@example.invalid');
+  await introduction.locator('[name=title]').fill('Local test contributor — research');
+  await introduction.locator('[name=message]').fill('A beginner introduction with an interest in source verification, editing and a few hours of availability. This is a local fixture only.');
+  await introduction.locator('[name=consent]').check();
+  await introduction.getByRole('button', { name: 'Send introduction' }).click();
+  await introduction.getByRole('alert').filter({ hasText: 'temporarily unavailable' }).waitFor();
+  assert.match(await introduction.locator('[name=message]').inputValue(), /beginner introduction/);
+  await auditAccessibility(page, '/contribute', 375, 'storage-error');
+  await context.route('**/api/submissions', (route) => {
+    const payload = route.request().postDataJSON();
+    assert.equal(payload.kind, 'Contributor'); assert.equal(payload.sourceUrl, ''); assert.equal(payload.consent, true);
+    return route.fulfill({ status: 201, contentType: 'application/json', body: JSON.stringify({ message: 'Fixture contributor receipt: saved for review.' }) });
+  });
+  await introduction.getByRole('button', { name: 'Send introduction' }).click();
+  await introduction.getByRole('status').filter({ hasText: 'Fixture contributor receipt' }).waitFor();
+  assert.equal(await introduction.locator('[name=message]').inputValue(), '');
+  await context.unroute('**/api/submissions');
+  pass('contributor onboarding without portfolio: real outage retention and mocked confirmed receipt');
+  assert.equal(await page.locator('#or-cloudflare-analytics').count(), 0);
+  pass('analytics remains disabled without both approval and configuration');
+  for (const slug of ['therac-25', 'wirecard-missing-billions', 'lake-nyos']) {
+    await page.goto(`${base}/article/${slug}`);
+    assert.equal(await page.locator('.article-cover').count(), 0);
+    assert.match(await page.locator('meta[property="og:image"]').first().getAttribute('content'), /\/share-card\.png$/);
+    await page.getByText(/Cover withheld/).waitFor();
+  }
+  pass('held covers are not rendered or shared; source notes remain visible');
   await page.goto(`${base}/submit`);
   const submission = page.locator('.submission-form');
   await submission.locator('[name=email]').fill('browser-smoke@example.invalid');
@@ -240,10 +279,20 @@ try {
   await page.goto(`${base}/newsletter`);
   const form = page.locator('.newsletter-form');
   const input = form.locator('input[type="email"]');
+  assert.equal(await form.locator('[name=consent]').isChecked(), false);
   await input.fill('smoke@example.invalid');
-  await form.getByRole('button', { name: 'Subscribe', exact: true }).click();
+  let withoutConsent = 0;
+  const observeRequest = (request) => { if (request.method() === 'POST' && request.url().endsWith('/api/newsletter')) withoutConsent++; };
+  page.on('request', observeRequest);
+  await form.getByRole('button', { name: 'Join waitlist', exact: true }).click();
+  assert.equal(await form.evaluate((element) => element.checkValidity()), false);
+  assert.equal(withoutConsent, 0);
+  page.off('request', observeRequest);
+  await form.locator('[name=consent]').check();
+  await form.getByRole('button', { name: 'Join waitlist', exact: true }).click();
   await form.getByRole('alert').filter({ hasText: 'temporarily unavailable' }).waitFor();
   assert.equal(await input.inputValue(), 'smoke@example.invalid');
+  await auditAccessibility(page, '/newsletter', 375, 'storage-error');
   pass('real unconfigured local newsletter returns visible failure without erasing email');
   let writes = 0, release;
   const gate = new Promise((resolve) => { release = resolve; });
@@ -260,13 +309,13 @@ try {
   pass('mocked persistence response: duplicate-submit guard and success reset');
   await context.unroute('**/api/newsletter');
   await context.route('**/api/newsletter', (route) => route.fulfill({ status: 502, contentType: 'text/html', body: '<h1>Fixture upstream failure</h1>' }));
-  await input.fill('smoke@example.invalid'); await form.getByRole('button', { name: 'Subscribe', exact: true }).click();
-  await form.getByRole('alert').filter({ hasText: 'Unable to subscribe right now.' }).waitFor();
+  await input.fill('smoke@example.invalid'); await form.getByRole('button', { name: 'Join waitlist', exact: true }).click();
+  await form.getByRole('alert').filter({ hasText: 'Unable to save your waitlist request right now.' }).waitFor();
   pass('non-JSON provider failure remains a readable form error');
   await context.unroute('**/api/newsletter');
   let pendingRoute;
   await context.route('**/api/newsletter', (route) => { pendingRoute = route; });
-  await form.getByRole('button', { name: 'Subscribe', exact: true }).click();
+  await form.getByRole('button', { name: 'Join waitlist', exact: true }).click();
   await form.getByRole('alert').filter({ hasText: 'timed out' }).waitFor({ timeout: 15000 });
   assert.equal(await input.isEnabled(), true);
   if (pendingRoute) await pendingRoute.abort().catch(() => {});
@@ -300,6 +349,7 @@ try {
   await writeFile(resolve(outputDir, "failure.txt"), String(error.stack || error));
   throw error;
 } finally {
+  await writeFile(resolve(outputDir, 'accessibility.json'), JSON.stringify({ sourceSha, scope: 'Automated axe checks; not human or screen-reader certification', results: accessibility }, null, 2));
   await writeFile(resolve(outputDir, 'receipt.json'), JSON.stringify({ sourceSha, sourceDigest, browser: `Chromium via Playwright 1.56.0 (${process.env.BROWSER_EXECUTABLE || 'bundled'})`, checks, errors, consoleMessages, performanceSamples, performanceScope: "Local browser observations, warm and cold caches mixed; not Core Web Vitals or field performance certification", providerPersistenceVerified: false }, null, 2));
   if (browser) await Promise.race([browser.close(), delay(2500)]);
   if (server.exitCode === null) {

@@ -2,7 +2,7 @@ import { intakeJson, isSameOriginSignup, readBody, RequestTooLarge } from "./new
 import { IntakeRateLimit } from "./intake-policy.ts";
 
 export type Submission = { email: string; kind: string; title: string; message: string; sourceUrl: string };
-export const submissionKinds = ["Correction", "Source", "Rights", "Pitch"] as const;
+export const submissionKinds = ["Correction", "Source", "Rights", "Pitch", "Contributor"] as const;
 export function createSubmissionHandler(save: (submission: Submission) => Promise<string>) {
   return async (request: Request) => {
     if (request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() !== "application/json") return intakeJson("Send the submission as JSON.", 415);
@@ -22,8 +22,11 @@ export function createSubmissionHandler(save: (submission: Submission) => Promis
     if (submission.title.length < 5 || submission.title.length > 160) return intakeJson("Use a title between 5 and 160 characters.", 400);
     if (submission.message.length < 80 || submission.message.length > 6000) return intakeJson("Include between 80 and 6,000 characters of context.", 400);
     try {
-      const url = new URL(submission.sourceUrl);
-      if (submission.sourceUrl.length > 2048 || url.protocol !== "https:" || url.username || url.password) throw new Error();
+      // Beginners may apply without a portfolio. Source-led pitches still require evidence.
+      if (submission.kind !== "Contributor" || submission.sourceUrl) {
+        const url = new URL(submission.sourceUrl);
+        if (submission.sourceUrl.length > 2048 || url.protocol !== "https:" || url.username || url.password) throw new Error();
+      }
     } catch { return intakeJson("Include a direct HTTPS source or record link without credentials.", 400); }
     try {
       const id = await save(submission);

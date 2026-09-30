@@ -79,7 +79,8 @@ export function MobileMenu() {
       <div className="menu-panel-meta">
         <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link><Link href="/archive" onClick={() => setOpen(false)}>Archive</Link><Link href="/topics" onClick={() => setOpen(false)}>Topics</Link><Link href="/series" onClick={() => setOpen(false)}>Reading series</Link><Link href="/authors" onClick={() => setOpen(false)}>Authors</Link><Link href="/saved" onClick={() => setOpen(false)}>Saved stories</Link>
         <Link href="/search" onClick={() => setOpen(false)}><Search /> Search the archive</Link>
-        <Link href="/newsletter" onClick={() => setOpen(false)}>Newsletter</Link>
+        <Link href="/newsletter" onClick={() => setOpen(false)}>Newsletter waitlist</Link>
+        <Link href="/contribute" onClick={() => setOpen(false)}>Contribute</Link>
         <Link href="/submit" onClick={() => setOpen(false)}>Submit a record</Link>
         <Link href="/about" onClick={() => setOpen(false)}>About</Link>
         <Link href="/standards" onClick={() => setOpen(false)}>Editorial standards</Link>
@@ -181,13 +182,13 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ email, website: form.get("website") ?? "" }),
+        body: JSON.stringify({ email, website: form.get("website") ?? "", consent: form.get("consent") === "on" }),
         signal: controller.signal,
       });
       let data: unknown;
-      try { data = await response.json(); } catch { throw new Error("Unable to subscribe right now. Please try again."); }
+      try { data = await response.json(); } catch { throw new Error("Unable to save your waitlist request right now. Please try again."); }
       const responseMessage = data && typeof data === "object" && "message" in data && typeof data.message === "string" ? data.message : "";
-      if (!response.ok || !responseMessage) throw new Error(responseMessage || "Unable to subscribe right now. Please try again.");
+      if (!response.ok || !responseMessage) throw new Error(responseMessage || "Unable to save your waitlist request right now. Please try again.");
       if (requestRef.current !== controller) return;
       setStatus("success");
       editorialEvent("newsletter_capture");
@@ -196,7 +197,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
     } catch (error) {
       if (requestRef.current !== controller) return;
       setStatus("error");
-      setMessage(controller.signal.aborted ? "The signup request timed out. Please try again." : error instanceof Error ? error.message : "Unable to subscribe right now.");
+      setMessage(controller.signal.aborted ? "The signup request timed out. Please try again." : error instanceof Error ? error.message : "Unable to save your waitlist request right now.");
     } finally {
       clearTimeout(timeout);
       if (requestRef.current === controller) requestRef.current = null;
@@ -209,9 +210,11 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
     <input name="website" className="hp-field" tabIndex={-1} autoComplete="off" aria-hidden="true" />
     <div>
       <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={!hydrated || status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
-      <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Subscribe"}</button>
+      <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Join waitlist"}</button>
     </div>
-    <small id={`${id}-hint`}>Your signup is saved for the list; email delivery is not yet enabled. <Link href="/privacy">Read our privacy policy.</Link></small>
+    <label className="waitlist-consent"><input type="checkbox" name="consent" required disabled={!hydrated || status === "loading"} />I agree to storage of my email for this waitlist. This does not start an active subscription.</label>
+    <small id={`${id}-hint`}>Email delivery is not active. A saved request is not an email confirmation. <Link href="/privacy">Read our privacy policy.</Link></small>
+    {status === "error" && <p className="intake-alternative">Nothing has been confirmed. You can <a href="/rss.xml">follow RSS</a> or <a href="mailto:ryangomez.hs@gmail.com?subject=Obscured%20Brief%20waitlist">contact the editor</a>.</p>}
     {message && <p id={`${id}-status`} className={`form-status ${status}`} role={status === "error" ? "alert" : "status"}>{message}</p>}
   </form>;
 }

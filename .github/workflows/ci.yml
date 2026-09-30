@@ -32,6 +32,20 @@ jobs:
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "${SOURCE_SHA}"
 
+      - name: Archive exact reviewed source
+        run: git archive --format=tar.gz --output=site-source.tar.gz HEAD
+
+      - name: Retain source reproduction archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: obscured-source-${{ env.SOURCE_SHA }}
+          path: site-source.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Remove temporary source archive
+        run: rm -f site-source.tar.gz
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -87,7 +101,7 @@ jobs:
           BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
         run: |
           mkdir -p "$BROWSER_TOOLS_DIR"
-          npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0
+          npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0 axe-core@4.10.3
           node "$BROWSER_TOOLS_DIR/node_modules/playwright/cli.js" install --with-deps chromium
 
       - name: Browser interaction and responsive checks

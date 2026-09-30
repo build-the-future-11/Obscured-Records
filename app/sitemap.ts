@@ -6,7 +6,7 @@ import { toIsoEditorialDate } from "@/lib/editorial-dates";
 import { getFeature } from "@/lib/features";
 import { absoluteUrl } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "latest", "archive", "topics", "authors", "series", ...sections.map((section) => section.toLowerCase()), "about", "standards", "corrections", "privacy", "submit", "newsletter"];
+  const routes = ["", "latest", "archive", "topics", "authors", "series", ...sections.map((section) => section.toLowerCase()), "about", "standards", "corrections", "privacy", "submit", "contribute", "newsletter"];
   const authors = [...new Set(getPublicArticles().map((article) => article.authorSlug))];
   return [
     ...routes.map((route) => ({ url: absoluteUrl(`/${route}`) })),

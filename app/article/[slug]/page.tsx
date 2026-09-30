@@ -1,3 +1,5 @@
+import { displayCover, mediaHolds } from "@/lib/media-policy";
+import { authorInitials, getAuthorProfile } from "@/lib/authors";
 import { RecordImage } from "@/components/record-image";
 import { ReaderTools, SourcePreview } from "@/components/reader-tools";
 import { getCatalog, getSeries, getTopics } from "@/lib/catalog";
@@ -21,13 +23,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = getArticle(slug);
   if (!article) return {};
   const feature = getFeature(slug);
-  const image = article.cover ? new URL(article.cover, `${siteUrl}/`).toString() : undefined;
+  const cover = displayCover(article);
+  const image = cover ? new URL(cover, `${siteUrl}/`).toString() : absoluteUrl("/share-card.png");
   const url = absoluteUrl(`/article/${article.slug}`);
   return {
     title: article.title, description: article.excerpt,
     authors: [{ name: article.author, url: absoluteUrl(`/author/${article.authorSlug}`) }], keywords: article.tags,
     alternates: { canonical: url, types: { "application/rss+xml": absoluteUrl("/rss.xml") } },
-    openGraph: { title: article.title, description: article.excerpt, type: "article", url, publishedTime: toIsoEditorialDate(article.date), modifiedTime: toIsoEditorialDate(corrections.filter((item) => item.slug === slug).at(-1)?.date || feature?.updated || article.updated), images: image ? [{ url: image, alt: article.coverCredit || article.title }] : [] },
+    openGraph: { title: article.title, description: article.excerpt, type: "article", url, publishedTime: toIsoEditorialDate(article.date), modifiedTime: toIsoEditorialDate(corrections.filter((item) => item.slug === slug).at(-1)?.date || feature?.updated || article.updated), images: image ? [{ url: image, alt: cover ? article.coverCredit || article.title : "Obscured Records — overlooked stories, open source trails" }] : [] },
     twitter: { card: image ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, images: image ? [image] : [] },
   };
 }
@@ -36,6 +39,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = getArticle(slug);
   if (!article) notFound();
   const feature = getFeature(slug);
+  const author = getAuthorProfile(article.authorSlug, article.author);
+  const cover = displayCover(article);
   const related = getPublicArticles().filter((candidate) => candidate.slug !== article.slug).map((candidate) => ({
     article: candidate,
     score: candidate.tags.filter((tag) => article.tags.includes(tag)).length * 3 + (candidate.section === article.section ? 2 : 0) + (Boolean(getFeature(candidate.slug)) === Boolean(feature) ? 1 : 0),
@@ -53,7 +58,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     headline: article.title, description: article.excerpt,
     datePublished: toIsoEditorialDate(article.date), dateModified: toIsoEditorialDate(updated),
     mainEntityOfPage: absoluteUrl(`/article/${article.slug}`),
-    image: article.cover ? new URL(article.cover, `${siteUrl}/`).toString() : undefined,
+    image: cover ? new URL(cover, `${siteUrl}/`).toString() : absoluteUrl("/share-card.png"),
     author: { "@type": "Person", name: article.author, url: absoluteUrl(`/author/${article.authorSlug}`) },
     publisher: { "@type": "Organization", name: "Obscured Records", url: siteUrl },
   };
@@ -63,9 +68,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <header className="article-hero" id="main-content" tabIndex={-1}>
       <div className="article-label"><RecordId id={article.recordId}/><Link href={`/${article.section.toLowerCase()}`}>{article.section}</Link><span>{feature ? "Feature" : "Brief record"}</span></div>
       <h1>{article.title}</h1><p className="article-deck">{feature?.standfirst || article.subtitle}</p>
-      <div className="article-byline"><div className="author-avatar">RG</div><p>By <Link href={`/author/${article.authorSlug}`}>{article.author}</Link><br/><span><time dateTime={toIsoEditorialDate(article.date)}>Published {article.date}</time> · <span title="Estimated from the displayed editorial text at 210 words per minute">{getReadingLabel(article.slug)} read</span>{updated !== article.date && <> · <time dateTime={toIsoEditorialDate(updated)}>Updated {updated}</time></>}</span></p></div>
+      <div className="article-byline"><div className="author-avatar" aria-hidden="true">{authorInitials(author.name)}</div><p>By <Link href={`/author/${article.authorSlug}`}>{article.author}</Link><br/><span><time dateTime={toIsoEditorialDate(article.date)}>Published {article.date}</time> · <span title="Estimated from the displayed editorial text at 210 words per minute">{getReadingLabel(article.slug)} read</span>{updated !== article.date && <> · <time dateTime={toIsoEditorialDate(updated)}>Updated {updated}</time></>}</span></p></div>
     </header>
-    {article.cover && <figure className="article-cover semantic-cover"><RecordImage src={article.cover} alt={mediaCredits[article.slug]?.description || article.coverCredit || article.title} priority sizes="(max-width: 1080px) 94vw, 1032px" /><figcaption>{mediaCredits[article.slug]?.description} <span>{article.coverCredit}</span></figcaption></figure>}
+    {cover && <figure className="article-cover semantic-cover"><RecordImage src={cover} alt={mediaCredits[article.slug]?.description || article.coverCredit || article.title} priority sizes="(max-width: 1080px) 94vw, 1032px" /><figcaption>{mediaCredits[article.slug]?.description} <span>{article.coverCredit}</span></figcaption></figure>}
     <div className="article-layout">
       <ReaderTools slug={slug} headings={headings} />
       <article className="article-body" id="reading-body" aria-label={article.title}>
@@ -82,10 +87,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </>}
         <div className="method-note"><span>Method</span><p>{feature ? "This is an AI-assisted archival synthesis, not original reporting. Sources are linked for readers to examine; their presence does not mean every claim has received independent human review." : "This AI-assisted brief introduces the event and its source trail. It is not original reporting or a claim that every detail has been independently checked."}</p>{feature && <p>{feature.evidenceNote}</p>}<Link href="/standards">Read our editorial standards →</Link></div>
         <section className="sources" aria-labelledby="sources-title"><h2 id="sources-title">Sources &amp; further reading</h2><p className="source-intro">Inspect the documents behind this record. Source types describe the material, not a verification score.</p><ol>{sources.map((source, index) => <li id={`source-${index + 1}`} key={source.url}><span>{source.kind}</span><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>{"publisher" in source && source.publisher !== source.label ? <small>{source.publisher}</small> : null}<SourcePreview source={source} index={index + 1} /></li>)}</ol></section>
-        {mediaCredits[article.slug] && <aside className="method-note"><span>Image source &amp; reuse</span><p>{mediaCredits[article.slug].note}</p><a href={mediaCredits[article.slug].source}>Original image record</a>{" · "}<a href={mediaCredits[article.slug].licenseUrl}>{mediaCredits[article.slug].license}</a></aside>}
+        {mediaCredits[article.slug] && <aside className="method-note"><span>Image source &amp; reuse</span><p>{mediaHolds[article.slug] || mediaCredits[article.slug].note}</p><a href={mediaCredits[article.slug].source}>Original image record</a>{" · "}<a href={mediaCredits[article.slug].licenseUrl}>{mediaHolds[article.slug] ? "Provenance reference (not clearance)" : mediaCredits[article.slug].license}</a></aside>}
         {recordCorrections.map((item) => <aside className="method-note" key={item.date}><span>Correction · {item.date}</span><p>{item.note}</p><a href={item.sourceUrl}>Supporting record →</a></aside>)}
         <div className="correction-line"><span>See something wrong or incomplete?</span><Link href={`/corrections?record=${article.recordId}`}>Send a correction</Link></div>
-        <div className="author-block"><div className="author-avatar large">RG</div><div><span>Founder &amp; editor</span><h3><Link href={`/author/${article.authorSlug}`}>{article.author}</Link></h3><p>Ryan publishes evidence-led records of events that were overlooked, flattened into trivia or never explained with enough care.</p></div></div>
+        <div className="author-block"><div className="author-avatar large" aria-hidden="true">{authorInitials(author.name)}</div><div><span>{author.role}</span><h3><Link href={`/author/${article.authorSlug}`}>{article.author}</Link></h3><p>{author.biography}</p></div></div>
         <div className="topic-links" aria-label="Article topics">{topics.map((topic) => <Link key={topic.slug} href={`/topic/${topic.slug}`}>{topic.name} ↗</Link>)}</div>
         {series && <nav className="series-continuation" aria-label="Continue reading series"><span className="eyebrow">Reading path · {seriesIndex + 1} of {series.slugs.length}</span><h2><Link href={`/series/${series.slug}`}>{series.title}</Link></h2><p>Suggested sequence through existing records.</p><div>{seriesIndex > 0 && <Link href={`/article/${series.slugs[seriesIndex - 1]}`}>← Previous record</Link>}{seriesIndex < series.slugs.length - 1 && <Link href={`/article/${series.slugs[seriesIndex + 1]}`}>Next record →</Link>}<Link href={`/series/${series.slug}`}>View full series</Link></div></nav>}
       </article>

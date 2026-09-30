@@ -1,3 +1,4 @@
+import { loadIntakeDatabase } from "./intake-database.ts";
 import type { Submission } from "./submission-handler.ts";
 import { enforceIntakeLimit, type IntakeDatabase } from "./intake-policy.ts";
 
@@ -15,7 +16,4 @@ export function createSubmissionStore(load: () => Promise<IntakeDatabase | undef
     return id;
   };
 }
-export const saveSubmission = createSubmissionStore(async () => {
-  const { env } = await import("cloudflare:workers");
-  return env.DB;
-});
+export const saveSubmission = createSubmissionStore(loadIntakeDatabase);

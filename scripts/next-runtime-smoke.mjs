@@ -50,7 +50,7 @@ try {
   assert.ok(ready, 'Next.js did not start within the startup deadline.');
   const { text: home } = await check('/');
   assert.match(home, /Obscured Records/);
-  for (const path of ['/latest', '/search', '/search?q=aviation', '/search?q=aviation&q=mercury', '/about', '/standards', '/corrections', '/privacy', '/submit', '/newsletter', '/rss.xml', '/sitemap.xml', '/robots.txt']) {
+  for (const path of ['/latest', '/search', '/search?q=aviation', '/search?q=aviation&q=mercury', '/about', '/contribute', '/standards', '/corrections', '/privacy', '/submit', '/newsletter', '/rss.xml', '/sitemap.xml', '/robots.txt']) {
     await check(path);
   }
   const article = home.match(/href="(\/article\/[^"?#]+)"/);
@@ -90,8 +90,8 @@ try {
 
   const { text: revision } = await check('/api/revision', sourceSha ? 200 : 503);
   assert.equal(JSON.parse(revision).revision, sourceSha, 'Runtime revision must match this checkout.');
-  for (const [body, status, type] of [['null', 400, 'application/json'], ['{', 400, 'application/json'], ['{}', 415, 'text/plain'], [' '.repeat(4097), 413, 'application/json'], ['{"email":"smoke@example.invalid","website":""}', 503, 'application/json']]) {
-    // Next.js has no Workers D1 binding. This test must not persist a signup.
+  for (const [body, status, type] of [['null', 400, 'application/json'], ['{', 400, 'application/json'], ['{}', 415, 'text/plain'], [' '.repeat(4097), 413, 'application/json'], ['{"email":"smoke@example.invalid","consent":true,"website":""}', 503, 'application/json']]) {
+    // This isolated Next.js test has no D1 binding or REST credentials. Never persist a live signup.
     const { response } = await check('/api/newsletter', status, { method: 'POST', headers: { 'content-type': type }, body });
     assert.match(response.headers.get('cache-control') ?? '', /no-store/);
   }

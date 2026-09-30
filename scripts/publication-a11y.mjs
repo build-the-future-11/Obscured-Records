@@ -9,7 +9,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:3107';
 assert.ok(['127.0.0.1', 'localhost'].includes(new URL(base).hostname), 'Local preview only');
 const output = process.env.A11Y_ARTIFACTS_DIR || `verification/publication-a11y-${Date.now()}`;
 mkdirSync(output, { recursive: true });
-const browser = await chromium.launch({ executablePath: process.env.BROWSER_EXECUTABLE || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
+const browser = await chromium.launch(process.env.BROWSER_EXECUTABLE ? { executablePath: process.env.BROWSER_EXECUTABLE } : {});
 const context = await browser.newContext({ reducedMotion: 'reduce' });
 const page = await context.newPage();
 const results = [];
@@ -22,12 +22,13 @@ async function audit(path, width, state = 'default') {
 try {
   for (const width of [375, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const path of ['/', '/article/fedex-flight-705', '/archive', '/topic/aviation', '/series/in-the-air', '/author/ryan-gomez', '/newsletter', '/saved', '/about', '/standards', '/corrections', '/privacy', '/submit']) {
+    for (const path of ['/', '/article/fedex-flight-705', '/archive', '/topic/aviation', '/series/in-the-air', '/author/ryan-gomez', '/newsletter', '/saved', '/about', '/standards', '/corrections', '/privacy', '/submit', '/contribute']) {
       await page.goto(base + path); await page.locator('h1').waitFor(); await audit(path, width);
     }
   }
   await page.goto(base); await page.locator('h1').waitFor();
   await page.locator('.newsletter-form input[type=email]').fill('accessibility@example.invalid');
+  await page.locator('.newsletter-form [name=consent]').check();
   await page.locator('.newsletter-form button').click();
   await page.locator('.newsletter-form [role=alert]').waitFor();
   await audit('/', 1440, 'newsletter-error');

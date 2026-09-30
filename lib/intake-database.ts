@@ -2,6 +2,10 @@ import type { IntakeDatabase } from "./intake-policy.ts";
 type Environment = Record<string, string | undefined>;
 type D1Config = { accountId: string; databaseId: string; token: string };
 const unavailable = () => new Error("Intake storage is unavailable.");
+function object(value: unknown): Record<string, unknown> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) throw unavailable();
+  return value as Record<string, unknown>;
+}
 export function d1HttpConfig(env: Environment): D1Config | undefined {
   const accountId = env.CLOUDFLARE_ACCOUNT_ID;
   const databaseId = env.CLOUDFLARE_D1_DATABASE_ID;
@@ -35,9 +39,11 @@ export function createD1HttpDatabase(config: D1Config, send: typeof fetch = fetc
           signal: AbortSignal.timeout(Math.min(remaining, 4000)),
         });
         if (!response.ok) throw unavailable();
-        const payload = await response.json();
-        if (payload?.success !== true || !Array.isArray(payload.result) || payload.result.length !== 1 || payload.result[0]?.success !== true || (Array.isArray(payload.errors) && payload.errors.length)) throw unavailable();
-        const changes = payload.result[0].meta?.changes;
+        const payload = object(await response.json());
+        if (payload.success !== true || !Array.isArray(payload.result) || payload.result.length !== 1 || (Array.isArray(payload.errors) && payload.errors.length)) throw unavailable();
+        const acknowledgement = object(payload.result[0]);
+        if (acknowledgement.success !== true) throw unavailable();
+        const changes = object(acknowledgement.meta).changes;
         if (typeof changes !== "number" || !Number.isSafeInteger(changes) || changes < 0) throw unavailable();
         return { success: true, meta: { changes } };
       } catch { throw unavailable(); }

@@ -137,3 +137,18 @@ test('missing or invalid JSON frontmatter remains rejected', () => {
     assert.throws(() => readDraft(file), SyntaxError);
   } finally { fs.rmSync(directory, { recursive: true, force: true }); }
 });
+
+test('unapproved states reject malformed completion data before the inbox reports progress', () => {
+  for (const status of ['draft', 'review', 'held']) {
+    for (const completedChecks of ['NOT COMPLETED: Read primary source', null, {}, [true], [' ']]) {
+      assert.throws(() => validateDraft(draft({ status, completedChecks }), body), /completed checks/);
+    }
+  }
+});
+test('unapproved states may have omitted, empty or well-formed completion arrays', () => {
+  for (const status of ['draft', 'review', 'held']) {
+    for (const completedChecks of [undefined, [], ['Read primary source']]) {
+      assert.doesNotThrow(() => validateDraft(draft({ status, completedChecks }), body));
+    }
+  }
+});

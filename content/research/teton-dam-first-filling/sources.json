@@ -1,0 +1,81 @@
+{
+  "slug": "teton-dam-first-filling",
+  "checkedAt": "2026-09-30",
+  "reviewStatus": "inspected-ai-review-pending",
+  "method": "Selected official source passages read through web extraction. The panel report was downloaded from USBR and its extracted text inspected because the web PDF viewer failed. No human verification claimed.",
+  "sources": [
+    {
+      "title": "Bureau of Reclamation, Teton Dam: History, Failure, and Impact",
+      "url": "https://www.usbr.gov/pn/snakeriver/dams/uppersnake/teton/Teton%20Dam%20Fact%20Sheet%20508C_approved.pdf",
+      "supports": "Page 1: first filling, date and agency fatality total. Page 2: Safety of Dams Act date, review and emergency-exercise practices.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "PDF p. 1 opening and Key Facts",
+        "PDF p. 2 Safety of Dams Program"
+      ],
+      "claimEvidence": [
+        "First-fill failure; later agency toll; law date and later program practices"
+      ]
+    },
+    {
+      "title": "Independent Panel to Review Cause of Teton Dam Failure, report to Interior and Idaho, December 1976",
+      "url": "https://www.usbr.gov/pn/snakeriver/dams/uppersnake/teton/1976failure.pdf",
+      "supports": "Transmittal pp. iii–iv; Summary and Conclusions pp. viii–x, especially findings 3–7 and 12–14: erosion, alternative initiators and filling-rate judgment.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Transmittal letter dated December 31, 1976, pp. iii–iv",
+        "Summary pp. viii–x, findings 3–7 and 12–14"
+      ],
+      "claimEvidence": [
+        "Internal erosion; two unresolved initiators; slower-filling judgment"
+      ]
+    },
+    {
+      "title": "GAO, Actions Needed to Increase the Safety of Dams, testimony of Henry Eschwege, June 30, 1977",
+      "url": "https://www.gao.gov/assets/102515.pdf",
+      "supports": "Printed pp. 2–7: comparative review, observation and outlet deficiencies, explicit uncertainty about prevention and review recommendations.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Printed pp. 2–5, What Went Wrong at Teton Dam",
+        "Printed pp. 6–7, Recommendations and Actions"
+      ],
+      "claimEvidence": [
+        "Instruments, observation, delayed reporting and unavailable outlet; qualified counterfactual"
+      ]
+    },
+    {
+      "title": "Bureau of Reclamation, Teton Basin Project history, Eric A. Stene",
+      "url": "https://www.usbr.gov/pn/snakeriver/dams/uppersnake/teton/projhistory.pdf",
+      "supports": "Printed pp. 9–14: breach timing and restoration of irrigation, temporary repairs and claims-program totals.",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "inspectedPassages": [
+        "Printed pp. 9–10, Dam Failure",
+        "Printed pp. 12–14, Aftermath and Claims Program"
+      ],
+      "claimEvidence": [
+        "11:55/11:57 sequence; irrigation recovery; temporary repairs; final claims total"
+      ]
+    }
+  ],
+  "retrievalReceipt": {
+    "panelPdfSha256": "f890eb1675e563ebc588f5c7fc7e23eec2dddc95c5aab548fa1dd0bfc99fd229",
+    "retainedOriginal": false,
+    "reason": "Source URL and precise locators retained instead of a 62.6 MB government report."
+  },
+  "limitations": [
+    "Panel summary p. v says 14 deaths; later USBR history/fact sheet say 11. The draft expressly attributes 11 to Reclamation and does not explain an unverified revision. Human review remains open.",
+    "Panel considered slower filling alone; GAO discussed slower filling combined with an available outlet. Do not present these as identical counterfactuals.",
+    "Factsheet gives a compressed failure time inconsistent with the detailed project history; the draft uses the history’s 11:55/11:57 sequence.",
+    "Only listed passages were inspected; no exhaustive comparison with the 1980 Interior final report.",
+    "No claim that monitoring changes would certainly prevent this failure or establish present-day compliance."
+  ],
+  "rights": {
+    "directQuotationWords": 0,
+    "sourceSummaryPolicy": "Compact paraphrases from four documents; no source photographs or figures reproduced."
+  },
+  "bodyWordsExcludingMetadataHeadingsReferences": 781
+}

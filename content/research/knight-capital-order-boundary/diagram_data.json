@@ -1,0 +1,11 @@
+{
+  "kind": "conceptual control-boundary diagram",
+  "nodes": [
+    {"title":"Customer instruction","detail":"Incoming parent order\nDefines requested execution","source_url":"https://www.sec.gov/litigation/admin/2013/34-70694.pdf","locator":"paragraph 12"},
+    {"title":"Router output","detail":"Generated child orders\nMay diverge from the input","source_url":"https://www.sec.gov/litigation/admin/2013/34-70694.pdf","locator":"paragraphs 13–16"},
+    {"title":"Market entry","detail":"Pre-trade control boundary\nObservation alone cannot reject","source_url":"https://www.sec.gov/newsroom/press-releases/2010-210-sec-adopts-new-rule-preventing-unfiltered-market-access","locator":"Requirements Under the Rule"}
+  ],
+  "caption":"Arrows show a conceptual sequence, not measured volume or elapsed time.\nThis is an editorial explanation, not Knight's complete system architecture or a trade replay.",
+  "quantitative_scale":null,
+  "simulation":false
+}

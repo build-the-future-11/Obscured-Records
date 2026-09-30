@@ -1,0 +1,133 @@
+{
+  "date": "2026-09-30",
+  "base_commit": "77d00ce043be60cdf251b75fb3dcbd46b030803a",
+  "base_tree": "42c808ff998c0f31cc64b2f7826d8d0a9dfc8d26",
+  "articles": [
+    {
+      "slug": "knight-capital-order-boundary",
+      "title": "Knight Capital and the Boundary an Order Crossed",
+      "substantive_words": 723,
+      "source_count": 5
+    },
+    {
+      "slug": "equifax-inventory-of-responsibility",
+      "title": "Equifax and the Inventory of Responsibility",
+      "substantive_words": 724,
+      "source_count": 5
+    },
+    {
+      "slug": "macondo-barrier-under-pressure",
+      "title": "At Macondo, the Barrier Had to Survive the Emergency",
+      "substantive_words": 750,
+      "source_count": 4
+    },
+    {
+      "slug": "walkerton-when-results-stopped-short",
+      "title": "Walkerton and the Results That Stopped Short",
+      "substantive_words": 766,
+      "source_count": 4
+    },
+    {
+      "slug": "silver-bridge-hidden-fracture",
+      "title": "Silver Bridge and the Fracture Hidden Inside a Joint",
+      "substantive_words": 755,
+      "source_count": 4
+    },
+    {
+      "slug": "teton-dam-first-filling",
+      "title": "Teton Dam and the Controls Missing at First Filling",
+      "substantive_words": 781,
+      "source_count": 4
+    }
+  ],
+  "total_new_substantive_words": 4499,
+  "count_method": "Only prose before Sources; exclude JSON metadata, headings, numeric inline citation links, references and figure captions. Whitespace token count, not a factual-quality score.",
+  "new_distinct_subjects": 6,
+  "combined_inventory": {
+    "article_records": 28,
+    "unapproved_drafts": 51,
+    "distinct_subjects": 59
+  },
+  "state": {
+    "draft": true,
+    "human_approved": false,
+    "reader_published": false,
+    "merged": false,
+    "deployed": false
+  },
+  "checks": [
+    {
+      "name": "editorial",
+      "exit": 0,
+      "elapsed_seconds": 0.161,
+      "max_child_rss_kib": 39028,
+      "log_sha256": "1af096823e648e606f023f7fbeba6fe00b5012e21d9ae9f2639169a66f5958eb"
+    },
+    {
+      "name": "test",
+      "exit": 0,
+      "elapsed_seconds": 5.653,
+      "max_child_rss_kib": 77208,
+      "log_sha256": "1493ccd68f964e5a484a6ee61a2cd574954c6195ca2dba3745ee6bd83ea7b1fc"
+    },
+    {
+      "name": "lint",
+      "exit": 0,
+      "elapsed_seconds": 14.145,
+      "max_child_rss_kib": 868424,
+      "log_sha256": "86ba7d8f0e02382b2458027f0c2f06d418bb9d6a642b94786caae7e1bce644fd"
+    },
+    {
+      "name": "typecheck",
+      "exit": 0,
+      "elapsed_seconds": 12.52,
+      "max_child_rss_kib": 749548,
+      "log_sha256": "343717c532976c59482defd00205dde0dcb97fca65fc711df7b53a431ba5a48a"
+    },
+    {
+      "name": "build-workers",
+      "exit": 0,
+      "elapsed_seconds": 11.276,
+      "max_child_rss_kib": 1133180,
+      "log_sha256": "d81d7fa4d8b18f1640732b015246b1e9616e20bd5af42d1c6b1b2648371f4b8e"
+    },
+    {
+      "name": "build-next",
+      "exit": 0,
+      "elapsed_seconds": 16.956,
+      "max_child_rss_kib": 599008,
+      "log_sha256": "550c9272414affb1f9cd35a498f6331e492cc2f36c2b1568081afe9329bc5b69"
+    }
+  ],
+  "tests": {
+    "passed": 191,
+    "failed": 0,
+    "skipped": 0
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "node_heap_mib": 1024,
+    "next_static_workers": 2,
+    "next_worker_limit": "CIRCLE_NODE_TOTAL=3: installed Next config computes max(1, value - 1); no repository configuration changed.",
+    "dependency_reuse": "Existing locked dependency tree from PR18 checkout; hosted CI performs fresh locked installation.",
+    "resource_limit_note": "Peak child RSS is reported by the launcher, not an aggregate process-tree measurement. First successful Next pass selected eight static workers despite two-CPU affinity; final complete pass explicitly used two."
+  },
+  "review": {
+    "diagram": "Original Knight conceptual diagram visually inspected; repeated regeneration produced identical SVG and PNG. Source data and generator retained.",
+    "other_graphics": "Omitted where a figure would invent geometry, topology, causal weights or misleading comparisons.",
+    "targeted_source_check": "Targeted independent source cross-check of Knight, Equifax and Macondo; final wording keeps a central cause in the Macondo testimony summary. Not human review."
+  },
+  "source_scope": "Official investigation/agency materials, a company filing and original scientific research. Selected passages only. Walkerton government report is clearly identified as a mirror because original archive links redirected. Full copied source PDFs/OCR are excluded.",
+  "limits": [
+    "Human editorial, technical, rights and author assignment remain open.",
+    "No interviews, invented victim accounts, new engineering simulations or quantitative causal shares.",
+    "No current compliance certification, individual financial/medical advice or consumer settlement eligibility determination.",
+    "PR16 validator hardening remains separate; no merge or validator weakening.",
+    "Exact-head hosted CI pending at receipt creation."
+  ]
+}

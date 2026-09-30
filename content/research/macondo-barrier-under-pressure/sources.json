@@ -1,0 +1,54 @@
+{
+  "slug": "macondo-barrier-under-pressure",
+  "inspectedAt": "2026-09-30",
+  "sources": [
+    {
+      "title": "Department of the Interior, Michael Bromwich testimony, October 13, 2011",
+      "url": "https://www.doi.gov/node/3634",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Introduction; findings on cement barrier and negative test; BOP section. Official summary of joint investigation, not a full independent report review."
+    },
+    {
+      "title": "CSB Macondo Investigation Report, Volume 2, June 5, 2014",
+      "url": "https://www.csb.gov/file.aspx?DocumentId=5931",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Section 3.1, printed pp. 32–34 (PDF pp. 32–34): off-center pipe, alternatives and most-likely scenario; uncertainties retained."
+    },
+    {
+      "title": "CSB Macondo Investigation Report, Volume 4, April 17, 2016",
+      "url": "https://www.csb.gov/file.aspx?DocumentId=5993",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Section 3.4.9 and opening of section 4.0, printed pp. 70–71: workforce participation and implementation versus documented programs."
+    },
+    {
+      "title": "CSB Macondo investigation page and recommendations",
+      "url": "https://www.csb.gov/macondo-blowout-and-explosion/",
+      "status": "inspected-ai-review-pending",
+      "checkedAt": "2026-09-30",
+      "supports": "Accident description and recommendations 2010-10-I-OS-1, -3 and -4: performance criteria, ongoing assurance and testing individual redundant systems. No claim about current industry-wide compliance."
+    }
+  ],
+  "claim_map": {
+    "cement barrier and negative test": [
+      1
+    ],
+    "BOP off-center pipe and unresolved alternatives": [
+      2
+    ],
+    "workforce and program implementation": [
+      3
+    ],
+    "toll, crew and recommendation criteria": [
+      4
+    ]
+  },
+  "body_words_excluding_metadata_headings_references": 750,
+  "human_review": false,
+  "published": false,
+  "direct_quotations": 0,
+  "coverage": "Selected report sections and official testimony; not all four CSB volumes or appendices. The draft does not claim a new simulation.",
+  "source_budget_note": "Compact paraphrase below 200 words per source; interpretations distinguished from findings."
+}

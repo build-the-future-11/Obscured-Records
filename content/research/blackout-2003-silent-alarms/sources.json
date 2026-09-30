@@ -1,0 +1,32 @@
+{
+  "inspected_at": "2026-09-30",
+  "sources": [
+    {
+      "id": 1,
+      "title": "Final Report on the August 14, 2003 Blackout — publication record",
+      "url": "https://ets.lbl.gov/publications/final-report-august-14-2003-blackout",
+      "coverage": "Abstract; affected population and electric load."
+    },
+    {
+      "id": 2,
+      "title": "U.S.–Canada Power System Outage Task Force, Final Report, April 2004",
+      "url": "https://www.energy.gov/sites/prod/files/oeprod/DocumentsandMedia/BlackoutFinal-Web.pdf",
+      "coverage": "Printed pages51–52, PDF pages58–59: alarm/server chronology and recognition gap."
+    },
+    {
+      "id": 3,
+      "title": "Canada–U.S. Task Force Presents Final Report on Blackout of August 2003",
+      "url": "https://www.canada.ca/en/news/archive/2004/04/canada-task-force-presents-final-report-blackout-august-2003.html",
+      "coverage": "April5,2004 announcement: four cause groups and recommendations."
+    },
+    {
+      "id": 4,
+      "title": "Blackout Final Implementation Report",
+      "url": "https://www.energy.gov/oe/articles/blackout-2003-blackout-final-implementation-report",
+      "coverage": "Introduction: implementation-monitoring purpose and scope."
+    }
+  ],
+  "article_words_excluding_headings_metadata_sources_caption": 700,
+  "human_review": false,
+  "original_reporting": false
+}

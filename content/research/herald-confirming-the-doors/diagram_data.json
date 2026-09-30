@@ -1,0 +1,41 @@
+{
+  "kind": "selected administrative milestones",
+  "effectiveness_estimate": null,
+  "events": [
+    {
+      "date": "1987",
+      "precision": "year",
+      "year": 1987,
+      "label": "Call for management guidelines",
+      "source_url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx"
+    },
+    {
+      "date": "1989",
+      "precision": "year",
+      "year": 1989,
+      "label": "Guidelines adopted",
+      "source_url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx"
+    },
+    {
+      "date": "1991",
+      "precision": "year",
+      "year": 1991,
+      "label": "Guidelines revised",
+      "source_url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx"
+    },
+    {
+      "date": "1993",
+      "precision": "year",
+      "year": 1993,
+      "label": "ISM Code adopted",
+      "source_url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx"
+    },
+    {
+      "date": "1998-07-01",
+      "precision": "day",
+      "year": 1998.495890410959,
+      "label": "SOLAS amendments enter into force",
+      "source_url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "categorical classification",
+  "reported_date": "2004-04-05",
+  "groups": [
+    {
+      "id": 1,
+      "category": "Inadequate system understanding",
+      "source_url": "https://www.canada.ca/en/news/archive/2004/04/canada-task-force-presents-final-report-blackout-august-2003.html",
+      "quantitative_weight": null
+    },
+    {
+      "id": 2,
+      "category": "Inadequate situational awareness",
+      "source_url": "https://www.canada.ca/en/news/archive/2004/04/canada-task-force-presents-final-report-blackout-august-2003.html",
+      "quantitative_weight": null
+    },
+    {
+      "id": 3,
+      "category": "Inadequate tree trimming",
+      "source_url": "https://www.canada.ca/en/news/archive/2004/04/canada-task-force-presents-final-report-blackout-august-2003.html",
+      "quantitative_weight": null
+    },
+    {
+      "id": 4,
+      "category": "Inadequate reliability-coordinator diagnostic support",
+      "source_url": "https://www.canada.ca/en/news/archive/2004/04/canada-task-force-presents-final-report-blackout-august-2003.html",
+      "quantitative_weight": null
+    }
+  ]
+}

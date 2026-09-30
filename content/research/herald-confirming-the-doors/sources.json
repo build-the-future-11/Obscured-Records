@@ -1,0 +1,38 @@
+{
+  "inspected_at": "2026-09-30",
+  "sources": [
+    {
+      "id": 1,
+      "title": "MAIB: Herald of Free Enterprise case page",
+      "url": "https://www.gov.uk/maib-reports/flooding-and-subsequent-capsize-of-ro-ro-passenger-ferry-herald-of-free-enterprise-off-the-port-of-zeebrugge-belgium-with-loss-of-193-lives",
+      "coverage": "Summary distinguishes193 lives lost from188 confirmed in contemporary report."
+    },
+    {
+      "id": 2,
+      "title": "Hansard: Herald of Free Enterprise, July24,1987",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1987/jul/24/herald-of-free-enterprise",
+      "coverage": "Transport Secretary opening statement; not other speakers unverified claims."
+    },
+    {
+      "id": 3,
+      "title": "Department of Transport, Report of Court No.8074",
+      "url": "https://assets.publishing.service.gov.uk/media/54c1704ce5274a15b6000025/FormalInvestigation_HeraldofFreeEnterprise-MSA1894.pdf",
+      "coverage": "Sections11,18,28; conflict of duties, indicators and fail-safe recommendation. Selected sections only."
+    },
+    {
+      "id": 4,
+      "title": "IMO: Safety management and safety culture",
+      "url": "https://www.imo.org/en/ourwork/humanelement/pages/safetymanagement-default.aspx",
+      "coverage": "Development chronology; years used without repeating disputed resolution-number typo."
+    },
+    {
+      "id": 5,
+      "title": "IMO: The International Safety Management Code",
+      "url": "https://www.imo.org/en/ourwork/humanelement/pages/ismcode.aspx",
+      "coverage": "Purpose, risks, management and1998 mandatory entry-into-force statement."
+    }
+  ],
+  "article_words_excluding_headings_metadata_sources_caption": 694,
+  "human_review": false,
+  "original_reporting": false
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-30",
+  "base_commit": "19507a724717911247b7869d552136eb19527af9",
+  "new_distinct_subjects": 2,
+  "article_words": {
+    "blackout-2003-silent-alarms": 700,
+    "herald-confirming-the-doors": 694
+  },
+  "status": "draft",
+  "human_approval": false,
+  "published": false,
+  "tests": {
+    "passed": 184,
+    "failed": 0,
+    "skipped": 0
+  },
+  "checks": [
+    "test EXIT=0 2026-09-30T17:19:42Z",
+    "lint EXIT=0 2026-09-30T17:19:51Z",
+    "typecheck EXIT=0 2026-09-30T17:19:55Z",
+    "build EXIT=0 2026-09-30T17:20:06Z",
+    "build:vercel EXIT=0 2026-09-30T17:20:33Z"
+  ],
+  "inventory": {
+    "article_records": 28,
+    "unpublished_drafts": 45,
+    "distinct_subjects": 53
+  },
+  "figure_review": "Both original PNGs visually inspected; source data retained; no causal shares or policy-effectiveness metric implied.",
+  "coverage": "Selected primary report passages and official summaries, not full-book/report reading.",
+  "node": "v24.19.0",
+  "python": "3.12.14",
+  "limits": [
+    "No human historical or technical approval",
+    "No publication or deployment",
+    "No actual provider or product workflow changed",
+    "New hosted CI pending at receipt creation"
+  ]
+}

@@ -31,7 +31,7 @@ test('corrupt local storage cannot break the reader or introduce invalid reading
 });
 test('editorial inbox preserves pending work and does not imply approval', () => {
   const rows = editorialInbox();
-  assert.equal(rows.length, 43);
+  assert.equal(rows.length, 45);
   assert.ok(rows.every((row) => row.state !== 'published'));
   const triangle = rows.find((row) => row.slug === 'triangle-exits-and-power');
   assert.equal(triangle.reviewer, null);

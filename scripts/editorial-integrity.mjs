@@ -143,14 +143,23 @@ const byMatch = registry.match(/const by=\{[^}]*date:\s*"([^"]+)"[^}]*updated:\s
 if (!byMatch) {
   fail("lib/articles.ts base date/updated values are missing or not in the expected deterministic shape");
 } else {
-  const registryDate = humanDateToIso(byMatch[1]);
-  const registryUpdated = humanDateToIso(byMatch[2]);
-  if (!registryDate || !registryUpdated) {
+  const baseDate = humanDateToIso(byMatch[1]);
+  const baseUpdated = humanDateToIso(byMatch[2]);
+  if (!baseDate || !baseUpdated) {
     fail("lib/articles.ts base date/updated values must be valid calendar dates in deterministic format");
   } else {
+    const registryLines = registry.split("\n");
     for (const record of records) {
-      if (record.date !== registryDate) fail(`${record.slug}: MDX date ${record.date} differs from registry base date ${registryDate}`);
-      if (record.updated !== registryUpdated) fail(`${record.slug}: MDX updated ${record.updated} differs from registry base updated ${registryUpdated}`);
+      const registryLine = registryLines.find((line) => line.includes(`slug:"${record.slug}"`));
+      const dateOverride = registryLine?.match(/\bdate:\s*"([^"]+)"/)?.[1];
+      const updatedOverride = registryLine?.match(/\bupdated:\s*"([^"]+)"/)?.[1];
+      const registryDate = dateOverride ? humanDateToIso(dateOverride) : baseDate;
+      const registryUpdated = updatedOverride ? humanDateToIso(updatedOverride) : baseUpdated;
+
+      if (!registryDate) fail(`${record.slug}: registry date override is invalid`);
+      if (!registryUpdated) fail(`${record.slug}: registry updated override is invalid`);
+      if (record.date !== registryDate) fail(`${record.slug}: MDX date ${record.date} differs from registry date ${registryDate}`);
+      if (record.updated !== registryUpdated) fail(`${record.slug}: MDX updated ${record.updated} differs from registry updated ${registryUpdated}`);
     }
   }
 }

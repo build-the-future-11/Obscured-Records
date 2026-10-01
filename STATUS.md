@@ -1,3 +1,19 @@
+# Current execution state — 1 October 2026
+
+**Public launch remains HOLD. The publication is now in certification mode, not draft-generation mode.**
+
+At the start of the 1 October execution pass, GitHub `main` was `c49759baa383c3c57d1200cea55e5d4d8ab17687`, including the merged editorial-approval validator hardening from PR #16. The last provider deployment receipt retained in this repository is still the 28 September owner-only deployment for application source `052ee569f0b75bcc1baafbb52e7a1f2afe270092`. Later source changes therefore must not be described as deployed merely because they are on `main`.
+
+The current reader estate remains 28 records plus 42 unpublished review drafts on `main`. The October audit classifies the reader records into **10 core launch candidates, 8 reserves and 10 revise/hold records**. No new human approval was invented. Open draft-oriented PRs remain future inventory and are not launch dependencies.
+
+See [the 1 October execution receipt](docs/RELAUNCH_EXECUTION_2026-10-01.md) and [the October editorial launch queue](docs/EDITORIAL_LAUNCH_QUEUE_2026-10-01.md).
+
+Current sequence: **claim review → named editorial approval → exact release freeze → clean CI → operational closure → exact deployment → public authorization → distribution → measurement**.
+
+Newsletter remains capture-only unless separately certified for sending. Analytics integration remains off unless explicitly approved and verified. Held media remains withheld or the story launches text-only.
+
+Everything below is retained as dated historical release evidence.
+
 # Current release — 28 September 2026
 
 **The latest content and UI are deployed successfully to the existing owner-only site.** Application source `052ee569f0b75bcc1baafbb52e7a1f2afe270092` matches the tree merged into GitHub `main` through PR #9. Hosted CI passed; 30 additional local accessibility states passed. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) for deployment identity and remaining editorial/operational decisions. Email sending and public audience expansion remain unenabled.

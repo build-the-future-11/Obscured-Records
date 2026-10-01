@@ -74,7 +74,7 @@ export async function readNewsletterToken(
     const ciphertext = payload.slice(13);
     const plaintext = await crypto.subtle.decrypt({ name: "AES-GCM", iv }, await encryptionKey(secret), ciphertext);
     const parsed = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(plaintext)) as { e?: unknown; p?: unknown; x?: unknown };
-    if (!validEmail(parsed.e) || parsed.p !== expectedPurpose || !Number.isSafeInteger(parsed.x) || (parsed.x as number) < now) return undefined;
+    if (!validEmail(parsed.e) || parsed.p !== expectedPurpose || typeof parsed.x !== "number" || !Number.isSafeInteger(parsed.x) || parsed.x < now) return undefined;
     return parsed.e;
   } catch {
     return undefined;

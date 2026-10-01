@@ -66,7 +66,7 @@ export function isSameOriginSignup(request: Request): boolean {
   }
 }
 
-export function createNewsletterHandler(save: (email: string) => Promise<unknown>) {
+export function createNewsletterHandler(\n  save: (email: string) => Promise<unknown>,\n  sendConfirmation?: (email: string) => Promise<boolean>,\n) {
   return async (request: Request): Promise<Response> => {
     const mediaType = request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
     if (mediaType !== "application/json") return json("Send newsletter signups as JSON.", 415);
@@ -103,15 +103,33 @@ export function createNewsletterHandler(save: (email: string) => Promise<unknown
     const email = typeof fields.email === "string" ? fields.email.trim().toLowerCase() : "";
     const hasControlCharacter = Array.from(email).some((character) => character.charCodeAt(0) < 32 || character.charCodeAt(0) === 127);
     if (email.length > 254 || hasControlCharacter || !emailPattern.test(email)) return json("Enter a valid email address.", 400);
+    let shouldSend: unknown;
     try {
-      await save(email);
-      // Persistence is not evidence that an email was sent or delivered.
-      return json("Your waitlist request has been saved. Email delivery is not enabled; you have not been added to an active mailing list.");
+      shouldSend = await save(email);
     } catch (error) {
       if (error instanceof IntakeRateLimit) return json("Too many requests. Please try again in an hour.", 429);
       // Do not log email addresses, request bodies, or provider exceptions.
       console.error("Newsletter persistence unavailable.");
-      return json("Waitlist signups are temporarily unavailable. Please try again shortly.", 503);
+      return json("Newsletter signups are temporarily unavailable. Please try again shortly.", 503);
     }
+
+    // A false result means the address is already active or protected by an
+    // unsubscribe/suppression state. Do not send and do not reveal which state.
+    if (shouldSend === false) return json("Your newsletter preference is already recorded.");
+
+    if (sendConfirmation) {
+      try {
+        if (await sendConfirmation(email)) {
+          return json("Check your inbox to confirm your Obscured Records subscription. No newsletter will be sent until you confirm.");
+        }
+      } catch {
+        // The consented request remains pending so a later retry can resend.
+        console.error("Newsletter confirmation delivery unavailable.");
+        return json("Your request was saved, but the confirmation email could not be sent. Please try again later.", 503);
+      }
+    }
+
+    // Persistence is not evidence that an email was sent or delivered.
+    return json("Your waitlist request has been saved. Email delivery is not enabled; you have not been added to an active mailing list.");
   };
 }

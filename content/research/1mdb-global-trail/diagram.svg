@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">What the July 2016 DOJ complaints alleged</title>
+  <desc id="diagram-desc">Schematic of allegations in U.S. civil-forfeiture complaints announced 20 July 2016. Amount labels reproduce the complaints’ approximate figures; arrow width and box area do not encode transaction volume. The graphic does not establish guilt, ownership, final recovery or completeness.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c79753"/>
+    </marker>
+    <style>
+      .background { fill: #11161b; }
+      .eyebrow { fill: #c79753; font: 700 19px Arial, sans-serif; letter-spacing: 2.2px; }
+      .title { fill: #f6f0e6; font: 700 42px Georgia, serif; }
+      .subtitle { fill: #b8c0c7; font: 22px Arial, sans-serif; }
+      .legal-banner { fill: #3a231d; stroke: #c56b50; stroke-width: 2; }
+      .legal { fill: #f2b099; font: 700 18px Arial, sans-serif; letter-spacing: 1.6px; }
+      .column-label { fill: #c79753; font: 700 17px Arial, sans-serif; letter-spacing: 1.4px; }
+      .phase-card { fill: #1b232b; stroke: #3c4954; stroke-width: 2; }
+      .phase-name { fill: #f6f0e6; font: 700 24px Georgia, serif; }
+      .period { fill: #c9d0d6; font: 17px Arial, sans-serif; }
+      .amount { fill: #e0ae68; font: 700 22px Arial, sans-serif; }
+      .body { fill: #d3d9de; font: 16px Arial, sans-serif; }
+      .body-small { fill: #9faab3; font: 14px Arial, sans-serif; }
+      .routing { fill: #202a32; stroke: #c79753; stroke-width: 2.5; }
+      .routing-title { fill: #f6f0e6; font: 700 26px Georgia, serif; }
+      .routing-copy { fill: #c9d0d6; font: 17px Arial, sans-serif; }
+      .arrow { fill: none; stroke: #c79753; stroke-width: 3; }
+      .asset-pill { fill: #1b232b; stroke: #53616d; stroke-width: 1.5; }
+      .asset { fill: #e2e6e9; font: 18px Arial, sans-serif; }
+      .caption-box { fill: #171e24; stroke: #3c4954; stroke-width: 1.5; }
+      .caption { fill: #aeb7be; font: 15px Arial, sans-serif; }
+      .source { fill: #78858f; font: 13px Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect width="1600" height="1000" class="background"/>
+  <text x="64" y="58" class="eyebrow" text-anchor="start">RECORD 0410 · PUBLIC-RECORD SCHEMATIC</text>
+  <text x="64" y="114" class="title" text-anchor="start">What the July 2016 DOJ complaints alleged</text>
+  <text x="64" y="151" class="subtitle" text-anchor="start">Three principal phases described in U.S. civil-forfeiture complaints</text>
+  <rect x="1172" y="60" width="364" height="58" rx="8" class="legal-banner"/>
+  <text x="1354" y="96" class="legal" text-anchor="middle">ALLEGATIONS, NOT VERDICTS</text>
+  <text x="64" y="225" class="column-label" text-anchor="start">ALLEGED PHASE</text>
+  <text x="630" y="225" class="column-label" text-anchor="start">ALLEGED ROUTING</text>
+  <text x="1120" y="225" class="column-label" text-anchor="start">ASSET CATEGORIES NAMED BY DOJ</text>
+  <rect x="64" y="252" width="450" height="176" rx="16" class="phase-card"/>
+<text x="88" y="286" class="phase-name" text-anchor="start">1 · Good Star</text>
+<text x="488" y="286" class="period" text-anchor="end">2009–2011</text>
+<text x="88" y="322" class="amount" text-anchor="start">more than $1 billion</text>
+<text x="88" y="353" class="body" text-anchor="start">Intended for a joint venture and energy concessions</text>
+<text x="88" y="395" class="body-small" text-anchor="start">Transferred to a Swiss account held in Good Star</text>
+<text x="88" y="413" class="body-small" text-anchor="start">Limited’s name</text>
+<path d="M514 340 H622" class="arrow" marker-end="url(#arrowhead)"/>
+<rect x="64" y="448" width="450" height="176" rx="16" class="phase-card"/>
+<text x="88" y="482" class="phase-name" text-anchor="start">2 · Aabar-BVI</text>
+<text x="488" y="482" class="period" text-anchor="end">2012</text>
+<text x="88" y="518" class="amount" text-anchor="start">approximately $1.367 billion</text>
+<text x="88" y="549" class="body" text-anchor="start">Raised through two bond offerings</text>
+<text x="88" y="591" class="body-small" text-anchor="start">Transferred to a Swiss account held by an unaffiliated</text>
+<text x="88" y="609" class="body-small" text-anchor="start">BVI entity</text>
+<path d="M514 536 H622" class="arrow" marker-end="url(#arrowhead)"/>
+<rect x="64" y="644" width="450" height="176" rx="16" class="phase-card"/>
+<text x="88" y="678" class="phase-name" text-anchor="start">3 · Tanore</text>
+<text x="488" y="678" class="period" text-anchor="end">2013</text>
+<text x="88" y="714" class="amount" text-anchor="start">more than $1.26 billion</text>
+<text x="88" y="745" class="body" text-anchor="start">Raised through a third bond offering for a joint</text>
+<text x="88" y="767" class="body" text-anchor="start">venture</text>
+<text x="88" y="787" class="body-small" text-anchor="start">Diverted from the bond proceeds through accounts and</text>
+<text x="88" y="805" class="body-small" text-anchor="start">entities</text>
+<path d="M514 732 H622" class="arrow" marker-end="url(#arrowhead)"/>
+  <rect x="646" y="350" width="386" height="270" rx="20" class="routing"/>
+  <text x="839" y="405" class="routing-title" text-anchor="middle">Accounts and entities</text>
+  <text x="839" y="449" class="routing-copy" text-anchor="middle">The complaints alleged transfers</text>
+  <text x="839" y="478" class="routing-copy" text-anchor="middle">through accounts, shell companies</text>
+  <text x="839" y="507" class="routing-copy" text-anchor="middle">and financial institutions across</text>
+  <text x="839" y="536" class="routing-copy" text-anchor="middle">multiple jurisdictions.</text>
+  <text x="839" y="584" class="legal" text-anchor="middle">Schematic only — not a ledger</text>
+  <path d="M1032 485 H1098" class="arrow" marker-end="url(#arrowhead)"/>
+  <rect x="1120" y="286" width="416" height="60" rx="30" class="asset-pill"/>
+<text x="1150" y="324" class="asset" text-anchor="start">Real estate and hotels</text>
+<rect x="1120" y="372" width="416" height="60" rx="30" class="asset-pill"/>
+<text x="1150" y="410" class="asset" text-anchor="start">$35 million jet</text>
+<rect x="1120" y="458" width="416" height="60" rx="30" class="asset-pill"/>
+<text x="1150" y="496" class="asset" text-anchor="start">Van Gogh and Monet works</text>
+<rect x="1120" y="544" width="416" height="60" rx="30" class="asset-pill"/>
+<text x="1150" y="582" class="asset" text-anchor="start">EMI publishing interest</text>
+<rect x="1120" y="630" width="416" height="60" rx="30" class="asset-pill"/>
+<text x="1150" y="668" class="asset" text-anchor="start">The Wolf of Wall Street production</text>
+  <rect x="64" y="854" width="1472" height="92" rx="12" class="caption-box"/>
+  <text x="88" y="884" class="column-label" text-anchor="start">CAPTION</text>
+  <text x="88" y="914" class="caption" text-anchor="start">Schematic of allegations in U.S. civil-forfeiture complaints announced 20 July 2016. Amounts are approximate;</text>
+  <text x="88" y="938" class="caption" text-anchor="start">arrow width and box area do not encode volume. This does not establish guilt, ownership, final recovery or completeness.</text>
+  <text x="1536" y="974" class="source" text-anchor="end">Source: U.S. Department of Justice · 20 July 2016</text>
+</svg>

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "title": "Times Beach: contamination, flood, relocation and cleanup",
+  "subtitle": "Selected stages documented in the U.S. EPA Region 7 retrospective",
+  "sourceBaseSha": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "source": {
+    "title": "A Town, a Flood, and Superfund: Looking Back at the Times Beach Disaster Nearly 40 Years Later",
+    "publisher": "U.S. Environmental Protection Agency, Region 7",
+    "url": "https://www.epa.gov/mo/town-flood-and-superfund-looking-back-times-beach-disaster-nearly-40-years-later",
+    "checkedAt": "2026-10-02",
+    "lastUpdatedByPublisher": "2025-12-11"
+  },
+  "phases": [
+    {
+      "id": "contamination-discovery",
+      "label": "Contamination and discovery",
+      "color": "#a9472b"
+    },
+    {
+      "id": "evacuation-relocation",
+      "label": "Evacuation and relocation",
+      "color": "#315f78"
+    },
+    {
+      "id": "cleanup-reuse",
+      "label": "Cleanup and reuse",
+      "color": "#3f7148"
+    }
+  ],
+  "events": [
+    {
+      "date": "Early 1970s",
+      "title": "Contaminated mixture used for dust suppression",
+      "detail": "EPA says a dioxin and waste-oil mixture was sprayed at more than 25 Missouri locations, including Times Beach.",
+      "phase": "contamination-discovery",
+      "sourceLocator": "EPA retrospective, lines 24–26"
+    },
+    {
+      "date": "November 1982",
+      "title": "Town receives first contamination warning",
+      "detail": "EPA identifies this as Times Beach's first news of possible dioxin contamination and records soil sampling.",
+      "phase": "contamination-discovery",
+      "sourceLocator": "EPA retrospective, lines 48–54"
+    },
+    {
+      "date": "December 1982",
+      "title": "Flood, evacuation and no-return recommendation",
+      "detail": "Record Meramec River flooding forced evacuation; CDC and EPA recommended that the town not be reinhabited.",
+      "phase": "evacuation-relocation",
+      "sourceLocator": "EPA retrospective, lines 55–61"
+    },
+    {
+      "date": "22 February 1983",
+      "title": "Federal and state buyout announced",
+      "detail": "EPA announced a Superfund-funded buyout covering 800 residential properties and 30 businesses after recommending permanent relocation for more than 2,000 residents.",
+      "phase": "evacuation-relocation",
+      "sourceLocator": "EPA retrospective, lines 64–75"
+    },
+    {
+      "date": "1990",
+      "title": "Consent decree assigns cleanup work",
+      "detail": "The decree allocated excavation, transport, demolition, incinerator construction, operation and long-term management responsibilities.",
+      "phase": "cleanup-reuse",
+      "sourceLocator": "EPA retrospective, lines 77–83"
+    },
+    {
+      "date": "1996–1997",
+      "title": "Incineration and cleanup completion",
+      "detail": "EPA records the temporary incinerator in 1996 and marks cleanup completed in 1997; materials came from Times Beach and other eastern Missouri sites.",
+      "phase": "cleanup-reuse",
+      "sourceLocator": "EPA retrospective, lines 84–91"
+    },
+    {
+      "date": "1999–2001",
+      "title": "State park opens; site later leaves NPL",
+      "detail": "Route 66 State Park opened on the former town site in 1999. EPA deleted Times Beach from the National Priorities List in 2001.",
+      "phase": "cleanup-reuse",
+      "sourceLocator": "EPA retrospective, lines 95–104"
+    },
+    {
+      "date": "2012",
+      "title": "EPA conducts follow-up park sampling",
+      "detail": "EPA Region 7 reports that sampling confirmed no significant health risk for workers or visitors at Route 66 State Park.",
+      "phase": "cleanup-reuse",
+      "sourceLocator": "EPA retrospective, lines 105–109"
+    }
+  ],
+  "caption": "Selected documented stages, arranged in reading order. Equal spacing and box size do not encode elapsed time, contamination level, risk, cost, causal weight or policy effectiveness. The diagram is an EPA-sourced chronology, not a complete community history or independent health assessment. AI source review is not human editorial approval."
+}

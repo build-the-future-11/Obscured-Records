@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-labelledby="title desc">
+<title id="title">Times Beach: contamination, flood, relocation and cleanup</title>
+<desc id="desc">Selected documented stages, arranged in reading order. Equal spacing and box size do not encode elapsed time, contamination level, risk, cost, causal weight or policy effectiveness. The diagram is an EPA-sourced chronology, not a complete community history or independent health assessment. AI source review is not human editorial approval.</desc>
+<style>
+  .background{fill:#f7f4ed}.card{fill:#fff;stroke:#d7d0c4;stroke-width:1.5}.eyebrow{font:600 15px system-ui,sans-serif;letter-spacing:1.4px;fill:#725d43}.heading{font:700 34px Georgia,serif;fill:#211c16}.subtitle{font:18px system-ui,sans-serif;fill:#5a5147}.legend{font:600 14px system-ui,sans-serif;fill:#453c33}.date{font:700 15px system-ui,sans-serif;fill:#725d43}.event-title{font:700 17px system-ui,sans-serif;fill:#211c16}.detail{font:14px system-ui,sans-serif;fill:#554b42}.caption{font:13px system-ui,sans-serif;fill:#4f463e}.rule{stroke:#c8bba8;stroke-width:1}
+</style>
+<rect width="1200" height="1020" class="background"/>
+<text x="72" y="58" class="eyebrow">SOURCE-LOCATED EDITORIAL DIAGRAM · RECORD 0406</text>
+<text x="72" y="104" class="heading">Times Beach: contamination, flood, relocation and cleanup</text>
+<text x="72" y="136" class="subtitle">Selected stages documented in the U.S. EPA Region 7 retrospective</text>
+<g><circle cx="72" cy="172" r="8" fill="#a9472b"/><text x="88" y="178" class="legend">Contamination and discovery</text></g>
+<g><circle cx="432" cy="172" r="8" fill="#315f78"/><text x="448" y="178" class="legend">Evacuation and relocation</text></g>
+<g><circle cx="792" cy="172" r="8" fill="#3f7148"/><text x="808" y="178" class="legend">Cleanup and reuse</text></g>
+<line x1="72" y1="200" x2="1128" y2="200" class="rule"/>
+<g aria-label="Early 1970s: Contaminated mixture used for dust suppression">
+<rect x="72" y="230" width="500" height="140" rx="18" class="card"/>
+<rect x="72" y="230" width="10" height="140" rx="5" fill="#a9472b"/>
+<text x="100" y="260" class="date">Early 1970s</text>
+<text x="100" y="285" class="event-title">Contaminated mixture used for dust</text>
+<text x="100" y="305" class="event-title">suppression</text>
+<text x="100" y="328" class="detail">EPA says a dioxin and waste-oil mixture was sprayed at more</text>
+<text x="100" y="345" class="detail">than 25 Missouri locations, including Times Beach.</text>
+</g>
+<g aria-label="November 1982: Town receives first contamination warning">
+<rect x="632" y="230" width="500" height="140" rx="18" class="card"/>
+<rect x="632" y="230" width="10" height="140" rx="5" fill="#a9472b"/>
+<text x="660" y="260" class="date">November 1982</text>
+<text x="660" y="285" class="event-title">Town receives first contamination</text>
+<text x="660" y="305" class="event-title">warning</text>
+<text x="660" y="328" class="detail">EPA identifies this as Times Beach&apos;s first news of possible</text>
+<text x="660" y="345" class="detail">dioxin contamination and records soil sampling.</text>
+</g>
+<g aria-label="December 1982: Flood, evacuation and no-return recommendation">
+<rect x="72" y="405" width="500" height="140" rx="18" class="card"/>
+<rect x="72" y="405" width="10" height="140" rx="5" fill="#315f78"/>
+<text x="100" y="435" class="date">December 1982</text>
+<text x="100" y="460" class="event-title">Flood, evacuation and no-return</text>
+<text x="100" y="480" class="event-title">recommendation</text>
+<text x="100" y="503" class="detail">Record Meramec River flooding forced evacuation; CDC and EPA</text>
+<text x="100" y="520" class="detail">recommended that the town not be reinhabited.</text>
+</g>
+<g aria-label="22 February 1983: Federal and state buyout announced">
+<rect x="632" y="405" width="500" height="140" rx="18" class="card"/>
+<rect x="632" y="405" width="10" height="140" rx="5" fill="#315f78"/>
+<text x="660" y="435" class="date">22 February 1983</text>
+<text x="660" y="460" class="event-title">Federal and state buyout announced</text>
+<text x="660" y="503" class="detail">EPA announced a Superfund-funded buyout covering 800</text>
+<text x="660" y="520" class="detail">residential properties and 30 businesses after recommending</text>
+<text x="660" y="537" class="detail">permanent relocation for more than 2,000 residents.</text>
+</g>
+<g aria-label="1990: Consent decree assigns cleanup work">
+<rect x="72" y="580" width="500" height="140" rx="18" class="card"/>
+<rect x="72" y="580" width="10" height="140" rx="5" fill="#3f7148"/>
+<text x="100" y="610" class="date">1990</text>
+<text x="100" y="635" class="event-title">Consent decree assigns cleanup work</text>
+<text x="100" y="678" class="detail">The decree allocated excavation, transport, demolition,</text>
+<text x="100" y="695" class="detail">incinerator construction, operation and long-term management</text>
+<text x="100" y="712" class="detail">responsibilities.</text>
+</g>
+<g aria-label="1996–1997: Incineration and cleanup completion">
+<rect x="632" y="580" width="500" height="140" rx="18" class="card"/>
+<rect x="632" y="580" width="10" height="140" rx="5" fill="#3f7148"/>
+<text x="660" y="610" class="date">1996–1997</text>
+<text x="660" y="635" class="event-title">Incineration and cleanup completion</text>
+<text x="660" y="678" class="detail">EPA records the temporary incinerator in 1996 and marks</text>
+<text x="660" y="695" class="detail">cleanup completed in 1997; materials came from Times Beach and</text>
+<text x="660" y="712" class="detail">other eastern Missouri sites.</text>
+</g>
+<g aria-label="1999–2001: State park opens; site later leaves NPL">
+<rect x="72" y="755" width="500" height="140" rx="18" class="card"/>
+<rect x="72" y="755" width="10" height="140" rx="5" fill="#3f7148"/>
+<text x="100" y="785" class="date">1999–2001</text>
+<text x="100" y="810" class="event-title">State park opens; site later leaves</text>
+<text x="100" y="830" class="event-title">NPL</text>
+<text x="100" y="853" class="detail">Route 66 State Park opened on the former town site in 1999.</text>
+<text x="100" y="870" class="detail">EPA deleted Times Beach from the National Priorities List in</text>
+<text x="100" y="887" class="detail">2001.</text>
+</g>
+<g aria-label="2012: EPA conducts follow-up park sampling">
+<rect x="632" y="755" width="500" height="140" rx="18" class="card"/>
+<rect x="632" y="755" width="10" height="140" rx="5" fill="#3f7148"/>
+<text x="660" y="785" class="date">2012</text>
+<text x="660" y="810" class="event-title">EPA conducts follow-up park sampling</text>
+<text x="660" y="853" class="detail">EPA Region 7 reports that sampling confirmed no significant</text>
+<text x="660" y="870" class="detail">health risk for workers or visitors at Route 66 State Park.</text>
+</g>
+<line x1="72" y1="938" x2="1128" y2="938" class="rule"/>
+<text x="72" y="964" class="caption">Selected documented stages, arranged in reading order. Equal spacing and box size do not encode elapsed time, contamination level,</text>
+<text x="72" y="981" class="caption">risk, cost, causal weight or policy effectiveness. The diagram is an EPA-sourced chronology, not a complete community history or</text>
+<text x="72" y="998" class="caption">independent health assessment. AI source review is not human editorial approval.</text>
+</svg>

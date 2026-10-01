@@ -1,0 +1,28 @@
+--- a/lib/features.ts
++++ b/lib/features.ts
+@@ -194,7 +194,7 @@
+     standfirst: "The Therac-25 accidents exposed the consequences of unsafe machine states, unclear feedback and incomplete incident reporting. A detailed engineering study brought the scattered records together.",
+     evidenceNote: "Leveson and Turner reconstructed events from available records and acknowledged gaps in the evidence. Different incidents involved different faults; the rapid-editing sequence does not explain the entire series.",
+     timeline: [
+-      { date: "1982", event: "The Therac-25 enters clinical use as a computer-controlled radiation therapy system." },
++      { date: "1982", event: "The computerized commercial version of the Therac-25 becomes available in late 1982." },
+       { date: "1985–1987", event: "Six known accidents expose patients to massive radiation overdoses." },
+       { date: "1986", event: "Regulators and hospitals connect incidents that had previously appeared separate." },
+       { date: "1993", event: "Nancy Leveson and Clark Turner publish a detailed engineering investigation of the accidents." },
+@@ -211,14 +211,14 @@
+         heading: "Incidents looked local until they did not",
+         paragraphs: [
+           "Patients reported sudden heat or pain. Hospitals contacted the manufacturer, but early incidents were not immediately assembled into a convincing system-wide pattern. A machine might be checked and returned to service because technicians could not reproduce the exact sequence that produced the failure.",
+-          "This fragmentation mattered. Safety-critical systems generate weak signals before they generate a recognized pattern: an unexplained message, a patient report, an operator's unusual observation. If those signals remain inside individual organizations, each event can be dismissed as impossible because no one sees the accumulating record.",
++          "This fragmentation mattered. In these incidents, unexplained messages, patient reports and operator observations were warning signs that had not yet been assembled into a shared account. If those signals remain inside individual organizations, each event can be dismissed as impossible because no one sees the accumulating record.",
+         ],
+       },
+       {
+         heading: "Why the case still travels",
+         paragraphs: [
+           "Leveson and Turner's investigation did not argue that software should never control dangerous equipment. It showed why software reliability alone is not a complete safety argument. Safety depends on the surrounding design: independent constraints, understandable interfaces, incident reporting, testing assumptions and the ability to observe the physical state of the system.",
+-          "The enduring lesson is organizational. A rare software state became lethal because design decisions, operator feedback and institutional communication aligned in the wrong direction. The bug mattered, but the system that allowed the bug to carry authority mattered more.",
++          "The enduring lesson is organizational. The accidents involved different faults, with design choices, operator feedback and institutional communication shaping their consequences. The bug mattered, but the system that allowed the bug to carry authority mattered more.",
+         ],
+       },
+     ],

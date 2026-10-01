@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "recordId": "0395",
+  "slug": "flight-629-suitcase-bomb",
+  "reviewedAt": "2026-10-02",
+  "sourceBaseSha": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "disposition": "held-for-human-editorial-approval",
+  "identifiedGap": {
+    "currentClaim": "The FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.",
+    "finding": "The cited FBI history does not support the claim that Graham bought the policies. It describes the $37,500 policy naming him as beneficiary as having been taken out by his mother at the airport.",
+    "severity": "material-attribution-error"
+  },
+  "proposedReplacement": "The FBI traced the bomb to Jack Gilbert Graham, whose signed statement described placing the device in his mother’s suitcase. Agents found a $37,500 travel-insurance policy on her life naming him as beneficiary. A Colorado jury convicted him of first-degree murder.",
+  "sources": [
+    {
+      "id": "fbi-history",
+      "title": "Jack Gilbert Graham",
+      "publisher": "Federal Bureau of Investigation",
+      "url": "https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham",
+      "type": "official-agency-history",
+      "supports": [
+        "Flight 629 departed Denver on 1 November 1955 and all 44 people aboard died.",
+        "The investigation located the explosion in cargo pit number four and found dynamite residue.",
+        "Graham admitted constructing and placing the device in his mother's luggage.",
+        "Agents found a $37,500 travel-insurance policy naming Graham as beneficiary."
+      ],
+      "doesNotSupport": [
+        "That Graham purchased the travel-insurance policies."
+      ]
+    },
+    {
+      "id": "graham-v-people",
+      "title": "Graham v. People, 302 P.2d 737 (Colo. 1956)",
+      "publisher": "Colorado Supreme Court",
+      "url": "https://law.justia.com/cases/colorado/supreme-court/1956/18058.html",
+      "type": "primary-judicial-opinion",
+      "supports": [
+        "The signed statement described Graham placing the bomb in the suitcase.",
+        "Investigators found the $37,500 policy at Graham's home.",
+        "The jury returned a first-degree-murder verdict and fixed the death penalty.",
+        "The Colorado Supreme Court affirmed the judgment."
+      ],
+      "doesNotSupport": [
+        "A causal claim that this case created a particular later aviation-security policy."
+      ]
+    }
+  ],
+  "claimMap": [
+    {
+      "claim": "Graham's signed statement described placing the device in his mother's suitcase.",
+      "sourceIds": ["fbi-history", "graham-v-people"],
+      "status": "supported"
+    },
+    {
+      "claim": "Agents found a $37,500 policy on his mother's life naming him as beneficiary.",
+      "sourceIds": ["fbi-history", "graham-v-people"],
+      "status": "supported"
+    },
+    {
+      "claim": "A Colorado jury convicted Graham of first-degree murder.",
+      "sourceIds": ["graham-v-people"],
+      "status": "supported"
+    },
+    {
+      "claim": "Graham bought the travel-insurance policies.",
+      "sourceIds": [],
+      "status": "remove-unsupported"
+    }
+  ],
+  "gates": {
+    "humanEditorialApproval": "open",
+    "consentingAuthorAttribution": "open",
+    "imageAndSourceRights": "open",
+    "publicLaunchCertificationIssue4": "open"
+  },
+  "artifact": "docs/reviews/flight-629-source-corrections.patch"
+}

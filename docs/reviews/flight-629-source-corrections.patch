@@ -1,0 +1,51 @@
+diff --git a/content/articles/flight-629-suitcase-bomb.mdx b/content/articles/flight-629-suitcase-bomb.mdx
+index 0ec1316..2612568 100644
+--- a/content/articles/flight-629-suitcase-bomb.mdx
++++ b/content/articles/flight-629-suitcase-bomb.mdx
+@@ -8 +8 @@ date: "2026-09-14"
+-updated: "2026-09-27"
++updated: "2026-10-02"
+@@ -27 +27 @@ United Air Lines Flight 629 departed Denver and broke apart minutes later, killi
+-The FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.
++The FBI traced the bomb to Jack Gilbert Graham, whose signed statement described placing the device in his mother’s suitcase. Agents found a $37,500 travel-insurance policy on her life naming him as beneficiary. A Colorado jury convicted him of first-degree murder.
+@@ -33 +33 @@ The case shows how an attack aimed at one person killed everyone aboard a shared
+-### Source
++### Sources
+@@ -35,0 +36,2 @@ The case shows how an attack aimed at one person killed everyone aboard a shared
++
++[Graham v. People, 302 P.2d 737 (Colo. 1956)](https://law.justia.com/cases/colorado/supreme-court/1956/18058.html)
+diff --git a/content/drafts/flight-629-suitcase-bomb.md b/content/drafts/flight-629-suitcase-bomb.md
+index 5186533..1b50745 100644
+--- a/content/drafts/flight-629-suitcase-bomb.md
++++ b/content/drafts/flight-629-suitcase-bomb.md
+@@ -22,3 +22,10 @@
+-      "status": "inherited-unverified",
+-      "checkedAt": "2026-09-27",
+-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
++      "status": "inspected-ai-review-pending",
++      "checkedAt": "2026-10-02",
++      "supports": "Flight date, 44 deaths, cargo-pit explosion evidence, Graham's admission, and the $37,500 policy naming him as beneficiary. The page describes the policy as taken out by his mother, so it does not support the prior claim that Graham bought the policies."
++    },
++    {
++      "title": "Graham v. People, 302 P.2d 737 (Colo. 1956)",
++      "url": "https://law.justia.com/cases/colorado/supreme-court/1956/18058.html",
++      "status": "inspected-ai-review-pending",
++      "checkedAt": "2026-10-02",
++      "supports": "The first-degree-murder verdict, the signed statement describing placement of the bomb, the insurance evidence, and the Colorado Supreme Court's affirmance."
+@@ -34 +41 @@
+-  "updatedAt": "2026-09-27",
++  "updatedAt": "2026-10-02",
+@@ -36 +43,2 @@
+-    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
++    "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist.",
++    "AI source review on 2026-10-02 identified that the existing copy misattributed purchase of the travel-insurance policies to Graham. A held correction packet maps the replacement language to the FBI history and Graham v. People; human editorial approval remains required."
+@@ -44 +52 @@ United Air Lines Flight 629 departed Denver and broke apart minutes later, killi
+-The FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.
++The FBI traced the bomb to Jack Gilbert Graham, whose signed statement described placing the device in his mother’s suitcase. Agents found a $37,500 travel-insurance policy on her life naming him as beneficiary. A Colorado jury convicted him of first-degree murder.
+diff --git a/lib/articles.ts b/lib/articles.ts
+index 5243444..06eef71 100644
+--- a/lib/articles.ts
++++ b/lib/articles.ts
+@@ -31 +31 @@ const records:Article[]=[
+-{...by,title:"United Flight 629: The Baggage Bomb and the Investigation",subtitle:"An explosion destroyed the aircraft after departure from Denver in 1955, killing all 44 people aboard.",slug:"flight-629-suitcase-bomb",section:"World",excerpt:"Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",underreported:true,recordId:"0395",readingTime:"1 min",tags:["aviation","investigation"],eventDate:"1 November 1955",opening:"United Air Lines Flight 629 departed Denver and broke apart minutes later, killing all 44 people aboard. Investigators found evidence of an explosion in checked baggage.",context:"The FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.",significance:"The case shows how an attack aimed at one person killed everyone aboard a shared aircraft. Its place in the history of security needs specific evidence of later policy changes; the investigation alone does not establish when a particular safeguard was introduced.",source:"FBI History — Jack Gilbert Graham",sourceUrl:"https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham"},
++{...by,updated:"2 Oct 2026",title:"United Flight 629: The Baggage Bomb and the Investigation",subtitle:"An explosion destroyed the aircraft after departure from Denver in 1955, killing all 44 people aboard.",slug:"flight-629-suitcase-bomb",section:"World",excerpt:"Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",underreported:true,recordId:"0395",readingTime:"1 min",tags:["aviation","investigation"],eventDate:"1 November 1955",opening:"United Air Lines Flight 629 departed Denver and broke apart minutes later, killing all 44 people aboard. Investigators found evidence of an explosion in checked baggage.",context:"The FBI traced the bomb to Jack Gilbert Graham, whose signed statement described placing the device in his mother’s suitcase. Agents found a $37,500 travel-insurance policy on her life naming him as beneficiary. A Colorado jury convicted him of first-degree murder.",significance:"The case shows how an attack aimed at one person killed everyone aboard a shared aircraft. Its place in the history of security needs specific evidence of later policy changes; the investigation alone does not establish when a particular safeguard was introduced.",source:"FBI History — Jack Gilbert Graham",additionalSources:[{label:"Graham v. People, 302 P.2d 737 (Colo. 1956)",url:"https://law.justia.com/cases/colorado/supreme-court/1956/18058.html"}],sourceUrl:"https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham"},

@@ -117,7 +117,7 @@ test('D1 writer binds values and checks the result', async () => {
   let sql, values;
   const store = createNewsletterStore(async () => ({ prepare(statement) {
     sql = statement;
-    return { bind(...parameters) { values = parameters; return { async run() { return { success: true }; } }; } };
+    return { bind(...parameters) { values = parameters; return { async run() { return { success: true, meta: { changes: 1 } }; } }; } };
   } }));
   await store('a@example.com');
   assert.match(sql, /ON CONFLICT\(email\)/);
@@ -169,3 +169,32 @@ for (const [name, headers, expected] of [
     assert.equal(isSameOriginSignup(new Request('https://internal.example/api/newsletter', { headers })), expected);
   });
 }
+
+
+test('delivery sender runs only after an eligible persisted request', async () => {
+  const sent = [];
+  const response = await createNewsletterHandler(async () => true, async (email) => { sent.push(email); return true; })(
+    request('{"email":"a@example.com","consent":true}')
+  );
+  assert.equal(response.status, 200);
+  assert.deepEqual(sent, ['a@example.com']);
+  assert.match((await response.json()).message, /confirm/i);
+});
+
+test('protected or already-active state does not trigger another confirmation', async () => {
+  let sends = 0;
+  const response = await createNewsletterHandler(async () => false, async () => { sends++; return true; })(
+    request('{"email":"a@example.com","consent":true}')
+  );
+  assert.equal(response.status, 200);
+  assert.equal(sends, 0);
+  assert.match((await response.json()).message, /already recorded/i);
+});
+
+test('delivery failure leaves the request pending and returns a retryable error without provider details', async () => {
+  const response = await createNewsletterHandler(async () => true, async () => {
+    throw new Error('private@example.com provider-secret');
+  })(request('{"email":"a@example.com","consent":true}'));
+  assert.equal(response.status, 503);
+  assert.doesNotMatch(await response.text(), /private|provider-secret/);
+});

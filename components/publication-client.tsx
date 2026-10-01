@@ -160,7 +160,7 @@ export function ShareTools({ title, url }: { title: string; url: string }) {
   </aside>;
 }
 
-export function NewsletterForm({ compact = false }: { compact?: boolean }) {
+export function NewsletterForm({ compact = false, deliveryEnabled = false }: { compact?: boolean; deliveryEnabled?: boolean }) {
   const id = useId();
   const hydrated = useSyncExternalStore(subscribeToHydration, getHydrated, getServerHydrated);
   const [email, setEmail] = useState("");
@@ -210,10 +210,10 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
     <input name="website" className="hp-field" tabIndex={-1} autoComplete="off" aria-hidden="true" />
     <div>
       <input id={`${id}-email`} name="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" required maxLength={254} autoComplete="email" disabled={!hydrated || status === "loading"} aria-describedby={`${id}-hint${message ? ` ${id}-status` : ""}`} />
-      <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : "Join waitlist"}</button>
+      <button type="submit" disabled={!hydrated || status === "loading"}>{status === "loading" ? "Saving…" : deliveryEnabled ? "Send confirmation" : "Join waitlist"}</button>
     </div>
-    <label className="waitlist-consent"><input type="checkbox" name="consent" required disabled={!hydrated || status === "loading"} />I agree to storage of my email for this waitlist. This does not start an active subscription.</label>
-    <small id={`${id}-hint`}>Email delivery is not active. A saved request is not an email confirmation. <Link href="/privacy">Read our privacy policy.</Link></small>
+    <label className="waitlist-consent"><input type="checkbox" name="consent" required disabled={!hydrated || status === "loading"} />{deliveryEnabled ? "I agree to storage of my email and to receive the confirmation needed to activate this subscription." : "I agree to storage of my email as a pending newsletter request. This does not start an active subscription."}</label>
+    <small id={`${id}-hint`}>{deliveryEnabled ? "The subscription remains inactive until you use the confirmation link we email. Every confirmation email also includes an unsubscribe link." : "Email delivery is disabled. A saved request remains pending and is not an active subscription."} <Link href="/privacy">Read our privacy policy.</Link></small>
     {status === "error" && <p className="intake-alternative">Nothing has been confirmed. You can <a href="/rss.xml">follow RSS</a> or <a href="mailto:ryangomez.hs@gmail.com?subject=Obscured%20Brief%20waitlist">contact the editor</a>.</p>}
     {message && <p id={`${id}-status`} className={`form-status ${status}`} role={status === "error" ? "alert" : "status"}>{message}</p>}
   </form>;

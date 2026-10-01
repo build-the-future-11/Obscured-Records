@@ -1,0 +1,13 @@
+{
+  "base_commit": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "source_file": "lib/features.ts",
+  "source_blob": "4f6a72156c4078ff9313bc255262365a6fc50ab3",
+  "changed_strings": 3,
+  "each_old_string_occurs_once": true,
+  "unrelated_feature_blocks_unchanged": true,
+  "application_files_changed_in_proposal_branch": false,
+  "candidate_sha256": "fe80354000ec8c8c10394a026992e098061d9277a3d4f8388a6bd36c66bd248b",
+  "approval": "HUMAN_EDITOR_REQUIRED",
+  "production_deployed": false,
+  "site_build_executed": false
+}

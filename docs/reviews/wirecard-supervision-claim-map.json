@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "recordId": "0415",
+  "slug": "wirecard-missing-billions",
+  "reviewedAt": "2026-10-02",
+  "sourceBaseSha": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "disposition": "held-for-human-editorial-approval",
+  "identifiedGap": {
+    "currentClaim": "The collapse followed years of reporting and whistleblower warnings that were met not only with denial but with scrutiny of the journalists and traders raising questions. Regulators treated Wirecard partly as a technology company rather than as the financial institution its risks resembled.",
+    "finding": "The paragraph compresses several different actors, responses and regulatory scopes into an unattributed narrative. The linked Bundestag page records partisan and majority conclusions, while ESMA supplies narrower findings about financial-reporting supervision that can be attributed precisely.",
+    "severity": "material-attribution-and-scope-error"
+  },
+  "proposedCopy": {
+    "subtitle": "Wirecard filed for insolvency three days after saying €1.9 billion in reported trust-account balances likely did not exist.",
+    "opening": "On 22 June 2020, Wirecard said there was a prevailing likelihood that €1.9 billion in previously reported trust-account balances did not exist. The German payments company filed for insolvency on 25 June.",
+    "context": "ESMA’s peer review found that FREP did not act on international-media signals when selecting Wirecard for examination between 2016 and 2018, despite specific risks in its reporting. ESMA also found that FREP and BaFin should have expanded the scope of the 2018 financial-report examination earlier after serious 2019 media allegations about third-party-acquiring revenue and disclosures.",
+    "significance": "Wirecard illustrates the difference between a reported cash balance and evidence that the money exists. ESMA identified weaknesses in examination scope, professional scepticism, coordination and information flow. The peer review assessed financial-reporting supervision; it did not determine any person’s criminal responsibility."
+  },
+  "sources": [
+    {
+      "id": "esma-peer-review",
+      "title": "Fast Track Peer Review Report — Wirecard",
+      "publisher": "European Securities and Markets Authority",
+      "url": "https://www.esma.europa.eu/sites/default/files/library/esma42-111-5349_fast_track_peer_review_report_-_wirecard.pdf",
+      "type": "official-supervisory-peer-review",
+      "locations": [
+        "pages 6–8: executive summary and principal findings",
+        "pages 40–41: dated June 2020 chronology"
+      ]
+    },
+    {
+      "id": "bundestag-inquiry",
+      "title": "Schlussbericht des Wirecard-Untersuchungsausschusses",
+      "publisher": "German Bundestag",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030",
+      "type": "official-parliamentary-report-summary",
+      "locations": [
+        "committee report summary and parliamentary positions",
+        "coalition-majority findings"
+      ]
+    }
+  ],
+  "claimMap": [
+    {
+      "claim": "Wirecard said on 22 June 2020 that the €1.9 billion in reported trust-account balances likely did not exist.",
+      "sourceIds": ["esma-peer-review"],
+      "sourceLocation": "page 40",
+      "status": "supported"
+    },
+    {
+      "claim": "Wirecard filed for insolvency on 25 June 2020.",
+      "sourceIds": ["esma-peer-review"],
+      "sourceLocation": "page 41",
+      "status": "supported"
+    },
+    {
+      "claim": "FREP did not act on international-media signals when selecting Wirecard for examination in 2016–2018.",
+      "sourceIds": ["esma-peer-review"],
+      "sourceLocation": "page 7",
+      "status": "supported"
+    },
+    {
+      "claim": "FREP and BaFin should have expanded the 2018 examination scope earlier after serious 2019 media allegations.",
+      "sourceIds": ["esma-peer-review"],
+      "sourceLocation": "page 8",
+      "status": "supported"
+    },
+    {
+      "claim": "ESMA found coordination and information-flow deficiencies in the supervisory system.",
+      "sourceIds": ["esma-peer-review"],
+      "sourceLocation": "page 8",
+      "status": "supported"
+    },
+    {
+      "claim": "Regulators treated Wirecard as a technology company rather than as the financial institution its risks resembled.",
+      "sourceIds": [],
+      "status": "remove-unattributed-analysis"
+    }
+  ],
+  "gates": {
+    "humanEditorialApproval": "open",
+    "consentingAuthorAttribution": "open",
+    "imageAndSourceRights": "open",
+    "publicLaunchCertificationIssue4": "open"
+  },
+  "artifact": "docs/reviews/wirecard-supervision-corrections.patch"
+}

@@ -1,0 +1,38 @@
+diff --git a/content/articles/wirecard-missing-billions.mdx b/content/articles/wirecard-missing-billions.mdx
+index 1038228..b3c4c74 100644
+--- a/content/articles/wirecard-missing-billions.mdx
++++ b/content/articles/wirecard-missing-billions.mdx
+@@ -4 +4 @@ title: "Wirecard and the €1.9 Billion Its Auditors Could Not Verify"
+-subtitle: "The payments company collapsed in June 2020 after auditors could not confirm cash reported in trustee accounts."
++subtitle: "Wirecard filed for insolvency three days after saying €1.9 billion in reported trust-account balances likely did not exist."
+@@ -8 +8 @@ date: "2026-09-14"
+-updated: "2026-09-27"
++updated: "2026-10-02"
+@@ -19,2 +19,2 @@ eventDate: "June 2020"
+-source: "German Bundestag Wirecard inquiry"
+-sourceUrl: "https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030"
++source: "ESMA — Fast Track Peer Review Report: Wirecard"
++sourceUrl: "https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard"
+@@ -23 +23 @@ sourceUrl: "https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-beric
+-When auditors could not verify €1.9 billion supposedly held in trustee accounts, Wirecard admitted the money probably did not exist. Within days, the German payments company filed for insolvency.
++On 22 June 2020, Wirecard said there was a prevailing likelihood that €1.9 billion in previously reported trust-account balances did not exist. The German payments company filed for insolvency on 25 June.
+@@ -27 +27 @@ When auditors could not verify €1.9 billion supposedly held in trustee account
+-The collapse followed years of reporting and whistleblower warnings that were met not only with denial but with scrutiny of the journalists and traders raising questions. Regulators treated Wirecard partly as a technology company rather than as the financial institution its risks resembled.
++ESMA’s peer review found that FREP did not act on international-media signals when selecting Wirecard for examination between 2016 and 2018, despite specific risks in its reporting. ESMA also found that FREP and BaFin should have expanded the scope of the 2018 financial-report examination earlier after serious 2019 media allegations about third-party-acquiring revenue and disclosures.
+@@ -31 +31 @@ The collapse followed years of reporting and whistleblower warnings that were me
+-Wirecard illustrates the difference between a reported cash balance and independent evidence that the money exists. ESMA’s later review identified specific supervisory deficiencies; a claim about any person’s criminal responsibility requires its own legal record.
++Wirecard illustrates the difference between a reported cash balance and evidence that the money exists. ESMA identified weaknesses in examination scope, professional scepticism, coordination and information flow. The peer review assessed financial-reporting supervision; it did not determine any person’s criminal responsibility.
+@@ -33 +33 @@ Wirecard illustrates the difference between a reported cash balance and independ
+-### Source
++### Sources
+@@ -35 +35,2 @@ Wirecard illustrates the difference between a reported cash balance and independ
+-[German Bundestag Wirecard inquiry](https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030)
++- [ESMA — Fast Track Peer Review Report: Wirecard](https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard)
++- [German Bundestag Wirecard inquiry](https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030)
+diff --git a/lib/articles.ts b/lib/articles.ts
+index 5243444..524e1da 100644
+--- a/lib/articles.ts
++++ b/lib/articles.ts
+@@ -11 +11 @@ const records:Article[]=[
+-{...by,title:"Wirecard and the €1.9 Billion Its Auditors Could Not Verify",subtitle:"The payments company collapsed in June 2020 after auditors could not confirm cash reported in trustee accounts.",slug:"wirecard-missing-billions",section:"Business",excerpt:"Missing cash exposed a wider failure of financial reporting and supervision.",underreported:false,recordId:"0415",readingTime:"2 min",tags:["fraud","fintech"],eventDate:"June 2020",opening:"When auditors could not verify €1.9 billion supposedly held in trustee accounts, Wirecard admitted the money probably did not exist. Within days, the German payments company filed for insolvency.",context:"The collapse followed years of reporting and whistleblower warnings that were met not only with denial but with scrutiny of the journalists and traders raising questions. Regulators treated Wirecard partly as a technology company rather than as the financial institution its risks resembled.",significance:"Wirecard illustrates the difference between a reported cash balance and independent evidence that the money exists. ESMA’s later review identified specific supervisory deficiencies; a claim about any person’s criminal responsibility requires its own legal record.",source:"German Bundestag Wirecard inquiry",sourceUrl:"https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030",cover:"https://upload.wikimedia.org/wikipedia/commons/9/9d/Wirecard-aschheim-2019.jpg",coverCredit:"Wikimedia Commons / Kaethe17"},
++{...by,updated:"2 Oct 2026",title:"Wirecard and the €1.9 Billion Its Auditors Could Not Verify",subtitle:"Wirecard filed for insolvency three days after saying €1.9 billion in reported trust-account balances likely did not exist.",slug:"wirecard-missing-billions",section:"Business",excerpt:"Missing cash exposed a wider failure of financial reporting and supervision.",underreported:false,recordId:"0415",readingTime:"2 min",tags:["fraud","fintech"],eventDate:"June 2020",opening:"On 22 June 2020, Wirecard said there was a prevailing likelihood that €1.9 billion in previously reported trust-account balances did not exist. The German payments company filed for insolvency on 25 June.",context:"ESMA’s peer review found that FREP did not act on international-media signals when selecting Wirecard for examination between 2016 and 2018, despite specific risks in its reporting. ESMA also found that FREP and BaFin should have expanded the scope of the 2018 financial-report examination earlier after serious 2019 media allegations about third-party-acquiring revenue and disclosures.",significance:"Wirecard illustrates the difference between a reported cash balance and evidence that the money exists. ESMA identified weaknesses in examination scope, professional scepticism, coordination and information flow. The peer review assessed financial-reporting supervision; it did not determine any person’s criminal responsibility.",source:"ESMA — Fast Track Peer Review Report: Wirecard",sourceUrl:"https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard",cover:"https://upload.wikimedia.org/wikipedia/commons/9/9d/Wirecard-aschheim-2019.jpg",coverCredit:"Wikimedia Commons / Kaethe17"},

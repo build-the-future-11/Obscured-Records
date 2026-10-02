@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { readDraft, validateDraft, wordCount } from "./editorial-content.mjs";
+import { validateLaunchReviewLedger } from "./launch-review-ledger-consistency.mjs";
 
 const root = process.cwd();
 const articlesDir = path.join(root, "content", "articles");
@@ -168,6 +169,15 @@ if (registrySlugs.length !== records.length) {
   fail(`registry/MDX article count mismatch (${registrySlugs.length} vs ${records.length})`);
 }
 
+try {
+  validateLaunchReviewLedger({
+    articlesDirectory: articlesDir,
+    ledgerPath: path.join(root, "docs", "LAUNCH_EDITORIAL_REVIEW_2026-09-27.md"),
+  });
+} catch (error) {
+  fail(`launch review ledger mismatch:\n${error.message}`);
+}
+
 const drafts = fs.readdirSync(path.join(root, "content/drafts")).filter((name) => name.endsWith(".md"));
 const draftSlugs = new Set();
 let draftWords = 0;
@@ -182,5 +192,5 @@ for (const file of drafts) {
 const subjects = new Set([...seenSlugs, ...draftSlugs]);
 if (subjects.size < 50) fail(`Expected at least 50 distinct editorial subjects, found ${subjects.size}`);
 if (process.exitCode) process.exit(process.exitCode);
-console.log(`editorial-integrity: PASS (${records.length} article records; slugs, IDs, dates and source URLs checked)`);
+console.log(`editorial-integrity: PASS (${records.length} article records; slugs, IDs, dates, source URLs and launch review ledger checked)`);
 console.log(`editorial-integrity: ${drafts.length} unpublished drafts, ${draftWords} draft words, ${subjects.size} distinct subjects; no fact-check approval implied`);

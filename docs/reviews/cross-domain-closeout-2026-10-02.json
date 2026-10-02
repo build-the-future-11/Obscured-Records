@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-02T03:53:33Z",
+  "repository": "build-the-future-11/Obscured-Records",
+  "canonicalMainSha": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "issue4State": "open_hold",
+  "pullRequests": [
+    { "number": 22, "title": "Guard core-launch source ledger consistency", "head": "6f9564e704a01090eb678bb863312898ed9a3493", "state": "open_draft", "merged": false, "ciRun": 36903248516, "ciConclusion": "success" },
+    { "number": 23, "title": "Complete Satyam claim mapping and attribution boundaries", "head": "2199ad4b778ab44fff89cacb378561520710404b", "state": "open_draft", "merged": false, "ciRun": 36906889396, "ciConclusion": "success" },
+    { "number": 24, "title": "Review Therac-25 chronology and prepare held copy corrections", "head": "ef77994dfb3a02cade669ab0a8ab1dddb8b3c584", "state": "open_draft", "merged": false, "ciRun": 36909491841, "ciConclusion": "success" },
+    { "number": 25, "title": "Add sourced 1MDB allegation schematic", "head": "8ac0e3f4bf2e6c60b131298d463052e126b89000", "state": "open_draft", "merged": false, "ciRun": 36917444049, "ciConclusion": "success" },
+    { "number": 26, "title": "Guard launch-review source consistency", "head": "065d06ba22cd7b47086c8f124f9929e05e7229e6", "state": "open_draft", "merged": false, "ciRun": 36924303673, "ciConclusion": "success" },
+    { "number": 27, "title": "Hold Flight 629 source correction packet", "head": "8a890f7614ce91962caad541659a83377647cd55", "state": "open_draft", "merged": false, "ciRun": 36932242538, "ciConclusion": "success" },
+    { "number": 28, "title": "Add sourced Times Beach sequence diagram", "head": "275d0d144a955525238db8977005d82c3cb40ebd", "state": "open_draft", "merged": false, "ciRun": 36935572181, "ciConclusion": "success" },
+    { "number": 29, "title": "Hold Goiânia count correction packet", "head": "cd1ac2cd6b080e20eeea1e3aba02e37b430aa4c0", "state": "open_draft", "merged": false, "ciRun": 36942857227, "ciConclusion": "success" },
+    { "number": 30, "title": "Hold Centralia relocation correction packet", "head": "7bd4ffff434cd18781f3b8510863f80dd3d33987", "state": "open_draft", "merged": false, "ciRun": 36945753390, "ciConclusion": "success" },
+    { "number": 31, "title": "Hold Wirecard supervision correction packet", "head": "257813a988a9f94c94a63b90cfd1a0934b56a760", "state": "open_draft", "merged": false, "ciRun": 36952011236, "ciConclusion": "success" },
+    { "number": 32, "title": "Guard FedEx relaunch asset source identity", "head": "6cb39bc8aed9d014e07b989dd33a68915bf4756b", "state": "open_draft", "merged": false, "ciRun": 36955420006, "ciConclusion": "success" },
+    { "number": 33, "title": "Correct FedEx sourcing and narrow-screen editorial pages", "head": "81fd2280706ab672471345daf54820c0dd6a2732", "state": "open_draft", "merged": false, "ciRun": 36957486512, "ciConclusion": "success" }
+  ],
+  "coreRecords": [
+    { "recordId": "0421", "story": "FedEx Flight 705", "sourceUrl": "https://law.justia.com/cases/federal/appellate-courts/F3/116/1129/610984/", "artifactPrs": [32, 33], "disposition": "main_source_repaired_successor_draft_unapproved" },
+    { "recordId": "0415", "story": "Wirecard", "sourceUrl": "https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard", "artifactPrs": [31], "disposition": "held_correction_packet_unapproved" },
+    { "recordId": "0414", "story": "Satyam", "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1106056/000114554909000025/u00107exv99w2.htm", "artifactPrs": [23], "disposition": "draft_branch_article_repair_unapproved" },
+    { "recordId": "0410", "story": "1MDB", "sourceUrl": "https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign", "artifactPrs": [25], "disposition": "diagram_packet_unapproved" },
+    { "recordId": "0409", "story": "Goiânia", "sourceUrl": "https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf", "artifactPrs": [29], "disposition": "held_correction_packet_unapproved" },
+    { "recordId": "0407", "story": "Minamata", "sourceUrl": "https://nimd.env.go.jp/archives/english/minamata_disease_in_depth/cause_investigation/", "artifactPrs": [], "disposition": "main_source_repaired_by_pr21_human_approval_open" },
+    { "recordId": "0406", "story": "Times Beach", "sourceUrl": "https://www.epa.gov/mo/town-flood-and-superfund-looking-back-times-beach-disaster-nearly-40-years-later", "artifactPrs": [28], "disposition": "diagram_packet_unapproved" },
+    { "recordId": "0404", "story": "Therac-25", "sourceUrl": "https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html", "artifactPrs": [24], "disposition": "held_correction_packet_unapproved" },
+    { "recordId": "0395", "story": "United Flight 629", "sourceUrl": "https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham", "artifactPrs": [27], "disposition": "held_correction_packet_unapproved" },
+    { "recordId": "0394", "story": "Centralia", "sourceUrl": "https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology", "artifactPrs": [30], "disposition": "held_correction_packet_unapproved" }
+  ],
+  "integrationDependencies": [
+    { "path": "lib/articles.ts", "pullRequests": [23, 33], "action": "Reconcile accepted Satyam and FedEx wording in one integration branch; do not merge either branch blindly." },
+    { "path": "docs/RELAUNCH_ASSET_PACK.md", "pullRequests": [32, 33], "action": "Recheck the private launch brief against the final accepted FedEx wording after PR 33 review." },
+    { "path": "source ledgers", "pullRequests": [22, 26, 27, 29, 30, 31], "action": "Apply accepted held corrections first, then rebase and rerun both ledger-consistency validators." }
+  ],
+  "gates": {
+    "humanEditorialApproval": false,
+    "consentingAuthorAttribution": false,
+    "imageAndSourceRightsClearance": false,
+    "issue4LaunchCertification": false,
+    "immutableReleaseCandidateFrozen": false,
+    "readerSitePublishedOrDeployed": false,
+    "newsletterOrAudioReleased": false,
+    "analyticsActivated": false
+  },
+  "nextExactAction": "A named human editor reviews PR 33 against the Calloway opinion and records Accept, Revise, or Hold; then PR 32 is rebased against that accepted FedEx wording before any integration branch is assembled."
+}

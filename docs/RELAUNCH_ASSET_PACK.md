@@ -41,7 +41,8 @@ Do not rename the editor's selection as “most read,” “trending,” or “p
 - Canonical slug: `fedex-flight-705`
 - Working subject: **The cockpit fight behind FedEx Flight 705**
 - Preview text: **One record, its source trail, and the institutional lesson beneath it.**
-- Source anchor: FBI Vault record already retained by the canonical article record.
+- Source anchor: [United States v. Calloway, 116 F.3d 1129 (6th Cir. 1997)](https://law.justia.com/cases/federal/appellate-courts/F3/116/1129/610984/), the judicial record retained by the canonical article.
+- Additional-source boundary: the FBI Vault catalogue remains a secondary file lead; its catalogue entry is not the canonical article source and does not establish that the underlying files were reviewed.
 
 ### Draft structure
 

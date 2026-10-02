@@ -25,36 +25,35 @@ export type FeatureRecord = {
 export const features: Record<string, FeatureRecord> = {
   "fedex-flight-705": {
     label: "Feature",
-    updated: "27 Sep 2026",
+    updated: "2 Oct 2026",
     location: "Memphis, Tennessee",
     standfirst: "The attack on Flight 705 left three crew members severely injured. The court record describes their resistance, the emergency return and the prosecution’s account of Calloway’s plan.",
     evidenceNote: "The appellate opinion concerns the convictions and legal issues before the court. The FBI page is a catalogue of files; its presence does not mean every file has been reviewed. The security analysis here is interpretation.",
     timeline: [
-      { date: "7 Apr 1994 · 14:50", event: "FedEx Flight 705 departs Memphis for San Jose with three operating crew and Auburn Calloway in the jump seat." },
-      { date: "Minutes after takeoff", event: "Calloway attacks the crew. First Officer James Tucker keeps control while the aircraft enters extreme banks and dives." },
-      { date: "About 30 minutes later", event: "The damaged DC-10 returns to Memphis. Police and medical teams meet the aircraft." },
-      { date: "1995–1997", event: "Calloway is convicted. The later appeal addresses the relationship between the charged offences as well as the sentence." },
+      { date: "7 Apr 1994", event: "Calloway attacks the crew after departure from Memphis. The injured crew returns the aircraft to the airport." },
+      { date: "8 Apr 1994", event: "Calloway had been due to attend a disciplinary hearing." },
+      { date: "1997", event: "The appellate court affirms the attempted-aircraft-piracy conviction and vacates the lesser interference conviction." },
     ],
     sections: [
       {
-        heading: "A plan built around an accident",
+        heading: "What the judicial record establishes",
         paragraphs: [
-          "Auburn Calloway was a FedEx flight engineer facing a disciplinary hearing. In the weeks before Flight 705, court records show that he reorganized parts of his finances and changed beneficiaries on insurance policies. Prosecutors argued that he intended to kill the crew, crash the aircraft and make the deaths appear accidental so that his family could receive the benefits.",
-          "He boarded as an employee passenger carrying hammers, a speargun and other equipment. The plan depended on an assumption that was ordinary in cargo aviation at the time: a uniformed colleague in a jump seat was part of the trusted system. There was no passenger cabin, no crowd of witnesses and no conventional hijacking demand. The threat began inside the institution rather than outside it.",
+          "Auburn Calloway, a FedEx employee, attacked Captain David Sanders, First Officer James Tucker and Flight Engineer Andrew Peterson with hammers and a speargun on 7 April 1994. All three suffered serious injuries. Two crew members fought Calloway while Sanders made an emergency landing in Memphis.",
+          "The appellate opinion records financial arrangements and an approaching disciplinary hearing as evidence relevant to the prosecution. It is a judicial account of the criminal case, not a complete technical reconstruction of the flight. This record therefore does not supply exact departure times, manoeuvre sequences or a minute-by-minute account of cockpit control.",
         ],
       },
       {
-        heading: "The aircraft became part of the defence",
+        heading: "Read the disposition as well as the narrative",
         paragraphs: [
-          "Calloway struck Captain David Sanders, First Officer James Tucker and Flight Engineer Andrew Peterson with hammers. Tucker, badly injured, remained at the controls while Sanders and Peterson fought in the cockpit and galley. To make it harder for Calloway to stand and attack, Tucker rolled and dived the fully fuelled DC-10 with forces well outside an ordinary transport flight.",
-          "The manoeuvres were not cinematic flourishes. They were an improvised use of mass, gravity and the aircraft's control surfaces. The crew had to subdue an attacker without losing the jet, then bring a damaged aircraft back while each man was suffering major injuries. The return to Memphis preserved the physical evidence and the cockpit record that later anchored the criminal case.",
+          "In 1997, the Sixth Circuit affirmed Calloway's conviction for attempted aircraft piracy and vacated the lesser conviction for interference with flight-crew members. Describing both convictions as surviving appeal would obscure the actual disposition.",
+          "A criminal judgment answers the issues before the court. A security analysis asks a different set of questions. The existence of a conviction does not, by itself, establish which screening policy would have prevented the attack, how that policy would have worked, or what tradeoffs it would have created.",
         ],
       },
       {
-        heading: "The question of employee access",
+        heading: "Trust is a security assumption",
         paragraphs: [
-          "The case sits at the boundary between aviation security and workplace access. Screening systems are often designed around strangers carrying prohibited items. Flight 705 showed how credentials, familiarity and organizational trust can allow a determined insider to move differently through the same environment.",
-          "The aircraft itself returned to service, but the three crew members lived with lasting injuries. Their survival should not erase the institutional lesson: security is not only a perimeter. It is also the set of assumptions an organization makes about people already inside it.",
+          "Our analysis is that the case invites scrutiny of employee access as well as passenger access. Familiarity with a colleague can influence how an institution interprets risk. That observation is a question for security design rather than proof that trust inevitably produces violence.",
+          "A useful follow-up investigation would compare the access rules in force before the attack with documented changes afterward. It would separate policy language from actual practice and seek evidence that a proposed safeguard can operate under ordinary working conditions. Those records are needed before making a confident claim about the institutional response.",
         ],
       },
     ],

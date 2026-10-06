@@ -1,0 +1,69 @@
+{
+  "base_commit": "ecfa50516eed802df4c747d1151879c4dd9e44be",
+  "date": "2026-09-30",
+  "new_distinct_subjects": 1,
+  "article_words": 790,
+  "editorial_status": "draft",
+  "human_approval": false,
+  "published": false,
+  "tests": {
+    "passed": 180,
+    "failed": 0,
+    "skipped": 0
+  },
+  "initial_tests": {
+    "passed": 176,
+    "failed": 2,
+    "reason": "Two dated inventory-count expectations still asserted the former42 drafts and22 unpublished new subjects; updated to43 and23 without changing exclusion assertions."
+  },
+  "checks": [
+    {
+      "command": "test",
+      "exit_code": 0,
+      "finished_at": "2026-09-30T17:01:56Z"
+    },
+    {
+      "command": "lint",
+      "exit_code": 0,
+      "finished_at": "2026-09-30T17:02:06Z"
+    },
+    {
+      "command": "typecheck",
+      "exit_code": 0,
+      "finished_at": "2026-09-30T17:02:14Z"
+    },
+    {
+      "command": "build",
+      "exit_code": 0,
+      "finished_at": "2026-09-30T17:02:23Z"
+    },
+    {
+      "command": "build:vercel",
+      "exit_code": 0,
+      "finished_at": "2026-09-30T17:03:01Z"
+    }
+  ],
+  "inventory": {
+    "article_records": 28,
+    "unpublished_drafts": 43,
+    "distinct_subjects": 51
+  },
+  "figure": {
+    "rows": 5,
+    "source_csv_sha256": "3332474b595b81ac06cb8dc3bb9f68a413187d3965af9d27996eccbb0f692433",
+    "kind": "historical event timeline",
+    "fitted_model": false,
+    "interpolation": false,
+    "simulated_data": false,
+    "clock_time_policy": "Reported local clock labels; no unsupported timezone conversion",
+    "matplotlib_version": "3.10.8"
+  },
+  "python": "3.12.14",
+  "node": "v24.19.0",
+  "limitations": [
+    "No human historical/engineering review or publication approval",
+    "No deployed site change",
+    "No full browser or remote CI rerun claimed in local receipt",
+    "Existing PR16 validation-hardening delta remains separate"
+  ]
+}

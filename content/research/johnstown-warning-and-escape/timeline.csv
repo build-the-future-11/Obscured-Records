@@ -1,0 +1,6 @@
+event_id,date,reported_time_start,reported_time_end,event_label,source_url,uncertainty
+warning_1,1889-05-31,13:00,13:00,First warning in NPS timeline,https://www.nps.gov/jofl/learn/historyculture/johnstown-flood-timeline.htm,Approximate historical time; not household receipt
+warning_2,1889-05-31,13:52,13:52,Second warning in NPS timeline,https://www.nps.gov/jofl/learn/historyculture/johnstown-flood-timeline.htm,Approximate historical time; not household receipt
+warning_3,1889-05-31,14:45,14:45,Third warning in NPS timeline,https://www.nps.gov/jofl/learn/historyculture/johnstown-flood-timeline.htm,Approximate historical time; not household receipt
+breach,1889-05-31,15:10,15:15,Dam failure: differing accounts,https://www.nps.gov/jofl/faqs.htm,Range of commonly reported times; not a statistical confidence interval
+arrival,1889-05-31,16:07,16:07,Flood reaches Johnstown,https://www.nps.gov/jofl/learn/historyculture/johnstown-flood-timeline.htm,Reported historical time; not an instrument measurement

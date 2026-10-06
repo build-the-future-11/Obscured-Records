@@ -152,6 +152,37 @@ try {
   await page.getByText('No matching records').waitFor();
   pass('repeated search parameters and empty-state search navigation');
 
+  await page.goto(`${base}/search?q=aviation`);
+  await page.locator('#archive-q').waitFor();
+  await page.keyboard.press('Control+k');
+  const navigationPalette = page.getByRole('dialog', { name: 'Search Obscured Records' });
+  await navigationPalette.waitFor();
+  await page.locator('#palette-query').fill('mercury');
+  await navigationPalette.getByRole('link', { name: 'All results and filters' }).click();
+  await page.waitForURL(`${base}/search?q=mercury`);
+  await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'mercury');
+  assert.match(await page.locator('.result-count').innerText(), /2 records matching “mercury”/);
+  pass('client search navigation replaces the previous query and results');
+
+  await page.goto(`${base}/archive?topic=aviation`);
+  await page.locator('select[name=topic]').waitFor();
+  await page.keyboard.press('Control+k');
+  await navigationPalette.waitFor();
+  await page.locator('#palette-query').fill('');
+  await navigationPalette.getByRole('link', { name: 'Archive', exact: true }).click();
+  await page.waitForURL(`${base}/archive`);
+  await page.waitForFunction(() => document.querySelector('select[name=topic]')?.value === '');
+  assert.equal(await page.locator('.archive-results .record-card').count(), 28);
+  pass('client archive navigation clears filters omitted from the destination URL');
+
+  await page.goto(`${base}/search?q=aviation&q=mercury`);
+  await page.locator('#archive-q').waitFor();
+  await page.evaluate(() => { history.pushState(null, '', '/search?q=mercury'); history.back(); });
+  await page.waitForURL(`${base}/search?q=aviation&q=mercury`);
+  await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'aviation');
+  assert.match(await page.locator('.result-count').innerText(), /7 records matching “aviation”/);
+  pass('browser history uses the same first repeated search parameter as the server');
+
   await page.goto(`${base}/archive`);
   await page.locator('select[name=topic]').selectOption('aviation');
   await page.locator('select[name=format]').selectOption('feature');

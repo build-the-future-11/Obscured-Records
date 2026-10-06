@@ -6,7 +6,15 @@ import { StoryCard } from "./story-card";
 export function ArchiveBrowser({ stories, initial, series, search = false }: { stories: CatalogStory[]; initial: Filters; series: { slug: string; title: string }[]; search?: boolean }) {
   const [filters, setFilters] = useState(initial);
   const [compact, setCompact] = useState(false);
-  useEffect(() => { const pop = () => setFilters(parseFilters(Object.fromEntries(new URLSearchParams(location.search)))); window.addEventListener("popstate", pop); return () => window.removeEventListener("popstate", pop); }, []);
+  useEffect(() => {
+    const pop = () => {
+      const params = new URLSearchParams(location.search);
+      // Match the server: the first occurrence wins for repeated parameters.
+      setFilters(parseFilters(Object.fromEntries(Object.keys(emptyFilters).map((key) => [key, params.get(key)]))));
+    };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, []);
   function update(next: Filters) {
     setFilters(next);
     const params = new URLSearchParams(Object.entries(next).filter(([, value]) => value));

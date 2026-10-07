@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "recordId": "0409",
+  "slug": "goiania-blue-powder",
+  "reviewedAt": "2026-10-02",
+  "sourceBaseSha": "e8c57da72514b666c9dadf1e92a07f5d6380dc7f",
+  "disposition": "held-for-human-editorial-approval",
+  "identifiedGap": {
+    "currentClaim": "Four people died, hundreds were contaminated or exposed, buildings were demolished and thousands of cubic metres of radioactive waste were generated.",
+    "finding": "The wording collapses distinct monitored, contaminated, hospitalized, and fatality cohorts and leaves cleanup quantities vague despite exact counts in the cited IAEA report.",
+    "severity": "material-precision-error"
+  },
+  "proposedReplacement": "Fragments travelled through families and neighbourhoods before the source was recognized. The IAEA reports that about 112,000 people were monitored, 249 were found internally or externally contaminated, 20 required hospital treatment and four died. Cleanup included the demolition of seven houses, and the response ultimately stored 3,500 cubic metres of radioactive waste.",
+  "sources": [
+    {
+      "id": "iaea-1988-report",
+      "title": "The Radiological Accident in Goiânia",
+      "publisher": "International Atomic Energy Agency",
+      "url": "https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf",
+      "type": "official-technical-report",
+      "locations": [
+        "page 13: monitored, contaminated, hospitalized, and fatality counts",
+        "pages 15–16: demolition of seven houses",
+        "page 16: 3,500 cubic metres of stored waste"
+      ],
+      "supports": [
+        "About 112,000 people were monitored.",
+        "249 people were found internally or externally contaminated.",
+        "20 people required hospital treatment.",
+        "Four people died.",
+        "Seven houses were demolished.",
+        "The final volume of stored waste was 3,500 cubic metres."
+      ]
+    }
+  ],
+  "claimMap": [
+    {
+      "claim": "About 112,000 people were monitored.",
+      "sourceIds": ["iaea-1988-report"],
+      "sourceLocation": "page 13",
+      "status": "supported"
+    },
+    {
+      "claim": "249 people were found internally or externally contaminated.",
+      "sourceIds": ["iaea-1988-report"],
+      "sourceLocation": "page 13",
+      "status": "supported"
+    },
+    {
+      "claim": "20 people required hospital treatment and four died.",
+      "sourceIds": ["iaea-1988-report"],
+      "sourceLocation": "page 13",
+      "status": "supported"
+    },
+    {
+      "claim": "Cleanup included the demolition of seven houses.",
+      "sourceIds": ["iaea-1988-report"],
+      "sourceLocation": "pages 15–16",
+      "status": "supported"
+    },
+    {
+      "claim": "The final volume of stored waste was 3,500 cubic metres.",
+      "sourceIds": ["iaea-1988-report"],
+      "sourceLocation": "page 16",
+      "status": "supported"
+    },
+    {
+      "claim": "Hundreds were contaminated or exposed.",
+      "sourceIds": [],
+      "status": "replace-cohort-conflation"
+    }
+  ],
+  "gates": {
+    "humanEditorialApproval": "open",
+    "consentingAuthorAttribution": "open",
+    "imageAndSourceRights": "open",
+    "publicLaunchCertificationIssue4": "open"
+  },
+  "artifact": "docs/reviews/goiania-count-corrections.patch"
+}

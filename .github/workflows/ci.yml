@@ -65,6 +65,9 @@ jobs:
         shell: bash
         run: git diff --exit-code -- package.json package-lock.json
 
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+
       - name: Editorial content integrity
         run: node scripts/editorial-integrity.mjs
 

@@ -45,3 +45,7 @@
 .submission-form button:disabled{opacity:.6;cursor:wait}
 .submission-form :focus-visible{outline:3px solid #a63825;outline-offset:3px}
 .submission-form .form-status{overflow-wrap:anywhere}
+
+/* Keep the editorial contact and corrections heading readable on narrow screens. */
+.submit-contact a{overflow-wrap:anywhere}
+@media(max-width:720px){.corrections-hero h1{font-size:13.5vw}}

@@ -216,6 +216,54 @@ try {
   await page.getByRole('heading', { name: 'A place for your next read' }).waitFor();
   pass('saved states, reload persistence, reader preferences, private highlights, source focus return and removal');
 
+  // A storage failure must preserve the reader's unsaved passage and note so
+  // the same editor can retry after storage access or capacity is restored.
+  for (const [method, failure] of [['setItem', 'QuotaExceededError'], ['getItem', 'SecurityError']]) {
+    await page.goto(`${base}/article/fedex-flight-705`);
+    await page.getByRole('button', { name: 'Highlight selected text' }).waitFor();
+    await page.locator('#opening').evaluate((element) => {
+      const range = document.createRange(); range.selectNodeContents(element);
+      const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+      document.dispatchEvent(new Event('selectionchange'));
+    });
+    await page.getByRole('button', { name: 'Highlight selected text' }).click();
+    const draft = page.getByRole('dialog', { name: 'Keep this passage' });
+    await draft.waitFor();
+    const passage = await draft.locator('blockquote').textContent();
+    const privateNote = `Retain this private note after ${failure}.`;
+    await draft.getByLabel('Private note (optional)').fill(privateNote);
+    const priorNotes = await page.evaluate(() => localStorage.getItem('or-notes-v1'));
+    await page.evaluate(({ method, failure }) => {
+      const original = Storage.prototype[method];
+      window.restoreNoteStorage = () => { Storage.prototype[method] = original; };
+      Storage.prototype[method] = function (key, ...args) {
+        if (key === 'or-notes-v1') throw new DOMException('Local browser fixture', failure);
+        return original.call(this, key, ...args);
+      };
+    }, { method, failure });
+    try {
+      await draft.getByRole('button', { name: 'Save highlight', exact: true }).click();
+      await draft.getByRole('alert').filter({ hasText: 'Your text is still here' }).waitFor();
+      assert.equal(await draft.evaluate((element) => element.open && element.contains(document.activeElement)), true);
+      assert.equal(await draft.getByLabel('Private note (optional)').inputValue(), privateNote);
+      assert.equal(await draft.locator('blockquote').textContent(), passage);
+      assert.equal(await page.getByRole('status').filter({ hasText: 'Passage saved' }).count(), 0);
+      await auditAccessibility(page, '/article/fedex-flight-705', 375, `highlight-${failure}`);
+    } finally {
+      await page.evaluate(() => { window.restoreNoteStorage(); delete window.restoreNoteStorage; });
+    }
+    assert.equal(await page.evaluate(() => localStorage.getItem('or-notes-v1')), priorNotes);
+    await draft.getByRole('button', { name: 'Save highlight', exact: true }).click();
+    await draft.waitFor({ state: 'hidden' });
+    await page.getByRole('status').filter({ hasText: 'Passage saved' }).waitFor();
+    assert.equal(await page.getByRole('button', { name: 'Highlight selected text' }).evaluate((element) => element === document.activeElement), true);
+    const savedNotes = await page.evaluate(() => JSON.parse(localStorage.getItem('or-notes-v1') || '[]'));
+    assert.equal(savedNotes.length, JSON.parse(priorNotes || '[]').length + 1);
+    assert.equal(savedNotes.at(-1).note, privateNote);
+    assert.equal(savedNotes.at(-1).text, passage);
+    pass(`highlight ${failure}: preserves draft, exposes accessible error, retries exactly once and restores focus`);
+  }
+
   await page.goto(`${base}/article/fedex-flight-705?utm_source=smoke`);
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
   assert.ok(decodeURIComponent(await page.getByRole('link', { name: 'Share by email' }).getAttribute('href')).includes(canonical));

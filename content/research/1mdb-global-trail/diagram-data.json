@@ -1,0 +1,52 @@
+{
+  "recordId": "0410",
+  "title": "What the July 2016 DOJ complaints alleged",
+  "subtitle": "Three principal phases described in U.S. civil-forfeiture complaints",
+  "legalStatus": "ALLEGATIONS, NOT VERDICTS",
+  "sourceDate": "2016-07-20",
+  "sources": [
+    {
+      "title": "DOJ press release",
+      "url": "https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign",
+      "supports": "The three rounded phase amounts, alleged routing through shell companies and financial institutions, and the listed asset categories."
+    },
+    {
+      "title": "Civil forfeiture complaint, case 2:16-cv-05371",
+      "url": "https://www.justice.gov/opa/file/877326/dl?inline=",
+      "supports": "The phase names, dates, intended purposes and allegation status."
+    }
+  ],
+  "phases": [
+    {
+      "name": "Good Star",
+      "period": "2009–2011",
+      "amount": "more than $1 billion",
+      "purpose": "Intended for a joint venture and energy concessions",
+      "allegedRoute": "Transferred to a Swiss account held in Good Star Limited’s name"
+    },
+    {
+      "name": "Aabar-BVI",
+      "period": "2012",
+      "amount": "approximately $1.367 billion",
+      "purpose": "Raised through two bond offerings",
+      "allegedRoute": "Transferred to a Swiss account held by an unaffiliated BVI entity"
+    },
+    {
+      "name": "Tanore",
+      "period": "2013",
+      "amount": "more than $1.26 billion",
+      "purpose": "Raised through a third bond offering for a joint venture",
+      "allegedRoute": "Diverted from the bond proceeds through accounts and entities"
+    }
+  ],
+  "routingLabel": "Alleged routing through accounts, shell companies and financial institutions",
+  "assetCategories": [
+    "Real estate and hotels",
+    "$35 million jet",
+    "Van Gogh and Monet works",
+    "EMI publishing interest",
+    "The Wolf of Wall Street production"
+  ],
+  "caption": "Schematic of allegations in U.S. civil-forfeiture complaints announced 20 July 2016. Amount labels reproduce the complaints’ approximate figures; arrow width and box area do not encode transaction volume. The graphic does not establish guilt, ownership, final recovery or completeness.",
+  "rights": "Original Obscured Records diagram generated from public-record facts; no third-party images or report pages reproduced."
+}

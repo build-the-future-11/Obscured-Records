@@ -7,7 +7,7 @@ All 28 existing reader records require human approval for this launch. This queu
 - Slug: `fedex-flight-705`
 - Existing form: expanded feature
 - Event date to verify: 7 April 1994
-- Primary review starting point: [FBI Vault — FedEx Flight 705](https://vault.fbi.gov/fedex-flight-705-incident-on-april-7-1994)
+- Primary review starting point: [United States v. Calloway, 116 F.3d 1129 (6th Cir. 1997)](https://law.justia.com/cases/federal/appellate-courts/F3/116/1129/610984/)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.
@@ -203,7 +203,7 @@ Decision: **PENDING**. Reviewer: **unassigned**.
 - Slug: `minamata-food-chain`
 - Existing form: expanded feature
 - Event date to verify: 1932–1968
-- Primary review starting point: [World Health Organization mercury history](https://iris.who.int/bitstream/handle/10665/331754/WHO-CED-PHE-EPE-19.12.10-eng.pdf)
+- Primary review starting point: [National Institute for Minamata Disease — Cause investigation](https://nimd.env.go.jp/archives/english/minamata_disease_in_depth/cause_investigation/)
 - [ ] Headline, opening and event date verified against exact passages.
 - [ ] Names, counts, context and causal claims checked.
 - [ ] Interpretation, quotes and attribution checked; additional feature paragraphs reviewed where present.

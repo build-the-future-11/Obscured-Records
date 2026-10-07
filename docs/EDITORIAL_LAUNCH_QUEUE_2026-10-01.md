@@ -6,16 +6,16 @@ This queue is the repository counterpart to the connected Editorial OS tab **Pub
 
 | Record | Story | Source / media boundary | Required closure |
 |---|---|---|---|
-| 0421 | FedEx Flight 705 | FBI catalogue + appellate record; FedEx image has recorded CC BY-SA 4.0 exact-original evidence | Complete claim mapping and named editorial approval |
-| 0415 | Wirecard | Bundestag inquiry basis; current cover derivative remains held | Approve text claim map; launch text-only unless provenance closes |
-| 0414 | Satyam | SEC source basis | Map confession/accounting claims and approve |
-| 0410 | 1MDB | DOJ case/forfeiture record; allegations require attribution | Verify transaction wording and legal status |
-| 0409 | Goiânia | IAEA report located; image has recorded CC BY 2.0 exact-original evidence | Verify counts/sequence at page level and approve |
-| 0407 | Minamata | WHO source basis | Verify chronology/exposure claims and approve |
-| 0406 | Times Beach | EPA history basis | Verify contamination/relocation claims and approve |
-| 0404 | Therac-25 | Leveson/Turner technical source; image provenance held | Technical claim review; launch text-only unless media issue closes |
-| 0395 | United Flight 629 | FBI case page supports core date/death count | Complete motive/prosecution claim map and approve |
-| 0394 | Centralia | Pennsylvania DEP chronology | Map fire/relocation chronology and approve |
+| 0421 | FedEx Flight 705 | [Sixth Circuit appellate record](https://law.justia.com/cases/federal/appellate-courts/F3/116/1129/610984/); FedEx image has recorded CC BY-SA 4.0 exact-original evidence | Complete claim mapping and named editorial approval |
+| 0415 | Wirecard | [German Bundestag inquiry](https://www.bundestag.de/dokumente/textarchiv/2021/kw25-de-3ua-bericht-847030); current cover derivative remains held | Approve text claim map; launch text-only unless provenance closes |
+| 0414 | Satyam | [SEC enforcement record](https://www.sec.gov/newsroom/press-releases/2011-81-sec-charges-satyam-computer-services-financial-fraud) | Map confession/accounting claims and approve |
+| 0410 | 1MDB | [DOJ asset-recovery case](https://www.justice.gov/archives/opa/pr/united-states-files-civil-forfeiture-complaints-more-1-billion-assets-associated); allegations require attribution | Verify transaction wording and legal status |
+| 0409 | Goiânia | [IAEA report](https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf); image has recorded CC BY 2.0 exact-original evidence | Verify counts/sequence at page level and approve |
+| 0407 | Minamata | [National Institute for Minamata Disease cause investigation](https://nimd.env.go.jp/archives/english/minamata_disease_in_depth/cause_investigation/) | Verify chronology/exposure claims and approve |
+| 0406 | Times Beach | [EPA history](https://www.epa.gov/mo/town-flood-and-superfund-looking-back-times-beach-disaster-nearly-40-years-later) | Verify contamination/relocation claims and approve |
+| 0404 | Therac-25 | [Leveson and Turner technical record](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html); image provenance held | Technical claim review; launch text-only unless media issue closes |
+| 0395 | United Flight 629 | [FBI case page](https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham) supports core date/death count | Complete motive/prosecution claim map and approve |
+| 0394 | Centralia | [Pennsylvania DEP chronology](https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology) | Map fire/relocation chronology and approve |
 
 ## Reserve — use only after certification
 

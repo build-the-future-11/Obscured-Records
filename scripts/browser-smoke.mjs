@@ -256,6 +256,7 @@ try {
     await draft.getByRole('button', { name: 'Save highlight', exact: true }).click();
     await draft.waitFor({ state: 'hidden' });
     await page.getByRole('status').filter({ hasText: 'Passage saved' }).waitFor();
+    await page.waitForFunction(() => [...document.querySelectorAll('button')].some((element) => element.textContent?.trim() === 'Highlight selected text' && element === document.activeElement), null, { timeout: 2000 });
     assert.equal(await page.getByRole('button', { name: 'Highlight selected text' }).evaluate((element) => element === document.activeElement), true);
     const savedNotes = await page.evaluate(() => JSON.parse(localStorage.getItem('or-notes-v1') || '[]'));
     assert.equal(savedNotes.length, JSON.parse(priorNotes || '[]').length + 1);

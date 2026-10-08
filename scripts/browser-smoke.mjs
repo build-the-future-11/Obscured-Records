@@ -264,6 +264,55 @@ try {
     pass(`highlight ${failure}: preserves draft, exposes accessible error, retries exactly once and restores focus`);
   }
 
+  // Capacity must preserve all existing notes and the pending draft. Freeing
+  // space in another tab lets the reader retry the same editor successfully.
+  await page.goto(`${base}/article/fedex-flight-705`);
+  const notesBeforeCapacityCheck = await page.evaluate(() => localStorage.getItem('or-notes-v1'));
+  await page.evaluate(() => {
+    const entries = Array.from({ length: 500 }, (_, index) => ({
+      id: `capacity-${index}`, slug: 'fedex-flight-705', text: `Existing passage ${index}.`,
+      note: `Existing capacity note ${index}.`, anchor: 'opening', createdAt: '2026-10-08T00:00:00Z',
+    }));
+    localStorage.setItem('or-notes-v1', JSON.stringify(entries));
+  });
+  await page.locator('#opening').evaluate((element) => {
+    const range = document.createRange(); range.selectNodeContents(element);
+    const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+    document.dispatchEvent(new Event('selectionchange'));
+  });
+  await page.getByRole('button', { name: 'Highlight selected text' }).click();
+  const capacityDraft = page.getByRole('dialog', { name: 'Keep this passage' });
+  await capacityDraft.waitFor();
+  await capacityDraft.getByLabel('Private note (optional)').fill('Keep this draft after the library reaches capacity.');
+  const fullLibraryBytes = await page.evaluate(() => localStorage.getItem('or-notes-v1'));
+  await capacityDraft.getByRole('button', { name: 'Save highlight', exact: true }).click();
+  await capacityDraft.getByRole('alert').filter({ hasText: '500-highlight limit' }).waitFor();
+  assert.equal(await capacityDraft.getByLabel('Private note (optional)').inputValue(), 'Keep this draft after the library reaches capacity.');
+  assert.equal(await page.evaluate(() => localStorage.getItem('or-notes-v1')), fullLibraryBytes);
+  assert.equal(await page.getByRole('status').filter({ hasText: 'Passage saved' }).count(), 0);
+  await auditAccessibility(page, '/article/fedex-flight-705', page.viewportSize().width, 'highlight-capacity');
+  const capacityLibrary = await page.context().newPage();
+  try {
+    await capacityLibrary.goto(`${base}/saved`);
+    const unwanted = capacityLibrary.locator('.saved-notes article').filter({ has: capacityLibrary.getByText('Existing capacity note 1.', { exact: true }) });
+    await unwanted.getByRole('button', { name: 'Delete highlight', exact: true }).click();
+    assert.equal(await capacityLibrary.locator('.saved-notes article').count(), 499);
+  } finally { await capacityLibrary.close(); }
+  await capacityDraft.getByRole('button', { name: 'Save highlight', exact: true }).click();
+  await capacityDraft.waitFor({ state: 'hidden' });
+  await page.getByRole('status').filter({ hasText: 'Passage saved' }).waitFor();
+  const afterCapacityRetry = await page.evaluate(() => JSON.parse(localStorage.getItem('or-notes-v1')));
+  assert.equal(afterCapacityRetry.length, 500);
+  assert.equal(afterCapacityRetry[0].id, 'capacity-0');
+  assert.equal(afterCapacityRetry.some((entry) => entry.id === 'capacity-1'), false);
+  assert.equal(afterCapacityRetry.at(-1).note, 'Keep this draft after the library reaches capacity.');
+  await page.evaluate((raw) => {
+    if (raw === null) localStorage.removeItem('or-notes-v1');
+    else localStorage.setItem('or-notes-v1', raw);
+    window.dispatchEvent(new Event('or-library-change'));
+  }, notesBeforeCapacityCheck);
+  pass('highlight capacity: keeps existing notes and draft, then retries after explicit removal in another tab');
+
   await page.goto(`${base}/article/fedex-flight-705?utm_source=smoke`);
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
   assert.ok(decodeURIComponent(await page.getByRole('link', { name: 'Share by email' }).getAttribute('href')).includes(canonical));

@@ -3,13 +3,13 @@ import { editorialEvent } from "@/lib/editorial-events";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { CatalogStory } from "@/lib/catalog";
-import { LIBRARY_KEY, NOTES_KEY, readSaved, readNotes, writeLocal, type SavedRecord, type Annotation, type ReadingState } from "@/lib/reader-storage";
+import { LIBRARY_KEY, NOTES_KEY, readSaved, readNotes, writeLocal, ReaderStorageLimitError, type SavedRecord, type Annotation, type ReadingState } from "@/lib/reader-storage";
 import { StoryCard } from "./story-card";
 export function SaveStory({ slug }: { slug: string }) {
   const [saved, setSaved] = useState(false);
   const [message, setMessage] = useState("");
   useEffect(() => { const sync = () => { try { setSaved(readSaved(localStorage.getItem(LIBRARY_KEY)).some((s) => s.slug === slug)); } catch { setMessage("Device storage unavailable."); } }; sync(); window.addEventListener("storage", sync); window.addEventListener("or-library-change", sync); return () => { window.removeEventListener("storage", sync); window.removeEventListener("or-library-change", sync); }; }, [slug]);
-  return <div className="save-control"><button aria-pressed={saved} onClick={() => { try { const items = readSaved(localStorage.getItem(LIBRARY_KEY)); const exists = items.some((s) => s.slug === slug); writeLocal(LIBRARY_KEY, exists ? items.filter((s) => s.slug !== slug) : [...items, { slug, state: "Unread", savedAt: new Date().toISOString() }]); editorialEvent("save", { slug, action: exists ? "remove" : "save" }); setMessage(exists ? "Removed from saved stories." : "Saved on this device."); } catch { setMessage("Could not save. Device storage is unavailable or full."); } }}>{saved ? "✓ Saved" : "+ Save story"}</button><small role="status">{message}</small></div>;
+  return <div className="save-control"><button aria-pressed={saved} onClick={() => { try { const items = readSaved(localStorage.getItem(LIBRARY_KEY)); const exists = items.some((s) => s.slug === slug); writeLocal(LIBRARY_KEY, exists ? items.filter((s) => s.slug !== slug) : [...items, { slug, state: "Unread", savedAt: new Date().toISOString() }]); editorialEvent("save", { slug, action: exists ? "remove" : "save" }); setMessage(exists ? "Removed from saved stories." : "Saved on this device."); } catch (error) { setMessage(error instanceof ReaderStorageLimitError ? error.message : "Could not save. Device storage is unavailable or full."); } }}>{saved ? "✓ Saved" : "+ Save story"}</button><small role="status">{message}</small></div>;
 }
 export function ReadingLibrary({ stories }: { stories: CatalogStory[] }) {
   const [saved, setSaved] = useState<SavedRecord[]>([]);

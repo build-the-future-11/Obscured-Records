@@ -1,15 +1,36 @@
-import { intakeJson, isSameOriginSignup, readBody, RequestTooLarge } from "./newsletter-handler.ts";
+import { discardRequestBody, intakeJson, isSameOriginSignup, readBody, RequestBodyTimeout, RequestTooLarge } from "./newsletter-handler.ts";
 import { IntakeRateLimit } from "./intake-policy.ts";
 
 export type Submission = { email: string; kind: string; title: string; message: string; sourceUrl: string };
 export const submissionKinds = ["Correction", "Source", "Rights", "Pitch", "Contributor"] as const;
+const maxSubmissionBytes = 16384;
 export function createSubmissionHandler(save: (submission: Submission) => Promise<string>) {
   return async (request: Request) => {
-    if (request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() !== "application/json") return intakeJson("Send the submission as JSON.", 415);
-    if (!isSameOriginSignup(request)) return intakeJson("Submit from the publication website.", 403);
+    if (request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() !== "application/json") {
+      discardRequestBody(request);
+      return intakeJson("Send the submission as JSON.", 415);
+    }
+    if (!isSameOriginSignup(request)) {
+      discardRequestBody(request);
+      return intakeJson("Submit from the publication website.", 403);
+    }
+    const contentLength = request.headers.get("content-length");
+    if (contentLength !== null) {
+      if (!/^\d+$/.test(contentLength)) {
+        discardRequestBody(request);
+        return intakeJson("Send a valid submission.", 400);
+      }
+      if (Number(contentLength) > maxSubmissionBytes) {
+        discardRequestBody(request);
+        return intakeJson("Submission is too large.", 413);
+      }
+    }
     let value: unknown;
-    try { value = JSON.parse(await readBody(request, 16384)); }
-    catch (error) { return intakeJson(error instanceof RequestTooLarge ? "Submission is too large." : "Send a valid submission.", error instanceof RequestTooLarge ? 413 : 400); }
+    try { value = JSON.parse(await readBody(request, maxSubmissionBytes)); }
+    catch (error) {
+      if (error instanceof RequestBodyTimeout) return intakeJson("The submission upload timed out. Your text is still in this form; please try again.", 408);
+      return intakeJson(error instanceof RequestTooLarge ? "Submission is too large." : "Send a valid submission.", error instanceof RequestTooLarge ? 413 : 400);
+    }
     if (!value || typeof value !== "object" || Array.isArray(value)) return intakeJson("Send a valid submission.", 400);
     const fields = value as Record<string, unknown>;
     if (fields.website !== undefined && typeof fields.website !== "string") return intakeJson("Send a valid submission.", 400);

@@ -11,25 +11,54 @@ export function intakeJson(message: string, status = 200) {
 
 const json = intakeJson;
 export class RequestTooLarge extends Error {}
+export class RequestBodyTimeout extends Error {}
+const maxRequestDurationMs = 5000;
+
+export function discardRequestBody(request: Request) {
+  if (!request.body) return;
+  // Early policy/header rejections do not enter readBody. Close their upload
+  // source without waiting for an untrusted cancellation hook to settle.
+  try { void request.body.cancel().catch(() => {}); } catch {}
+}
 
 export async function readBody(request: Request, limit = maxRequestBytes) {
   if (!request.body) return "";
   const reader = request.body.getReader();
   const chunks: Uint8Array[] = [];
   let size = 0;
-  try {
+  const deadline = Date.now() + maxRequestDurationMs;
+  let interrupt: (reason: unknown) => void = () => {};
+  const interrupted = new Promise<never>((_, reject) => { interrupt = reject; });
+  const onAbort = () => interrupt(request.signal.reason);
+  const timeout = setTimeout(() => interrupt(new RequestBodyTimeout()), maxRequestDurationMs);
+  request.signal.addEventListener("abort", onAbort, { once: true });
+  const consume = async () => {
     while (true) {
+      request.signal.throwIfAborted();
+      // A single deadline covers every chunk, including streams that keep
+      // returning empty chunks without allowing a timer callback to run.
+      if (Date.now() >= deadline) throw new RequestBodyTimeout();
       const { done, value } = await reader.read();
+      request.signal.throwIfAborted();
+      if (Date.now() >= deadline) throw new RequestBodyTimeout();
       if (done) break;
       size += value.byteLength;
-      if (size > limit) {
-        // Do not wait for an untrusted stream's cancellation hook.
-        void reader.cancel().catch(() => {});
-        throw new RequestTooLarge();
-      }
-      chunks.push(value);
+      if (size > limit) throw new RequestTooLarge();
+      if (value.byteLength) chunks.push(value);
     }
+  };
+  try {
+    // Race the complete read once so chunk delivery does not accumulate
+    // handlers on the still-pending interruption promise.
+    await Promise.race([consume(), interrupted]);
+  } catch (error) {
+    // Abort, expiry, size failures and stream errors release the source without
+    // waiting for an untrusted cancellation hook to settle.
+    void reader.cancel(error).catch(() => {});
+    throw error;
   } finally {
+    clearTimeout(timeout);
+    request.signal.removeEventListener("abort", onAbort);
     reader.releaseLock();
   }
   const bytes = new Uint8Array(size);
@@ -69,22 +98,33 @@ export function isSameOriginSignup(request: Request): boolean {
 export function createNewsletterHandler(save: (email: string) => Promise<unknown>) {
   return async (request: Request): Promise<Response> => {
     const mediaType = request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
-    if (mediaType !== "application/json") return json("Send newsletter signups as JSON.", 415);
+    if (mediaType !== "application/json") {
+      discardRequestBody(request);
+      return json("Send newsletter signups as JSON.", 415);
+    }
 
     if (!isSameOriginSignup(request)) {
+      discardRequestBody(request);
       return json("Submit this form from the publication website.", 403);
     }
 
     const contentLength = request.headers.get("content-length");
     if (contentLength !== null) {
-      if (!/^\d+$/.test(contentLength)) return json("Send a valid signup request.", 400);
-      if (Number(contentLength) > maxRequestBytes) return json("Signup request is too large.", 413);
+      if (!/^\d+$/.test(contentLength)) {
+        discardRequestBody(request);
+        return json("Send a valid signup request.", 400);
+      }
+      if (Number(contentLength) > maxRequestBytes) {
+        discardRequestBody(request);
+        return json("Signup request is too large.", 413);
+      }
     }
 
     let body: unknown;
     try {
       body = JSON.parse(await readBody(request));
     } catch (error) {
+      if (error instanceof RequestBodyTimeout) return json("The signup upload timed out. Please try again.", 408);
       return error instanceof RequestTooLarge
         ? json("Signup request is too large.", 413)
         : json("Send a valid signup request.", 400);

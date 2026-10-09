@@ -3,13 +3,28 @@ export type SavedRecord = { slug: string; state: ReadingState; savedAt: string }
 export type Annotation = { id: string; slug: string; text: string; note: string; anchor: string; createdAt: string };
 export const LIBRARY_KEY = "or-library-v1";
 export const NOTES_KEY = "or-notes-v1";
+export const READER_ENTRY_LIMIT = 500;
+export class ReaderStorageLimitError extends Error {
+  constructor(key: string) {
+    super(key === NOTES_KEY
+      ? `This browser has reached the ${READER_ENTRY_LIMIT}-highlight limit. Delete an unwanted highlight from Your notes, then try again.`
+      : `This browser has reached the ${READER_ENTRY_LIMIT}-story limit. Remove an unwanted saved story, then try again.`);
+    this.name = "ReaderStorageLimitError";
+  }
+}
 export function readSaved(raw: string | null): SavedRecord[] {
-  try { const data: unknown = JSON.parse(raw || "[]"); return Array.isArray(data) ? data.filter((item): item is SavedRecord => item && typeof item.slug === "string" && /^[a-z0-9-]+$/.test(item.slug) && ["Unread", "Reading", "Finished", "Archived"].includes(item.state) && typeof item.savedAt === "string").slice(-500) : []; } catch { return []; }
+  try { const data: unknown = JSON.parse(raw || "[]"); return Array.isArray(data) ? data.filter((item): item is SavedRecord => item && typeof item.slug === "string" && /^[a-z0-9-]+$/.test(item.slug) && ["Unread", "Reading", "Finished", "Archived"].includes(item.state) && typeof item.savedAt === "string") : []; } catch { return []; }
 }
 export function readNotes(raw: string | null): Annotation[] {
-  try { const data: unknown = JSON.parse(raw || "[]"); return Array.isArray(data) ? data.filter((item): item is Annotation => item && typeof item.id === "string" && typeof item.slug === "string" && typeof item.text === "string" && item.text.length <= 2000 && typeof item.note === "string" && item.note.length <= 3000 && typeof item.anchor === "string" && /^[a-z0-9-]+$/.test(item.anchor) && typeof item.createdAt === "string").slice(-500) : []; } catch { return []; }
+  try { const data: unknown = JSON.parse(raw || "[]"); return Array.isArray(data) ? data.filter((item): item is Annotation => item && typeof item.id === "string" && typeof item.slug === "string" && typeof item.text === "string" && item.text.length <= 2000 && typeof item.note === "string" && item.note.length <= 3000 && typeof item.anchor === "string" && /^[a-z0-9-]+$/.test(item.anchor) && typeof item.createdAt === "string") : []; } catch { return []; }
 }
 export function writeLocal(key: string, value: unknown) {
-  localStorage.setItem(key, JSON.stringify(Array.isArray(value) ? value.slice(-500) : value));
+  if (Array.isArray(value) && value.length > READER_ENTRY_LIMIT) {
+    const existing = key === NOTES_KEY ? readNotes(localStorage.getItem(key)) : readSaved(localStorage.getItem(key));
+    // Preserve legacy oversized libraries and allow explicit removal or state
+    // changes. Reaching capacity must never silently delete the oldest entry.
+    if (value.length > existing.length) throw new ReaderStorageLimitError(key);
+  }
+  localStorage.setItem(key, JSON.stringify(value));
   window.dispatchEvent(new Event("or-library-change"));
 }

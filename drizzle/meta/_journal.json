@@ -15,6 +15,13 @@
       "when": 1790484140721,
       "tag": "0001_bent_roland_deschain",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791653353447,
+      "tag": "0002_ordinary_sentinels",
+      "breakpoints": true
     }
   ]
 }

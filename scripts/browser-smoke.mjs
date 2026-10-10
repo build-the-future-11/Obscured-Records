@@ -98,7 +98,7 @@ try {
   page.setDefaultTimeout(12000);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
-  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
+const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/membership', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
   const layoutFailures = [];
   for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 375, 768, 1440])) {
     await page.setViewportSize({ width, height: 900 });

@@ -78,6 +78,7 @@ export function MobileMenu() {
       <nav>{sectionLinks.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{label}</Link>)}</nav>
       <div className="menu-panel-meta">
         <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link><Link href="/archive" onClick={() => setOpen(false)}>Archive</Link><Link href="/topics" onClick={() => setOpen(false)}>Topics</Link><Link href="/series" onClick={() => setOpen(false)}>Reading series</Link><Link href="/authors" onClick={() => setOpen(false)}>Authors</Link><Link href="/saved" onClick={() => setOpen(false)}>Saved stories</Link>
+        <Link href="/membership" onClick={() => setOpen(false)}>Membership</Link>
         <Link href="/search" onClick={() => setOpen(false)}><Search /> Search the archive</Link>
         <Link href="/newsletter" onClick={() => setOpen(false)}>Newsletter waitlist</Link>
         <Link href="/contribute" onClick={() => setOpen(false)}>Contribute</Link>
@@ -85,6 +86,8 @@ export function MobileMenu() {
         <Link href="/about" onClick={() => setOpen(false)}>About</Link>
         <Link href="/standards" onClick={() => setOpen(false)}>Editorial standards</Link>
         <Link href="/corrections" onClick={() => setOpen(false)}>Corrections</Link>
+        <Link href="/privacy" onClick={() => setOpen(false)}>Privacy</Link>
+        <a href="/rss.xml" onClick={() => setOpen(false)}>RSS feed</a>
       </div>
     </div>}
   </>;

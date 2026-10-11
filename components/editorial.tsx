@@ -40,7 +40,7 @@ export function NewsletterCTA() {
 }
 export function Footer() {
   return <footer><div className="footer-wordmark"><span>OBSCURED</span><span>RECORDS</span></div><div className="footer-bottom">
-    <nav aria-label="Footer navigation"><Link href="/archive">Archive</Link><Link href="/topics">Topics</Link><Link href="/authors">Authors</Link><Link href="/series">Series</Link><Link href="/membership">Membership</Link><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/contribute">Contribute</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
+    <nav aria-label="Footer navigation"><Link href="/latest">Latest</Link><Link href="/archive">Archive</Link><Link href="/search">Search</Link><Link href="/topics">Topics</Link><Link href="/authors">Authors</Link><Link href="/series">Series</Link><Link href="/saved">Saved</Link><Link href="/membership">Membership</Link><Link href="/newsletter">The Brief</Link><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/contribute">Contribute</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
     <p>Independent publication. Founded by Ryan Gomez.</p><span>© 2026 O.R</span>
   </div></footer>;
 }

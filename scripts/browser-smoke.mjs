@@ -128,6 +128,9 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   await menu.click();
   const dialog = page.getByRole('dialog', { name: 'Site navigation' });
   await dialog.waitFor();
+  for (const [name, href] of [['Membership', '/membership'], ['Privacy', '/privacy'], ['RSS feed', '/rss.xml']]) {
+    assert.equal(await dialog.getByRole('link', { name, exact: true }).getAttribute('href'), href);
+  }
   assert.equal(await dialog.evaluate((element) => element.contains(document.activeElement)), true);
   assert.equal(await page.locator('.brand').evaluate((element) => element.inert), true);
   await page.keyboard.press('Shift+Tab');
@@ -140,10 +143,15 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   assert.equal(await page.locator('.brand').evaluate((element) => element.inert), false);
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   pass('mobile menu traps focus, inerts background, closes and restores focus/scroll');
+  pass('mobile menu links membership, privacy and RSS');
   await menu.click(); await page.setViewportSize({ width: 1440, height: 900 });
   await dialog.waitFor({ state: 'hidden' });
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   pass('desktop resize releases mobile overlay and scroll lock');
+
+  const sitemap = await (await page.request.get(`${base}/sitemap.xml`)).text();
+  assert.match(sitemap, /<loc>[^<]*\/membership<\/loc>/);
+  pass('public sitemap links the membership entry point');
 
   await page.goto(`${base}/search?q=aviation&q=mercury`);
   assert.equal(await page.locator('#archive-q').inputValue(), 'aviation');

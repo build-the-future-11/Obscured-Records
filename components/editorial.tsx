@@ -18,7 +18,7 @@ export function Masthead() {
   return <header className="masthead">
     <Link className="brand" href="/" aria-label="Obscured Records home"><b>O.R</b><span>Obscured Records</span></Link>
     <nav aria-label="Primary navigation"><Link href="/latest">Latest</Link><details className="section-nav"><summary>Sections</summary><div>{sections.map((section) => <Link key={section} href={`/${section.toLowerCase()}`}>{section}</Link>)}</div></details><Link href="/topics">Topics</Link><Link href="/series">Series</Link><Link href="/archive">Archive</Link><Link href="/about">About</Link></nav>
-    <div className="header-actions"><SearchTrigger /><Link className="saved-nav" href="/saved">Saved</Link><Link className="subscribe" href="/newsletter">The Brief</Link><MobileMenu /></div>
+    <div className="header-actions"><SearchTrigger /><Link className="saved-nav" href="/saved">Saved</Link><Link className="saved-nav" href="/membership">Membership</Link><Link className="subscribe" href="/newsletter">The Brief</Link><MobileMenu /></div>
   </header>;
 }
 export function StoryMeta({ article, inverse = false }: { article: Article; inverse?: boolean }) {
@@ -40,7 +40,7 @@ export function NewsletterCTA() {
 }
 export function Footer() {
   return <footer><div className="footer-wordmark"><span>OBSCURED</span><span>RECORDS</span></div><div className="footer-bottom">
-    <nav aria-label="Footer navigation"><Link href="/archive">Archive</Link><Link href="/topics">Topics</Link><Link href="/authors">Authors</Link><Link href="/series">Series</Link><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/contribute">Contribute</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
+    <nav aria-label="Footer navigation"><Link href="/latest">Latest</Link><Link href="/archive">Archive</Link><Link href="/search">Search</Link><Link href="/topics">Topics</Link><Link href="/authors">Authors</Link><Link href="/series">Series</Link><Link href="/saved">Saved</Link><Link href="/membership">Membership</Link><Link href="/newsletter">The Brief</Link><Link href="/about">About</Link><Link href="/standards">Standards</Link><Link href="/corrections">Corrections</Link><Link href="/privacy">Privacy</Link><Link href="/contribute">Contribute</Link><Link href="/submit">Submit a record</Link><a href="/rss.xml">RSS</a><a href="mailto:ryangomez.hs@gmail.com">Contact <ArrowUpRight /></a></nav>
     <p>Independent publication. Founded by Ryan Gomez.</p><span>© 2026 O.R</span>
   </div></footer>;
 }

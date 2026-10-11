@@ -98,7 +98,7 @@ try {
   page.setDefaultTimeout(12000);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
-  const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
+const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/membership', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
   const layoutFailures = [];
   for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 375, 768, 1440])) {
     await page.setViewportSize({ width, height: 900 });
@@ -128,6 +128,9 @@ try {
   await menu.click();
   const dialog = page.getByRole('dialog', { name: 'Site navigation' });
   await dialog.waitFor();
+  for (const [name, href] of [['Membership', '/membership'], ['Privacy', '/privacy'], ['RSS feed', '/rss.xml']]) {
+    assert.equal(await dialog.getByRole('link', { name, exact: true }).getAttribute('href'), href);
+  }
   assert.equal(await dialog.evaluate((element) => element.contains(document.activeElement)), true);
   assert.equal(await page.locator('.brand').evaluate((element) => element.inert), true);
   await page.keyboard.press('Shift+Tab');
@@ -140,10 +143,15 @@ try {
   assert.equal(await page.locator('.brand').evaluate((element) => element.inert), false);
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   pass('mobile menu traps focus, inerts background, closes and restores focus/scroll');
+  pass('mobile menu links membership, privacy and RSS');
   await menu.click(); await page.setViewportSize({ width: 1440, height: 900 });
   await dialog.waitFor({ state: 'hidden' });
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   pass('desktop resize releases mobile overlay and scroll lock');
+
+  const sitemap = await (await page.request.get(`${base}/sitemap.xml`)).text();
+  assert.match(sitemap, /<loc>[^<]*\/membership<\/loc>/);
+  pass('public sitemap links the membership entry point');
 
   await page.goto(`${base}/search?q=aviation&q=mercury`);
   assert.equal(await page.locator('#archive-q').inputValue(), 'aviation');

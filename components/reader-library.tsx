@@ -7,9 +7,29 @@ import { LIBRARY_KEY, NOTES_KEY, readSaved, readNotes, writeLocal, type SavedRec
 import { StoryCard } from "./story-card";
 export function SaveStory({ slug }: { slug: string }) {
   const [saved, setSaved] = useState(false);
+  const [accountSync, setAccountSync] = useState(false);
   const [message, setMessage] = useState("");
-  useEffect(() => { const sync = () => { try { setSaved(readSaved(localStorage.getItem(LIBRARY_KEY)).some((s) => s.slug === slug)); } catch { setMessage("Device storage unavailable."); } }; sync(); window.addEventListener("storage", sync); window.addEventListener("or-library-change", sync); return () => { window.removeEventListener("storage", sync); window.removeEventListener("or-library-change", sync); }; }, [slug]);
-  return <div className="save-control"><button aria-pressed={saved} onClick={() => { try { const items = readSaved(localStorage.getItem(LIBRARY_KEY)); const exists = items.some((s) => s.slug === slug); writeLocal(LIBRARY_KEY, exists ? items.filter((s) => s.slug !== slug) : [...items, { slug, state: "Unread", savedAt: new Date().toISOString() }]); editorialEvent("save", { slug, action: exists ? "remove" : "save" }); setMessage(exists ? "Removed from saved stories." : "Saved on this device."); } catch { setMessage("Could not save. Device storage is unavailable or full."); } }}>{saved ? "✓ Saved" : "+ Save story"}</button><small role="status">{message}</small></div>;
+  useEffect(() => {
+    const sync = () => { try { if (!accountSync) setSaved(readSaved(localStorage.getItem(LIBRARY_KEY)).some((s) => s.slug === slug)); } catch { setMessage("Device storage unavailable."); } };
+    sync();
+    fetch("/api/member/library", { headers: { accept: "application/json" } }).then(async (response) => {
+      if (!response.ok) return;
+      const data = await response.json() as { items: SavedRecord[] }; setAccountSync(true); setSaved(data.items.some((item) => item.slug === slug));
+    }).catch(() => {});
+    window.addEventListener("storage", sync); window.addEventListener("or-library-change", sync);
+    return () => { window.removeEventListener("storage", sync); window.removeEventListener("or-library-change", sync); };
+  }, [slug, accountSync]);
+  async function toggle() {
+    const exists = saved;
+    if (accountSync) {
+      try {
+        const response = await fetch(`/api/member/library${exists ? `?slug=${encodeURIComponent(slug)}` : ""}`, { method: exists ? "DELETE" : "PUT", headers: { "content-type": "application/json" }, body: exists ? undefined : JSON.stringify({ slug, state: "Unread", savedAt: new Date().toISOString() }) });
+        if (!response.ok) throw new Error(); setSaved(!exists); setMessage(exists ? "Removed from your member library." : "Saved to your member library."); editorialEvent("save", { slug, action: exists ? "remove" : "save" }); return;
+      } catch { setMessage("Member sync is temporarily unavailable. Your existing saved state was not changed."); return; }
+    }
+    try { const items = readSaved(localStorage.getItem(LIBRARY_KEY)); writeLocal(LIBRARY_KEY, exists ? items.filter((s) => s.slug !== slug) : [...items, { slug, state: "Unread", savedAt: new Date().toISOString() }]); editorialEvent("save", { slug, action: exists ? "remove" : "save" }); setMessage(exists ? "Removed from saved stories." : "Saved on this device."); } catch { setMessage("Could not save. Device storage is unavailable or full."); }
+  }
+  return <div className="save-control"><button aria-pressed={saved} onClick={toggle}>{saved ? "✓ Saved" : "+ Save story"}</button><small role="status">{message}</small></div>;
 }
 export function ReadingLibrary({ stories }: { stories: CatalogStory[] }) {
   const [saved, setSaved] = useState<SavedRecord[]>([]);

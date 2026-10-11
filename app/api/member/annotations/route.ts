@@ -28,9 +28,15 @@ export async function POST(request: Request) {
   const now = new Date().toISOString();
   const createdAt = isIsoDate(body.createdAt) ? body.createdAt : now;
   const storedId = `${auth.user.userId}:${id}`;
-  await (await getMemberDb()).insert(memberAnnotations).values({ id: storedId, userId: auth.user.userId, slug: body.slug, text, note, anchor, createdAt, updatedAt: now })
-    .onConflictDoUpdate({ target: memberAnnotations.id, set: { text, note, anchor, updatedAt: now } });
-  return memberJson({ ok: true, item: { id, slug: body.slug, text, note, anchor, createdAt } }, 201);
+  const [item] = await (await getMemberDb()).insert(memberAnnotations).values({ id: storedId, userId: auth.user.userId, slug: body.slug, text, note, anchor, createdAt, updatedAt: now })
+    .onConflictDoUpdate({
+      target: memberAnnotations.id,
+      set: { text, note, anchor, updatedAt: now },
+      setWhere: and(eq(memberAnnotations.userId, auth.user.userId), eq(memberAnnotations.slug, body.slug)),
+    })
+    .returning({ id: memberAnnotations.id, slug: memberAnnotations.slug, text: memberAnnotations.text, note: memberAnnotations.note, anchor: memberAnnotations.anchor, createdAt: memberAnnotations.createdAt });
+  if (!item) return memberJson({ error: "This note conflicts with one saved under a different story. Your saved note was kept." }, 409);
+  return memberJson({ ok: true, item: { ...item, id: item.id.slice(auth.user.userId.length + 1) } }, 201);
 }
 
 export async function DELETE(request: Request) {

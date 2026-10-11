@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-25",
+  "as_of": "2026-10-11",
   "allowed_states": [
     "READY",
     "IN_PROGRESS",
@@ -44,7 +44,7 @@
       "priority": "P0",
       "area": "newsletter",
       "title": "Prove newsletter subscription and send path end to end",
-      "state": "BLOCKED",
+      "state": "HOLD",
       "owner": "editorial_operations",
       "evidence": [
         "app/api/newsletter/route.ts",
@@ -131,7 +131,7 @@
       "priority": "P0",
       "area": "deployment",
       "title": "Resolve canonical public origin and exact-revision deployment attribution",
-      "state": "BLOCKED",
+      "state": "HOLD",
       "owner": "editorial_engineering",
       "evidence": [
         "lib/site.ts",
@@ -139,8 +139,23 @@
         ".github/workflows/relaunch-smoke.yml",
         "scripts/relaunch-smoke.mjs"
       ],
-      "next_action": "Choose one authoritative public origin, deploy one immutable source revision with a provider commit-SHA environment variable, set NEXT_PUBLIC_SITE_URL/SITE_URL to the same origin, then retain a passing exact-revision smoke receipt.",
+      "next_action": "Private exact-revision attribution is closed at source 6acb457955dba3e3c5d7902cbbc4bb608a2f73bb and environment revision 6. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
+    },
+    {
+      "id": "OR-RL-010",
+      "priority": "P0",
+      "area": "security",
+      "title": "Patch production dependency advisories and certify the exact lockfile",
+      "state": "IN_PROGRESS",
+      "owner": "editorial_engineering",
+      "evidence": [
+        "package.json",
+        "package-lock.json",
+        "docs/EXECUTION_STATE_2026-10-11.md"
+      ],
+      "next_action": "When free plus speculative memory is stably at or above 512 MiB, update Next.js and eslint-config-next to 16.4.0, resolve sharp to 0.35.5, source-map-js to 1.2.2 and fast-uri to 3.1.8, then run production audit, tests, editorial integrity, lint, typecheck and both production builds.",
+      "done_when": "The committed exact lockfile has no known production advisories and the complete exact-source verification matrix plus private deployment receipt are green."
     }
   ]
 }

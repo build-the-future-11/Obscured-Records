@@ -1,3 +1,17 @@
+# Current execution state — 11 October 2026
+
+**Owner-private Site version 18 is deployed from source `6acb457955dba3e3c5d7902cbbc4bb608a2f73bb`. Public launch remains HOLD.** Production environment revision 6 now reports that exact SHA, correcting the previous stale `COMMIT_SHA`. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`. Live D1 exposes the expected newsletter, submission, rate-limit and four member tables. The live owner-only editorial desk shows 45 manuscripts: 25 new records and 20 archival counterparts.
+
+The current exact source passes editorial integrity: 28 reader records, 45 unpublished drafts, 23,847 draft words and 53 distinct subjects. The three 11 October additions remain AI-assisted drafts and received no invented human approval. Browser inspection after a hard refresh confirmed all three are present in the private queue; the initially observed 42-count view was stale cached UI, not the deployed state.
+
+The local GitHub checkout now also reproduces the deployed October review corpus: all 42 retained Page manuscripts transferred exactly, the three new manuscripts remain private, the generated desk contains all 45 drafts, and the bounded Node suite passes 211/211. The SEO audit confirms 28 RSS records, 45 review topics, three series and draft isolation.
+
+The local GitHub checkout mirrors the new drafts in commit `7713366`, now contains `origin/main` through merge commit `4773e97`, and preserves the pre-existing untracked `verification/` directory. It is no longer behind the remote, but its local commits remain unpushed because both configured GitHub credentials are invalid. Force-push and history rewriting remain prohibited.
+
+An 11 October production dependency audit found one critical, two high and one moderate advisory in the current lockfile. The required patch line is Next.js / `eslint-config-next` 16.4.0 plus patched transitive resolutions (`sharp` 0.35.5, `source-map-js` 1.2.2 and `fast-uri` 3.1.8). Installation, full tests and builds are not admitted while free plus speculative memory remains below the repository's 512 MiB floor and swap activity is rising. See [the current execution ledger](docs/EXECUTION_STATE_2026-10-11.md).
+
+Everything below is dated historical evidence.
+
 # Current execution state — 1 October 2026
 
 **Public launch remains HOLD. The publication is now in certification mode, not draft-generation mode.**

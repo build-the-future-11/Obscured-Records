@@ -1,5 +1,7 @@
 # Website launch checklist — private release verified; public launch HOLD
 
+**11 October update:** owner-private Site version 18 is deployed from source `6acb457955dba3e3c5d7902cbbc4bb608a2f73bb`, and production environment revision 6 reports that exact SHA. The private desk contains 45 unpublished manuscripts. The current lockfile has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the current execution state](EXECUTION_STATE_2026-10-11.md).
+
 **28 September update:** the latest content/UI are merged into GitHub `main` and deployed successfully to the unchanged owner-only site. See [the completion receipt](SITE_COMPLETION_2026-09-28.md). Dated checks below retain their original revision scope.
 
 Updated 27 September 2026. Runtime revision: `bfd7158f7d19aa5094c90dba3d7c2c9e72f24379`. [Execution report](LAUNCH_EXECUTION_2026-09-27.md) · [Operations](LAUNCH_OPERATIONS_2026-09-27.md).
@@ -20,7 +22,7 @@ The user's instruction to execute this checklist authorized implementation and t
 
 ## 2. Editorial and media
 
-- [x] Preserve the 28 existing public records and keep all 42 review drafts unpublished.
+- [x] Preserve the 28 existing public records and keep all 45 review drafts unpublished.
 - [x] Repair the NASA Aral Sea and CDC Tuskegee links that redirected to generic pages.
 - [x] Strengthen source auditing so generic redirects and HTTP 202 challenges cannot count as verified access; retain failed receipts.
 - [x] Audit 70 cited URLs: 54 direct reachable and 16 direct access-unverified, with separate browser-access evidence for eight of those 16.
@@ -76,6 +78,7 @@ The two live test records are retained and clearly labelled; no email or externa
 - [ ] Confirm recurring uptime/error monitoring. The creation attempt returned no completion receipt; check for an existing automation before retrying.
 - [ ] Rehearse application rollback/restore with the accepted incident owner.
 - [ ] Obtain final editorial and operational sign-off before changing the site's audience or declaring public launch readiness.
+- [ ] Patch the current critical/high/moderate production dependency advisories, regenerate the lockfile, run the full exact-source verification matrix and deploy that exact candidate.
 
 ## Optional after core launch
 

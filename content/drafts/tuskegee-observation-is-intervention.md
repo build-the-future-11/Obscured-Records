@@ -5,41 +5,57 @@
   "dek": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Science",
   "tags": [
     "research ethics",
     "medicine",
     "racism"
   ],
-  "description": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
-  "socialPreview": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
+  "description": "The Tuskegee study shows why withholding information and treatment cannot be described as passive observation.",
+  "socialPreview": "The Tuskegee study shows why withholding information and treatment cannot be described as passive observation.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "CDC: The Untreated Syphilis Study at Tuskegee Timeline",
+      "title": "CDC, About the Untreated Syphilis Study at Tuskegee",
       "url": "https://www.cdc.gov/tuskegee/about/",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "1932–1972 study, lack of informed consent and withholding treatment."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify terminology and attribution against the advisory panel report.",
-    "Avoid claims about current health behavior without separate evidence."
+    "Avoid claims about current health behavior without separate evidence.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Tuskegee and the Withholding of Treatment",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[CDC, About the Untreated Syphilis Study at Tuskegee](https://www.cdc.gov/tuskegee/about/), “Background,” “Subjects and participation” and FAQ. Checked 2 October 2026. Supports 1932–1972, lack of informed consent and offered treatment, community understanding, 399 men with pre-existing late-latent syphilis and 201 controls. It expressly distinguishes recruitment with disease from deliberate infection. No numerical claim about present-day medical mistrust is made.\n\nThe general arguments about responsibility, evidence and system boundaries are editorial analysis. This package contains no original interviews or independently acquired datasets.",
+  "reviewPage": "https://chatgpt.com/space/page_0c6f993258208191a21125bd608baaec",
+  "relatedDrafts": [
+    "love-canal-home-as-evidence",
+    "bhopal-where-the-shift-ends"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.061Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-Observation sounds like standing back. In research involving people, however, deciding what not to offer can be an intervention of enormous consequence.
+The U.S. Public Health Service study at Tuskegee enrolled 600 Black men in 1932 without informed consent, according to CDC's history. Participants were not offered penicillin when it became an established treatment. The study continued until 1972.
 
-The CDC's history of the U.S. Public Health Service study at Tuskegee records that it began in 1932, enrolled 600 Black men and did not collect informed consent. It also states that participants were not offered penicillin when it became an established treatment. The study ended in 1972 after public exposure and advisory review. The abuse cannot be described adequately as a communication problem. Treatment was withheld while an institution continued to study untreated disease.
-
-One distinction must stay clear: studying people who already have a disease is not the same claim as deliberately infecting them. A historically precise account does not need to add an unsupported allegation to make the documented wrong more serious. Precision is part of respecting the people harmed.
+Of the 600 men, 399 had late-latent syphilis and 201 did not. The figures do not establish that researchers infected participants. CDC's documented account concerns a different abuse: men were studied without informed consent and were not offered an established treatment.
 
 ### What the study needed
 
@@ -47,12 +63,22 @@ Every research design makes something count as useful information. The ethical q
 
 The word participant can also mislead when meaningful agreement is absent. It may describe someone included in a dataset without describing someone who understood and accepted the arrangement. Inclusion is an administrative fact; consent is a relationship of information and choice.
 
-These distinctions help resist a familiar retrospective escape. It is insufficient to say that standards were different and stop there. The historical task is to identify what people knew, what alternatives existed, whose objections counted and how an institution justified continuing. Context should sharpen responsibility rather than dissolve it.
+Historical context requires identifying available treatment, institutional knowledge and the alternatives participants were allowed. It cannot make those choices disappear behind a general claim that standards were different.
+
+### What the groups actually counted
+
+CDC distinguishes 399 men who already had late-latent syphilis when recruited from a control group of 201 men without the disease. The total of 600 therefore does not mean 600 men with syphilis. This distinction changes what the study's population describes, while leaving the central ethical finding intact.
+
+CDC also records that community members understood the arrangement as a special government health care program. That understanding belongs beside the absence of informed consent. An institution can know that someone is inside a study while the person understands the relationship as an offer of care. Those descriptions concern the same encounter, but they do not imply the same choices.
+
+The ethical problem becomes sharper when circumstances change. Information supplied at entry, even if it had been adequate, would not answer every question arising over four decades. Available treatment changes what continued observation asks of a person. Continuing to use the original research objective as the governing frame makes the person's opportunity for care subordinate to the study's continuity.
+
+An institution acts through the information and care it controls. Withholding effective treatment changes a person's circumstances even when researchers did not introduce the disease.
 
 ### Beyond the emblem
 
-Tuskegee is frequently invoked as a symbol. Symbols travel efficiently, but they can flatten the people and decisions they stand for. Repeating the name is not the same as explaining the study, and mentioning an eventual apology is not the same as accounting for harm.
+Invoking Tuskegee as a symbol can obscure the specific study, populations and decisions involved. The record is strongest when those remain visible.
 
 The case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.
 
-The enduring question is not whether research institutions can write ethical language. It is whether the people whose lives generate knowledge can obtain information, care and a meaningful way to refuse. A study's demand for continuity cannot be allowed to make their changing circumstances irrelevant. Observation has authors, budgets and decisions behind it. It is never outside responsibility.
+Penicillin changed the medical options. The study continued to pursue observations of untreated disease. Withholding treatment was therefore part of the research decision, not an absence of action outside the study.

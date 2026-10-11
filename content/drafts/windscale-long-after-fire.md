@@ -5,41 +5,57 @@
   "dek": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Science",
   "tags": [
     "nuclear history",
     "decommissioning",
     "time"
   ],
-  "description": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
-  "socialPreview": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
+  "description": "Windscale reveals the difference between shutting down production and completing responsibility for a damaged reactor.",
+  "socialPreview": "Windscale reveals the difference between shutting down production and completing responsibility for a damaged reactor.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Nuclear Decommissioning Authority / Sellafield: Windscale Pile 1",
+      "title": "NDA/Sellafield, Windscale Pile 1",
       "url": "https://www.gov.uk/government/case-studies/windscale-pile-1",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "1957 fire, shutdown and continuing decommissioning context."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify technical details against the original inquiry before expanding.",
-    "Do not infer radiation exposure or health effects from building photographs."
+    "Do not infer radiation exposure or health effects from building photographs.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Windscale Fire and Long Term Reactor Responsibility",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[NDA/Sellafield, Windscale Pile 1](https://www.gov.uk/government/case-studies/windscale-pile-1), “What is Windscale Pile 1,” “Reactor decommissioning progress,” and component sections. Checked 2 October 2026. Supports the 1957 shutdown, partial defuelling, care and maintenance, three components, isolation completed in 1999 and fuel retained in damaged channels. The source contains present-tense progress statements; the manuscript does not repeat them as a verified live status. This is an operator's public account, not an independent audit of schedule or risk.\n\nThe general arguments about responsibility, evidence and system boundaries are editorial analysis. This package contains no original interviews or independently acquired datasets.",
+  "reviewPage": "https://chatgpt.com/space/page_4c33d8c8ca54819197b661c85dd3fb9c",
+  "relatedDrafts": [
+    "seveso-boundary-of-the-factory",
+    "centralia-underground-fire"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.061Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-A machine can cease its intended work without ceasing to require work from other people. That difference is particularly visible in the history of a reactor shut down after an accident.
+Fire ended operations at Windscale Pile 1 in 1957, but fuel remained in damaged channels beyond the reach of the original discharge equipment. The public decommissioning account records partial defuelling, care and maintenance, and an isolation phase completed in 1999.
 
-Windscale Pile 1 suffered a fire in 1957. The public account maintained by the Nuclear Decommissioning Authority and Sellafield places the structure within the later task of nuclear cleanup. These are connected histories, but they operate on different clocks: the emergency that ended an operating period, and the continuing management of what remained.
-
-A photograph of an old building can conceal this second history. Disuse may look like inactivity. In a hazardous facility, maintaining knowledge, monitoring conditions and preparing a sequence of work can be significant activity even when little visible demolition has occurred.
+Equipment designed to discharge an intact reactor could not complete the same task after fire damaged its channels. Ending production left a new problem: retrieving or managing material under conditions the original machinery had not been built to handle.
 
 ## What a closure date leaves out
 
@@ -49,12 +65,22 @@ This is not an argument that every delay in dismantling is wise. It is a reason 
 
 Records become part of that physical task. A drawing may describe what was intended, a log what was done, and a later survey what can now be observed. If those disagree, choosing the most convenient document does not resolve the discrepancy. The uncertainty has to enter the plan.
 
+## The equipment that remains
+
+The public case study describes partial defuelling after the fire, followed by care and maintenance. It distinguishes the reactor, blower houses and chimney, rather than treating the installation as one object that can be marked removed or remaining.
+
+For the reactor, the account records an isolation phase completed in 1999 and explains that fire-damaged channels retained fuel inaccessible to the original discharge equipment. These details locate a practical difficulty: tools designed for normal operation could not simply complete the work after damage had changed the conditions.
+
+Isolation, assessment and retrieval-method development are work, even when little visible demolition occurs. Their presence does not establish that every timetable was justified; it establishes what a timetable must account for.
+
+The operator's public account is a dated record of reported milestones, not a live survey of completion. Its practical difficulty remains clear: damage changed the relationship between the remaining material and the tools designed to remove it.
+
 ## The institution after the institution
 
 Long-lived responsibilities test the idea that an organization can close its books when production ends. People retire. Contractors change. Administrative structures are renamed. The material condition does not necessarily change with them.
 
 An account of stewardship should therefore look for continuity in obligations rather than continuity in branding. Who retains the records? Who has authority to act on new information? How can a later team distinguish a verified observation from an assumption inherited through several handovers?
 
-These questions are not claims about a specific undisclosed failure at Windscale. They are the analytical consequences of taking the cleanup history seriously. The public source should be read as an operator's account with an institutional perspective, not as the last possible word on the site.
+The operator's account supplies an institutional perspective on those obligations. An independent assessment of current conditions or timetable performance would require further evidence.
 
-The event most likely to attract a reader is the fire. The quieter record concerns the people who must manage its material aftermath without having been present at its beginning. A reactor's operating life can end on a particular day. The life of responsibility rarely fits so neatly into a date range.
+Windscale stopped producing, but material remained in damaged channels. Retrieval, monitoring and the transfer of knowledge continued after closure. The operating history ended before the responsibility for the site did.

@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: { default: "Obscured Records", template: "%s — Obscured Records" },
   description: "Documented histories that were overlooked, flattened into trivia or never explained with enough care.",
   metadataBase: new URL(siteUrl),
+  // Private relaunch remains on HOLD. Remove only with the approved public release.
+  robots: { index: false, follow: true },
   // Do not inherit a homepage canonical on every nested route.
   alternates: { types: { "application/rss+xml": `${siteUrl}/rss.xml` } },
   openGraph: { title: "Obscured Records", description: "The record beneath the remembered story.", type: "website", images: [{ url: `${siteUrl}/share-card.png`, width: 1200, height: 630, alt: "Obscured Records" }] },

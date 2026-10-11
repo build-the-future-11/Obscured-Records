@@ -2,59 +2,80 @@
 {
   "slug": "petrov-false-alarm",
   "title": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong",
-  "dek": "In September 1983, Petrov judged that a satellite alert did not reliably indicate an American attack.",
+  "dek": "The Petrov episode begins with a missile warning and a decision to question it. Retrospective accounts describe a false alarm, but claims about automatic escalation and what would otherwise have happened need stronger evidence.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Technology",
   "tags": [
     "cold war",
     "systems"
   ],
-  "description": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
-  "socialPreview": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
+  "description": "Stanislav Petrov’s response to a false missile warning, with operational uncertainties and claims about an averted war kept in view.",
+  "socialPreview": "Stanislav Petrov’s response to a false missile warning, with operational uncertainties and claims about an averted war kept in view.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Chatham House — Nuclear decision-making case studies",
+      "title": "Chatham House, Nuclear decision-making case studies",
       "url": "https://www.chathamhouse.org/2022/03/uncertainty-and-complexity-nuclear-decision-making/05-nuclear-decision-making-case-studies",
-      "status": "inherited-unverified",
-      "checkedAt": "2026-09-27",
-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify exact warning sequence and Petrov role from attributable accounts.",
-    "Label nuclear-war avoidance as counterfactual, not demonstrated certainty."
+    "Label nuclear-war avoidance as counterfactual, not demonstrated certainty.",
+    "Trace retrospective accounts to interviews and operational procedures; qualify automatic-transmission claims and unsupported counterfactuals.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
   "approvedAt": null,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-02",
   "editNotes": [
     "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ],
+  "seoTitle": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong",
+  "reviewSourceNotes": "[Chatham House, Nuclear decision-making case studies](https://www.chathamhouse.org/2022/03/uncertainty-and-complexity-nuclear-decision-making/05-nuclear-decision-making-case-studies). Checked 2 October 2026. Retrospective analysis, including uncertainty about automatic reporting. No complete operational log or demonstrated nuclear-war counterfactual.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_4f6336df68188191ba23443b8e088f1b",
+  "relatedDrafts": [
+    "vela-incident",
+    "dawsons-field"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.063Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
   ]
 }
 ---
 
+Stanislav Petrov questioned a Soviet early-warning alert reporting an American missile launch, followed by several more. Accounts summarized by Chatham House describe him reporting the warning as a false alarm. They do not supply a complete operational log of the alert's handling.
 
-Inside a Soviet early-warning bunker, alarms indicated that the United States had launched an intercontinental ballistic missile, then several more. Lieutenant Colonel Stanislav Petrov was responsible for reporting the alert upward.
-
-Petrov considered the pattern implausible for a first strike and waited for corroboration from ground radar. The satellite system had mistaken sunlight reflected from high clouds for missile launches.
+Petrov's reported judgment is narrower than the familiar claim that he saved the world. Retrospective accounts describe his rejection of an alert. The surviving record does not let observers watch an alternative sequence in which accepting it certainly produced nuclear war.
 
 ## The alarm and the judgment
 
 An alarm is a system's output. Treating it as a fact about the world requires another step: deciding how much confidence to place in the signal and what action that confidence justifies.
 
-The Chatham House analysis linked here examines Stanislav Petrov's role within a wider discussion of nuclear decision-making. It supports an introduction to the event, but a detailed reconstruction of military procedures needs stronger documentary support. The popular claim that one person saved the world is a counterfactual interpretation, not a directly observable outcome.
+Chatham House places the episode within nuclear decision-making. A precise reconstruction of Petrov's authority and escalation procedure requires documentary evidence beyond its retrospective summary.
 
 That distinction does not diminish the importance of judgment under pressure. It makes the judgment easier to understand. What did the warning system indicate? What other information was available? What authority did the officer hold, and what procedure governed escalation? Each answer describes a different part of the decision.
 
 False alarms also challenge a simple model of automation in which a machine is either reliable or unreliable. An automated signal can be useful while still requiring interpretation. The relevant question is whether the organization understands the signal's limitations and provides a workable response to uncertainty.
 
-Heroic narratives can obscure that design problem. If the lesson becomes that safety depends on an exceptional person refusing the system, the institution's responsibility to build a better system disappears. A fuller account would preserve the individual action while asking what safeguards, corroboration and decision rules should make survival less dependent on an extraordinary moment.
+An exceptional decision cannot carry the whole explanation of a warning system's safety. Corroboration, authority and rules for responding to uncertainty determine how much depends on one person's judgment.
 
-The record should therefore retain both its drama and its boundary. A warning was assessed and a consequential judgment was made. The alternative future remains something to analyze cautiously, not something the archive can report as if it happened.
+## What the surviving account cannot settle
 
-The account is about evaluating a warning under pressure. The claim that one decision certainly prevented nuclear war goes beyond what the surviving record can establish. The alert, its handling and any counterfactual outcome are different questions.
+Chatham House's reconstruction complicates the familiar story of a single officer stopping an alert from reaching his superiors. Its discussion indicates that information may have travelled automatically to the General Staff. The surviving public account does not establish every step in that chain. Retrospective interviews are evidence about recollection, but they are not a complete operational log.
+
+A signal can be generated, distributed and interpreted through different channels. Uncertainty over one channel limits the claim that Petrov alone stopped escalation, without erasing the reported false alarm.
+
+Petrov reportedly judged the warning false. That decision can be examined without assigning certainty to a nuclear war that did not occur. The episode's significance rests on the handling of an alarming signal, with the limits of the operational record left visible.

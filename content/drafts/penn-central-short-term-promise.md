@@ -2,42 +2,61 @@
 {
   "slug": "penn-central-short-term-promise",
   "title": "The Railroad and the Promise Due Soon",
-  "dek": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
+  "dek": "Penn Central’s failure unsettled a market built on promises due soon. The episode connects short-term borrowing to longer funding needs, while requiring a distinction between bank liquidity support and support for the railroad itself.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Business",
   "tags": [
     "credit",
     "railroads",
     "financial history"
   ],
-  "description": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
-  "socialPreview": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
+  "description": "Penn Central’s bankruptcy and the commercial-paper market, with short-term credit risk distinguished from the Federal Reserve’s bank liquidity response.",
+  "socialPreview": "Penn Central’s bankruptcy and the commercial-paper market, with short-term credit risk distinguished from the Federal Reserve’s bank liquidity response.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Federal Reserve History: Penn Central Commercial Paper Crisis, 1970",
+      "title": "Federal Reserve History, Penn Central",
       "url": "https://www.federalreservehistory.org/essays/penn-central",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "Bankruptcy, disruption of commercial paper and Federal Reserve response."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify historical figures against cited SEC and Federal Reserve records before adding them.",
-    "Keep this historical analysis separate from financial advice."
+    "Keep this historical analysis separate from financial advice.",
+    "Check the timing, mechanisms and beneficiaries of the Federal Reserve response; distinguish bank liquidity measures from a direct railroad bailout.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Penn Central and the Fragility of Short Term Credit",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[Federal Reserve History, Penn Central](https://www.federalreservehistory.org/essays/penn-central). Checked 2 October 2026. Historical essay supports bankruptcy and market response. Direct nonbank lending was considered but not undertaken. General refinancing examples are explanation, not reconstructed transactions.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_bb1339dca17c8191ad48af3c374c8fd4",
+  "relatedDrafts": [
+    "barings-control-and-prestige",
+    "enron-reading-the-entity"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.063Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-A debt due soon can sound safer than a debt due years from now. There is less time for the world to change. But that intuition leaves out a second clock: how long the borrower needs funding, and how often it must persuade somebody to renew it.
+Penn Central's bankruptcy in June 1970 disrupted a market for promises that were due soon. Investors reconsidered commercial paper, and issuers turned to banks for replacement funding. The Federal Reserve supported the banking system's ability to meet those demands, according to its historical account.
 
-Penn Central's bankruptcy in June 1970 disrupted the U.S. commercial paper market. Federal Reserve History describes how issuers turned toward banks for funding and how the central bank supported the banking system's ability to meet those demands. The case joins a railroad's deteriorating position to the behavior of a much wider short-term credit market.
+Each note was short. The need for financing could persist much longer. An issuer meeting continuing commitments through successive notes relied on buyers remaining willing to replace the debt whenever the current promise fell due.
 
 Commercial paper is unsecured debt. Its promise depends on the issuer's capacity to repay, rather than a specific asset pledged to each holder. A short maturity limits the duration of one contract. It does not necessarily limit the duration of the borrower's underlying need for money.
 
@@ -45,7 +64,7 @@ Commercial paper is unsecured debt. Its promise depends on the issuer's capacity
 
 Imagine a business whose commitments last much longer than its borrowing. When a note matures, the business may plan to issue another. Each individual note can be brief while the chain of replacement financing becomes essential to ordinary operation.
 
-That is a conceptual explanation of refinancing risk, not a reconstruction of every Penn Central transaction. It helps explain why confidence can matter suddenly. If buyers stop accepting new paper, the borrower has to find another source of funds even if much of its business continues to exist in physical form.
+If new buyers disappear, the borrower must obtain replacement funding. That is refinancing risk: the business may still possess substantial assets while lacking cash for the next due date.
 
 A railroad is an especially concrete reminder of that difference. Tracks and equipment do not turn instantly into the cash needed to meet a due date. The existence of valuable assets does not settle the timing of payment.
 
@@ -53,6 +72,12 @@ A railroad is an especially concrete reminder of that difference. Tracks and equ
 
 When an issuer fails, investors may reconsider not only that name but the assumptions used to assess similar promises. A product previously treated as routine begins to require a closer look. The resulting disruption can reach borrowers whose circumstances are different from the original failure.
 
-This is why the official response deserves precise description. Supporting the availability of bank funding is not identical to rescuing every issuer, and a market intervention does not prove that each private risk assessment was sound. The mechanism and the beneficiaries need to be named rather than hidden inside a broad word such as bailout.
+The response supported banks facing new credit demands. It must be distinguished from a direct rescue loan to the failed railroad.
 
-Penn Central's episode remains useful as history because it separates three ideas that are easily collapsed: the maturity of a contract, the condition of its issuer and the market's willingness to renew funding. A promise can be due soon and still rest on a long chain of expectations. The shortness of the paper is not the shortness of the risk.
+## Keeping credit moving
+
+The Federal Reserve's historical account describes a response directed at the surrounding credit market. Banks were reminded that the discount window was available, and a partial relaxation of Regulation Q enabled them to compete for some large certificates of deposit. Direct lending to nonbank borrowers was considered but was not undertaken. That distinction matters: support for banks facing demands for credit was different from a loan rescuing Penn Central itself.
+
+Other issuers could reach for bank credit at the same time even though they were separate from Penn Central. A single bankruptcy could therefore expose a funding problem in the surrounding market.
+
+A note could mature quickly while the financing it supplied remained essential. Penn Central's failure disturbed the market willing to renew those promises. Short maturity limited one contract's life; it did not remove the dependence on the next buyer.

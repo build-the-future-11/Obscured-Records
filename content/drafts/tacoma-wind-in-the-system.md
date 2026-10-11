@@ -5,41 +5,57 @@
   "dek": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Science",
   "tags": [
     "bridges",
     "wind",
     "engineering"
   ],
-  "description": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
-  "socialPreview": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
+  "description": "The Tacoma Narrows footage shows motion; understanding the failure requires explaining the bridge and wind together.",
+  "socialPreview": "The Tacoma Narrows footage shows motion; understanding the failure requires explaining the bridge and wind together.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Washington State Department of Transportation: Lessons from failure",
+      "title": "WSDOT, Tacoma Narrows Bridge: Lessons from failure",
       "url": "https://www.wsdot.wa.gov/TNBhistory/bridges-failure.htm",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "1940 collapse and the aerodynamic explanation."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Confirm flutter terminology against the cited engineering history.",
-    "Source any wind speed or numerical structural parameter before inclusion."
+    "Source any wind speed or numerical structural parameter before inclusion.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Tacoma Narrows and the Bridge Wind System",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[WSDOT, Tacoma Narrows Bridge: Lessons from failure](https://www.wsdot.wa.gov/TNBhistory/bridges-failure.htm), especially “torsional flutter.” Checked 2 October 2026. Supports collapse on 7 November 1940 and the source's explanation of wind-motion interaction. The swing comparison is editorial explanation. The manuscript avoids identifying simple externally forced resonance as the complete cause, but does not claim to supply a full mathematical or historiographical treatment.\n\nThe general arguments about responsibility, evidence and system boundaries are editorial analysis. This package contains no original interviews or independently acquired datasets.",
+  "reviewPage": "https://chatgpt.com/space/page_d9e5d79ac298819187800a8afd4c3dbc",
+  "relatedDrafts": [
+    "hyatt-load-path",
+    "ariane-reused-assumptions"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.061Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-The film is so persuasive that an explanation can seem almost unnecessary. A bridge twists, its deck deforms, and the structure comes apart. The moving image tells us that something failed. It does not, by itself, identify the mechanism.
+The Tacoma Narrows Bridge's deck twisted as the bridge collapsed in November 1940. Washington State's transportation history identifies the principal failure mechanism as torsional flutter: an instability sustained by the interaction between the deck's motion and aerodynamic forces.
 
-The Tacoma Narrows Bridge collapsed in November 1940. Washington State's transportation history discusses the aerodynamic lessons of the failure, including the interaction of the wind with the bridge's motion. Its treatment is a useful corrective to retellings that attach the word resonance and consider the matter settled.
-
-A word can identify a phenomenon, but it cannot replace an explanation of which forces act, how they change with movement and where energy enters the system. The bridge is not simply a passive object struck by an independent sequence of pushes. Its shape and motion help determine the aerodynamic forces it experiences.
+The film shows the twisting deck. It cannot, by itself, explain why the movement grew. That requires following the interaction: the wind moved the bridge, the moving bridge altered the airflow, and the changed forces acted on the deck again.
 
 ### The moving boundary
 
@@ -47,12 +63,22 @@ The conceptual shift is to consider a coupled system. Air moves around the struc
 
 It also shows why a spectacular video can be both valuable and misleading. The video preserves motion. Viewers supply a story about what caused it, often borrowing an analogy they already know. A familiar analogy makes an explanation memorable, but its familiarity does not establish that it is physically adequate.
 
-The responsible alternative is not to make the account inaccessible. It is to explain where an analogy helps and where it stops. A reader does not need every equation to understand that forces can depend on the motion they are helping to produce.
+A reader can follow the feedback without a complete mathematical model: motion changes airflow, airflow changes force and the resulting force can amplify motion.
+
+### Two ways for motion to grow
+
+WSDOT identifies the principal failure mechanism as torsional flutter. Torsion means twisting; flutter here concerns an instability sustained through the interaction of motion and aerodynamic forces. In the account, vertical movement gave way to twisting, and the motion of the deck altered the forces acting on it.
+
+Compare that with the familiar image of pushing a swing. The swing analogy focuses on an external push delivered at a favorable time. It can help a reader imagine growing motion, but it leaves the pushing agent separate from the moving object. In an aeroelastic system, changing the object's motion changes the aerodynamic interaction itself. That distinction is why simply naming resonance can obscure the explanation.
+
+The source's historical discussion is not a complete mathematical model of the bridge. Its vocabulary nevertheless points to the right object of analysis: a deck moving within a flow, with resistance to twisting and capacity to dissipate energy. A still photograph cannot show those relationships. Even a film needs interpretation to identify them.
+
+A schematic can distinguish vertical displacement from deck rotation, but it cannot turn the footage into a measurement of aerodynamic forces.
 
 ### What failure teaches a profession
 
 A failed structure offers evidence that a design process did not capture something important. It does not automatically reveal what every engineer should have known before construction. That question needs contemporary knowledge, design assumptions and the evidence available at the time.
 
-Keeping that distinction makes professional learning more demanding. If history becomes a parade of obvious blunders, present practitioners can assume that expertise has put them safely beyond it. If history examines the limits of a once-plausible model, it asks a harder question about the limits of today's models.
+The failure exposes a limit in the model used to understand a structure. Assessing what engineers could have known beforehand requires the contemporary design record and technical knowledge.
 
-The final image should therefore not be the collapsing deck alone. Put beside it the conceptual change: from treating wind as a load applied to a fixed form toward examining the behavior of the interacting system. The exact development of that change deserves its own historical evidence. The broader lesson is already clear enough: an elegant name for a failure is not the same thing as understanding what moved it.
+The decisive relationship was between a moving deck and the air flowing around it. Torsional flutter names that interaction. It explains more than an image of wind pushing against a stationary structure can.

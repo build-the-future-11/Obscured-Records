@@ -54,7 +54,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const topics = getTopics().filter((topic) => article.tags.includes(topic.tag));
   const catalog = getCatalog();
   const schema = {
-    "@context": "https://schema.org", "@type": feature ? "NewsArticle" : "Article",
+    "@context": "https://schema.org", "@type": "Article",
+    articleSection: article.section, inLanguage: "en",
     headline: article.title, description: article.excerpt,
     datePublished: toIsoEditorialDate(article.date), dateModified: toIsoEditorialDate(updated),
     mainEntityOfPage: absoluteUrl(`/article/${article.slug}`),

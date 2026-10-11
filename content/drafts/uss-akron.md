@@ -1,65 +1,79 @@
 ---
 {
   "slug": "uss-akron",
-  "title": "USS Akron: The 1933 Airship Loss and the Rescue at Sea",
-  "dek": "Seventy-three people died when the Navy airship crashed off New Jersey. The rigid-airship program continued with USS Macon.",
+  "title": "USS Akron and the Limits of a Flying Carrier",
+  "dek": "USS Akron combined a naval airship with the ambition of carrying aircraft. Its loss and surviving artifacts document parts of that history, but a collection record cannot supply a complete account of the final flight or rescue.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Technology",
   "tags": [
     "airships",
     "navy"
   ],
-  "description": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
-  "socialPreview": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
+  "description": "USS Akron’s flying-carrier role and loss, with artifact provenance distinguished from the missing evidence needed to explain the final flight.",
+  "socialPreview": "USS Akron’s flying-carrier role and loss, with artifact provenance distinguished from the missing evidence needed to explain the final flight.",
   "readingTime": "2 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "U.S. Naval History and Heritage Command",
-      "url": "https://www.history.navy.mil/content/history/museums/nmusn/pamphlets/uss-akron-zrs-4.html",
-      "status": "inherited-unverified",
-      "checkedAt": "2026-09-27",
-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
-    },
-    {
-      "title": "Naval History and Heritage Command — Akron and Macon",
-      "url": "https://www.history.navy.mil/content/history/nhhc/news-and-events/news/2021/nhm-062221.html",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
+      "title": "Smithsonian collection record for Curtiss F9C-2 Sparrowhawk",
+      "url": "https://collections.si.edu/search/detail/edanmdm:nasm_A19410007000",
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify the claim that most aboard survived impact.",
-    "Check the claim that the loss ended naval rigid-airship plans; scope it carefully."
+    "Check the claim that the loss ended naval rigid-airship plans; scope it carefully.",
+    "Read the naval inquiry before expanding final-flight or rescue explanations; preserve the collection record’s distinction between original and composite artifacts.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
   "approvedAt": null,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-02",
   "editNotes": [
     "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ],
+  "seoTitle": "USS Akron and the Limits of a Flying Carrier",
+  "reviewSourceNotes": "[Smithsonian collection record for Curtiss F9C-2 Sparrowhawk](https://collections.si.edu/search/detail/edanmdm:nasm_A19410007000). Checked 2 October 2026. Supports carrier concept, artifact provenance and basic airship loss dates. Unverified claims about life-saving equipment and rescue were removed. No full Akron accident inquiry inspected.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_d178748fb4ec819190138bc560c882d5",
+  "relatedDrafts": [
+    "ss-eastland",
+    "ethiopian-airlines-961"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.064Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
   ]
 }
 ---
 
+Akron carried the ambition of a flying aircraft carrier into the Navy's reconnaissance program. The rigid airship was lost in a storm on 4 April 1933, killing 73 personnel. A surviving Sparrowhawk in the Smithsonian's collection preserves part of the carrier concept through its hook-and-trapeze equipment.
 
-The U.S. Navy airship Akron entered severe weather off New Jersey, descended uncontrollably and struck the Atlantic. Seventy-three of the 76 people aboard died.
+The museum record describes the Sparrowhawk's reconstruction from parts. Its hook-and-trapeze equipment illustrates how the carrier concept was intended to work. The object is neither an untouched record of one flight nor a substitute for an operational inquiry into the airship's loss.
 
-The airship carried no life jackets for most crew and no life rafts. A German merchant ship rescued the three survivors. The loss remains the deadliest airship accident in history by lives lost.
-
-## After the impact
+## The programme and the accident
 
 An accident's first violent event does not necessarily account for every death. Survival can depend on what happens after the structure has failed: the environment people enter, the equipment available and the time before they can be reached.
 
-The naval history linked here offers an official account of Akron's loss. Any statement about how many people survived the initial impact requires particular care. A final death toll does not reveal the sequence by which each person died, and later inference should not be presented as direct observation.
+The loss is established in the collection's program history. The sequence of impact, survival and rescue requires operational records beyond a final casualty total.
 
 The same discipline applies to the claim that one disaster ended a technological idea. Institutions may continue, revise or abandon a program for several reasons. A dramatic loss can be influential without serving as the single cause of a later decision. Program history needs its own records beyond the accident account.
 
-Akron also invites comparison with the Hindenburg because one event is much more familiar in popular memory. The contrast is useful if it asks how photographs, film and repeated retellings shape attention. It is less useful if it becomes a competition between casualty totals, as though the larger number automatically deserves a simpler story.
+An accident record needs to follow what happened after flight ended, as well as what caused the structure to fail. The museum account cannot supply that sequence; the distinction identifies the additional evidence needed.
 
-The practical question running through the record is what a system assumes about survivability after failure. An airship is designed to fly, but its safety case also has to consider the conditions people may face when flight ends unexpectedly. That second environment can govern the outcome. A careful account follows the transition from one to the other without allowing the spectacular destruction of the vehicle to stand in for the entire human event.
+## An artifact with its own history
 
-Akron’s loss did not immediately end the Navy’s rigid-airship program: Macon entered service later in 1933. The Navy’s history identifies Macon’s subsequent loss as the end of those operations. The accident and the program’s end should not be collapsed into one event.
+The Smithsonian collection record concerns a Sparrowhawk associated with the airship-carrier programme. It describes the hook-and-trapeze arrangement used to release and recover aircraft, making a surviving museum object a route into the operational idea. It also records the displayed aircraft's reconstruction from parts. A museum object can preserve an important design without being an untouched survivor of one particular flight.
+
+The artifact explains the release-and-recovery concept. Akron's final weather, command decisions and rescue sequence need separate records. Neither the object nor its display history can carry those claims.
+
+Akron's loss did not immediately end the experiment. The Smithsonian record dates Macon's later loss to February 1935. The surviving aircraft preserves a design idea whose program history extended beyond the first airship's final storm.

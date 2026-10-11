@@ -5,47 +5,73 @@
   "dek": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Technology",
   "tags": [
     "software",
     "time",
     "defense"
   ],
-  "description": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
-  "socialPreview": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
+  "description": "The Dhahran Patriot failure shows why elapsed runtime, numerical precision and the arrival of a software fix belong in the same record.",
+  "socialPreview": "The Dhahran Patriot failure shows why elapsed runtime, numerical precision and the arrival of a software fix belong in the same record.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "U.S. GAO: Patriot Missile Defense, IMTEC-92-26",
-      "url": "https://www.gao.gov/products/imtec-92-26",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "Tracking error accumulated with operating time; patch arrived after the attack."
+      "title": "GAO IMTEC 92 26",
+      "url": "https://www.gao.gov/assets/imtec-92-26.pdf",
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Read technical appendix before including numerical drift calculations.",
-    "Do not generalize this failure into an unsupported overall effectiveness estimate."
+    "Do not generalize this failure into an unsupported overall effectiveness estimate.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Dhahran Patriot Failure and Elapsed Runtime",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[GAO IMTEC 92 26](https://www.gao.gov/assets/imtec-92-26.pdf) was examined on 2 October 2026. Locator and limits: Printed pages 1, 5–6 and the deployment chronology. The essay concerns the Dhahran incident, not overall Patriot effectiveness. No exact error distance is introduced.\n\nThe historical claims above are attributed to the linked record. The institutional and explanatory conclusions are Obscured Records analysis. The record supports the bounded historical account; it does not establish private motives or every proposed counterfactual. No interviews, original field reporting, human approval or visual licence clearance are claimed.\n\n**Completed:** factual dates and numerical claims checked within the stated scope; interpretation distinguished; no invented quotation; no unsupported current-status assertion; copy pass; source links; metadata; visual specification.\n\n**Final human review:** accept or revise the argument and attribution; assign the real author/editor; clear any externally sourced image before use; approve the website release. The current state remains editing until that review occurs.",
+  "reviewPage": "https://chatgpt.com/space/page_0129c35c97b081919bf794903c9a833b",
+  "relatedDrafts": [
+    "mars-climate-orbiter-interface",
+    "ariane-reused-assumptions"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.058Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-How long has it been running? For a computer, that can sound like a maintenance question. In a system that predicts the position of a fast-moving object, it can also be a question about whether the prediction still means what its operators think it means.
+The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to intercept a missile on 25 February 1991. The missile struck a barracks and killed 28 Americans. A General Accounting Office investigation linked the missed interception to a timing calculation whose error grew with continuous operation.
 
-The U.S. General Accounting Office investigated the Patriot battery's failure at Dhahran on 25 February 1991. Its report linked the missed interception to a software timing problem that worsened with continuous operation. The incoming missile struck a barracks and killed 28 Americans. GAO also recorded that corrected software reached Dhahran after the attack. These findings concern a specific system failure; they are not a complete verdict on every Patriot engagement.
+A corrected version of the software reached Dhahran after the attack. The failure had developed inside a calculation, but preventing it also depended on getting a working correction into the battery. A release of new code and its installation on a deployed system were separate events.
+
+## Where the clock met the target
+
+GAO's report describes a clock recorded in tenths of seconds. Converting its integer count into a real-number time value lost precision in the system's limited registers. The effect on the tracking calculation increased with operating duration and target velocity. At Dhahran the battery had run continuously for more than 100 hours. Its predicted search region no longer aligned adequately with the incoming missile. [GAO report, printed pages 1 and 5–6](https://www.gao.gov/assets/imtec-92-26.pdf).
+
+The important distinction is between the stored count and the conversion used to interpret it. A larger count need not be corrupted to produce a worse physical prediction. An approximation applied to that count can become consequential as the operating interval grows. Describing the problem simply as a clock that drifted hides the calculation in which time acquired its error.
+
+A test establishes behavior over the interval examined. Running the same executable for much longer changes an input to its calculations, even when no code has changed.
 
 ### Duration is an input
 
-We tend to picture software inputs as things entered through a keyboard or delivered by a sensor. Time in service belongs on that list too. A small numerical approximation can become significant when repeatedly carried forward. Testing a short operation and observing success does not establish that the same implementation behaves acceptably after a much longer interval.
+We tend to picture software inputs as things entered through a keyboard or delivered by a sensor. Time in service belongs on that list too. The effect of a small conversion error can become significant when it is applied to a larger elapsed-time count. Testing a short operation and observing success does not establish that the same implementation behaves acceptably after a much longer interval.
 
-This is not the mystical claim that computers grow tired. It is a question of representation and accumulation. A machine stores values in a particular form. The form has limits, and the relationship between those limits and a physical task has to be assessed across the intended operating envelope.
+Limited numerical representation, rather than a corrupted clock count, was the issue. The conversion's precision had to be adequate across the intended duration of operation.
 
-The operational envelope is itself an institutional object. Engineers may assume one pattern of use while operators need another. If a system is deployed under changed conditions, the original assurance does not automatically travel with it. Someone has to ask which assumptions remain valid and what evidence would show that they no longer do.
+Engineers and operators can work with different assumptions about duration. Deployment under a longer operating interval requires evidence that the original calculations remain adequate.
 
 ### The day a fix arrives
 
@@ -53,4 +79,4 @@ A patch has at least two histories. One concerns its design and verification. Th
 
 The Dhahran record is therefore useful without converting it into a universal instruction to restart equipment or install updates immediately. Those actions have their own operational risks. The responsible lesson is narrower: maintenance advice, operating limits and software changes must reach the people making time-sensitive decisions in a form they can act on.
 
-The last question is about the evidence left afterward. Can a reviewer determine what version was running, for how long, under which conditions and with which warnings available? Without that record, the difference between an engineering fix and an implemented protection can vanish. Elapsed time belongs not only in the calculation but also in the account of responsibility.
+At Dhahran, the calculation accumulated error while the battery kept running. The correction existed, but arrived after the attack. Its release date could not tell operators whether their system was protected.

@@ -2,57 +2,80 @@
 {
   "slug": "ethiopian-airlines-961",
   "title": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching",
-  "dek": "The hijacked Boeing 767 ran out of fuel near the Comoros on 23 November 1996. Fifty of the 175 people aboard survived.",
+  "dek": "Ethiopian Airlines 961 connects a hijacking demand to a physical limit: the fuel available for the flight. The investigation records the resulting ditching while leaving limits on what can be reconstructed about the final moments.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "World",
   "tags": [
     "aviation",
     "survival"
   ],
-  "description": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
-  "socialPreview": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
-  "readingTime": "2 min",
+  "description": "The hijacking, fuel exhaustion and ditching of Ethiopian Airlines 961, explained within the limits of the investigation and surviving evidence.",
+  "socialPreview": "The hijacking, fuel exhaustion and ditching of Ethiopian Airlines 961, explained within the limits of the investigation and surviving evidence.",
+  "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Aviation Safety Network accident record",
-      "url": "https://aviation-safety.net/asndb/324317",
-      "status": "inherited-unverified",
-      "checkedAt": "2026-09-27",
-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+      "title": "Ethiopian Civil Aviation Authority investigation into Flight 961",
+      "url": "https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf",
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Retrieve the accident investigation beyond the database summary.",
-    "Check survivor and casualty counts and avoid unsourced safety advice."
+    "Check survivor and casualty counts and avoid unsourced safety advice.",
+    "Verify cockpit exchanges and passenger announcements against the investigation and identified testimony; retain the recording limits and avoid unsupported passenger blame.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
   "approvedAt": null,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-02",
   "editNotes": [
     "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ],
+  "seoTitle": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching",
+  "reviewSourceNotes": "[Ethiopian Civil Aviation Authority investigation into Flight 961](https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf). Checked 2 October 2026. Full investigation hosted by an aviation-report repository. Supports hijacking, fuel exhaustion and communication findings. Recorder coverage did not extend through impact; testimony has limits. No blame assigned solely to passengers.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_5246c5dbfdd48191a658e04a7af96c9f",
+  "relatedDrafts": [
+    "air-france-8969",
+    "uss-akron"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.062Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
   ]
 }
 ---
 
+The Boeing 767 carrying Ethiopian Airlines Flight 961 exhausted its fuel and ditched near the Comoros on 23 November 1996. Of 175 people aboard, 125 died and 50 survived. Three hijackers had demanded Australia despite the crew's warnings about fuel.
 
-Three men seized Ethiopian Airlines Flight 961 after takeoff from Addis Ababa and demanded Australia. Captain Leul Abate told them the Boeing 767 did not carry enough fuel. They insisted the aircraft continue over the Indian Ocean.
-
-After both engines flamed out near the Comoros, Abate attempted to ditch close to shore while fighting the hijackers at the controls. A wing struck the water and the fuselage broke apart. Fifty people survived; 125 did not. Investigators noted that inflated life vests trapped some passengers inside the sinking cabin.
+The investigating committee attributed the accident to unlawful interference leading to fuel exhaustion. The hijackers' destination demand exceeded the aircraft's remaining capability. Coercion also obstructed the crew's attempts to manage the emergency as the fuel available for any response continued to diminish.
 
 ## Fuel does not negotiate
 
 A demand made aboard an aircraft does not change what the aircraft can physically do. Range depends on fuel, conditions and the aircraft's state, not on the urgency or confidence of the person giving an order. That mismatch is central to understanding this event.
 
-It would be easy to reduce the story to irrational captors and expert pilots. The more useful account describes the constraint itself: what information was available about remaining fuel, how that information was communicated and what options remained as the flight continued. Where the evidence does not establish an exchange, the writer should resist supplying dialogue that seems plausible.
+Fuel warnings needed to reach people who could change the aircraft's course. The report records interference continuing as the available options narrowed; unrecorded exchanges cannot be reconstructed from what later appeared inevitable.
 
 A ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. The behavior of an aircraft on contact with water depends on many factors. Images of the outcome do not establish what would have happened under a different approach or at another location.
 
 Passenger actions deserve the same care. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence. The people aboard were acting with less information and less time than a later reader possesses.
 
-The aviation occurrence record is a starting point for these distinctions. A fuller treatment would compare it with an investigation report and attributable survivor accounts. Keeping those sources separate allows an account to retain both the physical limits of the flight and the human uncertainty inside it. Neither needs embellishment to explain why the event matters.
+## Communication inside a damaged situation
 
-The record brings together coercion in the cockpit, fuel limits and evacuation after a water landing. The widely circulated film shows the impact; it cannot establish what every passenger or crew member experienced inside the aircraft.
+The report describes cabin crew and the first officer helping passengers with life jackets before impact. It also notes that instructions were given in English and may not have been understood by everyone. Communication was taking place amid interference, limited access and a deteriorating emergency.
+
+A statement appearing in the final investigation does not establish that everyone in the cabin heard or understood it. The completed sequence available to a later reader was unavailable to people acting inside it.
+
+The committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. It should not take selected observations and turn them into an individual explanation for every death.
+
+The demand did not increase the fuel aboard. Interference narrowed the crew's choices as that fuel ran out. The film shows the ditching; the investigation supplies the cockpit and cabin evidence needed to explain the conditions that preceded it.

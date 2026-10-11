@@ -5,41 +5,59 @@
   "dek": "Seveso makes the surrounding community part of the industrial safety record.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "World",
   "tags": [
     "italy",
     "chemical safety",
     "communities"
   ],
-  "description": "Seveso makes the surrounding community part of the industrial safety record.",
-  "socialPreview": "Seveso makes the surrounding community part of the industrial safety record.",
+  "description": "The Seveso release crossed the factory fence and exposed the difference between process control and community protection.",
+  "socialPreview": "The Seveso release crossed the factory fence and exposed the difference between process control and community protection.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "Health and Safety Executive: Icmesa, Seveso, 10 July 1976",
+      "title": "HSE, Icmesa chemical company, Seveso, Italy, 10 July 1976",
       "url": "https://www.hse.gov.uk/comah/sragtech/caseseveso76.htm",
-      "status": "located",
-      "checkedAt": "2026-09-27",
-      "supports": "Chemical release and contamination beyond the site."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Check the evacuation chronology and health findings before adding numbers.",
-    "Separate the original accident from subsequent legislative history."
+    "Separate the original accident from subsequent legislative history.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Seveso and Community Exposure Beyond the Factory",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[HSE, Icmesa chemical company, Seveso, Italy, 10 July 1976](https://www.hse.gov.uk/comah/sragtech/caseseveso76.htm), “Accident summary” and “Failings in technical measures.” Checked 2 October 2026. Supports the date, approximate time, bursting disc rupture, offsite TCDD-containing cloud, approximate duration and communication problem. The relief-device discussion is an analytical principle; it does not assert an independently reconstructed vent-design analysis. No plume map, exposure dose or long-term health result is inferred.\n\nThe general arguments about responsibility, evidence and system boundaries are editorial analysis. This package contains no original interviews or independently acquired datasets.",
+  "reviewPage": "https://chatgpt.com/space/page_4c4024be7ab48191a694168117e2d9cb",
+  "relatedDrafts": [
+    "bhopal-where-the-shift-ends",
+    "love-canal-home-as-evidence"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.061Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-A factory fence answers a question about access. It marks where an operator's property or control begins. It does not tell a cloud of released material where to stop.
+A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. A cloud containing TCDD escaped for about twenty minutes, according to HSE's case history. Confusion followed as the company and authorities failed to communicate adequately.
 
-On 10 July 1976, a chemical release at the Icmesa plant near Seveso, Italy, contaminated the surrounding area with dioxin. HSE's case history describes the accident and deficiencies in the technical measures intended to prevent or contain it. The event's basic geography is essential: consequences extended into places whose residents were not participating in the industrial process.
+The cloud escaped for a limited period. The need for information lasted longer. Residents and responders required an account of what had been released and where it had travelled, even after the plant had stopped emitting it.
 
-There are at least three different boundaries in such a case. The property boundary defines ownership. The process boundary defines the machinery under examination. The exposure boundary concerns where harmful material may reach people, animals and land. An investigation becomes misleading if it uses the first two as substitutes for the third.
+Ownership, equipment and exposure describe different boundaries. The fence marked control of the site; it could not contain the consequences of the release.
 
 ### Knowing enough to act
 
@@ -47,12 +65,22 @@ After a release, information has several jobs. Operators need to understand the 
 
 Those needs are related but not identical. A technically accurate description can still be useless to someone deciding whether a child should play outside. Conversely, a simple instruction can conceal the uncertainty that should govern its duration or revision. Communication is part of the response, not a translation task postponed until the technical work is over.
 
-This is also why the time at which information became available matters. It would be unfair to judge an early decision by evidence that did not yet exist. It would be equally misleading to let an organization use uncertainty as an indefinite reason not to disclose what it already knew. A chronology should separate detection, interpretation, communication and action.
+The response chronology needs to distinguish when information was detected, interpreted, shared and acted on. Decisions must be judged against the evidence available at their time.
+
+### A release has an information trail
+
+HSE describes a reactor's bursting disc rupturing around 12:37 on 10 July. A visible cloud left the plant, carrying TCDD among its constituents. The case history states that the release lasted about twenty minutes and that confusion followed because communication between the company and authorities was inadequate.
+
+These details establish two different intervals. One concerns material leaving the process. The other concerns institutions acquiring and sharing a usable understanding of what had happened. Ending the first interval does not automatically end the second. A cloud can stop emerging while questions about where it went and what it contained remain urgent.
+
+The distinction also changes how a technical safeguard is evaluated. Relieving pressure can protect a vessel while directing its contents somewhere else. The safety question must follow that route to its destination. A device cannot be judged solely by whether the equipment immediately around it survives.
+
+HSE's account establishes an offsite release accompanied by inadequate communication. Residents' instructions, their timing and their reception require separate response records and testimony.
 
 ### A place has more than one recovery date
 
 Industrial narratives often favor restart dates. A community may measure recovery through other events: returning home, regaining access to land, receiving an explanation or knowing how future health questions will be followed. There is no reason to assume that these calendars coincide.
 
-An archival account should therefore avoid letting the end of an emergency operation become the end of the story. At the same time, claims about long-term health effects need specific studies and carefully defined populations. Concern is real evidence of experience; it is not by itself a quantitative exposure assessment.
+Long-term health claims require studies with defined populations. Community accounts can establish experience and concern without serving as quantitative exposure measurements.
 
-Seveso is a useful place to ask who belongs inside an industrial safety case. The answer cannot be limited to employees and equipment. If consequences can travel, the people beyond the fence belong in the planning, the information system and the retained record. Their distance from the process does not make their exposure incidental.
+The fence marked the edge of the property, not the edge of the emergency. A release capable of reaching neighboring residents required planning and communication that reached them too.

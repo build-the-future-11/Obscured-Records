@@ -5,51 +5,66 @@
   "dek": "Mars Climate Orbiter was lost after an interface delivered pound-force seconds where navigation software expected Newton-seconds. The deeper failure was that the mismatch survived the systems built to catch it.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Technology",
   "tags": [
     "space",
     "software",
-    "measurement",
-    "systems engineering"
+    "measurement"
   ],
   "description": "A source-led reconstruction of the Mars Climate Orbiter unit mismatch and the verification, communication and interface failures documented by NASA's mishap board.",
-  "socialPreview": "Mars Climate Orbiter is remembered as a metric-versus-imperial mistake. NASA's mishap report describes a larger systems failure: the wrong units crossed an interface and the process failed to stop them.",
-  "readingTime": "5 min",
+  "socialPreview": "A source-led reconstruction of the Mars Climate Orbiter unit mismatch and the verification, communication and interface failures documented by NASA's mishap board.",
+  "readingTime": "4 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "NASA Science: Mars Climate Orbiter",
-      "url": "https://science.nasa.gov/mission/mars-climate-orbiter/",
-      "status": "located",
-      "checkedAt": "2026-09-29",
-      "supports": "Mission purpose, 23 September 1999 loss, and NASA's current summary of the English-unit/metric-unit navigation error."
-    },
-    {
-      "title": "Mars Climate Orbiter Mishap Investigation Board — Phase I Report",
+      "title": "NASA MCO Mishap Investigation Board Phase I report",
       "url": "https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf",
-      "status": "located",
-      "checkedAt": "2026-09-29",
-      "supports": "Root cause, Newton-second versus pound-force-second interface mismatch, factor-of-4.45 trajectory underestimation, lower-than-planned trajectory, contributing causes, and verification/validation findings."
+      "status": "source-pass-complete",
+      "checkedAt": "2026-10-02",
+      "supports": "Scoped agency findings identified in the linked review Page; human line-by-line approval remains open"
     }
   ],
   "reviewChecklist": [
-    "Human editor: verify each causal statement against the Phase I report rather than relying on the shorter NASA mission summary.",
-    "Decide whether to use the mishap board's cautious loss language or NASA Science's later 'burned up' summary, and keep the wording consistent.",
-    "Keep general engineering lessons explicitly framed as analysis rather than as NASA findings.",
-    "Confirm rights and credit before using any NASA/JPL mission image."
+    "Compare interface details with the Phase I mishap report.",
+    "Keep this analysis distinct from a complete causal investigation.",
+    "Human editor performs line-by-line claim check against the primary report.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "updatedAt": "2026-10-02",
+  "reviewPage": "https://chatgpt.com/space/page_31b5acb2fc688191b59eacb73b2dd772",
+  "relatedDrafts": [
+    "challenger-warning-and-decision",
+    "columbia-evidence-not-requested"
+  ],
+  "visual": {
+    "path": "content/review-assets/mars-climate-orbiter-interface.svg",
+    "alt": "The interface required Newton-seconds. Ground software supplied pound-force seconds, which navigation processing treated as Newton-seconds.",
+    "caption": "Original Obscured Records schematic. NASA Phase I mishap report, pp. 16–21. Not a trajectory simulation.",
+    "credit": "Obscured Records original schematic",
+    "sourceUrl": "https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf",
+    "rights": "Original diagram; no third-party photograph or logo reproduced"
+  },
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T09:27:20.449Z",
+      "reason": "Transferred source-reviewed manuscript and original diagram from the Space; human approval remains pending"
+    }
+  ],
+  "seoTitle": "Mars Climate Orbiter and the Unit Mismatch",
+  "reviewSourceNotes": "# Source review — Mars Climate Orbiter / “The Unit Was Part of the Data”\n\n**Date:** 29 September 2026  \n**Status:** source review materially advanced; human editorial approval still required.\n\n## Primary sources checked\n\n1. NASA Science, **Mars Climate Orbiter**  \n   https://science.nasa.gov/mission/mars-climate-orbiter/\n\n2. NASA Mars Climate Orbiter Mishap Investigation Board, **Phase I Report**, 10 November 1999  \n   https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf\n\n## Findings that can be stated directly from the Phase I report\n\n- The board defined the root cause as failure to use metric units in the ground “Small Forces” software file used in trajectory models.\n\n- The software interface specification required Newton-seconds; the delivered data was in pound-force seconds.\n\n- Downstream navigation processing therefore underestimated the effect of the thruster firings by a factor of 4.45.\n\n- The mismatch was in the ground software path; the report states the spacecraft-side computation used metric units.\n\n- The board reported that the trajectory at Mars insertion was approximately 170 km lower than planned; an after-the-fact reconstruction gave an initial periapsis of about 57 km.\n\n- The board listed eight contributing causes, including communication, staffing, training, systems transition and verification/validation shortcomings.\n\n- The report says the Software Interface Specification was not properly used in development/testing and that end-to-end testing of the small-forces ground software against the specification did not appear to have been accomplished.\n\n- The report describes earlier file-format/content problems and says anomalous data indicating underestimated trajectory perturbations became apparent after the files began being used.\n\n## Editorial consequence\n\nThe original draft was directionally correct but too compressed. It risked making the unit mismatch sound like the complete explanation. The revised draft distinguishes:\n\n- **root cause as defined by the board**;\n\n- **documented contributing causes**;\n\n- **Obscured Records analysis** about interface contracts and engineering safeguards.\n\nThis distinction should remain visible in the final article.\n\n## Wording caution\n\nNASA's current mission page says an investigation found that the spacecraft “burned up in Mars' atmosphere.” The contemporaneous Phase I report was more cautious, stating that the spacecraft either was destroyed in the atmosphere or re-entered heliocentric space after leaving the atmosphere. A human editor should choose one formulation and make the source/time distinction explicit if necessary.\n\n## Remaining review\n\n- [ ] Human editor performs line-by-line claim check against the primary report.\n\n- [ ] Human editor confirms the exact loss wording.\n\n- [ ] Any NASA/JPL visual receives explicit rights/credit review.\n\n- [ ] Final title/dek checked for overstatement.\n\n- [ ] Final copy checked for language that turns general engineering analysis into a NASA finding.\n\n- [ ] Author/reviewer identity assigned before approval.\n\n## 2 October verification\n\nPrimary source reopened today; core premise checked against the original agency record. The previously recorded source review is retained above. Full chronology, every secondary detail, named reviewer and visual credit are still approval gates. No fabricated interview or original-reporting claim.\n\n**Visual specification:** 1200×675 SVG, cream background, dark labels, two parallel paths. Top: “Required: N·s” → “Navigation model”. Bottom: “Delivered: lbf·s” → “Read as N·s”. An annotation marks “Conversion factor ≈4.45”, never “4.45× more damage”. Accessible text: “Ground software supplied pound-force seconds where navigation software expected Newton-seconds.” Credit NASA Phase I pp. 15–18; diagram is Obscured Records’ schematic, not a spacecraft image."
 }
 ---
 
-A number can be numerically precise and still be wrong for the system that receives it. The value needs a quantity, a unit, a reference and a shared interpretation. Mars Climate Orbiter is remembered because one of those agreements failed at exactly the wrong boundary.
+NASA lost contact with Mars Climate Orbiter on 23 September 1999. Ground software had supplied thruster data in pound-force seconds to navigation software expecting Newton-seconds. The mismatch understated the modeled effect of the firings by a factor of 4.45.
 
-NASA lost contact with the spacecraft on 23 September 1999 as it arrived at Mars. The shorthand version of the story is familiar: one team used English units while another expected metric units. That summary is true, but the agency's own mishap report is more specific and more useful.
-
-The failure crossed a software interface.
+NASA's [Phase I mishap report](https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf) traced the loss to the unit mismatch and to the failures in testing, communication and operations that let it persist. Investigators could not settle the spacecraft's final fate. It may have burned up in the atmosphere or entered heliocentric space; contact was never recovered.
 
 ## What the interface was supposed to mean
 
@@ -61,11 +76,9 @@ They were delivered in pound-force seconds.
 
 The navigation software then treated those values as if they already satisfied the metric specification. NASA's mishap board reported that the effect of the thruster firings was therefore underestimated by a factor of 4.45. The board identified this failure to use metric units in the ground software file as the mission's root cause.
 
-That description matters because it changes the lesson. The problem was not simply that two measurement systems existed. The problem was that a defined interface said one thing, an implementation produced another, and downstream software accepted the data without the discrepancy being stopped.
+The interface specification was explicit. The implementation produced different units, and the receiving software accepted them. The conversion error became a mission failure because the checks between those steps did not expose it.
 
 ## The mismatch survived for months
-
-The report also complicates the idea of a single, isolated mistake.
 
 The small-forces files had earlier format and spacecraft-attitude problems. For the first four months of cruise, the navigation team did not use them in orbit determination. When correctly formatted files began to be used, the report says anomalous data indicating underestimated trajectory perturbations became apparent within about a week.
 
@@ -73,7 +86,7 @@ The anomaly still did not lead to the unit mismatch being identified before Mars
 
 By the time the loss was reconstructed, the board estimated that the trajectory at insertion was roughly 170 kilometers lower than planned. A later navigation reconstruction produced a periapsis of about 57 kilometers, a level judged too low for the spacecraft to survive.
 
-This is not a story in which the organization had no signals. It is a story in which signals, assumptions and ownership did not combine into a successful correction.
+Navigation staff had observed anomalous behavior before arrival. The organization failed to turn those observations into a diagnosis and correction in time.
 
 ## NASA's report was about more than units
 
@@ -81,9 +94,7 @@ The mishap board listed eight contributing causes in addition to the root cause.
 
 The verification section is especially direct. The board wrote that the Software Interface Specification existed but was not properly used in development and testing. It also found that end-to-end testing of the small-forces ground software against the specification did not appear to have been completed, and that interface-control verification was incomplete or insufficiently rigorous.
 
-That makes the popular metric-versus-imperial joke too small.
-
-A conversion error explains the numerical mismatch. It does not, by itself, explain why the mismatch survived a mission organization, a written interface specification, software development, testing, navigation analysis and months of operations.
+The conversion factor explains the numerical error. The board's account of development, testing and navigation explains why that error survived.
 
 ## An interface is an engineering object
 
@@ -97,10 +108,6 @@ Those are general engineering lessons, not claims that one particular safeguard 
 
 ## Why the story still matters
 
-Reducing the mission to a joke about units invites an easy conclusion: competent teams know how to convert pounds to Newtons.
+The report leaves a practical test for any organization working across technical boundaries: identify the assumptions exchanged between teams, assign responsibility for checking them and specify how an observed discrepancy reaches someone able to act.
 
-The NASA report points toward a harder question. Does an organization know where assumptions cross boundaries, who owns those boundaries, how interface requirements are verified, and what happens when observed behavior begins to disagree with the model?
-
-Mars Climate Orbiter did not fail because numbers are unreliable. It failed in part because a number crossed an interface with the wrong physical meaning and the surrounding system failed to catch the discrepancy in time.
-
-The unit was not extra information attached to the data. It was part of the data.
+The file arrived in a usable format. The numbers carried the wrong meaning. Between those two facts lay the failure of a mission.

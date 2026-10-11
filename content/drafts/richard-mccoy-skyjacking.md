@@ -2,59 +2,80 @@
 {
   "slug": "richard-mccoy-skyjacking",
   "title": "Richard McCoy’s Parachute Hijacking and the Evidence He Left",
-  "dek": "In April 1972, a ransom hijacking ended with a parachute escape and an arrest two days later.",
+  "dek": "Richard McCoy’s parachute hijacking left a recoverable trail of evidence. Reading that trail on its own terms is more useful than treating similarities to another hijacking as proof of a shared identity.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Underreported",
   "tags": [
     "aviation",
     "fbi"
   ],
-  "description": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
-  "socialPreview": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
-  "readingTime": "2 min",
+  "description": "Richard McCoy’s parachute hijacking and the evidence linking him to it, without turning similarities to the Cooper case into an identity finding.",
+  "socialPreview": "Richard McCoy’s parachute hijacking and the evidence linking him to it, without turning similarities to the Cooper case into an identity finding.",
+  "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "FBI History — Richard Floyd McCoy Jr.",
+      "title": "FBI case history of Richard Floyd McCoy Jr.",
       "url": "https://www.fbi.gov/history/cases-and-criminals/richard-floyd-mccoy-jr",
-      "status": "inherited-unverified",
-      "checkedAt": "2026-09-27",
-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Verify conviction and escape chronology with the FBI source.",
-    "Keep any D. B. Cooper theory explicitly separate from established identification."
+    "Keep any D. B. Cooper theory explicitly separate from established identification.",
+    "Check the original FBI evidence or trial exhibits; distinguish investigative clues from findings and retain the separation from the Cooper case.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
   "approvedAt": null,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-02",
   "editNotes": [
     "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ],
+  "seoTitle": "Richard McCoy’s Parachute Hijacking and the Evidence He Left",
+  "reviewSourceNotes": "[FBI case history of Richard Floyd McCoy Jr.](https://www.fbi.gov/history/cases-and-criminals/richard-floyd-mccoy-jr). Checked 2 October 2026. Supports this hijacking's evidence and outcome. Similarity to the Cooper case is not an identification. This pass did not inspect the full trial record.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_66ca99bb63d88191a7ff87bf6ca3483a",
+  "relatedDrafts": [
+    "flight-629-suitcase-bomb",
+    "yodogo-hijacking"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.063Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
   ]
 }
 ---
 
+The FBI arrested Richard Floyd McCoy two days after a ransom hijacking of United Airlines Flight 855 ended with a parachute escape over Utah. Its public history describes recovered money, fingerprints, witness information and comparison evidence linking him to the case.
 
-Richard Floyd McCoy boarded United Airlines Flight 855 carrying a fake grenade and an empty pistol. He demanded $500,000 and parachutes, then escaped through the Boeing 727’s rear stairs over Utah.
-
-The resemblance to the still-unsolved D.B. Cooper case was immediate. Unlike Cooper, McCoy left a trail: skydiving equipment, matching typewriter impressions and nearly all the ransom money. The FBI arrested him two days later.
+McCoy had demanded $500,000 and parachutes before leaving through the Boeing 727's rear stairs. The method resembled the D.B. Cooper hijacking. The fingerprints, recovered money and other evidence tied to McCoy's case cannot, by themselves, resolve the identity of an offender in a different crime.
 
 ## A resemblance is not an identification
 
 A case can acquire a second life through comparison with another, more famous crime. Similar methods invite speculation; a striking resemblance becomes a proposed identity; repetition makes the proposal feel established. The steps are not equivalent.
 
-An investigative record should separate what is documented about this hijacking from claims that connect it to another one. A shared method can support a question. It cannot answer that question without additional evidence. Even a persuasive theory needs to be distinguished from a finding accepted by the investigating authority or established in court.
+A shared method can justify an investigative question. Identifying a shared offender requires additional evidence, rather than a resemblance repeated often enough to become familiar.
 
 The FBI's public history is useful for understanding how the agency presents the case. It is a retrospective institutional account, not the full case file. A detailed article should make clear when it relies on that summary and when it has examined a contemporaneous document.
 
-This distinction does not make a public history worthless. It prevents a polished institutional narrative from being treated as if every underlying inference were independently available to the reader. Where the records are incomplete, the missing material should be described rather than replaced by a confident reconstruction.
+The FBI history is a retrospective institutional summary. It presents the agency's account without making the entire underlying case file available for independent examination.
 
-The story's attraction is partly mechanical: money, an aircraft, a parachute and an escape plan. But method should not overwhelm consequence. People were threatened, an investigation followed and claims about identity require a standard of proof. The archive is strongest when it makes room for uncertainty without turning that uncertainty into permission for an endlessly expanding legend.
+The escape method explains the comparison; the recovered evidence explains the identification. Keeping those functions separate prevents the unresolved Cooper case from displacing the established McCoy investigation.
 
-McCoy’s case shows how physical evidence and witness accounts can turn an airborne escape into an identifiable criminal case. Similarities with the Cooper hijacking are a comparison, not proof that the two men were the same person.
+## Evidence with different jobs
 
-A comparison can remain interesting without becoming a conclusion.
+The FBI's account describes several kinds of evidence in McCoy's case: handwriting comparisons, fingerprints on an airline magazine, recovered money, and witness information. These items did not answer identical questions. A fingerprint could associate a person with an object; a financial recovery could connect a search location with the ransom; a witness could describe a movement or encounter. The case depended on their relationship, rather than on an isolated clue made dramatic by hindsight.
+
+That evidence should remain separate from speculation about D.B. Cooper. Similar demands, aircraft, or escape methods can justify a comparison between crimes without establishing that they share an offender. Evidence tying McCoy to this hijacking is not automatically evidence identifying him in another one. Maintaining that boundary makes the established case more legible and prevents a famous unresolved mystery from taking over the account.
+
+The parachute escape drew attention to the resemblance. The recovered money, fingerprints and witness information gave investigators a trail specific to McCoy. His case can be explained on that evidence without turning comparison with Cooper into identification.

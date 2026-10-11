@@ -2,46 +2,63 @@
 {
   "slug": "parmalat-fictional-cash",
   "title": "Parmalat’s Missing Cash and the False Bank Confirmation",
-  "dek": "A purported multibillion-euro bank balance became central to the Italian dairy group’s collapse in 2003.",
+  "dek": "Parmalat’s reported cash depended on a bank confirmation that the SEC alleged was false. The case illustrates why a balance-sheet claim and independent evidence that the money exists are different things.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Business",
   "tags": [
     "italy",
     "fraud"
   ],
-  "description": "The central question was straightforward: did the reported money exist?",
-  "socialPreview": "The central question was straightforward: did the reported money exist?",
-  "readingTime": "2 min",
+  "description": "Parmalat’s allegedly false bank confirmation and missing cash, with the SEC complaint distinguished from later findings and broader offshore claims.",
+  "socialPreview": "Parmalat’s allegedly false bank confirmation and missing cash, with the SEC complaint distinguished from later findings and broader offshore claims.",
+  "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "U.S. SEC complaint against Parmalat",
+      "title": "SEC complaint concerning Parmalat",
       "url": "https://www.sec.gov/litigation/complaints/comp18527.htm",
-      "status": "inherited-unverified",
-      "checkedAt": "2026-09-27",
-      "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
     "Compare the complaint with later findings before using declarative fraud details.",
-    "Verify the named account, bank and amount from original documents."
+    "Verify the named account, bank and amount from original documents.",
+    "Trace the bank confirmation into the consolidated accounts and verify the later legal findings; keep complaint allegations labelled.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
   "approvedAt": null,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-02",
   "editNotes": [
     "Copy and specified claims revised on 2026-09-27; this does not approve publication or complete the review checklist."
+  ],
+  "seoTitle": "Parmalat’s Missing Cash and the False Bank Confirmation",
+  "reviewSourceNotes": "[SEC complaint concerning Parmalat](https://www.sec.gov/litigation/complaints/comp18527.htm). Checked 2 October 2026. Civil complaint; cash and debt-repurchase statements are allegations at this procedural stage. Not presented as a final judgment.\n\nGeneral arguments about evidence and institutions are editorial analysis. No original interviews or independently acquired datasets. This source pass is scoped to the linked material and does not certify the complete historical record.",
+  "reviewPage": "https://chatgpt.com/space/page_ef7d57fa967081919a105269689e3c18",
+  "relatedDrafts": [
+    "satyam-confession",
+    "enron-reading-the-entity"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.063Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
   ]
 }
 ---
 
+A purported bank confirmation stood behind billions of euros reported as Parmalat cash and securities. In a December 2003 complaint, the SEC alleged that the confirmation was forged and the account and assets did not exist.
 
-Parmalat sold milk in supermarkets around the world while presenting investors with a balance sheet that implied enormous liquidity. A purported Bank of America account for a Cayman Islands subsidiary appeared to hold billions of euros.
-
-The confirmation was false. Prosecutors and regulators found a web of offshore entities, sham transactions and diverted funds. The company’s need to keep borrowing despite its claimed cash had been a warning hiding in plain sight.
+The cash and securities were supposedly held by Bonlat, a Cayman Islands subsidiary, at Bank of America in New York. The complaint alleged that the nonexistent assets passed from Bonlat's records into Parmalat's consolidated statements. Investors reading the group accounts therefore depended on a confirmation whose origin was itself in question.
 
 ## The document and the money
 
@@ -49,10 +66,20 @@ A document can look authoritative because it resembles the kind of document an i
 
 This is the distinction at the center of any account of a false bank confirmation. An auditor needs evidence from a source capable of confirming the account, through a channel whose origin can be checked. Receiving a reassuring piece of paper from the party whose claims are under examination is a different evidentiary act.
 
-The SEC complaint linked here is a primary record of allegations. It should be identified as such. A full article needs to trace which allegations were later admitted, proved or resolved, rather than using the complaint as a timeless statement of every fact in the case.
+These are allegations in the SEC complaint. Any later admissions, judgments or settlements require their own dated records.
 
-The international structure also needs concrete explanation. Saying that money was offshore can create an atmosphere of secrecy without explaining the actual relationship. The relevant questions are which entity reported the asset, which institution supposedly held it and how the balance entered the wider financial statements.
+The international structure needs concrete explanation. Saying that money was offshore can create an atmosphere of secrecy without explaining the actual relationship. The relevant questions are which entity reported the asset, which institution supposedly held it and how the balance entered the wider financial statements.
 
-A company's geographic complexity may make verification harder, but it does not make verification conceptually optional. The article should keep returning to that ordinary question: where was the money, and what evidence established its presence? The spectacular scale of a missing balance can distract from the simplicity of what was supposed to be checked. A record that follows the confirmation process can make the failure legible without pretending that every corporate structure involved was inherently illegitimate.
+The geographic structure identifies where the asset was asserted and where it supposedly sat. It cannot answer the basic verification question: what independently confirmed that the money existed?
 
-A familiar brand can coexist with accounts that are difficult to verify. Parmalat’s case makes the origin and authentication of financial documents central to the story, alongside the responsibilities of the institutions that relied on them.
+## From a subsidiary into the group accounts
+
+The SEC complaint identifies Bonlat as the subsidiary that purportedly held the bank assets. It then alleges that those nonexistent assets appeared in Bonlat's records and in Parmalat's consolidated financial statements. This is the documentary route by which a claim made at one location could affect investors reading the group accounts.
+
+The route begins with the asserted balance, passes through its supporting confirmation and reaches the group statement. Each document supplies a different part of the claim.
+
+The complaint also alleges misrepresentations about debt repurchases. That is a separate issue from the existence of cash. Combining both into a single enormous missing-money figure would obscure the distinction between an overstated asset and a liability that had not been removed as represented.
+
+An overstated cash asset and a misrepresented debt repurchase require separate explanations. Combining them into one missing-money total would blur how each affected the accounts.
+
+The reported balance depended on the confirmation. According to the complaint, the document was forged and the assets did not exist. The evidentiary failure lay in the claimed connection to a bank account, not in the subsidiary's offshore address alone.

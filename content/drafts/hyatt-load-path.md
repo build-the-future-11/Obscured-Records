@@ -2,93 +2,81 @@
 {
   "slug": "hyatt-load-path",
   "title": "Follow the Weight",
-  "dek": "NBS traced the Hyatt Regency walkway collapse to insufficient capacity at the box beam-hanger rod connections. Understanding the failure starts with following what each connection had to carry.",
+  "dek": "The Hyatt walkway collapse makes a connection detail—and the route taken by a load—the center of the story.",
   "author": "Unassigned — AI-assisted editorial draft",
   "createdAt": "2026-09-27",
-  "status": "draft",
+  "status": "review",
   "section": "Technology",
-  "tags": ["structures", "design review", "kansas city", "load path"],
-  "description": "A cautious source-led explanation of the Hyatt Regency walkway collapse, centered on the box beam-hanger rod connections and the load path through the suspended walkways.",
-  "socialPreview": "The Hyatt walkway collapse is often told through a changed hanger-rod detail. NBS's core finding is more fundamental: the critical box beam-hanger rod connections lacked sufficient capacity.",
+  "tags": [
+    "structures",
+    "design review",
+    "kansas city"
+  ],
+  "description": "How the Hyatt Regency walkway collapse exposes the difference between familiar components, changed load paths and verified structural capacity.",
+  "socialPreview": "How the Hyatt Regency walkway collapse exposes the difference between familiar components, changed load paths and verified structural capacity.",
   "readingTime": "3 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "NIST: Walkway Collapse — Kansas City, Missouri, 1981",
-      "url": "https://www.nist.gov/el/walkway-collapse-kansas-city-missouri-1981",
-      "status": "located",
-      "checkedAt": "2026-09-29",
-      "supports": "Date, casualty count, NBS investigation and most probable cause at the box beam-hanger rod connections."
-    },
-    {
-      "title": "National Bureau of Standards: Investigation of the Kansas City Hyatt Regency Walkways Collapse (BSS 143)",
+      "title": "National Bureau of Standards Building Science Series 143",
       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf",
-      "status": "located",
-      "checkedAt": "2026-09-29",
-      "supports": "Detailed suspension-system, connection, testing and hanger-rod arrangement investigation; page-level technical review remains required before using derived calculations or diagrams."
+      "status": "scoped-source-pass-recorded",
+      "checkedAt": "2026-10-02",
+      "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
     }
   ],
   "reviewChecklist": [
-    "Structural specialist: check any explanation or diagram of the hanger-rod arrangement against BSS 143 before publication.",
-    "Human editor: do not attribute who proposed, accepted or approved the hanger-rod change without document-level support.",
-    "Do not publish numerical load/capacity calculations until the exact report pages are manually verified.",
-    "Confirm rights and credit for drawings, report figures and photographs."
+    "Have a structural specialist check any diagram before publication.",
+    "Attribute design-change responsibility only with document-level support.",
+    "Assign the real author and obtain named human editorial approval.",
+    "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
   ],
   "completedChecks": [],
   "approvedBy": null,
-  "approvedAt": null
+  "approvedAt": null,
+  "seoTitle": "Hyatt Regency Walkway Collapse and the Load Path",
+  "updatedAt": "2026-10-02",
+  "reviewSourceNotes": "[National Bureau of Standards Building Science Series 143](https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf) was examined on 2 October 2026. Locator and limits: Abstract, executive summary and Chapter 11. Full PDF downloaded and examined; its errata sheet is present. No casualty number is used because contemporary and later totals differ.\n\nThe historical claims above are attributed to the linked record. The institutional and explanatory conclusions are Obscured Records analysis. The record supports the bounded historical account; it does not establish private motives or every proposed counterfactual. No interviews, original field reporting, human approval or visual licence clearance are claimed.\n\n**Completed:** factual dates and numerical claims checked within the stated scope; interpretation distinguished; no invented quotation; no unsupported current-status assertion; copy pass; source links; metadata; visual specification.\n\n**Final human review:** accept or revise the argument and attribution; assign the real author/editor; clear any externally sourced image before use; approve the website release. The current state remains editing until that review occurs.",
+  "reviewPage": "https://chatgpt.com/space/page_72449698f15881919606bf3987113e42",
+  "relatedDrafts": [
+    "tacoma-wind-in-the-system",
+    "flixborough-temporary-pipe"
+  ],
+  "history": [
+    {
+      "from": "draft",
+      "to": "review",
+      "at": "2026-10-02T12:15:06.057Z",
+      "reason": "Imported the saved Space review manuscript; human approval remains pending"
+    }
+  ]
 }
 ---
 
-A suspended walkway is not held up by the idea of a building. It is held up through a sequence of physical connections.
+The walkways that collapsed at Kansas City's Hyatt Regency hotel in 1981 had two distinct design problems. The original box-beam connection lacked adequate capacity. A later change to the hanger rods added the lower walkway's load to the upper connections, essentially doubling their demand, according to the National Bureau of Standards.
 
-To understand the 1981 Hyatt Regency walkway collapse in Kansas City, the useful question is therefore simple: where did the weight go?
+The alteration made an already inadequate connection carry more. Restoring the original rod arrangement would therefore have addressed only one of the two defects. Investigators had to reconstruct the load demanded of the connection and measure its capacity, rather than assume the original drawing described a safe structure.
 
-The National Bureau of Standards investigated the collapse of the second- and fourth-floor walkways. NBS concluded that the most probable cause was insufficient load capacity at the box beam-hanger rod connections and that the failure likely began at a connection on the fourth-floor walkway.
+## What changed at the connection
 
-That finding puts the connection at the center of the story without requiring an improvised calculation.
+The National Bureau of Standards' report separates two defects that are often collapsed into one. The original box-beam connection already had inadequate capacity. During construction, the hanger arrangement was then changed from continuous rods passing through both walkway levels to separate sets of rods. In the built arrangement, the lower walkway hung from the upper walkway, adding its load to the upper connections. The report describes the demand at those connections as essentially doubled. Reverting to the original arrangement would therefore not have established an adequate design. [NBS report, abstract and executive summary](https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf).
 
-## A load path is a chain
+The two defects required separate answers. Checking the capacity of the original detail would not establish the safety of the changed load path; checking the alteration would not repair an inadequate original connection.
 
-A person standing on a walkway adds load to the floor system. That load must travel through structural members and connections before it reaches the larger building structure.
+Consider a simplified comparison, not a numerical reconstruction of the hotel. Two shelves can each transfer their weight directly to a common support. If the lower shelf is instead suspended from the upper shelf, part of the upper assembly now carries both. Nothing about the shelves' familiar appearance establishes that the new connection can do that work. The comparison explains the topology of the change; the report's tests and measurements establish the actual failure.
 
-Every connection in that chain has two questions attached to it:
+## The same pieces, a different demand
 
-1. What demand reaches this point?
-2. What capacity does this detail actually have?
+A load path follows the weight from the walkway through its connections and supports. Changing that route can change the demand on a joint even when the visible components look much the same.
 
-A component can look ordinary in isolation while occupying a critical position in the path. If the arrangement changes, the demand on a connection can change even when many of the same pieces remain visible.
+The load-path comparison explains which connection receives the weight; it does not calculate the hotel's structural capacity. That required the investigators' drawings, material examinations, tests and analytical studies. The explanatory sketch and the capacity assessment answer different questions.
 
-The NBS investigation examined the hanger rods, box beams, connection details, materials, workmanship and physical evidence from the collapse. The detailed report also compared the arrangement shown in the original contract drawings with the arrangement actually constructed.
+## Reviewing the changed drawing
 
-That comparison is important, but it should not be reduced to a diagram copied from memory. Any public visual explanation needs to preserve the geometry and load relationships documented in the report and should be checked by someone competent in structural engineering.
+Construction moves through many representations: design documents, shop drawings, requests for clarification, site observations and revisions. A review mark can be interpreted as approval of different things by different people. The record has to establish what was submitted, what was reviewed and what was built.
 
-## The connection, not the slogan
+A review must establish which detail was submitted, what the approval covered and whether the built connection matched it. Calling the problem a communication failure leaves those decisions unexamined.
 
-The case is often summarized as a design change that “doubled the load.”
+The practical force of the case is that structures are not collections of independently safe parts. Their arrangement determines what those parts must do. A detail that changes a route can change a demand.
 
-That phrase can be useful only if the reader knows exactly which load, at which connection, under which arrangement. Without that precision it becomes another disaster slogan: memorable but mechanically vague.
-
-For the present draft, the safer claim is the one NBS states directly in its public summary: the box beam-hanger rod connections did not have sufficient load capacity, and the observed deformation indicates the collapse initiated at the fourth-floor connection.
-
-The detailed numerical explanation belongs in a later revision after page-level verification of the technical report.
-
-## Drawings are part of the structure's history
-
-The physical load path is only half the account.
-
-Construction passes through design drawings, shop drawings, fabrication decisions, review marks and site work. A later investigation therefore has to reconstruct both what the built connection did mechanically and how that arrangement came to be built.
-
-Those questions should not be collapsed into a vague claim that “communication failed.” Responsibility requires document-level evidence: what was specified, what changed, who reviewed what, and what professional obligations applied at each step.
-
-Until those records are established, a publication should resist assigning a specific decision to a specific person simply because the final geometry is known.
-
-## Follow the weight, then follow the record
-
-The Hyatt collapse shows why structural explanations and documentary explanations should meet but not substitute for each other.
-
-Following the weight identifies the connection that must carry the demand. Following the drawings and review record explains how that connection took its final form.
-
-A responsible article needs both.
-
-For now, the strongest established conclusion is also the most concrete: NBS traced the most probable cause to insufficient capacity in the box beam-hanger rod connections. The finer mechanics and responsibility chain deserve the same evidentiary care before they become part of the public story.
+The rods determined where the weight went. The connection determined whether it could be carried. Explaining the collapse requires both the engineering measurements and the decisions that joined those parts together.

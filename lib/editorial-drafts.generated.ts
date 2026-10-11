@@ -11,39 +11,49 @@ export const editorialDrafts: EditorialDraft[] = [
   {
     "slug": "1mdb-global-trail",
     "title": "Tracing the Diversion of Money from Malaysia’s 1MDB Fund",
-    "dek": "U.S. prosecutors described funds moving through accounts and shell companies into property, art and entertainment investments.",
+    "dek": "The 1MDB story follows money into properties, artworks and other assets. Reading that trail requires separating the allegations in a forfeiture complaint from recovery requests and later legal outcomes.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "malaysia",
       "money laundering"
     ],
-    "description": "A cross-border financial trail linked a development fund to assets far from Malaysia.",
-    "socialPreview": "A cross-border financial trail linked a development fund to assets far from Malaysia.",
-    "readingTime": "2 min",
+    "description": "How the DOJ’s 2016 1MDB allegations connected money to assets, and why allegations, recovery requests and later outcomes must stay distinct.",
+    "socialPreview": "How the DOJ’s 2016 1MDB allegations connected money to assets, and why allegations, recovery requests and later outcomes must stay distinct.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. Department of Justice 1MDB case",
-        "url": "https://www.justice.gov/archives/opa/pr/united-states-files-civil-forfeiture-complaints-more-1-billion-assets-associated",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "title": "DOJ civil forfeiture announcement, 20 July 2016",
+        "url": "https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Update case outcomes separately before making present-tense claims.",
-      "Preserve civil-forfeiture allegation labels and verify sums against dated releases."
+      "Preserve civil-forfeiture allegation labels and verify sums against dated releases.",
+      "Trace one alleged transfer through the underlying complaint and a dated later outcome, distinguishing allegations from established findings.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 357,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 423,
     "publishedInArchive": true,
-    "body": "1Malaysia Development Berhad was created to pursue national development. According to prosecutors, billions of dollars raised through bonds were instead diverted through a network of accounts and shell companies.\n\nThe money travelled: into high-end real estate, art, a superyacht and film financing. Its movement depended on institutions in several countries processing fragments of a transaction that only looked extraordinary when assembled as one system.\n\n## An asset is not the whole money trail\n\nA seized asset makes a financial investigation visible. A building, artwork or other object can be photographed and named. The transaction history connecting it to alleged wrongdoing is usually less photogenic and more important.\n\nThe Justice Department material linked here announced civil forfeiture complaints. That procedural description should stay attached to the claims. A complaint seeks a legal outcome and sets out allegations; its existence does not establish that every allegation has already been finally resolved.\n\nFollowing funds requires distinctions that popular accounts often collapse. Money can pass through an entity without that entity being the ultimate beneficiary. A person may control an account without appearing as its nominal owner. A purchase may be connected to a chain of transfers that includes legitimate as well as disputed funds. Each connection needs evidence.\n\nThe article should also distinguish the public institution whose resources were involved from the individuals and entities accused of diverting them. A country is not a single actor. Broad language about national corruption can erase the people who investigated, challenged or bore the consequences of the conduct being described.\n\nA useful archive would preserve a dated map of the allegations alongside later outcomes: what property was sought, what was recovered and what remained contested at each stage. It would not treat the most dramatic asset as proof of the entire case. The financial trail is a sequence of claims about movement and control. Its credibility depends on making those claims inspectable, one connection at a time.\n\nFollowing the money requires connecting transactions across jurisdictions and distinguishing allegations from judgments and settlements. A forfeiture complaint sets out the government’s case; it should not be described as a verdict against every person it names."
+    "body": "Real estate, artwork and film-related investments featured in the U.S. Justice Department's July 2016 effort to recover property associated with Malaysia's 1MDB fund. The civil forfeiture complaints alleged that billions of dollars raised for national development had instead been diverted through international transactions.\n\nA property purchase was the visible end of an alleged chain of transfers. Prosecutors had to connect the asset to accounts, intermediaries and money raised for development. In 2016, those connections were allegations in civil forfeiture complaints, not verdicts against everyone the documents named.\n\n## An asset is not the whole money trail\n\nA seized asset makes a financial investigation visible. A building, artwork or other object can be photographed and named. The transaction history connecting it to alleged wrongdoing is usually less photogenic and more important.\n\nFollowing funds requires distinctions that popular accounts often collapse. Money can pass through an entity without that entity being the ultimate beneficiary. A person may control an account without appearing as its nominal owner. A purchase may be connected to a chain of transfers that includes legitimate as well as disputed funds. Each connection needs evidence.\n\nThe fund, the country and the individuals accused of diverting money are different subjects. Treating them as one actor obscures both the allegations and the people who investigated or bore their consequences.\n\nProperty sought in forfeiture, property recovered and transactions still contested belong to different stages of the case. The status of each connection matters as much as its place in the financial trail.\n\n## The date attached to an allegation\n\nThe Justice Department's July 2016 announcement divides the alleged diversion into several phases, including funds intended for an energy-related investment and proceeds from later bond offerings. That distinction matters because the sum raised, the sum allegedly diverted and the value of assets sought in forfeiture answer different questions.\n\nAn asset-recovery announcement can name more than a billion dollars of property without claiming that this property equals every dollar diverted. It identifies what the government is seeking at a particular procedural stage. Comparing that figure with a later recovery total requires checking which assets and proceedings each includes.\n\nA transaction map needs both the movement of money and the status of the evidence: an allegation in a complaint, an acknowledgment in an agreement or a finding in a judgment.\n\nThe assets made the alleged diversion visible; the transaction records had to connect them to it. Later agreements or judgments could change the status of individual claims. The 2016 announcement establishes the case prosecutors brought at that date."
   },
   {
     "slug": "aberfan-landscape-of-authority",
@@ -51,81 +61,100 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Reading Aberfan means tracing responsibility across a landscape that was made, not merely encountered.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "wales",
       "mining",
       "accountability"
     ],
-    "description": "Reading Aberfan means tracing responsibility across a landscape that was made, not merely encountered.",
-    "socialPreview": "Reading Aberfan means tracing responsibility across a landscape that was made, not merely encountered.",
+    "description": "Aberfan's archival record connects a transformed hillside with institutions responsible for knowing its condition.",
+    "socialPreview": "Aberfan's archival record connects a transformed hillside with institutions responsible for knowing its condition.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "The National Archives: Aberfan disaster correspondence catalogue",
-        "url": "https://discovery.nationalarchives.gov.uk/details/r/C4393469",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Catalogue evidence of official correspondence after the disaster; not the full tribunal findings."
+        "title": "Glamorgan Archives, The Aberfan Tribunal",
+        "url": "https://glamarchives.gov.uk/blood/aberfan/",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
+      },
+      {
+        "title": "National Library of Wales, Printed Material and Reports",
+        "url": "https://www.library.wales/discover-learn/digital-exhibitions/archives/aberfan-disaster-1966/printed-material",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Consult the full tribunal report before assigning individual responsibility.",
-      "Source the school chronology and casualty figures independently before adding them."
+      "Source the school chronology and casualty figures independently before adding them.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 456,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.060Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 511,
     "publishedInArchive": false,
-    "body": "A hill can look like part of the background. A coal tip is also a record of work: material moved, accumulated and left in a particular relationship to the land beneath it and the people below.\n\nThe coal-tip disaster at Aberfan occurred on 21 October 1966. The National Archives catalogue identifies official correspondence about the catastrophe, the position of National Coal Board chairman Lord Robens, and the removal of remaining tips. A catalogue describes records rather than reproducing all their evidence. The full correspondence and tribunal findings remain necessary for a detailed account of decisions and responsibility.\n\nA letter written after a disaster is evidence of what a person wanted an authority to hear. It is not automatically evidence that every factual claim in the letter was correct. A tribunal is an attempt to establish findings within a defined process. It is not the same thing as the complete experience of a community. Reading these records together means keeping their differences visible.\n\n## The work inside the landscape\n\nCalling an event a landslide describes motion. It does not finish the explanation of how unstable material came to be there, who understood its condition, or who could require a change. The language of nature can be descriptively useful and politically incomplete at the same time.\n\nThe distinction is not a reason to replace geology with a moral slogan. Water, ground conditions and the behavior of accumulated material require careful technical explanation. But technical mechanisms acquire their relevance within decisions about siting, monitoring and continued use. A good account should not force readers to choose between physics and responsibility.\n\nThis is one reason maps matter. They can connect an administrative record to the space it describes: a tip, a settlement, routes of movement, a place where children learned. A map cannot supply the missing perspective of a resident, but it can prevent an institutional account from floating free of the people affected by its decisions.\n\n## After the finding\n\nAn inquiry report can give a narrative a powerful ending. It gathers evidence, reaches conclusions and seems to transform uncertainty into order. For those living with the consequences, however, the publication of findings is another date in a much longer history.\n\nThe next questions concern implementation and remembrance. What was changed? Who paid? What did the community have to ask for again? Those questions need further records rather than a confident assertion that lessons were learned.\n\nAberfan demands a form of attention that resists both spectacle and premature closure. The archive should make authority traceable without making grief an illustration. It should also allow the reader to see that the hillside was not outside the world of decisions. Long before it moved, it had already been shaped by them."
+    "body": "The Aberfan coal-tip disaster killed 144 people, including 116 children, on 21 October 1966. Glamorgan Archives records that the subsequent tribunal held the National Coal Board responsible. Its collections connect the hillside to the institutions managing the material accumulated above the community.\n\nThe archive holds transcripts from all 76 tribunal sitting days alongside witness statements, weather reports, correspondence and plans. Together they allow the disaster to be examined as both a physical failure and a history of decisions about material stored above a community.\n\n## The work inside the landscape\n\nCalling an event a landslide describes motion. It does not finish the explanation of how unstable material came to be there, who understood its condition, or who could require a change. The language of nature can be descriptively useful and politically incomplete at the same time.\n\nGround conditions and accumulated material explain the mechanism. Siting, monitoring and continued use explain how that mechanism became a risk to the community. Responsibility cannot be examined by excluding either part.\n\nThis is one reason maps matter. They can connect an administrative record to the space it describes: a tip, a settlement, routes of movement, a place where children learned. A map cannot supply the missing perspective of a resident, but it can prevent an institutional account from floating free of the people affected by its decisions.\n\n## What the archive makes visible\n\nGlamorgan Archives records that 144 people died in the disaster, including 116 children. It dates the appointment of the tribunal to 26 October 1966 and identifies the National Coal Board as the institution held responsible by its findings. The same archive describes a collection containing transcripts from all 76 sitting days, witness statements, meteorological reports, correspondence and plans.\n\nWeather reports, plans and testimony answer different questions. Reading them together connects the material conditions to the knowledge and authority available to act on them.\n\nThe archive also records that comprehensive information about the board's tips was assembled following the tribunal's recommendation. This is a concrete administrative consequence: an inventory was needed before the condition of an entire set of sites could be examined systematically.\n\nThere is a difference between possessing knowledge somewhere and organizing it so someone has to act on it. An isolated plan may be accurate without entering a safety decision. A comprehensive inventory can expose omissions, but only if responsibility for maintaining and using it is clear. Aberfan's documentary aftermath makes that distinction visible without requiring the assertion that paperwork, by itself, makes a landscape safe.\n\n## After the finding\n\nThe tribunal's findings established responsibility within an inquiry. Implementation and the community's experience afterward require their own records.\n\nThe next questions concern implementation and remembrance. What was changed? Who paid? What did the community have to ask for again? Those questions need further records rather than a confident assertion that lessons were learned.\n\nThe hillside was the product of decisions made before it moved. The tribunal made responsibility traceable; the resulting inventory of tips extended the inquiry beyond Aberfan. Effective protection still depended on what institutions did with that knowledge."
   },
   {
     "slug": "air-france-8969",
     "title": "Air France 8969: From the Algiers Hijacking to the Marseille Rescue",
-    "dek": "Seized on 24 December 1994, the aircraft reached Marseille two days later, where a GIGN assault ended the hostage crisis.",
+    "dek": "The Air France 8969 crisis moved from an aircraft in Algiers to a rescue in Marseille. The chronology is clearer than some later accounts of the hijackers’ intentions and the assault.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "aviation",
       "terrorism"
     ],
-    "description": "Three hostages were killed before the aircraft left Algiers. The remaining hostages survived the assault in Marseille.",
-    "socialPreview": "Three hostages were killed before the aircraft left Algiers. The remaining hostages survived the assault in Marseille.",
-    "readingTime": "2 min",
+    "description": "The Algiers hijacking and Marseille rescue of Air France 8969, with a careful distinction between the recorded chronology and retrospective claims.",
+    "socialPreview": "The Algiers hijacking and Marseille rescue of Air France 8969, with a careful distinction between the recorded chronology and retrospective claims.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "French National Audiovisual Institute archive",
-        "url": "https://www.ina.fr/ina-eclaire-actu/prise-otage-alger-1994-marignane",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
-      },
-      {
-        "title": "French National Gendarmerie retrospective",
+        "title": "Gendarmerie account of the Marignane assault",
         "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/histoire/26-decembre-1994-l-assaut-spectaculaire-du-gign-a-marignane",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Confirm the timeline against INA material and an independent contemporary account.",
-      "Verify any claimed intended target; attribute intelligence conclusions explicitly."
+      "Verify any claimed intended target; attribute intelligence conclusions explicitly.",
+      "Compare the rescue chronology with an independent contemporary report and a hostage account; attribute claims about the attackers’ intentions.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 351,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 446,
     "publishedInArchive": true,
-    "body": "Four armed men seized Air France Flight 8969 in Algiers on 24 December 1994. They killed three hostages before the aircraft was allowed to leave for France.\n\nThe aircraft reached Marseille on 26 December. Negotiations continued on the ground before the GIGN intervened that evening. The remaining hostages survived; all four hijackers were killed.\n\n## The difference between an objective and an outcome\n\nA hijacking creates several histories at once. There is the experience of those confined in the aircraft, the work of negotiators and responders, and the later effort to establish the attackers' purpose. An account can move between them, but it should not give each the same evidentiary status.\n\nAn intention attributed to the attackers needs a source: a statement, an intelligence assessment, testimony or an investigation. The fact that a response prevented further harm does not, by itself, prove every claim later made about what would otherwise have occurred. This distinction is especially important when a dramatic counterfactual becomes the best-known version of an event.\n\nThe aircraft also changes the meaning of location. Passengers may remain in the same seats while jurisdiction, available resources and the surrounding operational conditions change. A route map helps explain those transitions, provided that the writer does not use it as a substitute for a precise chronology.\n\nThe available television archive brings another complication. Images show what a camera could see and what editors chose to retain. They cannot supply the thoughts of people inside the cabin or establish the content of every negotiation. A reconstruction should label the difference between recorded action and a later account of it.\n\nThe strongest version of this story would preserve those distinct layers without weakening the urgency of the event. Readers can understand a dangerous situation without being given invented dialogue. They can also recognize an operational success while asking what is actually documented about the threat it interrupted.\n\nThe French gendarmerie’s retrospective describes how negotiation, observation and rehearsal informed the operation. It is an account by the organization that carried out the rescue, and should be read alongside independent reporting when assessing the wider consequences."
+    "body": "Before French forces intervened aboard Air France Flight 8969 in Marseille, GIGN personnel had rehearsed with an aircraft of the same type at Palma de Mallorca. The French gendarmerie's retrospective places that preparation alongside observation and negotiation before the rescue on 26 December 1994.\n\nThe aircraft had been seized in Algiers two days earlier by four armed men. Three hostages were killed before departure. In Marseille, the remaining hostages were evacuated and the four hijackers were killed. The cabin remained the site of the crisis, but the move changed the authority and resources outside it.\n\n## The difference between an objective and an outcome\n\nA hijacking creates several histories at once. There is the experience of those confined in the aircraft, the work of negotiators and responders, and the later effort to establish the attackers' purpose. An account can move between them, but it should not give each the same evidentiary status.\n\nThe documented outcome does not settle every later account of the attackers' intentions. Those claims require attributable evidence separate from the chronology of seizure, negotiation and intervention.\n\nThe aircraft also changes the meaning of location. Passengers may remain in the same seats while jurisdiction, available resources and the surrounding operational conditions change. A route map helps explain those transitions, provided that the writer does not use it as a substitute for a precise chronology.\n\nTelevision images preserve visible action, not the content of every negotiation or the experience of everyone confined in the cabin.\n\n## Preparation outside the televised moment\n\nThe gendarmerie's account describes GIGN personnel preparing with an aircraft of the same type at Palma de Mallorca before arriving in Marseille. It also describes observation of the seized aircraft before intervention. The visible assault was therefore preceded by work that the television images of the final encounter cannot encompass.\n\nPreparation concerns a range of practical questions: the aircraft's configuration, possible approaches and the conditions under which a plan could be carried out. This does not mean a rehearsal reproduces a hostage situation exactly. It means that some features can be examined before people must act amid uncertainty.\n\nLocation changed the available response. While the aircraft remained in Algeria, the French force could not simply treat it as an operation on French soil. In Marseille, the surrounding authority and resources were different even though the people inside were still confined to an aircraft. A route is also a history of changing jurisdiction.\n\nThe assault was preceded by rehearsal, observation and negotiation in the gendarmerie's account. Those reported preparations are a defined part of the history. Independent reporting and hostage testimony are still needed to describe the wider decisions and the experience inside the aircraft."
   },
   {
     "slug": "ariane-reused-assumptions",
@@ -133,112 +162,141 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Ariane 501 makes software reuse a question about the assumptions that travel with the code.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "space",
       "software",
       "testing"
     ],
-    "description": "Ariane 501 makes software reuse a question about the assumptions that travel with the code.",
-    "socialPreview": "Ariane 501 makes software reuse a question about the assumptions that travel with the code.",
+    "description": "Ariane 501 shows why successful software needs new evidence when its operating context changes.",
+    "socialPreview": "Ariane 501 shows why successful software needs new evidence when its operating context changes.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "ESA Bulletin: Learning from Flight 501 and Preparing for 502",
+        "title": "ESA, Ariane-5: Learning from Flight 501 and Preparing for 502",
         "url": "https://www.esa.int/esapub/bulletin/bullet89/dalma89.htm",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Inertial reference software failure and the inquiry response."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Confirm the conversion and redundancy sequence against the inquiry.",
-      "Do not imply that all software reuse is unsafe."
+      "Do not imply that all software reuse is unsafe.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 467,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.059Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 539,
     "publishedInArchive": false,
-    "body": "Reusing a component can be an act of caution. Why replace something whose behavior is already familiar? The difficulty is that familiarity belongs to a context. Move the component, and its history of success may answer a question nobody is asking anymore.\n\nESA's account of Ariane Flight 501 links the 1996 launch failure to design faults in the inertial reference system's software. A data conversion exceeded the range available to it. Software inherited from an earlier launcher operated under conditions that were no longer the same. The account also describes the corrective program for subsequent flights. The lesson is more demanding than the claim that one variable was too small.\n\n## What exactly was reused?\n\nCode is only the visible part of a reused system. Assumptions travel with it: expected ranges, sequences of operations, the conditions in which a function is needed and the errors considered impossible or acceptable. Some may be documented. Others may be embedded in choices that once seemed too obvious to explain.\n\nA new application can preserve the text of a program while changing the meaning of its inputs. That is why unchanged code is not equivalent to unchanged behavior. The relevant object is the relationship between code and environment.\n\nThe same reasoning applies to redundancy. Two copies can protect against an isolated hardware failure. They do not necessarily protect against a shared assumption. Independence must be assessed with respect to the failure being considered, not inferred from the fact that two boxes exist.\n\nThis is an analytical distinction rather than a claim that duplication is useless. Redundancy can be valuable. The mistake is to treat its value as universal, instead of asking which events it can absorb and which events can reach both copies together.\n\n## The test that belongs to the new vehicle\n\nA reusable component arrives with evidence. The receiving project needs to decide what that evidence covers. Earlier tests may remain relevant, but a different operating range demands its own examination. A record of successful service is not a substitute for identifying the changed conditions.\n\nIt is tempting, after a spectacular loss, to imagine that writing everything again would remove inherited risk. New code introduces new uncertainty too. The practical question is how to retain the benefits of reuse while making the inherited assumptions explicit enough to challenge.\n\nAn interface review, a range analysis or a test using the new trajectory can each answer part of that question. Their value depends on being connected to the actual system, not added as generic reassurance.\n\nAriane 501's importance lies in this uncomfortable middle ground. Proven components deserve neither blind confidence nor automatic rejection. They deserve a precise account of where the proof ends. Reuse saves work only if the new project also does the work of understanding what it has inherited."
+    "body": "Software carried over to Ariane Flight 501 operated under conditions it could not handle during the rocket's 1996 launch. ESA's account links the failure to design faults in the inertial reference system and describes an alignment function that continued into flight.\n\nThe software had worked in an earlier vehicle. That history did not establish that it could tolerate the new rocket's trajectory. ESA's proposed remedies addressed the changed conditions, including ending alignment after lift-off and testing actual trajectories on the inertial reference electronics.\n\n## What exactly was reused?\n\nCode is only the visible part of a reused system. Assumptions travel with it: expected ranges, sequences of operations, the conditions in which a function is needed and the errors considered impossible or acceptable. Some may be documented. Others may be embedded in choices that once seemed too obvious to explain.\n\nUnchanged code can encounter a changed range or sequence of inputs. Qualification concerns that relationship, rather than the program text alone.\n\nThe same reasoning applies to redundancy. Two copies can protect against an isolated hardware failure. They do not necessarily protect against a shared assumption. Independence must be assessed with respect to the failure being considered, not inferred from the fact that two boxes exist.\n\nRedundancy reduces some risks, but a shared assumption can leave both copies vulnerable to the same condition.\n\n## The boundary between ground and flight\n\nESA's corrective account identifies an alignment function that continued after lift-off, a variable whose representation capacity was exceeded, and processor shutdown following the detected malfunction. It says the interface between ground and flight modes had not been identified adequately. These are connected events, rather than three independent imperfections.\n\nAn alignment routine can make sense while a launcher is preparing to leave the ground. Keeping that routine active during flight gives it a different environment in which to operate. The question is therefore not only whether an operation produces the right answer. It is whether that operation should still be running at that point in the mission.\n\nThe planned remedies addressed that relationship. ESA described switching off alignment after lift-off and simulating actual trajectories on the inertial reference electronics. Its account also called for embedded software to receive distinct configuration control and more systematic review. A change to one line would have left the larger question of qualification unresolved.\n\nA reuse review needs to identify the conditions covered by previous evidence and the departures introduced by the receiving system. That gives engineers a specific set of assumptions to test.\n\n## The test that belongs to the new vehicle\n\nA reusable component arrives with evidence. The receiving project needs to decide what that evidence covers. Earlier tests may remain relevant, but a different operating range demands its own examination. A record of successful service is not a substitute for identifying the changed conditions.\n\nAn interface review, a range analysis or a test using the new trajectory can each answer part of that question. Their value depends on being connected to the actual system, not added as generic reassurance.\n\nAriane inherited software and the limits within which it had been expected to work. The new mission changed those limits. Previous success was evidence about the earlier vehicle, not a qualification of the new one."
   },
   {
     "slug": "banqiao-dam-failure",
     "title": "Banqiao: Extreme Rainfall and Cascading Dam Failures",
-    "dek": "Typhoon Nina’s rainfall in 1975 overwhelmed dams in Henan, turning a severe storm into a much larger flood disaster.",
+    "dek": "Banqiao places an extraordinary rainfall event alongside a cascade of dam failures. Weather reconstruction helps explain the storm, but it cannot replace engineering records or resolve every estimate of the disaster’s toll.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "china",
       "infrastructure"
     ],
-    "description": "The immediate flooding and the deaths attributed to its aftermath must be counted separately.",
-    "socialPreview": "The immediate flooding and the deaths attributed to its aftermath must be counted separately.",
-    "readingTime": "2 min",
+    "description": "What a hydrometeorological study establishes about Banqiao’s extreme rainfall, and what remains unresolved about dam failures and death estimates.",
+    "socialPreview": "What a hydrometeorological study establishes about Banqiao’s extreme rainfall, and what remains unresolved about dam failures and death estimates.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Encyclopaedia Britannica — Banqiao dam failure",
-        "url": "https://www.britannica.com/event/Banqiao-dam-failure",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "title": "Yang, Liu, Smith and Tian, Typhoon Nina and the August 1975 Flood over Central China",
+        "url": "https://repository.library.noaa.gov/view/noaa/59984/noaa_59984_DS1.pdf",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Obtain primary hydrological and inquiry material where accessible.",
-      "Attribute casualty estimates by source, definition and period."
+      "Attribute casualty estimates by source, definition and period.",
+      "Obtain engineering decision records before attributing specific structural causes, and trace each fatality estimate to its method and population.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 361,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 465,
     "publishedInArchive": true,
-    "body": "Typhoon Nina stalled over Henan province and delivered extraordinary rainfall. The Banqiao Dam failed, releasing a wall of water; downstream dams and flood controls then failed in sequence.\n\nImmediate flooding killed tens of thousands, and far more people died in the aftermath from disease and famine according to later estimates. Communication failures and damaged infrastructure slowed warnings and rescue.\n\n## One number cannot contain a cascade\n\nA dam disaster can be described through a breached structure, but the consequences may spread through a system of reservoirs, settlements and services. The first failure and the final toll are connected by many events that deserve to remain visible.\n\nThe source attached to the brief is an encyclopedia account, not the underlying engineering investigation. That distinction limits how precisely this draft can describe failure mechanisms, warning decisions or the attribution of responsibility. A more detailed account requires records closer to the events.\n\nMortality estimates need particular care. Deaths during flooding, deaths associated with subsequent illness and other indirect losses may be counted over different periods. A large combined estimate should not be presented as if it were a count made at a single location immediately after a breach.\n\nA system perspective also changes the meaning of protection. A structure can be designed against a particular condition while the wider network remains vulnerable to an event outside that assumption. Warnings, evacuation routes and communications can affect consequences independently of the structural behavior. Their role should be examined rather than inferred from the outcome.\n\nThe publication should resist two easy stories: nature made the loss unavoidable, or a single decision explains everything. Both can conceal the chain of conditions between an extreme event and the harm experienced downstream. A careful chronology is less dramatic but more useful. It shows what was known at each stage, which options existed and which parts of the account remain uncertain. The scale of the disaster demands that precision rather than excusing its absence.\n\nA dam can affect the water reaching the next structure downstream. The disaster raises questions about design assumptions, warnings and emergency response. Death estimates vary by source and by whether they include subsequent disease and food shortages."
+    "body": "Typhoon Nina brought extreme rainfall to Henan province in August 1975, overwhelming a region containing multiple dams and downstream settlements. Banqiao and Shimantan were among the dams that failed.\n\nLong Yang and colleagues' 2017 study reconstructs rainfall over 5–7 August from observations and a weather model. It links atmospheric blocking to the storm's slow movement and sustained rain. That explains the meteorological conditions; engineering and response records must establish what happened as the dams and downstream communities confronted them.\n\n## One number cannot contain a cascade\n\nA dam disaster can be described through a breached structure, but the consequences may spread through a system of reservoirs, settlements and services. The first failure and the final toll are connected by many events that deserve to remain visible.\n\nThe hydrometeorological study addresses the rainfall and flooding, not every decision made by dam operators or emergency authorities. Its detailed treatment of weather cannot, on its own, establish the full institutional history.\n\nMortality estimates need particular care. Deaths during flooding, deaths associated with subsequent illness and other indirect losses may be counted over different periods. A large combined estimate should not be presented as if it were a count made at a single location immediately after a breach.\n\nA system perspective also changes the meaning of protection. A structure can be designed against a particular condition while the wider network remains vulnerable to an event outside that assumption. Warnings, evacuation routes and communications can affect consequences independently of the structural behavior. Their role should be examined rather than inferred from the outcome.\n\nThe sequence between rainfall, reservoir inflows, structural failures and downstream harm is the central problem. Neither the size of the storm nor a single failed structure can account for every link in that chain.\n\n## Rainfall has a geography\n\nYang and colleagues examine the rainfall over 5–7 August, distinguishing changes in the storm's organization across those days. Their analysis uses observations and a weather model. They describe atmospheric blocking as important to the storm's slow movement and prolonged rainfall.\n\nA reservoir receives runoff from a catchment over time. Similar rainfall totals can produce different demands when rain falls in different places or at different rates.\n\nA model adds a further distinction. It is an analytical reconstruction whose results are compared with observations, not a new observation made in 1975. The reconstruction can help explain a mechanism while remaining dependent on its data, assumptions and resolution.\n\nMeteorological reconstruction cannot decide whether a design assumption was adequate or a warning arrived in time. Those questions require engineering and response records.\n\nRainfall reconstruction establishes what the storm delivered. Engineering records must show how the structures responded, and response records how warnings and assistance moved downstream. Banqiao's history depends on connecting those accounts without treating any one as the whole explanation."
   },
   {
     "slug": "barings-control-and-prestige",
     "title": "A Famous Name Is Not a Control",
-    "dek": "The Barings collapse separates institutional reputation from the ability to see and constrain a trading operation.",
+    "dek": "Barings carried a prestigious name while losses accumulated behind inadequate separation of trading and settlement duties. Its collapse raises a practical question: who independently checks an apparently profitable operation?",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "banking",
       "risk",
       "oversight"
     ],
-    "description": "The Barings collapse separates institutional reputation from the ability to see and constrain a trading operation.",
-    "socialPreview": "The Barings collapse separates institutional reputation from the ability to see and constrain a trading operation.",
+    "description": "How the Barings collapse exposed weaknesses in separating trading from settlement, and why prestige could not substitute for independent controls.",
+    "socialPreview": "How the Barings collapse exposed weaknesses in separating trading from settlement, and why prestige could not substitute for independent controls.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Bank of England: Banking Act Report 1995–96",
-        "url": "https://www.bankofengland.co.uk/-/media/boe/files/archive/banking-act-report/1995-1996.pdf",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "1995 collapse following Singapore trading losses and supervisory recommendations."
+        "title": "Reserve Bank of Australia, The Collapse of Barings",
+        "url": "https://www.rba.gov.au/publications/bulletin/1995/nov/1.html",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Read the Board of Banking Supervision inquiry before assigning specific control failures.",
-      "Do not imply current bank practices from a historical case."
+      "Do not imply current bank practices from a historical case.",
+      "Read the full Bank of England inquiry and check the allocation of trading, settlement and supervisory responsibilities against the manuscript.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 462,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 625,
     "publishedInArchive": false,
-    "body": "A long history can be an asset. It can attract customers, establish relationships and make an institution appear solid before anyone opens its accounts. None of those benefits performs the work of a control.\n\nThe Bank of England's 1995–96 Banking Act Report records that Barings entered administration in February 1995 following large futures and options losses at a Singapore subsidiary. It discusses the supervisory investigation and the recommendations that followed. This official record supplies a firm starting point without requiring the collapse to be turned immediately into the story of a uniquely reckless individual.\n\n## What the center can actually see\n\nA head office does not know an operation simply because it owns it. Information must travel through systems, reports and people. The resulting picture can be timely or delayed, independently checked or dependent on the same source that generated the activity.\n\nThe distinction between an impressive report and an informative one is crucial. A report may show a plausible number without making its origin inspectable. A control asks how that number was established, what would contradict it and whether anyone outside the originating activity can perform the check.\n\nThis is why separation of duties matters as a general principle. Independence is not just a box on an organization chart. It concerns whether the person or process responsible for checking an activity has access to evidence that the activity's operator cannot freely rewrite. The specific arrangements at Barings must be established from the inquiry, not inferred from the principle alone.\n\nPrestige can complicate the question. If an institution is assumed to be well run, requests for elementary verification may sound unsophisticated or distrustful. But a control should not have to overcome the social cost of asking a basic question every time it operates.\n\n## Learning without the rogue shortcut\n\nThe phrase rogue trader can identify misconduct. It can also become a convenient container that leaves the surrounding organization outside the explanation. An account of an individual's actions and an account of an institution's exposure are related, but they are not interchangeable.\n\nThe useful questions include what activity the institution believed it was financing, what evidence supported that belief and how discrepancies would have been escalated. Answering them requires a chronology of information, not merely a final loss figure.\n\nA historical case should also resist the claim that its lesson has been permanently absorbed. A recommendation is evidence that a reviewer proposed a change. Implementation and effectiveness require additional records.\n\nBarings matters because it makes the gap between identity and operation difficult to ignore. A respected name can describe what the world thinks an institution is. A functioning control tests what the institution is actually doing. Reputation becomes dangerous when it is allowed to answer the second question on behalf of the first."
+    "body": "Barings management accepted large reported profits from an operation it understood as low-risk arbitrage, according to the Reserve Bank of Australia's summary of the British inquiry. At the Singapore subsidiary, Nick Leeson controlled both trading and the back-office functions meant to check it.\n\nAdministrators were appointed to Barings Group companies on 26 February 1995 after large trading losses. The RBA's November account identifies failures in separating duties, assigning reporting responsibility and acting on internal audit recommendations. Head office's confidence in the operation was not matched by independent evidence of what it was funding.\n\n## What the center can actually see\n\nA head office does not know an operation simply because it owns it. Information must travel through systems, reports and people. The resulting picture can be timely or delayed, independently checked or dependent on the same source that generated the activity.\n\nA plausible profit figure is only the beginning of a control. Someone independent of the trading activity needs evidence of its origin and positions that could contradict it.\n\nThis is why separation of duties matters as a general principle. Independence is not just a box on an organization chart. It concerns whether the person or process responsible for checking an activity has access to evidence that the activity's operator cannot freely rewrite. The RBA summary identifies a lack of separation between front and back offices at the Singapore subsidiary. Leeson's control of both gave him an opportunity to conceal unauthorized activity.\n\nPrestige can make elementary checks seem unnecessary. A control fails in its purpose if it depends on someone overcoming that presumption each time a result is reported.\n\n## Learning without the rogue shortcut\n\nThe phrase rogue trader can identify misconduct. It can also become a convenient container that leaves the surrounding organization outside the explanation. An account of an individual's actions and an account of an institution's exposure are related, but they are not interchangeable.\n\nReported profits, funding demands and trading positions describe different parts of the exposure. Their relationship needs an independent check, rather than confidence in the reported strategy's name.\n\nA historical case should also resist the claim that its lesson has been permanently absorbed. A recommendation is evidence that a reviewer proposed a change. Implementation and effectiveness require additional records.\n\n## A profit that needed a question\n\nThe RBA's summary notes that management did not challenge the apparently large profits attributed to an activity it understood as low-risk arbitrage. It also identifies ambiguity in reporting responsibility and delays in responding to internal audit recommendations. These findings describe failures to ask and act, not merely failures to receive a document.\n\nA profitable result can discourage examination precisely because it appears to reward the institution's decisions. Yet unusually good performance can be a reason to investigate how the result was produced. A control that operates only when numbers look disappointing may leave its largest blind spot where the organization most wants reassurance.\n\nThe distinction between arbitrage and an open market position is important here. A strategy presented as exploiting a price difference between markets describes a different exposure from a directional wager on market movement. The name used in a report cannot establish which activity actually occurred.\n\nThe relevant managerial task is to connect the reported result, funding demands and independently checked position. Examining only one can produce a plausible but incomplete picture. Barings demonstrates why that connection needs a responsible owner. Several reporting lines do not ensure that someone has assembled their information into an account that can challenge the trading operation.\n\nBarings had a trusted name. Its Singapore trading operation needed positions and funding demands checked independently of the trader. The collapse exposed the gap between confidence in the institution and knowledge of the business being done in its name."
   },
   {
     "slug": "bhopal-where-the-shift-ends",
@@ -246,81 +304,92 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Bhopal puts workplace safety and neighborhood exposure in the same account.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "india",
       "industry",
       "environment"
     ],
-    "description": "Bhopal puts workplace safety and neighborhood exposure in the same account.",
-    "socialPreview": "Bhopal puts workplace safety and neighborhood exposure in the same account.",
+    "description": "Bhopal exposes the mismatch between an industrial site's boundary and the people affected by its hazards.",
+    "socialPreview": "Bhopal exposes the mismatch between an industrial site's boundary and the people affected by its hazards.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "International Labour Organization: World Day for Safety and Health at Work, 2004",
+        "title": "ILO, World Day for Safety and Health at Work, 28 April 2004",
         "url": "https://webapps.ilo.org/static/english/protection/safework/worldday/products04/report04_eng.pdf",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "December 1984 gas release and continuing consequences beyond the workplace."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Use source-specific time windows for any death or injury total.",
-      "Verify legal and health claims with separate contemporary sources."
+      "Verify legal and health claims with separate contemporary sources.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 460,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.060Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 560,
     "publishedInArchive": false,
-    "body": "The end of a shift is supposed to mark a boundary. A worker leaves a site and returns to ordinary life. An industrial release can erase that distinction, reaching the streets and homes around a plant and making the surrounding city part of the emergency.\n\nA gas release at Bhopal in December 1984 caused mass death and injury. The International Labour Organization's 2004 account places the disaster within the history of occupational safety and the consequences of major industrial accidents. It also recognizes that the effects continued beyond the first hours. This draft does not select a single definitive lifetime casualty total from estimates produced for different purposes.\n\nThat restraint is not a way of making the event smaller. A number means something only when the reader knows what it counts: immediate deaths, later deaths attributed to exposure, recorded injuries or a defined population under study. Adding unlike totals together does not produce a more respectful account.\n\n## More than one population at risk\n\nWorkplace safety and environmental safety can be administered separately. An accident does not have to respect the distinction. Employees, nearby residents, responders and people arriving later may face different forms of exposure, different access to information and different routes to assistance.\n\nThe geography matters. Distance from a fence is not necessarily an adequate description of exposure. Nor does being outside the workforce make someone's need for information secondary. Planning has to consider how a hazard could travel and who would have to make decisions before a complete explanation became available.\n\nAn emergency also creates a demand for knowledge that is practical before it is comprehensive. Responders need usable information about the substance and the circumstances. Residents need instructions they can understand and act on. Later scientific investigation remains essential, but it cannot substitute for communication during the period when people are deciding what to do.\n\n## The time after the emergency\n\nA disaster's administrative history can move faster than its human consequences. A case may be closed, a payment made or an institution reorganized while people continue to seek treatment, documentation or answers. The existence of one milestone does not establish the completion of all the others.\n\nConversely, a claim about a continuing effect needs evidence appropriate to that claim. The archive should distinguish testimony about experience, medical findings, exposure studies and legal decisions. It should not force them into a single scale of certainty or treat one as a replacement for the rest.\n\nBhopal is often invoked as a warning from the past. The more difficult task is to describe the responsibilities that persist after attention moves elsewhere. A factory can stop operating. The people around it cannot stop having a history with the site simply because an institutional timeline has reached its final page."
+    "body": "The gas release at Bhopal in December 1984 reached beyond the industrial site into the surrounding city, causing mass death and injury. An International Labour Organization account published in April 2004 describes a runaway reaction involving stored methyl isocyanate and health consequences extending well beyond the release.\n\nThe factory fence separated the workforce from the city without separating either from the gas. Nearby residents and responders could be exposed through different routes, with different information and access to help. The emergency crossed boundaries that the administration of safety often treats separately.\n\nCasualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries describe different outcomes and populations; adding them together does not produce a meaningful lifetime total.\n\n## More than one population at risk\n\nWorkplace safety and environmental safety can be administered separately. An accident does not have to respect the distinction. Employees, nearby residents, responders and people arriving later may face different forms of exposure, different access to information and different routes to assistance.\n\nThe geography matters. Distance from a fence is not necessarily an adequate description of exposure. Nor does being outside the workforce make someone's need for information secondary. Planning has to consider how a hazard could travel and who would have to make decisions before a complete explanation became available.\n\nAn emergency also creates a demand for knowledge that is practical before it is comprehensive. Responders need usable information about the substance and the circumstances. Residents need instructions they can understand and act on. Later scientific investigation remains essential, but it cannot substitute for communication during the period when people are deciding what to do.\n\n## A report written twenty years later\n\nThe ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents describes a runaway reaction involving stored methyl isocyanate at Bhopal and recognizes health consequences lasting well beyond the release. Its perspective is explicitly that of an organization concerned with preventing harm from work and industrial chemicals.\n\nThe report's account of continuing consequences describes the evidence available in 2004. It does not establish the condition of every survivor or neighborhood today.\n\nAn industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. The final entry is usually the end of a selected administrative process. Different questions need different timelines. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.\n\nProduction, emergency communication and medical follow-up operate on different timelines. A settlement or a closed administrative case cannot establish that treatment needs or exposure questions have ended.\n\n## The time after the emergency\n\nA disaster's administrative history can move faster than its human consequences. A case may be closed, a payment made or an institution reorganized while people continue to seek treatment, documentation or answers. The existence of one milestone does not establish the completion of all the others.\n\nTestimony, medical findings, exposure studies and legal decisions each address a different aspect of the aftermath. One cannot settle the questions assigned to the others.\n\nThe release stopped; its consequences continued. Medical care, exposure assessment and legal obligations ran on different timetables. Closing the plant's operating history could not close the history of those who had been exposed."
   },
   {
     "slug": "centralia-underground-fire",
-    "title": "Centralia: The Mine Fire That Forced a Town’s Relocation",
+    "title": "Centralia and the Geography Beneath a Town",
     "dek": "A fire in abandoned coal workings led to containment efforts, property buyouts and the displacement of most residents.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "mining",
       "pennsylvania"
     ],
-    "description": "The state’s chronology records decades of decisions about a hazard beneath the town.",
-    "socialPreview": "The state’s chronology records decades of decisions about a hazard beneath the town.",
-    "readingTime": "2 min",
+    "description": "Centralia's official chronology traces fire control, monitoring, relocation and the obligations that outlast a town's ordinary activity.",
+    "socialPreview": "Centralia's official chronology traces fire control, monitoring, relocation and the obligations that outlast a town's ordinary activity.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Pennsylvania Department of Environmental Protection",
-        "url": "https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
-      },
-      {
-        "title": "Pennsylvania DEP — Centralia mine fire chronology",
+        "title": "Pennsylvania DEP Centralia chronology",
         "url": "https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check current fire-status claims against recent Pennsylvania records.",
-      "Verify relocation chronology and avoid present-tense population claims without a date."
+      "Verify relocation chronology and avoid present-tense population claims without a date.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 377,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.059Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 554,
     "publishedInArchive": true,
-    "body": "A fire entered abandoned coal workings beneath Centralia, Pennsylvania, and spread through a network of seams and mine passages. Smoke, heat and dangerous gases began reaching the surface.\n\nPennsylvania’s official chronology dates the fire to May 1962 and records repeated control efforts, air-quality monitoring and damage from subsidence. In 1984, Congress funded voluntary acquisition and relocation of affected homes and businesses.\n\n## The town and the underground geography\n\nA surface map can show streets, houses and property lines while leaving the most consequential routes invisible. Abandoned workings create a second geography beneath a mining town, one that does not necessarily follow the boundaries used to administer the land above.\n\nThe Pennsylvania environmental agency's account is the starting source for the fire and response. Present-tense claims require a current check. A historical expectation that a fire could persist for a long period is not the same as a new measurement of its extent or behavior today.\n\nRelocation also needs more than a before-and-after photograph. A buyout is an administrative transaction, but leaving a town changes relationships, access and identity. Residents may have different reasons for accepting or resisting an offer. Those reasons should come from attributable accounts rather than a writer's assumption that one response was obvious.\n\nThe word abandoned can be equally misleading. A place may lose most of its population while retaining legal, environmental and personal obligations. The absence of ordinary activity does not establish that monitoring or stewardship has ended.\n\nCentralia's appeal in popular culture can turn the town into an eerie landscape detached from work and policy. An archive should restore the connection. Mining produced the underground spaces; later decisions addressed the hazards and the people living above them. The story is neither a ghost-town spectacle nor a simple morality tale about refusing to leave.\n\nIts unusual timescale is the key. A fire that moves through inaccessible workings can outlast political terms, household plans and familiar landmarks. The record should follow how institutions make decisions when the hazard's duration exceeds the calendars through which ordinary life is organized.\n\nCentralia is a record of decisions made over decades rather than a single evacuation. The state’s chronology identifies official actions; residents’ accounts are also needed to understand how people experienced relocation and the loss of community."
+    "body": "Congress appropriated $42 million in 1984 to help residents leave Centralia, Pennsylvania, where a mine fire had burned since May 1962. Repeated control efforts had achieved limited results. Gas and subsidence hazards shifted the official response toward property acquisition and relocation.\n\nLeaving Centralia was a process extending across decades. Pennsylvania's chronology distinguishes voluntary purchases from condemnation, litigation and demolition. Each changed residents' circumstances in a different way; none establishes a single moment when the town collectively decided to leave.\n\n## From control work to relocation\n\nThe chronology makes the changing response visible. Between 1962 and 1978, state and federal governments spent money on control efforts with limited results. Later, monitoring and property acquisition accompanied investigation of the fire's spread. Congress appropriated $42 million in 1984 for voluntary acquisition and relocation because of gas and subsidence hazards. Condemnation proceedings followed in the 1990s. [Pennsylvania DEP chronology](https://www.pa.gov/agencies/dep/programs-and-services/mining/abandoned-mine-reclamation/aml-program-information/centralia-mine-fire-resources/chronology).\n\nThese dates describe a sequence of interventions, not a single moment when everyone agreed to leave. Voluntary purchase, condemnation, litigation and demolition have different legal and personal meanings. Putting them under one word, evacuation, makes the history look faster and more unanimous than the administrative record supports.\n\nRelocation could reduce residents' exposure while leaving the underground source in place. A control effort and a buyout therefore required different measures of success.\n\nThis article makes no claim about today's population, the fire's current boundary, or an exact remaining burn duration. The dated chronology can establish past actions; its broad present-tense headings do not replace a fresh field survey. Keeping that limit visible prevents a historical record from masquerading as current environmental measurement.\n\n## A town is more than its remaining buildings\n\nThe disappearance of structures is visible in a photograph. Changes in access, ownership and attachment are less visible. A vacant parcel may still belong to a network of legal obligations and personal memories. Neither an abandoned-building image nor an agency expenditure total can represent those relationships completely.\n\nThe visible loss of buildings captures only part of the change. Property rights, monitoring duties and residents' attachments could persist after ordinary activity declined.\n\n## The town and the underground geography\n\nA surface map can show streets, houses and property lines while leaving the most consequential routes invisible. Abandoned workings create a second geography beneath a mining town, one that does not necessarily follow the boundaries used to administer the land above.\n\nRelocation also needs more than a before-and-after photograph. A buyout is an administrative transaction, but leaving a town changes relationships, access and identity. Residents may have different reasons for accepting or resisting an offer. Those reasons should come from attributable accounts rather than a writer's assumption that one response was obvious.\n\nThe word abandoned can be equally misleading. A place may lose most of its population while retaining legal, environmental and personal obligations. The absence of ordinary activity does not establish that monitoring or stewardship has ended.\n\nMining created the underground routes through which the hazard spread. Later decisions dealt with both the fire and the people above it. Treating Centralia only as an eerie landscape separates those consequences from their working and administrative history.\n\nThe buyouts changed who lived above the fire. They did not, by themselves, extinguish it. The official chronology follows those decisions; residents' accounts are needed to show what relocation meant to the people making them."
   },
   {
     "slug": "challenger-warning-and-decision",
@@ -328,47 +397,47 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "The Rogers Commission found that Challenger's launch decision was made with crucial O-ring concerns missing from the people responsible for the final go decision.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "space",
       "institutions",
-      "risk",
-      "decision-making"
+      "risk"
     ],
     "description": "A source-led account of the Challenger launch decision, the O-ring warning, the Thiokol recommendation reversal, and the information that failed to reach senior decision-makers.",
-    "socialPreview": "Challenger is often remembered as a warning ignored. The Rogers Commission documented something more precise: key decision-makers did not receive the full warning record.",
-    "readingTime": "4 min",
+    "socialPreview": "A source-led account of the Challenger launch decision, the O-ring warning, the Thiokol recommendation reversal, and the information that failed to reach senior decision-makers.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Report of the Presidential Commission on the Space Shuttle Challenger Accident — Chapter V",
+        "title": "Rogers Commission Chapter V",
         "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Commission findings on the flawed launch decision, incomplete communication of O-ring concerns, Thiokol's initial no-launch recommendation, management reversal, and testimony about the prelaunch teleconferences."
-      },
-      {
-        "title": "NASA History: Remembering Challenger and Her Crew",
-        "url": "https://www.nasa.gov/history/35-years-ago-remembering-challenger-and-her-crew/",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Mission chronology, crew and historical overview."
+        "status": "source-pass-complete",
+        "checkedAt": "2026-10-02",
+        "supports": "Scoped agency findings identified in the linked review Page; human line-by-line approval remains open"
       }
     ],
     "reviewChecklist": [
-      "Human editor: verify each launch-decision statement against the Commission chapter and distinguish Commission findings from quoted witness testimony.",
-      "Do not infer private motives beyond the Commission's explicit findings.",
-      "Check any technical description of O-ring behavior against the Commission's technical chapters before publication.",
-      "Confirm image rights and credit before using NASA or contractor imagery."
+      "Read the commission launch-decision chapter and distinguish testimony from findings.",
+      "Verify quotations individually; none are supplied here.",
+      "Human editor checks every Commission finding against the source.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 691,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T09:27:20.498Z",
+        "reason": "Transferred source-reviewed manuscript and original diagram from the Space; human approval remains pending"
+      }
+    ],
+    "words": 569,
     "publishedInArchive": false,
-    "body": "A warning can exist inside an organization without becoming part of the decision that matters.\n\nThat distinction is central to the Rogers Commission's account of Challenger. The Commission did not merely conclude that engineers had expressed concern before the 28 January 1986 launch. It found that the launch decision itself was flawed because senior decision-makers did not know crucial parts of the recent O-ring history, did not know about Morton Thiokol's initial written recommendation not to launch below 53 degrees Fahrenheit, and did not know that Thiokol engineers continued to oppose launch after management reversed the company's recommendation.\n\nThe physical failure and the decision process belong in the same record. One explains how the vehicle was lost. The other asks how an organization reached a go decision while important information remained below the level where that decision was made.\n\n## The warning was not one thing\n\nThe phrase \"the warning\" can make the night before launch sound cleaner than the record.\n\nThiokol engineers were working from incomplete and contested data. They were concerned about how low temperature would affect the field-joint seals, but witnesses also described difficulty quantifying the effect from the available evidence. During the teleconferences, different participants heard the meaning of the concern differently. The Commission's chapter preserves those disagreements rather than turning them into a single unanimous narrative.\n\nWhat is clear is that Thiokol initially recommended against launching outside its prior temperature experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers.\n\nThat is a finding about a documented process. It does not require a writer to invent what every person privately believed.\n\n## Who had to prove what?\n\nOne of the most revealing parts of the record comes from testimony, not from a stand-alone Commission finding.\n\nEngineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to demonstrate that launch would fail. Thiokol engineering executive Robert Lund later described a similar reversal in the group's thinking.\n\nTheir testimony matters because uncertainty behaves differently under those two standards.\n\nIf the operational rule is \"do not proceed until the evidence supports safety,\" unresolved evidence favors delay. If the practical rule becomes \"proceed unless someone can prove failure,\" the same uncertainty can support launch.\n\nThat does not mean every uncertain condition must automatically stop an operation. It means the burden of proof is part of the safety system and should be visible rather than changing implicitly in the room.\n\n## Information lost on the way upward\n\nThe Commission found a second problem: the senior managers responsible for the final launch decision did not receive the seriousness of the O-ring concern through the formal readiness process.\n\nEarlier O-ring anomalies, launch constraints, contractor concerns and the engineers' continuing opposition were not all present in the decision record at the level where the final go decision was made. The Commission described failures in communication and a management structure that allowed flight-safety problems to bypass key Shuttle managers.\n\nThis is more precise than saying \"management ignored engineers.\" Some managers did hear concerns. Some participants interpreted the early teleconference differently. Some information moved through informal conversations. The failure was that the organization did not reliably preserve the significance of the concern as it moved through levels of authority.\n\nA safety process cannot depend on the assumption that a warning will somehow become visible because enough people have heard pieces of it.\n\n## A warning needs an action path\n\nThe continuing lesson is not that organizations need more channels for people to voice concern. Channels already existed.\n\nThe harder requirement is to specify what happens after concern is raised: who evaluates it, who can stop the operation, what evidence is required to reopen the decision, and how dissent and uncertainty are carried into the final review.\n\nA system can record warnings faithfully and still neutralize them institutionally.\n\nChallenger's archive is therefore not only a record of a technical warning. It is a record of the difference between information existing and information governing a decision."
+    "body": "Challenger launched on 28 January 1986 after its contractor reversed a recommendation against launch. The Rogers Commission found that senior decision-makers lacked crucial information about O-ring problems, the initial recommendation not to launch below 53 degrees Fahrenheit and the engineers' continuing opposition.\n\nThe warning weakened as it moved toward the decision to launch. Engineers were debating what the available data could establish; senior managers were deciding whether to authorize flight without receiving the full account of that debate. The Commission traced the break between those two groups.\n\n## The warning was not one thing\n\nThiokol engineers were working from incomplete and contested data. They were concerned about how low temperature would affect the field-joint seals, but witnesses also described difficulty quantifying the effect from the available evidence. During the teleconferences, different participants heard the meaning of the concern differently. The Commission's chapter preserves those disagreements rather than turning them into a single unanimous narrative.\n\nWhat is clear is that Thiokol initially recommended against launching outside its prior temperature experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers.\n\n## Who had to prove what?\n\nTestimony describes a further change in the standard applied to that evidence.\n\nEngineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to demonstrate that launch would fail. Thiokol engineering executive Robert Lund later described a similar reversal in the group's thinking.\n\nUnder a rule that requires adequate evidence of safety, an unresolved safety concern can justify delay. Under a rule that requires opponents to prove failure, the same gap in evidence can be used to justify proceeding. These are different decision standards; neither makes uncertainty disappear.\n\nThat does not mean every uncertain condition must automatically stop an operation. It means the burden of proof is part of the safety system and should be visible rather than changing implicitly in the room.\n\n## Information lost on the way upward\n\nThe Commission found a second problem: the senior managers responsible for the final launch decision did not receive the seriousness of the O-ring concern through the formal readiness process.\n\nEarlier O-ring anomalies, launch constraints, contractor concerns and the engineers' continuing opposition were not all present in the decision record at the level where the final go decision was made. The Commission described failures in communication and a management structure that allowed flight-safety problems to bypass key Shuttle managers.\n\nSeveral managers heard concerns, and participants interpreted the teleconferences differently. The Commission's finding was more specific than a blanket claim that managers ignored engineers: significant safety information failed to reach the final decision level.\n\nA safety process cannot depend on the assumption that a warning will somehow become visible because enough people have heard pieces of it.\n\n## A warning needs an action path\n\nChannels for raising concerns already existed. The unresolved problem was how those concerns affected authorization to launch.\n\nThe harder requirement is to specify what happens after concern is raised: who evaluates it, who can stop the operation, what evidence is required to reopen the decision, and how dissent and uncertainty are carried into the final review.\n\nThiokol changed its recommendation. The engineers' objections did not disappear with it. The final launch decision proceeded without a full account of the dissent that remained."
   },
   {
     "slug": "columbia-evidence-not-requested",
@@ -376,98 +445,94 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Columbia's accident record includes not only the foam strike, but repeated attempts to obtain better imagery and the management system through which those requests moved.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "space",
       "evidence",
-      "decision-making",
-      "risk"
+      "decision-making"
     ],
     "description": "A source-led analysis of Columbia's foam-strike assessment, the requests for on-orbit imagery, and the organizational decisions documented by the Columbia Accident Investigation Board.",
-    "socialPreview": "After Columbia's foam strike, engineers wanted better imagery. The CAIB found that three imagery requests were initiated and that communication and management failures shaped what happened next.",
-    "readingTime": "4 min",
+    "socialPreview": "A source-led analysis of Columbia's foam-strike assessment, the requests for on-orbit imagery, and the organizational decisions documented by the Columbia Accident Investigation Board.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Columbia Accident Investigation Board findings and recommendations archive",
+        "title": "CAIB findings archive",
         "url": "https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "CAIB findings on the foam strike, uncertainty in damage assessment, imagery requests, communication failures, management assumptions and burden of proof."
-      },
-      {
-        "title": "NASA: Columbia Accident Investigation Board Synopsis",
-        "url": "https://www.nasa.gov/history/columbia-accident-investigation-board-synopsis/",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Board overview and imaging recommendations."
-      },
-      {
-        "title": "NASA History: Remembering Columbia and Her Crew",
-        "url": "https://www.nasa.gov/history/20-years-ago-remembering-columbia-and-her-crew/",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Mission chronology, foam-strike observation, imagery request summary and crew."
+        "status": "source-pass-complete",
+        "checkedAt": "2026-10-02",
+        "supports": "Scoped agency findings identified in the linked review Page; human line-by-line approval remains open"
       }
     ],
     "reviewChecklist": [
-      "Human editor: check the imagery-request chronology against the complete CAIB record before approval.",
-      "Do not claim that additional imagery would by itself have guaranteed detection, repair, rescue or crew survival.",
-      "Distinguish CAIB findings from Obscured Records analysis about uncertainty and evidence acquisition.",
-      "Confirm rights and credit for all NASA imagery."
+      "Check imagery-request chronology against the full CAIB report.",
+      "Do not claim that additional imagery alone guaranteed a rescue.",
+      "Human editor checks the full imagery-request chronology against the complete CAIB report.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 675,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T09:27:20.535Z",
+        "reason": "Transferred source-reviewed manuscript and original diagram from the Space; human approval remains pending"
+      }
+    ],
+    "words": 616,
     "publishedInArchive": false,
-    "body": "An uncertain observation creates a second engineering problem: deciding whether the current evidence is enough.\n\nColumbia's foam strike was first identified in launch imagery after the shuttle reached orbit. Engineers knew that debris from the external tank had hit the left wing, but the available launch images did not show the resulting damage clearly enough to settle what had happened to the thermal-protection system.\n\nThe Columbia Accident Investigation Board later found that the foam strike damaged the wing and that the damage led to the loss of Columbia and its seven crew members during re-entry on 1 February 2003. The Board also treated the mission's handling of uncertainty as part of the accident record.\n\n## The missing view\n\nThe CAIB found that the photo working group was concerned about the impact and that no conclusive image of the strike existed. A Debris Assessment Team formed to analyze the event. During its early work, the team discussed the value of on-orbit imagery for bounding its analysis and tasked its NASA co-chair with seeking such imagery.\n\nThe request did not travel cleanly.\n\nAccording to the Board's findings, it moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request.\n\nThe CAIB ultimately counted three independent imagery requests.\n\nThis is a more useful record than saying simply that “NASA refused photos.” The important detail is how a request changed meaning as it moved through an organization.\n\n## Analysis without the image\n\nWithout better on-orbit pictures, the Debris Assessment Team relied on models, prior experience and the information already available from the launch imagery.\n\nThe Board found substantial uncertainty in the assessment. It cited inadequate imagery, weaknesses in the use of assessment tools, communication breakdowns and engineering judgments. It also found that assumptions and uncertainties were not fully presented to the Mission Evaluation Room or Mission Management Team.\n\nThe problem was therefore not that engineers had no analysis. The problem was that the analysis contained uncertainty that was not preserved clearly enough in the management process.\n\nCAIB also found that managers asked who was requesting imagery rather than first assessing the merits of the request, and that no one in the operational chain for the mission had the clearance needed to understand the capabilities and limits of national imaging resources.\n\nA tool can be available to an institution and still be practically unavailable to the decision if ownership, procedure and knowledge are unclear.\n\n## The burden of uncertainty\n\nThe Board made another finding that echoes Challenger without making the two accidents identical.\n\nIt found that program managers required engineers to demonstrate that the debris strike created a safety-of-flight issue rather than requiring evidence that the vehicle was safe. That choice matters when the available information is incomplete.\n\nUncertainty is not proof of danger. But it is also not proof of safety.\n\nThe engineering question is therefore not just whether an analysis has produced an answer. It is whether the evidence, assumptions and uncertainty behind that answer are visible to the people who must decide what to do next.\n\n## What a better image could and could not establish\n\nIt is tempting to turn the missed imagery into a clean alternate history: obtain the picture, recognize the breach, save the crew.\n\nThe record does not support that simple sequence.\n\nDetection, interpretation and an effective response are separate problems. Better imagery could have changed the information available to decision-makers. It does not follow automatically that a feasible repair or rescue would then have succeeded.\n\nKeeping that counterfactual bounded does not make the imagery requests unimportant. It makes the actual institutional question clearer: when evidence is inadequate and the stakes are extreme, does the system have a reliable way to ask for a better look?\n\nFor Columbia, that question belongs in the accident record alongside the foam strike itself."
+    "body": "Columbia and its seven crew members were lost during re-entry on 1 February 2003. The Columbia Accident Investigation Board found that a foam strike had damaged the left wing. Its inquiry also traced three independent attempts to obtain better images of the damage while the shuttle was still in orbit.\n\nLaunch imagery revealed a strike near the left wing's leading edge, but did not conclusively show the damage. Better pictures could have helped. They were not the only route to an answer: CAIB finding F3.4-6 states that the information already available during the mission was adequate to determine the impact's effect. The failure involved both obtaining evidence and using it.\n\n## The missing view\n\nThe CAIB found that the photo working group was concerned about the impact and that no conclusive image of the strike existed. A Debris Assessment Team formed to analyze the event. During its early work, the team discussed the value of on-orbit imagery for bounding its analysis and tasked its NASA co-chair with seeking such imagery.\n\nAccording to the Board's findings, it moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request.\n\nThe CAIB ultimately counted three independent imagery requests.\n\nThe requests' route mattered. An engineering concern reached management without carrying the urgency of an operational safety question.\n\n## Analysis without the image\n\nWithout better on-orbit pictures, the Debris Assessment Team relied on models, prior experience and the information already available from the launch imagery.\n\nThe Board found substantial uncertainty in the assessment. It cited inadequate imagery, weaknesses in the use of assessment tools, communication breakdowns and engineering judgments. It also found that assumptions and uncertainties were not fully presented to the Mission Evaluation Room or Mission Management Team.\n\nAn assessment existed, but the people making decisions did not receive a full account of its assumptions and uncertainty.\n\nCAIB also found that managers asked who was requesting imagery rather than first assessing the merits of the request, and that no one in the operational chain for the mission had the clearance needed to understand the capabilities and limits of national imaging resources.\n\nAccess to imaging capability depended on more than having the equipment. The request needed authority, a recognized route and a decision about its purpose.\n\n## The burden of uncertainty\n\nThe Board also examined the standard managers applied to unresolved risk.\n\nIt found that program managers required engineers to demonstrate that the debris strike created a safety-of-flight issue rather than requiring evidence that the vehicle was safe. That choice matters when the available information is incomplete.\n\nUncertainty is not proof of danger. But it is also not proof of safety.\n\nThe engineering question is therefore not just whether an analysis has produced an answer. It is whether the evidence, assumptions and uncertainty behind that answer are visible to the people who must decide what to do next.\n\n## What a better image could and could not establish\n\nDetection, interpretation and an effective response are separate problems. Better imagery could have changed the information available to decision-makers. It does not follow automatically that a feasible repair or rescue would then have succeeded.\n\nThe missed imagery requests matter without a guaranteed rescue counterfactual. They show how an organization handled a request for more evidence when the available assessment remained uncertain.\n\nA better image would have supplied evidence, not a guaranteed rescue. The missed requests nevertheless exposed a consequential weakness: uncertainty could remain unresolved while the mission's decision process continued."
   },
   {
     "slug": "dawsons-field",
     "title": "The Dawson’s Field Hijackings and the International Response",
-    "dek": "In September 1970, a series of hijackings brought three passenger aircraft to an airstrip in Jordan.",
+    "dek": "Dawson’s Field turned several hijackings into a crisis involving multiple aircraft and governments. Contemporary reports capture an unfolding situation, making it essential to distinguish proposals from what eventually happened.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "aviation",
       "diplomacy"
     ],
-    "description": "The destruction of evacuated airliners became a highly visible part of a larger hostage crisis.",
-    "socialPreview": "The destruction of evacuated airliners became a highly visible part of a larger hostage crisis.",
-    "readingTime": "2 min",
+    "description": "The Dawson’s Field hijackings through contemporary reporting, with proposals, eventual outcomes and the earlier aviation treaty response kept distinct.",
+    "socialPreview": "The Dawson’s Field hijackings through contemporary reporting, with proposals, eventual outcomes and the earlier aviation treaty response kept distinct.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "International Civil Aviation Organization history",
-        "url": "https://www.icao.int/sites/default/files/postalhistory/legal_instruments_related_to_aviation_security.htm",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
-      },
-      {
-        "title": "U.S. government situation report, 9 September 1970",
+        "title": "U.S. State Department, situation report, 9 September 1970",
         "url": "https://history.state.gov/historicaldocuments/frus1969-76ve01/d52",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "The BOAC aircraft joined two aircraft already held at the Jordanian airfield on 9 September; this does not verify every hostage claim."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Find event-specific primary accounts beyond the general ICAO legal chronology.",
-      "Verify hostage-release sequence before using aircraft-destruction imagery."
+      "Verify hostage-release sequence before using aircraft-destruction imagery.",
+      "Build a dated chronology using additional contemporary reports; identify which reported proposals were implemented and which remained proposals.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 366,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 504,
     "publishedInArchive": true,
-    "body": "In September 1970, the Popular Front for the Liberation of Palestine carried out a series of aircraft hijackings. Three aircraft were taken to Dawson’s Field in Jordan, while a Pan Am aircraft was taken to Cairo and destroyed after evacuation.\n\nPassengers were separated, bargaining stretched across borders, and television cameras recorded empty aircraft being blown apart in the desert. The crisis fed directly into Jordan’s confrontation with Palestinian organizations and into a new international urgency around unlawful seizure of aircraft.\n\n## The aircraft as a public stage\n\nThe significance of a hijacked aircraft extends beyond the machine and the people immediately controlling it. An aircraft carries national affiliation, commercial identity and the expectation of civilian movement. Turning it into an instrument of coercion therefore creates several audiences at once.\n\nA historical account should distinguish what happened to passengers from what was done to the aircraft after they left it. Collapsing these stages can produce a more terrifying but less accurate image. Sequence is not a minor detail when the same photograph is capable of suggesting several different human situations.\n\nThe ICAO legal history offers one route into the institutional response. Its purpose is to describe aviation-security instruments, not to provide a complete account of the political conflict. A treaty chronology can help establish the development of rules, but it does not explain the experiences of hostages or every government's choices during the crisis.\n\nNor should the passage of an international instrument be treated as proof that the problem had been solved. Adoption, entry into force, domestic implementation and practical enforcement are separate stages. A retrospective narrative should identify which stage it is discussing.\n\nThe visual record deserves similar discipline. Images of aircraft in a remote landscape are powerful because they detach familiar vehicles from ordinary travel. But the image must remain connected to its date, its sequence and the status of the people who had been aboard. Otherwise the spectacle consumes the history it is supposed to help preserve.\n\nThe episode belongs to both aviation history and the political conflict in Jordan. ICAO’s historical account helps trace the international legal response; it does not by itself establish every claim about the hostages or the subsequent fighting."
+    "body": "On 9 September 1970, U.S. officials reported a British Overseas Airways Corporation aircraft at a Jordanian airfield alongside two other hijacked planes. Their situation report also described Red Cross involvement and deteriorating conditions in Amman.\n\nThe situation report captures officials acting inside an unfinished crisis. Proposals, messages through intermediaries and developments in Amman appear alongside the aircraft's position. It is evidence of what officials knew and were considering then, rather than a retrospective chronology in which every outcome was already settled.\n\n## The aircraft as a public stage\n\nThe significance of a hijacked aircraft extends beyond the machine and the people immediately controlling it. An aircraft carries national affiliation, commercial identity and the expectation of civilian movement. Turning it into an instrument of coercion therefore creates several audiences at once.\n\nThe passengers' movements and the treatment of aircraft after evacuation require separate chronology. A photograph of an aircraft cannot establish who remained aboard at the time it was taken.\n\nThe ICAO legal history offers one route into the institutional response. Its purpose is to describe aviation-security instruments, not to provide a complete account of the political conflict. A treaty chronology can help establish the development of rules, but it does not explain the experiences of hostages or every government's choices during the crisis.\n\nNor should the passage of an international instrument be treated as proof that the problem had been solved. Adoption, entry into force, domestic implementation and practical enforcement are separate stages. A retrospective narrative should identify which stage it is discussing.\n\nThe visual record must remain attached to its date and the status of the people aboard. Otherwise an image can imply a human situation it does not document.\n\n## A situation report inside the crisis\n\nA U.S. government report dated 9 September 1970 records a British Overseas Airways Corporation aircraft reaching the Jordanian airfield where two other hijacked planes were held. It also describes Red Cross involvement and concerns about the deteriorating situation in Amman. The aircraft crisis and the political crisis were being considered together by officials.\n\nA proposed intervention establishes that officials considered it. A separate record is needed to establish whether it occurred.\n\nA situation report captures the connections officials were making under uncertainty. A retrospective chronology can establish later outcomes, but cannot be substituted for their knowledge at the time.\n\nThe ICAO legal chronology supplies another clock: international agreements developing beyond the immediate crisis. A diplomatic report about endangered passengers and a history of treaty adoption concern related events, but each answers a different question. Keeping them side by side shows how immediate action and durable legal rules can proceed on different timetables. It also avoids making a later convention appear to have been available to the people deciding what to do that day.\n\nOfficials had to act while the aircraft crisis was still unfolding. International aviation agreements developed on a longer timetable. Keeping those records distinct avoids crediting the immediate response with rules adopted later—or asking a treaty history to describe what happened to each hostage."
   },
   {
     "slug": "dhahran-running-clock",
@@ -475,149 +540,188 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "software",
       "time",
       "defense"
     ],
-    "description": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
-    "socialPreview": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
+    "description": "The Dhahran Patriot failure shows why elapsed runtime, numerical precision and the arrival of a software fix belong in the same record.",
+    "socialPreview": "The Dhahran Patriot failure shows why elapsed runtime, numerical precision and the arrival of a software fix belong in the same record.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. GAO: Patriot Missile Defense, IMTEC-92-26",
-        "url": "https://www.gao.gov/products/imtec-92-26",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Tracking error accumulated with operating time; patch arrived after the attack."
+        "title": "GAO IMTEC 92 26",
+        "url": "https://www.gao.gov/assets/imtec-92-26.pdf",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Read technical appendix before including numerical drift calculations.",
-      "Do not generalize this failure into an unsupported overall effectiveness estimate."
+      "Do not generalize this failure into an unsupported overall effectiveness estimate.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 444,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.058Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 519,
     "publishedInArchive": false,
-    "body": "How long has it been running? For a computer, that can sound like a maintenance question. In a system that predicts the position of a fast-moving object, it can also be a question about whether the prediction still means what its operators think it means.\n\nThe U.S. General Accounting Office investigated the Patriot battery's failure at Dhahran on 25 February 1991. Its report linked the missed interception to a software timing problem that worsened with continuous operation. The incoming missile struck a barracks and killed 28 Americans. GAO also recorded that corrected software reached Dhahran after the attack. These findings concern a specific system failure; they are not a complete verdict on every Patriot engagement.\n\n### Duration is an input\n\nWe tend to picture software inputs as things entered through a keyboard or delivered by a sensor. Time in service belongs on that list too. A small numerical approximation can become significant when repeatedly carried forward. Testing a short operation and observing success does not establish that the same implementation behaves acceptably after a much longer interval.\n\nThis is not the mystical claim that computers grow tired. It is a question of representation and accumulation. A machine stores values in a particular form. The form has limits, and the relationship between those limits and a physical task has to be assessed across the intended operating envelope.\n\nThe operational envelope is itself an institutional object. Engineers may assume one pattern of use while operators need another. If a system is deployed under changed conditions, the original assurance does not automatically travel with it. Someone has to ask which assumptions remain valid and what evidence would show that they no longer do.\n\n### The day a fix arrives\n\nA patch has at least two histories. One concerns its design and verification. The other concerns distribution, installation and confirmed use. A release date closes only part of that chain. An organization may possess the corrected code while a particular deployed system still runs the earlier version.\n\nThe Dhahran record is therefore useful without converting it into a universal instruction to restart equipment or install updates immediately. Those actions have their own operational risks. The responsible lesson is narrower: maintenance advice, operating limits and software changes must reach the people making time-sensitive decisions in a form they can act on.\n\nThe last question is about the evidence left afterward. Can a reviewer determine what version was running, for how long, under which conditions and with which warnings available? Without that record, the difference between an engineering fix and an implemented protection can vanish. Elapsed time belongs not only in the calculation but also in the account of responsibility."
+    "body": "The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to intercept a missile on 25 February 1991. The missile struck a barracks and killed 28 Americans. A General Accounting Office investigation linked the missed interception to a timing calculation whose error grew with continuous operation.\n\nA corrected version of the software reached Dhahran after the attack. The failure had developed inside a calculation, but preventing it also depended on getting a working correction into the battery. A release of new code and its installation on a deployed system were separate events.\n\n## Where the clock met the target\n\nGAO's report describes a clock recorded in tenths of seconds. Converting its integer count into a real-number time value lost precision in the system's limited registers. The effect on the tracking calculation increased with operating duration and target velocity. At Dhahran the battery had run continuously for more than 100 hours. Its predicted search region no longer aligned adequately with the incoming missile. [GAO report, printed pages 1 and 5–6](https://www.gao.gov/assets/imtec-92-26.pdf).\n\nThe important distinction is between the stored count and the conversion used to interpret it. A larger count need not be corrupted to produce a worse physical prediction. An approximation applied to that count can become consequential as the operating interval grows. Describing the problem simply as a clock that drifted hides the calculation in which time acquired its error.\n\nA test establishes behavior over the interval examined. Running the same executable for much longer changes an input to its calculations, even when no code has changed.\n\n### Duration is an input\n\nWe tend to picture software inputs as things entered through a keyboard or delivered by a sensor. Time in service belongs on that list too. The effect of a small conversion error can become significant when it is applied to a larger elapsed-time count. Testing a short operation and observing success does not establish that the same implementation behaves acceptably after a much longer interval.\n\nLimited numerical representation, rather than a corrupted clock count, was the issue. The conversion's precision had to be adequate across the intended duration of operation.\n\nEngineers and operators can work with different assumptions about duration. Deployment under a longer operating interval requires evidence that the original calculations remain adequate.\n\n### The day a fix arrives\n\nA patch has at least two histories. One concerns its design and verification. The other concerns distribution, installation and confirmed use. A release date closes only part of that chain. An organization may possess the corrected code while a particular deployed system still runs the earlier version.\n\nThe Dhahran record is therefore useful without converting it into a universal instruction to restart equipment or install updates immediately. Those actions have their own operational risks. The responsible lesson is narrower: maintenance advice, operating limits and software changes must reach the people making time-sensitive decisions in a form they can act on.\n\nAt Dhahran, the calculation accumulated error while the battery kept running. The correction existed, but arrived after the attack. Its release date could not tell operators whether their system was protected."
   },
   {
     "slug": "enron-reading-the-entity",
     "title": "A Separate Company Is Not Always a Separate Risk",
-    "dek": "Reading Enron’s public record requires following relationships across the legal boxes.",
+    "dek": "Enron’s use of special-purpose entities challenges the idea that a separate company necessarily means a separate risk. The useful questions concern consolidation, financial exposure and who ultimately bears the loss.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "accounting",
       "disclosure",
       "corporate structure"
     ],
-    "description": "Reading Enron’s public record requires following relationships across the legal boxes.",
-    "socialPreview": "Reading Enron’s public record requires following relationships across the legal boxes.",
+    "description": "What contemporary SEC testimony reveals about Enron’s special-purpose entities, consolidation and the risk that separate entities could obscure.",
+    "socialPreview": "What contemporary SEC testimony reveals about Enron’s special-purpose entities, consolidation and the risk that separate entities could obscure.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "SEC testimony: Recent Events Relating to Enron Corporation, December 2001",
+        "title": "SEC testimony on Enron, 12 December 2001",
         "url": "https://www.sec.gov/newsroom/speeches-statements/121201tsrkh-testimony-recent-events-relating-enron-corporation",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Contemporaneous disclosures, equity reduction and special-purpose entities."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Distinguish testimony and allegations from final adjudicated findings.",
-      "Check any transaction-level description against underlying filings."
+      "Check any transaction-level description against underlying filings.",
+      "Document one specific entity transaction and its historical consolidation treatment; distinguish that evidence from later criminal findings.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 461,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 568,
     "publishedInArchive": false,
-    "body": "An organizational chart is full of boxes. The lines connecting them can carry obligations, guarantees, control and exposure that the boxes alone do not reveal. A reader who stops at the outline of a legal entity may miss the economic relationship that makes it matter.\n\nSEC testimony in December 2001 described Enron's recent financial disclosures, including charges and a reduction in shareholders' equity associated with transactions involving special-purpose entities. The testimony belongs to a moment when investigators and the public were still working through events. It should be read as a contemporaneous official account, not silently upgraded into the final finding on every transaction.\n\n## The name of the structure does not decide the case\n\nA special-purpose entity is not inherently evidence of fraud. A separate legal structure may have legitimate uses. The questions are what it does, who controls it, who supplies its resources and who bears losses when the arrangement performs badly.\n\nThis makes accounting history demanding for a writer. It is not enough to call a transaction complex. Complexity is a description of the reader's task, not proof of wrongdoing. The account has to explain the relevant relationship and identify what a disclosure or representation obscured.\n\nA useful starting exercise is to follow an adverse outcome. If an asset falls in value, who is required or expected to support the structure? If a promise depends on the parent company's shares, what happens when those shares lose value? These questions expose dependencies that may be invisible in a list of formally separate entities.\n\nThey are general analytical questions. Applying them to a named transaction requires its documents. Without those documents, a writer should not pretend to have untangled a balance sheet merely by drawing arrows.\n\n## The archive has procedural stages\n\nCorporate failures produce filings, testimony, complaints, settlements and judgments. Each has a different status. A complaint states allegations. A settlement can resolve a dispute under particular terms. A judgment establishes findings within its scope. Moving between them without labels can convert an accusation into an apparently settled fact.\n\nChronology matters too. What was publicly disclosed on one date may differ sharply from what later investigations established. A retrospective narrative should not give contemporary readers information they did not yet possess and then blame them for failing to act on it.\n\nAt the same time, uncertainty at an early stage does not make earlier questions irrelevant. An investigation can ask which warning signs were available and whether the institutions responsible for checking them did so.\n\nThe enduring value of the Enron record lies in this double reading: follow the economic relationships, and follow the status of the evidence used to describe them. The legal box is a beginning. It cannot be allowed to become the end of the inquiry."
+    "body": "In December 2001, SEC testimony described Enron's disclosure that three special-purpose entities previously kept outside its consolidated accounts should have been included. It separately discussed a reduction in shareholders' equity associated with notes received in exchange for Enron shares.\n\nThe disclosures concerned two related questions: which entities belonged in Enron's reported accounts, and what value could be assigned to transactions involving its shares. Legal separation did not necessarily separate risk when control, guarantees or financial support continued to connect an entity to Enron.\n\n## The name of the structure does not decide the case\n\nA special-purpose entity is not inherently evidence of fraud. A separate legal structure may have legitimate uses. The questions are what it does, who controls it, who supplies its resources and who bears losses when the arrangement performs badly.\n\nCalling an arrangement complex explains little. Its significance depends on the obligations between the parties and what the published accounts allowed investors to see.\n\nA useful starting exercise is to follow an adverse outcome. If an asset falls in value, who is required or expected to support the structure? If a promise depends on the parent company's shares, what happens when those shares lose value? These questions expose dependencies that may be invisible in a list of formally separate entities.\n\nApplying those questions to a particular transaction requires its documents. An ownership chart can identify companies without revealing all the support promised between them.\n\n## The archive has procedural stages\n\nCorporate failures produce filings, testimony, complaints, settlements and judgments. Each has a different status. A complaint states allegations. A settlement can resolve a dispute under particular terms. A judgment establishes findings within its scope. Moving between them without labels can convert an accusation into an apparently settled fact.\n\nThe contemporary disclosures and later findings need separate dates. A reader's knowledge in 2001 cannot be reconstructed from evidence established afterward.\n\nAt the same time, uncertainty at an early stage does not make earlier questions irrelevant. An investigation can ask which warning signs were available and whether the institutions responsible for checking them did so.\n\n## What consolidation would change\n\nThe SEC's December 2001 testimony explains that Enron had disclosed that three previously unconsolidated special-purpose entities should have been included in its consolidated financial statements. It separately discusses a reduction in shareholders' equity associated with notes received in exchange for Enron shares. These are specific reporting issues, not one undifferentiated claim that the company was complicated.\n\nConsolidation concerns the boundary of the reported organization. If an entity belongs inside that boundary for accounting purposes, reporting it separately can change the reader's view of obligations and assets. A legal distinction between companies cannot settle that accounting question on its own.\n\nThe testimony also explains that an investor's capital being genuinely at risk mattered to the treatment of special-purpose entities under the guidance discussed then. A nominal external investor does not necessarily establish economic independence if its return is protected by another party.\n\nThe testimony describes the rules and disclosures discussed in 2001. It does not prescribe present-day accounting treatment. Its historical value is the connection it draws between formal separation and the financial relationships that could make that separation misleading.\n\nThe name on the entity did not settle who would bear its losses. That question depended on control, guarantees and financial support. The 2001 testimony helps trace those relationships within the accounting rules and disclosures being discussed then."
   },
   {
     "slug": "ethiopian-airlines-961",
     "title": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching",
-    "dek": "The hijacked Boeing 767 ran out of fuel near the Comoros on 23 November 1996. Fifty of the 175 people aboard survived.",
+    "dek": "Ethiopian Airlines 961 connects a hijacking demand to a physical limit: the fuel available for the flight. The investigation records the resulting ditching while leaving limits on what can be reconstructed about the final moments.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "aviation",
       "survival"
     ],
-    "description": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
-    "socialPreview": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
-    "readingTime": "2 min",
+    "description": "The hijacking, fuel exhaustion and ditching of Ethiopian Airlines 961, explained within the limits of the investigation and surviving evidence.",
+    "socialPreview": "The hijacking, fuel exhaustion and ditching of Ethiopian Airlines 961, explained within the limits of the investigation and surviving evidence.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Aviation Safety Network accident record",
-        "url": "https://aviation-safety.net/asndb/324317",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "title": "Ethiopian Civil Aviation Authority investigation into Flight 961",
+        "url": "https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Retrieve the accident investigation beyond the database summary.",
-      "Check survivor and casualty counts and avoid unsourced safety advice."
+      "Check survivor and casualty counts and avoid unsourced safety advice.",
+      "Verify cockpit exchanges and passenger announcements against the investigation and identified testimony; retain the recording limits and avoid unsupported passenger blame.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 386,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 422,
     "publishedInArchive": true,
-    "body": "Three men seized Ethiopian Airlines Flight 961 after takeoff from Addis Ababa and demanded Australia. Captain Leul Abate told them the Boeing 767 did not carry enough fuel. They insisted the aircraft continue over the Indian Ocean.\n\nAfter both engines flamed out near the Comoros, Abate attempted to ditch close to shore while fighting the hijackers at the controls. A wing struck the water and the fuselage broke apart. Fifty people survived; 125 did not. Investigators noted that inflated life vests trapped some passengers inside the sinking cabin.\n\n## Fuel does not negotiate\n\nA demand made aboard an aircraft does not change what the aircraft can physically do. Range depends on fuel, conditions and the aircraft's state, not on the urgency or confidence of the person giving an order. That mismatch is central to understanding this event.\n\nIt would be easy to reduce the story to irrational captors and expert pilots. The more useful account describes the constraint itself: what information was available about remaining fuel, how that information was communicated and what options remained as the flight continued. Where the evidence does not establish an exchange, the writer should resist supplying dialogue that seems plausible.\n\nA ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. The behavior of an aircraft on contact with water depends on many factors. Images of the outcome do not establish what would have happened under a different approach or at another location.\n\nPassenger actions deserve the same care. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence. The people aboard were acting with less information and less time than a later reader possesses.\n\nThe aviation occurrence record is a starting point for these distinctions. A fuller treatment would compare it with an investigation report and attributable survivor accounts. Keeping those sources separate allows an account to retain both the physical limits of the flight and the human uncertainty inside it. Neither needs embellishment to explain why the event matters.\n\nThe record brings together coercion in the cockpit, fuel limits and evacuation after a water landing. The widely circulated film shows the impact; it cannot establish what every passenger or crew member experienced inside the aircraft."
+    "body": "The Boeing 767 carrying Ethiopian Airlines Flight 961 exhausted its fuel and ditched near the Comoros on 23 November 1996. Of 175 people aboard, 125 died and 50 survived. Three hijackers had demanded Australia despite the crew's warnings about fuel.\n\nThe investigating committee attributed the accident to unlawful interference leading to fuel exhaustion. The hijackers' destination demand exceeded the aircraft's remaining capability. Coercion also obstructed the crew's attempts to manage the emergency as the fuel available for any response continued to diminish.\n\n## Fuel does not negotiate\n\nA demand made aboard an aircraft does not change what the aircraft can physically do. Range depends on fuel, conditions and the aircraft's state, not on the urgency or confidence of the person giving an order. That mismatch is central to understanding this event.\n\nFuel warnings needed to reach people who could change the aircraft's course. The report records interference continuing as the available options narrowed; unrecorded exchanges cannot be reconstructed from what later appeared inevitable.\n\nA ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. The behavior of an aircraft on contact with water depends on many factors. Images of the outcome do not establish what would have happened under a different approach or at another location.\n\nPassenger actions deserve the same care. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence. The people aboard were acting with less information and less time than a later reader possesses.\n\n## Communication inside a damaged situation\n\nThe report describes cabin crew and the first officer helping passengers with life jackets before impact. It also notes that instructions were given in English and may not have been understood by everyone. Communication was taking place amid interference, limited access and a deteriorating emergency.\n\nA statement appearing in the final investigation does not establish that everyone in the cabin heard or understood it. The completed sequence available to a later reader was unavailable to people acting inside it.\n\nThe committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. It should not take selected observations and turn them into an individual explanation for every death.\n\nThe demand did not increase the fuel aboard. Interference narrowed the crew's choices as that fuel ran out. The film shows the ditching; the investigation supplies the cockpit and cabin evidence needed to explain the conditions that preceded it."
   },
   {
     "slug": "flight-629-suitcase-bomb",
     "title": "United Flight 629: The Baggage Bomb and the Investigation",
-    "dek": "An explosion destroyed the aircraft after departure from Denver in 1955, killing all 44 people aboard.",
+    "dek": "The investigation of United Flight 629 turned aircraft wreckage and baggage evidence into a criminal case. Its later retellings require equal care with insurance claims and assertions about changes to aviation security.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "aviation",
       "investigation"
     ],
-    "description": "Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",
-    "socialPreview": "Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",
-    "readingTime": "2 min",
+    "description": "How investigators linked the Flight 629 baggage bombing to its perpetrator, and why insurance details and later security claims need separate evidence.",
+    "socialPreview": "How investigators linked the Flight 629 baggage bombing to its perpetrator, and why insurance details and later security claims need separate evidence.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "FBI History — Jack Gilbert Graham",
+        "title": "FBI case history of Jack Gilbert Graham",
         "url": "https://www.fbi.gov/history/cases-and-criminals/jack-gilbert-graham",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify insurance-policy details against the FBI account and court record.",
-      "Replace broad policy-change claims unless a specific causal history is sourced."
+      "Replace broad policy-change claims unless a specific causal history is sourced.",
+      "Check the insurance claims against court records and distinguish criminal findings from later summaries; support any security-policy consequence with a policy record.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 390,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 491,
     "publishedInArchive": true,
-    "body": "United Air Lines Flight 629 departed Denver and broke apart minutes later, killing all 44 people aboard. Investigators found evidence of an explosion in checked baggage.\n\nThe FBI traced the bomb to Jack Gilbert Graham, who had placed it in his mother’s suitcase after buying travel insurance policies on her life. He confessed and was convicted.\n\n## The private motive inside a shared journey\n\nA passenger's private relationships can become part of a transport system's risk without being visible to the other people using it. That is one of the disturbing features of a case in which a personal motive is carried aboard a shared flight.\n\nThe FBI's historical account links the investigation to the physical evidence and the suspect's actions. A fuller article should distinguish what investigators established from what they initially suspected. Confession, forensic evidence and financial records play different roles; one should not be used as a vague substitute for the others.\n\nThe insurance detail is particularly easy to oversimplify. Buying or possessing a policy does not necessarily establish its validity, its beneficiary or whether any payment could have been made. Claims about the intended financial outcome need the relevant records, not just the presence of insurance in the story.\n\nLikewise, a single case should not be described as having created modern airline security without a documented policy chain. A disaster can expose a vulnerability, contribute to debate or affect a later practice. Those are different claims, and chronology alone does not prove causation.\n\nThe people aboard the aircraft should remain present in the account as more than the scale of someone else's crime. An archival treatment can preserve names and documented circumstances where appropriate without reconstructing private final thoughts. It can explain the investigation without making the perpetrator the only person whose actions matter.\n\nThe strongest version of the story therefore has two movements: the evidence that established a particular crime, and the wider questions the case raises about personal violence in shared infrastructure. The second should grow from the first rather than replace it with a sweeping claim about everything that changed afterward.\n\nThe case shows how an attack aimed at one person killed everyone aboard a shared aircraft. Its place in the history of security needs specific evidence of later policy changes; the investigation alone does not establish when a particular safeguard was introduced."
+    "body": "Investigators reconstructed United Air Lines Flight 629 from fragments recovered after it broke apart following departure from Denver. All 44 people aboard were killed. The FBI's account describes recording the fragments' locations and assembling wreckage in a warehouse to help locate the explosion.\n\nInvestigators traced the baggage bomb to Jack Gilbert Graham, who had placed it in his mother's suitcase. He confessed and was convicted. He had also bought travel insurance on her life, although the policies' validity and potential payout must be established from their own records.\n\n## The private motive inside a shared journey\n\nA passenger's private relationships can become part of a transport system's risk without being visible to the other people using it. That is one of the disturbing features of a case in which a personal motive is carried aboard a shared flight.\n\nWreckage, financial records, witness evidence and a confession answered different questions in the investigation. The verdict followed that work rather than erasing the uncertainty at every earlier stage.\n\nThe insurance detail is particularly easy to oversimplify. Buying or possessing a policy does not necessarily establish its validity, its beneficiary or whether any payment could have been made. Claims about the intended financial outcome need the relevant records, not just the presence of insurance in the story.\n\nLikewise, a single case should not be described as having created modern airline security without a documented policy chain. A disaster can expose a vulnerability, contribute to debate or affect a later practice. Those are different claims, and chronology alone does not prove causation.\n\nThe inquiry also involved identifying those killed. That task continued alongside the search for the cause and perpetrator, and belongs in the record of the investigation.\n\n## Returning fragments to a place\n\nThe FBI's account describes investigators recording the locations of recovered material and assembling wreckage in a warehouse. This work placed fragments back in relation to the aircraft's structure. The resulting arrangement helped locate the explosion, rather than merely establishing that damaged metal existed.\n\nThat transformation is central to forensic reconstruction. A fragment's appearance matters, but so does where it was found and how it belongs beside other fragments. Removing location information can turn a potentially useful record into an isolated object. Preserving the relationship allows another investigator to examine the explanation.\n\nThe inquiry also involved identifying those killed. This was a distinct task, carried out alongside examination of the wreckage. A criminal case can become a story about how a perpetrator was caught while the labor of accounting for everyone aboard recedes from view.\n\nThe FBI retrospective presents an institutional account of reconstruction and identification. Preserving the sequence makes clear how suspicion, evidence and a jury finding came to concern the same crime.\n\nThe warehouse reconstruction turned scattered fragments into evidence of an explosion aboard a shared flight. Graham's conviction established the criminal case. Any account of the security changes that followed must trace those changes through the later policy record."
   },
   {
     "slug": "flixborough-temporary-pipe",
@@ -625,74 +729,93 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "At Flixborough, a modification belongs at the center of the safety story.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "industry",
       "maintenance",
       "engineering"
     ],
-    "description": "At Flixborough, a modification belongs at the center of the safety story.",
-    "socialPreview": "At Flixborough, a modification belongs at the center of the safety story.",
+    "description": "Flixborough shows why a temporary bypass must be assessed as part of the operating plant, with the initiating uncertainties kept visible.",
+    "socialPreview": "Flixborough shows why a temporary bypass must be assessed as part of the operating plant, with the initiating uncertainties kept visible.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Health and Safety Executive: Flixborough explosion, 1 June 1974",
+        "title": "HSE Flixborough case record",
         "url": "https://www.hse.gov.uk/comah/sragtech/caseflixboroug74.htm",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Reactor removal, bypass modification, explosion and HSE identified safety failures."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Keep uncertainty over the initiating failure visible.",
-      "Consult the inquiry before drawing conclusions about specific personnel."
+      "Consult the inquiry before drawing conclusions about specific personnel.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 446,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.058Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 527,
     "publishedInArchive": false,
-    "body": "Temporary is a description of intention. It says how long someone hopes an arrangement will last. It says nothing, by itself, about how much force the arrangement must withstand while it exists.\n\nBefore the 1974 explosion at Flixborough, a damaged reactor was removed and a bypass connected the neighboring reactors. HSE's account identifies inadequate assessment and testing of the modification among the failings. The explosion killed 28 workers. The agency's summary also retains uncertainty about aspects of the initiating sequence. A responsible retelling should not eliminate that uncertainty to make the bypass into an excessively neat single cause.\n\n## Production through a changed machine\n\nThe appeal of a bypass is straightforward: part of a system is unavailable, so another connection allows work to continue. Yet once material flows through the new connection, that connection is part of the operational plant. It is no longer merely a proposal sketched beside the original design.\n\nThis observation changes the relevant comparison. The question is not whether the modification seems smaller than the equipment it replaces. It is whether the modified system has been understood under the conditions it will actually experience. Shape, support, movement and interaction with neighboring components can matter even when the purpose of the connection sounds simple.\n\nDocumentation is often treated as something added after engineering. In a change process, a drawing can instead be a tool for making an assumption available to other people. Without a shared representation, a reviewer may be approving a different mental picture from the one a fabricator or operator has in mind.\n\nNone of this proves that more paperwork alone produces safety. Documents can be wrong, unread or treated as ceremonial. Their value lies in the questions they force into the open and the disagreements they allow someone to resolve before operation.\n\n## The lifespan of an exception\n\nAn exception can acquire the familiarity of a normal arrangement simply by remaining in use. Every uneventful day then becomes tempting evidence that it is acceptable. But uneventful operation may establish only that a particular combination of stresses has not yet occurred.\n\nThe management question is therefore not just who authorized the change. It is who knows it is still there, who understands the conditions attached to approval, and what would require it to be reconsidered. Temporary work needs an owner through its full lifetime, including removal or formal incorporation into the design.\n\nFlixborough offers no comfort to the idea that the real plant is the original plant on the drawing. The real plant is the one carrying material today. Its improvised or transitional parts participate fully in its hazards. Calling a connection temporary cannot reduce the consequences of getting it wrong."
+    "body": "Before the 1974 Flixborough explosion, workers removed a damaged reactor and connected its neighbors with a bypass. The changed plant continued to operate. The explosion killed 28 workers; HSE's account identifies gaps in assessing and testing the modification while retaining uncertainty about parts of the initiating sequence.\n\nThe word temporary described the bypass's intended life, not a lesser engineering burden. Once the plant resumed operation, the new pipe, its supports and its connections had to contain the process material and withstand the demands of service.\n\n## The modification had measurable omissions\n\nHSE identifies specific gaps in the change process: limited integrity calculations, no calculations for the dog-legged arrangement or bellows, no drawing of the proposed modification and no pressure test of the installed pipework. These are distinct omissions, not interchangeable examples of a vague safety culture. Each would have supplied a different kind of evidence about the changed assembly. [HSE accident summary and technical failings](https://www.hse.gov.uk/comah/sragtech/caseflixboroug74.htm).\n\nA calculation asks how the proposed geometry behaves under stated assumptions. A drawing gives participants a shared description of that geometry. A test checks a particular property of the installed assembly under particular conditions. None can replace all the others. A successful pressure test, for example, would not by itself settle every question about movement or support during operation.\n\nThe bypass joined existing equipment. Its connections determined what it had to contain and how it could move. Assessing the pipe alone would leave the behavior of the joined assembly unresolved.\n\nThis is an interpretation of why the documented omissions matter, not an assertion that one additional document or test would certainly have prevented the explosion. The case is stronger when its known deficiencies remain specific and its unresolved initiating details remain unresolved.\n\n## Production through a changed machine\n\nThe size of a modification says little about the demand it creates. Shape, support and interaction with neighboring equipment determine how the changed plant behaves.\n\nDocumentation is often treated as something added after engineering. In a change process, a drawing can instead be a tool for making an assumption available to other people. Without a shared representation, a reviewer may be approving a different mental picture from the one a fabricator or operator has in mind.\n\nDocuments and tests are useful when they expose those assumptions. A drawing that goes unread or a test aimed at the wrong property supplies little assurance.\n\n## The lifespan of an exception\n\nAn exception can acquire the familiarity of a normal arrangement simply by remaining in use. Every uneventful day then becomes tempting evidence that it is acceptable. But uneventful operation may establish only that a particular combination of stresses has not yet occurred.\n\nThe management question is therefore not just who authorized the change. It is who knows it is still there, who understands the conditions attached to approval, and what would require it to be reconsidered. Temporary work needs an owner through its full lifetime, including removal or formal incorporation into the design.\n\nMaterial flowed through the assembly that had actually been built. Calling it temporary did not reduce those demands. Responsibility for the altered plant continued for as long as the bypass remained in service."
   },
   {
     "slug": "great-molasses-flood",
     "title": "Boston’s Molasses Flood: An Industrial Tank Failure in a Crowded District",
-    "dek": "A storage tank ruptured in the North End on 15 January 1919, sending molasses and debris through nearby streets.",
+    "dek": "Boston’s molasses flood made a familiar industrial material destructive at an unfamiliar scale. The casualty record is firmer than the engineering and legal explanations available in the short source used here.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "boston",
       "industry"
     ],
-    "description": "Twenty-one people died. The unusual material can distract from the industrial failure that released it.",
-    "socialPreview": "Twenty-one people died. The unusual material can distract from the industrial failure that released it.",
-    "readingTime": "2 min",
+    "description": "Boston’s molasses flood as an industrial containment failure, with the casualty record distinguished from engineering and legal explanations.",
+    "socialPreview": "Boston’s molasses flood as an industrial containment failure, with the casualty record distinguished from engineering and legal explanations.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. National Oceanic and Atmospheric Administration",
+        "title": "NOAA, Molasses and Other Weird Things That Have Spilled",
         "url": "https://response.restoration.noaa.gov/about/media/molasses-and-other-weird-things-have-spilled.html",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Use tank-investigation and court records for causal claims.",
-      "Verify temperature or viscosity claims before including them."
+      "Verify temperature or viscosity claims before including them.",
+      "Read an engineering assessment or civil-trial record before adding precise construction-failure claims; retain qualifications on environmental effects.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 374,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 479,
     "publishedInArchive": true,
-    "body": "A steel tank holding roughly 2.2 million gallons of molasses ruptured in Boston’s North End. The contents surged through nearby streets, destroying structures, carrying debris and trapping people in a fluid that became harder to escape as it cooled.\n\nTwenty-one people died and about 150 were injured. The tank had been built quickly, leaked from the beginning and was never subjected to the kind of full engineering scrutiny such a structure would now require.\n\n## The material matters\n\nThe name of the disaster invites novelty. Molasses belongs to kitchens and food production, so its appearance in a lethal urban flood can sound like an absurd historical anecdote. That reaction is precisely what a serious account needs to move beyond.\n\nA stored liquid has weight. A large volume released into streets can impose forces and create conditions that are entirely unlike its behavior in a jar. Familiarity with a household quantity is not an adequate intuition for an industrial inventory.\n\nThe investigation therefore has to follow the container as carefully as the contents. What was the tank designed to hold? What was its condition? What evidence supported confidence in it? Those questions require engineering and legal records; an unusual substance does not excuse a vague explanation of the structure that failed.\n\nNOAA's spill history helps locate the event within a wider class of releases. Its breadth is also a limitation for a detailed article. A short agency overview cannot establish every claim about the tank, the legal aftermath or the people killed. Those details should be sourced to records specific to Boston's disaster.\n\nThe city setting matters because an industrial failure entered ordinary routes of movement. A street is not simply empty space available to receive a spill. It contains workers, transport and people with no reason to know the state of the storage nearby. The account should restore those stakes to an event often remembered as a curiosity. An unexpected material can make a story memorable; it should not make the consequences seem less serious.\n\nThe disaster is best understood through the tank, its construction and the damage around it. Claims that the case directly created a particular engineering rule need a documented legal or regulatory link, not simply the fact that litigation followed."
+    "body": "A Boston storage tank burst on 15 January 1919, releasing at least 2.2 million gallons of molasses. NOAA's historical spill overview reports 21 deaths and 150 injuries. The familiar food material had been stored at a scale far removed from its ordinary use.\n\nMolasses made the disaster memorable. The scale of its storage made it dangerous: an industrial inventory escaped containment into an inhabited district. Understanding the tank and the people around it requires setting aside the household quantities with which the material was familiar.\n\n## The material matters\n\nA stored liquid has weight. A large volume released into streets can impose forces and create conditions that are entirely unlike its behavior in a jar. Familiarity with a household quantity is not an adequate intuition for an industrial inventory.\n\nExplaining the failure requires the tank's design, condition and supporting engineering evidence. NOAA's short overview establishes the release and reported toll, but cannot settle every structural or legal claim.\n\nNOAA's spill history helps locate the event within a wider class of releases. Its breadth is also a limitation for a detailed article. A short agency overview cannot establish every claim about the tank, the legal aftermath or the people killed. Those details should be sourced to records specific to Boston's disaster.\n\nThe streets around a storage tank are occupied routes, not empty capacity for a spill. People using them need not know the condition of the industrial inventory beside them.\n\n## Familiarity changes with quantity\n\nA jar and a storage tank contain the same named material in very different arrangements. The tank places a large inventory above and beside people who may not be involved in using it. Once containment is lost, the surroundings become part of the event.\n\nThis is a general explanation of why an industrial spill can be dangerous, rather than a calculation of the Boston flow. A numerical reconstruction would need the tank geometry, release conditions, terrain and changing properties of the material. The unusual name cannot supply those inputs.\n\nNOAA's overview also discusses a much later molasses release in Honolulu. The comparison is useful because it shows that a familiar food material can pose different kinds of harm in different settings. It does not establish that the Boston and Honolulu events shared a cause or an identical environmental outcome.\n\nIn particular, NOAA distinguishes its suggestion of possible historical fish impacts in Boston from detailed documentation. That qualification should stay attached to the claim rather than becoming another assured consequence in a retelling.\n\nScale changed the consequences of losing containment. A numerical account of the Boston flow would need geometry, terrain and material conditions that the overview does not supply.\n\nThe tank failed and an industrial quantity entered the streets. That is the established event. Its structural causes require engineering records, and its influence on later standards requires a documented connection to the rules that followed."
   },
   {
     "slug": "halifax-recording-a-city",
@@ -700,122 +823,147 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Halifax’s disaster records preserve a city’s loss through documents that were created for different reasons.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "canada",
       "archives",
       "maritime"
     ],
-    "description": "Halifax’s disaster records preserve a city’s loss through documents that were created for different reasons.",
-    "socialPreview": "Halifax’s disaster records preserve a city’s loss through documents that were created for different reasons.",
+    "description": "Halifax's evolving record of the dead shows why a historical count needs sources, versions and visible corrections.",
+    "socialPreview": "Halifax's evolving record of the dead shows why a historical count needs sources, versions and visible corrections.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Nova Scotia Archives: 1917 Halifax Explosion",
-        "url": "https://archives.novascotia.ca/halifax-explosion/",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "6 December 1917 explosion and the retained documentary collections."
+        "title": "Nova Scotia Archives, Halifax Explosion: A List of those that Died",
+        "url": "https://archives.novascotia.ca/remembrance/",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
+      },
+      {
+        "title": "Personal Narratives and other materials",
+        "url": "https://archives.novascotia.ca/explosion/personal/",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check any ship movement against a named contemporary record.",
-      "Compare administrative records with personal accounts; do not invent scenes."
+      "Compare administrative records with personal accounts; do not invent scenes.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 466,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 534,
     "publishedInArchive": false,
-    "body": "A disaster does not leave behind one account. It leaves lists, letters, photographs, claims, official reports and recollections. Some are made to explain. Others are made because someone needs help, money, recognition or a record of a person who has disappeared.\n\nThe Halifax Explosion occurred on 6 December 1917 after a collision in the harbor involving the ammunition ship Mont-Blanc. Nova Scotia Archives brings together material documenting the event and its aftermath. The collection matters not only for the information each item contains, but for the different reasons those items came into existence.\n\nA relief application and a personal letter may concern the same household while describing it in very different terms. One asks for information that an institution can process. The other may preserve details irrelevant to an eligibility rule but central to a life. Neither should be mistaken for a complete portrait.\n\n### A list is made for a purpose\n\nNames in disaster records are not simply found and assembled. They are collected through procedures. An investigator should ask when a list was compiled, which sources it used and what counted as inclusion. Changes across versions can reflect corrections, different definitions or information arriving later.\n\nThis does not mean that every count is arbitrary. It means that a count has a history. Showing that history can make a number more trustworthy than presenting it without explanation.\n\nThe same is true of photographs. A camera records a view from a position. The image may establish damage visible at that location, but it cannot establish the condition of an entire city or tell us what happened outside the frame. Captions need their own verification rather than inheriting authority from the photograph's age.\n\n### Reading across the files\n\nThe richest reconstruction often comes from bringing documents into a relationship they did not originally have. A street address can connect an image to a relief record. A name can connect a family letter to an official account. The connection should be recorded carefully enough that another reader can follow it.\n\nAt the same time, a gap must remain a gap. Two similar names do not establish one identity. A plausible route through a damaged street is not evidence that a particular person took it. Archival writing becomes fiction when it silently fills those spaces to maintain narrative momentum.\n\nHalifax can be remembered through the extraordinary force of the explosion. Its archive also asks for attention to the slower labor of accounting: locating people, describing needs, recording damage and preserving a city that could not be restored simply by rebuilding its structures.\n\nThe files do not bring that city back intact. They allow a more modest and more durable act: showing what a particular document can establish, what it leaves out, and how it belongs beside other surviving traces."
+    "body": "The Halifax Explosion on 6 December 1917 left a casualty record that changed as documents were assembled and corrected. Nova Scotia Archives distinguishes a 1918 directory with 1,535 identified victims, an official register with 1,631 entries and a combined database with 1,782 names.\n\nThe totals belong to different records. The harbor collision involving the ammunition ship Mont-Blanc was one event; identifying everyone killed became a continuing undertaking. Registers, correspondence and corrections changed the record as more information reached the people compiling it.\n\nA relief application and a personal letter may concern the same household while describing it in very different terms. One asks for information that an institution can process. The other may preserve details irrelevant to an eligibility rule but central to a life. Neither should be mistaken for a complete portrait.\n\n### A list is made for a purpose\n\nNames in disaster records are not simply found and assembled. They are collected through procedures. An investigator should ask when a list was compiled, which sources it used and what counted as inclusion. Changes across versions can reflect corrections, different definitions or information arriving later.\n\nThe same is true of photographs. A camera records a view from a position. The image may establish damage visible at that location, but it cannot establish the condition of an entire city or tell us what happened outside the frame. Captions need their own verification rather than inheriting authority from the photograph's age.\n\n### The number and its sources\n\nNova Scotia Archives explains how its remembrance database was assembled and revised. Its account distinguishes a 1918 directory listing 1,535 identified victims, an official fatalities register containing 1,631 entries when it closed in December 1918, and a combined database listing 1,782 names. These are records produced through different procedures, not three interchangeable estimates.\n\nThe archive describes integrating the official register after its transfer in 2004, adding corrections and linking digitized pages to individuals. It also warns that some names may never be recovered. The database's apparent precision therefore coexists with an explicit limit on completeness.\n\nA revised count can reflect another source, a corrected identity or a discrepancy resolved against archival material. Publishing the records behind the revision makes that change inspectable.\n\nThe database links numbers to named people and surviving documents. Its limit is equally visible: the archive warns that some names may never be recovered.\n\n### Reading across the files\n\nThe richest reconstruction often comes from bringing documents into a relationship they did not originally have. A street address can connect an image to a relief record. A name can connect a family letter to an official account. The connection should be recorded carefully enough that another reader can follow it.\n\nAt the same time, a gap must remain a gap. Two similar names do not establish one identity. A plausible route through a damaged street is not evidence that a particular person took it. Archival writing becomes fiction when it silently fills those spaces to maintain narrative momentum.\n\nThe rebuilding of streets could not restore the details lost with their inhabitants. Registers, relief files and letters preserved different fragments. Connecting them carefully can recover a fuller record without pretending that the remaining gaps have disappeared."
   },
   {
     "slug": "hyatt-load-path",
     "title": "Follow the Weight",
-    "dek": "NBS traced the Hyatt Regency walkway collapse to insufficient capacity at the box beam-hanger rod connections. Understanding the failure starts with following what each connection had to carry.",
+    "dek": "The Hyatt walkway collapse makes a connection detail—and the route taken by a load—the center of the story.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "structures",
       "design review",
-      "kansas city",
-      "load path"
+      "kansas city"
     ],
-    "description": "A cautious source-led explanation of the Hyatt Regency walkway collapse, centered on the box beam-hanger rod connections and the load path through the suspended walkways.",
-    "socialPreview": "The Hyatt walkway collapse is often told through a changed hanger-rod detail. NBS's core finding is more fundamental: the critical box beam-hanger rod connections lacked sufficient capacity.",
+    "description": "How the Hyatt Regency walkway collapse exposes the difference between familiar components, changed load paths and verified structural capacity.",
+    "socialPreview": "How the Hyatt Regency walkway collapse exposes the difference between familiar components, changed load paths and verified structural capacity.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "NIST: Walkway Collapse — Kansas City, Missouri, 1981",
-        "url": "https://www.nist.gov/el/walkway-collapse-kansas-city-missouri-1981",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Date, casualty count, NBS investigation and most probable cause at the box beam-hanger rod connections."
-      },
-      {
-        "title": "National Bureau of Standards: Investigation of the Kansas City Hyatt Regency Walkways Collapse (BSS 143)",
+        "title": "National Bureau of Standards Building Science Series 143",
         "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Detailed suspension-system, connection, testing and hanger-rod arrangement investigation; page-level technical review remains required before using derived calculations or diagrams."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
-      "Structural specialist: check any explanation or diagram of the hanger-rod arrangement against BSS 143 before publication.",
-      "Human editor: do not attribute who proposed, accepted or approved the hanger-rod change without document-level support.",
-      "Do not publish numerical load/capacity calculations until the exact report pages are manually verified.",
-      "Confirm rights and credit for drawings, report figures and photographs."
+      "Have a structural specialist check any diagram before publication.",
+      "Attribute design-change responsibility only with document-level support.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 596,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.057Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 527,
     "publishedInArchive": false,
-    "body": "A suspended walkway is not held up by the idea of a building. It is held up through a sequence of physical connections.\n\nTo understand the 1981 Hyatt Regency walkway collapse in Kansas City, the useful question is therefore simple: where did the weight go?\n\nThe National Bureau of Standards investigated the collapse of the second- and fourth-floor walkways. NBS concluded that the most probable cause was insufficient load capacity at the box beam-hanger rod connections and that the failure likely began at a connection on the fourth-floor walkway.\n\nThat finding puts the connection at the center of the story without requiring an improvised calculation.\n\n## A load path is a chain\n\nA person standing on a walkway adds load to the floor system. That load must travel through structural members and connections before it reaches the larger building structure.\n\nEvery connection in that chain has two questions attached to it:\n\n1. What demand reaches this point?\n2. What capacity does this detail actually have?\n\nA component can look ordinary in isolation while occupying a critical position in the path. If the arrangement changes, the demand on a connection can change even when many of the same pieces remain visible.\n\nThe NBS investigation examined the hanger rods, box beams, connection details, materials, workmanship and physical evidence from the collapse. The detailed report also compared the arrangement shown in the original contract drawings with the arrangement actually constructed.\n\nThat comparison is important, but it should not be reduced to a diagram copied from memory. Any public visual explanation needs to preserve the geometry and load relationships documented in the report and should be checked by someone competent in structural engineering.\n\n## The connection, not the slogan\n\nThe case is often summarized as a design change that “doubled the load.”\n\nThat phrase can be useful only if the reader knows exactly which load, at which connection, under which arrangement. Without that precision it becomes another disaster slogan: memorable but mechanically vague.\n\nFor the present draft, the safer claim is the one NBS states directly in its public summary: the box beam-hanger rod connections did not have sufficient load capacity, and the observed deformation indicates the collapse initiated at the fourth-floor connection.\n\nThe detailed numerical explanation belongs in a later revision after page-level verification of the technical report.\n\n## Drawings are part of the structure's history\n\nThe physical load path is only half the account.\n\nConstruction passes through design drawings, shop drawings, fabrication decisions, review marks and site work. A later investigation therefore has to reconstruct both what the built connection did mechanically and how that arrangement came to be built.\n\nThose questions should not be collapsed into a vague claim that “communication failed.” Responsibility requires document-level evidence: what was specified, what changed, who reviewed what, and what professional obligations applied at each step.\n\nUntil those records are established, a publication should resist assigning a specific decision to a specific person simply because the final geometry is known.\n\n## Follow the weight, then follow the record\n\nThe Hyatt collapse shows why structural explanations and documentary explanations should meet but not substitute for each other.\n\nFollowing the weight identifies the connection that must carry the demand. Following the drawings and review record explains how that connection took its final form.\n\nA responsible article needs both.\n\nFor now, the strongest established conclusion is also the most concrete: NBS traced the most probable cause to insufficient capacity in the box beam-hanger rod connections. The finer mechanics and responsibility chain deserve the same evidentiary care before they become part of the public story."
+    "body": "The walkways that collapsed at Kansas City's Hyatt Regency hotel in 1981 had two distinct design problems. The original box-beam connection lacked adequate capacity. A later change to the hanger rods added the lower walkway's load to the upper connections, essentially doubling their demand, according to the National Bureau of Standards.\n\nThe alteration made an already inadequate connection carry more. Restoring the original rod arrangement would therefore have addressed only one of the two defects. Investigators had to reconstruct the load demanded of the connection and measure its capacity, rather than assume the original drawing described a safe structure.\n\n## What changed at the connection\n\nThe National Bureau of Standards' report separates two defects that are often collapsed into one. The original box-beam connection already had inadequate capacity. During construction, the hanger arrangement was then changed from continuous rods passing through both walkway levels to separate sets of rods. In the built arrangement, the lower walkway hung from the upper walkway, adding its load to the upper connections. The report describes the demand at those connections as essentially doubled. Reverting to the original arrangement would therefore not have established an adequate design. [NBS report, abstract and executive summary](https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf).\n\nThe two defects required separate answers. Checking the capacity of the original detail would not establish the safety of the changed load path; checking the alteration would not repair an inadequate original connection.\n\nConsider a simplified comparison, not a numerical reconstruction of the hotel. Two shelves can each transfer their weight directly to a common support. If the lower shelf is instead suspended from the upper shelf, part of the upper assembly now carries both. Nothing about the shelves' familiar appearance establishes that the new connection can do that work. The comparison explains the topology of the change; the report's tests and measurements establish the actual failure.\n\n## The same pieces, a different demand\n\nA load path follows the weight from the walkway through its connections and supports. Changing that route can change the demand on a joint even when the visible components look much the same.\n\nThe load-path comparison explains which connection receives the weight; it does not calculate the hotel's structural capacity. That required the investigators' drawings, material examinations, tests and analytical studies. The explanatory sketch and the capacity assessment answer different questions.\n\n## Reviewing the changed drawing\n\nConstruction moves through many representations: design documents, shop drawings, requests for clarification, site observations and revisions. A review mark can be interpreted as approval of different things by different people. The record has to establish what was submitted, what was reviewed and what was built.\n\nA review must establish which detail was submitted, what the approval covered and whether the built connection matched it. Calling the problem a communication failure leaves those decisions unexamined.\n\nThe practical force of the case is that structures are not collections of independently safe parts. Their arrangement determines what those parts must do. A detail that changes a route can change a demand.\n\nThe rods determined where the weight went. The connection determined whether it could be carried. Explaining the collapse requires both the engineering measurements and the decisions that joined those parts together."
   },
   {
     "slug": "iraq-poison-grain",
     "title": "Iraq’s Mercury Poisoning Outbreak from Treated Seed Grain",
-    "dek": "Grain intended for planting entered the food supply during 1971–1972, causing widespread illness.",
+    "dek": "Iraq’s treated seed grain poisoning shows how the intended use of a material can differ disastrously from its eventual use. Understanding the outbreak requires care with delayed symptoms and the population behind each reported count.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Science",
     "tags": [
       "iraq",
       "public health"
     ],
-    "description": "The history includes toxic treatment, distribution, warning labels and the decisions facing recipient families.",
-    "socialPreview": "The history includes toxic treatment, distribution, warning labels and the decisions facing recipient families.",
-    "readingTime": "2 min",
+    "description": "Iraq’s mercury poisoning outbreak from treated seed grain, with delayed symptoms and the denominators behind hospital and death counts explained.",
+    "socialPreview": "Iraq’s mercury poisoning outbreak from treated seed grain, with delayed symptoms and the denominators behind hospital and death counts explained.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "World Health Organization mercury guidance",
-        "url": "https://iris.who.int/bitstream/handle/10665/329449/9789241516846-eng.pdf",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "title": "Al-Tikriti and Al-Mufti, An outbreak of organomercury poisoning among Iraqi farmers",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2366398/?page=5",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Locate a specific WHO or clinical account of the 1971–72 incident.",
-      "Verify warning languages, timing and casualty definitions."
+      "Verify warning languages, timing and casualty definitions.",
+      "Read the complete 1976 study before extending the abstract’s claims; verify case denominators and independently document warning and distribution details.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 359,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.062Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 541,
     "publishedInArchive": true,
-    "body": "Iraq imported grain treated with a mercury fungicide for planting. It arrived late in the season, and some families ground the seed into flour or fed it to animals despite warning markings.\n\nMethylmercury exposure caused neurological illness across rural communities. More than 6,000 people were hospitalized and hundreds died; later reviews warned that official counts likely missed many cases.\n\n## A warning must reach a decision\n\nA warning label is an object placed on a product. Effective warning is a process in which someone notices information, understands its relevance and can act on it. The two should not be treated as equivalent.\n\nA seed distribution program and a hungry household can encounter the same grain with different assumptions. The program may classify it by intended use. The household may see a material that could become food. Describing that gap is not the same as assigning blame to recipients. It asks whether the system anticipated the conditions in which the material would actually be handled.\n\nThe WHO document attached to the brief must be checked for its specific coverage of this incident. General mercury guidance cannot establish every historical claim about delivery, local language, quantities or government decisions. Those details need an incident-specific source.\n\nThe medical account also requires careful attribution. Hospital admissions, confirmed poisonings and deaths are not interchangeable measures of the affected population. Estimates of missed cases should retain the method and uncertainty used by their authors.\n\nThe story's wider significance lies in the difference between a product being marked and a danger being governable. A person may understand a warning and still lack a practical alternative. A distribution system may provide accurate instructions and still fail to account for timing, hunger or the material's movement beyond its intended recipient.\n\nA fuller article should follow the grain through those stages, preserving evidence at each handoff. It should not treat the moment of consumption as if the entire disaster began with an isolated personal choice.\n\nThe outbreak should not be reduced to a story about recipients ignoring instructions. A useful account examines delivery timing, the meaning and accessibility of warnings, and the evidence behind reported illness and death totals."
+    "body": "Iraqi farmers and their families developed mercury poisoning after consuming treated grain in 1971–72. A 1976 medical account records 6,530 hospital admissions and 459 deaths among those admitted. It also describes milder cases treated as outpatients.\n\nThe admission figures omit people treated as outpatients. Recognition was also delayed: symptoms could appear as much as sixty days after consumption. The authors considered that interval probably a major contributor to the outbreak's size, complicating both the identification of the hazard and the counting of its effects.\n\n## A warning must reach a decision\n\nA warning label is an object placed on a product. Effective warning is a process in which someone notices information, understands its relevance and can act on it. The two should not be treated as equivalent.\n\nA seed distribution program and a hungry household can encounter the same grain with different assumptions. The program may classify it by intended use. The household may see a material that could become food. Describing that gap is not the same as assigning blame to recipients. It asks whether the system anticipated the conditions in which the material would actually be handled.\n\nThe incident-specific medical account supplies an important distinction between hospitalized cases and the wider affected population. It does not, through its abstract alone, establish the complete distribution history or what every household understood.\n\nHospital admissions, outpatient visits and deaths count different outcomes. Estimates of unrecorded cases require a method rather than simply a larger total.\n\nA product's intended use does not establish how it will be handled after distribution. Whether a warning was understood, or could be acted on, requires evidence about the circumstances in which recipients encountered it.\n\n## The delay before symptoms\n\nAl-Tikriti and Al-Mufti identify a latency of as much as sixty days between consumption and symptoms as probably a major contributor to the outbreak's size. That statement is an interpretation by the authors. It connects the timing of illness with the difficulty of recognizing a dangerous practice while it continues.\n\nAn immediate unpleasant effect can provide rapid feedback. Delayed illness leaves a longer interval in which a material may appear harmless. A household's experience during that interval cannot be described as knowledge of the later outcome. The relevant question is what warning and evidence were available before symptoms made the danger apparent.\n\nThe medical account's denominator is just as important as its timing. The 459 deaths occurred among the hospitalized cases it reports. People seen only as outpatients belong to the account too, but not to that hospital denominator. Adding them requires information about a different population.\n\nThis gives the historical record two boundaries: the time between exposure and recognition, and the boundary of the institutions counting cases. Both affect what becomes visible. Neither implies that the suffering outside a recorded category was unimportant.\n\nThe available medical abstract supports the account of consumption, illness, delayed symptoms and counted hospital cases. It cannot establish the warning language, distribution history or decisions of every household.\n\nFamilies could consume the grain before illness revealed the danger. Some cases reached hospitals; milder ones were treated outside them. The delay and the hospital denominator explain why the published figures must be read as a defined count, not a complete measure of everyone affected."
   },
   {
     "slug": "london-smog-ordinary-fuel",
@@ -823,37 +971,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "London’s 1952 smog joins everyday fuel use to the weather conditions that trapped it.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Science",
     "tags": [
       "air pollution",
       "london",
       "environment"
     ],
-    "description": "London’s 1952 smog joins everyday fuel use to the weather conditions that trapped it.",
-    "socialPreview": "London’s 1952 smog joins everyday fuel use to the weather conditions that trapped it.",
+    "description": "London's Great Smog explains how familiar coal emissions became catastrophic when atmospheric conditions prevented their dispersal.",
+    "socialPreview": "London's Great Smog explains how familiar coal emissions became catastrophic when atmospheric conditions prevented their dispersal.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Met Office: The Great Smog of 1952",
+        "title": "Met Office Great Smog case study",
         "url": "https://weather.metoffice.gov.uk/learn-about/weather/case-studies/great-smog",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "December 1952 episode, coal smoke and temperature inversion."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Source any mortality estimate with its time window.",
-      "Check claims about later legislation separately."
+      "Check claims about later legislation separately.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 452,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.059Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 564,
     "publishedInArchive": false,
-    "body": "The frightening feature of a pollution disaster is sometimes the familiarity of its ingredients. A household burns fuel to keep warm. A factory produces smoke. A city continues to function. Then the atmosphere stops dispersing what people have come to expect it to carry away.\n\nThe Met Office describes London's Great Smog from 5 to 9 December 1952 as a convergence of cold weather, coal burning and conditions that trapped pollution close to the ground. Its account explains the temperature inversion that prevented the usual mixing. Thousands died. The precise mortality estimate requires attention to the period and method being counted; the violence of the event does not depend on choosing the largest number available.\n\n### A disaster without a single point of release\n\nAn explosion gives an investigator a time and a location to begin with. Distributed pollution can be harder to narrate. The harmful material may emerge from many ordinary activities, and no single chimney supplies a complete explanation.\n\nThat makes the relationship between weather and emissions central. Weather can explain why smoke remained concentrated, but it does not explain why that particular mixture was being emitted or what alternatives people had. Equally, an account of fuel policy cannot replace the physical explanation of how exposure developed. The two histories belong together.\n\nIt would be too easy to call everyone responsible because many people burned coal. Responsibility is not distributed simply by counting chimneys. Households' choices depend on income, housing and access to fuel. Institutions have different capacities to alter infrastructure and set conditions. An analysis that treats every source of smoke as an equal exercise of power loses those differences.\n\n### What becomes visible afterward\n\nA photograph can show that a street was obscured. It cannot show all the exposure that followed someone indoors, nor can it establish which later death should be attributed to the episode. The image and the mortality analysis answer different questions.\n\nThis creates an editorial obligation to explain numbers without pretending that uncertainty makes the disaster unreal. A count can change because investigators use a longer follow-up period or a different comparison, not because somebody has discovered a hidden pile of bodies. The method is part of the meaning of the estimate.\n\nThe smog also challenges the idea that an event ends when the view clears. Dispersal removes an immediate atmospheric condition. It does not reverse an injury or guarantee that the same conjunction cannot recur. An account concerned with prevention has to follow the ordinary systems beyond the extraordinary days.\n\nLondon's darkened streets remain a striking historical image. The harder thing to picture is the arrangement that made the smoke ordinary before it became catastrophic. That arrangement is where the longer story begins."
+    "body": "From 5 to 9 December 1952, London's coal smoke accumulated beneath a layer of warmer air that restricted dispersal. Cold weather increased domestic coal use while industrial emissions added pollution. The Met Office records roughly 4,000 known deaths and cautions that the true toll could have been higher.\n\nCoal smoke was familiar. The conditions keeping it near the ground were exceptional. Exposure increased when cold weather encouraged more burning while the inversion restricted dispersal. The emissions and the weather explain the disaster together; neither supplies a complete account on its own.\n\n## The inversion was a condition, not an excuse\n\nThe Met Office describes an anticyclone whose descending air produced warmer air above cooler air near the ground. The inversion limited dispersal while cold weather increased domestic coal use. Industrial emissions also contributed. The episode lasted from 5 to 9 December 1952. The agency records roughly 4,000 known deaths while explicitly allowing that the true toll could be higher. [Met Office case study, formation and impacts](https://weather.metoffice.gov.uk/learn-about/weather/case-studies/great-smog).\n\nA simple conceptual balance helps. Pollution accumulates when material enters an area faster than it is removed or dispersed. This is not a fitted model of the 1952 episode; it is a way of understanding why familiar emissions can produce an unfamiliar exposure when atmospheric conditions change. Ordinary output is not a guarantee of ordinary concentration.\n\nThat principle also changes the meaning of preparedness. A city cannot assess an emissions pattern only under weather that usually carries the pollution away. It must ask what happens when that removal weakens.\n\nA later mortality estimate may use a longer follow-up period or a different method. Its total cannot be substituted for the contemporary count without explaining what changed.\n\n### A disaster without a single point of release\n\nAn explosion gives an investigator a time and a location to begin with. Distributed pollution can be harder to narrate. The harmful material may emerge from many ordinary activities, and no single chimney supplies a complete explanation.\n\nThe weather explains concentration; the history of fuel use explains what was available to concentrate. The two belong in the same account.\n\nIt would be too easy to call everyone responsible because many people burned coal. Responsibility is not distributed simply by counting chimneys. Households' choices depend on income, housing and access to fuel. Institutions have different capacities to alter infrastructure and set conditions. An analysis that treats every source of smoke as an equal exercise of power loses those differences.\n\n### What becomes visible afterward\n\nA photograph can show that a street was obscured. It cannot show all the exposure that followed someone indoors, nor can it establish which later death should be attributed to the episode. The image and the mortality analysis answer different questions.\n\nDifferences among mortality estimates can reflect follow-up periods and comparison methods. That uncertainty changes the meaning of a total without diminishing the reality of the disaster.\n\nThe smog also challenges the idea that an event ends when the view clears. Dispersal removes an immediate atmospheric condition. It does not reverse an injury or guarantee that the same conjunction cannot recur. An account concerned with prevention has to follow the ordinary systems beyond the extraordinary days.\n\nA change in the weather cleared the streets. It did not undo the injuries or remove the sources of smoke. The extraordinary episode had exposed a danger produced by the city's ordinary fuel use."
   },
   {
     "slug": "love-canal-home-as-evidence",
@@ -861,37 +1018,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Love Canal asks how domestic experience enters an official account of contamination.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "environment",
       "housing",
       "evidence"
     ],
-    "description": "Love Canal asks how domestic experience enters an official account of contamination.",
-    "socialPreview": "Love Canal asks how domestic experience enters an official account of contamination.",
+    "description": "At Love Canal, a home's history became part of the evidence needed to decide whether ordinary life could continue.",
+    "socialPreview": "At Love Canal, a home's history became part of the evidence needed to decide whether ordinary life could continue.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. EPA archive: The Love Canal Tragedy",
+        "title": "Eckardt C. Beck, The Love Canal Tragedy, EPA Journal, January 1979",
         "url": "https://www.epa.gov/archive/epa/aboutepa/love-canal-tragedy.html",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Buried chemical waste, residential setting and the 1978 emergency."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Compare contemporary EPA account with community records.",
-      "Do not assign individual illnesses to exposure without appropriate evidence."
+      "Do not assign individual illnesses to exposure without appropriate evidence.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 459,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.060Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 563,
     "publishedInArchive": false,
-    "body": "A house is normally described through rooms, costs and family life. In an environmental emergency, the same place can become a sampling location, a disputed boundary on a map and a collection of observations that someone is asking an institution to take seriously.\n\nLove Canal in Niagara Falls, New York, became the focus of a major contamination emergency in 1978. EPA's contemporary account describes a residential area associated with buried chemical waste and the measures taken as the danger became public. It is a useful starting record, and also a record written from inside the responding institution.\n\nThe distinction matters. An agency account can establish what the agency said, understood and did at a given time. It cannot, on its own, encompass how residents experienced uncertainty or how their concerns reached the official process. Those questions require community records and testimony as well.\n\n### Between a complaint and a measurement\n\nEnvironmental evidence often enters through several doors. A resident notices an unusual condition. A medical record documents an illness. A sample detects a chemical. A historical document explains prior land use. Each item has value, but they do not establish the same thing.\n\nIt is possible to respect lived experience without claiming that every observation proves a particular causal chain. It is also possible to demand technically sound evidence in a way that leaves people indefinitely exposed while they wait. The difficult work lies in defining what evidence is sufficient for a protective decision and what evidence is needed for a more specific scientific conclusion.\n\nThose thresholds should not be silently exchanged. A precautionary relocation does not prove the cause of every illness. An unresolved causal question does not prove that remaining in place is harmless. An honest account can hold both statements at once.\n\n### The map and the mortgage\n\nAn official boundary can divide houses that otherwise look alike. For a resident, that boundary may affect the practical ability to move, obtain assistance or make plans. It is therefore more than a scientific outline. It is also an administrative decision with consequences.\n\nA good record would explain how the boundary was drawn, which evidence supported it and how it changed. It would distinguish the identification of a hazard from the terms offered to the people living near it. The two may be related without being equivalent.\n\nLove Canal should not be reduced to a story in which science finally arrived and converted confusion into certainty. The process of making contamination governable includes disputes about knowledge, protection and the future of a neighborhood. The home remains central to that history. It is where the exposure question becomes a question about whether ordinary life can continue, and who is expected to bear the uncertainty while an answer is sought."
+    "body": "New York announced plans to purchase affected homes at Love Canal in August 1978 as federal emergency assistance was approved. Residents in Niagara Falls were living near buried chemical waste. A January 1979 EPA account connects that emergency to the site's earlier disposal history and later residential development.\n\nThe canal was covered and transferred in 1953; homes and a school followed. Changing the use of the land did not remove the waste beneath it. By 1978, authorities faced decisions about protecting residents while the scientific questions were still being investigated.\n\nEPA's contemporary account records the responding institution's view. Community records and testimony are needed to understand how residents' concerns reached that process and how they experienced its uncertainty.\n\n### Between a complaint and a measurement\n\nEnvironmental evidence often enters through several doors. A resident notices an unusual condition. A medical record documents an illness. A sample detects a chemical. A historical document explains prior land use. Each item has value, but they do not establish the same thing.\n\nIt is possible to respect lived experience without claiming that every observation proves a particular causal chain. It is also possible to demand technically sound evidence in a way that leaves people indefinitely exposed while they wait. The difficult work lies in defining what evidence is sufficient for a protective decision and what evidence is needed for a more specific scientific conclusion.\n\nThose thresholds should not be silently exchanged. A precautionary relocation does not prove the cause of every illness. An unresolved causal question does not prove that remaining in place is harmless. An honest account can hold both statements at once.\n\n### The past beneath a new use\n\nEckardt Beck's January 1979 EPA Journal account places chemical disposal and later residential development within the same history of land. It describes the canal being covered and transferred in 1953, followed by homes and a school. The land acquired a new public meaning without losing the material consequences of its earlier use.\n\nA change in ownership or use does not ensure that the site's history reaches the people living there. Deeds, planning records and residents' knowledge can contain different information about the same location.\n\nBeck also reports the August 1978 announcement that New York would purchase affected homes and the approval of federal emergency assistance. These events belong to the response chronology, not to a final scientific verdict on every reported illness. They show authorities making consequential decisions while the account still describes questions under investigation.\n\nThe 1979 account is evidence of what EPA reported at that stage of the response. It is not a complete epidemiological assessment of every illness associated with the neighborhood.\n\n### The map and the mortgage\n\nAn official boundary can divide houses that otherwise look alike. For a resident, that boundary may affect the practical ability to move, obtain assistance or make plans. It is therefore more than a scientific outline. It is also an administrative decision with consequences.\n\nA relocation boundary needs an explanation of the evidence behind it and the assistance it makes available. Identifying a hazard and deciding who receives help are related but separate decisions.\n\nEvidence about buried waste became evidence about whether people could stay in their homes. Protective boundaries also determined who received help. At Love Canal, assessing the hazard and allocating the cost of responding to it were inseparable parts of the public decision."
   },
   {
     "slug": "mars-climate-orbiter-interface",
@@ -899,47 +1065,47 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Mars Climate Orbiter was lost after an interface delivered pound-force seconds where navigation software expected Newton-seconds. The deeper failure was that the mismatch survived the systems built to catch it.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "space",
       "software",
-      "measurement",
-      "systems engineering"
+      "measurement"
     ],
     "description": "A source-led reconstruction of the Mars Climate Orbiter unit mismatch and the verification, communication and interface failures documented by NASA's mishap board.",
-    "socialPreview": "Mars Climate Orbiter is remembered as a metric-versus-imperial mistake. NASA's mishap report describes a larger systems failure: the wrong units crossed an interface and the process failed to stop them.",
-    "readingTime": "5 min",
+    "socialPreview": "A source-led reconstruction of the Mars Climate Orbiter unit mismatch and the verification, communication and interface failures documented by NASA's mishap board.",
+    "readingTime": "4 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "NASA Science: Mars Climate Orbiter",
-        "url": "https://science.nasa.gov/mission/mars-climate-orbiter/",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Mission purpose, 23 September 1999 loss, and NASA's current summary of the English-unit/metric-unit navigation error."
-      },
-      {
-        "title": "Mars Climate Orbiter Mishap Investigation Board — Phase I Report",
+        "title": "NASA MCO Mishap Investigation Board Phase I report",
         "url": "https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf",
-        "status": "located",
-        "checkedAt": "2026-09-29",
-        "supports": "Root cause, Newton-second versus pound-force-second interface mismatch, factor-of-4.45 trajectory underestimation, lower-than-planned trajectory, contributing causes, and verification/validation findings."
+        "status": "source-pass-complete",
+        "checkedAt": "2026-10-02",
+        "supports": "Scoped agency findings identified in the linked review Page; human line-by-line approval remains open"
       }
     ],
     "reviewChecklist": [
-      "Human editor: verify each causal statement against the Phase I report rather than relying on the shorter NASA mission summary.",
-      "Decide whether to use the mishap board's cautious loss language or NASA Science's later 'burned up' summary, and keep the wording consistent.",
-      "Keep general engineering lessons explicitly framed as analysis rather than as NASA findings.",
-      "Confirm rights and credit before using any NASA/JPL mission image."
+      "Compare interface details with the Phase I mishap report.",
+      "Keep this analysis distinct from a complete causal investigation.",
+      "Human editor performs line-by-line claim check against the primary report.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 908,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T09:27:20.449Z",
+        "reason": "Transferred source-reviewed manuscript and original diagram from the Space; human approval remains pending"
+      }
+    ],
+    "words": 795,
     "publishedInArchive": false,
-    "body": "A number can be numerically precise and still be wrong for the system that receives it. The value needs a quantity, a unit, a reference and a shared interpretation. Mars Climate Orbiter is remembered because one of those agreements failed at exactly the wrong boundary.\n\nNASA lost contact with the spacecraft on 23 September 1999 as it arrived at Mars. The shorthand version of the story is familiar: one team used English units while another expected metric units. That summary is true, but the agency's own mishap report is more specific and more useful.\n\nThe failure crossed a software interface.\n\n## What the interface was supposed to mean\n\nDuring the cruise to Mars, the spacecraft periodically fired thrusters to unload angular momentum from its reaction wheels. Ground software called SM_FORCES processed information about those events and wrote the results into an Angular Momentum Desaturation, or AMD, file used by the navigation team.\n\nThe interface specification required the impulse values in that file to be expressed in Newton-seconds.\n\nThey were delivered in pound-force seconds.\n\nThe navigation software then treated those values as if they already satisfied the metric specification. NASA's mishap board reported that the effect of the thruster firings was therefore underestimated by a factor of 4.45. The board identified this failure to use metric units in the ground software file as the mission's root cause.\n\nThat description matters because it changes the lesson. The problem was not simply that two measurement systems existed. The problem was that a defined interface said one thing, an implementation produced another, and downstream software accepted the data without the discrepancy being stopped.\n\n## The mismatch survived for months\n\nThe report also complicates the idea of a single, isolated mistake.\n\nThe small-forces files had earlier format and spacecraft-attitude problems. For the first four months of cruise, the navigation team did not use them in orbit determination. When correctly formatted files began to be used, the report says anomalous data indicating underestimated trajectory perturbations became apparent within about a week.\n\nThe anomaly still did not lead to the unit mismatch being identified before Mars arrival.\n\nBy the time the loss was reconstructed, the board estimated that the trajectory at insertion was roughly 170 kilometers lower than planned. A later navigation reconstruction produced a periapsis of about 57 kilometers, a level judged too low for the spacecraft to survive.\n\nThis is not a story in which the organization had no signals. It is a story in which signals, assumptions and ownership did not combine into a successful correction.\n\n## NASA's report was about more than units\n\nThe mishap board listed eight contributing causes in addition to the root cause. They included undetected mismodeling of spacecraft velocity changes, an operations navigation team that was not sufficiently familiar with the spacecraft, a trajectory-correction maneuver that was not performed, weaknesses in the transition from development to operations, inadequate communication, insufficient navigation staffing, inadequate training, and verification-and-validation shortcomings in the ground software.\n\nThe verification section is especially direct. The board wrote that the Software Interface Specification existed but was not properly used in development and testing. It also found that end-to-end testing of the small-forces ground software against the specification did not appear to have been completed, and that interface-control verification was incomplete or insufficiently rigorous.\n\nThat makes the popular metric-versus-imperial joke too small.\n\nA conversion error explains the numerical mismatch. It does not, by itself, explain why the mismatch survived a mission organization, a written interface specification, software development, testing, navigation analysis and months of operations.\n\n## An interface is an engineering object\n\nA software interface can look administrative: a field name, a file format, a unit written in a specification. But for a system whose components are built and operated by different teams, that document carries physical meaning.\n\nA value labelled as impulse is not complete simply because it contains a number. The receiving side needs to know what physical quantity the number represents and in what units. If that meaning is implicit, a syntactically valid file can still carry semantically wrong data.\n\nSeveral engineering practices can make such disagreements harder to hide. Units can be represented in types rather than comments. Tests can inject known values and compare outputs with independent calculations. Interface checks can trace one measurement from its source through every transformation to its final consumer. Independent validation can ask whether the integrated system behaves according to the contract rather than whether each component appears internally consistent.\n\nThose are general engineering lessons, not claims that one particular safeguard would certainly have saved Mars Climate Orbiter. Retrospective fixes are easy to propose once the failure is known. The stronger question is whether a safeguard would have exposed the actual discrepancy under the conditions that existed before the loss.\n\n## Why the story still matters\n\nReducing the mission to a joke about units invites an easy conclusion: competent teams know how to convert pounds to Newtons.\n\nThe NASA report points toward a harder question. Does an organization know where assumptions cross boundaries, who owns those boundaries, how interface requirements are verified, and what happens when observed behavior begins to disagree with the model?\n\nMars Climate Orbiter did not fail because numbers are unreliable. It failed in part because a number crossed an interface with the wrong physical meaning and the surrounding system failed to catch the discrepancy in time.\n\nThe unit was not extra information attached to the data. It was part of the data."
+    "body": "NASA lost contact with Mars Climate Orbiter on 23 September 1999. Ground software had supplied thruster data in pound-force seconds to navigation software expecting Newton-seconds. The mismatch understated the modeled effect of the firings by a factor of 4.45.\n\nNASA's [Phase I mishap report](https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf) traced the loss to the unit mismatch and to the failures in testing, communication and operations that let it persist. Investigators could not settle the spacecraft's final fate. It may have burned up in the atmosphere or entered heliocentric space; contact was never recovered.\n\n## What the interface was supposed to mean\n\nDuring the cruise to Mars, the spacecraft periodically fired thrusters to unload angular momentum from its reaction wheels. Ground software called SM_FORCES processed information about those events and wrote the results into an Angular Momentum Desaturation, or AMD, file used by the navigation team.\n\nThe interface specification required the impulse values in that file to be expressed in Newton-seconds.\n\nThey were delivered in pound-force seconds.\n\nThe navigation software then treated those values as if they already satisfied the metric specification. NASA's mishap board reported that the effect of the thruster firings was therefore underestimated by a factor of 4.45. The board identified this failure to use metric units in the ground software file as the mission's root cause.\n\nThe interface specification was explicit. The implementation produced different units, and the receiving software accepted them. The conversion error became a mission failure because the checks between those steps did not expose it.\n\n## The mismatch survived for months\n\nThe small-forces files had earlier format and spacecraft-attitude problems. For the first four months of cruise, the navigation team did not use them in orbit determination. When correctly formatted files began to be used, the report says anomalous data indicating underestimated trajectory perturbations became apparent within about a week.\n\nThe anomaly still did not lead to the unit mismatch being identified before Mars arrival.\n\nBy the time the loss was reconstructed, the board estimated that the trajectory at insertion was roughly 170 kilometers lower than planned. A later navigation reconstruction produced a periapsis of about 57 kilometers, a level judged too low for the spacecraft to survive.\n\nNavigation staff had observed anomalous behavior before arrival. The organization failed to turn those observations into a diagnosis and correction in time.\n\n## NASA's report was about more than units\n\nThe mishap board listed eight contributing causes in addition to the root cause. They included undetected mismodeling of spacecraft velocity changes, an operations navigation team that was not sufficiently familiar with the spacecraft, a trajectory-correction maneuver that was not performed, weaknesses in the transition from development to operations, inadequate communication, insufficient navigation staffing, inadequate training, and verification-and-validation shortcomings in the ground software.\n\nThe verification section is especially direct. The board wrote that the Software Interface Specification existed but was not properly used in development and testing. It also found that end-to-end testing of the small-forces ground software against the specification did not appear to have been completed, and that interface-control verification was incomplete or insufficiently rigorous.\n\nThe conversion factor explains the numerical error. The board's account of development, testing and navigation explains why that error survived.\n\n## An interface is an engineering object\n\nA software interface can look administrative: a field name, a file format, a unit written in a specification. But for a system whose components are built and operated by different teams, that document carries physical meaning.\n\nA value labelled as impulse is not complete simply because it contains a number. The receiving side needs to know what physical quantity the number represents and in what units. If that meaning is implicit, a syntactically valid file can still carry semantically wrong data.\n\nSeveral engineering practices can make such disagreements harder to hide. Units can be represented in types rather than comments. Tests can inject known values and compare outputs with independent calculations. Interface checks can trace one measurement from its source through every transformation to its final consumer. Independent validation can ask whether the integrated system behaves according to the contract rather than whether each component appears internally consistent.\n\nThose are general engineering lessons, not claims that one particular safeguard would certainly have saved Mars Climate Orbiter. Retrospective fixes are easy to propose once the failure is known. The stronger question is whether a safeguard would have exposed the actual discrepancy under the conditions that existed before the loss.\n\n## Why the story still matters\n\nThe report leaves a practical test for any organization working across technical boundaries: identify the assumptions exchanged between teams, assign responsibility for checking them and specify how an observed discrepancy reaches someone able to act.\n\nThe file arrived in a usable format. The numbers carried the wrong meaning. Between those two facts lay the failure of a mission."
   },
   {
     "slug": "monongah-mines-1907",
@@ -992,151 +1158,191 @@ export const editorialDrafts: EditorialDraft[] = [
   {
     "slug": "olympus-two-decade-coverup",
     "title": "Olympus: Acquisition Payments and a Long-Running Loss Concealment",
-    "dek": "Questions about unusual payments helped expose investment losses that had been concealed for years.",
+    "dek": "The Olympus inquiry followed concealed investment losses into acquisition-related payments. Its account depends on tracing transactions across reporting periods and keeping the committee’s findings separate from later legal outcomes.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "japan",
       "governance"
     ],
-    "description": "Michael Woodford’s dismissal brought an internal accounting dispute into public view.",
-    "socialPreview": "Michael Woodford’s dismissal brought an internal accounting dispute into public view.",
-    "readingTime": "2 min",
+    "description": "How the Olympus investigation connected acquisition payments to concealed losses, within the committee’s remit and the limits of its translated report.",
+    "socialPreview": "How the Olympus investigation connected acquisition payments to concealed losses, within the committee’s remit and the limits of its translated report.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Olympus independent investigation report",
+        "title": "Olympus third-party committee report, 6 December 2011",
         "url": "https://www.olympus-global.com/ir/data/announcement/pdf/if111206corpe_2.pdf",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check duration and transaction descriptions against the investigation report.",
-      "Distinguish company-commissioned findings from criminal adjudication."
+      "Distinguish company-commissioned findings from criminal adjudication.",
+      "Trace a documented loss-deferral transaction and its dates through the committee report; identify later court findings separately.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 366,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 484,
     "publishedInArchive": true,
-    "body": "Michael Woodford had just become chief executive of Olympus when he began asking about unusual acquisition payments. The board responded by firing him.\n\nThe questions revealed a long-running effort to conceal investment losses dating back to Japan’s asset bubble. Olympus had used takeover costs and opaque entities to move old losses out of sight, preserving the appearance of a healthy company.\n\n## The loss that would not stay in its year\n\nFinancial reporting divides an organization's life into periods. A loss belongs to a date and should change the account of that period. Concealing it can create a second task: maintaining later transactions and explanations that prevent the earlier loss from becoming visible.\n\nThat is why a long concealment cannot be understood solely by examining the final disclosure. Each reporting period may carry forward assumptions and arrangements inherited from the previous one. The record has to show how the burden of the earlier event moved through time.\n\nThe investigation document attached to this article is especially important because it can establish a chronology more precisely than a retrospective headline. But its authorship, remit and access to records should also be explained. An investigation commissioned within a corporate crisis is not automatically identical to a court's findings or an independent historical account.\n\nThe broader analytical issue is the relationship between continuity and correction. An institution may value a stable public story. Accurate reporting sometimes requires breaking that story by acknowledging that an earlier account was wrong. The cost of correction can grow as more people and decisions become attached to the maintained version.\n\nThis does not allow a writer to infer what any individual privately feared. Those motives need testimony or documentary support. The structural point is sufficient: once a false representation survives into later periods, correcting the present may require reopening the past. An archive should make that reopening visible, preserving the sequence of disclosures rather than replacing it with one retrospective narrative in which everything appears to have been known from the beginning.\n\nThe investigation concerns particular transactions, executives and control failures. Describing those findings precisely is more useful than treating the scandal as evidence that an entire national business culture behaves the same way."
+    "body": "Investment losses dating to the 1990s reappeared in the explanation of Olympus's acquisition transactions in 2011. The company's third-party committee traced their deferral across reporting periods after questions about the acquisitions had triggered a corporate crisis.\n\nThe company removed Michael Woodford as president and representative director on 14 October 2011 after he questioned the acquisitions. The committee then connected those transactions to older investment losses. Its remit traced the concealment; it expressly excluded determining personal legal liability.\n\n## The loss that would not stay in its year\n\nFinancial reporting divides an organization's life into periods. A loss belongs to a date and should change the account of that period. Concealing it can create a second task: maintaining later transactions and explanations that prevent the earlier loss from becoming visible.\n\nThat is why a long concealment cannot be understood solely by examining the final disclosure. Each reporting period may carry forward assumptions and arrangements inherited from the previous one. The record has to show how the burden of the earlier event moved through time.\n\nThe committee's report establishes findings within a commissioned inquiry. Its access to records and defined remit differ from those of a court or a complete independent history.\n\nThe broader analytical issue is the relationship between continuity and correction. An institution may value a stable public story. Accurate reporting sometimes requires breaking that story by acknowledging that an earlier account was wrong. The cost of correction can grow as more people and decisions become attached to the maintained version.\n\nCorrecting a current account may require reopening earlier reporting periods. That structural problem does not establish what any individual privately believed or feared.\n\n## The investigation's own boundary\n\nThe Olympus committee described its purpose as investigating acquisition-related conduct and proposing improvements to governance. It expressly distinguished that task from determining personal legal liabilities or prosecuting individuals. That limit belongs to the interpretation of its findings.\n\nAn investigative report can provide a detailed account without having the authority or remit of a criminal court. The correct response is neither to discard its work nor to grant it powers it did not claim. A finding about a transaction and a legal judgment about a person are related but different conclusions.\n\nThe report also describes its examination of investment records from the 1990s alongside later acquisition documents. That span makes the central accounting problem visible: an old loss can survive within a series of new explanations. Following only the final transaction risks misunderstanding what it was being made to accomplish.\n\nPayments, disclosures and later explanations can describe the same arrangement differently. Their dates show how the company's account changed and what each version purported to establish.\n\nThe losses belonged to earlier years; the transactions carrying their concealment belonged to later accounts. The committee's history connects the two. That chain of payments and disclosures explains the mechanism more precisely than a general label about corporate culture could."
   },
   {
     "slug": "parmalat-fictional-cash",
     "title": "Parmalat’s Missing Cash and the False Bank Confirmation",
-    "dek": "A purported multibillion-euro bank balance became central to the Italian dairy group’s collapse in 2003.",
+    "dek": "Parmalat’s reported cash depended on a bank confirmation that the SEC alleged was false. The case illustrates why a balance-sheet claim and independent evidence that the money exists are different things.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "italy",
       "fraud"
     ],
-    "description": "The central question was straightforward: did the reported money exist?",
-    "socialPreview": "The central question was straightforward: did the reported money exist?",
-    "readingTime": "2 min",
+    "description": "Parmalat’s allegedly false bank confirmation and missing cash, with the SEC complaint distinguished from later findings and broader offshore claims.",
+    "socialPreview": "Parmalat’s allegedly false bank confirmation and missing cash, with the SEC complaint distinguished from later findings and broader offshore claims.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. SEC complaint against Parmalat",
+        "title": "SEC complaint concerning Parmalat",
         "url": "https://www.sec.gov/litigation/complaints/comp18527.htm",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Compare the complaint with later findings before using declarative fraud details.",
-      "Verify the named account, bank and amount from original documents."
+      "Verify the named account, bank and amount from original documents.",
+      "Trace the bank confirmation into the consolidated accounts and verify the later legal findings; keep complaint allegations labelled.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 371,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 467,
     "publishedInArchive": true,
-    "body": "Parmalat sold milk in supermarkets around the world while presenting investors with a balance sheet that implied enormous liquidity. A purported Bank of America account for a Cayman Islands subsidiary appeared to hold billions of euros.\n\nThe confirmation was false. Prosecutors and regulators found a web of offshore entities, sham transactions and diverted funds. The company’s need to keep borrowing despite its claimed cash had been a warning hiding in plain sight.\n\n## The document and the money\n\nA document can look authoritative because it resembles the kind of document an institution expects to receive. Letterhead, signatures and a familiar format provide cues of legitimacy. None independently establishes that the represented asset exists.\n\nThis is the distinction at the center of any account of a false bank confirmation. An auditor needs evidence from a source capable of confirming the account, through a channel whose origin can be checked. Receiving a reassuring piece of paper from the party whose claims are under examination is a different evidentiary act.\n\nThe SEC complaint linked here is a primary record of allegations. It should be identified as such. A full article needs to trace which allegations were later admitted, proved or resolved, rather than using the complaint as a timeless statement of every fact in the case.\n\nThe international structure also needs concrete explanation. Saying that money was offshore can create an atmosphere of secrecy without explaining the actual relationship. The relevant questions are which entity reported the asset, which institution supposedly held it and how the balance entered the wider financial statements.\n\nA company's geographic complexity may make verification harder, but it does not make verification conceptually optional. The article should keep returning to that ordinary question: where was the money, and what evidence established its presence? The spectacular scale of a missing balance can distract from the simplicity of what was supposed to be checked. A record that follows the confirmation process can make the failure legible without pretending that every corporate structure involved was inherently illegitimate.\n\nA familiar brand can coexist with accounts that are difficult to verify. Parmalat’s case makes the origin and authentication of financial documents central to the story, alongside the responsibilities of the institutions that relied on them."
+    "body": "A purported bank confirmation stood behind billions of euros reported as Parmalat cash and securities. In a December 2003 complaint, the SEC alleged that the confirmation was forged and the account and assets did not exist.\n\nThe cash and securities were supposedly held by Bonlat, a Cayman Islands subsidiary, at Bank of America in New York. The complaint alleged that the nonexistent assets passed from Bonlat's records into Parmalat's consolidated statements. Investors reading the group accounts therefore depended on a confirmation whose origin was itself in question.\n\n## The document and the money\n\nA document can look authoritative because it resembles the kind of document an institution expects to receive. Letterhead, signatures and a familiar format provide cues of legitimacy. None independently establishes that the represented asset exists.\n\nThis is the distinction at the center of any account of a false bank confirmation. An auditor needs evidence from a source capable of confirming the account, through a channel whose origin can be checked. Receiving a reassuring piece of paper from the party whose claims are under examination is a different evidentiary act.\n\nThese are allegations in the SEC complaint. Any later admissions, judgments or settlements require their own dated records.\n\nThe international structure needs concrete explanation. Saying that money was offshore can create an atmosphere of secrecy without explaining the actual relationship. The relevant questions are which entity reported the asset, which institution supposedly held it and how the balance entered the wider financial statements.\n\nThe geographic structure identifies where the asset was asserted and where it supposedly sat. It cannot answer the basic verification question: what independently confirmed that the money existed?\n\n## From a subsidiary into the group accounts\n\nThe SEC complaint identifies Bonlat as the subsidiary that purportedly held the bank assets. It then alleges that those nonexistent assets appeared in Bonlat's records and in Parmalat's consolidated financial statements. This is the documentary route by which a claim made at one location could affect investors reading the group accounts.\n\nThe route begins with the asserted balance, passes through its supporting confirmation and reaches the group statement. Each document supplies a different part of the claim.\n\nThe complaint also alleges misrepresentations about debt repurchases. That is a separate issue from the existence of cash. Combining both into a single enormous missing-money figure would obscure the distinction between an overstated asset and a liability that had not been removed as represented.\n\nAn overstated cash asset and a misrepresented debt repurchase require separate explanations. Combining them into one missing-money total would blur how each affected the accounts.\n\nThe reported balance depended on the confirmation. According to the complaint, the document was forged and the assets did not exist. The evidentiary failure lay in the claimed connection to a bank account, not in the subsidiary's offshore address alone."
   },
   {
     "slug": "penn-central-short-term-promise",
     "title": "The Railroad and the Promise Due Soon",
-    "dek": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
+    "dek": "Penn Central’s failure unsettled a market built on promises due soon. The episode connects short-term borrowing to longer funding needs, while requiring a distinction between bank liquidity support and support for the railroad itself.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "credit",
       "railroads",
       "financial history"
     ],
-    "description": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
-    "socialPreview": "Penn Central’s commercial paper crisis shows how a short maturity can conceal dependence on continued refinancing.",
+    "description": "Penn Central’s bankruptcy and the commercial-paper market, with short-term credit risk distinguished from the Federal Reserve’s bank liquidity response.",
+    "socialPreview": "Penn Central’s bankruptcy and the commercial-paper market, with short-term credit risk distinguished from the Federal Reserve’s bank liquidity response.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Federal Reserve History: Penn Central Commercial Paper Crisis, 1970",
+        "title": "Federal Reserve History, Penn Central",
         "url": "https://www.federalreservehistory.org/essays/penn-central",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Bankruptcy, disruption of commercial paper and Federal Reserve response."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify historical figures against cited SEC and Federal Reserve records before adding them.",
-      "Keep this historical analysis separate from financial advice."
+      "Keep this historical analysis separate from financial advice.",
+      "Check the timing, mechanisms and beneficiaries of the Federal Reserve response; distinguish bank liquidity measures from a direct railroad bailout.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 448,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 455,
     "publishedInArchive": false,
-    "body": "A debt due soon can sound safer than a debt due years from now. There is less time for the world to change. But that intuition leaves out a second clock: how long the borrower needs funding, and how often it must persuade somebody to renew it.\n\nPenn Central's bankruptcy in June 1970 disrupted the U.S. commercial paper market. Federal Reserve History describes how issuers turned toward banks for funding and how the central bank supported the banking system's ability to meet those demands. The case joins a railroad's deteriorating position to the behavior of a much wider short-term credit market.\n\nCommercial paper is unsecured debt. Its promise depends on the issuer's capacity to repay, rather than a specific asset pledged to each holder. A short maturity limits the duration of one contract. It does not necessarily limit the duration of the borrower's underlying need for money.\n\n### The renewal hidden in the instrument\n\nImagine a business whose commitments last much longer than its borrowing. When a note matures, the business may plan to issue another. Each individual note can be brief while the chain of replacement financing becomes essential to ordinary operation.\n\nThat is a conceptual explanation of refinancing risk, not a reconstruction of every Penn Central transaction. It helps explain why confidence can matter suddenly. If buyers stop accepting new paper, the borrower has to find another source of funds even if much of its business continues to exist in physical form.\n\nA railroad is an especially concrete reminder of that difference. Tracks and equipment do not turn instantly into the cash needed to meet a due date. The existence of valuable assets does not settle the timing of payment.\n\n### One failure, a wider question\n\nWhen an issuer fails, investors may reconsider not only that name but the assumptions used to assess similar promises. A product previously treated as routine begins to require a closer look. The resulting disruption can reach borrowers whose circumstances are different from the original failure.\n\nThis is why the official response deserves precise description. Supporting the availability of bank funding is not identical to rescuing every issuer, and a market intervention does not prove that each private risk assessment was sound. The mechanism and the beneficiaries need to be named rather than hidden inside a broad word such as bailout.\n\nPenn Central's episode remains useful as history because it separates three ideas that are easily collapsed: the maturity of a contract, the condition of its issuer and the market's willingness to renew funding. A promise can be due soon and still rest on a long chain of expectations. The shortness of the paper is not the shortness of the risk."
+    "body": "Penn Central's bankruptcy in June 1970 disrupted a market for promises that were due soon. Investors reconsidered commercial paper, and issuers turned to banks for replacement funding. The Federal Reserve supported the banking system's ability to meet those demands, according to its historical account.\n\nEach note was short. The need for financing could persist much longer. An issuer meeting continuing commitments through successive notes relied on buyers remaining willing to replace the debt whenever the current promise fell due.\n\nCommercial paper is unsecured debt. Its promise depends on the issuer's capacity to repay, rather than a specific asset pledged to each holder. A short maturity limits the duration of one contract. It does not necessarily limit the duration of the borrower's underlying need for money.\n\n### The renewal hidden in the instrument\n\nImagine a business whose commitments last much longer than its borrowing. When a note matures, the business may plan to issue another. Each individual note can be brief while the chain of replacement financing becomes essential to ordinary operation.\n\nIf new buyers disappear, the borrower must obtain replacement funding. That is refinancing risk: the business may still possess substantial assets while lacking cash for the next due date.\n\nA railroad is an especially concrete reminder of that difference. Tracks and equipment do not turn instantly into the cash needed to meet a due date. The existence of valuable assets does not settle the timing of payment.\n\n### One failure, a wider question\n\nWhen an issuer fails, investors may reconsider not only that name but the assumptions used to assess similar promises. A product previously treated as routine begins to require a closer look. The resulting disruption can reach borrowers whose circumstances are different from the original failure.\n\nThe response supported banks facing new credit demands. It must be distinguished from a direct rescue loan to the failed railroad.\n\n## Keeping credit moving\n\nThe Federal Reserve's historical account describes a response directed at the surrounding credit market. Banks were reminded that the discount window was available, and a partial relaxation of Regulation Q enabled them to compete for some large certificates of deposit. Direct lending to nonbank borrowers was considered but was not undertaken. That distinction matters: support for banks facing demands for credit was different from a loan rescuing Penn Central itself.\n\nOther issuers could reach for bank credit at the same time even though they were separate from Penn Central. A single bankruptcy could therefore expose a funding problem in the surrounding market.\n\nA note could mature quickly while the financing it supplied remained essential. Penn Central's failure disturbed the market willing to renew those promises. Short maturity limited one contract's life; it did not remove the dependence on the next buyer."
   },
   {
     "slug": "petrov-false-alarm",
     "title": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong",
-    "dek": "In September 1983, Petrov judged that a satellite alert did not reliably indicate an American attack.",
+    "dek": "The Petrov episode begins with a missile warning and a decision to question it. Retrospective accounts describe a false alarm, but claims about automatic escalation and what would otherwise have happened need stronger evidence.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "cold war",
       "systems"
     ],
-    "description": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
-    "socialPreview": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
+    "description": "Stanislav Petrov’s response to a false missile warning, with operational uncertainties and claims about an averted war kept in view.",
+    "socialPreview": "Stanislav Petrov’s response to a false missile warning, with operational uncertainties and claims about an averted war kept in view.",
     "readingTime": "2 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Chatham House — Nuclear decision-making case studies",
+        "title": "Chatham House, Nuclear decision-making case studies",
         "url": "https://www.chathamhouse.org/2022/03/uncertainty-and-complexity-nuclear-decision-making/05-nuclear-decision-making-case-studies",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify exact warning sequence and Petrov role from attributable accounts.",
-      "Label nuclear-war avoidance as counterfactual, not demonstrated certainty."
+      "Label nuclear-war avoidance as counterfactual, not demonstrated certainty.",
+      "Trace retrospective accounts to interviews and operational procedures; qualify automatic-transmission claims and unsupported counterfactuals.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 377,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 404,
     "publishedInArchive": true,
-    "body": "Inside a Soviet early-warning bunker, alarms indicated that the United States had launched an intercontinental ballistic missile, then several more. Lieutenant Colonel Stanislav Petrov was responsible for reporting the alert upward.\n\nPetrov considered the pattern implausible for a first strike and waited for corroboration from ground radar. The satellite system had mistaken sunlight reflected from high clouds for missile launches.\n\n## The alarm and the judgment\n\nAn alarm is a system's output. Treating it as a fact about the world requires another step: deciding how much confidence to place in the signal and what action that confidence justifies.\n\nThe Chatham House analysis linked here examines Stanislav Petrov's role within a wider discussion of nuclear decision-making. It supports an introduction to the event, but a detailed reconstruction of military procedures needs stronger documentary support. The popular claim that one person saved the world is a counterfactual interpretation, not a directly observable outcome.\n\nThat distinction does not diminish the importance of judgment under pressure. It makes the judgment easier to understand. What did the warning system indicate? What other information was available? What authority did the officer hold, and what procedure governed escalation? Each answer describes a different part of the decision.\n\nFalse alarms also challenge a simple model of automation in which a machine is either reliable or unreliable. An automated signal can be useful while still requiring interpretation. The relevant question is whether the organization understands the signal's limitations and provides a workable response to uncertainty.\n\nHeroic narratives can obscure that design problem. If the lesson becomes that safety depends on an exceptional person refusing the system, the institution's responsibility to build a better system disappears. A fuller account would preserve the individual action while asking what safeguards, corroboration and decision rules should make survival less dependent on an extraordinary moment.\n\nThe record should therefore retain both its drama and its boundary. A warning was assessed and a consequential judgment was made. The alternative future remains something to analyze cautiously, not something the archive can report as if it happened.\n\nThe account is about evaluating a warning under pressure. The claim that one decision certainly prevented nuclear war goes beyond what the surviving record can establish. The alert, its handling and any counterfactual outcome are different questions."
+    "body": "Stanislav Petrov questioned a Soviet early-warning alert reporting an American missile launch, followed by several more. Accounts summarized by Chatham House describe him reporting the warning as a false alarm. They do not supply a complete operational log of the alert's handling.\n\nPetrov's reported judgment is narrower than the familiar claim that he saved the world. Retrospective accounts describe his rejection of an alert. The surviving record does not let observers watch an alternative sequence in which accepting it certainly produced nuclear war.\n\n## The alarm and the judgment\n\nAn alarm is a system's output. Treating it as a fact about the world requires another step: deciding how much confidence to place in the signal and what action that confidence justifies.\n\nChatham House places the episode within nuclear decision-making. A precise reconstruction of Petrov's authority and escalation procedure requires documentary evidence beyond its retrospective summary.\n\nThat distinction does not diminish the importance of judgment under pressure. It makes the judgment easier to understand. What did the warning system indicate? What other information was available? What authority did the officer hold, and what procedure governed escalation? Each answer describes a different part of the decision.\n\nFalse alarms also challenge a simple model of automation in which a machine is either reliable or unreliable. An automated signal can be useful while still requiring interpretation. The relevant question is whether the organization understands the signal's limitations and provides a workable response to uncertainty.\n\nAn exceptional decision cannot carry the whole explanation of a warning system's safety. Corroboration, authority and rules for responding to uncertainty determine how much depends on one person's judgment.\n\n## What the surviving account cannot settle\n\nChatham House's reconstruction complicates the familiar story of a single officer stopping an alert from reaching his superiors. Its discussion indicates that information may have travelled automatically to the General Staff. The surviving public account does not establish every step in that chain. Retrospective interviews are evidence about recollection, but they are not a complete operational log.\n\nA signal can be generated, distributed and interpreted through different channels. Uncertainty over one channel limits the claim that Petrov alone stopped escalation, without erasing the reported false alarm.\n\nPetrov reportedly judged the warning false. That decision can be examined without assigning certainty to a nuclear war that did not occur. The episode's significance rests on the handling of an alarming signal, with the limits of the operational record left visible."
   },
   {
     "slug": "port-chicago-danger-and-duty",
@@ -1144,111 +1350,147 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Port Chicago belongs in the history of military work as well as the history of wartime disasters.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "navy",
       "labor",
       "racial segregation"
     ],
-    "description": "Port Chicago belongs in the history of military work as well as the history of wartime disasters.",
-    "socialPreview": "Port Chicago belongs in the history of military work as well as the history of wartime disasters.",
+    "description": "Port Chicago's aftermath asks how dangerous work, racial hierarchy and military duty were joined.",
+    "socialPreview": "Port Chicago's aftermath asks how dangerous work, racial hierarchy and military duty were joined.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "National Park Service: Port Chicago Naval Magazine National Memorial",
+        "title": "NPS, California: Port Chicago Naval Magazine National Memorial",
         "url": "https://home.nps.gov/articles/portchicago.htm",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "July 1944 explosion, deaths and segregated ammunition work."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
+      },
+      {
+        "title": "NPS, History and Culture",
+        "url": "https://www.nps.gov/poch/learn/historyculture/index.htm",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify trial and later review chronology separately before adding it.",
-      "Seek sailor testimony rather than inventing a representative voice."
+      "Seek sailor testimony rather than inventing a representative voice.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 457,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 528,
     "publishedInArchive": false,
-    "body": "The phrase wartime service can make radically different jobs sound alike. A ship crossing an ocean and a crew loading ammunition on a pier both belong to the war effort, but they do not tell us the same thing about how danger was assigned.\n\nOn 17 July 1944, an explosion at Port Chicago in California killed 320 people. The National Park Service's history places the disaster within a segregated naval system and the work of loading munitions. It also describes the refusal of some sailors to resume that work and the prosecutions that followed. Those facts make it impossible to write the event adequately as an unexplained blast followed by a casualty total.\n\nConsider two questions that an institution might ask after such a disaster. How quickly can essential work resume? Under what conditions is it acceptable to ask surviving workers to do that work again? The first is logistical. The second is moral, technical and political. Neither disappears because the other feels urgent.\n\n### Duty does not describe the distribution of risk\n\nMilitary language can present an order as the beginning of a story. For the person receiving it, however, the story may begin with training, equipment, previous warnings or a colleague who did not survive. An investigation that starts only at the moment of refusal can make these earlier conditions difficult to see.\n\nThat is why a record of discipline should be read beside a record of working conditions. A charge explains what an authority alleged. It does not automatically establish why someone acted, what alternatives were available, or whether the work was organized safely. Nor does criticism of the institution require pretending to know a sailor's private reasoning without testimony.\n\nThe distinction is especially important when race shapes an institution. An apparently general requirement to perform a dangerous task may fall on a particular group. The task itself, the ability to question it and the consequences of refusing it need to be examined together. Equality cannot be inferred from a uniform.\n\n### The memorial and the worksite\n\nA memorial names a loss. A work history asks how people were brought into the conditions that produced it. These are complementary acts of remembrance. To keep only the memorial is to risk making death appear detached from decisions; to keep only the institutional lesson is to reduce people to evidence for an argument.\n\nA fuller Port Chicago account should move between those scales: individual records where they exist, the organization of the loading operation, and the official response after the explosion. It should distinguish the disaster, the prosecutions and later reconsiderations rather than fold them into a single verdict. The question running through all three is who was expected to bear danger, and on whose terms."
+    "body": "An explosion at Port Chicago, California, killed 320 people on 17 July 1944. Less than a month later, survivors were assigned to resume loading ammunition at another facility. Some refused, and prosecutions followed, according to the National Park Service.\n\nThe NPS history describes a segregated naval system and inadequate training exposed in the proceedings. The order to resume loading thus followed an unresolved question about safety: what had changed since the explosion for the men being sent back to handle ammunition?\n\n### Duty does not describe the distribution of risk\n\nMilitary language can present an order as the beginning of a story. For the person receiving it, however, the story may begin with training, equipment, previous warnings or a colleague who did not survive. An investigation that starts only at the moment of refusal can make these earlier conditions difficult to see.\n\nThat is why a record of discipline should be read beside a record of working conditions. A charge explains what an authority alleged. It does not automatically establish why someone acted, what alternatives were available, or whether the work was organized safely. Nor does criticism of the institution require pretending to know a sailor's private reasoning without testimony.\n\nWhen an institution assigns dangerous work along racial lines, the task, the ability to challenge it and the penalties for refusal belong in the same account.\n\n### An order after an explosion\n\nThe NPS account describes survivors being assigned to resume loading at another nearby facility less than a month after the disaster. It also records that the ensuing proceedings exposed inadequate training for the dangerous work. This sequence connects the return-to-work question with the conditions preceding the refusal.\n\nThe move to another facility was a change of location. It did not, by itself, establish that the sailors had received the training or assurances needed to regard the task differently. Asking only whether they obeyed removes that question from the record before it can be examined. Asking about safety does not eliminate the military context; it makes the context include the organization of the work.\n\nA later milestone must also remain visible. NPS records the official exoneration on 17 July 2024 of sailors court-martialed following the refusals. That decision belongs to the history of official judgment, eight decades after the explosion. It should not be described as though it occurred during the original proceedings or restored the time and opportunities lost to them.\n\nLoading had to resume within weeks; official exoneration came eight decades later. The different timescales connect the immediate demands made of survivors to the long history of institutional judgment.\n\n### The memorial and the worksite\n\nA memorial names a loss. A work history asks how people were brought into the conditions that produced it. These are complementary acts of remembrance. To keep only the memorial is to risk making death appear detached from decisions; to keep only the institutional lesson is to reduce people to evidence for an argument.\n\nThe prosecutions began with the refusal to resume work. The work history began earlier, with training, segregation and the conditions of loading. Reading the records together preserves what an account beginning only with disobedience would miss."
   },
   {
     "slug": "richard-mccoy-skyjacking",
     "title": "Richard McCoy’s Parachute Hijacking and the Evidence He Left",
-    "dek": "In April 1972, a ransom hijacking ended with a parachute escape and an arrest two days later.",
+    "dek": "Richard McCoy’s parachute hijacking left a recoverable trail of evidence. Reading that trail on its own terms is more useful than treating similarities to another hijacking as proof of a shared identity.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "aviation",
       "fbi"
     ],
-    "description": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
-    "socialPreview": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
-    "readingTime": "2 min",
+    "description": "Richard McCoy’s parachute hijacking and the evidence linking him to it, without turning similarities to the Cooper case into an identity finding.",
+    "socialPreview": "Richard McCoy’s parachute hijacking and the evidence linking him to it, without turning similarities to the Cooper case into an identity finding.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "FBI History — Richard Floyd McCoy Jr.",
+        "title": "FBI case history of Richard Floyd McCoy Jr.",
         "url": "https://www.fbi.gov/history/cases-and-criminals/richard-floyd-mccoy-jr",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify conviction and escape chronology with the FBI source.",
-      "Keep any D. B. Cooper theory explicitly separate from established identification."
+      "Keep any D. B. Cooper theory explicitly separate from established identification.",
+      "Check the original FBI evidence or trial exhibits; distinguish investigative clues from findings and retain the separation from the Cooper case.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 357,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 430,
     "publishedInArchive": true,
-    "body": "Richard Floyd McCoy boarded United Airlines Flight 855 carrying a fake grenade and an empty pistol. He demanded $500,000 and parachutes, then escaped through the Boeing 727’s rear stairs over Utah.\n\nThe resemblance to the still-unsolved D.B. Cooper case was immediate. Unlike Cooper, McCoy left a trail: skydiving equipment, matching typewriter impressions and nearly all the ransom money. The FBI arrested him two days later.\n\n## A resemblance is not an identification\n\nA case can acquire a second life through comparison with another, more famous crime. Similar methods invite speculation; a striking resemblance becomes a proposed identity; repetition makes the proposal feel established. The steps are not equivalent.\n\nAn investigative record should separate what is documented about this hijacking from claims that connect it to another one. A shared method can support a question. It cannot answer that question without additional evidence. Even a persuasive theory needs to be distinguished from a finding accepted by the investigating authority or established in court.\n\nThe FBI's public history is useful for understanding how the agency presents the case. It is a retrospective institutional account, not the full case file. A detailed article should make clear when it relies on that summary and when it has examined a contemporaneous document.\n\nThis distinction does not make a public history worthless. It prevents a polished institutional narrative from being treated as if every underlying inference were independently available to the reader. Where the records are incomplete, the missing material should be described rather than replaced by a confident reconstruction.\n\nThe story's attraction is partly mechanical: money, an aircraft, a parachute and an escape plan. But method should not overwhelm consequence. People were threatened, an investigation followed and claims about identity require a standard of proof. The archive is strongest when it makes room for uncertainty without turning that uncertainty into permission for an endlessly expanding legend.\n\nMcCoy’s case shows how physical evidence and witness accounts can turn an airborne escape into an identifiable criminal case. Similarities with the Cooper hijacking are a comparison, not proof that the two men were the same person.\n\nA comparison can remain interesting without becoming a conclusion."
+    "body": "The FBI arrested Richard Floyd McCoy two days after a ransom hijacking of United Airlines Flight 855 ended with a parachute escape over Utah. Its public history describes recovered money, fingerprints, witness information and comparison evidence linking him to the case.\n\nMcCoy had demanded $500,000 and parachutes before leaving through the Boeing 727's rear stairs. The method resembled the D.B. Cooper hijacking. The fingerprints, recovered money and other evidence tied to McCoy's case cannot, by themselves, resolve the identity of an offender in a different crime.\n\n## A resemblance is not an identification\n\nA case can acquire a second life through comparison with another, more famous crime. Similar methods invite speculation; a striking resemblance becomes a proposed identity; repetition makes the proposal feel established. The steps are not equivalent.\n\nA shared method can justify an investigative question. Identifying a shared offender requires additional evidence, rather than a resemblance repeated often enough to become familiar.\n\nThe FBI's public history is useful for understanding how the agency presents the case. It is a retrospective institutional account, not the full case file. A detailed article should make clear when it relies on that summary and when it has examined a contemporaneous document.\n\nThe FBI history is a retrospective institutional summary. It presents the agency's account without making the entire underlying case file available for independent examination.\n\nThe escape method explains the comparison; the recovered evidence explains the identification. Keeping those functions separate prevents the unresolved Cooper case from displacing the established McCoy investigation.\n\n## Evidence with different jobs\n\nThe FBI's account describes several kinds of evidence in McCoy's case: handwriting comparisons, fingerprints on an airline magazine, recovered money, and witness information. These items did not answer identical questions. A fingerprint could associate a person with an object; a financial recovery could connect a search location with the ransom; a witness could describe a movement or encounter. The case depended on their relationship, rather than on an isolated clue made dramatic by hindsight.\n\nThat evidence should remain separate from speculation about D.B. Cooper. Similar demands, aircraft, or escape methods can justify a comparison between crimes without establishing that they share an offender. Evidence tying McCoy to this hijacking is not automatically evidence identifying him in another one. Maintaining that boundary makes the established case more legible and prevents a famous unresolved mystery from taking over the account.\n\nThe parachute escape drew attention to the resemblance. The recovered money, fingerprints and witness information gave investigators a trail specific to McCoy. His case can be explained on that evidence without turning comparison with Cooper into identification."
   },
   {
     "slug": "satyam-confession",
-    "title": "Satyam’s Accounting Confession and the Collapse of Its Reported Cash",
-    "dek": "In January 2009, chairman B. Ramalinga Raju admitted overstating revenue, profits and cash balances.",
+    "title": "Satyam’s False Invoices and Reported Cash",
+    "dek": "Satyam’s reported revenue and cash rested, according to the SEC, on false invoices and forged bank statements. The distinction between allegations, settlement terms and evidence that subsequent reforms worked remains essential.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "india",
       "accounting"
     ],
-    "description": "A letter to the board forced investors to reconsider the accounts of a major Indian technology company.",
-    "socialPreview": "A letter to the board forced investors to reconsider the accounts of a major Indian technology company.",
-    "readingTime": "2 min",
+    "description": "Satyam’s false-invoice and reported-cash allegations, with the settlement terms distinguished from proof that subsequent controls were effective.",
+    "socialPreview": "Satyam’s false-invoice and reported-cash allegations, with the settlement terms distinguished from proof that subsequent controls were effective.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. Securities and Exchange Commission",
+        "title": "SEC action against Satyam, 5 April 2011",
         "url": "https://www.sec.gov/newsroom/press-releases/2011-81-sec-charges-satyam-computer-services-financial-fraud",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Confirm the admission date and numerical figures.",
-      "Label SEC allegations and settlements with their actual procedural status."
+      "Label SEC allegations and settlements with their actual procedural status.",
+      "Reconcile the complaint’s invoice and cash claims with the settlement terms; treat any evidence about later reforms as a separate finding.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 368,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 440,
     "publishedInArchive": true,
-    "body": "For years, Satyam Computer Services appeared to embody India’s technology ascent. Then chairman B. Ramalinga Raju wrote to the board and confessed that revenue, margins and cash balances had been overstated.\n\nThe gap had compounded quarter after quarter. A proposed purchase of two property companies linked to Raju’s family was abandoned after investor backlash; days later, the confession arrived. India dissolved the board, installed directors and supervised the sale of control.\n\n## The cash balance as a claim\n\nCash appears reassuring because it sounds concrete. A reported balance suggests money somewhere that can be counted and confirmed. Yet the figure in a financial statement remains a claim until the evidence connecting it to an actual account has been examined.\n\nA confession is powerful evidence of what its author admits. It is not a substitute for reconstructing the accounts. The amount, duration and mechanism of a misstatement still require documents, and a later official proceeding may establish a different scope from the initial announcement.\n\nThe SEC record attached to this brief should therefore be read for its procedural status. Does it announce allegations, a settlement, a judgment or another action? Those labels govern what the article can responsibly say. A headline about fraud must not silently convert every allegation in a filing into an adjudicated finding.\n\nThere is also a difference between explaining a deception and explaining why it persisted. The first may involve entries, confirmations and transactions. The second concerns the institutions expected to challenge those representations. Neither question should be answered solely through the personality of the executive at the center of the story.\n\nFor the reader, a useful explanation follows one reported balance backward: what statement carried it, what supporting record purported to justify it and what independent evidence was available. That path is more informative than treating a large number as self-explanatory. The scandal matters not because cash is mysterious, but because an apparently simple asset can become a story people accept instead of a fact they verify.\n\nSatyam shows how false balances can accumulate across reporting periods. The confession is a starting point for examining the accounts and the response by directors, auditors and regulators; it is not a substitute for those separate records."
+    "body": "False invoices could make Satyam Computer Services appear to earn revenue; forged bank information could make the resulting cash appear to exist. The SEC's April 2011 announcement alleged that revenue, income and cash had been overstated by more than $1 billion over five years.\n\nSatyam settled the SEC charges without admitting or denying the allegations. The agreement included a penalty and requirements concerning controls. These recorded obligations followed the alleged misstatements; evidence of their implementation and effectiveness belongs to the subsequent history.\n\n## The cash balance as a claim\n\nCash appears reassuring because it sounds concrete. A reported balance suggests money somewhere that can be counted and confirmed. Yet the figure in a financial statement remains a claim until the evidence connecting it to an actual account has been examined.\n\nAn admission and an accounting reconstruction answer different questions. The amount, duration and mechanism of a misstatement still need records, even when a statement appears to offer a complete explanation.\n\nThe 2011 announcement reports allegations and settlement terms. Those procedural labels limit what it establishes about the underlying accounts.\n\nThere is also a difference between explaining a deception and explaining why it persisted. The first may involve entries, confirmations and transactions. The second concerns the institutions expected to challenge those representations. Neither question should be answered solely through the personality of the executive at the center of the story.\n\nA reported balance depends on the statement asserting it, the documents supporting it and independent evidence from the account purportedly holding the money. Agreement among unreliable internal records is insufficient.\n\n## The route from invoices to apparent cash\n\nThe SEC described fictitious invoices and falsified bank information in its 2011 action. These are distinct points in an accounting story. An invoice can create the appearance of revenue; a bank record can appear to confirm the resulting money. When both are unreliable, reconciliation within the company's own records may produce consistency without producing truth.\n\nThe settlement also belongs to a different phase from the misconduct described in the complaint. Satyam's new leadership agreed to controls-related measures and a monetary penalty without admitting or denying the allegations. Those terms establish what the company agreed to do, rather than proving that every subsequent safeguard worked. An account of institutional repair needs evidence after implementation. Treating the settlement as a finished solution would repeat the mistake of accepting a documented intention as a verified result.\n\nThe alleged scheme made invented revenue appear to produce real cash. The settlement prescribed a response. Establishing whether the new controls worked requires evidence from after their implementation, just as establishing the original misstatements requires the records behind the accounts."
   },
   {
     "slug": "seveso-boundary-of-the-factory",
@@ -1256,74 +1498,93 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Seveso makes the surrounding community part of the industrial safety record.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "italy",
       "chemical safety",
       "communities"
     ],
-    "description": "Seveso makes the surrounding community part of the industrial safety record.",
-    "socialPreview": "Seveso makes the surrounding community part of the industrial safety record.",
+    "description": "The Seveso release crossed the factory fence and exposed the difference between process control and community protection.",
+    "socialPreview": "The Seveso release crossed the factory fence and exposed the difference between process control and community protection.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Health and Safety Executive: Icmesa, Seveso, 10 July 1976",
+        "title": "HSE, Icmesa chemical company, Seveso, Italy, 10 July 1976",
         "url": "https://www.hse.gov.uk/comah/sragtech/caseseveso76.htm",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Chemical release and contamination beyond the site."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check the evacuation chronology and health findings before adding numbers.",
-      "Separate the original accident from subsequent legislative history."
+      "Separate the original accident from subsequent legislative history.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 451,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 505,
     "publishedInArchive": false,
-    "body": "A factory fence answers a question about access. It marks where an operator's property or control begins. It does not tell a cloud of released material where to stop.\n\nOn 10 July 1976, a chemical release at the Icmesa plant near Seveso, Italy, contaminated the surrounding area with dioxin. HSE's case history describes the accident and deficiencies in the technical measures intended to prevent or contain it. The event's basic geography is essential: consequences extended into places whose residents were not participating in the industrial process.\n\nThere are at least three different boundaries in such a case. The property boundary defines ownership. The process boundary defines the machinery under examination. The exposure boundary concerns where harmful material may reach people, animals and land. An investigation becomes misleading if it uses the first two as substitutes for the third.\n\n### Knowing enough to act\n\nAfter a release, information has several jobs. Operators need to understand the process failure. Responders need to identify practical measures. Residents need information that speaks to everyday decisions: where to go, what to avoid and whom to contact.\n\nThose needs are related but not identical. A technically accurate description can still be useless to someone deciding whether a child should play outside. Conversely, a simple instruction can conceal the uncertainty that should govern its duration or revision. Communication is part of the response, not a translation task postponed until the technical work is over.\n\nThis is also why the time at which information became available matters. It would be unfair to judge an early decision by evidence that did not yet exist. It would be equally misleading to let an organization use uncertainty as an indefinite reason not to disclose what it already knew. A chronology should separate detection, interpretation, communication and action.\n\n### A place has more than one recovery date\n\nIndustrial narratives often favor restart dates. A community may measure recovery through other events: returning home, regaining access to land, receiving an explanation or knowing how future health questions will be followed. There is no reason to assume that these calendars coincide.\n\nAn archival account should therefore avoid letting the end of an emergency operation become the end of the story. At the same time, claims about long-term health effects need specific studies and carefully defined populations. Concern is real evidence of experience; it is not by itself a quantitative exposure assessment.\n\nSeveso is a useful place to ask who belongs inside an industrial safety case. The answer cannot be limited to employees and equipment. If consequences can travel, the people beyond the fence belong in the planning, the information system and the retained record. Their distance from the process does not make their exposure incidental."
+    "body": "A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. A cloud containing TCDD escaped for about twenty minutes, according to HSE's case history. Confusion followed as the company and authorities failed to communicate adequately.\n\nThe cloud escaped for a limited period. The need for information lasted longer. Residents and responders required an account of what had been released and where it had travelled, even after the plant had stopped emitting it.\n\nOwnership, equipment and exposure describe different boundaries. The fence marked control of the site; it could not contain the consequences of the release.\n\n### Knowing enough to act\n\nAfter a release, information has several jobs. Operators need to understand the process failure. Responders need to identify practical measures. Residents need information that speaks to everyday decisions: where to go, what to avoid and whom to contact.\n\nThose needs are related but not identical. A technically accurate description can still be useless to someone deciding whether a child should play outside. Conversely, a simple instruction can conceal the uncertainty that should govern its duration or revision. Communication is part of the response, not a translation task postponed until the technical work is over.\n\nThe response chronology needs to distinguish when information was detected, interpreted, shared and acted on. Decisions must be judged against the evidence available at their time.\n\n### A release has an information trail\n\nHSE describes a reactor's bursting disc rupturing around 12:37 on 10 July. A visible cloud left the plant, carrying TCDD among its constituents. The case history states that the release lasted about twenty minutes and that confusion followed because communication between the company and authorities was inadequate.\n\nThese details establish two different intervals. One concerns material leaving the process. The other concerns institutions acquiring and sharing a usable understanding of what had happened. Ending the first interval does not automatically end the second. A cloud can stop emerging while questions about where it went and what it contained remain urgent.\n\nThe distinction also changes how a technical safeguard is evaluated. Relieving pressure can protect a vessel while directing its contents somewhere else. The safety question must follow that route to its destination. A device cannot be judged solely by whether the equipment immediately around it survives.\n\nHSE's account establishes an offsite release accompanied by inadequate communication. Residents' instructions, their timing and their reception require separate response records and testimony.\n\n### A place has more than one recovery date\n\nIndustrial narratives often favor restart dates. A community may measure recovery through other events: returning home, regaining access to land, receiving an explanation or knowing how future health questions will be followed. There is no reason to assume that these calendars coincide.\n\nLong-term health claims require studies with defined populations. Community accounts can establish experience and concern without serving as quantitative exposure measurements.\n\nThe fence marked the edge of the property, not the edge of the emergency. A release capable of reaching neighboring residents required planning and communication that reached them too."
   },
   {
     "slug": "ss-eastland",
     "title": "The Eastland Disaster: A Passenger Ship Capsizes at the Dock",
-    "dek": "A company excursion ended in catastrophe before the vessel left the Chicago River boarding point.",
+    "dek": "The Eastland capsized beside a city dock rather than far out at sea. The historical account establishes the disaster, while explaining the ship’s stability requires technical evidence beyond the cached entry used here.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "chicago",
       "maritime"
     ],
-    "description": "The proximity of shore did not prevent hundreds of passengers from becoming trapped.",
-    "socialPreview": "The proximity of shore did not prevent hundreds of passengers from becoming trapped.",
-    "readingTime": "2 min",
+    "description": "The Eastland’s dockside capsizing, with the historical casualty account kept separate from unresolved technical explanations of stability.",
+    "socialPreview": "The Eastland’s dockside capsizing, with the historical casualty account kept separate from unresolved technical explanations of stability.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Encyclopedia of Chicago — Eastland",
+        "title": "Encyclopedia of Chicago, Eastland disaster",
         "url": "https://www.encyclopedia.chicagohistory.org/pages/408.html",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify the stability explanation with technical investigation records.",
-      "Avoid attributing the failure solely to added lifeboats without documentary support."
+      "Avoid attributing the failure solely to added lifeboats without documentary support.",
+      "Retrieve the complete institutional history and a vessel inquiry before expanding stability claims; do not treat added lifesaving equipment as a sole cause.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 360,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 452,
     "publishedInArchive": true,
-    "body": "Workers and their families boarded the SS Eastland for a Western Electric company excursion. Before departure, the vessel listed sharply and rolled onto its side in the Chicago River.\n\nHundreds were trapped below deck. At least 844 people died, many of them women and children from immigrant communities. Rescue unfolded within sight of downtown buildings and a riverbank crowded with witnesses.\n\n## Safety depends on the whole vessel\n\nBeing close to shore can create a powerful impression of safety. It does not remove the need for stability, usable exits or a way out of an enclosed space. The Eastland's location is part of what makes the loss so difficult to understand through ordinary intuitions about maritime danger.\n\nThe museum account linked here is a starting point for the event's chronology and social history. A detailed technical account would also need the vessel's records and the investigations. Claims about exactly how loading, modifications or regulatory requirements affected stability should not be inferred from the outcome alone.\n\nThe relevant distinction is between adding a safety measure and assessing the resulting system. A change made for one purpose can alter another property. This does not mean that safety rules are inherently counterproductive. It means that a vessel must be evaluated as an arrangement whose parts interact, rather than as a checklist of independently reassuring features.\n\nThe setting of a company excursion also matters. A passenger list is a record of a social world, including households and workplaces, not merely an input to a casualty calculation. An account that preserves only the mechanics can lose the community significance of the event.\n\nImages of a ship on its side beside a city invite the question of why rescue was not simple. The answer must come from the actual access, compartment layout and conditions, not from what seems obvious at the riverbank. Proximity is not the same as reachability. Keeping that distinction visible helps explain how a journey can become lethal before it has properly begun.\n\nThe Eastland record connects stability, loading and oversight with the conditions faced by people below deck. A nearby riverbank offered little protection to those who could not escape the vessel."
+    "body": "The Eastland capsized beside a Chicago River dock on 24 July 1915 while loaded for a Western Electric excursion. The Encyclopedia of Chicago reports 844 deaths. The vessel had scarcely begun its journey, and proximity to the city offered little protection to passengers unable to get out.\n\nThe disaster occurred beside a dock, not far out at sea. Distance from shore could not substitute for stability or a way out of enclosed spaces. Those protections depended on the vessel's design, loading and usable routes of escape.\n\n## Safety depends on the whole vessel\n\nBeing close to shore can create a powerful impression of safety. It does not remove the need for stability, usable exits or a way out of an enclosed space. The Eastland's location is part of what makes the loss so difficult to understand through ordinary intuitions about maritime danger.\n\nThe institutional history supplies the basic chronology. A technical explanation of loading, modifications and stability requires the vessel's records and investigations.\n\nThe relevant distinction is between adding a safety measure and assessing the resulting system. A change made for one purpose can alter another property. This does not mean that safety rules are inherently counterproductive. It means that a vessel must be evaluated as an arrangement whose parts interact, rather than as a checklist of independently reassuring features.\n\nThe setting of a company excursion also matters. A passenger list is a record of a social world, including households and workplaces, not merely an input to a casualty calculation. An account that preserves only the mechanics can lose the community significance of the event.\n\nThe riverbank was nearby, but reachability depended on access from inside the ship. A view of the hull from shore cannot explain the conditions in its compartments.\n\n## Changes to a whole vessel\n\nThe Encyclopedia of Chicago describes alterations affecting Eastland's stability before the disaster, as well as additional lifeboats and rafts in 1915. This history makes a simple explanation based on one safety measure inadequate. A ship's stability depends on the relationship among its hull, loading, weight distribution, and operation. An equipment change can matter within that relationship without being the sole cause of a capsizing.\n\nThe short entry cannot establish a numerical stability margin or allocate a precise share of responsibility to each alteration. Those questions need plans, loading records and engineering analysis. The evidence supports examining equipment changes as part of the vessel, rather than assigning the disaster to one reassuring or harmful feature.\n\nA short excursion brought households and workplaces aboard the same ship. The loss at the dock belongs to that community history. Explaining why the vessel capsized still requires the loading, design and investigation records that a casualty total cannot supply."
   },
   {
     "slug": "station-nightclub-available-seconds",
@@ -1331,37 +1592,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "The Station nightclub investigation makes escape a relationship between fire growth, layout and human movement.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "fire",
       "venues",
       "public safety"
     ],
-    "description": "The Station nightclub investigation makes escape a relationship between fire growth, layout and human movement.",
-    "socialPreview": "The Station nightclub investigation makes escape a relationship between fire growth, layout and human movement.",
+    "description": "The Station nightclub investigation explains how fire growth and evacuation interact, and why an exit count cannot establish usable escape time.",
+    "socialPreview": "The Station nightclub investigation explains how fire growth and evacuation interact, and why an exit count cannot establish usable escape time.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "NIST: The Station Nightclub Fire 2003",
+        "title": "NIST Station nightclub investigation",
         "url": "https://www.nist.gov/disaster-failure-studies/station-nightclub-fire-2003",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "2003 fire and technical investigation of ignition, fire growth and evacuation."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check all timing claims against NIST report tables before adding seconds.",
-      "Do not identify victim decisions without testimony."
+      "Do not identify victim decisions without testimony.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 457,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.059Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 502,
     "publishedInArchive": false,
-    "body": "A room offers more than floor area. In an emergency, it offers a limited amount of usable time. Whether that time is enough depends on what happens to the room and what people can do while it changes.\n\nThe 2003 fire at The Station nightclub in Rhode Island killed 100 people. NIST investigated the fire, including the ignition of foam by pyrotechnics, the development of conditions inside the building and evacuation. Its technical work matters because it permits a more specific discussion than the claim that a crowd simply panicked.\n\n## A route on paper is not an evacuation\n\nAn exit count is a static description. Escape is a process. People have to recognize danger, find a route, reach it and move through it while visibility, heat and available space may be changing. These steps can overlap, and the slowest constraint can govern the whole process.\n\nThat distinction should make writers cautious about retrospective instructions. From the position of a reader who already knows the outcome, an alternative door can look obvious. For someone inside a changing room, visibility and familiarity may have been very different. A map does not grant access to another person's perceptions.\n\nIt also matters how an investigation establishes its timing. A video, a laboratory experiment and a computer model are different kinds of evidence. A model can test a mechanism under stated assumptions. It cannot become a recording of an event merely because its animation is convincing. Experimental reconstruction is most useful when the reader can see both what was reproduced and what remained uncertain.\n\nThe point is not to distrust technical work. It is to describe its strength accurately. A carefully bounded result is more informative than a dramatic reconstruction presented without limits.\n\n## Before anyone needs to decide\n\nThe phrase human behavior can quietly move attention away from design. Yet the conditions in which people decide are themselves designed or permitted: the materials around them, the layout, the presence of suppression systems and the way exits are made intelligible. Individual action cannot be assessed fairly while those conditions remain in the background.\n\nA venue's ordinary atmosphere is part of the challenge. People come to listen, watch and gather, not to conduct an inspection. Safety has to exist before visitors are required to understand every relevant hazard. The everyday use of a room should not demand expert knowledge as a condition of survival.\n\nFor an archive, this leads to a different kind of closing image. Not the moment of ignition repeated for spectacle, and not an invented account of a victim's last choice. Instead, a floor plan beside a fire-growth account, with the relationship between them explained. The record should show how available time was shaped before the audience ever arrived."
+    "body": "The 2003 fire at The Station nightclub in Rhode Island killed 100 people. NIST investigated how pyrotechnics ignited foam, how conditions inside the building deteriorated and how occupants tried to escape. The inquiry connects fire growth with the time and routes available for evacuation.\n\nEscape depended on more than the number of doors. Occupants had to reach and pass through a usable route before heat, smoke and congestion closed that opportunity. The materials that fed the fire and the systems available to suppress it helped set the time limit.\n\n## Two clocks in the same room\n\nNIST's account records crowding at the main entrance and the absence of sprinklers. It also describes a mockup experiment in which an installed sprinkler system controlled the test fire. That experiment supplies evidence about suppression under its test conditions; it is not a filmed alternative outcome for every person in the actual nightclub. [NIST investigation, fire protection and emergency egress findings](https://www.nist.gov/disaster-failure-studies/station-nightclub-fire-2003).\n\nThe conceptual problem involves two clocks. One measures how long occupants need to escape. The other measures how long the environment remains survivable along the routes they must use. Counting doors addresses only part of the first clock. Materials and suppression affect the second. The clocks interact because worsening conditions can slow movement while simultaneously shortening the time left.\n\nCrowding and smoke constrain movement even when people make reasonable choices. Attributing the outcome to panic bypasses the physical conditions the investigation examined.\n\n## A route on paper is not an evacuation\n\nAn exit count is a static description. Escape is a process. People have to recognize danger, find a route, reach it and move through it while visibility, heat and available space may be changing. These steps can overlap, and the slowest constraint can govern the whole process.\n\nAn alternative door may look obvious on a retrospective floor plan. That view does not establish what an occupant could see or reach as conditions changed.\n\nIt also matters how an investigation establishes its timing. A video, a laboratory experiment and a computer model are different kinds of evidence. A model can test a mechanism under stated assumptions. It cannot become a recording of an event merely because its animation is convincing. Experimental reconstruction is most useful when the reader can see both what was reproduced and what remained uncertain.\n\n## Before anyone needs to decide\n\nEvacuation decisions take place within conditions established before the emergency: materials, layout, suppression and recognizable exits. Examining behavior requires examining those conditions too.\n\nA venue's ordinary atmosphere is part of the challenge. People come to listen, watch and gather, not to conduct an inspection. Safety has to exist before visitors are required to understand every relevant hazard. The everyday use of a room should not demand expert knowledge as a condition of survival.\n\nThe exits and the fire cannot be assessed separately. One governed where people could go; the other governed how long they had to get there. That relationship, rather than a count of doors, is central to the investigation."
   },
   {
     "slug": "tacoma-wind-in-the-system",
@@ -1369,111 +1639,140 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Science",
     "tags": [
       "bridges",
       "wind",
       "engineering"
     ],
-    "description": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
-    "socialPreview": "Tacoma Narrows is more useful as a study of interaction than as a one-word lesson about resonance.",
+    "description": "The Tacoma Narrows footage shows motion; understanding the failure requires explaining the bridge and wind together.",
+    "socialPreview": "The Tacoma Narrows footage shows motion; understanding the failure requires explaining the bridge and wind together.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Washington State Department of Transportation: Lessons from failure",
+        "title": "WSDOT, Tacoma Narrows Bridge: Lessons from failure",
         "url": "https://www.wsdot.wa.gov/TNBhistory/bridges-failure.htm",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "1940 collapse and the aerodynamic explanation."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Confirm flutter terminology against the cited engineering history.",
-      "Source any wind speed or numerical structural parameter before inclusion."
+      "Source any wind speed or numerical structural parameter before inclusion.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 454,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 511,
     "publishedInArchive": false,
-    "body": "The film is so persuasive that an explanation can seem almost unnecessary. A bridge twists, its deck deforms, and the structure comes apart. The moving image tells us that something failed. It does not, by itself, identify the mechanism.\n\nThe Tacoma Narrows Bridge collapsed in November 1940. Washington State's transportation history discusses the aerodynamic lessons of the failure, including the interaction of the wind with the bridge's motion. Its treatment is a useful corrective to retellings that attach the word resonance and consider the matter settled.\n\nA word can identify a phenomenon, but it cannot replace an explanation of which forces act, how they change with movement and where energy enters the system. The bridge is not simply a passive object struck by an independent sequence of pushes. Its shape and motion help determine the aerodynamic forces it experiences.\n\n### The moving boundary\n\nThe conceptual shift is to consider a coupled system. Air moves around the structure; the structure moves in response; that movement changes the air flow. Under some conditions, the interaction can amplify motion instead of damping it. This broad explanation still requires a specific analysis before it can describe a particular design quantitatively.\n\nIt also shows why a spectacular video can be both valuable and misleading. The video preserves motion. Viewers supply a story about what caused it, often borrowing an analogy they already know. A familiar analogy makes an explanation memorable, but its familiarity does not establish that it is physically adequate.\n\nThe responsible alternative is not to make the account inaccessible. It is to explain where an analogy helps and where it stops. A reader does not need every equation to understand that forces can depend on the motion they are helping to produce.\n\n### What failure teaches a profession\n\nA failed structure offers evidence that a design process did not capture something important. It does not automatically reveal what every engineer should have known before construction. That question needs contemporary knowledge, design assumptions and the evidence available at the time.\n\nKeeping that distinction makes professional learning more demanding. If history becomes a parade of obvious blunders, present practitioners can assume that expertise has put them safely beyond it. If history examines the limits of a once-plausible model, it asks a harder question about the limits of today's models.\n\nThe final image should therefore not be the collapsing deck alone. Put beside it the conceptual change: from treating wind as a load applied to a fixed form toward examining the behavior of the interacting system. The exact development of that change deserves its own historical evidence. The broader lesson is already clear enough: an elegant name for a failure is not the same thing as understanding what moved it."
+    "body": "The Tacoma Narrows Bridge's deck twisted as the bridge collapsed in November 1940. Washington State's transportation history identifies the principal failure mechanism as torsional flutter: an instability sustained by the interaction between the deck's motion and aerodynamic forces.\n\nThe film shows the twisting deck. It cannot, by itself, explain why the movement grew. That requires following the interaction: the wind moved the bridge, the moving bridge altered the airflow, and the changed forces acted on the deck again.\n\n### The moving boundary\n\nThe conceptual shift is to consider a coupled system. Air moves around the structure; the structure moves in response; that movement changes the air flow. Under some conditions, the interaction can amplify motion instead of damping it. This broad explanation still requires a specific analysis before it can describe a particular design quantitatively.\n\nIt also shows why a spectacular video can be both valuable and misleading. The video preserves motion. Viewers supply a story about what caused it, often borrowing an analogy they already know. A familiar analogy makes an explanation memorable, but its familiarity does not establish that it is physically adequate.\n\nA reader can follow the feedback without a complete mathematical model: motion changes airflow, airflow changes force and the resulting force can amplify motion.\n\n### Two ways for motion to grow\n\nWSDOT identifies the principal failure mechanism as torsional flutter. Torsion means twisting; flutter here concerns an instability sustained through the interaction of motion and aerodynamic forces. In the account, vertical movement gave way to twisting, and the motion of the deck altered the forces acting on it.\n\nCompare that with the familiar image of pushing a swing. The swing analogy focuses on an external push delivered at a favorable time. It can help a reader imagine growing motion, but it leaves the pushing agent separate from the moving object. In an aeroelastic system, changing the object's motion changes the aerodynamic interaction itself. That distinction is why simply naming resonance can obscure the explanation.\n\nThe source's historical discussion is not a complete mathematical model of the bridge. Its vocabulary nevertheless points to the right object of analysis: a deck moving within a flow, with resistance to twisting and capacity to dissipate energy. A still photograph cannot show those relationships. Even a film needs interpretation to identify them.\n\nA schematic can distinguish vertical displacement from deck rotation, but it cannot turn the footage into a measurement of aerodynamic forces.\n\n### What failure teaches a profession\n\nA failed structure offers evidence that a design process did not capture something important. It does not automatically reveal what every engineer should have known before construction. That question needs contemporary knowledge, design assumptions and the evidence available at the time.\n\nThe failure exposes a limit in the model used to understand a structure. Assessing what engineers could have known beforehand requires the contemporary design record and technical knowledge.\n\nThe decisive relationship was between a moving deck and the air flowing around it. Torsional flutter names that interaction. It explains more than an image of wind pushing against a stationary structure can."
   },
   {
     "slug": "times-beach-dioxin",
     "title": "Times Beach: Contaminated Road Oil and the Decision to Relocate",
-    "dek": "Waste oil used to suppress road dust left dioxin contamination in a Missouri community later struck by flooding.",
+    "dek": "Times Beach links routine dust control to persistent contamination and a decision to relocate a community. The sequence matters: waste disposal, the flood, recognition of contamination and relocation were distinct developments.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Underreported",
     "tags": [
       "pollution",
       "missouri"
     ],
-    "description": "Sampling, flood damage and the federal buyout shaped the end of the town as a residential community.",
-    "socialPreview": "Sampling, flood damage and the federal buyout shaped the end of the town as a residential community.",
-    "readingTime": "2 min",
+    "description": "Times Beach’s contaminated road oil and relocation, with waste disposal, flooding, recognition of contamination and the buyout kept chronologically distinct.",
+    "socialPreview": "Times Beach’s contaminated road oil and relocation, with waste disposal, flooding, recognition of contamination and the buyout kept chronologically distinct.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. Environmental Protection Agency history",
+        "title": "EPA retrospective on Times Beach",
         "url": "https://www.epa.gov/mo/town-flood-and-superfund-looking-back-times-beach-disaster-nearly-40-years-later",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify the sequence linking contaminated oil, flood and relocation.",
-      "Check current site status before describing present-day safety."
+      "Check current site status before describing present-day safety.",
+      "Compare the EPA chronology with municipal and resident records; preserve the distinct dates of contamination, flooding, recognition and relocation.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 363,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.063Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 439,
     "publishedInArchive": true,
-    "body": "To suppress dust on unpaved roads, Times Beach, Missouri, used waste oil. Years later, investigators discovered that some of the oil was contaminated with dioxin.\n\nBefore residents could process the sampling results, a major flood covered the town. Federal agencies recommended permanent relocation, and more than 2,000 residents left. Buildings and contaminated material were later demolished or incinerated.\n\n## A road can distribute more than traffic\n\nDust control is an ordinary municipal problem. A substance spread for that purpose can become difficult to recognize as a hazard precisely because its immediate effect is useful. The road looks better while the history of the material applied to it remains elsewhere.\n\nThis makes provenance a practical environmental question. Where did the oil come from? What did its supplier know about its contents? Which records connected the source material to the places where it was used? A contaminant's movement can depend on a commercial or maintenance chain that residents never see.\n\nThe flood adds another layer. A flood is visible, dated and geographically dramatic. Contamination may precede it, be redistributed by it or become newly salient because of it. An account should distinguish those relationships instead of using the flood as a single explanation for everything that followed.\n\nEPA's retrospective account offers an institutional chronology. A fuller article would place it beside local records and residents' accounts, especially when discussing relocation. A decision to leave a place is not merely a line in a cleanup timeline; it changes relationships, property and the ordinary geography of a community.\n\nCleanup itself needs a definition. Removing a contaminant, restricting land use and making a site suitable for a particular new purpose are different claims. The article should say which was achieved and on what evidence. Otherwise the word restored can imply that an earlier community has been returned intact. Environmental work may make a place usable again while the town that lived there remains a historical absence.\n\nThe history requires separating the contamination from the flood and the decisions made afterward. Residents had to act on technical advice while facing the loss of their homes; that uncertainty is part of the record, not evidence that the hazard was imaginary."
+    "body": "Waste oil spread to suppress dust on Times Beach's roads carried a danger residents could not identify from its immediate use. Investigators later found dioxin contamination. A major flood covered the Missouri town in December 1982, and federal agencies recommended permanent relocation.\n\nThe retrospective reports that more than 2,000 residents left. Contamination, flooding, relocation and disposal followed distinct stages. The flood brought a new emergency to an existing contamination problem; it did not create that problem or the Superfund law enacted in 1980.\n\n## A road can distribute more than traffic\n\nDust control is an ordinary municipal problem. A substance spread for that purpose can become difficult to recognize as a hazard precisely because its immediate effect is useful. The road looks better while the history of the material applied to it remains elsewhere.\n\nThis makes provenance a practical environmental question. Where did the oil come from? What did its supplier know about its contents? Which records connected the source material to the places where it was used? A contaminant's movement can depend on a commercial or maintenance chain that residents never see.\n\nThe flood is a dated event in a longer contamination history. It cannot serve as the single explanation for the material's arrival, its recognition and the decisions made afterward.\n\nEPA supplies an institutional chronology. Local records and residents' accounts are needed to explain how a technical relocation decision became the loss of a community.\n\nRemoving material, restricting land use and qualifying a site for a new purpose are different cleanup outcomes. None can establish that the earlier town was restored.\n\n## Several clocks in one disaster\n\nEPA's retrospective separates a history of waste-oil disposal from the flood and relocation decisions. Superfund legislation existed in 1980, before the 1982 flood. The flood did not create that law. Mixing those dates would turn a complicated response into an attractive but inaccurate origin story.\n\nThe contamination, its recognition, the decision that residents should not return, and the later cleanup each followed a different timetable. Their order matters because people made decisions using the knowledge available at each stage. A later account can identify a contaminated mixture without establishing that every earlier recipient understood its composition. Equally, an emergency evacuation does not describe the whole process of acquiring properties and managing waste. Preserving these separate clocks explains how an environmental incident became a long public project, rather than ending when the immediate water receded.\n\nThe floodwater receded. The contaminated material still required decisions about return, property acquisition and disposal. Times Beach became a continuing public project because the end of the flood did not mark the end of the hazard."
   },
   {
     "slug": "toshiba-impossible-targets",
     "title": "Toshiba’s Profit Overstatements and Pressure to Meet Targets",
-    "dek": "An independent investigation connected accounting irregularities with management demands and weak internal challenge.",
+    "dek": "The Toshiba inquiry connects profit overstatements to particular accounting practices and pressure around targets. A convincing explanation needs the individual cases, rather than using corporate pressure as a universal cause.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Business",
     "tags": [
       "japan",
       "accounting"
     ],
-    "description": "The inquiry examined how earnings targets affected decisions across several business units.",
-    "socialPreview": "The inquiry examined how earnings targets affected decisions across several business units.",
-    "readingTime": "2 min",
+    "description": "Toshiba’s profit overstatements and target pressure, assessed through specific accounting practices and the limits of the translated inquiry.",
+    "socialPreview": "Toshiba’s profit overstatements and target pressure, assessed through specific accounting practices and the limits of the translated inquiry.",
+    "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Toshiba investigation report archive",
+        "title": "Toshiba independent investigation report, 20 July 2015",
         "url": "https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify the period and amount of overstatement from the report.",
-      "Attribute claims about management pressure to specific findings."
+      "Attribute claims about management pressure to specific findings.",
+      "Check each accounting example against the July inquiry and its translation; support causal claims about target pressure with case-specific evidence.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 362,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.064Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 457,
     "publishedInArchive": true,
-    "body": "Toshiba overstated profits across several business units over years. The methods varied—premature recognition, delayed losses, stretched assumptions—but the pressure came from a common source: targets employees understood could not be refused.\n\nAn independent investigation described a culture in which challenging superiors was effectively impossible. Senior leadership pushed for last-minute earnings improvements, and divisions found accounting treatments that produced them.\n\n## The number demanded before the number was known\n\nA target describes a desired outcome. An account describes an outcome that the evidence supports. If an organization treats the first as a requirement imposed on the second, the purpose of reporting changes.\n\nPressure alone does not establish a particular accounting misstatement. A careful article must identify the practice at issue: when revenue was recognized, how costs were allocated or what estimate was changed. Without that mechanism, a story about unrealistic demands remains an atmosphere rather than an explanation.\n\nThe investigation and company disclosure linked here provide the starting documents. Their dates matter because an initial announcement may be revised as a review expands. Figures should be connected to the version of the findings from which they come, not combined casually across updates.\n\nIt is also necessary to separate formal authority from practical influence. An executive need not write an accounting entry personally to affect the conditions under which entries are made. Establishing that influence, however, requires evidence of instructions, incentives or review practices. A writer should not turn a general observation about hierarchy into an unsupported finding about a named person.\n\nThe useful question for readers is what happens when a report disappoints. Can it still be accepted as an accurate description, or must it be changed until it fits the expectation? That question is broader than this company, but the answer in this case must remain grounded in its documents. The story becomes concrete when the demanded number and the evidenced number can be seen separately, along with the process that brought them into conflict.\n\nWritten controls matter only if people can use them to challenge decisions. The Toshiba investigation offers a way to examine that gap through specific accounting practices and management conduct, without assuming that every ambitious target produces fraud."
+    "body": "Toshiba's 2015 independent investigation described accounting practices that brought profits forward or postponed costs, alongside management pressure for late-period results. A reported improvement could leave the next period carrying an expense or shortfall hidden by the earlier account.\n\nThe July 2015 inquiry examined accounting practices and ineffective oversight across business units. The English document is a reference translation of those findings, not a court's determination. It traces how demands for results interacted with the practices used to report them.\n\n## The number demanded before the number was known\n\nA target describes a desired outcome. An account describes an outcome that the evidence supports. If an organization treats the first as a requirement imposed on the second, the purpose of reporting changes.\n\nPressure is part of the explanation only when connected to a practice: revenue recognition, cost allocation or a changed estimate. A target alone cannot establish an accounting misstatement.\n\nFindings and figures belong to the dated version of the investigation supplying them. An expanding review can change the scope without making its successive announcements interchangeable.\n\nIt is also necessary to separate formal authority from practical influence. An executive need not write an accounting entry personally to affect the conditions under which entries are made. Establishing that influence, however, requires evidence of instructions, incentives or review practices. A writer should not turn a general observation about hierarchy into an unsupported finding about a named person.\n\nA report can disappoint management and still accurately describe the business. If the entry must change until it fits the target, the desired outcome has displaced the purpose of reporting.\n\n## Borrowing profit from the next period\n\nThe independent investigation described pressure for late-period results and practices that brought profits forward or delayed costs. Such shifts can create a recurring problem: a later period must absorb costs or make up income already claimed. A reported improvement can therefore make the next target harder to meet while concealing why.\n\nThis is also a problem of feedback. Managers use reported figures to judge whether operations are working. If those figures reflect timing manipulations, the apparent evidence of success encourages demands that the underlying business cannot satisfy. The report's criticism of particular late-quarter “Challenges” should not be expanded into a claim that all financial targets are inherently improper. Its findings concerned how pressure interacted with the accounting practices it examined. The English document is a reference translation of the July 2015 report; the investigation's findings should be attributed accordingly, rather than presented as a court's determination.\n\nBringing profit forward could make the present period look better while burdening the next. The inquiry traced that pattern through specific practices, management pressure and oversight failures. Its findings concern that combination, not a presumption that ambition alone produces fraud."
   },
   {
     "slug": "triangle-exits-and-power",
@@ -1481,37 +1780,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "The Triangle fire asks who gets to decide whether a workplace is safe enough to enter—and safe enough to leave.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "labor",
       "new york",
       "safety"
     ],
-    "description": "The Triangle fire asks who gets to decide whether a workplace is safe enough to enter—and safe enough to leave.",
-    "socialPreview": "The Triangle fire asks who gets to decide whether a workplace is safe enough to enter—and safe enough to leave.",
+    "description": "The Triangle fire archive connects physical exits to worker protection, effective access and the power to act on unsafe conditions.",
+    "socialPreview": "The Triangle fire archive connects physical exits to worker protection, effective access and the power to act on unsafe conditions.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. Department of Labor: The New York Factory Investigating Commission",
-        "url": "https://www.dol.gov/general/aboutdol/history/mono-regsafepart07",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Fire date, deaths and the subsequent state investigation."
+        "title": "Cornell Kheel Center Triangle Fire archive",
+        "url": "https://trianglefire.ilr.cornell.edu/story/fire.html",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Read the commission record alongside worker testimony.",
-      "Check every claim about exits against a named floor plan or testimony."
+      "Check every claim about exits against a named floor plan or testimony.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 451,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.059Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 553,
     "publishedInArchive": false,
-    "body": "A fire escape is an object. The ability to leave work safely is a relationship between people, rules and that object. Remembering the Triangle Waist Company only through the first of these risks losing the second.\n\nOn 25 March 1911, a fire at the New York garment factory killed 146 people. The U.S. Department of Labor places the disaster within the history of the New York Factory Investigating Commission and the struggle over workplace protection. Its account connects the fire to an investigation with consequences beyond a single building. That is the historical starting point for this essay, rather than an invitation to reconstruct a worker's final minutes without testimony.\n\n## The door on the drawing\n\nA floor plan can establish where a door was. It cannot, by itself, tell us whether a frightened person could reach it, whether it was usable, or what consequences a worker expected for approaching it during an ordinary day. Those are separate questions. Good history has to put the plan beside testimony and employment conditions.\n\nThe difference matters because the word access can conceal several tests. A route may exist, be marked, be physically clear and still not be available to everyone who needs it. An inspection concerned only with the presence of an exit can produce a reassuring inventory while missing the actual ability to escape. This is an analytical distinction, not a claim that every particular mechanism operated at Triangle.\n\nThe same caution applies to the familiar promise that a disaster changed everything. A reform has a date, a scope and an enforcement history. Passing a rule is a different event from making compliance ordinary. An account that ends with legislation can accidentally treat the work of inspectors, organizers and workers as a footnote to a completed rescue.\n\n## Remembering without using the dead\n\nThere is a temptation to make victims serve as the opening illustration for a lesson aimed at managers. That arrangement gives the institution the final word. A more responsible account should leave room for the lives that safety reform did not restore, and for the people whose demands preceded public attention.\n\nWe should also resist lending a voice to the dead simply because a narrative needs one. A documented name, occupation or family relationship is more valuable than an invented thought at a window. The limits of the archive belong in the writing.\n\nTriangle remains useful to think with precisely because an exit is so concrete. It allows a reader to ask an equally concrete question of any institution: who can identify an unsafe condition, who can refuse it, and who has the power to make the refusal effective? A door is necessary. It is not the whole answer."
+    "body": "The fire at New York's Triangle Waist Company killed 146 people on 25 March 1911. Survivors described being unable to open ninth-floor doors leading to the Washington Place stairs. The fire escape failed, and rescue ladders could not reach the upper floors, according to Cornell's Kheel Center archive.\n\nEach obstacle defeated a different means of escape. The presence of doors, a fire escape and rescue equipment did not make any of them usable when needed. The workers' earlier struggle over conditions raises the preceding question: who had the power to make those protections effective?\n\n## What the testimony changes\n\nCornell's Kheel Center archive records survivors' accounts of being unable to open the ninth-floor doors leading to the Washington Place stairs. Its historical account also describes the failure of the fire escape and rescue ladders that could not reach the upper floors. These are different barriers: usability of a route, structural adequacy of another route, and the reach of an external rescue capability. [Cornell Triangle Fire archive](https://trianglefire.ilr.cornell.edu/story/fire.html).\n\nAn inventory of exits cannot establish whether people could use them when the fire reached their floor.\n\nThe archive also places the workers within an existing struggle over working conditions. Reform did not begin with a public discovering that danger existed. That observation changes the question asked of an institution: whose evidence counted before the catastrophe made it impossible to ignore?\n\nWorkers could report danger, but owners and regulators held different powers to change the building or enforce protection. Assigning responsibility requires following those powers to the actions they enabled.\n\nTriangle's history does not turn every modern dispute into a repetition of 1911. It offers a more exact test: whether the people exposed to a hazard have an effective route to protection, as well as a physical route out of the room.\n\n## The door on the drawing\n\nA floor plan can establish where a door was. It cannot, by itself, tell us whether a frightened person could reach it, whether it was usable, or what consequences a worker expected for approaching it during an ordinary day. Those are separate questions. Good history has to put the plan beside testimony and employment conditions.\n\nThe difference matters because the word access can conceal several tests. A route may exist, be marked, be physically clear and still not be available to everyone who needs it. An inspection concerned only with the presence of an exit can produce a reassuring inventory while missing the actual ability to escape. This is an analytical distinction, not a claim that every particular mechanism operated at Triangle.\n\nThe same caution applies to the familiar promise that a disaster changed everything. A reform has a date, a scope and an enforcement history. Passing a rule is a different event from making compliance ordinary. An account that ends with legislation can accidentally treat the work of inspectors, organizers and workers as a footnote to a completed rescue.\n\n## Remembering without using the dead\n\nThe archive preserves testimony rather than granting access to a victim's unrecorded thoughts. Those accounts connect the physical routes to the conditions in which workers tried to use them.\n\nThe workers needed a way out when the fire began. Before that, they needed a way to secure safer conditions. Triangle's history connects the failure of physical protection to the power to demand it."
   },
   {
     "slug": "tuskegee-observation-is-intervention",
@@ -1519,81 +1827,93 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Science",
     "tags": [
       "research ethics",
       "medicine",
       "racism"
     ],
-    "description": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
-    "socialPreview": "The Tuskegee record exposes the moral action hidden inside the language of observation.",
+    "description": "The Tuskegee study shows why withholding information and treatment cannot be described as passive observation.",
+    "socialPreview": "The Tuskegee study shows why withholding information and treatment cannot be described as passive observation.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "CDC: The Untreated Syphilis Study at Tuskegee Timeline",
+        "title": "CDC, About the Untreated Syphilis Study at Tuskegee",
         "url": "https://www.cdc.gov/tuskegee/about/",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "1932–1972 study, lack of informed consent and withholding treatment."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify terminology and attribution against the advisory panel report.",
-      "Avoid claims about current health behavior without separate evidence."
+      "Avoid claims about current health behavior without separate evidence.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 447,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 507,
     "publishedInArchive": false,
-    "body": "Observation sounds like standing back. In research involving people, however, deciding what not to offer can be an intervention of enormous consequence.\n\nThe CDC's history of the U.S. Public Health Service study at Tuskegee records that it began in 1932, enrolled 600 Black men and did not collect informed consent. It also states that participants were not offered penicillin when it became an established treatment. The study ended in 1972 after public exposure and advisory review. The abuse cannot be described adequately as a communication problem. Treatment was withheld while an institution continued to study untreated disease.\n\nOne distinction must stay clear: studying people who already have a disease is not the same claim as deliberately infecting them. A historically precise account does not need to add an unsupported allegation to make the documented wrong more serious. Precision is part of respecting the people harmed.\n\n### What the study needed\n\nEvery research design makes something count as useful information. The ethical question is what the design asks people to bear so that this information remains available. If effective treatment would interrupt a desired observation, the conflict belongs in the center of the account, not in a paragraph of caveats after the findings.\n\nThe word participant can also mislead when meaningful agreement is absent. It may describe someone included in a dataset without describing someone who understood and accepted the arrangement. Inclusion is an administrative fact; consent is a relationship of information and choice.\n\nThese distinctions help resist a familiar retrospective escape. It is insufficient to say that standards were different and stop there. The historical task is to identify what people knew, what alternatives existed, whose objections counted and how an institution justified continuing. Context should sharpen responsibility rather than dissolve it.\n\n### Beyond the emblem\n\nTuskegee is frequently invoked as a symbol. Symbols travel efficiently, but they can flatten the people and decisions they stand for. Repeating the name is not the same as explaining the study, and mentioning an eventual apology is not the same as accounting for harm.\n\nThe case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.\n\nThe enduring question is not whether research institutions can write ethical language. It is whether the people whose lives generate knowledge can obtain information, care and a meaningful way to refuse. A study's demand for continuity cannot be allowed to make their changing circumstances irrelevant. Observation has authors, budgets and decisions behind it. It is never outside responsibility."
+    "body": "The U.S. Public Health Service study at Tuskegee enrolled 600 Black men in 1932 without informed consent, according to CDC's history. Participants were not offered penicillin when it became an established treatment. The study continued until 1972.\n\nOf the 600 men, 399 had late-latent syphilis and 201 did not. The figures do not establish that researchers infected participants. CDC's documented account concerns a different abuse: men were studied without informed consent and were not offered an established treatment.\n\n### What the study needed\n\nEvery research design makes something count as useful information. The ethical question is what the design asks people to bear so that this information remains available. If effective treatment would interrupt a desired observation, the conflict belongs in the center of the account, not in a paragraph of caveats after the findings.\n\nThe word participant can also mislead when meaningful agreement is absent. It may describe someone included in a dataset without describing someone who understood and accepted the arrangement. Inclusion is an administrative fact; consent is a relationship of information and choice.\n\nHistorical context requires identifying available treatment, institutional knowledge and the alternatives participants were allowed. It cannot make those choices disappear behind a general claim that standards were different.\n\n### What the groups actually counted\n\nCDC distinguishes 399 men who already had late-latent syphilis when recruited from a control group of 201 men without the disease. The total of 600 therefore does not mean 600 men with syphilis. This distinction changes what the study's population describes, while leaving the central ethical finding intact.\n\nCDC also records that community members understood the arrangement as a special government health care program. That understanding belongs beside the absence of informed consent. An institution can know that someone is inside a study while the person understands the relationship as an offer of care. Those descriptions concern the same encounter, but they do not imply the same choices.\n\nThe ethical problem becomes sharper when circumstances change. Information supplied at entry, even if it had been adequate, would not answer every question arising over four decades. Available treatment changes what continued observation asks of a person. Continuing to use the original research objective as the governing frame makes the person's opportunity for care subordinate to the study's continuity.\n\nAn institution acts through the information and care it controls. Withholding effective treatment changes a person's circumstances even when researchers did not introduce the disease.\n\n### Beyond the emblem\n\nInvoking Tuskegee as a symbol can obscure the specific study, populations and decisions involved. The record is strongest when those remain visible.\n\nThe case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.\n\nPenicillin changed the medical options. The study continued to pursue observations of untreated disease. Withholding treatment was therefore part of the research decision, not an absence of action outside the study."
   },
   {
     "slug": "uss-akron",
-    "title": "USS Akron: The 1933 Airship Loss and the Rescue at Sea",
-    "dek": "Seventy-three people died when the Navy airship crashed off New Jersey. The rigid-airship program continued with USS Macon.",
+    "title": "USS Akron and the Limits of a Flying Carrier",
+    "dek": "USS Akron combined a naval airship with the ambition of carrying aircraft. Its loss and surviving artifacts document parts of that history, but a collection record cannot supply a complete account of the final flight or rescue.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Technology",
     "tags": [
       "airships",
       "navy"
     ],
-    "description": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
-    "socialPreview": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
+    "description": "USS Akron’s flying-carrier role and loss, with artifact provenance distinguished from the missing evidence needed to explain the final flight.",
+    "socialPreview": "USS Akron’s flying-carrier role and loss, with artifact provenance distinguished from the missing evidence needed to explain the final flight.",
     "readingTime": "2 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "U.S. Naval History and Heritage Command",
-        "url": "https://www.history.navy.mil/content/history/museums/nmusn/pamphlets/uss-akron-zrs-4.html",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
-      },
-      {
-        "title": "Naval History and Heritage Command — Akron and Macon",
-        "url": "https://www.history.navy.mil/content/history/nhhc/news-and-events/news/2021/nhm-062221.html",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "Targeted correction and source context; see docs/CONTENT_IMPROVEMENTS_2026-09-27.md for the specific scope."
+        "title": "Smithsonian collection record for Curtiss F9C-2 Sparrowhawk",
+        "url": "https://collections.si.edu/search/detail/edanmdm:nasm_A19410007000",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify the claim that most aboard survived impact.",
-      "Check the claim that the loss ended naval rigid-airship plans; scope it carefully."
+      "Check the claim that the loss ended naval rigid-airship plans; scope it carefully.",
+      "Read the naval inquiry before expanding final-flight or rescue explanations; preserve the collection record’s distinction between original and composite artifacts.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 368,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.064Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 371,
     "publishedInArchive": true,
-    "body": "The U.S. Navy airship Akron entered severe weather off New Jersey, descended uncontrollably and struck the Atlantic. Seventy-three of the 76 people aboard died.\n\nThe airship carried no life jackets for most crew and no life rafts. A German merchant ship rescued the three survivors. The loss remains the deadliest airship accident in history by lives lost.\n\n## After the impact\n\nAn accident's first violent event does not necessarily account for every death. Survival can depend on what happens after the structure has failed: the environment people enter, the equipment available and the time before they can be reached.\n\nThe naval history linked here offers an official account of Akron's loss. Any statement about how many people survived the initial impact requires particular care. A final death toll does not reveal the sequence by which each person died, and later inference should not be presented as direct observation.\n\nThe same discipline applies to the claim that one disaster ended a technological idea. Institutions may continue, revise or abandon a program for several reasons. A dramatic loss can be influential without serving as the single cause of a later decision. Program history needs its own records beyond the accident account.\n\nAkron also invites comparison with the Hindenburg because one event is much more familiar in popular memory. The contrast is useful if it asks how photographs, film and repeated retellings shape attention. It is less useful if it becomes a competition between casualty totals, as though the larger number automatically deserves a simpler story.\n\nThe practical question running through the record is what a system assumes about survivability after failure. An airship is designed to fly, but its safety case also has to consider the conditions people may face when flight ends unexpectedly. That second environment can govern the outcome. A careful account follows the transition from one to the other without allowing the spectacular destruction of the vehicle to stand in for the entire human event.\n\nAkron’s loss did not immediately end the Navy’s rigid-airship program: Macon entered service later in 1933. The Navy’s history identifies Macon’s subsequent loss as the end of those operations. The accident and the program’s end should not be collapsed into one event."
+    "body": "Akron carried the ambition of a flying aircraft carrier into the Navy's reconnaissance program. The rigid airship was lost in a storm on 4 April 1933, killing 73 personnel. A surviving Sparrowhawk in the Smithsonian's collection preserves part of the carrier concept through its hook-and-trapeze equipment.\n\nThe museum record describes the Sparrowhawk's reconstruction from parts. Its hook-and-trapeze equipment illustrates how the carrier concept was intended to work. The object is neither an untouched record of one flight nor a substitute for an operational inquiry into the airship's loss.\n\n## The programme and the accident\n\nAn accident's first violent event does not necessarily account for every death. Survival can depend on what happens after the structure has failed: the environment people enter, the equipment available and the time before they can be reached.\n\nThe loss is established in the collection's program history. The sequence of impact, survival and rescue requires operational records beyond a final casualty total.\n\nThe same discipline applies to the claim that one disaster ended a technological idea. Institutions may continue, revise or abandon a program for several reasons. A dramatic loss can be influential without serving as the single cause of a later decision. Program history needs its own records beyond the accident account.\n\nAn accident record needs to follow what happened after flight ended, as well as what caused the structure to fail. The museum account cannot supply that sequence; the distinction identifies the additional evidence needed.\n\n## An artifact with its own history\n\nThe Smithsonian collection record concerns a Sparrowhawk associated with the airship-carrier programme. It describes the hook-and-trapeze arrangement used to release and recover aircraft, making a surviving museum object a route into the operational idea. It also records the displayed aircraft's reconstruction from parts. A museum object can preserve an important design without being an untouched survivor of one particular flight.\n\nThe artifact explains the release-and-recovery concept. Akron's final weather, command decisions and rescue sequence need separate records. Neither the object nor its display history can carry those claims.\n\nAkron's loss did not immediately end the experiment. The Smithsonian record dates Macon's later loss to February 1935. The surviving aircraft preserves a design idea whose program history extended beyond the first airship's final storm."
   },
   {
     "slug": "vajont-wave-beyond-the-dam",
@@ -1653,39 +1973,49 @@ export const editorialDrafts: EditorialDraft[] = [
   {
     "slug": "vela-incident",
     "title": "The Vela Incident: A Double Flash and a Disputed Explanation",
-    "dek": "A U.S. satellite recorded a signal in September 1979 that prompted competing nuclear and non-nuclear explanations.",
+    "dek": "A satellite’s double flash made the Vela incident a disputed question rather than a settled identification. The record requires separating an observed signal, possible explanations and evidence that could corroborate a nuclear test.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "World",
     "tags": [
       "nuclear",
       "intelligence"
     ],
-    "description": "The observation is documented; its cause and any state responsibility remain disputed.",
-    "socialPreview": "The observation is documented; its cause and any state responsibility remain disputed.",
+    "description": "The Vela satellite’s double flash and disputed explanation, with the 1980 panel’s uncertainty kept distinct from later assessments and attribution.",
+    "socialPreview": "The Vela satellite’s double flash and disputed explanation, with the 1980 panel’s uncertainty kept distinct from later assessments and attribution.",
     "readingTime": "2 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "CIA Reading Room — Vela event records",
-        "url": "https://www.cia.gov/readingroom/search/site/vela%20incident",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "title": "Declassified memorandum and panel assessment, January 1980",
+        "url": "https://history.state.gov/historicaldocuments/frus1977-80v16/d368",
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Replace the search-page citation with exact declassified documents.",
-      "Separate instrument data, official assessments and later hypotheses."
+      "Separate instrument data, official assessments and later hypotheses.",
+      "Compare later released assessments by date and method; preserve the 1980 panel’s uncertainty and avoid unsupported attribution of a test or cover-up.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 369,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.064Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 370,
     "publishedInArchive": true,
-    "body": "Vela satellite 6911 detected a characteristic double flash over the South Atlantic, a pattern associated with an atmospheric nuclear explosion.\n\nSome analysts interpreted the signal as a possible nuclear test. A U.S. scientific panel considered a non-nuclear explanation. Attribution to a particular country remains disputed and should not be presented as an established finding.\n\n## An unresolved signal is not an empty page\n\nAn unresolved event creates pressure in two directions. One audience wants a final explanation; another treats the lack of one as permission to attach any explanation it prefers. An archive should resist both.\n\nA sensor observation, an intelligence assessment and a later historical argument are different records. The observation establishes that a system registered something under particular conditions. An assessment interprets that registration using available information. A later argument may combine newly released material with assumptions that should be stated explicitly.\n\nThe CIA reading-room search linked in the original brief is a discovery path rather than a specific document. It cannot support a precise factual claim until the relevant record has been identified, dated and read. This expansion therefore remains on hold for document-level sourcing before editorial approval.\n\nThe central analytical question is what would discriminate between competing explanations. A theory that can accommodate every possible absence of evidence is difficult to test. Equally, an institution's inability to obtain decisive corroboration does not automatically establish that nothing significant occurred.\n\nThe writer's task is to describe the available evidence and the disagreement without staging a false balance. Competing claims need not receive equal weight if their support differs. What they do need is a clear account of who made them, on what basis and with which limitations.\n\nUncertainty can be the subject of a finished article. It should not be disguised as suspense waiting for a sensational reveal. The most durable version of this record may be a careful map of what remains known, disputed and inaccessible. Such a map is a contribution precisely because it prevents confidence from outrunning the archive.\n\nThe record requires separating what a sensor measured from the explanations proposed for it. Conflicting assessments and incomplete access to evidence leave uncertainty; they do not, by themselves, prove either a test or a cover-up."
+    "body": "A Vela satellite recorded a light signal over the South Atlantic on 22 September 1979 that resembled signals associated with atmospheric nuclear explosions. An outside scientific panel later examined a nuclear event and a natural explanation, but could not assign relative probabilities to them.\n\nThe assessment survives in a declassified January 1980 memorandum. The panel identified a discrepancy in the signal and found no clear corroboration. Its inability to assign relative probabilities marks the limits of that inquiry, rather than a verdict on every argument advanced afterward.\n\n## An unresolved signal is not an empty page\n\nAn unresolved signal does not justify either a forced verdict or an explanation immune to testing. The question is which observations would distinguish the proposed causes.\n\nA sensor observation, an intelligence assessment and a later historical argument are different records. The observation establishes that a system registered something under particular conditions. An assessment interprets that registration using available information. A later argument may combine newly released material with assumptions that should be stated explicitly.\n\nThe panel's defined inquiry cannot establish the views of every intelligence organization or the weight of evidence released afterward.\n\nThe central analytical question is what would discriminate between competing explanations. A theory that can accommodate every possible absence of evidence is difficult to test. Equally, an institution's inability to obtain decisive corroboration does not automatically establish that nothing significant occurred.\n\nCompeting interpretations need identifiable proponents, evidence and limits. Their weight depends on that support, rather than an equal allocation of attention.\n\n## Uncertainty in a dated memorandum\n\nThe declassified January 1980 memorandum and attached panel report preserve a particular stage in the assessment. The panel considered both a nuclear event and a natural explanation, but could not assign relative probabilities to them. That is narrower than a finding that either explanation had been proved.\n\nLack of corroboration can weaken an interpretation without proving that no significant event occurred. A resemblance can support investigation without identifying a location, actor or cause. Each inference requires its own evidence.\n\nThe satellite recorded a signal. The panel could not determine its cause with the evidence before it. That is an unresolved finding, rather than proof either of a nuclear test or of a cover-up."
   },
   {
     "slug": "willow-island-construction-collapse",
@@ -1748,73 +2078,92 @@ export const editorialDrafts: EditorialDraft[] = [
     "dek": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Science",
     "tags": [
       "nuclear history",
       "decommissioning",
       "time"
     ],
-    "description": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
-    "socialPreview": "Windscale’s archive asks what closure means when hazardous material and structures remain.",
+    "description": "Windscale reveals the difference between shutting down production and completing responsibility for a damaged reactor.",
+    "socialPreview": "Windscale reveals the difference between shutting down production and completing responsibility for a damaged reactor.",
     "readingTime": "3 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "Nuclear Decommissioning Authority / Sellafield: Windscale Pile 1",
+        "title": "NDA/Sellafield, Windscale Pile 1",
         "url": "https://www.gov.uk/government/case-studies/windscale-pile-1",
-        "status": "located",
-        "checkedAt": "2026-09-27",
-        "supports": "1957 fire, shutdown and continuing decommissioning context."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Verify technical details against the original inquiry before expanding.",
-      "Do not infer radiation exposure or health effects from building photographs."
+      "Do not infer radiation exposure or health effects from building photographs.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 460,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.061Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 528,
     "publishedInArchive": false,
-    "body": "A machine can cease its intended work without ceasing to require work from other people. That difference is particularly visible in the history of a reactor shut down after an accident.\n\nWindscale Pile 1 suffered a fire in 1957. The public account maintained by the Nuclear Decommissioning Authority and Sellafield places the structure within the later task of nuclear cleanup. These are connected histories, but they operate on different clocks: the emergency that ended an operating period, and the continuing management of what remained.\n\nA photograph of an old building can conceal this second history. Disuse may look like inactivity. In a hazardous facility, maintaining knowledge, monitoring conditions and preparing a sequence of work can be significant activity even when little visible demolition has occurred.\n\n## What a closure date leaves out\n\nClosed is useful shorthand if the question is whether a facility is operating. It is much less informative if the question is what obligations survive. The inventory inside, the condition of the structure and the limits of available records may all continue to matter.\n\nThis is not an argument that every delay in dismantling is wise. It is a reason to ask what a proposed timetable assumes. Rapid work can create exposure during removal; postponed work can leave a deteriorating condition in place. The relevant comparison has to include both, rather than assume that speed or patience is intrinsically safe.\n\nRecords become part of that physical task. A drawing may describe what was intended, a log what was done, and a later survey what can now be observed. If those disagree, choosing the most convenient document does not resolve the discrepancy. The uncertainty has to enter the plan.\n\n## The institution after the institution\n\nLong-lived responsibilities test the idea that an organization can close its books when production ends. People retire. Contractors change. Administrative structures are renamed. The material condition does not necessarily change with them.\n\nAn account of stewardship should therefore look for continuity in obligations rather than continuity in branding. Who retains the records? Who has authority to act on new information? How can a later team distinguish a verified observation from an assumption inherited through several handovers?\n\nThese questions are not claims about a specific undisclosed failure at Windscale. They are the analytical consequences of taking the cleanup history seriously. The public source should be read as an operator's account with an institutional perspective, not as the last possible word on the site.\n\nThe event most likely to attract a reader is the fire. The quieter record concerns the people who must manage its material aftermath without having been present at its beginning. A reactor's operating life can end on a particular day. The life of responsibility rarely fits so neatly into a date range."
+    "body": "Fire ended operations at Windscale Pile 1 in 1957, but fuel remained in damaged channels beyond the reach of the original discharge equipment. The public decommissioning account records partial defuelling, care and maintenance, and an isolation phase completed in 1999.\n\nEquipment designed to discharge an intact reactor could not complete the same task after fire damaged its channels. Ending production left a new problem: retrieving or managing material under conditions the original machinery had not been built to handle.\n\n## What a closure date leaves out\n\nClosed is useful shorthand if the question is whether a facility is operating. It is much less informative if the question is what obligations survive. The inventory inside, the condition of the structure and the limits of available records may all continue to matter.\n\nThis is not an argument that every delay in dismantling is wise. It is a reason to ask what a proposed timetable assumes. Rapid work can create exposure during removal; postponed work can leave a deteriorating condition in place. The relevant comparison has to include both, rather than assume that speed or patience is intrinsically safe.\n\nRecords become part of that physical task. A drawing may describe what was intended, a log what was done, and a later survey what can now be observed. If those disagree, choosing the most convenient document does not resolve the discrepancy. The uncertainty has to enter the plan.\n\n## The equipment that remains\n\nThe public case study describes partial defuelling after the fire, followed by care and maintenance. It distinguishes the reactor, blower houses and chimney, rather than treating the installation as one object that can be marked removed or remaining.\n\nFor the reactor, the account records an isolation phase completed in 1999 and explains that fire-damaged channels retained fuel inaccessible to the original discharge equipment. These details locate a practical difficulty: tools designed for normal operation could not simply complete the work after damage had changed the conditions.\n\nIsolation, assessment and retrieval-method development are work, even when little visible demolition occurs. Their presence does not establish that every timetable was justified; it establishes what a timetable must account for.\n\nThe operator's public account is a dated record of reported milestones, not a live survey of completion. Its practical difficulty remains clear: damage changed the relationship between the remaining material and the tools designed to remove it.\n\n## The institution after the institution\n\nLong-lived responsibilities test the idea that an organization can close its books when production ends. People retire. Contractors change. Administrative structures are renamed. The material condition does not necessarily change with them.\n\nAn account of stewardship should therefore look for continuity in obligations rather than continuity in branding. Who retains the records? Who has authority to act on new information? How can a later team distinguish a verified observation from an assumption inherited through several handovers?\n\nThe operator's account supplies an institutional perspective on those obligations. An independent assessment of current conditions or timetable performance would require further evidence.\n\nWindscale stopped producing, but material remained in damaged channels. Retrieval, monitoring and the transfer of knowledge continued after closure. The operating history ended before the responsibility for the site did."
   },
   {
     "slug": "yodogo-hijacking",
     "title": "The Yodogo Hijacking: A Flight Redirected to North Korea",
-    "dek": "In March 1970, Japanese hijackers seized a domestic flight and demanded passage to North Korea.",
+    "dek": "The Yodogo hijacking redirected a domestic flight toward North Korea. Its chronology and later accounts belong to different periods, and testimony in a police retrospective should not be presented as a current legal verdict.",
     "author": "Unassigned — AI-assisted editorial draft",
     "createdAt": "2026-09-27",
-    "status": "draft",
+    "status": "review",
     "section": "Culture",
     "tags": [
       "japan",
       "aviation"
     ],
-    "description": "The route from Japan to North Korea became a negotiation involving passengers, crew and several governments.",
-    "socialPreview": "The route from Japan to North Korea became a negotiation involving passengers, crew and several governments.",
+    "description": "The Yodogo hijacking and later police accounts, with the 1970 chronology distinguished from testimony, allegations and dated legal status.",
+    "socialPreview": "The Yodogo hijacking and later police accounts, with the 1970 chronology distinguished from testimony, allegations and dated legal status.",
     "readingTime": "2 min",
     "genre": "Archival analysis — not original reporting",
     "sources": [
       {
-        "title": "National Police Agency of Japan archive",
+        "title": "Japan National Police Agency, 2019 counterterrorism account",
         "url": "https://www.npa.go.jp/hakusyo/r01/english/p6-11.pdf",
-        "status": "inherited-unverified",
-        "checkedAt": "2026-09-27",
-        "supports": "Inherited source for the existing brief; all factual prose requires renewed claim-level review."
+        "status": "scoped-source-pass-recorded",
+        "checkedAt": "2026-10-02",
+        "supports": "See reviewSourceNotes for the exact prior source-pass scope and remaining evidence limits. This import performs no new source verification or human approval."
       }
     ],
     "reviewChecklist": [
       "Check names and transliterations against the Japanese official account.",
-      "Verify later legal status with current sources before discussing it."
+      "Verify later legal status with current sources before discussing it.",
+      "Build an independent 1970 chronology and check later legal records; distinguish organizational identities, retrospective testimony and dated findings.",
+      "Assign the real author and obtain named human editorial approval.",
+      "Approve final headline and search metadata, visuals and rights, and the reader-facing release."
     ],
     "completedChecks": [],
     "approvedBy": null,
     "approvedAt": null,
-    "history": [],
-    "words": 365,
+    "history": [
+      {
+        "from": "draft",
+        "to": "review",
+        "at": "2026-10-02T12:15:06.064Z",
+        "reason": "Imported the saved Space review manuscript; human approval remains pending"
+      }
+    ],
+    "words": 385,
     "publishedInArchive": true,
-    "body": "Nine members of the Japanese Red Army Faction seized a Japan Airlines Boeing 727 on a domestic flight, armed with swords and a homemade bomb. They demanded to be flown to North Korea—a destination the crew had neither maps nor experience to reach.\n\nAfter stops in Fukuoka and Seoul, and a hostage exchange involving a Japanese official, the aircraft reached Pyongyang. The hijackers stayed. Decades later, their presence remained entangled with allegations of abduction, ideological regret and diplomatic stalemate.\n\n## The event that crossed a border and stayed there\n\nA hijacking is often narrated as a crisis with a clear end: the plane lands, passengers leave and authorities regain control. A politically motivated diversion can create a longer history in which questions of jurisdiction and accountability outlast the immediate flight.\n\nThe Japanese National Police Agency material is an official account with a specific institutional purpose. It can establish what the agency says about the event and the people it identifies. A broader political history requires additional sources, especially when it describes motives, life after the hijacking or later diplomatic negotiations.\n\nThe difference between an individual's declared purpose and an analyst's explanation of that purpose should remain visible. A label such as revolutionary can record an affiliation or self-description without explaining why a particular person acted. No archival writer should supply an inner monologue merely to make ideology feel personal.\n\nBorders complicate the record as well as the response. Material may be preserved in different languages, under different access rules and by institutions with opposing interests. An absence from one archive does not establish that no relevant document exists elsewhere. Translation choices should be retained where they affect a disputed claim.\n\nFor readers, the useful chronology has more than one endpoint. It separates the end of immediate danger to passengers from the subsequent legal and diplomatic history. Doing so avoids suggesting that landing the aircraft settled everything that had begun aboard it. The flight can end while the questions created by it remain open.\n\nThe case connects the security of a domestic flight with disputes that crossed national borders. Its later history requires separate attention to the people involved and to the evidence behind subsequent allegations."
+    "body": "Nine members of the Red Army Faction diverted Japan Airlines Flight 351, a domestic flight from Tokyo to Fukuoka, and took refuge in North Korea in March 1970. Japan's National Police Agency identifies the incident as the Yodo-go hijacking.\n\nThe agency's 2019 history also recounts testimony given in 2002 about involvement in abductions. Those claims concern a later evidentiary stage. The aircraft's arrival in North Korea ended one part of the episode while leaving subsequent questions of jurisdiction and accountability unsettled.\n\n## The event that crossed a border and stayed there\n\nA hijacking is often narrated as a crisis with a clear end: the plane lands, passengers leave and authorities regain control. A politically motivated diversion can create a longer history in which questions of jurisdiction and accountability outlast the immediate flight.\n\nThe police history establishes the agency's retrospective account. Motives, later diplomacy and life after the hijacking require other records, rather than an expanded inference from its compact incident description.\n\nAn organizational affiliation can identify a group without explaining every individual's motives. The distinction also matters when similar names are used for different organizations.\n\nBorders complicate the record as well as the response. Material may be preserved in different languages, under different access rules and by institutions with opposing interests. An absence from one archive does not establish that no relevant document exists elsewhere. Translation choices should be retained where they affect a disputed claim.\n\nImmediate danger to passengers and later legal or diplomatic consequences have different endpoints. Their chronology must retain both.\n\n## Reading the police account at its own date\n\nJapan's National Police Agency included the hijacking in a 2019 historical account of extremist activity. Its retrospective supplies a compact incident description, but it is not a transcript of the entire journey or every negotiation. Nor should statements about investigations in that publication automatically be represented as the current position years later.\n\nThe Red Army Faction and the Japanese Red Army are not interchangeable labels. A later witness's testimony establishes that a claim was made; it is not automatically a judicial finding about everyone mentioned.\n\nThe flight's diversion was a defined event. The allegations concerning later activity required their own testimony and findings. The border crossing links those histories without making the evidence for one interchangeable with the evidence for the other."
   }
 ];

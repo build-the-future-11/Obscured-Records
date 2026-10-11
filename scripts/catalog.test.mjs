@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { test } from 'node:test';
 import { getCatalog, getSeries, getTopics } from '../lib/catalog.ts';
 import { filterCatalog, parseFilters, emptyFilters } from '../lib/catalog-filter.ts';
@@ -31,7 +32,8 @@ test('corrupt local storage cannot break the reader or introduce invalid reading
 });
 test('editorial inbox preserves pending work and does not imply approval', () => {
   const rows = editorialInbox();
-  assert.equal(rows.length, 42);
+  const draftFiles = fs.readdirSync('content/drafts').filter((file) => file.endsWith('.md'));
+  assert.equal(rows.length, draftFiles.length);
   assert.ok(rows.every((row) => row.state !== 'published'));
   const triangle = rows.find((row) => row.slug === 'triangle-exits-and-power');
   assert.equal(triangle.reviewer, null);

@@ -1,6 +1,6 @@
 # Website launch checklist — private release verified; public launch HOLD
 
-**11 October update:** owner-private Site version 18 is deployed from source `6acb457955dba3e3c5d7902cbbc4bb608a2f73bb`, and production environment revision 6 reports that exact SHA. The private desk contains 45 unpublished manuscripts. The current lockfile has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the current execution state](EXECUTION_STATE_2026-10-11.md).
+**11 October update:** owner-private Site version 19 is deployed from source `45e683ee4224a0b6fd76382fcbfa820d71340e4c`, and production environment revision 7 reports that exact SHA. The private desk contains 45 unpublished manuscripts. The current lockfile has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the current execution state](EXECUTION_STATE_2026-10-11.md).
 
 **28 September update:** the latest content/UI are merged into GitHub `main` and deployed successfully to the unchanged owner-only site. See [the completion receipt](SITE_COMPLETION_2026-09-28.md). Dated checks below retain their original revision scope.
 

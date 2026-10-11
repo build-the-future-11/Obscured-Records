@@ -11,11 +11,11 @@ The private product is deployed and usable. Public launch is **HOLD**. Engineeri
 - Site: `appgprj_6aa79b45dd308191b3b887c293729f00`
 - Audience: custom owner-only; one owner, no groups and no external visitors
 - Production URL: `https://obscured-records.ryangomez-hs.chatgpt.site`
-- Saved version: 18 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_c5a7a3286cbc8191b26bcd608fb4f8fe`
-- Source: `6acb457955dba3e3c5d7902cbbc4bb608a2f73bb`
-- Content deployment: `appgdep_6acb7414558881918ae3598804f0268c`, succeeded
-- Exact-revision redeployment: `appgdep_6acb754f5b688191aac1ae83862c27ee`, succeeded
-- Environment revision: 6; `COMMIT_SHA` equals the source above
+- Saved version: 19 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_17140d322e3881918028845fc68730d4`
+- Source: `45e683ee4224a0b6fd76382fcbfa820d71340e4c`
+- Source-sync deployment: `appgdep_6acb7a614db88191b3883a5fef452330`, succeeded
+- Exact-revision redeployment: `appgdep_6acb7b0776bc81918c379a580eda0ce5`, succeeded
+- Environment revision: 7; `COMMIT_SHA` equals the source above
 - Canonical environment: `SITE_URL` and `NEXT_PUBLIC_SITE_URL` both equal the production URL
 
 The initial browser tab retained the pre-deployment 42-manuscript view. A hard navigation loaded the deployed state and showed 45 total manuscripts, 25 new records and 20 archival counterparts, including Monongah, Vajont and Willow Island. The stale first view is not counted as a product failure.

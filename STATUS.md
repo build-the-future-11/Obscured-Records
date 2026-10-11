@@ -1,6 +1,6 @@
 # Current execution state — 11 October 2026
 
-**Owner-private Site version 18 is deployed from source `6acb457955dba3e3c5d7902cbbc4bb608a2f73bb`. Public launch remains HOLD.** Production environment revision 6 now reports that exact SHA, correcting the previous stale `COMMIT_SHA`. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`. Live D1 exposes the expected newsletter, submission, rate-limit and four member tables. The live owner-only editorial desk shows 45 manuscripts: 25 new records and 20 archival counterparts.
+**Owner-private Site version 19 is deployed from source `45e683ee4224a0b6fd76382fcbfa820d71340e4c`. Public launch remains HOLD.** Production environment revision 7 reports that exact SHA. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`. Live D1 exposes the expected newsletter, submission, rate-limit and four member tables. The live owner-only editorial desk shows 45 manuscripts: 25 new records and 20 archival counterparts.
 
 The current exact source passes editorial integrity: 28 reader records, 45 unpublished drafts, 23,847 draft words and 53 distinct subjects. The three 11 October additions remain AI-assisted drafts and received no invented human approval. Browser inspection after a hard refresh confirmed all three are present in the private queue; the initially observed 42-count view was stale cached UI, not the deployed state.
 

@@ -139,7 +139,7 @@
         ".github/workflows/relaunch-smoke.yml",
         "scripts/relaunch-smoke.mjs"
       ],
-      "next_action": "Private exact-revision attribution is closed at source 6acb457955dba3e3c5d7902cbbc4bb608a2f73bb and environment revision 6. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
+      "next_action": "Private exact-revision attribution is closed at source 45e683ee4224a0b6fd76382fcbfa820d71340e4c and environment revision 7. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     },
     {

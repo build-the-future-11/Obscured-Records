@@ -24,6 +24,8 @@ The manifest has 100 unique slugs, titles, descriptions, event frames, mechanism
 - Editorial integrity: 28 public records, 145 unpublished drafts, 87,097 draft words and 153 distinct subjects.
 - Bounded Node suite: 213/213 passed.
 - SEO/discovery audit: 145 review manuscripts, 28 reader records, 28 RSS items, 45 public topics, three series and draft isolation.
+- Owner-private deployment: version 20, source `10b8052f97d3df72c2ffa114d410c96a0fa221d8`, environment revision 8 and successful exact-revision deployment `appgdep_6acb8e66f9008191b9cecbf2ff06c505`.
+- Live browser inspection: 145 total manuscripts, 125 new records, 20 archival counterparts, zero verified sources and 28 public records.
 
 These checks establish distinctness, structural validity, private isolation and a reproducible source trail. They do not establish that any material claim is true, complete or fairly framed.
 

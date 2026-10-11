@@ -11,13 +11,14 @@ The private product is deployed and usable. Public launch is **HOLD**. Engineeri
 - Site: `appgprj_6aa79b45dd308191b3b887c293729f00`
 - Audience: custom owner-only; one owner, no groups and no external visitors
 - Production URL: `https://obscured-records.ryangomez-hs.chatgpt.site`
-- Saved version at expansion start: 19 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_17140d322e3881918028845fc68730d4`
-- Source at expansion start: `45e683ee4224a0b6fd76382fcbfa820d71340e4c`
-- Expansion-start deployment: `appgdep_6acb7b0776bc81918c379a580eda0ce5`, succeeded
-- Environment revision: 7; `COMMIT_SHA` equals the expansion-start source above
+- Saved version: 20 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_4cef2a6eb38081918b8a0f9f4ad684bc`
+- Source: `10b8052f97d3df72c2ffa114d410c96a0fa221d8`
+- Initial content deployment: `appgdep_6acb8d9cd6f08191a8c82bfc6e076065`, succeeded
+- Exact-revision redeployment: `appgdep_6acb8e66f9008191b9cecbf2ff06c505`, succeeded
+- Environment revision: 8; `COMMIT_SHA` equals the source above
 - Canonical environment: `SITE_URL` and `NEXT_PUBLIC_SITE_URL` both equal the production URL
 
-The initial browser tab retained the pre-deployment 42-manuscript view. A hard navigation loaded the deployed state and showed 45 total manuscripts, 25 new records and 20 archival counterparts, including Monongah, Vajont and Willow Island. The stale first view is not counted as a product failure.
+Live browser inspection of version 20 shows 145 total manuscripts, 125 new records, 20 archival counterparts and zero sources marked verified. It also displays expansion entries including Apollo 1, AT&T 1990, Benxihu and BP Texas City. The public homepage remains at 28 documented records.
 
 ## Current inventory and bounded checks
 
@@ -54,7 +55,7 @@ Resource admission blocked that heavy mutation during this pass: free plus specu
 
 ### P0 — source delivery
 
-The local checkout contains the latest manuscript content in commit `7713366`, contains `origin/main` through merge commit `4773e97`, and preserves the pre-existing untracked `verification/` directory. It now also incorporates the deployed Site's two retained October writing passes, review manifests, transfer checks, private-indexing guard and corrected article metadata. It is no longer behind the remote. Its local commits remain unpushed because both configured GitHub credentials are invalid; neither Site history nor local history may be rewritten merely to make the graphs look aligned.
+The local checkout contains the 100-article expansion in commit `c1ea6bc`, contains `origin/main` through merge commit `4773e97`, and preserves the pre-existing untracked `verification/` directory. It also incorporates the deployed Site's two retained October writing passes, review manifests, transfer checks, private-indexing guard and corrected article metadata. It is not behind the remote. Its local commits remain unpushed because both configured GitHub credentials are invalid; neither Site history nor local history may be rewritten merely to make the graphs look aligned.
 
 ## Human and external gates
 

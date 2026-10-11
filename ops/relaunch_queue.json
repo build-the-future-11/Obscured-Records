@@ -139,7 +139,7 @@
         ".github/workflows/relaunch-smoke.yml",
         "scripts/relaunch-smoke.mjs"
       ],
-      "next_action": "Private exact-revision attribution is closed at source 45e683ee4224a0b6fd76382fcbfa820d71340e4c and environment revision 7. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
+      "next_action": "Private exact-revision attribution is closed at source 6acb457955dba3e3c5d7902cbbc4bb608a2f73bb and environment revision 6. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     },
     {
@@ -156,6 +156,21 @@
       ],
       "next_action": "When free plus speculative memory is stably at or above 512 MiB, update Next.js and eslint-config-next to 16.4.0, resolve sharp to 0.35.5, source-map-js to 1.2.2 and fast-uri to 3.1.8, then run production audit, tests, editorial integrity, lint, typecheck and both production builds.",
       "done_when": "The committed exact lockfile has no known production advisories and the complete exact-source verification matrix plus private deployment receipt are green."
+    },
+    {
+      "id": "OR-RL-011",
+      "priority": "P1",
+      "area": "editorial",
+      "title": "Perform claim-level review of the 100-article expansion",
+      "state": "IN_PROGRESS",
+      "owner": "editorial",
+      "evidence": [
+        "content/article-expansion-2026-10-11.json",
+        "docs/ARTICLE_EXPANSION_2026-10-11.md",
+        "scripts/article-expansion.test.mjs"
+      ],
+      "next_action": "Replace orientation-only links with claim-level primary and independent records, reconcile every material fact and disagreement, clear rights, assign the real author and obtain named approval one article at a time.",
+      "done_when": "Each selected article has claim-level verified sources, completed checks, a real author and named human approver; no batch approval is inferred."
     }
   ]
 }

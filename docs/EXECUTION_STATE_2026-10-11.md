@@ -11,11 +11,10 @@ The private product is deployed and usable. Public launch is **HOLD**. Engineeri
 - Site: `appgprj_6aa79b45dd308191b3b887c293729f00`
 - Audience: custom owner-only; one owner, no groups and no external visitors
 - Production URL: `https://obscured-records.ryangomez-hs.chatgpt.site`
-- Saved version: 19 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_17140d322e3881918028845fc68730d4`
-- Source: `45e683ee4224a0b6fd76382fcbfa820d71340e4c`
-- Source-sync deployment: `appgdep_6acb7a614db88191b3883a5fef452330`, succeeded
-- Exact-revision redeployment: `appgdep_6acb7b0776bc81918c379a580eda0ce5`, succeeded
-- Environment revision: 7; `COMMIT_SHA` equals the source above
+- Saved version at expansion start: 19 / `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_17140d322e3881918028845fc68730d4`
+- Source at expansion start: `45e683ee4224a0b6fd76382fcbfa820d71340e4c`
+- Expansion-start deployment: `appgdep_6acb7b0776bc81918c379a580eda0ce5`, succeeded
+- Environment revision: 7; `COMMIT_SHA` equals the expansion-start source above
 - Canonical environment: `SITE_URL` and `NEXT_PUBLIC_SITE_URL` both equal the production URL
 
 The initial browser tab retained the pre-deployment 42-manuscript view. A hard navigation loaded the deployed state and showed 45 total manuscripts, 25 new records and 20 archival counterparts, including Monongah, Vajont and Willow Island. The stale first view is not counted as a product failure.
@@ -23,16 +22,19 @@ The initial browser tab retained the pre-deployment 42-manuscript view. A hard n
 ## Current inventory and bounded checks
 
 - 28 reader records.
-- 45 unpublished review drafts.
-- 23,847 draft words.
-- 53 distinct subjects.
+- 145 unpublished review drafts.
+- 87,097 draft words.
+- 153 distinct subjects.
 - Editorial integrity passed for slugs, record IDs, dates, source URLs and draft exclusion.
-- All three 11 October manuscripts pass the draft validator and remain unapproved.
-- The local GitHub checkout reproduces the deployed October review corpus: all 42 retained Page manuscripts transfer exactly and the generated private desk contains all 45 drafts.
-- The bounded Node suite passes 211/211; the SEO audit reports 28 RSS records, 45 review topics, three series and draft isolation.
+- All 100 expansion manuscripts have unique slugs, titles and bodies, pass the draft validator, contain at least 350 words and remain unapproved.
+- The expansion's 100 orientation URLs are reachable; this is a transport check, not claim verification.
+- The generated private desk contains all 145 drafts while the reader registry remains at 28 records.
+- The bounded Node suite passes 213/213; the SEO audit reports 28 RSS records, 145 review manuscripts, 45 public topics, three series and draft isolation.
 - Live D1 binding `DB` exposes `editorial_submissions`, `intake_limits`, `member_annotations`, `member_library`, `member_preferences`, `member_profiles` and `newsletter_subscribers`.
 
 These checks establish structure and private deployment state. They do not establish claim-level truth, image rights, human editorial approval, backup recovery or newsletter delivery.
+
+The complete expansion receipt, generator and permanent corpus checks are in [ARTICLE_EXPANSION_2026-10-11.md](ARTICLE_EXPANSION_2026-10-11.md), `scripts/generate-hundred-articles.mjs` and `scripts/article-expansion.test.mjs`.
 
 ## Immediate engineering work
 

@@ -1,6 +1,6 @@
 # Website launch checklist — private release verified; public launch HOLD
 
-**11 October update:** owner-private Site version 19 is deployed from source `45e683ee4224a0b6fd76382fcbfa820d71340e4c`, and production environment revision 7 reports that exact SHA. The private desk contains 45 unpublished manuscripts. The current lockfile has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the current execution state](EXECUTION_STATE_2026-10-11.md).
+**11 October update:** 100 different private drafts were added without changing the 28-record public reader, bringing the desk to 145 unpublished manuscripts and 153 subjects. All 100 orientation links resolve, and the bounded suite passes 213/213. At expansion start, the owner-private Site was version 19 from source `45e683ee4224a0b6fd76382fcbfa820d71340e4c`, with environment revision 7 tied to that source. Orientation is not claim verification; every manuscript still requires individual human review and approval. The current lockfile also has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the expansion receipt](ARTICLE_EXPANSION_2026-10-11.md) and [current execution state](EXECUTION_STATE_2026-10-11.md).
 
 **28 September update:** the latest content/UI are merged into GitHub `main` and deployed successfully to the unchanged owner-only site. See [the completion receipt](SITE_COMPLETION_2026-09-28.md). Dated checks below retain their original revision scope.
 
@@ -22,7 +22,7 @@ The user's instruction to execute this checklist authorized implementation and t
 
 ## 2. Editorial and media
 
-- [x] Preserve the 28 existing public records and keep all 45 review drafts unpublished.
+- [x] Preserve the 28 existing public records and keep all 145 review drafts unpublished.
 - [x] Repair the NASA Aral Sea and CDC Tuskegee links that redirected to generic pages.
 - [x] Strengthen source auditing so generic redirects and HTTP 202 challenges cannot count as verified access; retain failed receipts.
 - [x] Audit 70 cited URLs: 54 direct reachable and 16 direct access-unverified, with separate browser-access evidence for eight of those 16.
@@ -33,7 +33,7 @@ The user's instruction to execute this checklist authorized implementation and t
 - [ ] Close remaining source-to-claim gaps. URL reachability is not fact-check approval.
 - [ ] Verify actual authorship/reviewer credits and retain AI-assistance disclosures.
 - [ ] Resolve Therac-25's contradictory image provenance and final Wirecard/Lake Nyos derivative provenance before public launch.
-- [ ] Review and approve any draft individually before publishing it; publishing all 42 is not required for launch.
+- [ ] Review and approve any draft individually before publishing it; batch creation does not grant batch approval.
 
 See [source review](SOURCE_REVIEW_2026-09-27.md), [media review](MEDIA_REVIEW_2026-09-27.md), and [editorial queue](LAUNCH_EDITORIAL_REVIEW_2026-09-27.md).
 

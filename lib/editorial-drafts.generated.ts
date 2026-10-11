@@ -110,6 +110,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "The Aberfan coal-tip disaster killed 144 people, including 116 children, on 21 October 1966. Glamorgan Archives records that the subsequent tribunal held the National Coal Board responsible. Its collections connect the hillside to the institutions managing the material accumulated above the community.\n\nThe archive holds transcripts from all 76 tribunal sitting days alongside witness statements, weather reports, correspondence and plans. Together they allow the disaster to be examined as both a physical failure and a history of decisions about material stored above a community.\n\n## The work inside the landscape\n\nCalling an event a landslide describes motion. It does not finish the explanation of how unstable material came to be there, who understood its condition, or who could require a change. The language of nature can be descriptively useful and politically incomplete at the same time.\n\nGround conditions and accumulated material explain the mechanism. Siting, monitoring and continued use explain how that mechanism became a risk to the community. Responsibility cannot be examined by excluding either part.\n\nThis is one reason maps matter. They can connect an administrative record to the space it describes: a tip, a settlement, routes of movement, a place where children learned. A map cannot supply the missing perspective of a resident, but it can prevent an institutional account from floating free of the people affected by its decisions.\n\n## What the archive makes visible\n\nGlamorgan Archives records that 144 people died in the disaster, including 116 children. It dates the appointment of the tribunal to 26 October 1966 and identifies the National Coal Board as the institution held responsible by its findings. The same archive describes a collection containing transcripts from all 76 sitting days, witness statements, meteorological reports, correspondence and plans.\n\nWeather reports, plans and testimony answer different questions. Reading them together connects the material conditions to the knowledge and authority available to act on them.\n\nThe archive also records that comprehensive information about the board's tips was assembled following the tribunal's recommendation. This is a concrete administrative consequence: an inventory was needed before the condition of an entire set of sites could be examined systematically.\n\nThere is a difference between possessing knowledge somewhere and organizing it so someone has to act on it. An isolated plan may be accurate without entering a safety decision. A comprehensive inventory can expose omissions, but only if responsibility for maintaining and using it is clear. Aberfan's documentary aftermath makes that distinction visible without requiring the assertion that paperwork, by itself, makes a landscape safe.\n\n## After the finding\n\nThe tribunal's findings established responsibility within an inquiry. Implementation and the community's experience afterward require their own records.\n\nThe next questions concern implementation and remembrance. What was changed? Who paid? What did the community have to ask for again? Those questions need further records rather than a confident assertion that lessons were learned.\n\nThe hillside was the product of decisions made before it moved. The tribunal made responsibility traceable; the resulting inventory of tips extended the inquiry beyond Aberfan. Effective protection still depended on what institutions did with that knowledge."
   },
   {
+    "slug": "air-canada-797-cabin-fire",
+    "title": "Air Canada 797: The Fire That Changed Cabin Materials and Smoke Rules",
+    "dek": "A hidden in-flight fire in 1983 made smoke, flashover and evacuation timing central to cabin safety.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "aviation",
+      "cabin fire",
+      "safety regulation"
+    ],
+    "description": "A hidden in-flight fire in 1983 made smoke, flashover and evacuation timing central to cabin safety.",
+    "socialPreview": "A hidden in-flight fire in 1983 made smoke, flashover and evacuation timing central to cabin safety.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Air Canada Flight 797 overview",
+        "url": "https://en.wikipedia.org/wiki/Air_Canada_Flight_797",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Air Canada 797: The Fire That Changed Cabin Materials and Smoke Rules against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "Air Canada Flight 797 diverted to Cincinnati in June 1983 after smoke and fire developed near a rear lavatory. Passengers evacuated after landing, and the cabin rapidly became engulfed.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish the unresolved ignition source from established findings about smoke movement, electrical systems, cabin materials, emergency descent and the post-opening flashover.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how certification standards respond when a survivable landing still leaves only seconds for evacuation in a smoke-filled cabin.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nLater rules on smoke detectors, emergency lighting and material flammability can make the regulatory path appear automatic; the article should show what evidence changed each requirement.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Air Canada Flight 797 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "air-france-8969",
     "title": "Air France 8969: From the Algiers Hijacking to the Marseille Rescue",
     "dek": "The Air France 8969 crisis moved from an aircraft in Algiers to a rescue in Marseille. The chronology is clearer than some later accounts of the hijackers’ intentions and the assault.",
@@ -157,6 +197,206 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Before French forces intervened aboard Air France Flight 8969 in Marseille, GIGN personnel had rehearsed with an aircraft of the same type at Palma de Mallorca. The French gendarmerie's retrospective places that preparation alongside observation and negotiation before the rescue on 26 December 1994.\n\nThe aircraft had been seized in Algiers two days earlier by four armed men. Three hostages were killed before departure. In Marseille, the remaining hostages were evacuated and the four hijackers were killed. The cabin remained the site of the crisis, but the move changed the authority and resources outside it.\n\n## The difference between an objective and an outcome\n\nA hijacking creates several histories at once. There is the experience of those confined in the aircraft, the work of negotiators and responders, and the later effort to establish the attackers' purpose. An account can move between them, but it should not give each the same evidentiary status.\n\nThe documented outcome does not settle every later account of the attackers' intentions. Those claims require attributable evidence separate from the chronology of seizure, negotiation and intervention.\n\nThe aircraft also changes the meaning of location. Passengers may remain in the same seats while jurisdiction, available resources and the surrounding operational conditions change. A route map helps explain those transitions, provided that the writer does not use it as a substitute for a precise chronology.\n\nTelevision images preserve visible action, not the content of every negotiation or the experience of everyone confined in the cabin.\n\n## Preparation outside the televised moment\n\nThe gendarmerie's account describes GIGN personnel preparing with an aircraft of the same type at Palma de Mallorca before arriving in Marseille. It also describes observation of the seized aircraft before intervention. The visible assault was therefore preceded by work that the television images of the final encounter cannot encompass.\n\nPreparation concerns a range of practical questions: the aircraft's configuration, possible approaches and the conditions under which a plan could be carried out. This does not mean a rehearsal reproduces a hostage situation exactly. It means that some features can be examined before people must act amid uncertainty.\n\nLocation changed the available response. While the aircraft remained in Algeria, the French force could not simply treat it as an operation on French soil. In Marseille, the surrounding authority and resources were different even though the people inside were still confined to an aircraft. A route is also a history of changing jurisdiction.\n\nThe assault was preceded by rehearsal, observation and negotiation in the gendarmerie's account. Those reported preparations are a defined part of the history. Independent reporting and hostage testimony are still needed to describe the wider decisions and the experience inside the aircraft."
   },
   {
+    "slug": "air-new-zealand-901-erebus",
+    "title": "Flight 901: Navigation Data, Whiteout and the Erebus Inquiry",
+    "dek": "The Antarctic crash became a dispute over route changes, visual conditions and institutional candor.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "aviation",
+      "navigation",
+      "antarctica"
+    ],
+    "description": "The Antarctic crash became a dispute over route changes, visual conditions and institutional candor.",
+    "socialPreview": "The Antarctic crash became a dispute over route changes, visual conditions and institutional candor.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Mount Erebus disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Mount_Erebus_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Flight 901: Navigation Data, Whiteout and the Erebus Inquiry against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "Air New Zealand Flight 901 struck Mount Erebus during a sightseeing flight in November 1979. The accident and subsequent inquiries examined navigation coordinates, briefing, visual conditions and the airline's account of its own systems.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish the programmed route, coordinate changes, crew expectations, whiteout conditions and terrain-warning context at each stage of flight.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nErebus asks how an organization investigates itself and what happens when technical evidence becomes entangled with allegations about disclosure and document handling.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe phrase litany of lies shapes public memory in New Zealand, but the full record requires careful separation of the accident findings from later institutional judgment.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Mount Erebus disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "alexander-kielland-capsize",
+    "title": "Alexander L. Kielland: A Fatigue Crack Across an Offshore Structure",
+    "dek": "The 1980 platform capsize linked one welded detail to redundancy, stability and evacuation.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "offshore",
+      "structural fatigue",
+      "norway"
+    ],
+    "description": "The 1980 platform capsize linked one welded detail to redundancy, stability and evacuation.",
+    "socialPreview": "The 1980 platform capsize linked one welded detail to redundancy, stability and evacuation.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Alexander L. Kielland accident overview",
+        "url": "https://en.wikipedia.org/wiki/Alexander_L._Kielland_(platform)",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Alexander L. Kielland: A Fatigue Crack Across an Offshore Structure against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 637,
+    "publishedInArchive": false,
+    "body": "The Alexander L. Kielland accommodation platform capsized in the North Sea in March 1980 after structural failure in one bracing system. The event became a study of fatigue, inspection and lifesaving arrangements.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article should explain crack initiation at a welded connection, brace failure, loss of a support column and capsize without presenting the first crack as the only relevant design issue.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how redundant an offshore structure really is when one connection can change the load path faster than detection or evacuation can respond.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe metallurgical origin is memorable to engineers, while survival also depended on alarms, list, launchable boats and conditions on deck.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Alexander L. Kielland accident overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "aloha-airlines-243-structure",
+    "title": "Aloha 243: Corrosion, Fatigue and a Fuselage Open to the Sky",
+    "dek": "The 1988 decompression over Hawaii made aging-aircraft inspection a public question.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "aviation",
+      "structural fatigue",
+      "maintenance"
+    ],
+    "description": "The 1988 decompression over Hawaii made aging-aircraft inspection a public question.",
+    "socialPreview": "The 1988 decompression over Hawaii made aging-aircraft inspection a public question.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Aloha Airlines Flight 243 overview",
+        "url": "https://en.wikipedia.org/wiki/Aloha_Airlines_Flight_243",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Aloha 243: Corrosion, Fatigue and a Fuselage Open to the Sky against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "A large section of the upper fuselage separated from Aloha Airlines Flight 243 in April 1988 during an inter-island flight. The crew landed the aircraft despite extensive structural damage.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain lap-joint fatigue, corrosion, pressurization cycles and inspection practices without treating aircraft age alone as the mechanism.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how maintenance programs adapt when an aircraft accumulates many short cycles in a corrosive environment that differs from assumptions embedded in original design and inspection.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe image of an open cabin and successful landing can turn the episode into a survival story, obscuring the inspection and aging-fleet evidence.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Aloha Airlines Flight 243 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "amoco-cadiz-oil-spill",
+    "title": "Amoco Cadiz: Steering Failure and a Coastline Under Oil",
+    "dek": "The 1978 tanker loss off Brittany became a case about towing delay, total cargo loss and transnational liability.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "oil spill",
+      "maritime",
+      "france"
+    ],
+    "description": "The 1978 tanker loss off Brittany became a case about towing delay, total cargo loss and transnational liability.",
+    "socialPreview": "The 1978 tanker loss off Brittany became a case about towing delay, total cargo loss and transnational liability.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Amoco Cadiz overview",
+        "url": "https://en.wikipedia.org/wiki/Amoco_Cadiz",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Amoco Cadiz: Steering Failure and a Coastline Under Oil against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 622,
+    "publishedInArchive": false,
+    "body": "The tanker Amoco Cadiz lost steering and grounded off Brittany in March 1978, eventually breaking apart and releasing its cargo. The response and litigation extended far beyond the initial mechanical failure.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must trace steering loss, assistance negotiations, tow attempts, weather and grounding, while distinguishing immediate response decisions from later legal findings.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe spill asks how commercial salvage, ship operation, coastal authority and corporate ownership align when delay carries environmental consequences.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe blackened coast became the visual record; the hours of failed control and negotiation before grounding are the less familiar systems story.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Amoco Cadiz overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "apollo-1-pad-fire",
+    "title": "Apollo 1: A Ground Test Inside a Flight Capsule",
+    "dek": "The 1967 fire exposed how atmosphere, materials, hatch design and test planning created a lethal configuration.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "fire safety",
+      "nasa"
+    ],
+    "description": "The 1967 fire exposed how atmosphere, materials, hatch design and test planning created a lethal configuration.",
+    "socialPreview": "The 1967 fire exposed how atmosphere, materials, hatch design and test planning created a lethal configuration.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "NASA Apollo 1 mission and investigation archive",
+        "url": "https://www.nasa.gov/mission/apollo-1/",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Apollo 1: A Ground Test Inside a Flight Capsule against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 653,
+    "publishedInArchive": false,
+    "body": "A fire inside Apollo spacecraft 012 during a launch-pad test in January 1967 killed astronauts Virgil Grissom, Edward White and Roger Chaffee. The investigation examined the pure-oxygen atmosphere, ignition possibilities, combustible materials, wiring and the inward-opening hatch.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish the unidentified exact ignition point from the conditions that allowed rapid fire growth and prevented escape, following the review board's stated evidence limits.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nApollo 1 asks why a configuration treated as a test condition carried hazards different from flight and how schedule, change control and contractor-agency communication governed those hazards.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe tragedy is commonly positioned as a prelude to lunar success; this article keeps the crew and the management findings from becoming merely a lesson on the way to victory.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with NASA Apollo 1 mission and investigation archive. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "ariane-reused-assumptions",
     "title": "The Old Software Flew on a New Rocket",
     "dek": "Ariane 501 makes software reuse a question about the assumptions that travel with the code.",
@@ -202,6 +442,126 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 539,
     "publishedInArchive": false,
     "body": "Software carried over to Ariane Flight 501 operated under conditions it could not handle during the rocket's 1996 launch. ESA's account links the failure to design faults in the inertial reference system and describes an alignment function that continued into flight.\n\nThe software had worked in an earlier vehicle. That history did not establish that it could tolerate the new rocket's trajectory. ESA's proposed remedies addressed the changed conditions, including ending alignment after lift-off and testing actual trajectories on the inertial reference electronics.\n\n## What exactly was reused?\n\nCode is only the visible part of a reused system. Assumptions travel with it: expected ranges, sequences of operations, the conditions in which a function is needed and the errors considered impossible or acceptable. Some may be documented. Others may be embedded in choices that once seemed too obvious to explain.\n\nUnchanged code can encounter a changed range or sequence of inputs. Qualification concerns that relationship, rather than the program text alone.\n\nThe same reasoning applies to redundancy. Two copies can protect against an isolated hardware failure. They do not necessarily protect against a shared assumption. Independence must be assessed with respect to the failure being considered, not inferred from the fact that two boxes exist.\n\nRedundancy reduces some risks, but a shared assumption can leave both copies vulnerable to the same condition.\n\n## The boundary between ground and flight\n\nESA's corrective account identifies an alignment function that continued after lift-off, a variable whose representation capacity was exceeded, and processor shutdown following the detected malfunction. It says the interface between ground and flight modes had not been identified adequately. These are connected events, rather than three independent imperfections.\n\nAn alignment routine can make sense while a launcher is preparing to leave the ground. Keeping that routine active during flight gives it a different environment in which to operate. The question is therefore not only whether an operation produces the right answer. It is whether that operation should still be running at that point in the mission.\n\nThe planned remedies addressed that relationship. ESA described switching off alignment after lift-off and simulating actual trajectories on the inertial reference electronics. Its account also called for embedded software to receive distinct configuration control and more systematic review. A change to one line would have left the larger question of qualification unresolved.\n\nA reuse review needs to identify the conditions covered by previous evidence and the departures introduced by the receiving system. That gives engineers a specific set of assumptions to test.\n\n## The test that belongs to the new vehicle\n\nA reusable component arrives with evidence. The receiving project needs to decide what that evidence covers. Earlier tests may remain relevant, but a different operating range demands its own examination. A record of successful service is not a substitute for identifying the changed conditions.\n\nAn interface review, a range analysis or a test using the new trajectory can each answer part of that question. Their value depends on being connected to the actual system, not added as generic reassurance.\n\nAriane inherited software and the limits within which it had been expected to work. The new mission changed those limits. Previous success was evidence about the earlier vehicle, not a qualification of the new one."
+  },
+  {
+    "slug": "att-network-collapse-1990",
+    "title": "AT&T 1990: One Software Update and a Cascading Telephone Outage",
+    "dek": "A timing interaction in switch software propagated through a network designed to recover automatically.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "telecommunications",
+      "software",
+      "network resilience"
+    ],
+    "description": "A timing interaction in switch software propagated through a network designed to recover automatically.",
+    "socialPreview": "A timing interaction in switch software propagated through a network designed to recover automatically.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "The crash of the AT&T network in 1990",
+        "url": "https://telephoneworld.org/landline-telephone-history/the-crash-of-the-att-network-in-1990/",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for AT&T 1990: One Software Update and a Cascading Telephone Outage against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 631,
+    "publishedInArchive": false,
+    "body": "A major AT&T long-distance network outage occurred in January 1990 after updated switching software interacted with recovery messages across the network. Switches repeatedly reset and disrupted calls for hours.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the message sequence, timing window, reset behavior and rollout scope without turning a few lines of code into the whole causal account.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe outage asks how identical software across many nodes can convert local recovery behavior into a common-mode failure and how deployment strategy limits that risk.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe famous coding bug is memorable, while synchronized architecture, testing assumptions and nationwide rollout made its consequences possible.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with The crash of the AT&T network in 1990. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "avianca-flight-52-fuel",
+    "title": "Avianca 52: Holding, Fuel and the Words Used for an Emergency",
+    "dek": "The 1990 crash near New York became a case about fuel management, air-traffic flow and communication across languages.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "aviation",
+      "fuel",
+      "communication"
+    ],
+    "description": "The 1990 crash near New York became a case about fuel management, air-traffic flow and communication across languages.",
+    "socialPreview": "The 1990 crash near New York became a case about fuel management, air-traffic flow and communication across languages.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Avianca Flight 52 overview",
+        "url": "https://en.wikipedia.org/wiki/Avianca_Flight_52",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Avianca 52: Holding, Fuel and the Words Used for an Emergency against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "Avianca Flight 52 exhausted its fuel and crashed on Long Island in January 1990 after extended holding and a missed approach to Kennedy Airport. The record spans dispatch planning, weather, air-traffic control and cockpit communication.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology must calculate fuel state only from supported records and must compare the crew's words with the emergency terminology controllers expected.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe accident asks how traffic systems detect deteriorating fuel margins when no single controller owns the complete flight history and when urgency is expressed indirectly.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nOne disputed word often carries the story, while the chain of holding instructions, handoffs, weather and company planning receives less attention.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Avianca Flight 52 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "banco-ambrosiano-collapse",
+    "title": "Banco Ambrosiano: Offshore Entities, Missing Records and a Bank Collapse",
+    "dek": "The 1982 Italian banking failure sits inside a web of offshore companies, political influence and contested responsibility.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "banking",
+      "offshore finance",
+      "italy"
+    ],
+    "description": "The 1982 Italian banking failure sits inside a web of offshore companies, political influence and contested responsibility.",
+    "socialPreview": "The 1982 Italian banking failure sits inside a web of offshore companies, political influence and contested responsibility.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Banco Ambrosiano overview",
+        "url": "https://en.wikipedia.org/wiki/Banco_Ambrosiano",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Banco Ambrosiano: Offshore Entities, Missing Records and a Bank Collapse against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 621,
+    "publishedInArchive": false,
+    "body": "Banco Ambrosiano collapsed in 1982 after losses and exposures linked to offshore entities became untenable. The death of chairman Roberto Calvi and the Vatican bank's relationships with parts of the network made the case unusually contested.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate documented loans, guarantees, regulatory findings, settlements and criminal allegations from speculation surrounding Calvi's death.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe collapse asks how banking supervision follows risk through nominally separate foreign entities and relationships involving institutions with unusual legal status.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nMystery and conspiracy narratives attract attention, while the balance-sheet pathways and jurisdictional gaps are more difficult to reconstruct.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Banco Ambrosiano overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "banqiao-dam-failure",
@@ -299,6 +659,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Barings management accepted large reported profits from an operation it understood as low-risk arbitrage, according to the Reserve Bank of Australia's summary of the British inquiry. At the Singapore subsidiary, Nick Leeson controlled both trading and the back-office functions meant to check it.\n\nAdministrators were appointed to Barings Group companies on 26 February 1995 after large trading losses. The RBA's November account identifies failures in separating duties, assigning reporting responsibility and acting on internal audit recommendations. Head office's confidence in the operation was not matched by independent evidence of what it was funding.\n\n## What the center can actually see\n\nA head office does not know an operation simply because it owns it. Information must travel through systems, reports and people. The resulting picture can be timely or delayed, independently checked or dependent on the same source that generated the activity.\n\nA plausible profit figure is only the beginning of a control. Someone independent of the trading activity needs evidence of its origin and positions that could contradict it.\n\nThis is why separation of duties matters as a general principle. Independence is not just a box on an organization chart. It concerns whether the person or process responsible for checking an activity has access to evidence that the activity's operator cannot freely rewrite. The RBA summary identifies a lack of separation between front and back offices at the Singapore subsidiary. Leeson's control of both gave him an opportunity to conceal unauthorized activity.\n\nPrestige can make elementary checks seem unnecessary. A control fails in its purpose if it depends on someone overcoming that presumption each time a result is reported.\n\n## Learning without the rogue shortcut\n\nThe phrase rogue trader can identify misconduct. It can also become a convenient container that leaves the surrounding organization outside the explanation. An account of an individual's actions and an account of an institution's exposure are related, but they are not interchangeable.\n\nReported profits, funding demands and trading positions describe different parts of the exposure. Their relationship needs an independent check, rather than confidence in the reported strategy's name.\n\nA historical case should also resist the claim that its lesson has been permanently absorbed. A recommendation is evidence that a reviewer proposed a change. Implementation and effectiveness require additional records.\n\n## A profit that needed a question\n\nThe RBA's summary notes that management did not challenge the apparently large profits attributed to an activity it understood as low-risk arbitrage. It also identifies ambiguity in reporting responsibility and delays in responding to internal audit recommendations. These findings describe failures to ask and act, not merely failures to receive a document.\n\nA profitable result can discourage examination precisely because it appears to reward the institution's decisions. Yet unusually good performance can be a reason to investigate how the result was produced. A control that operates only when numbers look disappointing may leave its largest blind spot where the organization most wants reassurance.\n\nThe distinction between arbitrage and an open market position is important here. A strategy presented as exploiting a price difference between markets describes a different exposure from a directional wager on market movement. The name used in a report cannot establish which activity actually occurred.\n\nThe relevant managerial task is to connect the reported result, funding demands and independently checked position. Examining only one can produce a plausible but incomplete picture. Barings demonstrates why that connection needs a responsible owner. Several reporting lines do not ensure that someone has assembled their information into an account that can challenge the trading operation.\n\nBarings had a trusted name. Its Singapore trading operation needed positions and funding demands checked independently of the trader. The collapse exposed the gap between confidence in the institution and knowledge of the business being done in its name."
   },
   {
+    "slug": "benxihu-colliery-disaster",
+    "title": "Benxihu: Occupation, Coal and the Record of a Mine Catastrophe",
+    "dek": "The 1942 Benxihu disaster sits inside the history of Japanese occupation, forced labor and incomplete records.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "mining",
+      "forced labor",
+      "china"
+    ],
+    "description": "The 1942 Benxihu disaster sits inside the history of Japanese occupation, forced labor and incomplete records.",
+    "socialPreview": "The 1942 Benxihu disaster sits inside the history of Japanese occupation, forced labor and incomplete records.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Benxihu Colliery overview",
+        "url": "https://en.wikipedia.org/wiki/Benxihu_Colliery",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Benxihu: Occupation, Coal and the Record of a Mine Catastrophe against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 641,
+    "publishedInArchive": false,
+    "body": "An explosion at the Benxihu colliery in occupied Manchuria in April 1942 caused an enormous loss of life. The event cannot be separated from wartime labor conditions, colonial control and the limits of the surviving record.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must verify accounts of the explosion, ventilation response, sealed workings and recovery operations against records produced under occupation and later historical research.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nBenxihu raises the question of how safety, labor coercion and information control interact when workers cannot freely refuse dangerous conditions or challenge the official account.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe disaster is often ranked by casualty count, yet the reliability of the count and the identities and status of workers require more scrutiny than the ranking itself.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Benxihu Colliery overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "bhopal-where-the-shift-ends",
     "title": "The Disaster Did Not End at the Factory Gate",
     "dek": "Bhopal puts workplace safety and neighborhood exposure in the same account.",
@@ -344,6 +744,206 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 560,
     "publishedInArchive": false,
     "body": "The gas release at Bhopal in December 1984 reached beyond the industrial site into the surrounding city, causing mass death and injury. An International Labour Organization account published in April 2004 describes a runaway reaction involving stored methyl isocyanate and health consequences extending well beyond the release.\n\nThe factory fence separated the workforce from the city without separating either from the gas. Nearby residents and responders could be exposed through different routes, with different information and access to help. The emergency crossed boundaries that the administration of safety often treats separately.\n\nCasualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries describe different outcomes and populations; adding them together does not produce a meaningful lifetime total.\n\n## More than one population at risk\n\nWorkplace safety and environmental safety can be administered separately. An accident does not have to respect the distinction. Employees, nearby residents, responders and people arriving later may face different forms of exposure, different access to information and different routes to assistance.\n\nThe geography matters. Distance from a fence is not necessarily an adequate description of exposure. Nor does being outside the workforce make someone's need for information secondary. Planning has to consider how a hazard could travel and who would have to make decisions before a complete explanation became available.\n\nAn emergency also creates a demand for knowledge that is practical before it is comprehensive. Responders need usable information about the substance and the circumstances. Residents need instructions they can understand and act on. Later scientific investigation remains essential, but it cannot substitute for communication during the period when people are deciding what to do.\n\n## A report written twenty years later\n\nThe ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents describes a runaway reaction involving stored methyl isocyanate at Bhopal and recognizes health consequences lasting well beyond the release. Its perspective is explicitly that of an organization concerned with preventing harm from work and industrial chemicals.\n\nThe report's account of continuing consequences describes the evidence available in 2004. It does not establish the condition of every survivor or neighborhood today.\n\nAn industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. The final entry is usually the end of a selected administrative process. Different questions need different timelines. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.\n\nProduction, emergency communication and medical follow-up operate on different timelines. A settlement or a closed administrative case cannot establish that treatment needs or exposure questions have ended.\n\n## The time after the emergency\n\nA disaster's administrative history can move faster than its human consequences. A case may be closed, a payment made or an institution reorganized while people continue to seek treatment, documentation or answers. The existence of one milestone does not establish the completion of all the others.\n\nTestimony, medical findings, exposure studies and legal decisions each address a different aspect of the aftermath. One cannot settle the questions assigned to the others.\n\nThe release stopped; its consequences continued. Medical care, exposure assessment and legal obligations ran on different timetables. Closing the plant's operating history could not close the history of those who had been exposed."
+  },
+  {
+    "slug": "bp-texas-city-refinery-2005",
+    "title": "BP Texas City: The Startup That Reached Beyond the Blowdown Drum",
+    "dek": "The 2005 refinery explosion linked startup operations, temporary offices and company-level cost and safety decisions.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "process safety",
+      "refinery",
+      "management"
+    ],
+    "description": "The 2005 refinery explosion linked startup operations, temporary offices and company-level cost and safety decisions.",
+    "socialPreview": "The 2005 refinery explosion linked startup operations, temporary offices and company-level cost and safety decisions.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "CSB BP America refinery explosion final report",
+        "url": "https://www.csb.gov/assets/1/20/csbfinalreportbp.pdf",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for BP Texas City: The Startup That Reached Beyond the Blowdown Drum against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 645,
+    "publishedInArchive": false,
+    "body": "During startup of an isomerization unit at BP's Texas City refinery in March 2005, hydrocarbons overflowed into a blowdown system, formed a vapor cloud and exploded. The draft follows the event from control-room indications to the location of occupied trailers.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe record must distinguish immediate equipment and operating failures from the broader findings about alarm performance, instrumentation, procedures, supervision and siting.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThis is a case about the distance between personal-safety metrics and process-safety risk, and about whether corporate oversight could see deteriorating barriers before a catastrophic startup.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe phrase cost cutting is often used as a complete explanation; the article should instead map the specific decisions, warnings and deferred improvements that investigators documented.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with CSB BP America refinery explosion final report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "bradford-city-stadium-fire",
+    "title": "Bradford City: Litter, Timber and a Stand Evacuated in Minutes",
+    "dek": "The 1985 stadium fire exposed how an old grandstand and accumulated debris could create rapid flame spread.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Culture",
+    "tags": [
+      "fire safety",
+      "stadium",
+      "england"
+    ],
+    "description": "The 1985 stadium fire exposed how an old grandstand and accumulated debris could create rapid flame spread.",
+    "socialPreview": "The 1985 stadium fire exposed how an old grandstand and accumulated debris could create rapid flame spread.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Bradford City stadium fire overview",
+        "url": "https://en.wikipedia.org/wiki/Bradford_City_stadium_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Bradford City: Litter, Timber and a Stand Evacuated in Minutes against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "Fire spread through the main stand at Bradford City's Valley Parade stadium in May 1985 during a football match. Timber construction and debris beneath seating contributed to rapid development as spectators tried to reach the field and exits.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct the first visible smoke, fire growth, roof involvement and evacuation routes while separating confirmed ignition evidence from later speculation.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how older venues remain in use while known renovation plans, housekeeping and crowd-safety requirements await action.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nBroadcast footage makes the speed unforgettable, but the pre-fire condition of the stand and unfinished replacement plans are essential context.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Bradford City stadium fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "british-airtours-28m-fire",
+    "title": "British Airtours 28M: An Engine Fire and the Geometry of Evacuation",
+    "dek": "The 1985 Manchester runway fire exposed how exits, seat layout and smoke determine survival after an aborted takeoff.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "aviation",
+      "evacuation",
+      "united kingdom"
+    ],
+    "description": "The 1985 Manchester runway fire exposed how exits, seat layout and smoke determine survival after an aborted takeoff.",
+    "socialPreview": "The 1985 Manchester runway fire exposed how exits, seat layout and smoke determine survival after an aborted takeoff.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "British Airtours Flight 28M overview",
+        "url": "https://en.wikipedia.org/wiki/British_Airtours_Flight_28M",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for British Airtours 28M: An Engine Fire and the Geometry of Evacuation against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "British Airtours Flight 28M rejected takeoff at Manchester in August 1985 after an engine failure and fire. The aircraft stopped on the runway, but fire and smoke entered the cabin during evacuation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must trace the engine failure, wind direction, stopping position, exit availability, passenger flow and cabin conditions using the investigation's timing.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe accident asks whether certification demonstrations represent real evacuations when smoke, blocked exits, narrow passages and human congestion replace ideal test conditions.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe aircraft never became airborne, which can make the event seem like a ground fire rather than a defining test of cabin survivability.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with British Airtours Flight 28M overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "buffalo-creek-flood-1972",
+    "title": "Buffalo Creek: A Coal-Waste Dam and the Meaning of Natural Disaster",
+    "dek": "The 1972 flood in West Virginia began with the failure of coal-waste impoundments above a populated valley.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "mining",
+      "dam failure",
+      "appalachia"
+    ],
+    "description": "The 1972 flood in West Virginia began with the failure of coal-waste impoundments above a populated valley.",
+    "socialPreview": "The 1972 flood in West Virginia began with the failure of coal-waste impoundments above a populated valley.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Buffalo Creek flood overview",
+        "url": "https://en.wikipedia.org/wiki/Buffalo_Creek_flood",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Buffalo Creek: A Coal-Waste Dam and the Meaning of Natural Disaster against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 640,
+    "publishedInArchive": false,
+    "body": "In February 1972, a coal-waste impoundment failed above Buffalo Creek in West Virginia, sending water and debris through communities downstream. The event became a dispute over engineering responsibility and the language used to describe preventable harm.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe record must reconstruct the sequence among multiple impoundments, rainfall, inspection observations and the final breach without turning a complex structure into one anonymous dam.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe article asks how company-built waste structures were classified, inspected and communicated to people living below them, and why official disaster language mattered for accountability.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe phrase act of God became part of the public argument, sometimes overshadowing the technical record and the long psychological effects documented in the valley.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Buffalo Creek flood overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "buncefield-terminal-fire-2005",
+    "title": "Buncefield: The Tank That Kept Filling",
+    "dek": "At Buncefield, failed level protection allowed a fuel transfer to become a vast vapor-cloud explosion.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "fuel storage",
+      "instrumentation",
+      "united kingdom"
+    ],
+    "description": "At Buncefield, failed level protection allowed a fuel transfer to become a vast vapor-cloud explosion.",
+    "socialPreview": "At Buncefield, failed level protection allowed a fuel transfer to become a vast vapor-cloud explosion.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Buncefield fire overview",
+        "url": "https://en.wikipedia.org/wiki/Buncefield_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Buncefield: The Tank That Kept Filling against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 637,
+    "publishedInArchive": false,
+    "body": "In December 2005, petrol overflowed from a storage tank at the Buncefield oil depot in Hertfordshire, producing a vapor cloud that ignited and damaged a wide area. The article treats the event as a chain of measurement, shutdown and containment failures.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology needs to follow the incoming transfer, gauge behavior, independent high-level protection, overflow, vapor movement and ignition without collapsing them into one equipment fault.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nBuncefield asks how independent a safety layer is when its testing, maintenance or assumptions remain connected to the same operating organization.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe size of the blast is memorable; the quieter preconditions inside level measurement and proof testing are less visible but more transferable.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Buncefield fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "centralia-underground-fire",
@@ -440,6 +1040,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Challenger launched on 28 January 1986 after its contractor reversed a recommendation against launch. The Rogers Commission found that senior decision-makers lacked crucial information about O-ring problems, the initial recommendation not to launch below 53 degrees Fahrenheit and the engineers' continuing opposition.\n\nThe warning weakened as it moved toward the decision to launch. Engineers were debating what the available data could establish; senior managers were deciding whether to authorize flight without receiving the full account of that debate. The Commission traced the break between those two groups.\n\n## The warning was not one thing\n\nThiokol engineers were working from incomplete and contested data. They were concerned about how low temperature would affect the field-joint seals, but witnesses also described difficulty quantifying the effect from the available evidence. During the teleconferences, different participants heard the meaning of the concern differently. The Commission's chapter preserves those disagreements rather than turning them into a single unanimous narrative.\n\nWhat is clear is that Thiokol initially recommended against launching outside its prior temperature experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers.\n\n## Who had to prove what?\n\nTestimony describes a further change in the standard applied to that evidence.\n\nEngineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to demonstrate that launch would fail. Thiokol engineering executive Robert Lund later described a similar reversal in the group's thinking.\n\nUnder a rule that requires adequate evidence of safety, an unresolved safety concern can justify delay. Under a rule that requires opponents to prove failure, the same gap in evidence can be used to justify proceeding. These are different decision standards; neither makes uncertainty disappear.\n\nThat does not mean every uncertain condition must automatically stop an operation. It means the burden of proof is part of the safety system and should be visible rather than changing implicitly in the room.\n\n## Information lost on the way upward\n\nThe Commission found a second problem: the senior managers responsible for the final launch decision did not receive the seriousness of the O-ring concern through the formal readiness process.\n\nEarlier O-ring anomalies, launch constraints, contractor concerns and the engineers' continuing opposition were not all present in the decision record at the level where the final go decision was made. The Commission described failures in communication and a management structure that allowed flight-safety problems to bypass key Shuttle managers.\n\nSeveral managers heard concerns, and participants interpreted the teleconferences differently. The Commission's finding was more specific than a blanket claim that managers ignored engineers: significant safety information failed to reach the final decision level.\n\nA safety process cannot depend on the assumption that a warning will somehow become visible because enough people have heard pieces of it.\n\n## A warning needs an action path\n\nChannels for raising concerns already existed. The unresolved problem was how those concerns affected authorization to launch.\n\nThe harder requirement is to specify what happens after concern is raised: who evaluates it, who can stop the operation, what evidence is required to reopen the decision, and how dissent and uncertainty are carried into the final review.\n\nThiokol changed its recommendation. The engineers' objections did not disappear with it. The final launch decision proceeded without a full account of the dissent that remained."
   },
   {
+    "slug": "citicorp-center-engineering-crisis",
+    "title": "Citicorp Center: The Wind Load Recalculation and the Quiet Retrofit",
+    "dek": "A design review after construction revealed vulnerability in a prominent tower and triggered an emergency strengthening program.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "structural engineering",
+      "wind",
+      "new york"
+    ],
+    "description": "A design review after construction revealed vulnerability in a prominent tower and triggered an emergency strengthening program.",
+    "socialPreview": "A design review after construction revealed vulnerability in a prominent tower and triggered an emergency strengthening program.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Citigroup Center engineering crisis overview",
+        "url": "https://en.wikipedia.org/wiki/Citigroup_Center#Engineering_crisis_of_1978",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Citicorp Center: The Wind Load Recalculation and the Quiet Retrofit against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 637,
+    "publishedInArchive": false,
+    "body": "Questions raised after completion of New York's Citicorp Center led engineer William LeMessurier to re-examine wind loads and connection changes in the tower. A retrofit was organized while the building remained a major public landmark.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish original design assumptions, quartering winds, welded versus bolted joints, tuned-mass-damper dependence and the actual safety margins found in later review.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how professional responsibility, disclosure, emergency planning and public communication operate when a serious design concern emerges after occupancy.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe story is often told as a lone engineer's ethical triumph; archival disputes and the roles of other engineers, contractors and owners require a less heroic frame.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Citigroup Center engineering crisis overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "cocoanut-grove-fire",
+    "title": "Cocoanut Grove: A Nightclub Fire and the Doors Between People and Safety",
+    "dek": "The 1942 Boston fire transformed knowledge about exits, interior finishes, smoke and mass-casualty care.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Culture",
+    "tags": [
+      "fire safety",
+      "nightclub",
+      "boston"
+    ],
+    "description": "The 1942 Boston fire transformed knowledge about exits, interior finishes, smoke and mass-casualty care.",
+    "socialPreview": "The 1942 Boston fire transformed knowledge about exits, interior finishes, smoke and mass-casualty care.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Cocoanut Grove fire overview",
+        "url": "https://en.wikipedia.org/wiki/Cocoanut_Grove_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Cocoanut Grove: A Nightclub Fire and the Doors Between People and Safety against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "A fast-moving fire at Boston's Cocoanut Grove nightclub in November 1942 killed hundreds of patrons. Investigations and medical studies examined ignition, decorations, crowding, locked or obscured exits and treatment of burns and smoke exposure.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish the uncertain ignition source from well-documented evacuation barriers and fire spread, and verify occupancy and casualty figures across records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nCocoanut Grove asks how licensing, enforcement and social influence shape the gap between posted safety requirements and a venue's actual nightly configuration.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nStories about one match or one employee can dominate, while doors, occupancy and material choices made the consequences much larger than the ignition alone.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Cocoanut Grove fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "columbia-evidence-not-requested",
     "title": "The Question of Getting a Better Look",
     "dek": "Columbia's accident record includes not only the foam strike, but repeated attempts to obtain better imagery and the management system through which those requests moved.",
@@ -486,6 +1166,126 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 616,
     "publishedInArchive": false,
     "body": "Columbia and its seven crew members were lost during re-entry on 1 February 2003. The Columbia Accident Investigation Board found that a foam strike had damaged the left wing. Its inquiry also traced three independent attempts to obtain better images of the damage while the shuttle was still in orbit.\n\nLaunch imagery revealed a strike near the left wing's leading edge, but did not conclusively show the damage. Better pictures could have helped. They were not the only route to an answer: CAIB finding F3.4-6 states that the information already available during the mission was adequate to determine the impact's effect. The failure involved both obtaining evidence and using it.\n\n## The missing view\n\nThe CAIB found that the photo working group was concerned about the impact and that no conclusive image of the strike existed. A Debris Assessment Team formed to analyze the event. During its early work, the team discussed the value of on-orbit imagery for bounding its analysis and tasked its NASA co-chair with seeking such imagery.\n\nAccording to the Board's findings, it moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request.\n\nThe CAIB ultimately counted three independent imagery requests.\n\nThe requests' route mattered. An engineering concern reached management without carrying the urgency of an operational safety question.\n\n## Analysis without the image\n\nWithout better on-orbit pictures, the Debris Assessment Team relied on models, prior experience and the information already available from the launch imagery.\n\nThe Board found substantial uncertainty in the assessment. It cited inadequate imagery, weaknesses in the use of assessment tools, communication breakdowns and engineering judgments. It also found that assumptions and uncertainties were not fully presented to the Mission Evaluation Room or Mission Management Team.\n\nAn assessment existed, but the people making decisions did not receive a full account of its assumptions and uncertainty.\n\nCAIB also found that managers asked who was requesting imagery rather than first assessing the merits of the request, and that no one in the operational chain for the mission had the clearance needed to understand the capabilities and limits of national imaging resources.\n\nAccess to imaging capability depended on more than having the equipment. The request needed authority, a recognized route and a decision about its purpose.\n\n## The burden of uncertainty\n\nThe Board also examined the standard managers applied to unresolved risk.\n\nIt found that program managers required engineers to demonstrate that the debris strike created a safety-of-flight issue rather than requiring evidence that the vehicle was safe. That choice matters when the available information is incomplete.\n\nUncertainty is not proof of danger. But it is also not proof of safety.\n\nThe engineering question is therefore not just whether an analysis has produced an answer. It is whether the evidence, assumptions and uncertainty behind that answer are visible to the people who must decide what to do next.\n\n## What a better image could and could not establish\n\nDetection, interpretation and an effective response are separate problems. Better imagery could have changed the information available to decision-makers. It does not follow automatically that a feasible repair or rescue would then have succeeded.\n\nThe missed imagery requests matter without a guaranteed rescue counterfactual. They show how an organization handled a request for more evidence when the available assessment remained uncertain.\n\nA better image would have supplied evidence, not a guaranteed rescue. The missed requests nevertheless exposed a consequential weakness: uncertainty could remain unresolved while the mission's decision process continued."
+  },
+  {
+    "slug": "costa-concordia-evacuation",
+    "title": "Costa Concordia: Route Deviation, Damage and the Delayed Abandonment",
+    "dek": "The 2012 grounding connects bridge decisions with flooding, passenger communication and a complex evacuation.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "maritime",
+      "evacuation",
+      "italy"
+    ],
+    "description": "The 2012 grounding connects bridge decisions with flooding, passenger communication and a complex evacuation.",
+    "socialPreview": "The 2012 grounding connects bridge decisions with flooding, passenger communication and a complex evacuation.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Costa Concordia disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Costa_Concordia_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Costa Concordia: Route Deviation, Damage and the Delayed Abandonment against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "The cruise ship Costa Concordia struck rocks near Giglio in January 2012, flooded and rolled onto its side. The article follows the route deviation, damage assessment, communication and timing of evacuation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology must use voyage data, bridge audio and official findings to identify when the ship's condition was known and when information reached passengers and authorities.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how command, company operations and shore rescue coordinate when a large passenger vessel loses power and stability close to land.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe captain's conduct dominates public memory, potentially reducing thousands of individual evacuation problems to a single morality play.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Costa Concordia disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "courrieres-mine-disaster-1906",
+    "title": "Courrières: Rescue, Survival and the Politics of a Mine Disaster",
+    "dek": "The 1906 Courrières explosion became a crisis of rescue, labor and public trust across northern France.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "mining",
+      "labor",
+      "france"
+    ],
+    "description": "The 1906 Courrières explosion became a crisis of rescue, labor and public trust across northern France.",
+    "socialPreview": "The 1906 Courrières explosion became a crisis of rescue, labor and public trust across northern France.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Courrières mine disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Courri%C3%A8res_mine_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Courrières: Rescue, Survival and the Politics of a Mine Disaster against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "An explosion swept through the Courrières coalfield in northern France in March 1906. The scale of death, the disputed rescue effort and the later emergence of survivors made the catastrophe both an industrial and political event.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must reconstruct fire reports, ventilation changes, the explosion and access to damaged workings while distinguishing contemporary testimony from later legend.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nCourrières asks who controls rescue decisions when the operator, engineers, state officials, workers and families have different information and different authority.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe story of survivors returning after weeks underground can eclipse the arguments over rescue termination, labor protest and the names of those who did not return.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Courrières mine disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "cuyahoga-river-fire-1969",
+    "title": "Cuyahoga 1969: The River Fire That Was Not the First",
+    "dek": "The famous Cleveland fire became an environmental symbol partly because earlier pollution had already built the record.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Culture",
+    "tags": [
+      "water pollution",
+      "environmental policy",
+      "ohio"
+    ],
+    "description": "The famous Cleveland fire became an environmental symbol partly because earlier pollution had already built the record.",
+    "socialPreview": "The famous Cleveland fire became an environmental symbol partly because earlier pollution had already built the record.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Cuyahoga River overview",
+        "url": "https://en.wikipedia.org/wiki/Cuyahoga_River",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Cuyahoga 1969: The River Fire That Was Not the First against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "The Cuyahoga River caught fire in Cleveland in June 1969, but industrial river fires had occurred there before. The episode's political significance came from timing, accumulated concern and later use of the image as an environmental symbol.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must identify what burned, what evidence survives from the relatively small 1969 fire and which commonly reproduced photographs actually depict earlier events.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe systems question is how municipal sewage, industrial discharge, navigation and fragmented water authority allowed pollution to become normal infrastructure.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe iconic photograph and claim that the fire created the EPA are often repeated too simply; chronology can show a broader movement and policy process.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Cuyahoga River overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "dawsons-field",
@@ -535,6 +1335,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "On 9 September 1970, U.S. officials reported a British Overseas Airways Corporation aircraft at a Jordanian airfield alongside two other hijacked planes. Their situation report also described Red Cross involvement and deteriorating conditions in Amman.\n\nThe situation report captures officials acting inside an unfinished crisis. Proposals, messages through intermediaries and developments in Amman appear alongside the aircraft's position. It is evidence of what officials knew and were considering then, rather than a retrospective chronology in which every outcome was already settled.\n\n## The aircraft as a public stage\n\nThe significance of a hijacked aircraft extends beyond the machine and the people immediately controlling it. An aircraft carries national affiliation, commercial identity and the expectation of civilian movement. Turning it into an instrument of coercion therefore creates several audiences at once.\n\nThe passengers' movements and the treatment of aircraft after evacuation require separate chronology. A photograph of an aircraft cannot establish who remained aboard at the time it was taken.\n\nThe ICAO legal history offers one route into the institutional response. Its purpose is to describe aviation-security instruments, not to provide a complete account of the political conflict. A treaty chronology can help establish the development of rules, but it does not explain the experiences of hostages or every government's choices during the crisis.\n\nNor should the passage of an international instrument be treated as proof that the problem had been solved. Adoption, entry into force, domestic implementation and practical enforcement are separate stages. A retrospective narrative should identify which stage it is discussing.\n\nThe visual record must remain attached to its date and the status of the people aboard. Otherwise an image can imply a human situation it does not document.\n\n## A situation report inside the crisis\n\nA U.S. government report dated 9 September 1970 records a British Overseas Airways Corporation aircraft reaching the Jordanian airfield where two other hijacked planes were held. It also describes Red Cross involvement and concerns about the deteriorating situation in Amman. The aircraft crisis and the political crisis were being considered together by officials.\n\nA proposed intervention establishes that officials considered it. A separate record is needed to establish whether it occurred.\n\nA situation report captures the connections officials were making under uncertainty. A retrospective chronology can establish later outcomes, but cannot be substituted for their knowledge at the time.\n\nThe ICAO legal chronology supplies another clock: international agreements developing beyond the immediate crisis. A diplomatic report about endangered passengers and a history of treaty adoption concern related events, but each answers a different question. Keeping them side by side shows how immediate action and durable legal rules can proceed on different timetables. It also avoids making a later convention appear to have been available to the people deciding what to do that day.\n\nOfficials had to act while the aircraft crisis was still unfolding. International aviation agreements developed on a longer timetable. Keeping those records distinct avoids crediting the immediate response with rules adopted later—or asking a treaty history to describe what happened to each hostage."
   },
   {
+    "slug": "deepwater-horizon-well-control",
+    "title": "Deepwater Horizon: The Well, the Barriers and the Decisions Before the Blowout",
+    "dek": "The 2010 disaster joined well design, temporary abandonment and emergency systems across multiple companies.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "offshore drilling",
+      "process safety",
+      "gulf of mexico"
+    ],
+    "description": "The 2010 disaster joined well design, temporary abandonment and emergency systems across multiple companies.",
+    "socialPreview": "The 2010 disaster joined well design, temporary abandonment and emergency systems across multiple companies.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Deepwater Horizon oil spill overview",
+        "url": "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Deepwater Horizon: The Well, the Barriers and the Decisions Before the Blowout against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "The Deepwater Horizon drilling rig exploded in April 2010 after hydrocarbons entered the well and reached the rig. The blowout killed workers, sank the rig and led to a prolonged spill from the Macondo well.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace cement barriers, pressure-test interpretation, displacement of drilling fluid, influx detection, blowout-preventer performance and ignition as distinct stages.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how operator, drilling contractor, service companies and regulators shared decisions while no single organization controlled every barrier.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nImages of the surface fire and underwater leak can split the story into accident and spill; the same well-control chain connects them.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Deepwater Horizon oil spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "dhahran-running-clock",
     "title": "How Long Had the System Been Running?",
     "dek": "The Dhahran Patriot failure puts elapsed operating time inside the safety case.",
@@ -580,6 +1420,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 519,
     "publishedInArchive": false,
     "body": "The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to intercept a missile on 25 February 1991. The missile struck a barracks and killed 28 Americans. A General Accounting Office investigation linked the missed interception to a timing calculation whose error grew with continuous operation.\n\nA corrected version of the software reached Dhahran after the attack. The failure had developed inside a calculation, but preventing it also depended on getting a working correction into the battery. A release of new code and its installation on a deployed system were separate events.\n\n## Where the clock met the target\n\nGAO's report describes a clock recorded in tenths of seconds. Converting its integer count into a real-number time value lost precision in the system's limited registers. The effect on the tracking calculation increased with operating duration and target velocity. At Dhahran the battery had run continuously for more than 100 hours. Its predicted search region no longer aligned adequately with the incoming missile. [GAO report, printed pages 1 and 5–6](https://www.gao.gov/assets/imtec-92-26.pdf).\n\nThe important distinction is between the stored count and the conversion used to interpret it. A larger count need not be corrupted to produce a worse physical prediction. An approximation applied to that count can become consequential as the operating interval grows. Describing the problem simply as a clock that drifted hides the calculation in which time acquired its error.\n\nA test establishes behavior over the interval examined. Running the same executable for much longer changes an input to its calculations, even when no code has changed.\n\n### Duration is an input\n\nWe tend to picture software inputs as things entered through a keyboard or delivered by a sensor. Time in service belongs on that list too. The effect of a small conversion error can become significant when it is applied to a larger elapsed-time count. Testing a short operation and observing success does not establish that the same implementation behaves acceptably after a much longer interval.\n\nLimited numerical representation, rather than a corrupted clock count, was the issue. The conversion's precision had to be adequate across the intended duration of operation.\n\nEngineers and operators can work with different assumptions about duration. Deployment under a longer operating interval requires evidence that the original calculations remain adequate.\n\n### The day a fix arrives\n\nA patch has at least two histories. One concerns its design and verification. The other concerns distribution, installation and confirmed use. A release date closes only part of that chain. An organization may possess the corrected code while a particular deployed system still runs the earlier version.\n\nThe Dhahran record is therefore useful without converting it into a universal instruction to restart equipment or install updates immediately. Those actions have their own operational risks. The responsible lesson is narrower: maintenance advice, operating limits and software changes must reach the people making time-sensitive decisions in a form they can act on.\n\nAt Dhahran, the calculation accumulated error while the battery kept running. The correction existed, but arrived after the attack. Its release date could not tell operators whether their system was protected."
+  },
+  {
+    "slug": "donora-smog-1948",
+    "title": "Donora: Five Days of Smog and a Public-Health Turning Point",
+    "dek": "The 1948 air-pollution episode in Pennsylvania connected weather, industrial emissions and community health.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "air pollution",
+      "public health",
+      "pennsylvania"
+    ],
+    "description": "The 1948 air-pollution episode in Pennsylvania connected weather, industrial emissions and community health.",
+    "socialPreview": "The 1948 air-pollution episode in Pennsylvania connected weather, industrial emissions and community health.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "1948 Donora smog overview",
+        "url": "https://en.wikipedia.org/wiki/1948_Donora_smog",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Donora: Five Days of Smog and a Public-Health Turning Point against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "A temperature inversion trapped industrial pollution over Donora, Pennsylvania, in October 1948, producing severe illness and deaths during several days of dense smog. The episode later became part of the case for federal air-pollution research and law.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish measured or reconstructed emissions, meteorology, clinical reports and mortality estimates, and should not assign individual deaths without examining health records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nDonora asks how a company town recognizes environmental illness when employment, local authority, medical observation and emissions are institutionally intertwined.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe event is remembered as a legislative catalyst, which can compress the experiences of residents into a prologue for later clean-air policy.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with 1948 Donora smog overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "enron-reading-the-entity",
@@ -630,6 +1510,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "In December 2001, SEC testimony described Enron's disclosure that three special-purpose entities previously kept outside its consolidated accounts should have been included. It separately discussed a reduction in shareholders' equity associated with notes received in exchange for Enron shares.\n\nThe disclosures concerned two related questions: which entities belonged in Enron's reported accounts, and what value could be assigned to transactions involving its shares. Legal separation did not necessarily separate risk when control, guarantees or financial support continued to connect an entity to Enron.\n\n## The name of the structure does not decide the case\n\nA special-purpose entity is not inherently evidence of fraud. A separate legal structure may have legitimate uses. The questions are what it does, who controls it, who supplies its resources and who bears losses when the arrangement performs badly.\n\nCalling an arrangement complex explains little. Its significance depends on the obligations between the parties and what the published accounts allowed investors to see.\n\nA useful starting exercise is to follow an adverse outcome. If an asset falls in value, who is required or expected to support the structure? If a promise depends on the parent company's shares, what happens when those shares lose value? These questions expose dependencies that may be invisible in a list of formally separate entities.\n\nApplying those questions to a particular transaction requires its documents. An ownership chart can identify companies without revealing all the support promised between them.\n\n## The archive has procedural stages\n\nCorporate failures produce filings, testimony, complaints, settlements and judgments. Each has a different status. A complaint states allegations. A settlement can resolve a dispute under particular terms. A judgment establishes findings within its scope. Moving between them without labels can convert an accusation into an apparently settled fact.\n\nThe contemporary disclosures and later findings need separate dates. A reader's knowledge in 2001 cannot be reconstructed from evidence established afterward.\n\nAt the same time, uncertainty at an early stage does not make earlier questions irrelevant. An investigation can ask which warning signs were available and whether the institutions responsible for checking them did so.\n\n## What consolidation would change\n\nThe SEC's December 2001 testimony explains that Enron had disclosed that three previously unconsolidated special-purpose entities should have been included in its consolidated financial statements. It separately discusses a reduction in shareholders' equity associated with notes received in exchange for Enron shares. These are specific reporting issues, not one undifferentiated claim that the company was complicated.\n\nConsolidation concerns the boundary of the reported organization. If an entity belongs inside that boundary for accounting purposes, reporting it separately can change the reader's view of obligations and assets. A legal distinction between companies cannot settle that accounting question on its own.\n\nThe testimony also explains that an investor's capital being genuinely at risk mattered to the treatment of special-purpose entities under the guidance discussed then. A nominal external investor does not necessarily establish economic independence if its return is protected by another party.\n\nThe testimony describes the rules and disclosures discussed in 2001. It does not prescribe present-day accounting treatment. Its historical value is the connection it draws between formal separation and the financial relationships that could make that separation misleading.\n\nThe name on the entity did not settle who would bear its losses. That question depended on control, guarantees and financial support. The 2001 testimony helps trace those relationships within the accounting rules and disclosures being discussed then."
   },
   {
+    "slug": "equitable-life-guaranteed-annuities",
+    "title": "Equitable Life: Guarantees That Became More Expensive Than Expected",
+    "dek": "The British insurer's crisis connected long-dated guarantees, falling interest rates and policyholder fairness.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "insurance",
+      "guarantees",
+      "united kingdom"
+    ],
+    "description": "The British insurer's crisis connected long-dated guarantees, falling interest rates and policyholder fairness.",
+    "socialPreview": "The British insurer's crisis connected long-dated guarantees, falling interest rates and policyholder fairness.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Equitable Life Assurance Society overview",
+        "url": "https://en.wikipedia.org/wiki/The_Equitable_Life_Assurance_Society",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Equitable Life: Guarantees That Became More Expensive Than Expected against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "Equitable Life closed to new business in 2000 after legal and financial pressure related to guaranteed annuity-rate policies. The crisis affected policy values and produced long-running disputes over regulation and compensation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the guarantees, bonus policy, interest-rate environment and court decision without turning actuarial assumptions into certainty about later losses.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how a mutual insurer allocates costs among policyholder groups when past guarantees become expensive and no external shareholders absorb the change.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe absence of a dramatic bankruptcy can make Equitable Life less visible, even though the governance and regulatory consequences lasted for years.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Equitable Life Assurance Society overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "eschede-train-disaster",
+    "title": "Eschede: A Wheel Tire and the High-Speed System Around It",
+    "dek": "The 1998 German rail disaster linked wheel design, inspection and infrastructure interaction.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "rail",
+      "high speed",
+      "germany"
+    ],
+    "description": "The 1998 German rail disaster linked wheel design, inspection and infrastructure interaction.",
+    "socialPreview": "The 1998 German rail disaster linked wheel design, inspection and infrastructure interaction.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Eschede train disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Eschede_train_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Eschede: A Wheel Tire and the High-Speed System Around It against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "A high-speed Intercity Express train derailed near Eschede in June 1998 after failure of a wheel component, then struck bridge infrastructure. The disaster made component design and detection part of a larger systems inquiry.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace fatigue in the wheel tire, its interaction with track equipment, derailment and bridge collapse while carefully distinguishing sequence from causal contribution.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nEschede asks how design changes borrowed from other rail contexts are validated for high-speed service and how inspections detect cracks in safety-critical rotating parts.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe collapsed bridge dominates photographs, but the initiating wheel and the organizational path that approved it carry much of the transferable evidence.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Eschede train disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "ethiopian-airlines-961",
     "title": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching",
     "dek": "Ethiopian Airlines 961 connects a hijacking demand to a physical limit: the fuel available for the flight. The investigation records the resulting ditching while leaving limits on what can be reconstructed about the final moments.",
@@ -675,6 +1635,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 422,
     "publishedInArchive": true,
     "body": "The Boeing 767 carrying Ethiopian Airlines Flight 961 exhausted its fuel and ditched near the Comoros on 23 November 1996. Of 175 people aboard, 125 died and 50 survived. Three hijackers had demanded Australia despite the crew's warnings about fuel.\n\nThe investigating committee attributed the accident to unlawful interference leading to fuel exhaustion. The hijackers' destination demand exceeded the aircraft's remaining capability. Coercion also obstructed the crew's attempts to manage the emergency as the fuel available for any response continued to diminish.\n\n## Fuel does not negotiate\n\nA demand made aboard an aircraft does not change what the aircraft can physically do. Range depends on fuel, conditions and the aircraft's state, not on the urgency or confidence of the person giving an order. That mismatch is central to understanding this event.\n\nFuel warnings needed to reach people who could change the aircraft's course. The report records interference continuing as the available options narrowed; unrecorded exchanges cannot be reconstructed from what later appeared inevitable.\n\nA ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. The behavior of an aircraft on contact with water depends on many factors. Images of the outcome do not establish what would have happened under a different approach or at another location.\n\nPassenger actions deserve the same care. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence. The people aboard were acting with less information and less time than a later reader possesses.\n\n## Communication inside a damaged situation\n\nThe report describes cabin crew and the first officer helping passengers with life jackets before impact. It also notes that instructions were given in English and may not have been understood by everyone. Communication was taking place amid interference, limited access and a deteriorating emergency.\n\nA statement appearing in the final investigation does not establish that everyone in the cabin heard or understood it. The completed sequence available to a later reader was unavailable to people acting inside it.\n\nThe committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. It should not take selected observations and turn them into an individual explanation for every death.\n\nThe demand did not increase the fuel aboard. Interference narrowed the crew's choices as that fuel ran out. The film shows the ditching; the investigation supplies the cockpit and cabin evidence needed to explain the conditions that preceded it."
+  },
+  {
+    "slug": "exxon-valdez-response",
+    "title": "Exxon Valdez: Navigation, Fatigue and the Limits of Preparedness",
+    "dek": "The 1989 grounding made staffing, traffic oversight and an unready spill plan part of one record.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "oil spill",
+      "maritime",
+      "alaska"
+    ],
+    "description": "The 1989 grounding made staffing, traffic oversight and an unready spill plan part of one record.",
+    "socialPreview": "The 1989 grounding made staffing, traffic oversight and an unready spill plan part of one record.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Exxon Valdez oil spill overview",
+        "url": "https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Exxon Valdez: Navigation, Fatigue and the Limits of Preparedness against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "The tanker Exxon Valdez grounded on Bligh Reef in Prince William Sound in March 1989 and released crude oil into a remote coastal environment. Investigation and litigation examined navigation, watchkeeping and response readiness.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct the vessel's departure from the traffic lane, bridge staffing, turn sequence, grounding and early containment using official records rather than later corporate shorthand.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks whether a regional oil-transport system had response capacity proportionate to the cargo and geography it depended on.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nOne captain's conduct often carries the public story, while crew workload, traffic services and promised response equipment form a wider institutional record.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Exxon Valdez oil spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "farmington-mine-disaster-1968",
+    "title": "Farmington No. 9: The Explosion That Reshaped Federal Mine Law",
+    "dek": "The 1968 Farmington mine disaster linked an inaccessible underground scene to a national legislative response.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "mining",
+      "mine law",
+      "west virginia"
+    ],
+    "description": "The 1968 Farmington mine disaster linked an inaccessible underground scene to a national legislative response.",
+    "socialPreview": "The 1968 Farmington mine disaster linked an inaccessible underground scene to a national legislative response.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Farmington Mine disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Farmington_Mine_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Farmington No. 9: The Explosion That Reshaped Federal Mine Law against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 641,
+    "publishedInArchive": false,
+    "body": "Explosions and fire struck the Consol No. 9 mine near Farmington, West Virginia, in November 1968. Rescue efforts failed to reach many miners, and the mine was sealed while questions about methane, ventilation and oversight remained.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nBecause investigators could not immediately inspect every part of the mine, the article must distinguish physical evidence from inference and later reopening work.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe policy question is how catastrophe changes federal authority: what the 1969 mine-safety law required, what Farmington directly influenced and what came from the wider record of coal deaths.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe law that followed is easier to summarize than the evidentiary limits created by a burning, sealed mine and the families left without recoveries.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Farmington Mine disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "feyzin-refinery-fire-1966",
+    "title": "Feyzin: The Refinery Fire That Changed the Language of LPG Risk",
+    "dek": "A leaking storage sphere, road traffic and emergency operations converged at Feyzin in 1966.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "chemical safety",
+      "refinery",
+      "france"
+    ],
+    "description": "A leaking storage sphere, road traffic and emergency operations converged at Feyzin in 1966.",
+    "socialPreview": "A leaking storage sphere, road traffic and emergency operations converged at Feyzin in 1966.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Feyzin disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Feyzin_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Feyzin: The Refinery Fire That Changed the Language of LPG Risk against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 657,
+    "publishedInArchive": false,
+    "body": "The 1966 disaster at the Feyzin refinery near Lyon began with a release of liquefied petroleum gas and escalated through fire and vessel failure. The episode became a reference point for understanding boiling-liquid expanding-vapor explosions, but the technical label should not replace the event sequence.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nA finished account must reconstruct the release, ignition, heat exposure and failure of pressurized storage without treating every later LPG accident as identical. The positions of responders, road users and equipment are essential to the chronology.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nFeyzin raises questions about facility siting, traffic control, isolation systems and whether emergency plans recognized that responders themselves could be placed inside the escalation zone.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe acronym BLEVE often carries the story, while the organizational decisions that allowed a local release to threaten multiple vessels receive less attention.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Feyzin disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "fiu-pedestrian-bridge-collapse",
+    "title": "FIU Bridge: Cracking, Peer Review and the Hours Before Collapse",
+    "dek": "The 2018 pedestrian bridge collapse made visible cracking and divided authority central to the record.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "construction",
+      "florida"
+    ],
+    "description": "The 2018 pedestrian bridge collapse made visible cracking and divided authority central to the record.",
+    "socialPreview": "The 2018 pedestrian bridge collapse made visible cracking and divided authority central to the record.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "FIU pedestrian bridge collapse overview",
+        "url": "https://en.wikipedia.org/wiki/Florida_International_University_pedestrian_bridge_collapse",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for FIU Bridge: Cracking, Peer Review and the Hours Before Collapse against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "A pedestrian bridge under construction at Florida International University collapsed over an open roadway in March 2018. Engineers had discussed significant cracking and were conducting work on the structure before it fell.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must use the investigation to distinguish design errors, cracking observations, post-tensioning work and the immediate failure sequence.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nFIU raises questions about who had authority to close the road, how peer review was scoped and how alarming field evidence moved among designer, contractor, university and transportation officials.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe unusual bridge form attracts attention, but the central story is how a visible warning failed to trigger a protective operational decision.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with FIU pedestrian bridge collapse overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "flight-629-suitcase-bomb",
@@ -724,6 +1844,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Investigators reconstructed United Air Lines Flight 629 from fragments recovered after it broke apart following departure from Denver. All 44 people aboard were killed. The FBI's account describes recording the fragments' locations and assembling wreckage in a warehouse to help locate the explosion.\n\nInvestigators traced the baggage bomb to Jack Gilbert Graham, who had placed it in his mother's suitcase. He confessed and was convicted. He had also bought travel insurance on her life, although the policies' validity and potential payout must be established from their own records.\n\n## The private motive inside a shared journey\n\nA passenger's private relationships can become part of a transport system's risk without being visible to the other people using it. That is one of the disturbing features of a case in which a personal motive is carried aboard a shared flight.\n\nWreckage, financial records, witness evidence and a confession answered different questions in the investigation. The verdict followed that work rather than erasing the uncertainty at every earlier stage.\n\nThe insurance detail is particularly easy to oversimplify. Buying or possessing a policy does not necessarily establish its validity, its beneficiary or whether any payment could have been made. Claims about the intended financial outcome need the relevant records, not just the presence of insurance in the story.\n\nLikewise, a single case should not be described as having created modern airline security without a documented policy chain. A disaster can expose a vulnerability, contribute to debate or affect a later practice. Those are different claims, and chronology alone does not prove causation.\n\nThe inquiry also involved identifying those killed. That task continued alongside the search for the cause and perpetrator, and belongs in the record of the investigation.\n\n## Returning fragments to a place\n\nThe FBI's account describes investigators recording the locations of recovered material and assembling wreckage in a warehouse. This work placed fragments back in relation to the aircraft's structure. The resulting arrangement helped locate the explosion, rather than merely establishing that damaged metal existed.\n\nThat transformation is central to forensic reconstruction. A fragment's appearance matters, but so does where it was found and how it belongs beside other fragments. Removing location information can turn a potentially useful record into an isolated object. Preserving the relationship allows another investigator to examine the explanation.\n\nThe inquiry also involved identifying those killed. This was a distinct task, carried out alongside examination of the wreckage. A criminal case can become a story about how a perpetrator was caught while the labor of accounting for everyone aboard recedes from view.\n\nThe FBI retrospective presents an institutional account of reconstruction and identification. Preserving the sequence makes clear how suspicion, evidence and a jury finding came to concern the same crime.\n\nThe warehouse reconstruction turned scattered fragments into evidence of an explosion aboard a shared flight. Graham's conviction established the criminal case. Any account of the security changes that followed must trace those changes through the later policy record."
   },
   {
+    "slug": "flint-water-treatment-crisis",
+    "title": "Flint: A Water-Source Switch and the Missing Corrosion Control",
+    "dek": "The Flint crisis joined treatment chemistry, sampling rules, fiscal governance and residents' ignored evidence.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "drinking water",
+      "public health",
+      "michigan"
+    ],
+    "description": "The Flint crisis joined treatment chemistry, sampling rules, fiscal governance and residents' ignored evidence.",
+    "socialPreview": "The Flint crisis joined treatment chemistry, sampling rules, fiscal governance and residents' ignored evidence.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Flint water crisis overview",
+        "url": "https://en.wikipedia.org/wiki/Flint_water_crisis",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Flint: A Water-Source Switch and the Missing Corrosion Control against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 622,
+    "publishedInArchive": false,
+    "body": "Flint, Michigan, changed its drinking-water source in 2014 and distributed water without adequate corrosion control, contributing to lead release from plumbing. Residents' complaints and independent testing challenged official assurances.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish water-source quality, treatment decisions, pipe chemistry, sampling practice, blood-lead evidence and the separate Legionnaires' outbreak.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nFlint asks how emergency financial management, state regulation, local utilities and federal oversight divided authority while residents carried the exposure.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nA single decision to switch water sources is easy to identify, but the prolonged dismissal of household evidence is central to understanding why exposure continued.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Flint water crisis overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "flixborough-temporary-pipe",
     "title": "The Temporary Connection That Became the Plant",
     "dek": "At Flixborough, a modification belongs at the center of the safety story.",
@@ -771,6 +1931,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Before the 1974 Flixborough explosion, workers removed a damaged reactor and connected its neighbors with a bypass. The changed plant continued to operate. The explosion killed 28 workers; HSE's account identifies gaps in assessing and testing the modification while retaining uncertainty about parts of the initiating sequence.\n\nThe word temporary described the bypass's intended life, not a lesser engineering burden. Once the plant resumed operation, the new pipe, its supports and its connections had to contain the process material and withstand the demands of service.\n\n## The modification had measurable omissions\n\nHSE identifies specific gaps in the change process: limited integrity calculations, no calculations for the dog-legged arrangement or bellows, no drawing of the proposed modification and no pressure test of the installed pipework. These are distinct omissions, not interchangeable examples of a vague safety culture. Each would have supplied a different kind of evidence about the changed assembly. [HSE accident summary and technical failings](https://www.hse.gov.uk/comah/sragtech/caseflixboroug74.htm).\n\nA calculation asks how the proposed geometry behaves under stated assumptions. A drawing gives participants a shared description of that geometry. A test checks a particular property of the installed assembly under particular conditions. None can replace all the others. A successful pressure test, for example, would not by itself settle every question about movement or support during operation.\n\nThe bypass joined existing equipment. Its connections determined what it had to contain and how it could move. Assessing the pipe alone would leave the behavior of the joined assembly unresolved.\n\nThis is an interpretation of why the documented omissions matter, not an assertion that one additional document or test would certainly have prevented the explosion. The case is stronger when its known deficiencies remain specific and its unresolved initiating details remain unresolved.\n\n## Production through a changed machine\n\nThe size of a modification says little about the demand it creates. Shape, support and interaction with neighboring equipment determine how the changed plant behaves.\n\nDocumentation is often treated as something added after engineering. In a change process, a drawing can instead be a tool for making an assumption available to other people. Without a shared representation, a reviewer may be approving a different mental picture from the one a fabricator or operator has in mind.\n\nDocuments and tests are useful when they expose those assumptions. A drawing that goes unread or a test aimed at the wrong property supplies little assurance.\n\n## The lifespan of an exception\n\nAn exception can acquire the familiarity of a normal arrangement simply by remaining in use. Every uneventful day then becomes tempting evidence that it is acceptable. But uneventful operation may establish only that a particular combination of stresses has not yet occurred.\n\nThe management question is therefore not just who authorized the change. It is who knows it is still there, who understands the conditions attached to approval, and what would require it to be reconsidered. Temporary work needs an owner through its full lifetime, including removal or formal incorporation into the design.\n\nMaterial flowed through the assembly that had actually been built. Calling it temporary did not reduce those demands. Responsibility for the altered plant continued for as long as the bypass remained in service."
   },
   {
+    "slug": "genesis-sample-return-crash",
+    "title": "Genesis: The Sensor Installed Backwards",
+    "dek": "The 2004 sample-return crash showed how a small orientation error can bypass analysis, test and recovery plans.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "quality assurance",
+      "nasa"
+    ],
+    "description": "The 2004 sample-return crash showed how a small orientation error can bypass analysis, test and recovery plans.",
+    "socialPreview": "The 2004 sample-return crash showed how a small orientation error can bypass analysis, test and recovery plans.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Genesis spacecraft overview",
+        "url": "https://en.wikipedia.org/wiki/Genesis_(spacecraft)",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Genesis: The Sensor Installed Backwards against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "NASA's Genesis sample-return capsule struck the Utah desert in September 2004 after its parachutes failed to deploy. Investigation traced the failure to gravity switches installed in the wrong orientation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain what the switches were intended to sense, how orientation prevented the sequence and which tests could have revealed the problem without overstating the condition of recovered samples.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nGenesis asks how drawing interpretation, component heritage, inspection and end-to-end testing interact when a simple error sits inside a one-time sequence.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe backwards sensor offers a memorable punch line, but it should lead into the verification system that accepted it rather than close the story.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Genesis spacecraft overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "great-molasses-flood",
     "title": "Boston’s Molasses Flood: An Industrial Tank Failure in a Crowded District",
     "dek": "Boston’s molasses flood made a familiar industrial material destructive at an unfamiliar scale. The casualty record is firmer than the engineering and legal explanations available in the short source used here.",
@@ -816,6 +2016,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 479,
     "publishedInArchive": true,
     "body": "A Boston storage tank burst on 15 January 1919, releasing at least 2.2 million gallons of molasses. NOAA's historical spill overview reports 21 deaths and 150 injuries. The familiar food material had been stored at a scale far removed from its ordinary use.\n\nMolasses made the disaster memorable. The scale of its storage made it dangerous: an industrial inventory escaped containment into an inhabited district. Understanding the tank and the people around it requires setting aside the household quantities with which the material was familiar.\n\n## The material matters\n\nA stored liquid has weight. A large volume released into streets can impose forces and create conditions that are entirely unlike its behavior in a jar. Familiarity with a household quantity is not an adequate intuition for an industrial inventory.\n\nExplaining the failure requires the tank's design, condition and supporting engineering evidence. NOAA's short overview establishes the release and reported toll, but cannot settle every structural or legal claim.\n\nNOAA's spill history helps locate the event within a wider class of releases. Its breadth is also a limitation for a detailed article. A short agency overview cannot establish every claim about the tank, the legal aftermath or the people killed. Those details should be sourced to records specific to Boston's disaster.\n\nThe streets around a storage tank are occupied routes, not empty capacity for a spill. People using them need not know the condition of the industrial inventory beside them.\n\n## Familiarity changes with quantity\n\nA jar and a storage tank contain the same named material in very different arrangements. The tank places a large inventory above and beside people who may not be involved in using it. Once containment is lost, the surroundings become part of the event.\n\nThis is a general explanation of why an industrial spill can be dangerous, rather than a calculation of the Boston flow. A numerical reconstruction would need the tank geometry, release conditions, terrain and changing properties of the material. The unusual name cannot supply those inputs.\n\nNOAA's overview also discusses a much later molasses release in Honolulu. The comparison is useful because it shows that a familiar food material can pose different kinds of harm in different settings. It does not establish that the Boston and Honolulu events shared a cause or an identical environmental outcome.\n\nIn particular, NOAA distinguishes its suggestion of possible historical fish impacts in Boston from detailed documentation. That qualification should stay attached to the claim rather than becoming another assured consequence in a retelling.\n\nScale changed the consequences of losing containment. A numerical account of the Boston flow would need geometry, terrain and material conditions that the overview does not supply.\n\nThe tank failed and an industrial quantity entered the streets. That is the established event. Its structural causes require engineering records, and its influence on later standards requires a documented connection to the rules that followed."
+  },
+  {
+    "slug": "grenfell-tower-fire",
+    "title": "Grenfell Tower: Refurbishment, Compartmentation and a Failed Safety System",
+    "dek": "The 2017 London fire connected exterior materials, building regulation, resident warnings and emergency doctrine.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "building safety",
+      "fire",
+      "london"
+    ],
+    "description": "The 2017 London fire connected exterior materials, building regulation, resident warnings and emergency doctrine.",
+    "socialPreview": "The 2017 London fire connected exterior materials, building regulation, resident warnings and emergency doctrine.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Grenfell Tower fire overview",
+        "url": "https://en.wikipedia.org/wiki/Grenfell_Tower_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Grenfell Tower: Refurbishment, Compartmentation and a Failed Safety System against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 631,
+    "publishedInArchive": false,
+    "body": "Fire spread rapidly through Grenfell Tower in June 2017 after beginning in a flat. The public inquiry examined exterior cladding and insulation, cavity barriers, windows, internal systems, regulation and the emergency response.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish the initiating appliance fire from the pathways that carried fire and smoke through the building, using inquiry findings for each component.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nGrenfell asks how testing, product marketing, design, approval, inspection, ownership and firefighting doctrine formed a system that residents had repeatedly warned was unsafe.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe cladding is a necessary focus but not a complete explanation; the inquiry record reaches through decades of regulatory and institutional choices.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Grenfell Tower fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "halifax-recording-a-city",
@@ -872,6 +2112,246 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "The Halifax Explosion on 6 December 1917 left a casualty record that changed as documents were assembled and corrected. Nova Scotia Archives distinguishes a 1918 directory with 1,535 identified victims, an official register with 1,631 entries and a combined database with 1,782 names.\n\nThe totals belong to different records. The harbor collision involving the ammunition ship Mont-Blanc was one event; identifying everyone killed became a continuing undertaking. Registers, correspondence and corrections changed the record as more information reached the people compiling it.\n\nA relief application and a personal letter may concern the same household while describing it in very different terms. One asks for information that an institution can process. The other may preserve details irrelevant to an eligibility rule but central to a life. Neither should be mistaken for a complete portrait.\n\n### A list is made for a purpose\n\nNames in disaster records are not simply found and assembled. They are collected through procedures. An investigator should ask when a list was compiled, which sources it used and what counted as inclusion. Changes across versions can reflect corrections, different definitions or information arriving later.\n\nThe same is true of photographs. A camera records a view from a position. The image may establish damage visible at that location, but it cannot establish the condition of an entire city or tell us what happened outside the frame. Captions need their own verification rather than inheriting authority from the photograph's age.\n\n### The number and its sources\n\nNova Scotia Archives explains how its remembrance database was assembled and revised. Its account distinguishes a 1918 directory listing 1,535 identified victims, an official fatalities register containing 1,631 entries when it closed in December 1918, and a combined database listing 1,782 names. These are records produced through different procedures, not three interchangeable estimates.\n\nThe archive describes integrating the official register after its transfer in 2004, adding corrections and linking digitized pages to individuals. It also warns that some names may never be recovered. The database's apparent precision therefore coexists with an explicit limit on completeness.\n\nA revised count can reflect another source, a corrected identity or a discrepancy resolved against archival material. Publishing the records behind the revision makes that change inspectable.\n\nThe database links numbers to named people and surviving documents. Its limit is equally visible: the archive warns that some names may never be recovered.\n\n### Reading across the files\n\nThe richest reconstruction often comes from bringing documents into a relationship they did not originally have. A street address can connect an image to a relief record. A name can connect a family letter to an official account. The connection should be recorded carefully enough that another reader can follow it.\n\nAt the same time, a gap must remain a gap. Two similar names do not establish one identity. A plausible route through a damaged street is not evidence that a particular person took it. Archival writing becomes fiction when it silently fills those spaces to maintain narrative momentum.\n\nThe rebuilding of streets could not restore the details lost with their inhabitants. Registers, relief files and letters preserved different fragments. Connecting them carefully can recover a fuller record without pretending that the remaining gaps have disappeared."
   },
   {
+    "slug": "hartford-civic-center-roof",
+    "title": "Hartford Civic Center: The Space-Frame Roof That Sagged Overnight",
+    "dek": "The 1978 collapse occurred hours after a crowd left, exposing analysis and review weaknesses without a mass casualty event.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "structural failure",
+      "roof",
+      "connecticut"
+    ],
+    "description": "The 1978 collapse occurred hours after a crowd left, exposing analysis and review weaknesses without a mass casualty event.",
+    "socialPreview": "The 1978 collapse occurred hours after a crowd left, exposing analysis and review weaknesses without a mass casualty event.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Hartford Civic Center history",
+        "url": "https://en.wikipedia.org/wiki/PeoplesBank_Arena",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Hartford Civic Center: The Space-Frame Roof That Sagged Overnight against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "The roof of the Hartford Civic Center Coliseum collapsed under snow in January 1978, hours after the building had held thousands of spectators. Investigation examined the space-frame design, computer analysis and construction deviations.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate design assumptions, member behavior, connection details, observed deflection and snow loading rather than presenting snow as the sole cause.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how novel computer-aided analysis is independently checked and how visible deformation is interpreted once a building is in service.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nBecause the building was empty, the collapse is less remembered than deadlier failures, although the near miss makes its review lessons unusually important.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Hartford Civic Center history. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "hawks-nest-tunnel-silica",
+    "title": "Hawks Nest: The Tunnel, the Dust and the Workers Missing from the Count",
+    "dek": "Silica exposure during tunnel construction in West Virginia produced illness whose full toll remains disputed.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "occupational health",
+      "silica",
+      "labor"
+    ],
+    "description": "Silica exposure during tunnel construction in West Virginia produced illness whose full toll remains disputed.",
+    "socialPreview": "Silica exposure during tunnel construction in West Virginia produced illness whose full toll remains disputed.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Hawks Nest Tunnel disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Hawks_Nest_Tunnel_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Hawks Nest: The Tunnel, the Dust and the Workers Missing from the Count against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 643,
+    "publishedInArchive": false,
+    "body": "Workers drilling the Hawks Nest Tunnel in West Virginia during the early 1930s were exposed to intense silica dust, and many developed acute silicosis. The project sits at the intersection of industrial medicine, migrant labor and incomplete death records.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must distinguish diagnosed cases, reported deaths, later estimates and the different periods over which illness appeared. Work methods and dust controls require evidence from hearings and medical records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nHawks Nest asks whose illness becomes visible when a temporary workforce is dispersed and when employment, medical and burial records are controlled by different institutions.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe disaster is often assigned one toll, but the unstable count is itself evidence about labor precarity and recordkeeping.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Hawks Nest Tunnel disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "healthsouth-earnings-fraud",
+    "title": "HealthSouth: The Meeting Where Earnings Gaps Became Entries",
+    "dek": "The HealthSouth case showed how many small asset entries could be used to bridge a corporate earnings target.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "accounting fraud",
+      "healthcare",
+      "governance"
+    ],
+    "description": "The HealthSouth case showed how many small asset entries could be used to bridge a corporate earnings target.",
+    "socialPreview": "The HealthSouth case showed how many small asset entries could be used to bridge a corporate earnings target.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "HealthSouth accounting scandal overview",
+        "url": "https://en.wikipedia.org/wiki/HealthSouth#Accounting_scandal",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for HealthSouth: The Meeting Where Earnings Gaps Became Entries against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 624,
+    "publishedInArchive": false,
+    "body": "Federal authorities accused HealthSouth executives of systematically inflating earnings before the fraud became public in 2003. Accounts of the scheme describe meetings, target gaps and entries designed to avoid auditor attention.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate allegations, guilty pleas, trial outcomes and SEC findings, and verify how entries were divided, recorded and concealed.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nHealthSouth asks how a finance function can normalize repeated fraudulent adjustment when participation is distributed and performance expectations come from the top.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe chief executive's acquittal on criminal charges complicates any simple story and requires careful separation of company fraud from individual verdicts.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with HealthSouth accounting scandal overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "herald-of-free-enterprise-capsize",
+    "title": "Herald of Free Enterprise: An Open Door and a Company-Wide Failure",
+    "dek": "The 1987 ferry capsize became a defining case in moving beyond blame of the last operator.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "maritime",
+      "safety culture",
+      "belgium"
+    ],
+    "description": "The 1987 ferry capsize became a defining case in moving beyond blame of the last operator.",
+    "socialPreview": "The 1987 ferry capsize became a defining case in moving beyond blame of the last operator.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Herald of Free Enterprise overview",
+        "url": "https://en.wikipedia.org/wiki/MS_Herald_of_Free_Enterprise",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Herald of Free Enterprise: An Open Door and a Company-Wide Failure against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "The roll-on/roll-off ferry Herald of Free Enterprise capsized shortly after leaving Zeebrugge in March 1987 with its bow doors open. The inquiry examined ship stability, departure checks and management practices.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must reconstruct loading, trim, door status, acceleration and flooding while separating the immediate omission from conditions that made the omission undetected.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe disaster asks how a company designs confirmation, staffing and responsibility for a safety-critical state that is not visible from the bridge.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe open doors are a simple image; the inquiry's description of a wider disease of sloppiness is the harder organizational record to test and explain.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Herald of Free Enterprise overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "hillsborough-crowd-disaster",
+    "title": "Hillsborough: Crowd Safety, Police Decisions and the Long Correction of the Record",
+    "dek": "The 1989 disaster became as much a history of evidence and official narrative as of stadium design.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Culture",
+    "tags": [
+      "crowd safety",
+      "public accountability",
+      "england"
+    ],
+    "description": "The 1989 disaster became as much a history of evidence and official narrative as of stadium design.",
+    "socialPreview": "The 1989 disaster became as much a history of evidence and official narrative as of stadium design.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Hillsborough disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Hillsborough_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Hillsborough: Crowd Safety, Police Decisions and the Long Correction of the Record against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "A fatal crowd crush occurred at Hillsborough stadium in April 1989 during an FA Cup semifinal. Later inquiries and inquests overturned early narratives that blamed supporters and examined police command, stadium layout and emergency response.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct turnstile congestion, gate opening, movement into central pens, barrier loading and emergency actions from the corrected evidentiary record.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nHillsborough asks how authorities create an official story after disaster and how families, journalists and independent review can expose alteration, omission or misinterpretation of evidence.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe long campaign for truth is inseparable from the event because the original public account shaped accountability for decades.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Hillsborough disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "hubble-spherical-aberration",
+    "title": "Hubble's Mirror: A Precise Shape Built From the Wrong Reference",
+    "dek": "The telescope's original optical flaw showed how measurement equipment can make a wrong result look exact.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "optics",
+      "quality assurance"
+    ],
+    "description": "The telescope's original optical flaw showed how measurement equipment can make a wrong result look exact.",
+    "socialPreview": "The telescope's original optical flaw showed how measurement equipment can make a wrong result look exact.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Hubble Space Telescope flawed mirror overview",
+        "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope#Flawed_mirror",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Hubble's Mirror: A Precise Shape Built From the Wrong Reference against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "After Hubble Space Telescope entered orbit in 1990, images revealed spherical aberration in its primary mirror. Investigation traced the error to the optical test setup used during fabrication, while other test evidence had indicated a problem.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the null corrector, mirror figure and conflicting measurements without treating precision as accuracy.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nHubble asks how teams respond when one authoritative instrument disagrees with other tests and when schedule or organizational boundaries discourage resolving the discrepancy.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe later repair mission creates a triumphant ending; the manufacturing investigation remains a powerful record of calibrated error and ignored contradiction.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Hubble Space Telescope flawed mirror overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "hyatt-load-path",
     "title": "Follow the Weight",
     "dek": "The Hyatt walkway collapse makes a connection detail—and the route taken by a load—the center of the story.",
@@ -917,6 +2397,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 527,
     "publishedInArchive": false,
     "body": "The walkways that collapsed at Kansas City's Hyatt Regency hotel in 1981 had two distinct design problems. The original box-beam connection lacked adequate capacity. A later change to the hanger rods added the lower walkway's load to the upper connections, essentially doubling their demand, according to the National Bureau of Standards.\n\nThe alteration made an already inadequate connection carry more. Restoring the original rod arrangement would therefore have addressed only one of the two defects. Investigators had to reconstruct the load demanded of the connection and measure its capacity, rather than assume the original drawing described a safe structure.\n\n## What changed at the connection\n\nThe National Bureau of Standards' report separates two defects that are often collapsed into one. The original box-beam connection already had inadequate capacity. During construction, the hanger arrangement was then changed from continuous rods passing through both walkway levels to separate sets of rods. In the built arrangement, the lower walkway hung from the upper walkway, adding its load to the upper connections. The report describes the demand at those connections as essentially doubled. Reverting to the original arrangement would therefore not have established an adequate design. [NBS report, abstract and executive summary](https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf).\n\nThe two defects required separate answers. Checking the capacity of the original detail would not establish the safety of the changed load path; checking the alteration would not repair an inadequate original connection.\n\nConsider a simplified comparison, not a numerical reconstruction of the hotel. Two shelves can each transfer their weight directly to a common support. If the lower shelf is instead suspended from the upper shelf, part of the upper assembly now carries both. Nothing about the shelves' familiar appearance establishes that the new connection can do that work. The comparison explains the topology of the change; the report's tests and measurements establish the actual failure.\n\n## The same pieces, a different demand\n\nA load path follows the weight from the walkway through its connections and supports. Changing that route can change the demand on a joint even when the visible components look much the same.\n\nThe load-path comparison explains which connection receives the weight; it does not calculate the hotel's structural capacity. That required the investigators' drawings, material examinations, tests and analytical studies. The explanatory sketch and the capacity assessment answer different questions.\n\n## Reviewing the changed drawing\n\nConstruction moves through many representations: design documents, shop drawings, requests for clarification, site observations and revisions. A review mark can be interpreted as approval of different things by different people. The record has to establish what was submitted, what was reviewed and what was built.\n\nA review must establish which detail was submitted, what the approval covered and whether the built connection matched it. Calling the problem a communication failure leaves those decisions unexamined.\n\nThe practical force of the case is that structures are not collections of independently safe parts. Their arrangement determines what those parts must do. A detail that changes a route can change a demand.\n\nThe rods determined where the weight went. The connection determined whether it could be carried. Explaining the collapse requires both the engineering measurements and the decisions that joined those parts together."
+  },
+  {
+    "slug": "i35w-mississippi-bridge-collapse",
+    "title": "I-35W: Gusset Plates, Added Weight and the Limits of Routine Inspection",
+    "dek": "The 2007 Minneapolis bridge collapse linked an original design error to decades of modification and loading.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "design review",
+      "minnesota"
+    ],
+    "description": "The 2007 Minneapolis bridge collapse linked an original design error to decades of modification and loading.",
+    "socialPreview": "The 2007 Minneapolis bridge collapse linked an original design error to decades of modification and loading.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "I-35W Mississippi River bridge overview",
+        "url": "https://en.wikipedia.org/wiki/I-35W_Mississippi_River_bridge",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for I-35W: Gusset Plates, Added Weight and the Limits of Routine Inspection against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "The Interstate 35W bridge over the Mississippi River collapsed during evening traffic in August 2007. Investigation identified undersized gusset plates and examined construction loads, prior modifications and inspection history.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe technical story must explain how gusset plates connect truss members, how design thickness was determined and how later dead load and temporary construction materials affected demand.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks why routine inspections focused on condition could miss an original design-capacity error not visible as ordinary deterioration.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nImages of the fallen deck dominate the event, while the mismatch between inspection for damage and review of design calculations carries the broader lesson.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with I-35W Mississippi River bridge overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "imperial-sugar-dust-explosion",
+    "title": "Imperial Sugar: The Dust Hazard Hidden in Routine Production",
+    "dek": "The 2008 explosion at Port Wentworth showed how combustible dust can accumulate inside ordinary material-handling systems.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "combustible dust",
+      "food industry",
+      "georgia"
+    ],
+    "description": "The 2008 explosion at Port Wentworth showed how combustible dust can accumulate inside ordinary material-handling systems.",
+    "socialPreview": "The 2008 explosion at Port Wentworth showed how combustible dust can accumulate inside ordinary material-handling systems.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "CSB Imperial Sugar final report",
+        "url": "https://www.csb.gov/UserFiles/file/Imperial%20Sugar%20Report%20Final%20updated.pdf",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Imperial Sugar: The Dust Hazard Hidden in Routine Production against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 643,
+    "publishedInArchive": false,
+    "body": "An explosion and fire at the Imperial Sugar refinery in Port Wentworth, Georgia, in February 2008 spread through areas where sugar dust had accumulated. This article asks how a familiar product became fuel across connected spaces.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must distinguish the suspected initiating event from the secondary explosions that propagated through dust layers and enclosed handling equipment. Housekeeping, enclosure changes and ventilation need dated evidence.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nImperial Sugar tests whether hazards outside a company's main product narrative receive the same engineering attention as the production process itself.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nSugar appears benign in daily life, which makes the hazard easy to tell as a surprise; the record instead points toward known combustible-dust behavior and preventable accumulation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with CSB Imperial Sugar final report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "iraq-poison-grain",
@@ -966,6 +2526,326 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Iraqi farmers and their families developed mercury poisoning after consuming treated grain in 1971–72. A 1976 medical account records 6,530 hospital admissions and 459 deaths among those admitted. It also describes milder cases treated as outpatients.\n\nThe admission figures omit people treated as outpatients. Recognition was also delayed: symptoms could appear as much as sixty days after consumption. The authors considered that interval probably a major contributor to the outbreak's size, complicating both the identification of the hazard and the counting of its effects.\n\n## A warning must reach a decision\n\nA warning label is an object placed on a product. Effective warning is a process in which someone notices information, understands its relevance and can act on it. The two should not be treated as equivalent.\n\nA seed distribution program and a hungry household can encounter the same grain with different assumptions. The program may classify it by intended use. The household may see a material that could become food. Describing that gap is not the same as assigning blame to recipients. It asks whether the system anticipated the conditions in which the material would actually be handled.\n\nThe incident-specific medical account supplies an important distinction between hospitalized cases and the wider affected population. It does not, through its abstract alone, establish the complete distribution history or what every household understood.\n\nHospital admissions, outpatient visits and deaths count different outcomes. Estimates of unrecorded cases require a method rather than simply a larger total.\n\nA product's intended use does not establish how it will be handled after distribution. Whether a warning was understood, or could be acted on, requires evidence about the circumstances in which recipients encountered it.\n\n## The delay before symptoms\n\nAl-Tikriti and Al-Mufti identify a latency of as much as sixty days between consumption and symptoms as probably a major contributor to the outbreak's size. That statement is an interpretation by the authors. It connects the timing of illness with the difficulty of recognizing a dangerous practice while it continues.\n\nAn immediate unpleasant effect can provide rapid feedback. Delayed illness leaves a longer interval in which a material may appear harmless. A household's experience during that interval cannot be described as knowledge of the later outcome. The relevant question is what warning and evidence were available before symptoms made the danger apparent.\n\nThe medical account's denominator is just as important as its timing. The 459 deaths occurred among the hospitalized cases it reports. People seen only as outpatients belong to the account too, but not to that hospital denominator. Adding them requires information about a different population.\n\nThis gives the historical record two boundaries: the time between exposure and recognition, and the boundary of the institutions counting cases. Both affect what becomes visible. Neither implies that the suffering outside a recorded category was unimportant.\n\nThe available medical abstract supports the account of consumption, illness, delayed symptoms and counted hospital cases. It cannot establish the warning language, distribution history or decisions of every household.\n\nFamilies could consume the grain before illness revealed the danger. Some cases reached hospitals; milder ones were treated outside them. The delay and the hospital denominator explain why the published figures must be read as a defined count, not a complete measure of everyone affected."
   },
   {
+    "slug": "iroquois-theatre-fire",
+    "title": "Iroquois Theatre: Fireproof Claims and Exits That Did Not Work",
+    "dek": "The 1903 Chicago fire exposed the distance between a building's reputation and its actual evacuation systems.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Culture",
+    "tags": [
+      "fire safety",
+      "theatre",
+      "chicago"
+    ],
+    "description": "The 1903 Chicago fire exposed the distance between a building's reputation and its actual evacuation systems.",
+    "socialPreview": "The 1903 Chicago fire exposed the distance between a building's reputation and its actual evacuation systems.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Iroquois Theatre fire overview",
+        "url": "https://en.wikipedia.org/wiki/Iroquois_Theatre_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Iroquois Theatre: Fireproof Claims and Exits That Did Not Work against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "Fire swept through Chicago's Iroquois Theatre during a performance in December 1903. The building had been promoted as fireproof, yet stage protection, exits, doors and crowd movement failed under real conditions.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct ignition and stage-fire development, smoke and flame movement, door operation and exterior escape conditions from inquest and contemporary records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how inspection, licensing, commercial promotion and opening schedules allowed an entertainment venue to operate before protective systems were complete or usable.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe word fireproof became an indictment after the fire; the article should show exactly which protections the claim implied and which were absent.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Iroquois Theatre fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "ixtoc-i-blowout",
+    "title": "Ixtoc I: Nine Months of Oil From a Shallow-Water Blowout",
+    "dek": "The 1979 Gulf of Mexico blowout tested drilling control and spill response long before Deepwater Horizon.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "oil spill",
+      "offshore drilling",
+      "mexico"
+    ],
+    "description": "The 1979 Gulf of Mexico blowout tested drilling control and spill response long before Deepwater Horizon.",
+    "socialPreview": "The 1979 Gulf of Mexico blowout tested drilling control and spill response long before Deepwater Horizon.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Ixtoc I oil spill overview",
+        "url": "https://en.wikipedia.org/wiki/Ixtoc_I_oil_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Ixtoc I: Nine Months of Oil From a Shallow-Water Blowout against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "The Ixtoc I exploratory well blew out in the Bay of Campeche in June 1979 and released oil for months before it was brought under control. The spill affected waters and shorelines across national boundaries.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must establish drilling conditions, loss of circulation, blowout-preventer operation and the sequence of capping and relief-well efforts from technical records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nIxtoc asks how offshore operators and governments learn from a prolonged uncontrolled well and whether those lessons remain available across companies, countries and decades.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nDeepwater Horizon now dominates Gulf spill memory, making Ixtoc easy to treat as a historical footnote rather than a prior full-scale warning.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Ixtoc I oil spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "japan-airlines-123-bulkhead",
+    "title": "Japan Airlines 123: A Repair, Decompression and Thirty-Two Minutes",
+    "dek": "The 1985 crash connected an earlier tailstrike repair to loss of flight-control systems years later.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "aviation",
+      "maintenance",
+      "japan"
+    ],
+    "description": "The 1985 crash connected an earlier tailstrike repair to loss of flight-control systems years later.",
+    "socialPreview": "The 1985 crash connected an earlier tailstrike repair to loss of flight-control systems years later.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Japan Air Lines Flight 123 overview",
+        "url": "https://en.wikipedia.org/wiki/Japan_Air_Lines_Flight_123",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Japan Airlines 123: A Repair, Decompression and Thirty-Two Minutes against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 639,
+    "publishedInArchive": false,
+    "body": "Japan Airlines Flight 123 lost control after a structural failure and decompression in August 1985, remaining airborne for more than half an hour before impact. Investigation traced the failure to an improper repair after an earlier tailstrike.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the pressure-bulkhead repair, fatigue growth, vertical-tail damage and hydraulic-system loss while separating investigative findings from later debates over rescue timing.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe systems issue is how a repair is designed, approved, inspected and carried forward through years of service after the original damage leaves organizational memory.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe exceptional duration of the uncontrolled flight and the existence of survivors can overshadow the quieter maintenance-document trail that began years earlier.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Japan Air Lines Flight 123 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "kelly-barnes-dam-failure",
+    "title": "Kelly Barnes Dam: Rainfall, Modification and a Lost Design Record",
+    "dek": "The 1977 Georgia dam failure exposed the difficulty of assessing an old structure without complete plans.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "dam failure",
+      "rainfall",
+      "georgia"
+    ],
+    "description": "The 1977 Georgia dam failure exposed the difficulty of assessing an old structure without complete plans.",
+    "socialPreview": "The 1977 Georgia dam failure exposed the difficulty of assessing an old structure without complete plans.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Kelly Barnes Dam overview",
+        "url": "https://en.wikipedia.org/wiki/Kelly_Barnes_Dam",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Kelly Barnes Dam: Rainfall, Modification and a Lost Design Record against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 624,
+    "publishedInArchive": false,
+    "body": "Kelly Barnes Dam failed above Toccoa Falls College in November 1977 after heavy rain. Investigators had to reconstruct a structure that had been built and modified over decades without a complete modern design record.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate rainfall loading, reservoir rise, embankment geometry and possible internal erosion, while respecting the uncertainty stated in the investigation.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nKelly Barnes asks how ownership and regulators should evaluate legacy dams whose construction history, materials and modifications are only partly documented.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe nighttime flood is the remembered moment; the missing drawings and incremental changes are the quieter institutional story.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Kelly Barnes Dam overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "kings-cross-fire",
+    "title": "King's Cross: A Small Escalator Fire and the Trench Effect",
+    "dek": "The 1987 London Underground fire changed understanding of flame behavior on inclined escalators.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "fire safety",
+      "transit",
+      "london"
+    ],
+    "description": "The 1987 London Underground fire changed understanding of flame behavior on inclined escalators.",
+    "socialPreview": "The 1987 London Underground fire changed understanding of flame behavior on inclined escalators.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "King's Cross fire overview",
+        "url": "https://en.wikipedia.org/wiki/King%27s_Cross_fire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for King's Cross: A Small Escalator Fire and the Trench Effect against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 635,
+    "publishedInArchive": false,
+    "body": "A fire beneath a wooden escalator at King's Cross St Pancras station in November 1987 suddenly intensified and spread into the ticket hall. Investigation used experiments to explain the rapid flame development.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace ignition, concealed burning, airflow, escalator geometry and flashover, distinguishing the later trench-effect model from what responders knew that night.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how repeated small fires can be normalized within an organization and how station staffing and emergency command respond when an incident changes scale abruptly.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe scientific explanation is striking, but it should not eclipse the history of prior escalator fires and institutional assumptions that they would remain manageable.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with King's Cross fire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "kingston-coal-ash-spill",
+    "title": "Kingston: The Coal-Ash Impoundment That Moved Like a Flood",
+    "dek": "The 2008 Tennessee spill turned a utility waste pond into a national question about ash storage.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "coal ash",
+      "dam failure",
+      "tennessee"
+    ],
+    "description": "The 2008 Tennessee spill turned a utility waste pond into a national question about ash storage.",
+    "socialPreview": "The 2008 Tennessee spill turned a utility waste pond into a national question about ash storage.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Kingston Fossil Plant coal fly ash slurry spill overview",
+        "url": "https://en.wikipedia.org/wiki/Kingston_Fossil_Plant_coal_fly_ash_slurry_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Kingston: The Coal-Ash Impoundment That Moved Like a Flood against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "A coal-fly-ash impoundment at the Tennessee Valley Authority's Kingston plant failed in December 2008, releasing a large volume of ash slurry across nearby land and waterways. Cleanup and worker-health disputes continued for years.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace foundation conditions, upstream construction, water levels and progressive failure using engineering reports, while separately examining cleanup exposure claims.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nKingston asks why combustion waste was managed through dam-like structures under a regulatory category different from conventional hazardous waste or water dams.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe gray flood is visually clear; the classification of ash, the workforce that removed it and the long litigation record are less immediate.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Kingston Fossil Plant coal fly ash slurry spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "knight-capital-trading-incident",
+    "title": "Knight Capital: Forty-Five Minutes of Uncontrolled Orders",
+    "dek": "A 2012 software deployment activated obsolete behavior and generated a market-loss spiral.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "trading",
+      "software deployment",
+      "operational risk"
+    ],
+    "description": "A 2012 software deployment activated obsolete behavior and generated a market-loss spiral.",
+    "socialPreview": "A 2012 software deployment activated obsolete behavior and generated a market-loss spiral.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Knight Capital Group overview",
+        "url": "https://en.wikipedia.org/wiki/Knight_Capital_Group",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Knight Capital: Forty-Five Minutes of Uncontrolled Orders against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "Knight Capital suffered severe losses in August 2012 after a software deployment caused systems to send unintended orders into the market. The incident unfolded rapidly across servers running inconsistent code.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain deployment state, reused flags, server differences, order generation and attempts to diagnose the problem using regulatory findings.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how a financial firm controls releases when software has direct authority to commit capital at machine speed and rollback is not instantaneous.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe loss total and short duration make the incident sound like a freak bug; deployment discipline and dormant code created the conditions.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Knight Capital Group overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "lac-megantic-rail-disaster",
+    "title": "Lac-Mégantic: An Unattended Train and a Town Below the Grade",
+    "dek": "The 2013 derailment joined securement, locomotive fire, tank cars and regulatory oversight.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "rail",
+      "hazardous materials",
+      "canada"
+    ],
+    "description": "The 2013 derailment joined securement, locomotive fire, tank cars and regulatory oversight.",
+    "socialPreview": "The 2013 derailment joined securement, locomotive fire, tank cars and regulatory oversight.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Lac-Mégantic rail disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Lac-M%C3%A9gantic_rail_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Lac-Mégantic: An Unattended Train and a Town Below the Grade against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 625,
+    "publishedInArchive": false,
+    "body": "An unattended freight train carrying crude oil rolled downhill and derailed in Lac-Mégantic, Quebec, in July 2013. The resulting fire devastated the town center and exposed several layers of rail-safety governance.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology must follow train securement, the locomotive fire, shutdown, loss of air brakes, movement, derailment and tank-car failures using official evidence.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how crew staffing, operating rules, company finances, regulator surveillance and tank-car standards combine around a high-consequence route.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe runaway train is the dominant image; the regulatory and commercial system that placed volatile cargo above a town is less visually immediate.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Lac-Mégantic rail disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "london-smog-ordinary-fuel",
     "title": "When Ordinary Smoke Could Not Leave",
     "dek": "London’s 1952 smog joins everyday fuel use to the weather conditions that trapped it.",
@@ -1013,6 +2893,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "From 5 to 9 December 1952, London's coal smoke accumulated beneath a layer of warmer air that restricted dispersal. Cold weather increased domestic coal use while industrial emissions added pollution. The Met Office records roughly 4,000 known deaths and cautions that the true toll could have been higher.\n\nCoal smoke was familiar. The conditions keeping it near the ground were exceptional. Exposure increased when cold weather encouraged more burning while the inversion restricted dispersal. The emissions and the weather explain the disaster together; neither supplies a complete account on its own.\n\n## The inversion was a condition, not an excuse\n\nThe Met Office describes an anticyclone whose descending air produced warmer air above cooler air near the ground. The inversion limited dispersal while cold weather increased domestic coal use. Industrial emissions also contributed. The episode lasted from 5 to 9 December 1952. The agency records roughly 4,000 known deaths while explicitly allowing that the true toll could be higher. [Met Office case study, formation and impacts](https://weather.metoffice.gov.uk/learn-about/weather/case-studies/great-smog).\n\nA simple conceptual balance helps. Pollution accumulates when material enters an area faster than it is removed or dispersed. This is not a fitted model of the 1952 episode; it is a way of understanding why familiar emissions can produce an unfamiliar exposure when atmospheric conditions change. Ordinary output is not a guarantee of ordinary concentration.\n\nThat principle also changes the meaning of preparedness. A city cannot assess an emissions pattern only under weather that usually carries the pollution away. It must ask what happens when that removal weakens.\n\nA later mortality estimate may use a longer follow-up period or a different method. Its total cannot be substituted for the contemporary count without explaining what changed.\n\n### A disaster without a single point of release\n\nAn explosion gives an investigator a time and a location to begin with. Distributed pollution can be harder to narrate. The harmful material may emerge from many ordinary activities, and no single chimney supplies a complete explanation.\n\nThe weather explains concentration; the history of fuel use explains what was available to concentrate. The two belong in the same account.\n\nIt would be too easy to call everyone responsible because many people burned coal. Responsibility is not distributed simply by counting chimneys. Households' choices depend on income, housing and access to fuel. Institutions have different capacities to alter infrastructure and set conditions. An analysis that treats every source of smoke as an equal exercise of power loses those differences.\n\n### What becomes visible afterward\n\nA photograph can show that a street was obscured. It cannot show all the exposure that followed someone indoors, nor can it establish which later death should be attributed to the episode. The image and the mortality analysis answer different questions.\n\nDifferences among mortality estimates can reflect follow-up periods and comparison methods. That uncertainty changes the meaning of a total without diminishing the reality of the disaster.\n\nThe smog also challenges the idea that an event ends when the view clears. Dispersal removes an immediate atmospheric condition. It does not reverse an injury or guarantee that the same conjunction cannot recur. An account concerned with prevention has to follow the ordinary systems beyond the extraordinary days.\n\nA change in the weather cleared the streets. It did not undo the injuries or remove the sources of smoke. The extraordinary episode had exposed a danger produced by the city's ordinary fuel use."
   },
   {
+    "slug": "long-term-capital-management-collapse",
+    "title": "LTCM: Convergence Trades, Leverage and a Private Rescue",
+    "dek": "The 1998 hedge-fund crisis showed how models and crowded positions can turn market stress into a system problem.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "hedge funds",
+      "leverage",
+      "financial stability"
+    ],
+    "description": "The 1998 hedge-fund crisis showed how models and crowded positions can turn market stress into a system problem.",
+    "socialPreview": "The 1998 hedge-fund crisis showed how models and crowded positions can turn market stress into a system problem.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Long-Term Capital Management overview",
+        "url": "https://en.wikipedia.org/wiki/Long-Term_Capital_Management",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for LTCM: Convergence Trades, Leverage and a Private Rescue against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "Long-Term Capital Management suffered severe losses in 1998 after market relationships moved against highly leveraged positions. The Federal Reserve Bank of New York facilitated discussions that produced a private-sector recapitalization.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish model assumptions, leverage, liquidity, counterparty exposures and the terms of the rescue without portraying the Federal Reserve as directly paying the fund's losses.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nLTCM asks how many counterparties can each manage bilateral risk while collectively creating a liquidation problem no one sees in full.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nNobel laureates and mathematical models make a compelling morality tale, but crowded trades, financing terms and dealer exposure are the more operational record.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Long-Term Capital Management overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "love-canal-home-as-evidence",
     "title": "When the Home Became an Environmental Record",
     "dek": "Love Canal asks how domestic experience enters an official account of contamination.",
@@ -1058,6 +2978,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 563,
     "publishedInArchive": false,
     "body": "New York announced plans to purchase affected homes at Love Canal in August 1978 as federal emergency assistance was approved. Residents in Niagara Falls were living near buried chemical waste. A January 1979 EPA account connects that emergency to the site's earlier disposal history and later residential development.\n\nThe canal was covered and transferred in 1953; homes and a school followed. Changing the use of the land did not remove the waste beneath it. By 1978, authorities faced decisions about protecting residents while the scientific questions were still being investigated.\n\nEPA's contemporary account records the responding institution's view. Community records and testimony are needed to understand how residents' concerns reached that process and how they experienced its uncertainty.\n\n### Between a complaint and a measurement\n\nEnvironmental evidence often enters through several doors. A resident notices an unusual condition. A medical record documents an illness. A sample detects a chemical. A historical document explains prior land use. Each item has value, but they do not establish the same thing.\n\nIt is possible to respect lived experience without claiming that every observation proves a particular causal chain. It is also possible to demand technically sound evidence in a way that leaves people indefinitely exposed while they wait. The difficult work lies in defining what evidence is sufficient for a protective decision and what evidence is needed for a more specific scientific conclusion.\n\nThose thresholds should not be silently exchanged. A precautionary relocation does not prove the cause of every illness. An unresolved causal question does not prove that remaining in place is harmless. An honest account can hold both statements at once.\n\n### The past beneath a new use\n\nEckardt Beck's January 1979 EPA Journal account places chemical disposal and later residential development within the same history of land. It describes the canal being covered and transferred in 1953, followed by homes and a school. The land acquired a new public meaning without losing the material consequences of its earlier use.\n\nA change in ownership or use does not ensure that the site's history reaches the people living there. Deeds, planning records and residents' knowledge can contain different information about the same location.\n\nBeck also reports the August 1978 announcement that New York would purchase affected homes and the approval of federal emergency assistance. These events belong to the response chronology, not to a final scientific verdict on every reported illness. They show authorities making consequential decisions while the account still describes questions under investigation.\n\nThe 1979 account is evidence of what EPA reported at that stage of the response. It is not a complete epidemiological assessment of every illness associated with the neighborhood.\n\n### The map and the mortgage\n\nAn official boundary can divide houses that otherwise look alike. For a resident, that boundary may affect the practical ability to move, obtain assistance or make plans. It is therefore more than a scientific outline. It is also an administrative decision with consequences.\n\nA relocation boundary needs an explanation of the evidence behind it and the assistance it makes available. Identifying a hazard and deciding who receives help are related but separate decisions.\n\nEvidence about buried waste became evidence about whether people could stay in their homes. Protective boundaries also determined who received help. At Love Canal, assessing the hazard and allocating the cost of responding to it were inseparable parts of the public decision."
+  },
+  {
+    "slug": "love-parade-crowd-disaster",
+    "title": "Love Parade 2010: A Single Access Route and Crowd Compression",
+    "dek": "The Duisburg disaster exposed how event planning, route geometry and divided authority shape crowd risk.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "crowd safety",
+      "events",
+      "germany"
+    ],
+    "description": "The Duisburg disaster exposed how event planning, route geometry and divided authority shape crowd risk.",
+    "socialPreview": "The Duisburg disaster exposed how event planning, route geometry and divided authority shape crowd risk.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Love Parade disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Love_Parade_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Love Parade 2010: A Single Access Route and Crowd Compression against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 631,
+    "publishedInArchive": false,
+    "body": "A deadly crowd disaster occurred at the Love Parade in Duisburg in July 2010 near a tunnel and ramp used for access to the festival grounds. Investigations and trials examined crowd flow, planning and operational decisions.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must map entry and exit streams, barriers, police lines, density, communication and the locations of falls without describing all deaths through one simple mechanism.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how organizer, city, police and contractors approve a plan when responsibility is distributed but physical capacity is not.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe word stampede can wrongly imply irrational movement; the record instead requires attention to constrained geometry and system-created density.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Love Parade disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "madoff-custody-and-verification",
+    "title": "Madoff: The Statements, the Custody and the Checks That Did Not Close",
+    "dek": "The Ponzi scheme persisted through fabricated trading records and repeated failures to verify assets independently.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "financial fraud",
+      "custody",
+      "regulation"
+    ],
+    "description": "The Ponzi scheme persisted through fabricated trading records and repeated failures to verify assets independently.",
+    "socialPreview": "The Ponzi scheme persisted through fabricated trading records and repeated failures to verify assets independently.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Madoff investment scandal overview",
+        "url": "https://en.wikipedia.org/wiki/Madoff_investment_scandal",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Madoff: The Statements, the Custody and the Checks That Did Not Close against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "Bernard Madoff's investment-advisory business collapsed in December 2008 and was revealed as a long-running Ponzi scheme. The record includes fabricated statements, feeder funds, warnings and multiple regulatory examinations.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish reported returns from actual cash flows, explain custody and trade verification, and separate criminal admissions from later estimates of losses and recoveries.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks why regulators, auditors, banks and sophisticated investors did not independently close the loop between claimed trades, held assets and reported performance.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nMadoff's personality can dominate the narrative, while the institutional value lies in the specific verification steps that were absent or ineffective.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Madoff investment scandal overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "malpasset-dam-failure",
+    "title": "Malpasset: A Thin-Arch Dam and the Rock Around It",
+    "dek": "The 1959 French dam failure made foundation geology as important as the concrete structure itself.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "dam failure",
+      "geology",
+      "france"
+    ],
+    "description": "The 1959 French dam failure made foundation geology as important as the concrete structure itself.",
+    "socialPreview": "The 1959 French dam failure made foundation geology as important as the concrete structure itself.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Malpasset Dam overview",
+        "url": "https://en.wikipedia.org/wiki/Malpasset_Dam",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Malpasset: A Thin-Arch Dam and the Rock Around It against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "The Malpasset Dam near Fréjus failed in December 1959 after heavy rain and rising reservoir levels. The catastrophe became a foundational case in understanding how a dam and its abutment geology behave as one system.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace reservoir conditions, observations, drainage and the later analysis of rock joints and uplift without reducing the failure to rainfall alone.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nMalpasset asks how design review incorporates uncertain geology and how operators act when water management, weather and incomplete instrumentation converge.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe elegance of the arch-dam design can dominate retrospective accounts, while the foundation and downstream warning problem remain less visible.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Malpasset Dam overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "mariner-1-guidance-failure",
+    "title": "Mariner 1: Guidance, Transcription and the Myth of a Missing Hyphen",
+    "dek": "The 1962 launch failure became a software legend whose repeated shorthand needs careful correction.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "guidance",
+      "software history"
+    ],
+    "description": "The 1962 launch failure became a software legend whose repeated shorthand needs careful correction.",
+    "socialPreview": "The 1962 launch failure became a software legend whose repeated shorthand needs careful correction.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Mariner 1 overview",
+        "url": "https://en.wikipedia.org/wiki/Mariner_1",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Mariner 1: Guidance, Transcription and the Myth of a Missing Hyphen against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "The Mariner 1 spacecraft was destroyed shortly after launch in July 1962 when its launch vehicle deviated from the intended path. The failure involved guidance-signal handling and an error in the equations used by ground guidance.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish hardware beacon problems, smoothing logic, handwritten notation and implemented code, using technical histories to test the missing-hyphen story.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nMariner 1 asks how mathematical notation moves through specification, transcription, programming and verification when several representations must mean the same thing.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe missing hyphen survives because it is simple; the actual guidance chain is more instructive and less easily reduced to punctuation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Mariner 1 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "mars-climate-orbiter-interface",
@@ -1108,6 +3188,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "NASA lost contact with Mars Climate Orbiter on 23 September 1999. Ground software had supplied thruster data in pound-force seconds to navigation software expecting Newton-seconds. The mismatch understated the modeled effect of the firings by a factor of 4.45.\n\nNASA's [Phase I mishap report](https://discovery.larc.nasa.gov/pdf_files/MCO_report_2.pdf) traced the loss to the unit mismatch and to the failures in testing, communication and operations that let it persist. Investigators could not settle the spacecraft's final fate. It may have burned up in the atmosphere or entered heliocentric space; contact was never recovered.\n\n## What the interface was supposed to mean\n\nDuring the cruise to Mars, the spacecraft periodically fired thrusters to unload angular momentum from its reaction wheels. Ground software called SM_FORCES processed information about those events and wrote the results into an Angular Momentum Desaturation, or AMD, file used by the navigation team.\n\nThe interface specification required the impulse values in that file to be expressed in Newton-seconds.\n\nThey were delivered in pound-force seconds.\n\nThe navigation software then treated those values as if they already satisfied the metric specification. NASA's mishap board reported that the effect of the thruster firings was therefore underestimated by a factor of 4.45. The board identified this failure to use metric units in the ground software file as the mission's root cause.\n\nThe interface specification was explicit. The implementation produced different units, and the receiving software accepted them. The conversion error became a mission failure because the checks between those steps did not expose it.\n\n## The mismatch survived for months\n\nThe small-forces files had earlier format and spacecraft-attitude problems. For the first four months of cruise, the navigation team did not use them in orbit determination. When correctly formatted files began to be used, the report says anomalous data indicating underestimated trajectory perturbations became apparent within about a week.\n\nThe anomaly still did not lead to the unit mismatch being identified before Mars arrival.\n\nBy the time the loss was reconstructed, the board estimated that the trajectory at insertion was roughly 170 kilometers lower than planned. A later navigation reconstruction produced a periapsis of about 57 kilometers, a level judged too low for the spacecraft to survive.\n\nNavigation staff had observed anomalous behavior before arrival. The organization failed to turn those observations into a diagnosis and correction in time.\n\n## NASA's report was about more than units\n\nThe mishap board listed eight contributing causes in addition to the root cause. They included undetected mismodeling of spacecraft velocity changes, an operations navigation team that was not sufficiently familiar with the spacecraft, a trajectory-correction maneuver that was not performed, weaknesses in the transition from development to operations, inadequate communication, insufficient navigation staffing, inadequate training, and verification-and-validation shortcomings in the ground software.\n\nThe verification section is especially direct. The board wrote that the Software Interface Specification existed but was not properly used in development and testing. It also found that end-to-end testing of the small-forces ground software against the specification did not appear to have been completed, and that interface-control verification was incomplete or insufficiently rigorous.\n\nThe conversion factor explains the numerical error. The board's account of development, testing and navigation explains why that error survived.\n\n## An interface is an engineering object\n\nA software interface can look administrative: a field name, a file format, a unit written in a specification. But for a system whose components are built and operated by different teams, that document carries physical meaning.\n\nA value labelled as impulse is not complete simply because it contains a number. The receiving side needs to know what physical quantity the number represents and in what units. If that meaning is implicit, a syntactically valid file can still carry semantically wrong data.\n\nSeveral engineering practices can make such disagreements harder to hide. Units can be represented in types rather than comments. Tests can inject known values and compare outputs with independent calculations. Interface checks can trace one measurement from its source through every transformation to its final consumer. Independent validation can ask whether the integrated system behaves according to the contract rather than whether each component appears internally consistent.\n\nThose are general engineering lessons, not claims that one particular safeguard would certainly have saved Mars Climate Orbiter. Retrospective fixes are easy to propose once the failure is known. The stronger question is whether a safeguard would have exposed the actual discrepancy under the conditions that existed before the loss.\n\n## Why the story still matters\n\nThe report leaves a practical test for any organization working across technical boundaries: identify the assumptions exchanged between teams, assign responsibility for checking them and specify how an observed discrepancy reaches someone able to act.\n\nThe file arrived in a usable format. The numbers carried the wrong meaning. Between those two facts lay the failure of a mission."
   },
   {
+    "slug": "mars-polar-lander-silence",
+    "title": "Mars Polar Lander: The Signal That Never Returned",
+    "dek": "The 1999 loss forced investigators to infer a failure from design and test evidence without wreckage or telemetry.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "software",
+      "mars"
+    ],
+    "description": "The 1999 loss forced investigators to infer a failure from design and test evidence without wreckage or telemetry.",
+    "socialPreview": "The 1999 loss forced investigators to infer a failure from design and test evidence without wreckage or telemetry.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Mars Polar Lander overview",
+        "url": "https://en.wikipedia.org/wiki/Mars_Polar_Lander",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Mars Polar Lander: The Signal That Never Returned against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "NASA lost contact with Mars Polar Lander during descent in December 1999. With no post-entry telemetry and no recovered hardware, investigators evaluated plausible failure modes through design, software and test records.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must distinguish the leading hypothesis involving landing-leg signals from a proven cause, and explain exactly what data ended before descent.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how a mission verifies transient software and sensor behavior when testing cannot reproduce the complete flight environment and when telemetry is intentionally interrupted.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nA concise probable cause can sound definitive; the absence of direct evidence is itself the most important condition of the investigation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Mars Polar Lander overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "mf-global-customer-funds",
+    "title": "MF Global: Sovereign-Debt Bets and the Customer-Money Shortfall",
+    "dek": "The 2011 brokerage collapse linked liquidity pressure, repo accounting and controls over segregated funds.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "brokerage",
+      "liquidity",
+      "customer funds"
+    ],
+    "description": "The 2011 brokerage collapse linked liquidity pressure, repo accounting and controls over segregated funds.",
+    "socialPreview": "The 2011 brokerage collapse linked liquidity pressure, repo accounting and controls over segregated funds.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "MF Global overview",
+        "url": "https://en.wikipedia.org/wiki/MF_Global",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for MF Global: Sovereign-Debt Bets and the Customer-Money Shortfall against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "MF Global filed for bankruptcy in October 2011 after large European sovereign-debt positions and a loss of market confidence strained the firm. A shortfall in customer property intensified the failure.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain repo-to-maturity transactions, margin and liquidity demands, transfers near bankruptcy and the later recovery of customer funds without conflating accounting treatment with economic risk.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nMF Global asks how treasury operations protect segregated customer assets during a rapidly deteriorating liquidity crisis when many transfers occur under time pressure.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe identity of the chief executive and the missing-money headline can obscure the operational control problem inside the final days.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with MF Global overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "mianus-river-bridge-collapse",
+    "title": "Mianus River Bridge: Drainage, Bearings and a Hidden Connection",
+    "dek": "The 1983 Connecticut bridge collapse exposed how water and corrosion can defeat an inaccessible support detail.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "corrosion",
+      "connecticut"
+    ],
+    "description": "The 1983 Connecticut bridge collapse exposed how water and corrosion can defeat an inaccessible support detail.",
+    "socialPreview": "The 1983 Connecticut bridge collapse exposed how water and corrosion can defeat an inaccessible support detail.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Mianus River Bridge overview",
+        "url": "https://en.wikipedia.org/wiki/Mianus_River_Bridge",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Mianus River Bridge: Drainage, Bearings and a Hidden Connection against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 625,
+    "publishedInArchive": false,
+    "body": "A suspended span of the Mianus River Bridge on Interstate 95 collapsed in June 1983. Investigators examined a pin-and-hanger assembly, corrosion and roadway drainage that directed water toward a critical connection.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must show how the connection carried load, how corrosion and displacement developed, and what inspectors could or could not observe before collapse.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event tests maintenance systems that separate drainage, deck condition and structural inspection even though the physical deterioration crosses those categories.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe failed pin is easy to name; the administrative division that let water repeatedly reach it is harder to visualize.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Mianus River Bridge overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "millennium-bridge-lateral-sway",
+    "title": "The Millennium Bridge: When Pedestrians Synchronized With the Structure",
+    "dek": "London's new footbridge opened in 2000 and revealed a lateral vibration mechanism not adequately anticipated in design.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "structural dynamics",
+      "human interaction",
+      "london"
+    ],
+    "description": "London's new footbridge opened in 2000 and revealed a lateral vibration mechanism not adequately anticipated in design.",
+    "socialPreview": "London's new footbridge opened in 2000 and revealed a lateral vibration mechanism not adequately anticipated in design.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Millennium Bridge, London overview",
+        "url": "https://en.wikipedia.org/wiki/Millennium_Bridge,_London",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for The Millennium Bridge: When Pedestrians Synchronized With the Structure against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "The London Millennium Footbridge developed unexpected lateral movement when large crowds crossed during its opening in June 2000. The bridge was closed and later fitted with damping systems.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain lateral force, pedestrian adjustment and feedback without repeating the inaccurate idea that people simply marched in unison from the start.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how design standards capture interactions between people and flexible structures that emerge only at full scale and high occupancy.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe nickname wobbly bridge makes the event comic; the engineering value lies in observing a new feedback mechanism and changing practice without structural collapse.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Millennium Bridge, London overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "monongah-mines-1907",
     "title": "Monongah: The Mine Explosion Behind a New Federal Safety Apparatus",
     "dek": "The 1907 explosion in Monongah became the deadliest in United States mining history. Even federal sources disagree on the toll, but they agree on the event's scale and on the national safety machinery that followed the era's losses.",
@@ -1154,6 +3394,286 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 963,
     "publishedInArchive": false,
     "body": "At 10:28 on the morning of 6 December 1907, an explosion tore through the interconnected No. 6 and No. 8 mines at Monongah, West Virginia. A federal history says 367 men had entered for the shift. Four escaped through an outcrop opening, and one man was rescued.\n\nThe same history says the explosion killed nearly everyone underground, destroyed the ventilating system, smashed locomotives, motors and mine cars, and wrecked the surface boiler house and fan. The underground emergency was therefore also an infrastructure failure: ventilation, transport and surface machinery were damaged at the moment they were most needed.\n\nMonongah is described by the Mine Safety and Health Administration as the worst mine explosion in United States history. Yet even official federal sources do not give one stable number for the dead. That discrepancy is not a footnote to hide. It is part of what can—and cannot—be recovered from an industrial workforce in 1907.\n\n## The arithmetic does not close cleanly\n\nMSHA's history of major mine disasters says 367 entered, four escaped and one was rescued. Its separate injury-trends page says the explosion killed 358 people. Other figures circulate in memorial and historical accounts, but this draft does not choose among them without reviewing the records behind each total.\n\nSubtracting survivors from a reported shift count may appear to produce an answer. It assumes the entrance count was complete, that every person underground was counted in the same way, and that the categories in a later narrative were compiled from compatible records. Those assumptions need evidence.\n\nMining communities in that period included recent immigrants, laborers known by variant spellings and workers whose presence could be recorded unevenly. Those facts are frequently invoked to explain Monongah's disputed toll, but they should not be repeated as specifics until employment rolls, death records, consular material and local archives have been compared.\n\nThe responsible formulation is therefore two-part: Monongah was the deadliest U.S. mine explosion, and the exact casualty count remains inconsistent across official records. Precision includes identifying when the record itself is imprecise.\n\n## A disaster year, not an isolated day\n\nThe explosion occurred during the deadliest year in U.S. coal-mining history. MSHA's injury-trends summary estimates that 3,242 people died in coal mining in 1907. Monongah was the largest single catastrophe within that national toll, not the only reason the year forced public attention onto mining conditions.\n\nThirteen days later, another explosion struck the Darr Mine at Jacobs Creek, Pennsylvania. The federal major-disasters history places the two events in the same account of growing public reaction. This context matters when tracing policy. A reform created after Monongah may also have answered a broader sequence of deaths, public pressure and technical concern.\n\nThe explosion's physical cause should be treated with the same care as its institutional legacy. Methane and coal dust were established explosion hazards in underground coal mining, and damaged ventilation intensified conditions after the blast. But a general hazard is not an event-specific finding. Without the original Monongah investigation in hand, this draft does not name the ignition source or assign responsibility.\n\n## From investigation to institution\n\nThe federal history describes a direct institutional sequence. Public reaction to the mining disasters led Congress to authorize an investigation of mine accidents. In May 1908, a Mine Accidents Division was organized within the U.S. Geological Survey. On 1 July 1910, the Bureau of Mines was established.\n\nThat sequence did not instantly make mines safe, nor did it create today's Mine Safety and Health Administration in one step. It did create a federal apparatus for studying hazards, testing equipment and developing mine-safety knowledge. Later advances listed in the MSHA history included permissible explosives and electrical equipment, electric cap lamps, ventilation practices, methane testing, rock dusting, mine-rescue training and inspection.\n\nIt would be too simple to credit every improvement to one explosion. The better historical claim is that Monongah's scale, within the wider death toll of 1907, helped generate the political demand for organized federal investigation. Disaster became data, laboratory work, training and eventually administration.\n\n## Rescue after the systems failed\n\nThe event also reveals why mine rescue became a technical discipline. An underground explosion can destroy communications and transport, alter the atmosphere, block routes and disable ventilation. Rescue teams must enter an environment whose hazards have changed and whose life-supporting systems may no longer function.\n\nThe federal emergency-operations history was written partly to trace the development of that capacity. Its account of Monongah is not a complete social history of the town or a final casualty register. It is an institutional memory of the conditions that made organized mine rescue necessary.\n\nThat lens has limits. It records the catastrophe as a problem for safety administration, but the dead were workers embedded in families and migration networks. A finished article should restore names and community history through verified local and international archives rather than using a disputed total as a substitute for them.\n\n## What remains to be reported\n\nThe source record reviewed here establishes the date and time, the mine numbers, the broad destructive effects, the tiny number of recorded survivors, and Monongah's place in federal safety history. It also establishes that two MSHA sources do not agree on the death toll.\n\nThe next reporting pass must examine the original investigation, employment rolls, victim lists and contemporary records. It must separate reforms tied specifically to Monongah from those arising from the larger disaster year. Only then should it narrate individual lives, a precise ignition sequence or legal responsibility.\n\nMonongah's significance does not depend on making its archive look cleaner than it is. The mine explosion exposed both the physical vulnerability of underground work and the weakness of the systems then available to count, investigate and respond. The federal safety apparatus that followed began by confronting both kinds of absence."
+  },
+  {
+    "slug": "ms-estonia-sinking",
+    "title": "Estonia: The Bow Visor, the Car Deck and a Contested Record",
+    "dek": "The 1994 Baltic ferry sinking remains both a technical investigation and a dispute over access, evidence and memory.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "maritime",
+      "ferry safety",
+      "baltic sea"
+    ],
+    "description": "The 1994 Baltic ferry sinking remains both a technical investigation and a dispute over access, evidence and memory.",
+    "socialPreview": "The 1994 Baltic ferry sinking remains both a technical investigation and a dispute over access, evidence and memory.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Sinking of the MS Estonia overview",
+        "url": "https://en.wikipedia.org/wiki/Sinking_of_the_MS_Estonia",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Estonia: The Bow Visor, the Car Deck and a Contested Record against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 635,
+    "publishedInArchive": false,
+    "body": "The ferry Estonia sank in the Baltic Sea in September 1994 during severe weather. The official investigation focused on failure of the bow visor and water entering the vehicle deck, while later examinations and disputes continued.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish established damage, modeled flooding, survivor testimony and claims raised by later imagery, avoiding both automatic deference and unsupported conspiracy.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nEstonia asks how international investigations preserve evidence, explain uncertainty and maintain legitimacy when the wreck is inaccessible and families contest decisions about further examination.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe scale of loss and continuing controversy can crowd out careful reading of which questions were answered, reopened or never testable.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Sinking of the MS Estonia overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "mv-derbyshire-loss",
+    "title": "Derbyshire: A Lost Bulk Carrier and the Evidence Found Years Later",
+    "dek": "The 1980 loss of the Derbyshire became a long investigation into hatch covers, storm loading and access to a deep wreck.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "maritime",
+      "bulk carrier",
+      "typhoon"
+    ],
+    "description": "The 1980 loss of the Derbyshire became a long investigation into hatch covers, storm loading and access to a deep wreck.",
+    "socialPreview": "The 1980 loss of the Derbyshire became a long investigation into hatch covers, storm loading and access to a deep wreck.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "MV Derbyshire overview",
+        "url": "https://en.wikipedia.org/wiki/MV_Derbyshire",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Derbyshire: A Lost Bulk Carrier and the Evidence Found Years Later against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "The British bulk carrier Derbyshire disappeared during Typhoon Orchid in September 1980. Years later, deep-sea surveys and a reopened inquiry examined how water could have entered and how the ship progressively failed.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish early hypotheses from findings made possible by locating and imaging the wreck, and explain the sequence without overstating what broken debris can prove.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nDerbyshire asks how casualty investigation changes when the primary evidence is unavailable for years and when families must campaign to reopen the record.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe ship was initially another vessel lost in a storm; the later evidence turned that natural-hazard explanation into a design and regulation inquiry.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with MV Derbyshire overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "nasa-dart-unplanned-collision",
+    "title": "DART: An Autonomous Rendezvous That Ended in Contact",
+    "dek": "NASA's 2005 demonstration vehicle exhausted propellant and collided with its target after navigation errors.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "spaceflight",
+      "autonomy",
+      "navigation"
+    ],
+    "description": "NASA's 2005 demonstration vehicle exhausted propellant and collided with its target after navigation errors.",
+    "socialPreview": "NASA's 2005 demonstration vehicle exhausted propellant and collided with its target after navigation errors.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "DART spacecraft overview",
+        "url": "https://en.wikipedia.org/wiki/DART_(satellite)",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for DART: An Autonomous Rendezvous That Ended in Contact against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 622,
+    "publishedInArchive": false,
+    "body": "NASA's Demonstration for Autonomous Rendezvous Technology mission approached a target satellite in April 2005 but experienced navigation and propellant problems and made unplanned contact. The mission ended before completing its objectives.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace sensor interpretation, relative-navigation estimates, commanded maneuvers, propellant use and contact using the mishap report.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nDART asks how autonomous systems expose uncertainty, enforce keep-out zones and transition to a safe mode when their internal state estimate diverges from reality.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nAutonomy can make the failure sound like a machine acting alone; the design, simulation and oversight choices remain human institutional work.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with DART spacecraft overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "nedelin-cosmodrome-catastrophe",
+    "title": "Nedelin: A Missile Test, a Pad Full of People and Years of Secrecy",
+    "dek": "The 1960 Baikonur explosion joins hazardous launch preparation with political pressure and suppressed records.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "space history",
+      "missile testing",
+      "soviet union"
+    ],
+    "description": "The 1960 Baikonur explosion joins hazardous launch preparation with political pressure and suppressed records.",
+    "socialPreview": "The 1960 Baikonur explosion joins hazardous launch preparation with political pressure and suppressed records.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Nedelin catastrophe overview",
+        "url": "https://en.wikipedia.org/wiki/Nedelin_catastrophe",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Nedelin: A Missile Test, a Pad Full of People and Years of Secrecy against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "An R-16 missile exploded during launch preparations at Baikonur in October 1960, killing many people gathered around the pad. The catastrophe was concealed for decades and later became known by the name of Marshal Mitrofan Nedelin.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must verify electrical sequencing, propellant conditions, work taking place on the fueled missile and casualty estimates through declassified or scholarly records.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how schedule pressure, command presence and secrecy can concentrate personnel around a system whose hazards are still active.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nLong suppression created a space filled by rumor; later openness does not automatically resolve conflicting counts or dramatic anecdotes.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Nedelin catastrophe overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "noaa-n-prime-drop",
+    "title": "NOAA-N Prime: The Satellite That Fell During Maintenance",
+    "dek": "A 2003 clean-room accident turned missing fasteners and undocumented work into an expensive recovery.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "spaceflight",
+      "maintenance",
+      "quality assurance"
+    ],
+    "description": "A 2003 clean-room accident turned missing fasteners and undocumented work into an expensive recovery.",
+    "socialPreview": "A 2003 clean-room accident turned missing fasteners and undocumented work into an expensive recovery.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "NOAA-19 spacecraft overview",
+        "url": "https://en.wikipedia.org/wiki/NOAA-19",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for NOAA-N Prime: The Satellite That Fell During Maintenance against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 636,
+    "publishedInArchive": false,
+    "body": "The NOAA-N Prime weather satellite fell from a handling cart in a Lockheed Martin facility in September 2003 while it was being rotated. Bolts needed to secure the spacecraft were absent after an earlier operation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe reporting must establish which fasteners were removed, how configuration status was recorded, what checks preceded movement and how damage and repair costs were assessed.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe accident asks how maintenance handoffs preserve temporary configuration changes and whether a physical safeguard depends on memory across teams and shifts.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe image of a satellite on the floor invites ridicule, but the more useful record concerns configuration control and institutional learning from an apparently simple omission.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with NOAA-19 spacecraft overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "northeast-blackout-2003",
+    "title": "The 2003 Northeast Blackout: Trees, Alarms and a Cascading Grid",
+    "dek": "The outage grew from local line contacts and failed situational awareness into a regional loss of power.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "power grid",
+      "software",
+      "north america"
+    ],
+    "description": "The outage grew from local line contacts and failed situational awareness into a regional loss of power.",
+    "socialPreview": "The outage grew from local line contacts and failed situational awareness into a regional loss of power.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Northeast blackout of 2003 overview",
+        "url": "https://en.wikipedia.org/wiki/Northeast_blackout_of_2003",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for The 2003 Northeast Blackout: Trees, Alarms and a Cascading Grid against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 621,
+    "publishedInArchive": false,
+    "body": "A cascading power outage affected parts of the northeastern United States and Ontario in August 2003. Investigation examined transmission lines contacting trees, alarm-system failures and the progression of grid instability.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must follow line trips, state-estimator and alarm behavior, operator understanding, power flows and protective actions in time order.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe blackout asks how regional reliability is governed when individual utilities operate connected equipment and depend on shared situational awareness.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nTrees are often offered as the cause, but vegetation contact became catastrophic only through failed alarms, inadequate analysis and cascading interdependence.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Northeast blackout of 2003 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "ocean-ranger-sinking",
+    "title": "Ocean Ranger: Ballast Controls in a Winter Storm",
+    "dek": "The 1982 loss of the offshore drilling unit exposed control-room flooding, training and evacuation limits.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "offshore",
+      "maritime",
+      "canada"
+    ],
+    "description": "The 1982 loss of the offshore drilling unit exposed control-room flooding, training and evacuation limits.",
+    "socialPreview": "The 1982 loss of the offshore drilling unit exposed control-room flooding, training and evacuation limits.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Ocean Ranger overview",
+        "url": "https://en.wikipedia.org/wiki/Ocean_Ranger",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Ocean Ranger: Ballast Controls in a Winter Storm against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "The semi-submersible drilling unit Ocean Ranger sank off Newfoundland in February 1982 during a severe storm. Investigators examined water entering the ballast-control room, unexpected valve movement, stability and evacuation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe narrative must trace broken windows, control-panel behavior, ballast changes and the unit's increasing list while separating confirmed signals from radio interpretations.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nOcean Ranger asks whether crews are trained for opaque control-system failures and whether lifesaving equipment is usable in the sea states that make abandonment necessary.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe storm is prominent in remembrance; the vulnerability of a control room and the mismatch between evacuation plans and North Atlantic conditions deserve equal weight.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Ocean Ranger overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "olympus-two-decade-coverup",
@@ -1298,6 +3818,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "Penn Central's bankruptcy in June 1970 disrupted a market for promises that were due soon. Investors reconsidered commercial paper, and issuers turned to banks for replacement funding. The Federal Reserve supported the banking system's ability to meet those demands, according to its historical account.\n\nEach note was short. The need for financing could persist much longer. An issuer meeting continuing commitments through successive notes relied on buyers remaining willing to replace the debt whenever the current promise fell due.\n\nCommercial paper is unsecured debt. Its promise depends on the issuer's capacity to repay, rather than a specific asset pledged to each holder. A short maturity limits the duration of one contract. It does not necessarily limit the duration of the borrower's underlying need for money.\n\n### The renewal hidden in the instrument\n\nImagine a business whose commitments last much longer than its borrowing. When a note matures, the business may plan to issue another. Each individual note can be brief while the chain of replacement financing becomes essential to ordinary operation.\n\nIf new buyers disappear, the borrower must obtain replacement funding. That is refinancing risk: the business may still possess substantial assets while lacking cash for the next due date.\n\nA railroad is an especially concrete reminder of that difference. Tracks and equipment do not turn instantly into the cash needed to meet a due date. The existence of valuable assets does not settle the timing of payment.\n\n### One failure, a wider question\n\nWhen an issuer fails, investors may reconsider not only that name but the assumptions used to assess similar promises. A product previously treated as routine begins to require a closer look. The resulting disruption can reach borrowers whose circumstances are different from the original failure.\n\nThe response supported banks facing new credit demands. It must be distinguished from a direct rescue loan to the failed railroad.\n\n## Keeping credit moving\n\nThe Federal Reserve's historical account describes a response directed at the surrounding credit market. Banks were reminded that the discount window was available, and a partial relaxation of Regulation Q enabled them to compete for some large certificates of deposit. Direct lending to nonbank borrowers was considered but was not undertaken. That distinction matters: support for banks facing demands for credit was different from a loan rescuing Penn Central itself.\n\nOther issuers could reach for bank credit at the same time even though they were separate from Penn Central. A single bankruptcy could therefore expose a funding problem in the surrounding market.\n\nA note could mature quickly while the financing it supplied remained essential. Penn Central's failure disturbed the market willing to renew those promises. Short maturity limited one contract's life; it did not remove the dependence on the next buyer."
   },
   {
+    "slug": "pentium-fdiv-bug",
+    "title": "Pentium FDIV: A Rare Arithmetic Error and a Public Trust Crisis",
+    "dek": "The 1994 processor flaw became a case about numerical edge cases, disclosure and replacement policy.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "computing",
+      "hardware",
+      "quality assurance"
+    ],
+    "description": "The 1994 processor flaw became a case about numerical edge cases, disclosure and replacement policy.",
+    "socialPreview": "The 1994 processor flaw became a case about numerical edge cases, disclosure and replacement policy.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Pentium FDIV bug overview",
+        "url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Pentium FDIV: A Rare Arithmetic Error and a Public Trust Crisis against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "A flaw in some Intel Pentium processors produced incorrect results for certain floating-point division operations. Public disclosure in 1994 turned a rare technical error into a debate about reliability and customer response.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the missing lookup-table entries and their numerical effect without exaggerating how often typical users would encounter the error.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe incident asks how a manufacturer decides whether a low-probability correctness defect is material, who receives replacement and how independent researchers challenge internal risk estimates.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe faulty division examples are memorable; Intel's initial response and later replacement policy made the issue a broader case in technology trust.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Pentium FDIV bug overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "pes-refinery-fire-2019",
+    "title": "Philadelphia Energy Solutions: A Refinery Fire and an Aging System",
+    "dek": "The 2019 Philadelphia refinery explosion exposed the consequences of a hydrofluoric-acid release and long-lived equipment.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "refinery",
+      "asset integrity",
+      "philadelphia"
+    ],
+    "description": "The 2019 Philadelphia refinery explosion exposed the consequences of a hydrofluoric-acid release and long-lived equipment.",
+    "socialPreview": "The 2019 Philadelphia refinery explosion exposed the consequences of a hydrofluoric-acid release and long-lived equipment.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "CSB Philadelphia Energy Solutions investigation",
+        "url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Philadelphia Energy Solutions: A Refinery Fire and an Aging System against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "A fire and explosions at the Philadelphia Energy Solutions refinery in June 2019 followed a process release in the alkylation unit. This draft connects equipment condition, hazardous chemistry and the refinery's place inside a city.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe technical narrative must trace the failed component, the release, ignition, vessel damage and hydrofluoric-acid safeguards using the final investigation rather than dramatic video alone.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how aging infrastructure, inspection programs and ownership changes affect the reliability of safety-critical equipment over decades.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe spectacular fireball became the visual record, while corrosion mechanisms, inspection intervals and the facility's economic history are harder to see.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with CSB Philadelphia Energy Solutions investigation. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "petrov-false-alarm",
     "title": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong",
     "dek": "The Petrov episode begins with a missile warning and a decision to question it. Retrospective accounts describe a false alarm, but claims about automatic escalation and what would otherwise have happened need stronger evidence.",
@@ -1343,6 +3943,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 404,
     "publishedInArchive": true,
     "body": "Stanislav Petrov questioned a Soviet early-warning alert reporting an American missile launch, followed by several more. Accounts summarized by Chatham House describe him reporting the warning as a false alarm. They do not supply a complete operational log of the alert's handling.\n\nPetrov's reported judgment is narrower than the familiar claim that he saved the world. Retrospective accounts describe his rejection of an alert. The surviving record does not let observers watch an alternative sequence in which accepting it certainly produced nuclear war.\n\n## The alarm and the judgment\n\nAn alarm is a system's output. Treating it as a fact about the world requires another step: deciding how much confidence to place in the signal and what action that confidence justifies.\n\nChatham House places the episode within nuclear decision-making. A precise reconstruction of Petrov's authority and escalation procedure requires documentary evidence beyond its retrospective summary.\n\nThat distinction does not diminish the importance of judgment under pressure. It makes the judgment easier to understand. What did the warning system indicate? What other information was available? What authority did the officer hold, and what procedure governed escalation? Each answer describes a different part of the decision.\n\nFalse alarms also challenge a simple model of automation in which a machine is either reliable or unreliable. An automated signal can be useful while still requiring interpretation. The relevant question is whether the organization understands the signal's limitations and provides a workable response to uncertainty.\n\nAn exceptional decision cannot carry the whole explanation of a warning system's safety. Corroboration, authority and rules for responding to uncertainty determine how much depends on one person's judgment.\n\n## What the surviving account cannot settle\n\nChatham House's reconstruction complicates the familiar story of a single officer stopping an alert from reaching his superiors. Its discussion indicates that information may have travelled automatically to the General Staff. The surviving public account does not establish every step in that chain. Retrospective interviews are evidence about recollection, but they are not a complete operational log.\n\nA signal can be generated, distributed and interpreted through different channels. Uncertainty over one channel limits the claim that Petrov alone stopped escalation, without erasing the reported false alarm.\n\nPetrov reportedly judged the warning false. That decision can be examined without assigning certainty to a nuclear war that did not occur. The episode's significance rests on the handling of an alarming signal, with the limits of the operational record left visible."
+  },
+  {
+    "slug": "phillips-pasadena-explosion-1989",
+    "title": "Pasadena 1989: Isolation, Maintenance and a Vapor Cloud",
+    "dek": "The Phillips explosion in Pasadena turned maintenance isolation into a plant-wide test of safeguards.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "process safety",
+      "maintenance",
+      "texas"
+    ],
+    "description": "The Phillips explosion in Pasadena turned maintenance isolation into a plant-wide test of safeguards.",
+    "socialPreview": "The Phillips explosion in Pasadena turned maintenance isolation into a plant-wide test of safeguards.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Phillips disaster of 1989 overview",
+        "url": "https://en.wikipedia.org/wiki/Phillips_disaster_of_1989",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Pasadena 1989: Isolation, Maintenance and a Vapor Cloud against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 650,
+    "publishedInArchive": false,
+    "body": "An explosion and fire at the Phillips Petroleum complex in Pasadena, Texas, in October 1989 followed a release of flammable process material during maintenance work. This draft examines how isolation practices, operating authority and emergency response interacted.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe technical account must trace the maintenance configuration, valve or line status, release formation, ignition and subsequent fires using investigation records rather than generalized accounts of a refinery blast.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe institutional question is whether maintenance work was treated as an exception outside normal process control or as a high-risk operating state requiring equivalent discipline and verification.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nLater process-safety regulation can make the earlier plant seem obviously deficient, but the article must show which practices were actually known, required and contested at the time.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Phillips disaster of 1989 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "port-chicago-danger-and-duty",
@@ -1399,6 +4039,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "An explosion at Port Chicago, California, killed 320 people on 17 July 1944. Less than a month later, survivors were assigned to resume loading ammunition at another facility. Some refused, and prosecutions followed, according to the National Park Service.\n\nThe NPS history describes a segregated naval system and inadequate training exposed in the proceedings. The order to resume loading thus followed an unresolved question about safety: what had changed since the explosion for the men being sent back to handle ammunition?\n\n### Duty does not describe the distribution of risk\n\nMilitary language can present an order as the beginning of a story. For the person receiving it, however, the story may begin with training, equipment, previous warnings or a colleague who did not survive. An investigation that starts only at the moment of refusal can make these earlier conditions difficult to see.\n\nThat is why a record of discipline should be read beside a record of working conditions. A charge explains what an authority alleged. It does not automatically establish why someone acted, what alternatives were available, or whether the work was organized safely. Nor does criticism of the institution require pretending to know a sailor's private reasoning without testimony.\n\nWhen an institution assigns dangerous work along racial lines, the task, the ability to challenge it and the penalties for refusal belong in the same account.\n\n### An order after an explosion\n\nThe NPS account describes survivors being assigned to resume loading at another nearby facility less than a month after the disaster. It also records that the ensuing proceedings exposed inadequate training for the dangerous work. This sequence connects the return-to-work question with the conditions preceding the refusal.\n\nThe move to another facility was a change of location. It did not, by itself, establish that the sailors had received the training or assurances needed to regard the task differently. Asking only whether they obeyed removes that question from the record before it can be examined. Asking about safety does not eliminate the military context; it makes the context include the organization of the work.\n\nA later milestone must also remain visible. NPS records the official exoneration on 17 July 2024 of sailors court-martialed following the refusals. That decision belongs to the history of official judgment, eight decades after the explosion. It should not be described as though it occurred during the original proceedings or restored the time and opportunities lost to them.\n\nLoading had to resume within weeks; official exoneration came eight decades later. The different timescales connect the immediate demands made of survivors to the long history of institutional judgment.\n\n### The memorial and the worksite\n\nA memorial names a loss. A work history asks how people were brought into the conditions that produced it. These are complementary acts of remembrance. To keep only the memorial is to risk making death appear detached from decisions; to keep only the institutional lesson is to reduce people to evidence for an argument.\n\nThe prosecutions began with the refusal to resume work. The work history began earlier, with training, segregation and the conditions of loading. Reading the records together preserves what an account beginning only with disobedience would miss."
   },
   {
+    "slug": "quebec-bridge-collapse-1907",
+    "title": "Quebec Bridge: When Calculated Weight Overtook the Structure",
+    "dek": "The 1907 collapse showed how design assumptions and fragmented authority can survive visible deformation.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "engineering",
+      "canada"
+    ],
+    "description": "The 1907 collapse showed how design assumptions and fragmented authority can survive visible deformation.",
+    "socialPreview": "The 1907 collapse showed how design assumptions and fragmented authority can survive visible deformation.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Quebec Bridge overview",
+        "url": "https://en.wikipedia.org/wiki/Quebec_Bridge",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Quebec Bridge: When Calculated Weight Overtook the Structure against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 639,
+    "publishedInArchive": false,
+    "body": "The Quebec Bridge collapsed during construction in August 1907 after workers and engineers had observed deformation in critical members. The disaster became a case about calculation, communication and authority in a record-setting cantilever project.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct changes in estimated dead load, observed buckling, messages among the site and design office, and the final minutes without relying on hindsight to make every warning unambiguous.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe systems question is who can stop work when design authority is remote, responsibilities are divided and schedule pressure continues despite unexplained physical change.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nEngineering histories emphasize the erroneous calculations; the delayed response to workers reporting bent members is an equally important part of the record.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Quebec Bridge overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "quintinshill-rail-disaster",
+    "title": "Quintinshill: Signaling, Shift Change and a Wartime Railway",
+    "dek": "The 1915 collision in Scotland grew from operating irregularities into fire and mass loss aboard a troop train.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "rail",
+      "signaling",
+      "scotland"
+    ],
+    "description": "The 1915 collision in Scotland grew from operating irregularities into fire and mass loss aboard a troop train.",
+    "socialPreview": "The 1915 collision in Scotland grew from operating irregularities into fire and mass loss aboard a troop train.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Quintinshill rail disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Quintinshill_rail_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Quintinshill: Signaling, Shift Change and a Wartime Railway against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 626,
+    "publishedInArchive": false,
+    "body": "Multiple trains collided at Quintinshill near Gretna Green in May 1915, and fire consumed wooden carriages carrying soldiers. The disaster involved block signaling, a local train positioned on the main line and incomplete safety reminders.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must reconstruct train positions, signal indications, the shift handover and the later collision and fire, using inquiry records rather than criminal verdicts alone.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nQuintinshill asks how informal workarounds become normalized and how a shift-change routine can defeat formal signaling protections.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nWartime loss and individual blame shape the story, while the everyday operating practices that preceded the collision need separate examination.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Quintinshill rail disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "richard-mccoy-skyjacking",
     "title": "Richard McCoy’s Parachute Hijacking and the Evidence He Left",
     "dek": "Richard McCoy’s parachute hijacking left a recoverable trail of evidence. Reading that trail on its own terms is more useful than treating similarities to another hijacking as proof of a shared identity.",
@@ -1444,6 +4164,126 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 430,
     "publishedInArchive": true,
     "body": "The FBI arrested Richard Floyd McCoy two days after a ransom hijacking of United Airlines Flight 855 ended with a parachute escape over Utah. Its public history describes recovered money, fingerprints, witness information and comparison evidence linking him to the case.\n\nMcCoy had demanded $500,000 and parachutes before leaving through the Boeing 727's rear stairs. The method resembled the D.B. Cooper hijacking. The fingerprints, recovered money and other evidence tied to McCoy's case cannot, by themselves, resolve the identity of an offender in a different crime.\n\n## A resemblance is not an identification\n\nA case can acquire a second life through comparison with another, more famous crime. Similar methods invite speculation; a striking resemblance becomes a proposed identity; repetition makes the proposal feel established. The steps are not equivalent.\n\nA shared method can justify an investigative question. Identifying a shared offender requires additional evidence, rather than a resemblance repeated often enough to become familiar.\n\nThe FBI's public history is useful for understanding how the agency presents the case. It is a retrospective institutional account, not the full case file. A detailed article should make clear when it relies on that summary and when it has examined a contemporaneous document.\n\nThe FBI history is a retrospective institutional summary. It presents the agency's account without making the entire underlying case file available for independent examination.\n\nThe escape method explains the comparison; the recovered evidence explains the identification. Keeping those functions separate prevents the unresolved Cooper case from displacing the established McCoy investigation.\n\n## Evidence with different jobs\n\nThe FBI's account describes several kinds of evidence in McCoy's case: handwriting comparisons, fingerprints on an airline magazine, recovered money, and witness information. These items did not answer identical questions. A fingerprint could associate a person with an object; a financial recovery could connect a search location with the ransom; a witness could describe a movement or encounter. The case depended on their relationship, rather than on an isolated clue made dramatic by hindsight.\n\nThat evidence should remain separate from speculation about D.B. Cooper. Similar demands, aircraft, or escape methods can justify a comparison between crimes without establishing that they share an offender. Evidence tying McCoy to this hijacking is not automatically evidence identifying him in another one. Maintaining that boundary makes the established case more legible and prevents a famous unresolved mystery from taking over the account.\n\nThe parachute escape drew attention to the resemblance. The recovered money, fingerprints and witness information gave investigators a trail specific to McCoy. His case can be explained on that evidence without turning comparison with Cooper into identification."
+  },
+  {
+    "slug": "ronan-point-collapse",
+    "title": "Ronan Point: A Gas Explosion and Progressive Collapse",
+    "dek": "The 1968 tower collapse changed how engineers considered disproportionate failure in prefabricated buildings.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "building failure",
+      "progressive collapse",
+      "london"
+    ],
+    "description": "The 1968 tower collapse changed how engineers considered disproportionate failure in prefabricated buildings.",
+    "socialPreview": "The 1968 tower collapse changed how engineers considered disproportionate failure in prefabricated buildings.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Ronan Point overview",
+        "url": "https://en.wikipedia.org/wiki/Ronan_Point",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Ronan Point: A Gas Explosion and Progressive Collapse against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 631,
+    "publishedInArchive": false,
+    "body": "A gas explosion in a flat at Ronan Point in London in May 1968 caused sections of the prefabricated tower to collapse from the top downward. The event exposed weakness in connections among large concrete panels.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain the local explosion, loss of wall support and vertical propagation while distinguishing original construction from later strengthening work.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nRonan Point asks how standardized housing production, building approval and pressure for rapid construction addressed structural robustness beyond normal loads.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe domestic scale of the initiating explosion makes the collapse seem freakish; the important record is why the building could not contain a local failure.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Ronan Point overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "san-juanico-lpg-disaster",
+    "title": "San Juanico: A Storage Terminal and the Geography of Escalation",
+    "dek": "The 1984 LPG disaster outside Mexico City exposed how storage layout and nearby settlement can compound one another.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "chemical safety",
+      "urban risk",
+      "mexico"
+    ],
+    "description": "The 1984 LPG disaster outside Mexico City exposed how storage layout and nearby settlement can compound one another.",
+    "socialPreview": "The 1984 LPG disaster outside Mexico City exposed how storage layout and nearby settlement can compound one another.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "San Juanico disaster overview",
+        "url": "https://en.wikipedia.org/wiki/San_Juanico_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for San Juanico: A Storage Terminal and the Geography of Escalation against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 644,
+    "publishedInArchive": false,
+    "body": "In November 1984, a release and fire at the San Juan Ixhuatepec LPG terminal developed into multiple explosions near densely populated neighborhoods. The article focuses on escalation across a storage site and the boundary between an industrial facility and the community around it.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe reporting must identify which tanks and pipes were involved, how the initial release was detected, how fire spread and which later explosions are supported by investigation rather than eyewitness shorthand.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event tests land-use controls, emergency warning, terminal layout and the assumption that a facility boundary is also a risk boundary.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nPhotographs of fireballs dominate later accounts, while displacement, identification of victims and the long administrative aftermath are harder to recover.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with San Juanico disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "santa-barbara-oil-spill-1969",
+    "title": "Santa Barbara: A Blowout Beneath the Channel",
+    "dek": "The 1969 offshore spill connected drilling decisions, seabed pathways and the politics of coastal protection.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "oil spill",
+      "offshore drilling",
+      "california"
+    ],
+    "description": "The 1969 offshore spill connected drilling decisions, seabed pathways and the politics of coastal protection.",
+    "socialPreview": "The 1969 offshore spill connected drilling decisions, seabed pathways and the politics of coastal protection.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "1969 Santa Barbara oil spill overview",
+        "url": "https://en.wikipedia.org/wiki/1969_Santa_Barbara_oil_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Santa Barbara: A Blowout Beneath the Channel against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "An offshore well blowout in the Santa Barbara Channel in January 1969 released oil that reached the California coast. Oil also migrated through fractures beyond the well bore, complicating attempts to stop the discharge.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must reconstruct drilling depth, casing decisions, blowout control and seabed seepage from official investigation rather than treating the spill as one leaking pipe.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how federal leasing, operator decisions, geological uncertainty and coastal communities shared authority over offshore risk.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe spill is commonly called a birthplace of modern environmentalism, which should be tested against the movements and legislation already underway.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with 1969 Santa Barbara oil spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "satyam-confession",
@@ -1493,6 +4333,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "False invoices could make Satyam Computer Services appear to earn revenue; forged bank information could make the resulting cash appear to exist. The SEC's April 2011 announcement alleged that revenue, income and cash had been overstated by more than $1 billion over five years.\n\nSatyam settled the SEC charges without admitting or denying the allegations. The agreement included a penalty and requirements concerning controls. These recorded obligations followed the alleged misstatements; evidence of their implementation and effectiveness belongs to the subsequent history.\n\n## The cash balance as a claim\n\nCash appears reassuring because it sounds concrete. A reported balance suggests money somewhere that can be counted and confirmed. Yet the figure in a financial statement remains a claim until the evidence connecting it to an actual account has been examined.\n\nAn admission and an accounting reconstruction answer different questions. The amount, duration and mechanism of a misstatement still need records, even when a statement appears to offer a complete explanation.\n\nThe 2011 announcement reports allegations and settlement terms. Those procedural labels limit what it establishes about the underlying accounts.\n\nThere is also a difference between explaining a deception and explaining why it persisted. The first may involve entries, confirmations and transactions. The second concerns the institutions expected to challenge those representations. Neither question should be answered solely through the personality of the executive at the center of the story.\n\nA reported balance depends on the statement asserting it, the documents supporting it and independent evidence from the account purportedly holding the money. Agreement among unreliable internal records is insufficient.\n\n## The route from invoices to apparent cash\n\nThe SEC described fictitious invoices and falsified bank information in its 2011 action. These are distinct points in an accounting story. An invoice can create the appearance of revenue; a bank record can appear to confirm the resulting money. When both are unreliable, reconciliation within the company's own records may produce consistency without producing truth.\n\nThe settlement also belongs to a different phase from the misconduct described in the complaint. Satyam's new leadership agreed to controls-related measures and a monetary penalty without admitting or denying the allegations. Those terms establish what the company agreed to do, rather than proving that every subsequent safeguard worked. An account of institutional repair needs evidence after implementation. Treating the settlement as a finished solution would repeat the mistake of accepting a documented intention as a verified result.\n\nThe alleged scheme made invented revenue appear to produce real cash. The settlement prescribed a response. Establishing whether the new controls worked requires evidence from after their implementation, just as establishing the original misstatements requires the records behind the accounts."
   },
   {
+    "slug": "saudia-flight-163-fire",
+    "title": "Saudia 163: A Successful Landing Without an Evacuation",
+    "dek": "The 1980 fire near Riyadh became a study of the minutes between touchdown and opening an exit.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "aviation",
+      "fire",
+      "evacuation"
+    ],
+    "description": "The 1980 fire near Riyadh became a study of the minutes between touchdown and opening an exit.",
+    "socialPreview": "The 1980 fire near Riyadh became a study of the minutes between touchdown and opening an exit.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Saudia Flight 163 overview",
+        "url": "https://en.wikipedia.org/wiki/Saudia_Flight_163",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Saudia 163: A Successful Landing Without an Evacuation against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 637,
+    "publishedInArchive": false,
+    "body": "Saudia Flight 163 returned to Riyadh after a fire was reported in the aft cargo area in August 1980. The aircraft landed and stopped, but evacuation did not begin before the cabin became unsurvivable.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must reconstruct fire detection, cockpit decisions, taxi and stopping time, engine shutdown, rescue access and door opening from the investigation record.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how emergency procedures prioritize aircraft control, communication and immediate evacuation when a crew has landed successfully but the hazard continues to grow.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe contrast between an intact aircraft and the loss aboard it encourages moral judgment; a better article maps the information and procedural constraints minute by minute.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Saudia Flight 163 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "savings-and-loan-crisis",
+    "title": "The Savings and Loan Crisis: Deregulation, Insolvency and Delayed Closure",
+    "dek": "The U.S. thrift crisis grew through interest-rate shocks, expanded powers, weak supervision and institutions kept open after insolvency.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "banking",
+      "regulation",
+      "united states"
+    ],
+    "description": "The U.S. thrift crisis grew through interest-rate shocks, expanded powers, weak supervision and institutions kept open after insolvency.",
+    "socialPreview": "The U.S. thrift crisis grew through interest-rate shocks, expanded powers, weak supervision and institutions kept open after insolvency.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Savings and loan crisis overview",
+        "url": "https://en.wikipedia.org/wiki/Savings_and_loan_crisis",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for The Savings and Loan Crisis: Deregulation, Insolvency and Delayed Closure against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 636,
+    "publishedInArchive": false,
+    "body": "Hundreds of U.S. savings and loan institutions failed during the 1980s and early 1990s, producing a costly federal resolution. The crisis combined a changed interest-rate environment with deregulation, risky investment and delayed recognition of losses.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish economic insolvency, accounting treatment, deposit insurance, fraud cases and resolution costs rather than treating every failed thrift as the same scheme.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe crisis asks what happens when institutions can take larger risks while deposit guarantees remain and supervisors lack resources or political support to close them promptly.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nA few notorious executives dominate public recollection, obscuring the interaction between macroeconomic shocks and policy choices across an entire sector.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Savings and loan crisis overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "schoharie-creek-bridge-collapse",
+    "title": "Schoharie Creek: Scour Beneath an Interstate Bridge",
+    "dek": "The 1987 collapse in New York turned an underwater foundation problem into a national inspection issue.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "scour",
+      "new york"
+    ],
+    "description": "The 1987 collapse in New York turned an underwater foundation problem into a national inspection issue.",
+    "socialPreview": "The 1987 collapse in New York turned an underwater foundation problem into a national inspection issue.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Schoharie Creek Bridge collapse overview",
+        "url": "https://en.wikipedia.org/wiki/Schoharie_Creek_Bridge_collapse",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Schoharie Creek: Scour Beneath an Interstate Bridge against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 635,
+    "publishedInArchive": false,
+    "body": "The Interstate 90 bridge over Schoharie Creek collapsed during flooding in April 1987 after erosion undermined a pier foundation. The event made scour assessment and underwater inspection central to bridge safety.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must distinguish river flow, foundation geometry, protective material, inspection history and the timing of pier movement rather than treating floodwater as a complete explanation.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSchoharie Creek asks how agencies manage hazards that are largely invisible from the deck and that become most dangerous precisely when inspection is hardest.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nA flood appears to be an external natural force, but the record concerns how a designed structure anticipated and monitored that force over time.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Schoharie Creek Bridge collapse overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "senghenydd-colliery-disaster",
+    "title": "Senghenydd: The Explosion Behind Britain's Worst Mining Loss",
+    "dek": "The 1913 Universal Colliery explosion tested ventilation, dust control and accountability in the South Wales coalfield.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "mining",
+      "coal dust",
+      "wales"
+    ],
+    "description": "The 1913 Universal Colliery explosion tested ventilation, dust control and accountability in the South Wales coalfield.",
+    "socialPreview": "The 1913 Universal Colliery explosion tested ventilation, dust control and accountability in the South Wales coalfield.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Senghenydd colliery disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Senghenydd_colliery_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Senghenydd: The Explosion Behind Britain's Worst Mining Loss against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 629,
+    "publishedInArchive": false,
+    "body": "An explosion at the Universal Colliery at Senghenydd in October 1913 killed hundreds of miners and rescuers. This draft follows the physical disaster alongside the inspection and legal systems that preceded it.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe reporting must separate ignition evidence from the propagation role attributed to coal dust and must use the inquiry record before assigning responsibility for ventilation or electrical conditions.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe institutional focus is whether penalties, inspections and ownership structures created incentives proportionate to catastrophic underground risk.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nNational superlatives preserve the scale but can flatten a workforce into a number and detach the disaster from prior warnings and later compensation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Senghenydd colliery disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "seveso-boundary-of-the-factory",
     "title": "The Factory Boundary Was Not a Boundary for Exposure",
     "dek": "Seveso makes the surrounding community part of the industrial safety record.",
@@ -1538,6 +4538,286 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 505,
     "publishedInArchive": false,
     "body": "A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. A cloud containing TCDD escaped for about twenty minutes, according to HSE's case history. Confusion followed as the company and authorities failed to communicate adequately.\n\nThe cloud escaped for a limited period. The need for information lasted longer. Residents and responders required an account of what had been released and where it had travelled, even after the plant had stopped emitting it.\n\nOwnership, equipment and exposure describe different boundaries. The fence marked control of the site; it could not contain the consequences of the release.\n\n### Knowing enough to act\n\nAfter a release, information has several jobs. Operators need to understand the process failure. Responders need to identify practical measures. Residents need information that speaks to everyday decisions: where to go, what to avoid and whom to contact.\n\nThose needs are related but not identical. A technically accurate description can still be useless to someone deciding whether a child should play outside. Conversely, a simple instruction can conceal the uncertainty that should govern its duration or revision. Communication is part of the response, not a translation task postponed until the technical work is over.\n\nThe response chronology needs to distinguish when information was detected, interpreted, shared and acted on. Decisions must be judged against the evidence available at their time.\n\n### A release has an information trail\n\nHSE describes a reactor's bursting disc rupturing around 12:37 on 10 July. A visible cloud left the plant, carrying TCDD among its constituents. The case history states that the release lasted about twenty minutes and that confusion followed because communication between the company and authorities was inadequate.\n\nThese details establish two different intervals. One concerns material leaving the process. The other concerns institutions acquiring and sharing a usable understanding of what had happened. Ending the first interval does not automatically end the second. A cloud can stop emerging while questions about where it went and what it contained remain urgent.\n\nThe distinction also changes how a technical safeguard is evaluated. Relieving pressure can protect a vessel while directing its contents somewhere else. The safety question must follow that route to its destination. A device cannot be judged solely by whether the equipment immediately around it survives.\n\nHSE's account establishes an offsite release accompanied by inadequate communication. Residents' instructions, their timing and their reception require separate response records and testimony.\n\n### A place has more than one recovery date\n\nIndustrial narratives often favor restart dates. A community may measure recovery through other events: returning home, regaining access to land, receiving an explanation or knowing how future health questions will be followed. There is no reason to assume that these calendars coincide.\n\nLong-term health claims require studies with defined populations. Community accounts can establish experience and concern without serving as quantitative exposure measurements.\n\nThe fence marked the edge of the property, not the edge of the emergency. A release capable of reaching neighboring residents required planning and communication that reached them too."
+  },
+  {
+    "slug": "sewol-ferry-disaster",
+    "title": "Sewol: Cargo, Stability and the Order to Stay Put",
+    "dek": "The 2014 South Korean ferry disaster joined vessel modification, cargo control and institutional response.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "maritime",
+      "public accountability",
+      "south korea"
+    ],
+    "description": "The 2014 South Korean ferry disaster joined vessel modification, cargo control and institutional response.",
+    "socialPreview": "The 2014 South Korean ferry disaster joined vessel modification, cargo control and institutional response.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Sinking of MV Sewol overview",
+        "url": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Sewol: Cargo, Stability and the Order to Stay Put against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 628,
+    "publishedInArchive": false,
+    "body": "The ferry Sewol capsized in April 2014 while carrying students and other passengers. Investigations and trials examined overloading, securing of cargo, vessel modification, crew actions and the rescue response.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must distinguish stability calculations, cargo records, steering events, announcements and evacuation timing while noting differences between technical and criminal findings.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSewol asks how regulators, operators and emergency agencies manage risk when certification, enforcement and rescue each depend on information produced by another institution.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe instruction for passengers to remain in place is unforgettable, but the full record reaches backward into vessel ownership and forward into state accountability.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Sinking of MV Sewol overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "silver-bridge-collapse-1967",
+    "title": "Silver Bridge: One Eyebar and a System Without Redundancy",
+    "dek": "The 1967 Ohio River bridge collapse made fracture, inspection and structural redundancy inseparable.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "bridge failure",
+      "inspection",
+      "ohio river"
+    ],
+    "description": "The 1967 Ohio River bridge collapse made fracture, inspection and structural redundancy inseparable.",
+    "socialPreview": "The 1967 Ohio River bridge collapse made fracture, inspection and structural redundancy inseparable.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Silver Bridge overview",
+        "url": "https://en.wikipedia.org/wiki/Silver_Bridge",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Silver Bridge: One Eyebar and a System Without Redundancy against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "The Silver Bridge between Point Pleasant and Kanauga collapsed during evening traffic in December 1967. Investigation focused on a tiny defect in an eyebar within a suspension chain that offered little alternative load path.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article should explain crack initiation and growth, the limits of inspection technology and the bridge's linked-eyebar design without suggesting that finding the final fracture explains the whole system.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSilver Bridge asks how inspection regimes account for structures whose critical details are inaccessible and whose failure tolerance differs from later design practice.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nFolklore and anniversary narratives can displace the less cinematic history of aging bridges and the federal inspection program that followed.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Silver Bridge overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "skylab-1-launch-anomaly",
+    "title": "Skylab 1: The Shield That Tore Away During Launch",
+    "dek": "The 1973 anomaly threatened America's first space station before its crew ever reached orbit.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "design loads",
+      "nasa"
+    ],
+    "description": "The 1973 anomaly threatened America's first space station before its crew ever reached orbit.",
+    "socialPreview": "The 1973 anomaly threatened America's first space station before its crew ever reached orbit.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "NASA Technical Reports Server, initial flight anomalies of Skylab 1",
+        "url": "https://ntrs.nasa.gov/citations/19930015503",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Skylab 1: The Shield That Tore Away During Launch against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 638,
+    "publishedInArchive": false,
+    "body": "During Skylab's launch in May 1973, aerodynamic forces tore away its micrometeoroid shield and damaged its solar-array system. Engineers and astronauts then improvised ways to control temperature and restore power in orbit.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace the launch anomalies, shield breakup, array damage and thermal consequences using telemetry and the investigation's load analysis.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSkylab asks how a protective structure can introduce a launch hazard, and how mission recovery balances incomplete ground testing with crew exposure during repair.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe successful repair makes an inspiring ending, but it can obscure the design assumptions and close calls that put the station at risk before rescue began.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with NASA Technical Reports Server, initial flight anomalies of Skylab 1. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "sl1-reactor-accident",
+    "title": "SL-1: A Control Rod, a Prompt Critical Excursion and an Isolated Reactor",
+    "dek": "The 1961 Idaho accident became a difficult investigation of reactor design, maintenance and an uncertain human action.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "nuclear safety",
+      "reactor",
+      "idaho"
+    ],
+    "description": "The 1961 Idaho accident became a difficult investigation of reactor design, maintenance and an uncertain human action.",
+    "socialPreview": "The 1961 Idaho accident became a difficult investigation of reactor design, maintenance and an uncertain human action.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "SL-1 overview",
+        "url": "https://en.wikipedia.org/wiki/SL-1",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for SL-1: A Control Rod, a Prompt Critical Excursion and an Isolated Reactor against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "The Stationary Low-Power Reactor Number One was destroyed during maintenance in January 1961, killing the three operators present. Investigation concluded that a central control rod had been withdrawn far beyond its normal position, producing a rapid power excursion.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain control-rod worth, manual movement, steam generation and vessel motion while refusing to present a disputed reason for the rod withdrawal as established fact.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSL-1 asks why one manually movable component could introduce such reactivity and how staffing, maintenance procedure and reactor design shared responsibility.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nSpeculation about motive often overwhelms the engineering evidence; the article must protect the boundary between physical finding and unknowable intent.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with SL-1 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "soma-mine-disaster-2014",
+    "title": "Soma: Fire, Evacuation and the Governance of a Privatized Mine",
+    "dek": "The 2014 Turkish mine disaster exposed questions about fire development, self-rescue and inspection.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "mining",
+      "labor",
+      "turkey"
+    ],
+    "description": "The 2014 Turkish mine disaster exposed questions about fire development, self-rescue and inspection.",
+    "socialPreview": "The 2014 Turkish mine disaster exposed questions about fire development, self-rescue and inspection.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Soma mine disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Soma_mine_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Soma: Fire, Evacuation and the Governance of a Privatized Mine against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "A fire at a coal mine in Soma, Turkey, in May 2014 trapped a large underground workforce. The disaster generated technical investigations, criminal cases and national arguments about labor conditions and privatization.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must compare accounts of the fire's origin, smoke movement, power loss and evacuation, and it must avoid converting contested courtroom claims into settled engineering findings.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSoma raises questions about subcontracting, production incentives, inspection independence and whether emergency equipment matched the time needed to reach safety.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nLarge casualty figures drive remembrance, while shift organization, worker testimony and the differences among investigations require more patient reporting.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Soma mine disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "soyuz-1-parachute-failure",
+    "title": "Soyuz 1: A Troubled Mission and the Final Parachute Sequence",
+    "dek": "The 1967 mission ended in a fatal landing failure after problems accumulated in orbit.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "parachutes",
+      "soviet union"
+    ],
+    "description": "The 1967 mission ended in a fatal landing failure after problems accumulated in orbit.",
+    "socialPreview": "The 1967 mission ended in a fatal landing failure after problems accumulated in orbit.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Soyuz 1 overview",
+        "url": "https://en.wikipedia.org/wiki/Soyuz_1",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Soyuz 1: A Troubled Mission and the Final Parachute Sequence against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 624,
+    "publishedInArchive": false,
+    "body": "Cosmonaut Vladimir Komarov died when Soyuz 1 crashed during return in April 1967 after a mission marked by spacecraft malfunctions. The article separates documented orbital problems from the parachute failure during descent.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must verify deployment sequence, container behavior, reserve-parachute interaction and landing-system design through technical histories rather than repeated dramatic anecdotes.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSoyuz 1 raises questions about test evidence, launch pressure and how dissent was recorded inside a secretive program where later memoirs carry uneven reliability.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nStories of final transmissions and political pressure often circulate without primary support, making source discipline central to any retelling.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Soyuz 1 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "soyuz-11-depressurization",
+    "title": "Soyuz 11: A Valve, a Pressure Loss and a Cabin Without Suits",
+    "dek": "The 1971 return from Salyut 1 exposed how spacecraft capacity and pressure protection were traded.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "spaceflight",
+      "depressurization",
+      "soviet union"
+    ],
+    "description": "The 1971 return from Salyut 1 exposed how spacecraft capacity and pressure protection were traded.",
+    "socialPreview": "The 1971 return from Salyut 1 exposed how spacecraft capacity and pressure protection were traded.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Soyuz 11 overview",
+        "url": "https://en.wikipedia.org/wiki/Soyuz_11",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Soyuz 11: A Valve, a Pressure Loss and a Cabin Without Suits against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 637,
+    "publishedInArchive": false,
+    "body": "The Soyuz 11 crew died during return to Earth in June 1971 after their capsule depressurized. Recovery teams found the spacecraft landed automatically, shifting investigation toward a ventilation valve and the absence of pressure suits.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must establish separation events, valve opening, pressure decay and the crew's possible response from telemetry and design records, not from invented cockpit dialogue.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe event asks how seating capacity, suit use and automatic landing design distributed risk, and how one valve's behavior was protected against a dynamic separation environment.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nSuccess aboard the first space station can frame the deaths as a return accident detached from the program choices that shaped cabin survival.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Soyuz 11 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "ss-eastland",
@@ -1587,6 +4867,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "The Eastland capsized beside a Chicago River dock on 24 July 1915 while loaded for a Western Electric excursion. The Encyclopedia of Chicago reports 844 deaths. The vessel had scarcely begun its journey, and proximity to the city offered little protection to passengers unable to get out.\n\nThe disaster occurred beside a dock, not far out at sea. Distance from shore could not substitute for stability or a way out of enclosed spaces. Those protections depended on the vessel's design, loading and usable routes of escape.\n\n## Safety depends on the whole vessel\n\nBeing close to shore can create a powerful impression of safety. It does not remove the need for stability, usable exits or a way out of an enclosed space. The Eastland's location is part of what makes the loss so difficult to understand through ordinary intuitions about maritime danger.\n\nThe institutional history supplies the basic chronology. A technical explanation of loading, modifications and stability requires the vessel's records and investigations.\n\nThe relevant distinction is between adding a safety measure and assessing the resulting system. A change made for one purpose can alter another property. This does not mean that safety rules are inherently counterproductive. It means that a vessel must be evaluated as an arrangement whose parts interact, rather than as a checklist of independently reassuring features.\n\nThe setting of a company excursion also matters. A passenger list is a record of a social world, including households and workplaces, not merely an input to a casualty calculation. An account that preserves only the mechanics can lose the community significance of the event.\n\nThe riverbank was nearby, but reachability depended on access from inside the ship. A view of the hull from shore cannot explain the conditions in its compartments.\n\n## Changes to a whole vessel\n\nThe Encyclopedia of Chicago describes alterations affecting Eastland's stability before the disaster, as well as additional lifeboats and rafts in 1915. This history makes a simple explanation based on one safety measure inadequate. A ship's stability depends on the relationship among its hull, loading, weight distribution, and operation. An equipment change can matter within that relationship without being the sole cause of a capsizing.\n\nThe short entry cannot establish a numerical stability margin or allocate a precise share of responsibility to each alteration. Those questions need plans, loading records and engineering analysis. The evidence supports examining equipment changes as part of the vessel, rather than assigning the disaster to one reassuring or harmful feature.\n\nA short excursion brought households and workplaces aboard the same ship. The loss at the dock belongs to that community history. Explaining why the vessel capsized still requires the loading, design and investigation records that a casualty total cannot supply."
   },
   {
+    "slug": "st-francis-dam-collapse",
+    "title": "St. Francis Dam: Design Authority and the Evidence Left Downstream",
+    "dek": "The 1928 collapse in California transformed a water project into a question of engineering judgment and state oversight.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "dam failure",
+      "engineering",
+      "california"
+    ],
+    "description": "The 1928 collapse in California transformed a water project into a question of engineering judgment and state oversight.",
+    "socialPreview": "The 1928 collapse in California transformed a water project into a question of engineering judgment and state oversight.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "St. Francis Dam overview",
+        "url": "https://en.wikipedia.org/wiki/St._Francis_Dam",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for St. Francis Dam: Design Authority and the Evidence Left Downstream against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 644,
+    "publishedInArchive": false,
+    "body": "The St. Francis Dam failed in March 1928, sending a destructive flood through the Santa Clara River valley. This draft examines design changes, geologic interpretation, warning observations and the authority concentrated in one water system.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe failure account must distinguish what was visible before collapse from mechanisms inferred through later structural and geologic analysis. Contemporary photographs, design records and inquiry testimony should anchor the sequence.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe central issue is how an institution reviews the judgment of a celebrated engineer when the same organization depends on his authority and project.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe collapsed dam is often treated as one man's failure, which can hide the absence of independent review and the communities erased from early official counts.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with St. Francis Dam overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "station-nightclub-available-seconds",
     "title": "The Time a Room Gives You",
     "dek": "The Station nightclub investigation makes escape a relationship between fire growth, layout and human movement.",
@@ -1632,6 +4952,126 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 502,
     "publishedInArchive": false,
     "body": "The 2003 fire at The Station nightclub in Rhode Island killed 100 people. NIST investigated how pyrotechnics ignited foam, how conditions inside the building deteriorated and how occupants tried to escape. The inquiry connects fire growth with the time and routes available for evacuation.\n\nEscape depended on more than the number of doors. Occupants had to reach and pass through a usable route before heat, smoke and congestion closed that opportunity. The materials that fed the fire and the systems available to suppress it helped set the time limit.\n\n## Two clocks in the same room\n\nNIST's account records crowding at the main entrance and the absence of sprinklers. It also describes a mockup experiment in which an installed sprinkler system controlled the test fire. That experiment supplies evidence about suppression under its test conditions; it is not a filmed alternative outcome for every person in the actual nightclub. [NIST investigation, fire protection and emergency egress findings](https://www.nist.gov/disaster-failure-studies/station-nightclub-fire-2003).\n\nThe conceptual problem involves two clocks. One measures how long occupants need to escape. The other measures how long the environment remains survivable along the routes they must use. Counting doors addresses only part of the first clock. Materials and suppression affect the second. The clocks interact because worsening conditions can slow movement while simultaneously shortening the time left.\n\nCrowding and smoke constrain movement even when people make reasonable choices. Attributing the outcome to panic bypasses the physical conditions the investigation examined.\n\n## A route on paper is not an evacuation\n\nAn exit count is a static description. Escape is a process. People have to recognize danger, find a route, reach it and move through it while visibility, heat and available space may be changing. These steps can overlap, and the slowest constraint can govern the whole process.\n\nAn alternative door may look obvious on a retrospective floor plan. That view does not establish what an occupant could see or reach as conditions changed.\n\nIt also matters how an investigation establishes its timing. A video, a laboratory experiment and a computer model are different kinds of evidence. A model can test a mechanism under stated assumptions. It cannot become a recording of an event merely because its animation is convincing. Experimental reconstruction is most useful when the reader can see both what was reproduced and what remained uncertain.\n\n## Before anyone needs to decide\n\nEvacuation decisions take place within conditions established before the emergency: materials, layout, suppression and recognizable exits. Examining behavior requires examining those conditions too.\n\nA venue's ordinary atmosphere is part of the challenge. People come to listen, watch and gather, not to conduct an inspection. Safety has to exist before visitors are required to understand every relevant hazard. The everyday use of a room should not demand expert knowledge as a condition of survival.\n\nThe exits and the fire cannot be assessed separately. One governed where people could go; the other governed how long they had to get there. That relationship, rather than a count of doors, is central to the investigation."
+  },
+  {
+    "slug": "sunshine-mine-fire-1972",
+    "title": "Sunshine Mine: Smoke, Self-Rescue and the Route Out",
+    "dek": "The 1972 fire in Idaho turned evacuation equipment and underground communication into life-or-death infrastructure.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "mining",
+      "fire",
+      "idaho"
+    ],
+    "description": "The 1972 fire in Idaho turned evacuation equipment and underground communication into life-or-death infrastructure.",
+    "socialPreview": "The 1972 fire in Idaho turned evacuation equipment and underground communication into life-or-death infrastructure.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Sunshine Mine disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Sunshine_Mine",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Sunshine Mine: Smoke, Self-Rescue and the Route Out against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 642,
+    "publishedInArchive": false,
+    "body": "A fire in the Sunshine silver mine in Idaho in May 1972 filled underground workings with smoke and toxic gases. The draft examines warning, evacuation routes, breathing protection and the long wait for two surviving miners.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology must establish where the fire developed, how smoke traveled, what workers were told and which escape routes and respirators were available at different locations.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe systems question is whether emergency equipment and training were designed for the actual distance, atmosphere and confusion workers would face rather than for a nominal escape scenario.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe survival of two miners after days underground is compelling, but it should not eclipse the evacuation barriers experienced by the larger workforce.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Sunshine Mine disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "surfside-condominium-collapse",
+    "title": "Champlain Towers South: Deterioration, Recertification and Collapse",
+    "dek": "The 2021 Surfside collapse brought aging concrete, repair planning and local oversight into one investigation.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "building failure",
+      "concrete",
+      "florida"
+    ],
+    "description": "The 2021 Surfside collapse brought aging concrete, repair planning and local oversight into one investigation.",
+    "socialPreview": "The 2021 Surfside collapse brought aging concrete, repair planning and local oversight into one investigation.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Surfside condominium collapse overview",
+        "url": "https://en.wikipedia.org/wiki/Surfside_condominium_collapse",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Champlain Towers South: Deterioration, Recertification and Collapse against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 618,
+    "publishedInArchive": false,
+    "body": "Part of Champlain Towers South in Surfside, Florida, collapsed in June 2021. Investigators examined structural design, deterioration, waterproofing, pool-deck conditions, inspection and repairs that had not yet begun.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate observed deterioration, engineering recommendations, hypothesized initiation zones and findings confirmed by physical and modeling evidence.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nSurfside asks how condominium governance, reserve funding, engineering advice and municipal recertification manage expensive risks that worsen slowly but can fail suddenly.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nImages of the collapse are immediate; the years of correspondence, concrete damage and deferred decisions require a slower documentary narrative.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Surfside condominium collapse overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "t2-laboratories-reactor-explosion",
+    "title": "T2 Laboratories: When Scale-Up Outran Cooling",
+    "dek": "A runaway reaction in Jacksonville made process scale-up and relief design matters of public record.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "chemical safety",
+      "reactor",
+      "scale-up"
+    ],
+    "description": "A runaway reaction in Jacksonville made process scale-up and relief design matters of public record.",
+    "socialPreview": "A runaway reaction in Jacksonville made process scale-up and relief design matters of public record.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "CSB T2 Laboratories final report",
+        "url": "https://www.csb.gov/assets/1/20/t2_final_copy_9_17_09.pdf",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for T2 Laboratories: When Scale-Up Outran Cooling against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 644,
+    "publishedInArchive": false,
+    "body": "A reactor exploded at T2 Laboratories in Jacksonville, Florida, in December 2007 during production of a gasoline additive. The draft centers on heat generation, cooling capacity and what changed as a process moved beyond laboratory scale.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must explain reaction acceleration and pressure development without implying that a single temperature reading tells the whole story. Relief design, cooling reliability and available hazard testing require separate treatment.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe broader question is how a smaller company obtains, interprets and acts on reactive-hazard knowledge when scaling a process and designing emergency protection.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nRunaway reaction is a useful technical description, but it can obscure the prior design choices that determined whether runaway conditions were anticipated and survivable.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with CSB T2 Laboratories final report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "tacoma-wind-in-the-system",
@@ -1681,6 +5121,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "The Tacoma Narrows Bridge's deck twisted as the bridge collapsed in November 1940. Washington State's transportation history identifies the principal failure mechanism as torsional flutter: an instability sustained by the interaction between the deck's motion and aerodynamic forces.\n\nThe film shows the twisting deck. It cannot, by itself, explain why the movement grew. That requires following the interaction: the wind moved the bridge, the moving bridge altered the airflow, and the changed forces acted on the deck again.\n\n### The moving boundary\n\nThe conceptual shift is to consider a coupled system. Air moves around the structure; the structure moves in response; that movement changes the air flow. Under some conditions, the interaction can amplify motion instead of damping it. This broad explanation still requires a specific analysis before it can describe a particular design quantitatively.\n\nIt also shows why a spectacular video can be both valuable and misleading. The video preserves motion. Viewers supply a story about what caused it, often borrowing an analogy they already know. A familiar analogy makes an explanation memorable, but its familiarity does not establish that it is physically adequate.\n\nA reader can follow the feedback without a complete mathematical model: motion changes airflow, airflow changes force and the resulting force can amplify motion.\n\n### Two ways for motion to grow\n\nWSDOT identifies the principal failure mechanism as torsional flutter. Torsion means twisting; flutter here concerns an instability sustained through the interaction of motion and aerodynamic forces. In the account, vertical movement gave way to twisting, and the motion of the deck altered the forces acting on it.\n\nCompare that with the familiar image of pushing a swing. The swing analogy focuses on an external push delivered at a favorable time. It can help a reader imagine growing motion, but it leaves the pushing agent separate from the moving object. In an aeroelastic system, changing the object's motion changes the aerodynamic interaction itself. That distinction is why simply naming resonance can obscure the explanation.\n\nThe source's historical discussion is not a complete mathematical model of the bridge. Its vocabulary nevertheless points to the right object of analysis: a deck moving within a flow, with resistance to twisting and capacity to dissipate energy. A still photograph cannot show those relationships. Even a film needs interpretation to identify them.\n\nA schematic can distinguish vertical displacement from deck rotation, but it cannot turn the footage into a measurement of aerodynamic forces.\n\n### What failure teaches a profession\n\nA failed structure offers evidence that a design process did not capture something important. It does not automatically reveal what every engineer should have known before construction. That question needs contemporary knowledge, design assumptions and the evidence available at the time.\n\nThe failure exposes a limit in the model used to understand a structure. Assessing what engineers could have known beforehand requires the contemporary design record and technical knowledge.\n\nThe decisive relationship was between a moving deck and the air flowing around it. Torsional flutter names that interaction. It explains more than an image of wind pushing against a stationary structure can."
   },
   {
+    "slug": "taum-sauk-reservoir-failure",
+    "title": "Taum Sauk: A Reservoir Without a Spillway Margin",
+    "dek": "The 2005 upper-reservoir failure joined instrumentation, operating practice and design philosophy.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "dam failure",
+      "instrumentation",
+      "missouri"
+    ],
+    "description": "The 2005 upper-reservoir failure joined instrumentation, operating practice and design philosophy.",
+    "socialPreview": "The 2005 upper-reservoir failure joined instrumentation, operating practice and design philosophy.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Taum Sauk pumped storage plant overview",
+        "url": "https://en.wikipedia.org/wiki/Taum_Sauk_Hydroelectric_Power_Station",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Taum Sauk: A Reservoir Without a Spillway Margin against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 630,
+    "publishedInArchive": false,
+    "body": "The upper reservoir of the Taum Sauk pumped-storage plant in Missouri overtopped and failed in December 2005. The draft examines water-level instruments, operating limits and the consequences of a structure designed without a conventional spillway.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe sequence must identify instrument displacement or error, pump operation, overtopping and embankment breach, using regulatory findings rather than treating overtopping as the unexplained cause.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nTaum Sauk asks whether independent protective layers exist when normal operation and overfill prevention rely on related instruments and assumptions.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe dramatic flood through a state park can eclipse the small measurement discrepancies and procedural decisions that accumulated beforehand.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Taum Sauk pumped storage plant overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "tenerife-runway-collision",
+    "title": "Tenerife: Radio Language, Fog and Two Aircraft on One Runway",
+    "dek": "The 1977 collision was not one misunderstood phrase but a chain involving diversion, visibility and cockpit coordination.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "aviation",
+      "communication",
+      "canary islands"
+    ],
+    "description": "The 1977 collision was not one misunderstood phrase but a chain involving diversion, visibility and cockpit coordination.",
+    "socialPreview": "The 1977 collision was not one misunderstood phrase but a chain involving diversion, visibility and cockpit coordination.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Tenerife airport disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Tenerife_airport_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Tenerife: Radio Language, Fog and Two Aircraft on One Runway against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "Two Boeing 747 aircraft collided on the runway at Los Rodeos Airport in March 1977 after diversions crowded the airport and fog reduced visibility. The draft reconstructs ground movement, radio exchanges and the takeoff decision.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology must follow each aircraft's location and each transmission, noting blocked messages and differences between words spoken, heard and interpreted.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nTenerife asks how standardized phraseology, cockpit hierarchy, airport surface surveillance and traffic-flow decisions manage ambiguity when several safeguards degrade together.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe event is often reduced to one captain's action, which can hide the diversion, congestion, weather and communication system surrounding that action.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Tenerife airport disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "teton-dam-failure-1976",
+    "title": "Teton Dam: Seepage, Erosion and a Federal Project's Collapse",
+    "dek": "The 1976 Teton Dam failure turned internal erosion and design review into public evidence.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "dam failure",
+      "federal projects",
+      "idaho"
+    ],
+    "description": "The 1976 Teton Dam failure turned internal erosion and design review into public evidence.",
+    "socialPreview": "The 1976 Teton Dam failure turned internal erosion and design review into public evidence.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Teton Dam overview",
+        "url": "https://en.wikipedia.org/wiki/Teton_Dam",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Teton Dam: Seepage, Erosion and a Federal Project's Collapse against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "The newly completed Teton Dam in Idaho failed during initial reservoir filling in June 1976. The breach and downstream flooding forced examination of foundation conditions, seepage control, construction and review inside a federal water agency.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe chronology should follow observed leaks, attempts to respond, breach development and evacuation while separating eyewitness interpretation from later findings about internal erosion.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case tests whether a large project can receive genuinely independent review when schedule, institutional confidence and technical specialization all favor completion.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nVideo of the widening breach is vivid, but it can obscure the years of design decisions that made the failure possible during the first filling.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Teton Dam overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "texas-city-ammonium-nitrate-1947",
+    "title": "Texas City: When a Burning Cargo Became a Harbor Disaster",
+    "dek": "The 1947 explosions at Texas City connect hazardous cargo, waterfront industry and emergency response across one port system.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "industrial safety",
+      "maritime",
+      "texas"
+    ],
+    "description": "The 1947 explosions at Texas City connect hazardous cargo, waterfront industry and emergency response across one port system.",
+    "socialPreview": "The 1947 explosions at Texas City connect hazardous cargo, waterfront industry and emergency response across one port system.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Texas City disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Texas_City_disaster",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Texas City: When a Burning Cargo Became a Harbor Disaster against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 665,
+    "publishedInArchive": false,
+    "body": "In April 1947, a fire aboard the Grandcamp in Texas City preceded an ammonium-nitrate explosion that devastated the waterfront and was followed by another ship explosion. This draft asks how cargo handling, fire response and nearby industrial facilities turned an emergency aboard one vessel into a city-scale catastrophe.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe record must distinguish the initial cargo fire, the first explosion, secondary industrial damage and the later High Flyer explosion. It must also separate contemporary descriptions of smoke and firefighting from later explanations of ammonium nitrate behavior.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe central systems question is how a port governs incompatible risks when ships, warehouses, refineries, rail lines and residential districts share the same geography.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nTexas City is frequently remembered through a single blast image, which can hide the sequence between the first warning, evacuation choices, cascading damage and the second vessel.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Texas City disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "times-beach-dioxin",
     "title": "Times Beach: Contaminated Road Oil and the Decision to Relocate",
     "dek": "Times Beach links routine dust control to persistent contamination and a decision to relocate a community. The sequence matters: waste disposal, the flood, recognition of contamination and relocation were distinct developments.",
@@ -1726,6 +5326,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 439,
     "publishedInArchive": true,
     "body": "Waste oil spread to suppress dust on Times Beach's roads carried a danger residents could not identify from its immediate use. Investigators later found dioxin contamination. A major flood covered the Missouri town in December 1982, and federal agencies recommended permanent relocation.\n\nThe retrospective reports that more than 2,000 residents left. Contamination, flooding, relocation and disposal followed distinct stages. The flood brought a new emergency to an existing contamination problem; it did not create that problem or the Superfund law enacted in 1980.\n\n## A road can distribute more than traffic\n\nDust control is an ordinary municipal problem. A substance spread for that purpose can become difficult to recognize as a hazard precisely because its immediate effect is useful. The road looks better while the history of the material applied to it remains elsewhere.\n\nThis makes provenance a practical environmental question. Where did the oil come from? What did its supplier know about its contents? Which records connected the source material to the places where it was used? A contaminant's movement can depend on a commercial or maintenance chain that residents never see.\n\nThe flood is a dated event in a longer contamination history. It cannot serve as the single explanation for the material's arrival, its recognition and the decisions made afterward.\n\nEPA supplies an institutional chronology. Local records and residents' accounts are needed to explain how a technical relocation decision became the loss of a community.\n\nRemoving material, restricting land use and qualifying a site for a new purpose are different cleanup outcomes. None can establish that the earlier town was restored.\n\n## Several clocks in one disaster\n\nEPA's retrospective separates a history of waste-oil disposal from the flood and relocation decisions. Superfund legislation existed in 1980, before the 1982 flood. The flood did not create that law. Mixing those dates would turn a complicated response into an attractive but inaccurate origin story.\n\nThe contamination, its recognition, the decision that residents should not return, and the later cleanup each followed a different timetable. Their order matters because people made decisions using the knowledge available at each stage. A later account can identify a contaminated mixture without establishing that every earlier recipient understood its composition. Equally, an emergency evacuation does not describe the whole process of acquiring properties and managing waste. Preserving these separate clocks explains how an environmental incident became a long public project, rather than ending when the immediate water receded.\n\nThe floodwater receded. The contaminated material still required decisions about return, property acquisition and disposal. Times Beach became a continuing public project because the end of the flood did not mark the end of the hazard."
+  },
+  {
+    "slug": "tokaimura-criticality-1999",
+    "title": "Tokaimura: A Bucket, a Precipitation Tank and a Criticality",
+    "dek": "The 1999 Japanese fuel-processing accident linked improvised work practice to nuclear geometry.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Science",
+    "tags": [
+      "nuclear safety",
+      "criticality",
+      "japan"
+    ],
+    "description": "The 1999 Japanese fuel-processing accident linked improvised work practice to nuclear geometry.",
+    "socialPreview": "The 1999 Japanese fuel-processing accident linked improvised work practice to nuclear geometry.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Tokaimura nuclear accidents overview",
+        "url": "https://en.wikipedia.org/wiki/Tokaimura_nuclear_accidents",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Tokaimura: A Bucket, a Precipitation Tank and a Criticality against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 634,
+    "publishedInArchive": false,
+    "body": "A criticality accident occurred at a JCO fuel-processing plant in Tokaimura in September 1999 after workers added enriched uranium solution to a vessel. The reaction continued intermittently until responders altered the surrounding conditions.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe draft must explain concentration, vessel geometry, neutron moderation and the sequence used to stop the reaction without turning technical explanation into a claim about individual understanding.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nTokaimura asks how unofficial procedures become normal production practice and how regulators assess work that has drifted away from the licensed process.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe use of buckets is visually shocking, but the deeper record concerns organizational approval of shortcuts and the absence of criticality emergency preparation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Tokaimura nuclear accidents overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "torrey-canyon-oil-spill",
+    "title": "Torrey Canyon: Grounding, Detergent and the First Super-Spill Response",
+    "dek": "The 1967 tanker grounding forced Britain and France to improvise environmental response at sea and on shore.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "oil spill",
+      "maritime",
+      "united kingdom"
+    ],
+    "description": "The 1967 tanker grounding forced Britain and France to improvise environmental response at sea and on shore.",
+    "socialPreview": "The 1967 tanker grounding forced Britain and France to improvise environmental response at sea and on shore.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Torrey Canyon oil spill overview",
+        "url": "https://en.wikipedia.org/wiki/Torrey_Canyon_oil_spill",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Torrey Canyon: Grounding, Detergent and the First Super-Spill Response against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 632,
+    "publishedInArchive": false,
+    "body": "The tanker Torrey Canyon grounded near Cornwall in March 1967 and released oil across the English Channel. Authorities used detergents and bombing in efforts to limit the spill, creating additional questions about ecological harm.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate the navigation and grounding sequence from the breakup, oil movement and effects of response chemicals, using contemporary technical assessments.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nTorrey Canyon asks what happens when vessel ownership, flag, cargo, coastal impact and response authority cross national and legal boundaries.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe extraordinary bombing effort is memorable, but the improvised use of toxic dispersants and the absence of prepared international liability systems carry the longer legacy.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Torrey Canyon oil spill overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "toshiba-impossible-targets",
@@ -1869,6 +5549,86 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "The U.S. Public Health Service study at Tuskegee enrolled 600 Black men in 1932 without informed consent, according to CDC's history. Participants were not offered penicillin when it became an established treatment. The study continued until 1972.\n\nOf the 600 men, 399 had late-latent syphilis and 201 did not. The figures do not establish that researchers infected participants. CDC's documented account concerns a different abuse: men were studied without informed consent and were not offered an established treatment.\n\n### What the study needed\n\nEvery research design makes something count as useful information. The ethical question is what the design asks people to bear so that this information remains available. If effective treatment would interrupt a desired observation, the conflict belongs in the center of the account, not in a paragraph of caveats after the findings.\n\nThe word participant can also mislead when meaningful agreement is absent. It may describe someone included in a dataset without describing someone who understood and accepted the arrangement. Inclusion is an administrative fact; consent is a relationship of information and choice.\n\nHistorical context requires identifying available treatment, institutional knowledge and the alternatives participants were allowed. It cannot make those choices disappear behind a general claim that standards were different.\n\n### What the groups actually counted\n\nCDC distinguishes 399 men who already had late-latent syphilis when recruited from a control group of 201 men without the disease. The total of 600 therefore does not mean 600 men with syphilis. This distinction changes what the study's population describes, while leaving the central ethical finding intact.\n\nCDC also records that community members understood the arrangement as a special government health care program. That understanding belongs beside the absence of informed consent. An institution can know that someone is inside a study while the person understands the relationship as an offer of care. Those descriptions concern the same encounter, but they do not imply the same choices.\n\nThe ethical problem becomes sharper when circumstances change. Information supplied at entry, even if it had been adequate, would not answer every question arising over four decades. Available treatment changes what continued observation asks of a person. Continuing to use the original research objective as the governing frame makes the person's opportunity for care subordinate to the study's continuity.\n\nAn institution acts through the information and care it controls. Withholding effective treatment changes a person's circumstances even when researchers did not introduce the disease.\n\n### Beyond the emblem\n\nInvoking Tuskegee as a symbol can obscure the specific study, populations and decisions involved. The record is strongest when those remain visible.\n\nThe case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.\n\nPenicillin changed the medical options. The study continued to pursue observations of untreated disease. Withholding treatment was therefore part of the research decision, not an absence of action outside the study."
   },
   {
+    "slug": "united-airlines-232-sioux-city",
+    "title": "United 232: Improvised Control After Total Hydraulic Loss",
+    "dek": "The 1989 DC-10 accident showed both the reach and the limit of crew improvisation after an uncontained engine failure.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Technology",
+    "tags": [
+      "aviation",
+      "hydraulics",
+      "crew coordination"
+    ],
+    "description": "The 1989 DC-10 accident showed both the reach and the limit of crew improvisation after an uncontained engine failure.",
+    "socialPreview": "The 1989 DC-10 accident showed both the reach and the limit of crew improvisation after an uncontained engine failure.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "United Airlines Flight 232 overview",
+        "url": "https://en.wikipedia.org/wiki/United_Airlines_Flight_232",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for United 232: Improvised Control After Total Hydraulic Loss against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 627,
+    "publishedInArchive": false,
+    "body": "United Airlines Flight 232 lost all three hydraulic systems after an engine disk failure in July 1989. The crew used differential thrust to reach Sioux City, where the aircraft crashed during landing.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe account must connect metallurgical findings in the fan disk to hydraulic-line damage and then distinguish limited directional control from normal flight control.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nUnited 232 asks how designers evaluate supposedly independent systems when they share physical space and can be severed by one energetic failure.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe cockpit teamwork is rightly remembered, but celebration of improvisation should not replace analysis of common-location vulnerability and rescue preparation.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with United Airlines Flight 232 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "upper-big-branch-mine-disaster",
+    "title": "Upper Big Branch: Production Pressure and the Coal-Dust Chain",
+    "dek": "The 2010 explosion became an investigation of ventilation, dust control, enforcement and management conduct.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "mining",
+      "regulation",
+      "west virginia"
+    ],
+    "description": "The 2010 explosion became an investigation of ventilation, dust control, enforcement and management conduct.",
+    "socialPreview": "The 2010 explosion became an investigation of ventilation, dust control, enforcement and management conduct.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "West Virginia Upper Big Branch investigative report",
+        "url": "https://minesafety.wv.gov/upper-big-branch-investigative-report/",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Upper Big Branch: Production Pressure and the Coal-Dust Chain against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 633,
+    "publishedInArchive": false,
+    "body": "An explosion at the Upper Big Branch mine in West Virginia in April 2010 killed miners across a large underground area. Multiple investigations examined methane ignition, coal-dust propagation, ventilation and management practices.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must compare the findings and terminology of federal, state and independent investigations, noting where they converge and where legal proceedings use a different standard.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nUpper Big Branch tests whether inspection citations, internal warnings and production decisions formed a signal strong enough to trigger intervention before catastrophe.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nA single ignition point is easier to narrate than the maintained conditions that allowed an explosion to travel through the mine.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with West Virginia Upper Big Branch investigative report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "uss-akron",
     "title": "USS Akron and the Limits of a Flying Carrier",
     "dek": "USS Akron combined a naval airship with the ambition of carrying aircraft. Its loss and surviving artifacts document parts of that history, but a collection record cannot supply a complete account of the final flight or rescue.",
@@ -1971,6 +5731,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "body": "On the night of 9 October 1963, a vast section of Monte Toc slid into the Vajont reservoir in northern Italy. The movement displaced the water with extraordinary force. A wave struck settlements along the reservoir, crossed the crest of the dam and descended into the Piave valley, destroying Longarone and other inhabited areas below.\n\nThe Italian Department of Civil Protection records 1,917 deaths. Four hundred people were never found.\n\nCalling Vajont a dam disaster is understandable but incomplete. It invites the familiar image of a barrier breaking and releasing the lake behind it. The official account describes a more unsettling mechanism. The dam remained, while a volume entering the reservoir turned stored water into a wave that the dam's height could not contain.\n\nVajont is therefore a story about the boundary of a design. A structure can survive the event applied to it and still sit at the center of a catastrophe.\n\n## A reservoir inside a mountainside\n\nThe Vajont dam, built in 1959, stood more than 260 metres high. Its reservoir was intended to collect water from artificial lakes in the Cadore region and channel it toward the Soverzene power plant. The infrastructure joined a narrow Alpine valley to a wider hydroelectric system.\n\nThat geography was not background scenery. The reservoir occupied a steep-sided valley beneath Monte Toc. Civil Protection's English account says the dam was built without adequately considering slopes that were unsuitable for containing a hydroelectric reservoir. A complete explanation of how that judgment was reached—and what was known by whom—requires the Italian technical and judicial record. This draft does not invent that missing review.\n\nThe established physical sequence is sufficient to correct a common misconception. Civil Protection's official timeline gives the landslide volume as about 270 million cubic metres. Its account places the volume of the generated wave at about 50 million cubic metres.\n\nThose are not interchangeable quantities. Rock and earth entered the basin; water was displaced; different parts of the wave moved in different directions through a confined landscape.\n\n## The barrier was overtopped\n\nWater first struck Erto and Casso, settlements on the reservoir's slopes. The wave also passed over the dam and into the valley below. Longarone, on the valley floor, was flooded and destroyed.\n\nThe distinction between structural survival and system safety matters here. A dam can be strong enough not to rupture and still be unable to protect what lies downstream from water forced over its crest. The hazard was not limited to water that might pass through a broken wall. It included water displaced above and around the wall by a rapid mass entering the reservoir.\n\nThis is why the phrase “the dam held” is not a safety verdict. It answers a narrow structural question. It does not answer whether the reservoir, slopes, operating conditions and downstream settlements formed a safe system.\n\nLikewise, saying that a landslide caused the wave does not make the reservoir incidental. The slide entered a body of stored water in a confined basin. The resulting displacement linked the mountain to communities on both sides of the dam.\n\n## A map of unequal consequences\n\nThe physical event crossed several geographic zones in moments, but its effects were not uniform. Settlements near the reservoir were struck by water moving up and across the slopes. The wave that overtopped the dam then descended toward the inhabited valley floor. Longarone became the place most associated with the disaster because of the scale of its destruction.\n\nAn accurate map would do more than orient the reader. It would show why a single label can obscure the event: Monte Toc, the reservoir, Erto and Casso, the dam crest, and Longarone belong to one sequence but occupy different positions within it.\n\nThe official toll also carries an evidentiary warning. Civil Protection reports both 1,917 dead and 400 people never found. The second figure is not an invitation to alter the first. It identifies a continuing absence within the total record and a human limit on recovery after mass destruction.\n\n## What this account does not settle\n\nThe disaster has a long history of warnings, technical assessments, operating decisions, legal proceedings and public memory. Those subjects demand more than an English-language overview. A defensible article about responsibility would need the original reports, dated correspondence, reservoir-level records, testimony and judgments, reviewed by someone able to assess the Italian sources in context.\n\nThis draft therefore stops before attributing knowledge or motive to individuals and institutions. It does not turn an official summary's statement about unsuitable slopes into a detailed chronology of ignored warnings. It does not assign a speed to the landslide, a height to every part of the wave, or a precise time to each impact without a checked technical source.\n\nRestraint does not weaken the central account. The documented mechanism is already consequential. A mountainside entered an engineered reservoir. The water crossed a dam that remained standing. Communities beyond the structure's apparent boundary were destroyed.\n\nVajont resists the comforting idea that infrastructure failure must look like broken infrastructure. The concrete arch survived. The system around it did not."
   },
   {
+    "slug": "valujet-592-cargo-fire",
+    "title": "ValuJet 592: Oxygen Generators, Contract Maintenance and Cargo Rules",
+    "dek": "The 1996 Everglades crash connected mislabeled hazardous components to a fast-growing cargo fire.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "aviation",
+      "hazardous materials",
+      "outsourcing"
+    ],
+    "description": "The 1996 Everglades crash connected mislabeled hazardous components to a fast-growing cargo fire.",
+    "socialPreview": "The 1996 Everglades crash connected mislabeled hazardous components to a fast-growing cargo fire.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "ValuJet Flight 592 overview",
+        "url": "https://en.wikipedia.org/wiki/ValuJet_Airlines_Flight_592",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for ValuJet 592: Oxygen Generators, Contract Maintenance and Cargo Rules against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 626,
+    "publishedInArchive": false,
+    "body": "ValuJet Flight 592 crashed in the Florida Everglades in May 1996 after a fire developed in a cargo compartment. Chemical oxygen generators loaded as company material became central to the investigation.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must trace removal, handling, packaging, labeling, loading and activation of the generators, and explain what the cargo compartment could and could not contain.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how responsibility moves among airline, contractor, shipping personnel and regulator when hazardous items pass through several organizational boundaries.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe low-cost airline narrative can oversimplify the record; the more precise story concerns controls over outsourced maintenance and company materials.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with ValuJet Flight 592 overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
     "slug": "vela-incident",
     "title": "The Vela Incident: A Double Flash and a Disputed Explanation",
     "dek": "A satellite’s double flash made the Vela incident a disputed question rather than a settled identification. The record requires separating an observed signal, possible explanations and evidence that could corroborate a nuclear test.",
@@ -2016,6 +5816,166 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 370,
     "publishedInArchive": true,
     "body": "A Vela satellite recorded a light signal over the South Atlantic on 22 September 1979 that resembled signals associated with atmospheric nuclear explosions. An outside scientific panel later examined a nuclear event and a natural explanation, but could not assign relative probabilities to them.\n\nThe assessment survives in a declassified January 1980 memorandum. The panel identified a discrepancy in the signal and found no clear corroboration. Its inability to assign relative probabilities marks the limits of that inquiry, rather than a verdict on every argument advanced afterward.\n\n## An unresolved signal is not an empty page\n\nAn unresolved signal does not justify either a forced verdict or an explanation immune to testing. The question is which observations would distinguish the proposed causes.\n\nA sensor observation, an intelligence assessment and a later historical argument are different records. The observation establishes that a system registered something under particular conditions. An assessment interprets that registration using available information. A later argument may combine newly released material with assumptions that should be stated explicitly.\n\nThe panel's defined inquiry cannot establish the views of every intelligence organization or the weight of evidence released afterward.\n\nThe central analytical question is what would discriminate between competing explanations. A theory that can accommodate every possible absence of evidence is difficult to test. Equally, an institution's inability to obtain decisive corroboration does not automatically establish that nothing significant occurred.\n\nCompeting interpretations need identifiable proponents, evidence and limits. Their weight depends on that support, rather than an equal allocation of attention.\n\n## Uncertainty in a dated memorandum\n\nThe declassified January 1980 memorandum and attached panel report preserve a particular stage in the assessment. The panel considered both a nuclear event and a natural explanation, but could not assign relative probabilities to them. That is narrower than a finding that either explanation had been proved.\n\nLack of corroboration can weaken an interpretation without proving that no significant event occurred. A resemblance can support investigation without identifying a location, actor or cause. Each inference requires its own evidence.\n\nThe satellite recorded a signal. The panel could not determine its cause with the evidence before it. That is an unresolved finding, rather than proof either of a nuclear test or of a cover-up."
+  },
+  {
+    "slug": "volkswagen-diesel-emissions",
+    "title": "Volkswagen: Software That Recognized the Test",
+    "dek": "The diesel-emissions scandal turned calibration code, laboratory cycles and corporate claims into evidence.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "emissions",
+      "software",
+      "automotive"
+    ],
+    "description": "The diesel-emissions scandal turned calibration code, laboratory cycles and corporate claims into evidence.",
+    "socialPreview": "The diesel-emissions scandal turned calibration code, laboratory cycles and corporate claims into evidence.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Volkswagen emissions scandal overview",
+        "url": "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Volkswagen: Software That Recognized the Test against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 626,
+    "publishedInArchive": false,
+    "body": "Regulators disclosed in 2015 that Volkswagen diesel vehicles used software strategies that produced different emissions behavior under testing and ordinary driving. The case spread across models, countries and legal regimes.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain test detection, engine-control behavior and measured emissions without assuming one implementation applied identically to every affected vehicle.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nVolkswagen asks how software review, emissions certification, supplier relationships, engineering hierarchy and sales strategy interact when compliance exists partly in code.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe label defeat device is legally powerful, but the institutional story requires tracing who knew which calibrations, when, and how objections moved through the company.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Volkswagen emissions scandal overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "wells-fargo-unauthorized-accounts",
+    "title": "Wells Fargo: Sales Targets and Accounts Customers Did Not Request",
+    "dek": "The unauthorized-accounts scandal connected branch-level conduct to incentive design and executive oversight.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "banking",
+      "consumer protection",
+      "incentives"
+    ],
+    "description": "The unauthorized-accounts scandal connected branch-level conduct to incentive design and executive oversight.",
+    "socialPreview": "The unauthorized-accounts scandal connected branch-level conduct to incentive design and executive oversight.",
+    "readingTime": "3 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Wells Fargo cross-selling scandal overview",
+        "url": "https://en.wikipedia.org/wiki/Wells_Fargo_cross-selling_scandal",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Wells Fargo: Sales Targets and Accounts Customers Did Not Request against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 624,
+    "publishedInArchive": false,
+    "body": "Investigations found that Wells Fargo employees opened or applied for accounts and services without customer authorization over a period of years. Enforcement actions examined sales pressure, complaints, terminations and management reporting.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate different products, time periods and legal findings, and verify counts as estimates changed through settlements and reviews.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe case asks how incentive targets, local supervision, complaint channels, risk functions and board reporting convert widespread employee actions into an organizational failure.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe phrase fake accounts is compact but imprecise; customers experienced several distinct forms of unauthorized enrollment and financial harm.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Wells Fargo cross-selling scandal overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "west-fertilizer-explosion-2013",
+    "title": "West Fertilizer: Storage, Fire and the Distance to the Community",
+    "dek": "The 2013 explosion in West, Texas, made inventory, responder information and land-use separation part of one inquiry.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Underreported",
+    "tags": [
+      "chemical safety",
+      "emergency response",
+      "texas"
+    ],
+    "description": "The 2013 explosion in West, Texas, made inventory, responder information and land-use separation part of one inquiry.",
+    "socialPreview": "The 2013 explosion in West, Texas, made inventory, responder information and land-use separation part of one inquiry.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "CSB West Fertilizer final report",
+        "url": "https://www.csb.gov/assets/1/6/west_fertilizer_final_report_for_website_021216.pdf",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for West Fertilizer: Storage, Fire and the Distance to the Community against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 636,
+    "publishedInArchive": false,
+    "body": "A fire at the West Fertilizer Company facility in April 2013 preceded an explosion that damaged nearby homes, schools and care facilities. The draft examines hazardous inventory, firefighter information and community proximity.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must separate what investigators established about ammonium nitrate storage and fire exposure from disputed or unresolved questions about how the fire began.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nThe systems issue is fragmented authority: fire codes, environmental reporting, workplace regulation, local planning and emergency response can each hold part of the risk without owning the whole.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nAccounts often seek one regulatory gap, but the geography of the damage shows how several ordinary permissions can combine into exceptional exposure.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with CSB West Fertilizer final report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
+  },
+  {
+    "slug": "westray-mine-explosion",
+    "title": "Westray: The Mine, the Inquiry and Organizational Responsibility",
+    "dek": "The 1992 Nova Scotia mine explosion became a case about methane, coal dust and corporate accountability.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "World",
+    "tags": [
+      "mining",
+      "corporate accountability",
+      "canada"
+    ],
+    "description": "The 1992 Nova Scotia mine explosion became a case about methane, coal dust and corporate accountability.",
+    "socialPreview": "The 1992 Nova Scotia mine explosion became a case about methane, coal dust and corporate accountability.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "Westray Mine disaster overview",
+        "url": "https://en.wikipedia.org/wiki/Westray_Mine",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for Westray: The Mine, the Inquiry and Organizational Responsibility against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 636,
+    "publishedInArchive": false,
+    "body": "An explosion at the Westray coal mine in Nova Scotia in May 1992 killed the underground crew and led to a major public inquiry. The article follows both the mine conditions and the difficulty of translating organizational failure into legal responsibility.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe reporting must use the inquiry to trace ventilation, methane, coal dust, equipment and inspection findings while keeping later criminal proceedings analytically separate.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nWestray asks what accountability means when hazardous practices are distributed through management structures rather than confined to one act by one person.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe later Westray law is frequently invoked as the lesson, but enforcement history is necessary before presenting legal reform as closure.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with Westray Mine disaster overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "willow-island-construction-collapse",
@@ -2118,6 +6078,46 @@ export const editorialDrafts: EditorialDraft[] = [
     "words": 528,
     "publishedInArchive": false,
     "body": "Fire ended operations at Windscale Pile 1 in 1957, but fuel remained in damaged channels beyond the reach of the original discharge equipment. The public decommissioning account records partial defuelling, care and maintenance, and an isolation phase completed in 1999.\n\nEquipment designed to discharge an intact reactor could not complete the same task after fire damaged its channels. Ending production left a new problem: retrieving or managing material under conditions the original machinery had not been built to handle.\n\n## What a closure date leaves out\n\nClosed is useful shorthand if the question is whether a facility is operating. It is much less informative if the question is what obligations survive. The inventory inside, the condition of the structure and the limits of available records may all continue to matter.\n\nThis is not an argument that every delay in dismantling is wise. It is a reason to ask what a proposed timetable assumes. Rapid work can create exposure during removal; postponed work can leave a deteriorating condition in place. The relevant comparison has to include both, rather than assume that speed or patience is intrinsically safe.\n\nRecords become part of that physical task. A drawing may describe what was intended, a log what was done, and a later survey what can now be observed. If those disagree, choosing the most convenient document does not resolve the discrepancy. The uncertainty has to enter the plan.\n\n## The equipment that remains\n\nThe public case study describes partial defuelling after the fire, followed by care and maintenance. It distinguishes the reactor, blower houses and chimney, rather than treating the installation as one object that can be marked removed or remaining.\n\nFor the reactor, the account records an isolation phase completed in 1999 and explains that fire-damaged channels retained fuel inaccessible to the original discharge equipment. These details locate a practical difficulty: tools designed for normal operation could not simply complete the work after damage had changed the conditions.\n\nIsolation, assessment and retrieval-method development are work, even when little visible demolition occurs. Their presence does not establish that every timetable was justified; it establishes what a timetable must account for.\n\nThe operator's public account is a dated record of reported milestones, not a live survey of completion. Its practical difficulty remains clear: damage changed the relationship between the remaining material and the tools designed to remove it.\n\n## The institution after the institution\n\nLong-lived responsibilities test the idea that an organization can close its books when production ends. People retire. Contractors change. Administrative structures are renamed. The material condition does not necessarily change with them.\n\nAn account of stewardship should therefore look for continuity in obligations rather than continuity in branding. Who retains the records? Who has authority to act on new information? How can a later team distinguish a verified observation from an assumption inherited through several handovers?\n\nThe operator's account supplies an institutional perspective on those obligations. An independent assessment of current conditions or timetable performance would require further evidence.\n\nWindscale stopped producing, but material remained in damaged channels. Retrieval, monitoring and the transfer of knowledge continued after closure. The operating history ended before the responsibility for the site did."
+  },
+  {
+    "slug": "worldcom-line-costs-fraud",
+    "title": "WorldCom: When Ordinary Network Costs Became Assets",
+    "dek": "The accounting fraud transformed recurring line costs into reported profit and exposed failures across management, audit and governance.",
+    "author": "Unassigned — AI-assisted editorial draft",
+    "createdAt": "2026-10-11",
+    "status": "draft",
+    "section": "Business",
+    "tags": [
+      "accounting fraud",
+      "telecommunications",
+      "governance"
+    ],
+    "description": "The accounting fraud transformed recurring line costs into reported profit and exposed failures across management, audit and governance.",
+    "socialPreview": "The accounting fraud transformed recurring line costs into reported profit and exposed failures across management, audit and governance.",
+    "readingTime": "4 min",
+    "genre": "Archival analysis — not original reporting",
+    "sources": [
+      {
+        "title": "WorldCom scandal overview",
+        "url": "https://en.wikipedia.org/wiki/WorldCom_scandal",
+        "status": "orientation-source-not-verified",
+        "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
+      }
+    ],
+    "reviewChecklist": [
+      "Verify the chronology and material claims for WorldCom: When Ordinary Network Costs Became Assets against the underlying investigation and contemporaneous records.",
+      "Separate preliminary allegations, technical findings, legal findings and later retrospective interpretation.",
+      "Reconcile casualty, loss and date discrepancies without choosing the most dramatic figure by default.",
+      "Add at least one independent or contemporary source and document any meaningful disagreement.",
+      "Clear visuals and rights, assign the real author, and obtain named human editorial approval before publication."
+    ],
+    "completedChecks": [],
+    "approvedBy": null,
+    "approvedAt": null,
+    "history": [],
+    "words": 631,
+    "publishedInArchive": false,
+    "body": "WorldCom disclosed major accounting irregularities in 2002 after internal work uncovered costs that had been improperly capitalized. The collapse became one of the defining corporate failures of the post-dot-com period.\n\nThe episode is often compressed into a date, a place and a dramatic label. That shorthand is useful for finding the file, but it is not enough to explain how the event developed or why the available safeguards failed to contain it. A responsible account has to distinguish what contemporaneous records establish from what later summaries repeat, and it has to keep uncertainty visible instead of smoothing it away.\n\n## What the record needs to establish\n\nThe article must explain line costs, capitalization entries, reserve releases and earnings effects using SEC and court records without implying that every employee or transaction shared the same intent.\n\nThe first reporting task is therefore chronological. A finished article should identify the conditions before the event, the first recorded deviation, the decisions made while the situation was still recoverable, and the point at which consequences became difficult to avoid. Those stages should be tied to dated records rather than reconstructed from hindsight. Where agencies, operators, witnesses or later investigators disagree, the disagreement belongs in the article.\n\nThe human consequences also require more than a total. Names, jobs, locations, warnings and survivorship should be added only when the underlying record supports them. A numerical summary can show scale, but it cannot substitute for evidence about who carried risk, who had authority and whose account was preserved.\n\n## The system around the event\n\nWorldCom asks how executive pressure, general-ledger access, internal audit, external audit and board oversight interacted when simple entries produced enormous aggregate effects.\n\nThis framing resists the convenient idea that one bad component or one individual explains an institutional failure. Hardware, procedures, incentives, staffing, regulation and emergency response interact. The final article should show which layer was designed to catch the problem, whether it worked as intended, and what happened when several layers depended on the same assumption.\n\nIt should also separate reform announced after the event from reform demonstrated in practice. New rules, redesigned equipment and reorganized agencies are part of the aftermath, but their existence does not prove that the original vulnerability disappeared. Follow-up inspections, later incidents and implementation records are needed before describing a lesson as learned.\n\n## Why the episode recedes\n\nThe size of the bankruptcy can overshadow the mundane mechanism: repeated accounting entries that bypassed the economic meaning of an operating expense.\n\nPublic memory favors an image, a quotation or a single cause. Archives are less tidy. They contain preliminary findings, revised counts, technical appendices, legal disputes and records created for different purposes. Those materials can change the meaning of a familiar story. They can also reveal that the most repeated detail is not the most consequential one.\n\nThis draft treats obscurity as a reporting problem, not as proof of a conspiracy or a forgotten secret. Some records are hard to find because institutions changed names, files were never digitized, technical language narrowed the audience or later events displaced attention. Those explanations must be tested rather than assumed.\n\n## What remains to verify\n\nThe source trail begins with WorldCom scandal overview. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.\n\nThe article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support."
   },
   {
     "slug": "yodogo-hijacking",

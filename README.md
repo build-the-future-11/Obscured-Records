@@ -6,7 +6,7 @@
 
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
-**11 October 2026: owner-private Site version 19 is verified; public launch remains HOLD.** There are 28 reader records (eight expanded features and 20 briefs), plus 45 private review drafts. Twenty drafts expand existing briefs; 25 introduce new subjects. That is **53 distinct subjects**, not 73 approved publications. Drafts are AI-assisted archival analyses with no assigned human author and remain excluded from public reader routes, feeds and search.
+**11 October 2026: 100 different private article drafts are complete; public launch remains HOLD.** There are 28 reader records (eight expanded features and 20 briefs), plus 145 private review drafts. Twenty drafts expand existing briefs; 125 introduce new subjects. That is **153 distinct subjects**, not 173 approved publications. Drafts are AI-assisted archival analyses with no assigned human author and remain excluded from public reader routes, feeds and search. See the [100-article expansion receipt](docs/ARTICLE_EXPANSION_2026-10-11.md).
 
 The latest content pass improves all reader records and carries targeted corrections into their expansion drafts. See [content changes and source evidence](docs/CONTENT_IMPROVEMENTS_2026-09-27.md). Publishing draft files in this repository does not approve them for the website.
 
@@ -48,4 +48,4 @@ The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to 
 - `docs/`: editorial procedures, inventory and prior operating plans.
 - `verification/astra-2026-09-27/`: preserved original source, failures, link audit and final checks.
 
-The latest editorial desk and manuscripts are deployed to owner-only Sites from source `45e683ee4224a0b6fd76382fcbfa820d71340e4c`; production environment revision 7 reports that exact SHA. The [11 October execution state](docs/EXECUTION_STATE_2026-10-11.md) separates current evidence from historical receipts. No email send, collected analytics, audio release or public-audience change is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.
+The owner-private Site was at version 19, source `45e683ee4224a0b6fd76382fcbfa820d71340e4c` and environment revision 7 when this 100-article source pass began. The [11 October execution state](docs/EXECUTION_STATE_2026-10-11.md) separates exact source evidence from deployment and historical receipts. No email send, collected analytics, audio release or public-audience change is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting local checks as release evidence.

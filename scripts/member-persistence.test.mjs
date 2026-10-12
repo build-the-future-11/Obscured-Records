@@ -16,6 +16,10 @@ const hook = registerHooks({
     if (specifier === "@/db") {
       return { shortCircuit: true, url: "data:text/javascript,export function getDb(){return globalThis.__memberPersistenceDb}" };
     }
+    // Native Node needs the extension for the shared upload-reader re-export.
+    if (specifier === "./member-request" && context.parentURL === new URL("lib/member-api.ts", root).href) {
+      return nextResolve(new URL("lib/member-request.ts", root).href, context);
+    }
     if (specifier.startsWith("@/")) {
       return nextResolve(new URL(`${specifier.slice(2)}.ts`, root).href, context);
     }

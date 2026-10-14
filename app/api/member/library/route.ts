@@ -21,9 +21,11 @@ export async function PUT(request: Request) {
   if (!body || !isSlug(body.slug) || !isReadingState(body.state)) return memberJson({ error: "Invalid saved-story record." }, 400);
   const now = new Date().toISOString();
   const savedAt = isIsoDate(body.savedAt) ? body.savedAt : now;
-  await (await getMemberDb()).insert(memberLibrary).values({ userId: auth.user.userId, slug: body.slug, readingState: body.state, savedAt, updatedAt: now })
-    .onConflictDoUpdate({ target: [memberLibrary.userId, memberLibrary.slug], set: { readingState: body.state, updatedAt: now } });
-  return memberJson({ ok: true, item: { slug: body.slug, state: body.state, savedAt } });
+  const [item] = await (await getMemberDb()).insert(memberLibrary).values({ userId: auth.user.userId, slug: body.slug, readingState: body.state, savedAt, updatedAt: now })
+    .onConflictDoUpdate({ target: [memberLibrary.userId, memberLibrary.slug], set: { readingState: body.state, updatedAt: now } })
+    .returning({ slug: memberLibrary.slug, state: memberLibrary.readingState, savedAt: memberLibrary.savedAt });
+  if (!item) return memberJson({ error: "The saved story could not be confirmed. Please try again." }, 503);
+  return memberJson({ ok: true, item });
 }
 
 export async function DELETE(request: Request) {

@@ -18,8 +18,8 @@
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "NASA Technical Reports Server, initial flight anomalies of Skylab 1",
-      "url": "https://ntrs.nasa.gov/citations/19930015503",
+      "title": "NASA Readings in Systems Engineering, Skylab 1 anomaly section",
+      "url": "https://ntrs.nasa.gov/api/citations/19930015489/downloads/19930015489.pdf",
       "status": "orientation-source-not-verified",
       "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
     }
@@ -70,6 +70,6 @@ This draft treats obscurity as a reporting problem, not as proof of a conspiracy
 
 ## What remains to verify
 
-The source trail begins with NASA Technical Reports Server, initial flight anomalies of Skylab 1. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.
+The source trail begins with NASA Readings in Systems Engineering, Skylab 1 anomaly section. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.
 
 The article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support.

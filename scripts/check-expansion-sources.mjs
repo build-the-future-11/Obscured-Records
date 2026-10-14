@@ -1,6 +1,10 @@
 import fs from "node:fs";
 
-const records = JSON.parse(fs.readFileSync("content/article-expansion-2026-10-11.json", "utf8"));
+const manifests = [
+  "content/article-expansion-2026-10-11.json",
+  "content/article-expansion-2026-10-14.json",
+];
+const records = manifests.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const queue = records.map((record) => ({ slug: record.slug, url: record.source.url }));
 const failures = [];
 let cursor = 0;

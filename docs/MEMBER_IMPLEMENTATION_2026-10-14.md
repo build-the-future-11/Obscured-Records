@@ -40,5 +40,5 @@ The GitHub and Site-source SHAs are expected to differ because they are distinct
 ## Remaining boundaries
 
 - The 145 private manuscripts remain unapproved AI-assisted drafts. No claim-level review, authorship, rights clearance or human editorial approval was inferred.
-- The production dependency advisories recorded in the 11 October ledger remain open; the resource floor still blocks a safe local install/build mutation.
+- The production dependency advisories recorded in the 11 October ledger were subsequently closed through the hosted workflow recorded in [DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md](DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md).
 - No public audience change, newsletter send, analytics collection, audio release, backup/restore rehearsal or live member-data mutation was performed.

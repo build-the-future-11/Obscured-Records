@@ -13,14 +13,14 @@
       "priority": "P0",
       "area": "content_qa",
       "title": "Keep MDX archive and runtime article registry synchronized",
-      "state": "IN_PROGRESS",
+      "state": "DONE",
       "owner": "editorial_engineering",
       "evidence": [
         "content/articles/",
         "lib/articles.ts",
         "scripts/editorial-integrity.mjs"
       ],
-      "next_action": "Keep the editorial integrity CI gate green on the latest exact PR head after every relaunch-control change.",
+      "next_action": "Retain the editorial integrity gate on every future content or relaunch-control change.",
       "done_when": "Every public article has one matching MDX record and runtime registry entry with unique slug/record ID, matching dates, required source metadata, and green exact-head CI."
     },
     {
@@ -114,7 +114,7 @@
       "priority": "P0",
       "area": "launch",
       "title": "Run exact-release-candidate public smoke checklist",
-      "state": "IN_PROGRESS",
+      "state": "HOLD",
       "owner": "editorial_engineering",
       "evidence": [
         "docs/RELAUNCH_OPERATING_SYSTEM.md",
@@ -123,7 +123,7 @@
         "scripts/relaunch-smoke.mjs",
         "app/api/revision/route.ts"
       ],
-      "next_action": "Deploy one fixed release-candidate SHA, then dispatch the relaunch smoke against the intended HTTPS origin with that exact expected revision. Do not certify if the deployed revision endpoint cannot prove the same 40-character SHA.",
+      "next_action": "Private version 22 proves the fixed source and canonical origin. Dispatch the public relaunch smoke only after named editorial and operational approval plus explicit authorization to change the audience.",
       "done_when": "All P0 checks are green and deployment attribution points to the exact verified source revision."
     },
     {
@@ -139,7 +139,7 @@
         ".github/workflows/relaunch-smoke.yml",
         "scripts/relaunch-smoke.mjs"
       ],
-      "next_action": "Private exact-revision attribution is closed at version 21, source a23a31952ef04db9db10ec6aa59a8530a9aebb1a and environment revision 9. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
+      "next_action": "Private exact-revision attribution is closed at version 22, source 03291c1e105979496fa06eb82cdec50fa1c1e05f and environment revision 10. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     },
     {
@@ -147,14 +147,15 @@
       "priority": "P0",
       "area": "security",
       "title": "Patch production dependency advisories and certify the exact lockfile",
-      "state": "IN_PROGRESS",
+      "state": "DONE",
       "owner": "editorial_engineering",
       "evidence": [
         "package.json",
         "package-lock.json",
-        "docs/EXECUTION_STATE_2026-10-11.md"
+        "docs/EXECUTION_STATE_2026-10-11.md",
+        "docs/DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md"
       ],
-      "next_action": "When free plus speculative memory is stably at or above 512 MiB, update Next.js and eslint-config-next to 16.4.0, resolve sharp to 0.35.5, source-map-js to 1.2.2 and fast-uri to 3.1.8, then run production audit, tests, editorial integrity, lint, typecheck and both production builds.",
+      "next_action": "Keep the production audit gate in CI and rerun the full locked verification matrix for future dependency changes or newly published advisories.",
       "done_when": "The committed exact lockfile has no known production advisories and the complete exact-source verification matrix plus private deployment receipt are green."
     },
     {

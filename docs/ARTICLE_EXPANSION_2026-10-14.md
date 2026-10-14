@@ -37,6 +37,8 @@ These checks establish distinctness, structural validity, private isolation and 
 
 The host remained below the repository's 512 MiB free-plus-speculative-memory admission floor. No local production build was forced. The exact source was pushed through the Site workflow, built by the provider and deployed successfully; this is production engineering evidence, not editorial approval.
 
+The completed expansion is committed locally on `codex/second-article-expansion-20261014`. A push to the public GitHub repository was not performed because it would disclose all 245 unpublished manuscripts and private review material; that irreversible audience expansion requires explicit user authorization. The owner-private Site deployment does not supply that authorization.
+
 ## Required next work
 
 Each manuscript still requires claim-level primary and independent sources, chronology and number reconciliation, contrary evidence, fairness review, rights-cleared media or a text-only decision, a real author and named human editorial approval. Approval must be individual; no batch operation may convert these drafts into published records.

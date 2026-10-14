@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-11",
+  "as_of": "2026-10-14",
   "allowed_states": [
     "READY",
     "IN_PROGRESS",
@@ -139,7 +139,7 @@
         ".github/workflows/relaunch-smoke.yml",
         "scripts/relaunch-smoke.mjs"
       ],
-      "next_action": "Private exact-revision attribution is closed at version 20, source 10b8052f97d3df72c2ffa114d410c96a0fa221d8 and environment revision 8. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
+      "next_action": "Private exact-revision attribution is closed at version 21, source a23a31952ef04db9db10ec6aa59a8530a9aebb1a and environment revision 9. Keep the owner-only audience unchanged until named editorial and operational owners approve a release candidate and the user explicitly authorizes a public audience, then run the public exact-revision smoke.",
       "done_when": "One public origin resolves the approved revision and public profiles, canonical metadata, RSS, sitemap and smoke-test receipts all agree on the same origin and source SHA."
     },
     {
@@ -171,6 +171,24 @@
       ],
       "next_action": "Replace orientation-only links with claim-level primary and independent records, reconcile every material fact and disagreement, clear rights, assign the real author and obtain named approval one article at a time.",
       "done_when": "Each selected article has claim-level verified sources, completed checks, a real author and named human approver; no batch approval is inferred."
+    },
+    {
+      "id": "OR-RL-012",
+      "priority": "P0",
+      "area": "member_persistence",
+      "title": "Prevent cross-article annotation corruption and bound member request bodies",
+      "state": "DONE",
+      "owner": "editorial_engineering",
+      "evidence": [
+        "app/api/member/annotations/route.ts",
+        "app/api/member/library/route.ts",
+        "lib/member-request.ts",
+        "scripts/member-persistence.test.mjs",
+        "scripts/member-request.test.mjs",
+        "docs/MEMBER_IMPLEMENTATION_2026-10-14.md"
+      ],
+      "next_action": "Keep the collision, persisted-row and bounded-stream regression tests in exact-head CI; do not weaken the 12 KiB request ceiling without a reviewed operational need.",
+      "done_when": "Cross-article annotation ID collisions return 409, successful mutations return database-persisted rows, oversized or incomplete member bodies fail safely, and the exact implementation is deployed owner-private."
     }
   ]
 }

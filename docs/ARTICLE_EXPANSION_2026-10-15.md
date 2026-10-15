@@ -35,7 +35,9 @@ Wikipedia category membership and Wikidata metadata are discovery evidence only.
 - Discovery isolation: 1,245 review manuscripts, 28 reader records, 28 RSS items, 45 public topics and three series.
 - Public separation: none of the 1,000 new slugs appears in `content/articles/` or the public registry.
 
-The host remained below the repository's 512 MiB free-plus-speculative-memory admission floor. No local production build, install or model run was forced. Production compilation belongs to the existing private Sites provider workflow. This receipt will be supplemented by the provider's exact source, version, environment revision and deployment identity after that workflow reaches a terminal result.
+The host remained below the repository's 512 MiB free-plus-speculative-memory admission floor. No local production build, install or model run was forced. The existing private Sites provider built and deployed exact source `410fafe208fa9f47c75d66cfec84029accad6687` as version 24. Environment revision 12 reports the same SHA. Final deployment `appgdep_6ad0e728e5e08191bbca5c39a3e5cf81` succeeded at `https://obscured-records.ryangomez-hs.chatgpt.site`; the audience remains one owner, zero groups and zero external visitors.
+
+The completed expansion is committed locally at `11f5e36` on `codex/thousand-article-expansion-20261015`. A public GitHub push was not performed because it would disclose 1,245 unpublished manuscripts and private review material; this request did not authorize that irreversible audience expansion.
 
 ## Publication boundary
 

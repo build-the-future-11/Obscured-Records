@@ -1,5 +1,7 @@
 # Website launch checklist — private release verified; public launch HOLD
 
+**15 October article update:** 1,000 additional source-traceable drafts were added without changing the 28-record public reader. The private desk now contains 1,245 manuscripts and 1,253 distinct subjects. The new snapshot uses 52 contributing discovery indexes, exact Wikipedia/Wikidata revision identities and 1,000 unique source URLs; all 1,200 expansion links resolve. The bounded sequential suite passes 249/249 and discovery remains limited to the existing 28 reader records. These manuscripts are unapproved reporting maps, not verified or publishable articles; each still requires claim review, independent sourcing, authorship, fairness and rights review, and named human approval. See the [1,000-article expansion receipt](ARTICLE_EXPANSION_2026-10-15.md).
+
 **14 October article update:** a second 100-draft batch was added without changing the 28-record public reader, bringing the desk to 245 unpublished manuscripts and 253 distinct subjects. The two manifests contain 200 distinct drafts and all 200 orientation links resolve. The bounded suite passes 247/247 and discovery remains limited to the existing 28 reader records. Owner-private Site version 23 is deployed from source `b655d1e80486cb34a4783cf3ad551dcf9b802309`; environment revision 11 reports the same SHA and the audience remains one owner only. These are unapproved reporting maps, not verified or publishable articles; every manuscript still requires individual claim review, authorship, rights review and named human approval. See the [second expansion receipt](ARTICLE_EXPANSION_2026-10-14.md).
 
 **11 October update:** 100 different private drafts were added without changing the 28-record public reader, bringing the desk to 145 unpublished manuscripts and 153 subjects. All 100 orientation links resolve, and the bounded suite passes 213/213. Owner-private Site version 20 is deployed from source `10b8052f97d3df72c2ffa114d410c96a0fa221d8`; environment revision 8 reports the same SHA, and live inspection confirms the 145-manuscript desk. Orientation is not claim verification; every manuscript still requires individual human review and approval. The current lockfile also has unresolved production dependency advisories, so a patched, audited and fully tested release candidate is required before public certification. See [the expansion receipt](ARTICLE_EXPANSION_2026-10-11.md) and [current execution state](EXECUTION_STATE_2026-10-11.md).
@@ -24,8 +26,8 @@ The user's instruction to execute this checklist authorized implementation and t
 
 ## 2. Editorial and media
 
-- [x] Preserve the 28 existing public records and keep all 245 review drafts unpublished.
-- [x] Verify all 200 expansion orientation links resolve while retaining their unverified claim status.
+- [x] Preserve the 28 existing public records and keep all 1,245 review drafts unpublished.
+- [x] Verify all 1,200 expansion orientation links resolve while retaining their unverified claim status.
 - [x] Repair the NASA Aral Sea and CDC Tuskegee links that redirected to generic pages.
 - [x] Strengthen source auditing so generic redirects and HTTP 202 challenges cannot count as verified access; retain failed receipts.
 - [x] Audit 70 cited URLs: 54 direct reachable and 16 direct access-unverified, with separate browser-access evidence for eight of those 16.

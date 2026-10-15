@@ -1,3 +1,15 @@
+# Current execution state — 15 October 2026
+
+**A 1,000-article source-traceable expansion is complete; public launch remains HOLD.** The owner-private deployment workflow is the only authorized publication target. At candidate freeze, the Site still reported version 23 from prior source `b655d1e80486cb34a4783cf3ad551dcf9b802309`, environment revision 11 and deployment `appgdep_6acf9c59c6c08191b520722d4e6f357f`; the final 15 October deployment receipt supersedes this baseline below once the provider returns a terminal result. The audience is exactly one owner, with no groups or external visitors. No database schema or audience change is part of this expansion.
+
+The exact candidate passes editorial integrity: 28 reader records, **1,245 unpublished drafts, 1,081,501 draft words and 1,253 distinct subjects**. The new manifest contributes 1,000 unique subjects, source URLs, Wikipedia page IDs, Wikidata IDs and generated bodies across 52 contributing indexes and all six sections. Its 935,330 words range from 896 to 1,037 per manuscript. Every addition remains an unapproved AI-assisted reporting plan with null approval and no invented human author.
+
+The combined source audit reports 1,200 checked and 1,200 reachable orientation links. The bounded sequential Node suite passes 249/249. The SEO/discovery audit reports 1,245 review manuscripts, 28 reader records, 28 RSS items, 45 public topics, three series and draft isolation. These checks establish distinctness, structure, reachability and public separation; they do not establish claim accuracy, fairness, authorship or editorial approval. See the [1,000-article receipt](docs/ARTICLE_EXPANSION_2026-10-15.md).
+
+The host remains below the 512 MiB free-plus-speculative-memory admission floor, so no local install or production build was forced. Production compilation is delegated to the private Sites provider. The pre-existing untracked `verification/` directory remains preserved. A public GitHub push is not authorized because it would disclose 1,245 unpublished manuscripts and internal review material.
+
+Everything below is dated historical evidence.
+
 # Current execution state — 14 October 2026
 
 **A second 100-article expansion is complete and deployed to the owner-private Site; public launch remains HOLD.** Version 23 is live from source `b655d1e80486cb34a4783cf3ad551dcf9b802309`; environment revision 11 reports that exact SHA. Final deployment `appgdep_6acf9c59c6c08191b520722d4e6f357f` succeeded. The audience remains exactly one owner, with no groups or external visitors. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`; no database schema or audience change was made.

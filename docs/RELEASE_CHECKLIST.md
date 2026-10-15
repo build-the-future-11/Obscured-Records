@@ -1,5 +1,7 @@
 # Website launch checklist — private release verified; public launch HOLD
 
+**15 October, second expansion:** another 2,000 drafts bring the private desk to 3,245 manuscripts and 3,253 distinct subjects. All 3,200 expansion orientation links resolve, 252 tests pass, and the 28-record reader catalogue is unchanged. Claim review and named human approval remain open. The exact deployment outcome is recorded in [the latest receipt](ARTICLE_EXPANSION_2026-10-15_SECOND.md).
+
 **15 October article update:** 1,000 additional source-traceable drafts were added without changing the 28-record public reader. The private desk now contains 1,245 manuscripts and 1,253 distinct subjects. The new snapshot uses 52 contributing discovery indexes, exact Wikipedia/Wikidata revision identities and 1,000 unique source URLs; all 1,200 expansion links resolve. The bounded sequential suite passes 249/249 and discovery remains limited to the existing 28 reader records. Owner-private Site version 24 is deployed from source `410fafe208fa9f47c75d66cfec84029accad6687`; environment revision 12 reports the same SHA, final deployment `appgdep_6ad0e728e5e08191bbca5c39a3e5cf81` succeeded and access remains one owner only. These manuscripts are unapproved reporting maps, not verified or publishable articles; each still requires claim review, independent sourcing, authorship, fairness and rights review, and named human approval. See the [1,000-article expansion receipt](ARTICLE_EXPANSION_2026-10-15.md).
 
 **14 October article update:** a second 100-draft batch was added without changing the 28-record public reader, bringing the desk to 245 unpublished manuscripts and 253 distinct subjects. The two manifests contain 200 distinct drafts and all 200 orientation links resolve. The bounded suite passes 247/247 and discovery remains limited to the existing 28 reader records. Owner-private Site version 23 is deployed from source `b655d1e80486cb34a4783cf3ad551dcf9b802309`; environment revision 11 reports the same SHA and the audience remains one owner only. These are unapproved reporting maps, not verified or publishable articles; every manuscript still requires individual claim review, authorship, rights review and named human approval. See the [second expansion receipt](ARTICLE_EXPANSION_2026-10-14.md).
@@ -26,8 +28,8 @@ The user's instruction to execute this checklist authorized implementation and t
 
 ## 2. Editorial and media
 
-- [x] Preserve the 28 existing public records and keep all 1,245 review drafts unpublished.
-- [x] Verify all 1,200 expansion orientation links resolve while retaining their unverified claim status.
+- [x] Preserve the 28 existing public records and keep all 3,245 review drafts unpublished.
+- [x] Verify all 3,200 expansion orientation links resolve while retaining their unverified claim status.
 - [x] Repair the NASA Aral Sea and CDC Tuskegee links that redirected to generic pages.
 - [x] Strengthen source auditing so generic redirects and HTTP 202 challenges cannot count as verified access; retain failed receipts.
 - [x] Audit 70 cited URLs: 54 direct reachable and 16 direct access-unverified, with separate browser-access evidence for eight of those 16.
@@ -83,7 +85,7 @@ The two live test records are retained and clearly labelled; no email or externa
 - [ ] Confirm recurring uptime/error monitoring. The creation attempt returned no completion receipt; check for an existing automation before retrying.
 - [ ] Rehearse application rollback/restore with the accepted incident owner.
 - [ ] Obtain final editorial and operational sign-off before changing the site's audience or declaring public launch readiness.
-- [ ] Patch the current critical/high/moderate production dependency advisories, regenerate the lockfile, run the full exact-source verification matrix and deploy that exact candidate.
+- [x] Patch the recorded production dependency advisories, regenerate the lockfile, run the full exact-source verification matrix and deploy that candidate. Closed at the 14 October revision; see [the security receipt](DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md). Future release candidates still require a fresh advisory audit.
 
 ## Optional after core launch
 

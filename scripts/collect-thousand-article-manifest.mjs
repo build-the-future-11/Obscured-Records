@@ -1,14 +1,22 @@
 import fs from "node:fs";
 import path from "node:path";
+import { parseArgs } from "node:util";
 import { readDraft } from "./editorial-content.mjs";
 
-const TARGET = 1000;
-const OUTPUT = path.resolve("content/article-expansion-2026-10-15.json");
+const { values } = parseArgs({ options: {
+  target: { type: "string", default: "1000" },
+  output: { type: "string", default: "content/article-expansion-2026-10-15.json" },
+  "include-subcategories": { type: "boolean", default: false },
+} });
+const TARGET = Number(values.target);
+const OUTPUT = path.resolve(values.output);
+if (!Number.isSafeInteger(TARGET) || TARGET < 1 || TARGET > 5000) throw new Error("Target must be between 1 and 5,000");
+if (fs.existsSync(OUTPUT)) throw new Error(`Preserve the existing source snapshot: ${OUTPUT}`);
 const RETRIEVED_AT = new Date().toISOString();
 const USER_AGENT = "ObscuredRecordsEditorialDiscovery/1.0 (https://obscured-records.ryangomez-hs.chatgpt.site; owner-private research corpus)";
 const WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php";
 const WIKIDATA_API = "https://www.wikidata.org/w/api.php";
-const CACHE_DIRECTORY = "/tmp/obscured-records-thousand-source-cache";
+const CACHE_DIRECTORY = `/tmp/obscured-records-source-cache-${path.basename(OUTPUT, ".json")}`;
 fs.mkdirSync(CACHE_DIRECTORY, { recursive: true });
 
 const profiles = {
@@ -544,18 +552,17 @@ function existingCorpus() {
   const titles = new Set();
   const urls = new Set();
   const wikiTitles = new Set();
+  const wikidataIds = new Set();
   for (const file of fs.readdirSync("content/drafts").filter((name) => name.endsWith(".md"))) {
     const { metadata } = readDraft(path.join("content/drafts", file));
-    const generatedByThisExpansion = metadata.createdAt === "2026-10-15"
-      && typeof metadata.reviewSourceNotes === "string"
-      && metadata.reviewSourceNotes.startsWith("Created as private reporting inventory on 15 October 2026 from Wikipedia page ");
-    if (generatedByThisExpansion) continue;
     slugs.add(metadata.slug);
     titles.add(metadata.title.toLowerCase());
     for (const source of metadata.sources) {
       urls.add(normalizedUrl(source.url));
       const title = wikipediaTitle(source.url);
       if (title) wikiTitles.add(title);
+      const entityId = source.url.match(/^https:\/\/www\.wikidata\.org\/wiki\/(Q\d+)$/)?.[1];
+      if (entityId) wikidataIds.add(entityId);
     }
   }
   for (const file of fs.readdirSync("content/articles").filter((name) => name.endsWith(".mdx"))) {
@@ -571,7 +578,7 @@ function existingCorpus() {
       if (wikiTitle) wikiTitles.add(wikiTitle);
     }
   }
-  return { slugs, titles, urls, wikiTitles };
+  return { slugs, titles, urls, wikiTitles, wikidataIds };
 }
 
 async function resolveExistingPageIds(wikiTitles) {
@@ -621,6 +628,33 @@ async function fetchCategories() {
   const output = [];
   for (const seed of seeds) {
     output.push(await fetchCategory(seed));
+  }
+  if (values["include-subcategories"]) {
+    const seenCategories = new Set(seeds.map((seed) => seed.category));
+    for (const seed of seeds) {
+      const cacheFile = path.join(CACHE_DIRECTORY, `subcategories-${slugify(seed.category)}.json`);
+      let children;
+      if (fs.existsSync(cacheFile)) children = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+      else {
+        const data = await fetchJson(WIKIPEDIA_API, {
+          action: "query", list: "categorymembers", cmtitle: `Category:${seed.category}`,
+          cmtype: "subcat", cmlimit: "max", format: "json", formatversion: "2", maxlag: "5",
+        }, `Subcategories of ${seed.category}`);
+        children = data.query?.categorymembers ?? [];
+        fs.writeFileSync(cacheFile, JSON.stringify(children));
+        await sleep(250);
+      }
+      const selected = children
+        .filter((page) => !/by (?:country|year|continent|decade|type|century)|lists of/i.test(page.title))
+        .sort((left, right) => hash(left.title) - hash(right.title)).slice(0, 4);
+      for (const child of selected) {
+        const category = child.title.replace(/^Category:/, "");
+        if (seenCategories.has(category)) continue;
+        seenCategories.add(category);
+        output.push(await fetchCategory({ ...seed, category }));
+      }
+      console.error(`Discovery: ${output.length} indexes, ${new Set(output.flatMap((pool) => pool.pages.map((page) => page.pageid))).size} candidate pages`);
+    }
   }
   return output;
 }
@@ -736,6 +770,7 @@ function planFor(candidate, entity, slug) {
 }
 
 const existing = existingCorpus();
+console.error(`Excluding ${existing.slugs.size} existing slugs and ${existing.wikidataIds.size} Wikidata identities`);
 const existingPageIds = await resolveExistingPageIds(existing.wikiTitles);
 const categoryPools = await fetchCategories();
 const preliminary = [];
@@ -761,12 +796,13 @@ while (preliminary.length < TARGET * 2) {
   if (!progressed) break;
 }
 
+console.error(`Resolving ${preliminary.length} distinct candidates`);
 const details = await fetchPageDetails(preliminary.map((page) => page.pageid));
 const selected = [];
-const seenWikidataIds = new Set();
+const seenWikidataIds = new Set(existing.wikidataIds);
 for (const candidate of preliminary) {
   const page = details.get(candidate.pageid);
-  if (!page?.fullurl || !page.pageprops?.wikibase_item || "disambiguation" in (page.pageprops ?? {})) continue;
+  if (!page?.fullurl || !page.pageprops?.wikibase_item || !page.revisions?.[0]?.revid || "disambiguation" in (page.pageprops ?? {})) continue;
   if (seenWikidataIds.has(page.pageprops.wikibase_item) || existing.urls.has(normalizedUrl(page.fullurl))) continue;
   selected.push({ ...candidate, ...page });
   seenWikidataIds.add(page.pageprops.wikibase_item);
@@ -778,7 +814,9 @@ if (selected.length !== TARGET) {
   throw new Error(`Only ${selected.length} eligible new subjects were available; category pages: ${availability}`);
 }
 
+console.error(`Capturing Wikidata revisions for ${selected.length} selected subjects`);
 const entities = await fetchWikidataEntities(selected.map((page) => page.pageprops.wikibase_item));
+if (selected.some((page) => !entities.get(page.pageprops.wikibase_item)?.lastrevid)) throw new Error("A selected subject lacks a Wikidata revision; preserve the failure instead of inventing provenance");
 const records = selected
   .map((candidate) => planFor(candidate, entities.get(candidate.pageprops.wikibase_item), candidate.proposedSlug))
   .sort((left, right) => left.slug.localeCompare(right.slug));

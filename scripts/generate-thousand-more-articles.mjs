@@ -1,14 +1,21 @@
 import fs from "node:fs";
 import path from "node:path";
-import { validateDraft, wordCount, writeDraft } from "./editorial-content.mjs";
+import { parseArgs } from "node:util";
+import { readDraft, validateDraft, wordCount, writeDraft } from "./editorial-content.mjs";
 
-const manifestPath = path.resolve("content/article-expansion-2026-10-15.json");
+const { values } = parseArgs({ options: {
+  manifest: { type: "string", default: "content/article-expansion-2026-10-15.json" },
+  count: { type: "string", default: "1000" },
+} });
+const expectedCount = Number(values.count);
+if (!Number.isSafeInteger(expectedCount) || expectedCount < 1 || expectedCount > 5000) throw new Error("Count must be between 1 and 5,000");
+const manifestPath = path.resolve(values.manifest);
 const draftsDirectory = path.resolve("content/drafts");
 const articlesDirectory = path.resolve("content/articles");
 const records = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 
-if (!Array.isArray(records) || records.length !== 1000) {
-  throw new Error(`Expansion manifest must contain exactly 1,000 records; found ${records?.length ?? "invalid"}`);
+if (!Array.isArray(records) || records.length !== expectedCount) {
+  throw new Error(`Expansion manifest must contain exactly ${expectedCount} records; found ${records?.length ?? "invalid"}`);
 }
 
 const requiredFields = [
@@ -22,7 +29,7 @@ const pageIds = new Set();
 const wikidataIds = new Set();
 for (const record of records) {
   if (!record || typeof record !== "object" || requiredFields.some((field) => record[field] === undefined)) {
-    throw new Error("Malformed 1,000-article expansion record");
+    throw new Error("Malformed article expansion record");
   }
   if (slugs.has(record.slug)) throw new Error(`Duplicate expansion slug: ${record.slug}`);
   if (titles.has(record.title)) throw new Error(`Duplicate expansion title: ${record.title}`);
@@ -161,7 +168,13 @@ for (const record of records) {
   };
 
   validateDraft(metadata, body);
-  writeDraft(path.join(draftsDirectory, `${record.slug}.md`), metadata, body);
+  const destination = path.join(draftsDirectory, `${record.slug}.md`);
+  if (fs.existsSync(destination)) {
+    const existing = readDraft(destination);
+    if (JSON.stringify(existing.metadata) !== JSON.stringify(metadata) || existing.body.trim() !== body.trim()) {
+      throw new Error(`Refusing to overwrite an existing or reviewed manuscript: ${record.slug}`);
+    }
+  } else writeDraft(destination, metadata, body);
 }
 
 console.log(`Generated ${records.length} additional private article drafts.`);

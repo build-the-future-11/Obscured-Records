@@ -1,4 +1,14 @@
-# Current execution state — 15 October 2026
+# Current execution state — second expansion, 15 October 2026
+
+**Another 2,000 private drafts are complete and verified; public launch remains HOLD.** The desk now contains **3,245 unpublished drafts, 2,955,788 draft words and 3,253 distinct subjects**, alongside the unchanged 28 reader records. The new batch spans 182 contributing source indexes and all six sections. Every manuscript remains an unapproved AI-assisted reporting plan with an unassigned author and null approval.
+
+Fresh checks pass: **252/252 Node tests**, editorial integrity, **3,200/3,200 reachable expansion orientation links**, and SEO/discovery isolation with 28 RSS items, 45 topics and three series. No existing manuscript or reader article was changed. The private-desk generator now streams records to an atomic output file and completed the expanded projection with a 96 MiB heap cap.
+
+The exact private deployment receipt is pending. The last confirmed deployed version before this expansion is version 24 below. No local install or production build was forced below the 512 MiB resource floor, and no public GitHub push or audience change is part of this work. See [the 2,000-draft receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md).
+
+Everything below is dated historical evidence.
+
+# Earlier execution state — 15 October 2026
 
 **A 1,000-article source-traceable expansion is complete and deployed to the owner-private Site; public launch remains HOLD.** Version 24 is live from source `410fafe208fa9f47c75d66cfec84029accad6687`; environment revision 12 reports that exact SHA. Final deployment `appgdep_6ad0e728e5e08191bbca5c39a3e5cf81` succeeded at `https://obscured-records.ryangomez-hs.chatgpt.site`. The audience remains exactly one owner, with no groups or external visitors. No database schema or audience change was made.
 

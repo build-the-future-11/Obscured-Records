@@ -4,6 +4,7 @@ const manifests = [
   "content/article-expansion-2026-10-11.json",
   "content/article-expansion-2026-10-14.json",
   "content/article-expansion-2026-10-15.json",
+  "content/article-expansion-2026-10-15-second.json",
 ];
 const records = manifests.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const queue = records.map((record) => ({ slug: record.slug, url: record.source.url }));
@@ -46,9 +47,23 @@ for (let index = 0; index < wikipedia.length; index += 50) {
       continue;
     }
     const payload = await response.json();
-    const missing = (payload.query?.pages ?? []).filter((page) => page.missing || page.invalid);
-    if (payload.error || missing.length) {
-      failures.push({ batch: batch.map((item) => item.slug), apiError: payload.error ?? null, missing });
+    const pages = payload.query?.pages ?? [];
+    const aliases = new Map([
+      ...(payload.query?.normalized ?? []),
+      ...(payload.query?.redirects ?? []),
+    ].map(({ from, to }) => [from, to]));
+    const found = new Set(pages.filter((page) => !page.missing && !page.invalid && page.pageid).map((page) => page.title));
+    const unresolved = batch.filter((item) => {
+      let title = item.title;
+      const visited = new Set();
+      while (aliases.has(title) && !visited.has(title)) {
+        visited.add(title);
+        title = aliases.get(title);
+      }
+      return !found.has(title);
+    });
+    if (payload.error || unresolved.length) {
+      failures.push({ batch: batch.map((item) => item.slug), apiError: payload.error ?? null, unresolved });
     }
   } catch (error) {
     failures.push({ batch: batch.map((item) => item.slug), error: error.name });

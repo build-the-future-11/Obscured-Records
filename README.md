@@ -1,5 +1,7 @@
 # Obscured Records
 
+**15 October 2026, second expansion:** another **2,000 distinct private article drafts** bring the desk to **3,245 unpublished manuscripts**, **2,955,788 draft words** and **3,253 distinct subjects**. The reader catalogue remains 28 records. All 3,200 expansion orientation links resolve, and 252 tests pass. These are unapproved AI-assisted reporting plans, excluded from public discovery; public launch remains HOLD. See [the latest expansion receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md) and [current status](STATUS.md). Dated entries below retain their historical scope.
+
 **30 September website implementation:** configurable homepage, real-author attribution, contributor introductions, explicit newsletter-waitlist consent, optional Node/Vercel D1 connectivity, sharing images and regression coverage. See [implementation and configuration](docs/WEBSITE_UPDATE_2026-09-30.md). This source update does not itself prove deployment or remove the public-launch HOLD.
 
 **Deployed reader-experience update, 28 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. The content and UI are merged into GitHub `main` and deployed to the existing owner-only site. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) and [implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). Editorial and public-launch decisions remain open.

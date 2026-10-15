@@ -43,6 +43,19 @@ URL reachability and distinct metadata do not establish claim accuracy, fairness
 
 ## Deployment and publication boundary
 
-The local host remains below the 512 MiB free-plus-speculative-memory build floor. No local install or production build was forced. The existing owner-private Site is the deployment target; the provider's exact version, source and deployment result will be recorded after completion.
+The local host remained below the 512 MiB free-plus-speculative-memory build floor. No local install or production build was forced. The source workflow pushed the exact source; local packaging reported `Missing dist/server/index.js`, so the supported provider build fallback was used.
+
+- Local content commit: `d177c1c`, branch `codex/two-thousand-more-articles-20261015`.
+- Private Site source: `8e8cb6a4cb0ac1254353fe96ae5bd83f579fa107`.
+- Saved version: **25**, `appgprj_6aa79b45dd308191b3b887c293729f00~appgver_645efc2fbc48819192e4fea93f4e5a9f`.
+- Initial failed deployment: `appgdep_6ad0f9e6466c819199e9b44a109c2e82`. Provider failure: `rm: cannot remove '/tmp/appgen-saved-version-build-be14655a5959/project/node_modules/es-abstract': Directory not empty`.
+- Successful retry of the unchanged saved version: `appgdep_6ad0fa81ede88191abbf366f42e59a83`, completed `2026-10-15T16:14:34.074364Z`.
+- Environment revision: **13**, with `COMMIT_SHA` equal to the private source SHA above.
+- Production URL: https://obscured-records.ryangomez-hs.chatgpt.site.
+- Provider archive: 34,826,240 bytes, 209 files, content hash `sha256:ff18a146e449a3915154ff5e3ac9961c7cc6b9efc4ef4e3ef7ebdfa878ed8d13`.
+- Access confirmed after deployment: one owner, zero groups, zero external visitors.
+- All 3,609 tracked local source files matched the private source checkout byte-for-byte before deployment. Local and Site commit IDs differ because they are separate repositories; post-deployment documentation receipts are recorded locally afterward.
+
+Five fresh read-only runtime checks passed at `2026-10-15T16:15:29.258Z`: the revision endpoint returned the exact deployed SHA with HTTP 200; RSS contained 28 reader items; the newly added Estonia cyberattack draft returned 404 on its reader route; the editorial desk required owner sign-in even with the provider's identity-less API token; and anonymous homepage access returned 401. These checks do not establish an owner-authenticated visual review of all 3,245 manuscripts. The in-app browser reached the sign-in flow, so that visual check remains unverified. See the retained [runtime receipt](ARTICLE_EXPANSION_2026-10-15_SECOND_RUNTIME.json).
 
 No database schema, audience, newsletter sending, analytics activation or public reader publication is part of this expansion. No public GitHub push is authorized by this request. The existing untracked `verification/` directory is preserved. Public launch remains **HOLD**, with individual claim review, named authorship, fairness/privacy review, media rights and named human approval still required.

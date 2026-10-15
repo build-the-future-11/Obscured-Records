@@ -1,10 +1,12 @@
 # Current execution state — second expansion, 15 October 2026
 
-**Another 2,000 private drafts are complete and verified; public launch remains HOLD.** The desk now contains **3,245 unpublished drafts, 2,955,788 draft words and 3,253 distinct subjects**, alongside the unchanged 28 reader records. The new batch spans 182 contributing source indexes and all six sections. Every manuscript remains an unapproved AI-assisted reporting plan with an unassigned author and null approval.
+**Another 2,000 private drafts are complete, verified and deployed as version 25; public launch remains HOLD.** The desk now contains **3,245 unpublished drafts, 2,955,788 draft words and 3,253 distinct subjects**, alongside the unchanged 28 reader records. The new batch spans 182 contributing source indexes and all six sections. Every manuscript remains an unapproved AI-assisted reporting plan with an unassigned author and null approval.
 
 Fresh checks pass: **252/252 Node tests**, editorial integrity, **3,200/3,200 reachable expansion orientation links**, and SEO/discovery isolation with 28 RSS items, 45 topics and three series. No existing manuscript or reader article was changed. The private-desk generator now streams records to an atomic output file and completed the expanded projection with a 96 MiB heap cap.
 
-The exact private deployment receipt is pending. The last confirmed deployed version before this expansion is version 24 below. No local install or production build was forced below the 512 MiB resource floor, and no public GitHub push or audience change is part of this work. See [the 2,000-draft receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md).
+Owner-private Site version **25** is deployed from source `8e8cb6a4cb0ac1254353fe96ae5bd83f579fa107`, with environment revision **13** and successful deployment `appgdep_6ad0fa81ede88191abbf366f42e59a83`. The live revision endpoint returns that exact SHA. Five read-only runtime checks pass: revision identity, 28-item RSS, a new draft's reader-route 404, owner sign-in enforcement on the editorial desk, and anonymous HTTP 401. Access remains exactly one owner, zero groups and zero external visitors. An owner-authenticated visual desk review was not completed in this pass.
+
+The initial provider attempt failed during temporary dependency-directory cleanup; its receipt is retained. The unchanged saved version succeeded on retry. No local install or production build was forced below the 512 MiB resource floor. The expansion is committed locally at `d177c1c` on `codex/two-thousand-more-articles-20261015`; no public GitHub push or audience change was performed. See [the 2,000-draft receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md).
 
 Everything below is dated historical evidence.
 

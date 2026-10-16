@@ -55,12 +55,25 @@ await check("private draft has no reader page", "/article/2007-cyberattacks-on-e
 await check("unknown route is a real 404", "/missing-website-completion-check", async response => ({passed: response.status === 404}));
 await check("anonymous access denied", "/", async response => ({passed: [401,403].includes(response.status)}), false);
 for (const file of fs.readdirSync("public").filter(name => name.endsWith(".webp"))) {
-  await check("WebP served with correct MIME and bytes", `/${file}`, async response => {
+  await check("WebP served with correct MIME and bytes", `/media/${file}`, async response => {
     const contentType = response.headers.get("content-type")?.split(";")[0];
     const bytes = Buffer.from(await response.arrayBuffer());
     return {passed: response.status === 200 && contentType === "image/webp" && bytes.equals(fs.readFileSync(`public/${file}`)), contentType, bytes:bytes.length};
   });
 }
+await check("reader markup uses typed image delivery", "/", async response => {
+  const text = await response.text();
+  return {passed: response.status === 200 && text.includes("/media/fedex-705.webp") && !/<img[^>]+src="\/fedex-705\.webp"/.test(text)};
+});
+await check("unknown image cannot read other files", "/media/not-a-reader-image.webp", async response => ({passed: response.status === 404}));
+await check("anonymous image access denied", "/media/fedex-705.webp", async response => ({passed: [401,403].includes(response.status)}), false);
+await check("typed images honor conditional requests", "/media/fedex-705.webp", async response => {
+  const etag = response.headers.get("etag");
+  if (response.status !== 200 || !etag) return {passed:false};
+  const conditional = await fetch(origin + "/media/fedex-705.webp", {headers:{...headers,"if-none-match":etag},redirect:"manual",signal:AbortSignal.timeout(20_000)});
+  const body = await conditional.arrayBuffer();
+  return {passed:conditional.status === 304 && body.byteLength === 0,conditionalStatus:conditional.status};
+});
 const receipt = { checkedAt:new Date().toISOString(), expectedRevision:input.expected, scope:"Read-only hosted routes and assets; no owner-authenticated UI, human editorial review or storage mutation", checks };
 fs.writeFileSync(input.receipt, JSON.stringify(receipt, null, 2) + "\n", {flag:"wx"});
 console.log(JSON.stringify({receipt:input.receipt, checks:checks.length, passed:checks.filter(check => check.passed).length, failures:checks.filter(check => !check.passed)}, null, 2));

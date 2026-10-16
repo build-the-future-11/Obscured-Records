@@ -1,6 +1,6 @@
 # Current execution state — website completion, 16 October 2026
 
-The code repairs and release checks are recorded in [the completion receipt](docs/WEBSITE_COMPLETION_2026-10-16.md). [PROJECT_STATE.json](PROJECT_STATE.json) is the canonical inventory and gate ledger; `npm run check:state` recounts content and checks evidence paths. Public launch remains HOLD. The candidate is awaiting its exact private deployment receipt; the previous deployed release is version 25.
+The code repairs and release checks are recorded in [the completion receipt](docs/WEBSITE_COMPLETION_2026-10-16.md). [PROJECT_STATE.json](PROJECT_STATE.json) is the canonical inventory and gate ledger; `npm run check:state` recounts content and checks evidence paths. Public launch remains HOLD. Owner-private version **26** is deployed from `e4afc8cb15dd3cbfa2e7d371cb797b3c7f235629`, environment revision **14**. All **312 tests** pass; production audit reports zero advisories; the provider production build succeeded. Live runtime checks are being finalized.
 
 Everything below is dated historical evidence.
 

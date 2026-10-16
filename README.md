@@ -1,5 +1,9 @@
 # Obscured Records
 
+**16 October 2026:** the website completion pass repairs editorial scaling and approval integrity, member-library reliability and keyboard search. Start with [canonical project state](PROJECT_STATE.json) and the [completion checklist and evidence](docs/WEBSITE_COMPLETION_2026-10-16.md). The site remains owner-private, with 28 reader records and 3,245 unapproved private drafts (3,000 explicitly labelled reporting plans). Public launch is on HOLD.
+
+The dated summaries below preserve earlier results; they are not the current release identity.
+
 **15 October 2026, second expansion:** another **2,000 distinct private article drafts** bring the desk to **3,245 unpublished manuscripts**, **2,955,788 draft words** and **3,253 distinct subjects**. The reader catalogue remains 28 records. All 3,200 expansion orientation links resolve, and 252 tests pass. These are unapproved AI-assisted reporting plans, excluded from public discovery; public launch remains HOLD. See [the latest expansion receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md) and [current status](STATUS.md). Dated entries below retain their historical scope.
 
 **30 September website implementation:** configurable homepage, real-author attribution, contributor introductions, explicit newsletter-waitlist consent, optional Node/Vercel D1 connectivity, sharing images and regression coverage. See [implementation and configuration](docs/WEBSITE_UPDATE_2026-09-30.md). This source update does not itself prove deployment or remove the public-launch HOLD.
@@ -33,6 +37,7 @@ npm run install:ci
 npm run dev
 npm test
 npm run check:editorial
+npm run check:state
 npm run lint
 npm run typecheck
 npm run build
@@ -44,7 +49,7 @@ The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to 
 
 - `lib/articles.ts`: authoritative public registry; `lib/features.ts`: expanded feature copy.
 - `content/articles/`: synchronized companion MDX metadata and brief text; not the source of the feature renderer.
-- `content/drafts/`: Markdown/JSON-frontmatter review material, never application imports. A public repository would expose these files; they are private only to the reader site.
+- `content/drafts/`: Markdown/JSON-frontmatter review material. The build validates it and projects private summaries plus lazy server-only manuscript shards for the owner desk. A public repository would expose these files; they are private only to the reader site.
 - `lib/corrections.ts`: dated material correction log, displayed on the record and corrections page.
 - `db/`, `drizzle/`: schema and additive local-tested migrations.
 - `docs/`: editorial procedures, inventory and prior operating plans.

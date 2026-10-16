@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import { parseArgs } from "node:util";
-import { readDraft, validateDraft, wordCount, writeDraft } from "./editorial-content.mjs";
+import { readDraft, validateDraft, wordCount } from "./editorial-content.mjs";
 
 const { values } = parseArgs({ options: {
   manifest: { type: "string", default: "content/article-expansion-2026-10-15.json" },
@@ -27,9 +28,20 @@ const titles = new Set();
 const sourceUrls = new Set();
 const pageIds = new Set();
 const wikidataIds = new Set();
+const isRecord = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
+const isText = (value) => typeof value === "string" && value.trim().length > 0;
 for (const record of records) {
-  if (!record || typeof record !== "object" || requiredFields.some((field) => record[field] === undefined)) {
+  if (!isRecord(record) || requiredFields.some((field) => record[field] === undefined)
+    || !isRecord(record.source) || !isRecord(record.discovery)) {
     throw new Error("Malformed article expansion record");
+  }
+  for (const field of ["slug", "title", "dek", "section", "profile", "event", "mechanism", "system", "memory"]) {
+    if (!isText(record[field])) throw new Error(`Malformed article expansion record: ${field} must be nonempty text`);
+  }
+  if (!Number.isSafeInteger(record.discovery.wikipediaPageId) || record.discovery.wikipediaPageId < 1
+    || !/^Q[1-9][0-9]*$/.test(record.discovery.wikidataId)
+    || !isText(record.discovery.retrievedAt) || !Number.isFinite(Date.parse(record.discovery.retrievedAt))) {
+    throw new Error(`${record.slug}: malformed discovery identity or retrieval date`);
   }
   if (slugs.has(record.slug)) throw new Error(`Duplicate expansion slug: ${record.slug}`);
   if (titles.has(record.title)) throw new Error(`Duplicate expansion title: ${record.title}`);
@@ -48,12 +60,6 @@ for (const record of records) {
   wikidataIds.add(record.discovery.wikidataId);
 }
 
-const existingDrafts = new Set(
-  fs.readdirSync(draftsDirectory)
-    .filter((file) => file.endsWith(".md"))
-    .map((file) => file.replace(/\.md$/, ""))
-    .filter((slug) => !slugs.has(slug)),
-);
 const published = new Set(
   fs.readdirSync(articlesDirectory)
     .filter((file) => file.endsWith(".mdx"))
@@ -117,11 +123,7 @@ The two linked pages are discovery sources only. Before publication, an editor m
 Until those gates close, this remains private editorial inventory. No reachability check, generated word count, category label, metadata revision or batch test converts it into verified journalism. What is complete now is the reporting map for ${record.title}: a distinct subject, a reproducible discovery trail, explicit evidence tasks and a visible record of every major editorial obligation still open.`;
 }
 
-for (const record of records) {
-  if (existingDrafts.has(record.slug) || published.has(record.slug)) {
-    throw new Error(`Expansion collides with existing subject: ${record.slug}`);
-  }
-
+function manuscriptFor(record) {
   const body = bodyFor(record);
   const metadata = {
     slug: record.slug,
@@ -168,13 +170,65 @@ for (const record of records) {
   };
 
   validateDraft(metadata, body);
+  return { metadata, body };
+}
+
+// Validate the complete batch before creating anything. Render again while
+// writing so large manifests do not retain every manuscript body in memory.
+const pending = [];
+for (const record of records) {
+  if (published.has(record.slug)) {
+    throw new Error(`Expansion collides with existing subject: ${record.slug}`);
+  }
+  const { metadata, body } = manuscriptFor(record);
   const destination = path.join(draftsDirectory, `${record.slug}.md`);
-  if (fs.existsSync(destination)) {
+  if (fs.lstatSync(destination, { throwIfNoEntry: false })) {
     const existing = readDraft(destination);
     if (JSON.stringify(existing.metadata) !== JSON.stringify(metadata) || existing.body.trim() !== body.trim()) {
       throw new Error(`Refusing to overwrite an existing or reviewed manuscript: ${record.slug}`);
     }
-  } else writeDraft(destination, metadata, body);
+  } else pending.push(record);
 }
 
-console.log(`Generated ${records.length} additional private article drafts.`);
+if (pending.length) {
+  const stagingDirectory = fs.mkdtempSync(path.join(draftsDirectory, ".article-expansion-"));
+  const created = [];
+  const digest = (content) => createHash("sha256").update(content).digest("hex");
+  try {
+    for (const record of pending) {
+      const { metadata, body } = manuscriptFor(record);
+      const content = `---\n${JSON.stringify(metadata, null, 2)}\n---\n\n${body.trim()}\n`;
+      const staged = path.join(stagingDirectory, `${record.slug}.md`);
+      const destination = path.join(draftsDirectory, `${record.slug}.md`);
+      fs.writeFileSync(staged, content, { flag: "wx" });
+      const identity = fs.statSync(staged);
+      const hash = digest(content);
+      // Hard-linking a complete file is atomic and fails if another writer has
+      // created the destination since preflight; rename would overwrite it.
+      fs.linkSync(staged, destination);
+      created.push({ destination, identity, hash });
+      fs.unlinkSync(staged);
+    }
+  } catch (error) {
+    const rollbackErrors = [];
+    for (const { destination, identity, hash } of created.reverse()) {
+      try {
+        const current = fs.lstatSync(destination, { throwIfNoEntry: false });
+        if (!current) continue;
+        if (current.dev !== identity.dev || current.ino !== identity.ino
+          || digest(fs.readFileSync(destination)) !== hash) {
+          throw new Error(`Preserved concurrently changed manuscript during rollback: ${destination}`);
+        }
+        fs.unlinkSync(destination);
+      } catch (rollbackError) {
+        rollbackErrors.push(rollbackError);
+      }
+    }
+    if (rollbackErrors.length) throw new AggregateError([error, ...rollbackErrors], "Expansion failed; rollback needs manual review");
+    throw error;
+  } finally {
+    fs.rmSync(stagingDirectory, { recursive: true, force: true });
+  }
+}
+
+console.log(`Validated ${records.length} private article drafts; created ${pending.length}, preserved ${records.length - pending.length}.`);

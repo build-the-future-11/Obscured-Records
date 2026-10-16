@@ -1,4 +1,10 @@
-# Current execution state — second expansion, 15 October 2026
+# Current execution state — website completion, 16 October 2026
+
+The code repairs and release checks are recorded in [the completion receipt](docs/WEBSITE_COMPLETION_2026-10-16.md). [PROJECT_STATE.json](PROJECT_STATE.json) is the canonical inventory and gate ledger; `npm run check:state` recounts content and checks evidence paths. Public launch remains HOLD. The candidate is awaiting its exact private deployment receipt; the previous deployed release is version 25.
+
+Everything below is dated historical evidence.
+
+# Earlier execution state — second expansion, 15 October 2026
 
 **Another 2,000 private drafts are complete, verified and deployed as version 25; public launch remains HOLD.** The desk now contains **3,245 unpublished drafts, 2,955,788 draft words and 3,253 distinct subjects**, alongside the unchanged 28 reader records. The new batch spans 182 contributing source indexes and all six sections. Every manuscript remains an unapproved AI-assisted reporting plan with an unassigned author and null approval.
 

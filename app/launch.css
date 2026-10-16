@@ -24,3 +24,5 @@
 
 .home-lead-text{grid-template-columns:minmax(0,1fr)}
 .home-lead-text .home-lead-copy{max-width:950px}
+
+.editorial-pagination{display:flex;align-items:center;justify-content:center;gap:24px;padding:32px 0;flex-wrap:wrap}.editorial-pagination button{padding:12px 18px;min-height:48px;background:var(--paper);color:var(--text);border:1px solid var(--text);cursor:pointer}.editorial-pagination button:disabled{opacity:.45;cursor:default}.editorial-pagination button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.editorial-grid .editorial-draft-kind{font:.7rem/1.5 var(--sans);color:var(--accent);margin:16px 0 0}.editorial-results-line:focus{outline:2px solid var(--accent);outline-offset:4px}

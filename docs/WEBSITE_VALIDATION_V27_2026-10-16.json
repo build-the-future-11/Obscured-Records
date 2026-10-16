@@ -1,0 +1,64 @@
+{
+  "nodeTests": 331,
+  "failed": 0,
+  "nodeHeapMiB": 128,
+  "testConcurrency": 1,
+  "productionAudit": {
+    "advisories": 0,
+    "command": "npm audit --omit=dev --audit-level=low --json"
+  },
+  "editorialIndex": {
+    "beforeBytes": 29805082,
+    "afterBytes": 1838464,
+    "reductionPercent": 93.83,
+    "renderedCardsPerPage": 36,
+    "lazyShards": 64
+  },
+  "content": {
+    "readerRecords": 28,
+    "privateDrafts": 3245,
+    "explicitReportingPlans": 3000,
+    "approvedDrafts": 0,
+    "sourceContentChanged": false
+  },
+  "checks": [
+    "editorial-integrity",
+    "check-project-state",
+    "targeted ESLint",
+    "targeted TS transpile syntax",
+    "all draft projection body and metadata comparisons",
+    "provider production build with explicit prebuild typecheck gate"
+  ],
+  "limits": [
+    "No new Vercel/browser/owner UI or physical-device certification",
+    "Lazy imports remain cached; no lifetime Worker memory guarantee",
+    "Raw legacy asset URLs retain provider MIME limitation; all active reader image projections use the verified typed route",
+    "No new human editorial approval, media-rights acceptance, operational/restore rehearsal or public-audience authorization"
+  ],
+  "localCandidate": "ca1c81b42280600e086b32359b8e00ded2aad1b9",
+  "privateSource": "5b1b32fe00b55154d7d6bdd7ab4b04645667d58e",
+  "sourceFilesCompared": 3702,
+  "sourceMismatches": 0,
+  "savedVersionNumber": 27,
+  "savedVersionId": "appgprj_6aa79b45dd308191b3b887c293729f00~appgver_cbb51b71312c8191bb58a727a1811da6",
+  "deploymentId": "appgdep_6ad198f69c188191b5aed39f7c2e6d93",
+  "deploymentStatus": "succeeded",
+  "environmentRevision": 15,
+  "packagingLimit": "Local packaging returned Missing dist/server/index.js because production build admission was blocked. Exact private source was pushed successfully; native remote-build fallback succeeded.",
+  "deployedAt": "2026-10-16T03:32:25.824712+00:00",
+  "nodeVersion": "v26.8.2",
+  "platform": "darwin-arm64",
+  "liveChecks": {
+    "passed": 78,
+    "total": 78,
+    "receipt": "docs/WEBSITE_RUNTIME_V27_2026-10-16.json"
+  },
+  "imageDelivery": {
+    "allowlistedAssets": 13,
+    "originalBytes": 916384,
+    "typedRoute": "/media/[filename]",
+    "liveByteIdentityAndMime": "PASS",
+    "rawLegacyUrls": "provider MIME limitation retained; reader projections use typed routes"
+  },
+  "sameHostReview": "docs/WEBSITE_REVIEW_V27_2026-10-16.json"
+}

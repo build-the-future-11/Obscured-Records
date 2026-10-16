@@ -1,6 +1,6 @@
 # Obscured Records
 
-**16 October 2026:** the website completion pass repairs editorial scaling and approval integrity, member-library reliability and keyboard search. Start with [canonical project state](PROJECT_STATE.json) and the [completion checklist and evidence](docs/WEBSITE_COMPLETION_2026-10-16.md). The site remains owner-private, with 28 reader records and 3,245 unapproved private drafts (3,000 explicitly labelled reporting plans). Public launch is on HOLD.
+**16 October 2026:** owner-private **version 27** is deployed. The website repairs editorial scaling and approval integrity, member-library reliability, keyboard search and image delivery; **331 tests and 78 live checks pass**. Start with [canonical project state](PROJECT_STATE.json), [current status](STATUS.md) and the [completion checklist and evidence](docs/WEBSITE_COMPLETION_2026-10-16.md). All 28 reader records and 3,245 unapproved private drafts (3,000 reporting plans) are preserved. Public launch remains on HOLD for the documented human and operational gates.
 
 The dated summaries below preserve earlier results; they are not the current release identity.
 

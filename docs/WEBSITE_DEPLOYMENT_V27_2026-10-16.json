@@ -1,0 +1,41 @@
+{
+  "deployment": {
+    "id": "appgdep_6ad198f69c188191b5aed39f7c2e6d93",
+    "project_id": "appgprj_6aa79b45dd308191b3b887c293729f00",
+    "title": "Obscured Records",
+    "version_id": "appgprj_6aa79b45dd308191b3b887c293729f00~appgver_cbb51b71312c8191bb58a727a1811da6",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://obscured-records.ryangomez-hs.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aa79b45dd308191b3b887c293729f00",
+    "failure_message": null,
+    "env_set_revision": 15,
+    "updated_at": "2026-10-16T03:32:25.824712+00:00"
+  },
+  "version": {
+    "id": "appgprj_6aa79b45dd308191b3b887c293729f00~appgver_cbb51b71312c8191bb58a727a1811da6",
+    "project_id": "appgprj_6aa79b45dd308191b3b887c293729f00",
+    "version_number": 27,
+    "source": {
+      "commit_sha": "5b1b32fe00b55154d7d6bdd7ab4b04645667d58e"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000dff8820d9a98b250fc559e6c",
+      "content_hash": "sha256:97857a76975e101a8702419e6ca2552d07acc006afdcb1ad12dd9eb8da8bf22e",
+      "size_bytes": 37990400,
+      "file_count": 274
+    },
+    "screenshot_url": null,
+    "deployment_id": "appgdep_6ad198f69c188191b5aed39f7c2e6d93"
+  },
+  "access": {
+    "mode": "custom",
+    "allowedUserCount": 1,
+    "allowedGroupCount": 0,
+    "externalVisitorCount": 0,
+    "currentUserRole": "owner"
+  }
+}

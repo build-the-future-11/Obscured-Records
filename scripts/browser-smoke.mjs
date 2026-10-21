@@ -113,7 +113,12 @@ const paths = ['/', '/article/fedex-flight-705', '/article/air-france-8969', '/w
     for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter'], ['/contribute', 'contribute'], ['/about', 'about']]) {
       await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
       await page.locator('h1').waitFor();
-      await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map((image) => image.decode().catch(() => {}))); });
+      const assetsReady = await page.evaluate(async () => {
+        const assets = Promise.all([document.fonts.ready, ...[...document.images].map((image) => image.decode().catch(() => {}))]).then(() => true);
+        const deadline = new Promise((resolve) => setTimeout(() => resolve(false), 5000));
+        return Promise.race([assets, deadline]);
+      });
+      if (!assetsReady) console.warn(`WARN browser: ${path} visual assets exceeded the 5s screenshot readiness budget`);
       await page.screenshot({ path: resolve(outputDir, `${name}-${width}.png`), fullPage: true, animations: 'disabled' });
     }
   }

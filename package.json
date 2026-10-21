@@ -18,6 +18,7 @@
     "check:editorial": "node scripts/editorial-integrity.mjs",
     "check:state": "node scripts/check-project-state.mjs",
     "smoke:browser": "node scripts/browser-smoke.mjs",
+    "smoke:browser:portal-retry": "node scripts/portal-retry-browser-smoke.mjs",
     "db:generate": "drizzle-kit generate",
     "smoke:relaunch": "node scripts/relaunch-smoke.mjs",
     "test": "node --experimental-strip-types --test scripts/*.test.mjs",

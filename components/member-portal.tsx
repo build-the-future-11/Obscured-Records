@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any, react-hooks/set-state-in-effect */
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { MemberTools, InviteMember, PortalManagement } from "@/components/portal-workflows";
 import Link from "next/link";
 import { memberRequest } from "@/lib/member-client";
@@ -19,11 +19,28 @@ export function MemberPortal({ initialView = "home" }: { initialView?: View }) {
   const [portal, setPortal] = useState<Portal | null>(null);
   const [status, setStatus] = useState("Loading your member workspace…");
   const [loadFailed, setLoadFailed] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
   const [directory, setDirectory] = useState<any[]>([]);
   const [query, setQuery] = useState("");
-  const load = async () => { const data = await memberRequest<Portal>("/api/member/portal"); setPortal(data); setLoadFailed(false); setStatus(""); return data; };
-  useEffect(() => { load().catch((error) => { setLoadFailed(true); setStatus(error instanceof Error ? error.message : "The member workspace is unavailable."); }); }, []);
+  const load = useCallback(async (retrying = false) => {
+    setLoading(true);
+    setStatus(retrying ? "Retrying your member workspace…" : "Loading your member workspace…");
+    try {
+      const data = await memberRequest<Portal>("/api/member/portal");
+      setPortal(data);
+      setLoadFailed(false);
+      setStatus("");
+      return data;
+    } catch (error) {
+      setLoadFailed(true);
+      setStatus(error instanceof Error ? error.message : "The member workspace is unavailable.");
+      throw error;
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+  useEffect(() => { load().catch(() => undefined); }, [load]);
   const submit = async (action: string, payload: Record<string, unknown>) => {
     setBusy(true); setStatus("Saving…");
     try { const result = await memberRequest<{ ok: boolean; portal: Portal }>("/api/member/portal", { method: "POST", body: JSON.stringify({ action, ...payload }) }); setPortal(result.portal); setStatus("Saved."); return true; }
@@ -35,7 +52,7 @@ export function MemberPortal({ initialView = "home" }: { initialView?: View }) {
   return <div className="portal-shell">
     <nav className="portal-nav" aria-label="Member workspace">{nav.map((item) => <Link key={item.id} href={item.id === "home" ? "/member" : `/member/${item.id}`} aria-current={view === item.id ? "page" : undefined} className={view === item.id ? "active" : ""}>{item.label}</Link>)}</nav>
     <p className="member-status" role="status">{status}</p>
-    {!portal ? <div className="portal-empty"><h2>{loadFailed ? "Workspace could not load" : "Preparing your workspace"}</h2>{loadFailed ? <button onClick={() => load().catch((error) => setStatus(error instanceof Error ? error.message : "Try again shortly."))}>Try again</button> : <p>Account data is loading securely.</p>}</div> : <><PortalView portal={portal} view={view} submit={submit} busy={busy} directory={directory} query={query} setQuery={setQuery} searchDirectory={searchDirectory} /><MemberTools portal={portal} submit={submit} busy={busy} view={view} /></>}
+    {!portal ? <div className="portal-empty"><h2>{loadFailed ? "Workspace could not load" : "Preparing your workspace"}</h2>{loadFailed ? <button disabled={loading} onClick={() => load(true).catch(() => undefined)}>{loading ? "Trying again…" : "Try again"}</button> : <p>Account data is loading securely.</p>}</div> : <><PortalView portal={portal} view={view} submit={submit} busy={busy} directory={directory} query={query} setQuery={setQuery} searchDirectory={searchDirectory} /><MemberTools portal={portal} submit={submit} busy={busy} view={view} /></>}
   </div>;
 }
 

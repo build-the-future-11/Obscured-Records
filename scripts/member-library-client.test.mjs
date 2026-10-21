@@ -30,6 +30,6 @@ test("member state changes fail without a confirmed server record", async () => 
 
 test("account reading-state controls are wired to the write-through action", () => {
   const dashboard = readFileSync(new URL("../components/member-dashboard.tsx", import.meta.url), "utf8");
-  assert.match(dashboard, /await updateMemberReadingState\(item, state\)/);
+  assert.match(dashboard, /await updateMemberReadingState\(item, state, controller\.signal\)/);
   assert.match(dashboard, /Reading state<select[^>]+disabled=\{busy\}/);
 });

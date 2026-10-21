@@ -1,0 +1,232 @@
+{
+  "asOf": "2026-10-16",
+  "status": "NEEDS EDITOR REVIEW",
+  "scope": "Three additional review drafts, local edits only. No source-status, checklist, approval, attribution, history or reader publication changes.",
+  "reviewer": "AI-assisted source review; no named human approval",
+  "reviews": [
+    {
+      "slug": "challenger-warning-and-decision",
+      "disposition": "light edit",
+      "changeSummary": "Named Thiokol and the predicted O-ring temperature boundary explicitly, added exact Commission locators and tightened testimony-versus-finding attribution. Peer review caught and corrected the initial ambiguity between seal and ambient temperature before integration.",
+      "remainingReview": "Named human editor and technical review remain open; do not infer every participant shared one motive or expand O-ring mechanism without a separate technical pass.",
+      "claims": [
+        {
+          "id": "challenger-decision",
+          "passage": "Challenger launched on 28 January 1986 after its solid rocket motor contractor, Thiokol, reversed a recommendation against launch. The Rogers Commission found that senior decision-makers lacked crucial information about O-ring problems, the initial recommendation not to launch with predicted O-ring temperatures below 53 degrees Fahrenheit and the engineers' continuing opposition. [Commission, Chapter V, pp. 82 and 91](https://www.nasa.gov/history/rogersrep/v1ch5.htm).",
+          "sourceIds": [
+            "rogers"
+          ],
+          "locator": "Chapter V, printed pp. 82 and 91",
+          "support": "Commission opening supports the missing-information finding and temperature recommendation; attribution is retained.",
+          "uncertainty": "This is the Commission finding, not a new reconstruction of every launch meeting.",
+          "followup": "Named human editor and technical review remain open; do not infer every participant shared one motive or expand O-ring mechanism without a separate technical pass."
+        },
+        {
+          "id": "challenger-reversal",
+          "passage": "Thiokol initially recommended against launch with predicted O-ring temperatures below 53 degrees Fahrenheit, the lower boundary of its prior O-ring flight experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers. [Commission, Chapter V, pp. 90–91 and 104, finding 4](https://www.nasa.gov/history/rogersrep/v1ch5.htm).",
+          "sourceIds": [
+            "rogers"
+          ],
+          "locator": "Chapter V, printed pp. 90–91 (including Mulloy/Walker exchange) and p. 104, finding 4",
+          "support": "The recommendation concerns predicted O-ring temperature, not ambient air or bulk propellant temperature; management reversal is separately attributed to the Commission finding.",
+          "uncertainty": "Testimony about temperature and the Commission conclusion are separate parts of the record.",
+          "followup": "Named human editor and technical review remain open; do not infer every participant shared one motive or expand O-ring mechanism without a separate technical pass."
+        },
+        {
+          "id": "challenger-testimony",
+          "passage": "Engineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to establish that it was unsafe. Thiokol engineering executive Robert Lund described a similar reversal in the group's thinking. These are their accounts of the decision process, not direct evidence of every participant's reasoning. [Commission testimony, Chapter V, pp. 93–94](https://www.nasa.gov/history/rogersrep/v1ch5.htm).",
+          "sourceIds": [
+            "rogers"
+          ],
+          "locator": "Chapter V, printed pp. 93–94, Boisjoly and Lund testimony",
+          "support": "The burden-of-proof description is expressly framed as witness accounts.",
+          "uncertainty": "Does not establish every participant’s reasoning or quote testimony verbatim.",
+          "followup": "Named human editor and technical review remain open; do not infer every participant shared one motive or expand O-ring mechanism without a separate technical pass."
+        }
+      ],
+      "priority": "P0",
+      "reviewDepth": "Full draft read; selective primary-source claim mapping",
+      "changed": true,
+      "sourceBodySha256": "9860fbeb17924f07c057d7fd2183a9fd39d0f42eedf5d04badcc78a770d4de3f",
+      "revisedBodySha256": "17c2c4368fbdc6a098b49266880d019b487e36e9ca776f8a0c533fd56e0e8de4",
+      "sourceFileSha256": "c6c3b1ab51e631505c1cfba2c64819231d3257676b6703300b4d5372f03d418d",
+      "revisedFileSha256": "4119fac1bcf057bf14dba2baed47476b329baaace77e4cd745b02bc8046162b4",
+      "frontmatterSha256": "cacd023dff41a7b7525a69b23732af95124a1abfcce691f6b056888e803d4073",
+      "frontmatterPreserved": true,
+      "frontmatterHashBoundary": "Opening --- through closing --- and its trailing newline"
+    },
+    {
+      "slug": "columbia-evidence-not-requested",
+      "disposition": "light edit",
+      "changeSummary": "Specified the thermal-tile/RCC scope of F3.4-6, clarified the imagery-request antecedent, added exact finding links and removed a repetitive closing paragraph.",
+      "remainingReview": "Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration.",
+      "claims": [
+        {
+          "id": "columbia-loss",
+          "passage": "Columbia and its seven crew members were lost during re-entry on 1 February 2003. The Columbia Accident Investigation Board found that a foam strike had damaged the left wing. Its inquiry also traced three independent attempts to obtain better images of the damage while the shuttle was still in orbit.",
+          "sourceIds": [
+            "nasa_columbia",
+            "caib"
+          ],
+          "locator": "NASA retrospective opening; CAIB F6.3-25 (p. 172)",
+          "support": "Date and crew count are kept with the board’s documented count of three independent imagery requests.",
+          "uncertainty": "No claim that one additional image would have guaranteed a different outcome.",
+          "followup": "Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration."
+        },
+        {
+          "id": "columbia-existing-evidence",
+          "passage": "Launch imagery revealed a strike near the left wing's leading edge, but did not conclusively show the damage. Better pictures could have helped. They were not the only route to an answer: CAIB finding F3.4-6 states that the information already available during the mission was adequate to determine the impact's effect on the thermal tiles and reinforced carbon-carbon wing components. The failure involved both obtaining evidence and using it. [CAIB findings F3.4-2 and F3.4-6, p. 62](https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM).",
+          "sourceIds": [
+            "caib"
+          ],
+          "locator": "F3.4-2 and F3.4-6, printed p. 62",
+          "support": "Bounds the adequacy finding to thermal tiles and reinforced carbon-carbon components.",
+          "uncertainty": "A finding about information adequacy is not evidence of a feasible rescue.",
+          "followup": "Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration."
+        },
+        {
+          "id": "columbia-request-routing",
+          "passage": "According to the Board's findings, the imagery request moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request. [CAIB findings F6.3-7–9, p. 171](https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM).",
+          "sourceIds": [
+            "caib"
+          ],
+          "locator": "F6.3-7–9, printed p. 171",
+          "support": "Request routing, perceived urgency and team misunderstanding are attributed to the Board.",
+          "uncertainty": "Selected findings do not constitute a full chronology of all actors or requests.",
+          "followup": "Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration."
+        },
+        {
+          "id": "columbia-uncertainty",
+          "passage": "The Board found substantial uncertainty in the assessment. It cited inadequate imagery, weaknesses in the use of assessment tools, communication breakdowns and engineering judgments. It also found that assumptions and uncertainties were not fully presented to the Mission Evaluation Room or Mission Management Team.",
+          "sourceIds": [
+            "caib"
+          ],
+          "locator": "F6.3-12–13, printed p. 171",
+          "support": "Retained passage distinguishes the assessment’s uncertainty from what was conveyed to mission managers.",
+          "uncertainty": "No independent reanalysis of impact simulation or engineering assumptions performed.",
+          "followup": "Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration."
+        }
+      ],
+      "priority": "P0",
+      "reviewDepth": "Full draft read; selective primary-source claim mapping",
+      "changed": true,
+      "sourceBodySha256": "2e928fc7f00929a5e328f5888ef18c231b53bbe897f5a45c13205632d8e4c83d",
+      "revisedBodySha256": "35ed03e3b439e74dc2537e2575202037511dad03ccefbee4680d0b92c84295e0",
+      "sourceFileSha256": "b7509383700caa22d1b09a0e7958eff6b9205f808f43bafd770184563cbc06c1",
+      "revisedFileSha256": "e3435731dc9992a5dae7bd53cd1bd56bb49fec3c1df54481af29f26426adbafd",
+      "frontmatterSha256": "ed0b8753ef27bfc885dacbac580709a0ee5e0867c8eaf9da3532982523e81b65",
+      "frontmatterPreserved": true,
+      "frontmatterHashBoundary": "Opening --- through closing --- and its trailing newline"
+    },
+    {
+      "slug": "dhahran-running-clock",
+      "disposition": "light edit",
+      "changeSummary": "Specified that the battery did not engage the Scud, retained casualty attribution and added the dated software-release/warning/arrival sequence from printed page 9.",
+      "remainingReview": "Technical editor to review the explanatory interpretation; no overall system effectiveness or precise numerical drift calculation is supplied. Direct GAO binary download failed; page-image review used the recorded mirror.",
+      "claims": [
+        {
+          "id": "dhahran-incident",
+          "passage": "The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to track an incoming Scud on 25 February 1991. According to the General Accounting Office investigation, the battery did not engage the missile, which struck a barracks and killed 28 American soldiers. GAO linked that failure to an inaccurate timing calculation whose effect grew with continuous operation. [GAO report, printed pages 1 and 9](https://www.gao.gov/assets/imtec-92-26.pdf).",
+          "sourceIds": [
+            "gao"
+          ],
+          "locator": "Printed pp. 1 and 9; PDF pages 3 and 11",
+          "support": "The report supports the continuous-run duration, non-engagement and 28 American soldiers killed.",
+          "uncertainty": "A failure to engage is more specific than a claim that an interceptor was fired and missed.",
+          "followup": "Technical editor to review the explanatory interpretation; no overall system effectiveness or precise numerical drift calculation is supplied. Direct GAO binary download failed; page-image review used the recorded mirror."
+        },
+        {
+          "id": "dhahran-calculation",
+          "passage": "GAO's report describes a clock recorded in tenths of seconds. Converting its integer count into a real-number time value lost precision in the system's limited registers. The effect on the tracking calculation increased with operating duration and target velocity. At Dhahran the battery had run continuously for more than 100 hours. Its predicted search region no longer aligned adequately with the incoming missile. [GAO report, printed pages 1 and 5–6](https://www.gao.gov/assets/imtec-92-26.pdf).",
+          "sourceIds": [
+            "gao"
+          ],
+          "locator": "Printed pp. 5–6; PDF pages 7–8",
+          "support": "Prose distinguishes integer time count, conversion precision and increased range-gate error with runtime.",
+          "uncertainty": "No exact error-distance figure inferred from the uninspected numerical appendix.",
+          "followup": "Technical editor to review the explanatory interpretation; no overall system effectiveness or precise numerical drift calculation is supplied. Direct GAO binary download failed; page-image review used the recorded mirror."
+        },
+        {
+          "id": "dhahran-distribution",
+          "passage": "GAO records a software release on 16 February, a message to users on 21 February and the corrected software's arrival in Dhahran on 26 February, the day after the attack. The warning mentioned very long running times without specifying a duration. Those dates distinguish a correction's availability from its arrival at the affected battery; they do not establish that operators received an actionable operating limit. [GAO report, printed page 9](https://www.gao.gov/assets/imtec-92-26.pdf).",
+          "sourceIds": [
+            "gao"
+          ],
+          "locator": "Printed p. 9; PDF page 11",
+          "support": "Release, warning and arrival are separate dated events; the report says the warning did not define very long run times.",
+          "uncertainty": "The sentence about an actionable operating limit is bounded interpretation, not proof of every operator’s knowledge.",
+          "followup": "Technical editor to review the explanatory interpretation; no overall system effectiveness or precise numerical drift calculation is supplied. Direct GAO binary download failed; page-image review used the recorded mirror."
+        }
+      ],
+      "priority": "P0",
+      "reviewDepth": "Full draft read; selective primary-source claim mapping",
+      "changed": true,
+      "sourceBodySha256": "48e9d76550d39e63d25989edd9389260df1245e708d02820155d9b51b3a9947e",
+      "revisedBodySha256": "66f2d7cbdc3efef7c96912d9b6ee8bbe14caba9801053f6c8892a8a289653e0e",
+      "sourceFileSha256": "d500a42c56755851112212884015f85cf03ba60d19c5a1bea7839926e3805089",
+      "revisedFileSha256": "d2cf8d95e75d1eda5c2124381eeb1f3dab0c6e7a044cece4008472b786e4885e",
+      "frontmatterSha256": "06298b9c7bbe676511429727e56c790c8b6e9d158e592f72bb3b94e6f63c151f",
+      "frontmatterPreserved": true,
+      "frontmatterHashBoundary": "Opening --- through closing --- and its trailing newline"
+    }
+  ],
+  "sources": {
+    "rogers": {
+      "title": "Report of the Presidential Commission on the Space Shuttle Challenger Accident, Volume I, Chapter V",
+      "institution": "Presidential Commission on the Space Shuttle Challenger Accident; hosted by NASA",
+      "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+      "sourceDate": "1986; issue date not reverified here",
+      "accessDate": "2026-10-16",
+      "inspected": "HTML chapter prose and testimony at printed pp. 82, 87–94 and 102–104. No new interpretation of diagrams or the chronology table.",
+      "limitation": "Commission findings and individual recollections remain distinct; selected passages, not all exhibits or independent technical replication."
+    },
+    "caib": {
+      "title": "Columbia Accident Investigation Board findings archive",
+      "institution": "Columbia Accident Investigation Board; NASA archive",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM",
+      "sourceDate": "2003, Volume I findings; web transcription date unspecified",
+      "accessDate": "2026-10-16",
+      "inspected": "F3.3-1/R3.3-1, F3.8-7, F3.4-1–6 and F6.3-1–29, with printed report locators pp. 58–62, 83 and 170–172. Read the listed findings as text; encoding defects remain in the transcription.",
+      "limitation": "Findings archive is not the complete request chronology, supporting exhibits or repair/rescue feasibility analysis."
+    },
+    "nasa_columbia": {
+      "title": "20 Years Ago: Remembering Columbia and Her Crew",
+      "institution": "NASA History",
+      "url": "https://www.nasa.gov/history/20-years-ago-remembering-columbia-and-her-crew/",
+      "sourceDate": "2023; anniversary retrospective",
+      "accessDate": "2026-10-16",
+      "inspected": "Opening and re-entry chronology, seven-crew references, and page update metadata. Date and crew identity checked; no new mission-level outcome inference.",
+      "limitation": "Retrospective agency account; the primary board findings carry the technical and organizational claims.",
+      "lastUpdated": "2026-01-30"
+    },
+    "gao": {
+      "title": "Patriot Missile Defense: Software Problem Led to System Failure at Dhahran, Saudi Arabia, GAO/IMTEC-92-26",
+      "institution": "United States General Accounting Office",
+      "url": "https://www.gao.gov/assets/imtec-92-26.pdf",
+      "catalogueUrl": "https://www.gao.gov/products/imtec-92-26",
+      "sourceDate": "1992-02-04",
+      "publicReleaseDate": "1992-02-27",
+      "accessDate": "2026-10-16",
+      "inspected": "Official web-extracted report prose at printed pp. 1, 5–6 and 9; scanned versions of these four pages visually inspected from an indexed public mirror after direct GAO download returned 403.",
+      "visualCopy": {
+        "url": "https://konstantinus.com/wp-content/uploads/2018/08/215614.pdf",
+        "localFile": ".cache/ux-seo-editorial-20261016-continuation/gao-imtec-92-26-mirror.pdf",
+        "sha256": "cc2e98256c134feffb7f6a8fd82a0110419c35b58f3ad9f481124943b6c11dcc",
+        "pdfPagesOneBased": [
+          3,
+          7,
+          8,
+          11
+        ],
+        "printedPages": [
+          1,
+          5,
+          6,
+          9
+        ],
+        "comparison": "Displayed report identity and relevant page wording agree with the official extracted text; byte identity with GAO-hosted PDF was not established."
+      },
+      "limitation": "No claim about overall Patriot effectiveness, present systems, exact range-gate displacement, or a reconstructed interception counterfactual. Appendix II numerical table was not used."
+    }
+  }
+}

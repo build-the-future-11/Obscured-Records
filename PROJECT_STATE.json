@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-21",
+  "productKind": "publication-website",
+  "scientificModel": {
+    "applicable": false,
+    "reason": "This project publishes archival journalism and supports editorial review. It is not a scientific model or a confirmatory experiment."
+  },
+  "release": {
+    "publicLaunch": "HOLD",
+    "audience": "owner-private",
+    "deploymentReceipt": "docs/PORTAL_COMPLETION_2026-10-21.md"
+  },
+  "content": {
+    "drafts": 3248,
+    "explicitReportingPlans": 3000,
+    "otherDrafts": 248,
+    "draftWords": 2958174,
+    "draftStates": {
+      "draft": 3206,
+      "review": 42,
+      "approved": 0,
+      "held": 0
+    },
+    "readerRecords": 31,
+    "readerStates": {
+      "draft": 0,
+      "review": 0,
+      "published": 31,
+      "held": 0
+    }
+  },
+  "evidenceBoundary": "Counts, source-link reachability, tests and deployment receipts establish bounded engineering evidence. They do not establish factual correctness, original reporting, image rights, human editorial approval or completed operational acceptance. A reader record marked published is a registry state, not certification. The 248 other drafts are not certified finished articles.",
+  "channels": {
+    "newsletter": "capture-only",
+    "emailSending": "deferred",
+    "analytics": "deferred",
+    "audio": "deferred",
+    "sponsorship": "deferred"
+  },
+  "acceptanceGates": [
+    {
+      "id": "editorial-review",
+      "status": "OPEN",
+      "requiredEvidence": "Named human editor acceptance; record-by-record material-claim and independent-source review; accurate authorship, fairness and privacy review; explicit launch selection and approval.",
+      "workPlan": "docs/LAUNCH_EDITORIAL_REVIEW_2026-09-27.md",
+      "acceptance": null
+    },
+    {
+      "id": "media-rights",
+      "status": "OPEN",
+      "requiredEvidence": "Documented licence or permission for every selected media asset, resolution of conflicting provenance and explicit exclusion of uncleared assets.",
+      "workPlan": "docs/RELEASE_CHECKLIST.md",
+      "acceptance": null
+    },
+    {
+      "id": "incident-and-intake-operator",
+      "status": "OPEN",
+      "requiredEvidence": "Named incident and intake operator acceptance, monitored contact path and controlled acknowledgement, triage, escalation and closure exercise.",
+      "workPlan": "docs/LAUNCH_OPERATIONS_2026-09-27.md",
+      "acceptance": null
+    },
+    {
+      "id": "retention-and-newsletter-policy",
+      "status": "OPEN",
+      "requiredEvidence": "Accountable retention/deletion owner, verified handling practice and explicit acceptance of capture-only newsletter operation before launch.",
+      "workPlan": "docs/LAUNCH_OPERATIONS_2026-09-27.md",
+      "acceptance": null
+    },
+    {
+      "id": "provider-restore-exercise",
+      "status": "OPEN",
+      "requiredEvidence": "Provider-supported database backup/restore and application rollback rehearsal with the accepted incident owner; an empty-data snapshot alone is insufficient.",
+      "workPlan": "docs/LAUNCH_OPERATIONS_2026-09-27.md",
+      "acceptance": null
+    },
+    {
+      "id": "physical-device-and-screen-reader",
+      "status": "OPEN",
+      "requiredEvidence": "Representative physical-device and screen-reader review with recorded findings and repairs; automated viewport checks alone are insufficient.",
+      "workPlan": "docs/RELEASE_CHECKLIST.md",
+      "acceptance": null
+    },
+    {
+      "id": "field-performance",
+      "status": "OPEN",
+      "requiredEvidence": "Representative live slow-network measurements and field-performance review when sufficient real traffic exists; distinguish lab measurements from field data.",
+      "workPlan": "docs/RELEASE_CHECKLIST.md",
+      "acceptance": null
+    },
+    {
+      "id": "public-audience-authorization",
+      "status": "OPEN",
+      "requiredEvidence": "Explicit owner authorization to change the owner-private audience after the launch gates have been reviewed.",
+      "workPlan": "docs/RELEASE_CHECKLIST.md",
+      "acceptance": null
+    }
+  ]
+}

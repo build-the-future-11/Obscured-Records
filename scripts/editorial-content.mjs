@@ -1,4 +1,10 @@
 import fs from 'node:fs';
+import { randomUUID } from 'node:crypto';
+
+export const draftTransitions = {
+  draft: ['review', 'held'], review: ['draft', 'approved', 'held'],
+  held: ['draft'], approved: ['review', 'held'],
+};
 
 function isRecord(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -8,6 +14,13 @@ function isText(value) {
 }
 function isTextList(value) {
   return Array.isArray(value) && value.length > 0 && Array.from(value).every(isText);
+}
+function isDate(value) {
+  if (typeof value !== 'string') return false;
+  const match = value.match(/^(\d{4}-\d{2}-\d{2})(?:T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,3})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d))?$/);
+  if (!match || !Number.isFinite(Date.parse(value))) return false;
+  // Date.parse normalizes impossible dates such as February 30.
+  return new Date(`${match[1]}T00:00:00.000Z`).toISOString().slice(0, 10) === match[1];
 }
 
 export function readDraft(file) {
@@ -19,7 +32,14 @@ export function readDraft(file) {
 }
 export function wordCount(body) { return body.split(/\s+/).filter(Boolean).length; }
 export function writeDraft(file, metadata, body) {
-  fs.writeFileSync(file, `---\n${JSON.stringify(metadata, null, 2)}\n---\n\n${body.trim()}\n`);
+  const temporary = `${file}.tmp-${process.pid}-${randomUUID()}`;
+  try {
+    const mode = fs.existsSync(file) ? fs.statSync(file).mode & 0o777 : 0o644;
+    fs.writeFileSync(temporary, `---\n${JSON.stringify(metadata, null, 2)}\n---\n\n${body.trim()}\n`, { flag: 'wx', mode });
+    fs.renameSync(temporary, file);
+  } finally {
+    fs.rmSync(temporary, { force: true });
+  }
 }
 export function validateDraft(metadata, body) {
   if (!isRecord(metadata)) throw new Error('Metadata must be an object');
@@ -29,6 +49,7 @@ export function validateDraft(metadata, body) {
   }
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(metadata.slug)) throw new Error('Invalid slug');
   if (!['draft', 'review', 'approved', 'held'].includes(metadata.status)) throw new Error('Draft files cannot directly publish');
+  if (!isDate(metadata.createdAt)) throw new Error('createdAt must be a valid ISO date or timestamp');
   if (!['World', 'Business', 'Technology', 'Science', 'Culture', 'Underreported'].includes(metadata.section)) throw new Error('Unknown section');
   if (!isTextList(metadata.tags) || metadata.tags.length < 2) throw new Error('At least two nonempty text tags required');
   if (!Array.isArray(metadata.sources) || !metadata.sources.length) throw new Error('Source trail required');
@@ -42,24 +63,52 @@ export function validateDraft(metadata, body) {
     if (url.protocol !== 'https:' || url.username || url.password) throw new Error('Unsafe or incomplete source record');
   }
   const words = wordCount(body);
-  if (words < 350) throw new Error('Draft must contain at least 350 words of substantive copy');
+  if (words < 350) throw new Error('Draft body must contain at least 350 words');
   if (metadata.readingTime !== `${Math.max(1, Math.ceil(words / 210))} min`) throw new Error('Reading time differs from body');
   if (!isTextList(metadata.reviewChecklist)) throw new Error('Retain specific editorial review work as nonempty text entries');
+  if (new Set(metadata.reviewChecklist).size !== metadata.reviewChecklist.length) throw new Error('Editorial review checklist entries must be unique');
   // The read-only inbox consumes this field in every state. Reject strings
   // before substring membership can falsely report a completed review.
   if (metadata.completedChecks !== undefined
     && (!Array.isArray(metadata.completedChecks) || !Array.from(metadata.completedChecks).every(isText))) {
     throw new Error('Approval completed checks must be an array of nonempty strings');
   }
+  if (metadata.completedChecks !== undefined
+    && (new Set(metadata.completedChecks).size !== metadata.completedChecks.length
+      || metadata.completedChecks.some((check) => !metadata.reviewChecklist.includes(check)))) {
+    throw new Error('Approval completed checks must be unique entries from the review checklist');
+  }
+  if (metadata.approvedBy != null || metadata.approvedAt != null) {
+    if (!isText(metadata.approvedBy) || !isDate(metadata.approvedAt)
+      || Date.parse(metadata.approvedAt) < Date.parse(metadata.createdAt)) {
+      throw new Error('Approval needs a named reviewer and a valid date on or after creation');
+    }
+  }
   if (metadata.status === 'approved') {
     // A string also has .includes(): require arrays before checking completion.
     // Structural validation does not itself establish real human approval.
     const validApproval = isText(metadata.approvedBy)
-      && isText(metadata.approvedAt)
-      && Number.isFinite(Date.parse(metadata.approvedAt))
+      && isDate(metadata.approvedAt)
       && isTextList(metadata.completedChecks)
       && metadata.reviewChecklist.every((check) => metadata.completedChecks.includes(check))
       && metadata.sources.every((source) => source.status === 'verified');
     if (!validApproval) throw new Error('Approval needs named reviewer, date and completed source/checklist review');
+  }
+  if (metadata.history !== undefined) {
+    if (!Array.isArray(metadata.history)) throw new Error('Transition history must be an array');
+    let previous;
+    for (const entry of metadata.history) {
+      if (!isRecord(entry) || !isText(entry.from) || !isText(entry.to) || !Object.hasOwn(draftTransitions, entry.from)
+        || !draftTransitions[entry.from].includes(entry.to) || !isDate(entry.at)
+        || (entry.reason !== undefined && !isText(entry.reason))) {
+        throw new Error('Transition history contains an invalid state, date or reason');
+      }
+      if (Date.parse(entry.at) < Date.parse(metadata.createdAt)
+        || (previous && (previous.to !== entry.from || Date.parse(entry.at) < Date.parse(previous.at)))) {
+        throw new Error('Transition history must follow the recorded state and chronological order');
+      }
+      previous = entry;
+    }
+    if (previous && previous.to !== metadata.status) throw new Error('Transition history does not match the current state');
   }
 }

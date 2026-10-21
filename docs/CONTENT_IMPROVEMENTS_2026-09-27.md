@@ -1,5 +1,7 @@
 # Content revision — 27 September 2026
 
+The later [16 October 2026 editorial receipt](EDITORIAL_CHANGELOG_2026-10-16.md) records a new 28-record qualitative audit, five targeted reader revisions and the expanded draft inventory. It retains this earlier pass as historical evidence; neither pass grants human approval.
+
 ## Scope
 
 Revised all 28 reader records: headlines, standfirsts, summaries and closing context. Synchronized their companion MDX files and the 20 overlapping expansion drafts. Revised the introductions and evidence notes of all eight expanded features. The 22 drafts for new subjects are preserved, not claimed as newly reviewed. All 42 drafts remain unapproved and absent from website routes, search and feeds.

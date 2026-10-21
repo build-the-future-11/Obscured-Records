@@ -1,0 +1,4 @@
+# Keep optimized images typed correctly at the static-asset boundary.
+/*.webp
+  Content-Type: image/webp
+  X-Content-Type-Options: nosniff

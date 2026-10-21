@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { editorialInbox } from './editorial-inbox.mjs';
-import { readDraft, writeDraft, validateDraft, wordCount } from './editorial-content.mjs';
+import { readDraft, writeDraft, validateDraft, wordCount, draftTransitions } from './editorial-content.mjs';
 
 const [command = 'list', slug, destination] = process.argv.slice(2);
 const directory = 'content/drafts';
@@ -28,9 +28,20 @@ if (command === 'inbox' || command === 'inspect') {
   if (!slug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Use a canonical draft slug');
   const file = `${directory}/${slug}.md`;
   const { metadata, body } = readDraft(file);
-  const allowed = { draft: ['review', 'held'], review: ['draft', 'approved', 'held'], held: ['draft'], approved: ['review', 'held'] };
-  if (!allowed[metadata.status]?.includes(destination)) throw new Error(`Unsupported transition ${metadata.status} -> ${destination}. Publication requires reviewed registry integration.`);
-  const updated = { ...metadata, status: destination, history: [...(metadata.history || []), { from: metadata.status, to: destination, at: new Date().toISOString() }] };
+  validateDraft(metadata, body);
+  if (metadata.slug !== slug) throw new Error('Draft slug does not match its filename');
+  if (!draftTransitions[metadata.status]?.includes(destination)) throw new Error(`Unsupported transition ${metadata.status} -> ${destination}. Publication requires reviewed registry integration.`);
+  const transition = { from: metadata.status, to: destination, at: new Date().toISOString() };
+  const updated = { ...metadata, status: destination, history: [...(metadata.history || []), transition] };
+  if (destination !== 'approved') {
+    if (metadata.approvedBy || metadata.approvedAt) {
+      transition.reason = `Approval cleared on transition; previous reviewer: ${metadata.approvedBy}; previous approval date: ${metadata.approvedAt}.`;
+    }
+    // Review work remains recorded, but moving out of approval requires a fresh
+    // reviewer decision. Never let stale fields present a held draft as approved.
+    updated.approvedBy = null;
+    updated.approvedAt = null;
+  }
   validateDraft(updated, body);
   writeDraft(file, updated, body);
   console.log(`${slug}: ${metadata.status} -> ${destination}`);

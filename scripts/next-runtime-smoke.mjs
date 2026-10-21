@@ -1,4 +1,5 @@
 import { sourceIdentity } from './source-identity.mjs';
+import { localSmokeEnvironment } from './local-smoke-environment.mjs';
 import fs from 'node:fs';
 import { getPublicArticles, sections } from '../lib/articles.ts';
 import { readDraft } from './editorial-content.mjs';
@@ -15,7 +16,7 @@ const { port } = probe.address();
 await new Promise((resolve) => probe.close(resolve));
 const base = `http://127.0.0.1:${port}`;
 const server = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
-  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha ?? "" },
+  env: localSmokeEnvironment(process.env, sourceSha),
   stdio: ['ignore', 'pipe', 'pipe'],
 });
 let output = '';

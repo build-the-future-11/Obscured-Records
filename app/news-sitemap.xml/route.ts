@@ -6,5 +6,5 @@ import { siteUrl } from "@/lib/site";
 export const dynamic = "force-dynamic";
 export function GET() {
   const records = getPublicArticles().map((article) => ({ ...article, publishedIso: toIsoEditorialDate(article.date) }));
-  return new Response(buildNewsSitemap(siteUrl, records, Date.now()), { headers: { "content-type": "application/xml; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" } });
+  return new Response(buildNewsSitemap(siteUrl, records, Date.now()), { headers: { "content-type": "application/xml; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff", "X-Robots-Tag": "noindex, follow" } });
 }

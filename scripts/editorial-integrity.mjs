@@ -180,7 +180,7 @@ for (const file of drafts) {
   } catch (error) { fail(`${file}: ${error.message}`); }
 }
 const subjects = new Set([...seenSlugs, ...draftSlugs]);
-if (subjects.size < 50) fail(`Expected at least 50 distinct editorial subjects, found ${subjects.size}`);
+if (subjects.size < 50) fail(`Expected at least 50 unique editorial slug keys, found ${subjects.size}`);
 if (process.exitCode) process.exit(process.exitCode);
 console.log(`editorial-integrity: PASS (${records.length} article records; slugs, IDs, dates and source URLs checked)`);
-console.log(`editorial-integrity: ${drafts.length} unpublished drafts, ${draftWords} draft words, ${subjects.size} distinct subjects; no fact-check approval implied`);
+console.log(`editorial-integrity: ${drafts.length} unpublished drafts, ${draftWords} draft words, ${subjects.size} unique slug keys; semantic subject deduplication and fact-check approval remain open`);

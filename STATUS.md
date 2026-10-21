@@ -1,14 +1,62 @@
+# Current private release — 21 October 2026
+
+**Owner-private version 28 is deployed. Public launch remains HOLD.** The membership portal now includes the missing participation and administration workflows, durable event waitlisting, ordered learning, team evidence/messages, personal export and scoped moderation. The local suite passes 382/382 tests, including 16 real-handler SQLite/D1-driver scenarios; focused lint/typechecking and state/editorial checks pass. The provider completed the full production build and additive migrations for source `58ecb8416a55bfeceb6c78d2566b06ae5f5e7069`.
+
+All 104 read-only live checks pass against that revision; [runtime receipt](docs/PORTAL_RUNTIME_2026-10-21.json).
+
+See [the current portal release receipt](docs/PORTAL_COMPLETION_2026-10-21.md), [validation](docs/PORTAL_VALIDATION_2026-10-21.json) and [deployment](docs/PORTAL_DEPLOYMENT_2026-10-21.json). Real multi-account browser acceptance and the named human/operational public-launch gates remain open. Existing newsletter operation remains capture-only. The reader catalogue contains 31 records; 3,248 private drafts remain unpublished with zero recorded human approvals.
+
+Earlier dated reports follow.
+
+# Local reader-improvement candidate — 16 October 2026
+
+UI/UX, SEO, five reader-record revisions and 13 draft revisions are implemented locally and remain undeployed. Full-text audit now covers 28 reader records and 19 drafts; the other 3,226 drafts have machine metadata triage only. The continuation revised twelve high-risk drafts with 59 passages mapped to scoped sources. The exact draft word count is now 2,955,957. All 355 bounded tests, editorial/state checks and focused lint pass; both builds and browser tests remain resource-blocked. No approval or publication state changed. See the [handoff and remaining checks](docs/READER_IMPROVEMENTS_2026-10-16.md) and [continuation verification](docs/DRAFT_REVIEW_VERIFICATION_2026-10-16.json). Public launch remains **HOLD**. The previous deployment evidence below does not verify this candidate.
+
+# Previous deployed state — website completion, 16 October 2026
+
+**The website engineering update is deployed as owner-private version 27; public launch remains HOLD.** The exact private source is `5b1b32fe00b55154d7d6bdd7ab4b04645667d58e`, environment revision **15**. All **331 tests** and **78/78 live checks** pass, the provider full TypeScript/Workers build succeeded, and the fresh production dependency audit reports zero advisories. The live checks verify all 28 reader records, feeds/discovery, draft isolation, sign-in and anonymous restrictions, plus correct MIME and byte identity for all 13 typed image routes.
+
+The release repairs editorial scaling and review integrity, generation failure recovery, member-library reliability, keyboard search and image delivery. All **3,245 private drafts** are preserved, including **3,000 reporting plans**, with no fabricated approval. The [completion checklist](docs/WEBSITE_COMPLETION_2026-10-16.md), [validation summary](docs/WEBSITE_VALIDATION_V27_2026-10-16.json), [live receipt](docs/WEBSITE_RUNTIME_V27_2026-10-16.json), [reproduction instructions](REPRODUCE.md) and [canonical gate ledger](PROJECT_STATE.json) record the evidence and remaining work. Audience remains one owner, no groups and no external visitors. Public launch still needs named editorial/rights and operational acceptance, restore/rollback rehearsal, device/accessibility and performance evidence, and explicit audience authorization.
+
+Everything below is dated historical evidence.
+
+# Earlier execution state — second expansion, 15 October 2026
+
+**Another 2,000 private drafts are complete, verified and deployed as version 25; public launch remains HOLD.** The desk now contains **3,245 unpublished drafts, 2,955,788 draft words and 3,253 distinct subjects**, alongside the unchanged 28 reader records. The new batch spans 182 contributing source indexes and all six sections. Every manuscript remains an unapproved AI-assisted reporting plan with an unassigned author and null approval.
+
+Fresh checks pass: **252/252 Node tests**, editorial integrity, **3,200/3,200 reachable expansion orientation links**, and SEO/discovery isolation with 28 RSS items, 45 topics and three series. No existing manuscript or reader article was changed. The private-desk generator now streams records to an atomic output file and completed the expanded projection with a 96 MiB heap cap.
+
+Owner-private Site version **25** is deployed from source `8e8cb6a4cb0ac1254353fe96ae5bd83f579fa107`, with environment revision **13** and successful deployment `appgdep_6ad0fa81ede88191abbf366f42e59a83`. The live revision endpoint returns that exact SHA. Five read-only runtime checks pass: revision identity, 28-item RSS, a new draft's reader-route 404, owner sign-in enforcement on the editorial desk, and anonymous HTTP 401. Access remains exactly one owner, zero groups and zero external visitors. An owner-authenticated visual desk review was not completed in this pass.
+
+The initial provider attempt failed during temporary dependency-directory cleanup; its receipt is retained. The unchanged saved version succeeded on retry. No local install or production build was forced below the 512 MiB resource floor. The expansion is committed locally at `d177c1c` on `codex/two-thousand-more-articles-20261015`; no public GitHub push or audience change was performed. See [the 2,000-draft receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md).
+
+Everything below is dated historical evidence.
+
+# Earlier execution state — 15 October 2026
+
+**A 1,000-article source-traceable expansion is complete and deployed to the owner-private Site; public launch remains HOLD.** Version 24 is live from source `410fafe208fa9f47c75d66cfec84029accad6687`; environment revision 12 reports that exact SHA. Final deployment `appgdep_6ad0e728e5e08191bbca5c39a3e5cf81` succeeded at `https://obscured-records.ryangomez-hs.chatgpt.site`. The audience remains exactly one owner, with no groups or external visitors. No database schema or audience change was made.
+
+The exact candidate passes editorial integrity: 28 reader records, **1,245 unpublished drafts, 1,081,501 draft words and 1,253 distinct subjects**. The new manifest contributes 1,000 unique subjects, source URLs, Wikipedia page IDs, Wikidata IDs and generated bodies across 52 contributing indexes and all six sections. Its 935,330 words range from 896 to 1,037 per manuscript. Every addition remains an unapproved AI-assisted reporting plan with null approval and no invented human author.
+
+The combined source audit reports 1,200 checked and 1,200 reachable orientation links. The bounded sequential Node suite passes 249/249. The SEO/discovery audit reports 1,245 review manuscripts, 28 reader records, 28 RSS items, 45 public topics, three series and draft isolation. These checks establish distinctness, structure, reachability and public separation; they do not establish claim accuracy, fairness, authorship or editorial approval. See the [1,000-article receipt](docs/ARTICLE_EXPANSION_2026-10-15.md).
+
+The host remained below the 512 MiB free-plus-speculative-memory admission floor, so no local install or production build was forced. The private Sites provider built and deployed the exact pushed source; the saved version records a 16,855,040-byte, 209-file deployment archive with content hash `sha256:ff8f78ae1b2bdfe8e01e6a856ad13217562d499caa1266cbeedf689c447f3a6d`. The pre-existing untracked `verification/` directory remains preserved. The work is committed locally at `11f5e36` on `codex/thousand-article-expansion-20261015`. A public GitHub push was not performed because it would disclose 1,245 unpublished manuscripts and internal review material.
+
+Everything below is dated historical evidence.
+
 # Current execution state — 14 October 2026
 
-**One hundred different private article drafts remain complete, and all currently actionable engineering blockers are deployed to the owner-private Site; public launch remains HOLD.** Version 22 is live from source `03291c1e105979496fa06eb82cdec50fa1c1e05f`; environment revision 10 reports that exact SHA. Deployment `appgdep_6acf6ed696ec819196f9c8780fd4d144` succeeded. The audience remains exactly one owner, with no groups or external visitors. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`; no database schema or audience change was made.
+**A second 100-article expansion is complete and deployed to the owner-private Site; public launch remains HOLD.** Version 23 is live from source `b655d1e80486cb34a4783cf3ad551dcf9b802309`; environment revision 11 reports that exact SHA. Final deployment `appgdep_6acf9c59c6c08191b520722d4e6f357f` succeeded. The audience remains exactly one owner, with no groups or external visitors. The canonical origins remain `https://obscured-records.ryangomez-hs.chatgpt.site` for both `SITE_URL` and `NEXT_PUBLIC_SITE_URL`; no database schema or audience change was made.
 
 GitHub PR [#43](https://github.com/build-the-future-11/Obscured-Records/pull/43) is merged on `main` at `15fe1168779e923ff74a2ff235ea27eadfd24799`. Exact-head [CI run 38547520209](https://github.com/build-the-future-11/Obscured-Records/actions/runs/38547520209) passed the locked install, editorial integrity, lint, typecheck, both builds, Workers/D1 persistence checks, Next.js runtime smoke and browser interaction/responsive checks. The bounded Node suite passes 245/245. The repair rejects cross-article annotation ID collisions, returns rows actually persisted by D1 and caps member JSON request bodies at 12 KiB with abort, deadline and malformed-stream handling. See the [implementation receipt](docs/MEMBER_IMPLEMENTATION_2026-10-14.md).
 
-The current exact source passes editorial integrity: 28 reader records, 145 unpublished drafts, 87,097 draft words and 153 distinct subjects. The 100-article expansion has unique slugs, titles and bodies; all 100 orientation URLs resolve. Every addition remains an AI-assisted draft with null approval and no invented human author.
+The current exact source passes editorial integrity: 28 reader records, 245 unpublished drafts, 146,171 draft words and 253 distinct subjects. Both 100-article manifests have unique slugs, titles and bodies; all 200 orientation URLs resolve. Every addition remains an AI-assisted draft with null approval and no invented human author.
 
-The generated private desk contains all 145 drafts. The SEO audit confirms 28 RSS records, 145 review manuscripts, 45 public topics, three series and draft isolation. The prior version-20 browser receipt confirmed 145 total manuscripts, 125 new records, 20 archival counterparts and zero verified sources; the public homepage reported 28 records. The [expansion receipt](docs/ARTICLE_EXPANSION_2026-10-11.md) records the exact boundary between generated inventory and publishable journalism.
+The generated private desk contains all 245 drafts: 225 new records and 20 archival counterparts. The SEO audit confirms 28 RSS records, 245 review manuscripts, 45 public topics, three series and draft isolation. The bounded Node suite passes 247/247. The [second expansion receipt](docs/ARTICLE_EXPANSION_2026-10-14.md) and [first expansion receipt](docs/ARTICLE_EXPANSION_2026-10-11.md) record the exact boundary between generated inventory and publishable journalism.
 
-The local GitHub checkout is synchronized with `origin/main` through merge commit `a8ce7d32fda842c2ab2a284debba73a676fb44f8` and preserves the pre-existing untracked `verification/` directory. The merge and Site-source histories remain distinct and are bound by the dated receipts; neither history was rewritten.
+The host remained below the 512 MiB free-plus-speculative-memory admission floor, so no local production build was forced. The exact source was pushed through the Site workflow, the provider completed the production build, and the saved version was redeployed after binding `COMMIT_SHA` to the exact source. That is production engineering evidence; it is not claim review, authorship or editorial approval.
+
+The expansion is committed locally on branch `codex/second-article-expansion-20261014` and preserves the pre-existing untracked `verification/` directory. `origin/main` remains at the preceding public revision. A public push was not performed because it would disclose 245 unpublished manuscripts and review material; explicit public-disclosure authorization is required. The GitHub and Site-source histories remain distinct and are bound by the dated receipts; neither history was rewritten.
 
 The dependency-security blocker is closed. PR [#44](https://github.com/build-the-future-11/Obscured-Records/pull/44) updated Next.js and `eslint-config-next` to 16.4.0 and pinned `sharp` 0.35.5, `source-map-js` 1.2.2 and `fast-uri` 3.1.8. The current production audit reports zero findings. Exact merge-commit [CI run 38559472421](https://github.com/build-the-future-11/Obscured-Records/actions/runs/38559472421) passed the locked install, audit, tests, editorial integrity, lint, typecheck, both builds, persistence and browser checks. See the [security closure receipt](docs/DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md).
 

@@ -1,12 +1,20 @@
 # Obscured Records
 
+**Local candidate, 16 October 2026:** reader navigation, SEO metadata, five reader-record revisions and 13 draft revisions are implemented but not deployed. Full-text review covers 19 of 3,245 drafts; all 355 bounded tests pass. See the [reader-improvement handoff](docs/READER_IMPROVEMENTS_2026-10-16.md) and [editorial queue](docs/EDITORIAL_CHANGELOG_2026-10-16.md) for source limits, remaining review and blocked build/browser verification. The deployment receipts below describe the preceding release; public launch remains HOLD.
+
+**16 October 2026:** owner-private **version 27** is deployed. The website repairs editorial scaling and approval integrity, member-library reliability, keyboard search and image delivery; **331 tests and 78 live checks pass**. Start with [canonical project state](PROJECT_STATE.json), [current status](STATUS.md) and the [completion checklist and evidence](docs/WEBSITE_COMPLETION_2026-10-16.md). All 28 reader records and 3,245 unapproved private drafts (3,000 reporting plans) are preserved. Public launch remains on HOLD for the documented human and operational gates.
+
+The dated summaries below preserve earlier results; they are not the current release identity.
+
+**15 October 2026, second expansion:** another **2,000 distinct private article drafts** bring the desk to **3,245 unpublished manuscripts**, **2,955,788 draft words** and **3,253 distinct subjects**. The reader catalogue remains 28 records. All 3,200 expansion orientation links resolve, and 252 tests pass. These are unapproved AI-assisted reporting plans, excluded from public discovery; public launch remains HOLD. See [the latest expansion receipt](docs/ARTICLE_EXPANSION_2026-10-15_SECOND.md) and [current status](STATUS.md). Dated entries below retain their historical scope.
+
 **30 September website implementation:** configurable homepage, real-author attribution, contributor introductions, explicit newsletter-waitlist consent, optional Node/Vercel D1 connectivity, sharing images and regression coverage. See [implementation and configuration](docs/WEBSITE_UPDATE_2026-09-30.md). This source update does not itself prove deployment or remove the public-launch HOLD.
 
 **Deployed reader-experience update, 28 September 2026:** redesigned publication hierarchy, article reader, filtered archive, topics, reading series, keyboard search, device-local saved stories and annotations. The content and UI are merged into GitHub `main` and deployed to the existing owner-only site. See [the completion receipt](docs/SITE_COMPLETION_2026-09-28.md) and [implementation report](docs/PUBLICATION_EXPERIENCE_REPORT_2026-09-27.md). Editorial and public-launch decisions remain open.
 
 An editorial archive of overlooked historical events, institutional failures and the records that explain them. This is a React/Next.js publication with a Cloudflare Workers/Vinext build and a separate Next.js/Vercel build.
 
-**11 October 2026: 100 different private article drafts are complete; public launch remains HOLD.** There are 28 reader records (eight expanded features and 20 briefs), plus 145 private review drafts. Twenty drafts expand existing briefs; 125 introduce new subjects. That is **153 distinct subjects**, not 173 approved publications. Drafts are AI-assisted archival analyses with no assigned human author and remain excluded from public reader routes, feeds and search. See the [100-article expansion receipt](docs/ARTICLE_EXPANSION_2026-10-11.md).
+**15 October 2026: 1,000 more different private article drafts are complete; public launch remains HOLD.** There are 28 reader records (eight expanded features and 20 briefs), plus 1,245 private review drafts. Twenty drafts expand existing briefs; 1,225 introduce new subjects. That is **1,253 distinct subjects**, not 1,273 approved publications. The new source snapshot covers 52 contributing discovery indexes and all six editorial sections; all drafts remain AI-assisted, unassigned and excluded from public reader routes, feeds and search. See the [1,000-article expansion receipt](docs/ARTICLE_EXPANSION_2026-10-15.md), [second 100-article receipt](docs/ARTICLE_EXPANSION_2026-10-14.md) and [first 100-article receipt](docs/ARTICLE_EXPANSION_2026-10-11.md).
 
 The latest content pass improves all reader records and carries targeted corrections into their expansion drafts. See [content changes and source evidence](docs/CONTENT_IMPROVEMENTS_2026-09-27.md). Publishing draft files in this repository does not approve them for the website.
 
@@ -31,6 +39,7 @@ npm run install:ci
 npm run dev
 npm test
 npm run check:editorial
+npm run check:state
 npm run lint
 npm run typecheck
 npm run build
@@ -42,10 +51,10 @@ The default build creates `dist/` for Workers. See [REPRODUCE](REPRODUCE.md) to 
 
 - `lib/articles.ts`: authoritative public registry; `lib/features.ts`: expanded feature copy.
 - `content/articles/`: synchronized companion MDX metadata and brief text; not the source of the feature renderer.
-- `content/drafts/`: Markdown/JSON-frontmatter review material, never application imports. A public repository would expose these files; they are private only to the reader site.
+- `content/drafts/`: Markdown/JSON-frontmatter review material. The build validates it and projects private summaries plus lazy server-only manuscript shards for the owner desk. A public repository would expose these files; they are private only to the reader site.
 - `lib/corrections.ts`: dated material correction log, displayed on the record and corrections page.
 - `db/`, `drizzle/`: schema and additive local-tested migrations.
 - `docs/`: editorial procedures, inventory and prior operating plans.
 - `verification/astra-2026-09-27/`: preserved original source, failures, link audit and final checks.
 
-The owner-private Site now runs version 22 from source `03291c1e105979496fa06eb82cdec50fa1c1e05f`; production environment revision 10 reports that exact SHA. GitHub `main` contains the corresponding dependency-security closure through merge commit `a8ce7d32fda842c2ab2a284debba73a676fb44f8`. The committed production audit reports zero findings, and CI permanently enforces that result alongside the 245-test suite, editorial integrity, lint, typecheck, both production builds, Workers/D1 persistence, Next runtime smoke and browser checks. See the [dependency-security closure](docs/DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md), [member implementation receipt](docs/MEMBER_IMPLEMENTATION_2026-10-14.md) and [11 October execution state](docs/EXECUTION_STATE_2026-10-11.md). No email send, collected analytics, audio release or public-audience change is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting engineering checks as release evidence.
+The 15 October source passes 249 bounded sequential Node tests and retains exactly 28 reader records, 1,245 private manuscripts and 1,253 distinct subjects. All 1,200 expansion orientation links resolve. The exact private deployment identity is retained in [STATUS](STATUS.md); the audience remains one owner with no groups or external visitors. The provider performs the production build because the local host remains below the 512 MiB build-admission floor. GitHub `main` remains at the preceding public revision because uploading would disclose all unpublished manuscripts and review material. See the [1,000-article expansion receipt](docs/ARTICLE_EXPANSION_2026-10-15.md), [dependency-security closure](docs/DEPENDENCY_SECURITY_CLOSURE_2026-10-14.md), [member implementation receipt](docs/MEMBER_IMPLEMENTATION_2026-10-14.md) and [current execution state](STATUS.md). No email send, collected analytics, audio release or public-audience change is claimed. Existing image credits are not proof of reuse permission. Source reachability is not fact checking. Read [LIMITATIONS](LIMITATIONS.md) before interpreting engineering checks as release evidence.

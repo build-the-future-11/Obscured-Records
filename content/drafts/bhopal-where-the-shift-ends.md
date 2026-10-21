@@ -55,9 +55,9 @@
 
 The gas release at Bhopal in December 1984 reached beyond the industrial site into the surrounding city, causing mass death and injury. An International Labour Organization account published in April 2004 describes a runaway reaction involving stored methyl isocyanate and health consequences extending well beyond the release.
 
-The factory fence separated the workforce from the city without separating either from the gas. Nearby residents and responders could be exposed through different routes, with different information and access to help. The emergency crossed boundaries that the administration of safety often treats separately.
+The event makes a practical question unavoidable: who belongs inside a factory's safety plan when its hazards can reach people who do not work there? A property boundary cannot answer that question.
 
-Casualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries describe different outcomes and populations; adding them together does not produce a meaningful lifetime total.
+Casualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries are not interchangeable counts. Figures from separate reports should not be combined without reconciling their time periods, definitions and overlapping populations. Exposure and injury totals are not death totals.
 
 ## More than one population at risk
 
@@ -69,13 +69,13 @@ An emergency also creates a demand for knowledge that is practical before it is 
 
 ## A report written twenty years later
 
-The ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents describes a runaway reaction involving stored methyl isocyanate at Bhopal and recognizes health consequences lasting well beyond the release. Its perspective is explicitly that of an organization concerned with preventing harm from work and industrial chemicals.
+The ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents places Bhopal within an argument for preventing harm from industrial chemicals. This is a retrospective safety report, not a clinical follow-up of each person exposed.
 
 The report's account of continuing consequences describes the evidence available in 2004. It does not establish the condition of every survivor or neighborhood today.
 
-An industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. The final entry is usually the end of a selected administrative process. Different questions need different timelines. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.
+An industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. Such a sequence can suggest closure even when its entries concern different questions. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.
 
-Production, emergency communication and medical follow-up operate on different timelines. A settlement or a closed administrative case cannot establish that treatment needs or exposure questions have ended.
+The distinction is methodological: a legal or administrative milestone answers the question assigned to that process. It does not, by itself, answer a medical or exposure question. Establishing what a particular settlement resolved would require its own legal record.
 
 ## The time after the emergency
 
@@ -83,4 +83,4 @@ A disaster's administrative history can move faster than its human consequences.
 
 Testimony, medical findings, exposure studies and legal decisions each address a different aspect of the aftermath. One cannot settle the questions assigned to the others.
 
-The release stopped; its consequences continued. Medical care, exposure assessment and legal obligations ran on different timetables. Closing the plant's operating history could not close the history of those who had been exposed.
+The 2004 account records consequences extending beyond the release. It does not establish present-day health outcomes, contamination levels or unresolved legal obligations. Keeping those limits visible makes the historical point more precise: ending a release is not the same as accounting for everyone it reached.

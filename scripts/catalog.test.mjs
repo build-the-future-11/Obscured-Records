@@ -7,7 +7,7 @@ import { readSaved, readNotes } from '../lib/reader-storage.ts';
 import { editorialInbox } from './editorial-inbox.mjs';
 test('discovery projects only published stories and all series and topics resolve', () => {
   const stories = getCatalog();
-  assert.equal(stories.length, 28);
+  assert.equal(stories.length, 31);
   assert.equal(new Set(stories.map((s) => s.slug)).size, stories.length);
   for (const series of getSeries()) for (const slug of series.slugs) assert.ok(stories.some((s) => s.slug === slug));
   const topics = getTopics();
@@ -20,9 +20,27 @@ test('archive intersects filters, matches terms and handles repeated bounded que
   const filters = parseFilters({ q: ['crew fedex', 'mercury'], format: 'feature', year: '2026', month: '09', author: 'ryan-gomez', topic: 'aviation', section: 'Underreported', series: 'in-the-air' });
   assert.deepEqual(filterCatalog(stories, filters).map((s) => s.slug), ['fedex-flight-705']);
   assert.equal(filterCatalog(stories, { ...filters, year: '2025' }).length, 0);
-  assert.equal(filterCatalog(stories, emptyFilters).length, 28);
+  assert.equal(filterCatalog(stories, emptyFilters).length, 31);
   assert.equal(parseFilters({ q: 'x'.repeat(500) }).q.length, 200);
   assert.equal(parseFilters({ q: { nested: 'bad' } }).q, '');
+  assert.deepEqual(parseFilters(new URLSearchParams('q=aviation&q=mercury&sort=oldest&sort=title')), parseFilters({ q: ['aviation', 'mercury'], sort: ['oldest', 'title'] }));
+});
+test('archive sorting is deterministic, uses publication dates and leaves the source catalog intact', () => {
+  const base = getCatalog()[0];
+  const stories = [
+    { ...base, slug: 'a', recordId: '002', title: 'Zulu', isoDate: '2026-02-01', eventDate: '1900' },
+    { ...base, slug: 'b', recordId: '003', title: 'Alpha', isoDate: '2026-01-01', eventDate: '2000' },
+    { ...base, slug: 'c', recordId: '001', title: 'Alpha', isoDate: '2026-01-01', eventDate: '1950' },
+  ];
+  const before = structuredClone(stories);
+  assert.deepEqual(filterCatalog(stories, emptyFilters).map((story) => story.slug), ['a', 'b', 'c']);
+  assert.deepEqual(filterCatalog(stories, parseFilters({ sort: 'oldest' })).map((story) => story.slug), ['b', 'c', 'a']);
+  assert.deepEqual(filterCatalog(stories, parseFilters({ sort: 'title' })).map((story) => story.slug), ['b', 'c', 'a']);
+  assert.deepEqual(filterCatalog(stories, parseFilters({ q: 'Alpha', sort: 'oldest' })).map((story) => story.slug), ['b', 'c']);
+  assert.deepEqual(stories, before);
+  assert.equal(parseFilters({ sort: ['oldest', 'title'] }).sort, 'oldest');
+  assert.equal(parseFilters({ sort: 'unknown-order' }).sort, '');
+  assert.equal(parseFilters(Object.fromEntries(new URLSearchParams('q=Alpha&sort=title'))).sort, 'title');
 });
 test('corrupt local storage cannot break the reader or introduce invalid reading states', () => {
   for (const raw of ['not json', '{}', 'null', '[null,1,"value",{}]']) { assert.deepEqual(readSaved(raw), []); assert.deepEqual(readNotes(raw), []); }

@@ -117,7 +117,7 @@
     "mechanism": "The technical narrative must trace the failed component, the release, ignition, vessel damage and hydrofluoric-acid safeguards using the final investigation rather than dramatic video alone.",
     "system": "The case asks how aging infrastructure, inspection programs and ownership changes affect the reliability of safety-critical equipment over decades.",
     "memory": "The spectacular fireball became the visual record, while corrosion mechanisms, inspection intervals and the facility's economic history are harder to see.",
-    "source": {"title": "CSB Philadelphia Energy Solutions investigation", "url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/"}
+    "source": {"title": "CSB Philadelphia Energy Solutions final report", "url": "https://www.csb.gov/assets/1/20/pes_final_report_published_october_2022_r1.pdf"}
   },
   {
     "slug": "courrieres-mine-disaster-1906",
@@ -657,7 +657,7 @@
     "mechanism": "The article must trace the launch anomalies, shield breakup, array damage and thermal consequences using telemetry and the investigation's load analysis.",
     "system": "Skylab asks how a protective structure can introduce a launch hazard, and how mission recovery balances incomplete ground testing with crew exposure during repair.",
     "memory": "The successful repair makes an inspiring ending, but it can obscure the design assumptions and close calls that put the station at risk before rescue began.",
-    "source": {"title": "NASA Technical Reports Server, initial flight anomalies of Skylab 1", "url": "https://ntrs.nasa.gov/citations/19930015503"}
+    "source": {"title": "NASA Readings in Systems Engineering, Skylab 1 anomaly section", "url": "https://ntrs.nasa.gov/api/citations/19930015489/downloads/19930015489.pdf"}
   },
   {
     "slug": "nedelin-cosmodrome-catastrophe",

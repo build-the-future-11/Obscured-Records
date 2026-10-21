@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-21",
+  "scope": "Local engineering verification; production status recorded separately",
+  "tests": {
+    "passed": 382,
+    "failed": 0,
+    "command": "node --experimental-strip-types --test --test-concurrency=1 scripts/*.test.mjs",
+    "receipt": ".cache/portal-completion/tests-final.log"
+  },
+  "portalPersistence": {
+    "scenarios": 16,
+    "driver": "Pinned drizzle-orm/d1 with actual handlers; isolated node:sqlite transport",
+    "hostedIdentityVerified": false
+  },
+  "focusedTypecheck": {
+    "status": "PASS",
+    "receipt": ".cache/portal-completion/typecheck-scoped-release.log"
+  },
+  "focusedLint": {
+    "status": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "state": "PASS; publicLaunch HOLD, owner-private",
+  "editorial": "PASS; structural checks only",
+  "localFullBuild": "NOT RUN; memory admission below 512 MiB",
+  "localFullTypecheck": "BLOCKED at bounded 256 MiB heap; scoped successor passes",
+  "browser": "NOT RUN; host resource constraint",
+  "failuresRetained": [
+    "persistence-first.log",
+    "typecheck.log",
+    "lint-first.log",
+    "typecheck-scoped.log",
+    "lint-second.log"
+  ],
+  "sourceReview": {
+    "files": 3782,
+    "findings": []
+  },
+  "sourceSync": {
+    "matchedLocalFiles": 3782,
+    "retainedRemoteAssets": [
+      "content/review-assets/challenger-warning-and-decision.png",
+      "content/review-assets/columbia-evidence-not-requested.png",
+      "content/review-assets/mars-climate-orbiter-interface.png"
+    ]
+  },
+  "privateSource": "58ecb8416a55bfeceb6c78d2566b06ae5f5e7069",
+  "publicGitHubPush": false,
+  "hostedBuild": "PASS; provider prebuild TypeScript gate and Workers build",
+  "deployment": "SUCCEEDED; owner-private version 28, environment 16",
+  "liveChecks": {
+    "passed": 104,
+    "failed": 0,
+    "receipt": "docs/PORTAL_RUNTIME_2026-10-21.json",
+    "scope": "Read-only private production revision/routes/assets/sign-in boundaries; no member impersonation or production mutation"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-16T04:15:13.848Z",
+  "state": "IMPLEMENTED_WITH_BOUNDED_VERIFICATION",
+  "scope": "Local uncommitted Obscured Records candidate; not a deployment, publication approval or complete corpus review",
+  "identity": {
+    "repository": "https://github.com/build-the-future-11/Obscured-Records.git",
+    "branch": "codex/website-completion-20261016",
+    "startingRevision": "831471f11d517f769f2216024dc720ac9f8f4bd8",
+    "sourceDigest": "85e6a7674336162c0509e5df8e5361f40dcad360d0a35175e56ffd0bd9f13da4",
+    "sourceDigestScript": "scripts/source-identity.mjs",
+    "sourceDigestScope": "app, components, lib, content, db, drizzle, public, scripts and selected build/package config; documentation excluded",
+    "preExistingUntrackedDirectory": "verification/",
+    "commitsCreated": 0
+  },
+  "environment": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": "v26.8.2",
+    "npm": "11.19.1",
+    "dependencies": "Existing installed dependencies; package and lockfile unchanged",
+    "testNodeHeapMiB": 128,
+    "testConcurrency": 1,
+    "node22Execution": "UNRUN"
+  },
+  "baseline": {
+    "tests": {
+      "status": "PASS",
+      "tests": 331,
+      "passed": 331,
+      "failed": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/baseline-tests.log",
+        "sha256": "81a266de33853acd217385f4b1e05a4da97fe8f92fb4af36c731051c043b4684"
+      }
+    },
+    "editorial": {
+      "status": "PASS",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/baseline-editorial.log",
+        "sha256": "9f06731964d5809726e947ebeb4245e18378e4b4f2b50f25d66d4818a4613af0"
+      }
+    },
+    "projectState": {
+      "status": "PASS",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/baseline-state.log",
+        "sha256": "40c2ee677a7fe1c88624ea178285a674504ee25a2d9e45613ed2ef189c30a911"
+      }
+    },
+    "memory": {
+      "freePlusSpeculativeMiB": 274.328125,
+      "minimumAdmissionMiB": 512,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/baseline-memory.txt",
+        "sha256": "074227ed155c64cc90e531c8686a1714e4b2bfac0e7cfbbcd2343d81124a1396"
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "Full Node test suite",
+      "status": "PASS",
+      "command": "env NODE_OPTIONS=--max-old-space-size=128 npm test -- --test-concurrency=1",
+      "exitCode": 0,
+      "tests": 352,
+      "passed": 352,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 36197.1435,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-tests-2.log",
+        "sha256": "080a798025f1f148d63990e8df358ab0896b14ffdec1a28a440d33d3b2929add"
+      }
+    },
+    {
+      "name": "Editorial integrity",
+      "status": "PASS",
+      "command": "env NODE_OPTIONS=--max-old-space-size=128 npm run check:editorial",
+      "exitCode": 0,
+      "readerRecords": 28,
+      "unpublishedDrafts": 3245,
+      "draftWords": 2955688,
+      "uniqueSlugKeys": 3253,
+      "semanticDistinctSubjectCount": null,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-editorial.log",
+        "sha256": "a65567ab7d5b1c43e4de6955a548eef630976209a8591f8ef3210c8d560d9466"
+      }
+    },
+    {
+      "name": "Project-state consistency",
+      "status": "PASS",
+      "command": "env NODE_OPTIONS=--max-old-space-size=128 npm run check:state",
+      "exitCode": 0,
+      "boundary": "Structural consistency; all acceptance gates remain OPEN",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-state.log",
+        "sha256": "06912f5cbfc744a5279b4d63bfedf6b884a95dc16a1faddc7b2d44ae534ec9aa"
+      }
+    },
+    {
+      "name": "Focused ESLint",
+      "status": "PASS",
+      "command": "node --max-old-space-size=128 node_modules/eslint/bin/eslint.js <30 changed/new JS/TS files listed here>",
+      "exitCode": 0,
+      "files": [
+        "app/article/[slug]/page.tsx",
+        "app/news-sitemap.xml/route.ts",
+        "app/rss.xml/route.ts",
+        "app/sitemap.ts",
+        "components/archive-browser.tsx",
+        "components/editorial.tsx",
+        "components/publication-client.tsx",
+        "components/search-palette.tsx",
+        "components/story-card.tsx",
+        "lib/article-metadata.ts",
+        "lib/articles.ts",
+        "lib/catalog-filter.ts",
+        "lib/corrections.ts",
+        "lib/features.ts",
+        "lib/site.ts",
+        "scripts/article-metadata.test.mjs",
+        "scripts/browser-smoke.mjs",
+        "scripts/catalog.test.mjs",
+        "scripts/content-index.mjs",
+        "scripts/editorial-audit.mjs",
+        "scripts/editorial-integrity.mjs",
+        "scripts/editorial-revision.test.mjs",
+        "scripts/import-review-manuscripts.mjs",
+        "scripts/local-smoke-environment.mjs",
+        "scripts/local-smoke-environment.test.mjs",
+        "scripts/next-runtime-smoke.mjs",
+        "scripts/review-revisions.mjs",
+        "scripts/review-revisions.test.mjs",
+        "scripts/review-transfer.test.mjs",
+        "scripts/route-inventory.mjs"
+      ],
+      "excluded": "Generated projections and pre-existing verification directory; not a full repository lint pass",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-targeted-lint.log",
+        "sha256": "272cc8ecc60fb3c3e99bdd2f8e4f8eb3f6d8dc60314cc022e9fbd6ad399d99d7"
+      }
+    },
+    {
+      "name": "Draft projection regeneration",
+      "status": "PASS",
+      "command": "node --max-old-space-size=96 scripts/generate-editorial-drafts.mjs",
+      "exitCode": 0,
+      "summaries": 3245,
+      "manuscriptShards": 64,
+      "changedProjections": [
+        "lib/editorial-drafts.generated.ts",
+        "lib/editorial-draft-data.generated/8.ts"
+      ],
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/generation.log",
+        "sha256": "3d2a4a98aded8b168cf45fc3ac815e726da1b5d0fbd0e854c646aac75931005f"
+      }
+    },
+    {
+      "name": "Browser smoke script syntax",
+      "status": "PASS",
+      "command": "node --check scripts/browser-smoke.mjs",
+      "exitCode": 0,
+      "boundary": "Syntax only; browser journeys UNRUN",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-browser-syntax.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "Diff whitespace/error check",
+      "status": "PASS",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-diff-check.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "Preserved release/source inputs",
+      "status": "PASS",
+      "preserved": {
+        "package.json": {
+          "unchanged": true,
+          "sha256": "d34d394befcc2b6a413948878c9d47ed6a92080d2158b368838a398de72506b3"
+        },
+        "package-lock.json": {
+          "unchanged": true,
+          "sha256": "90f365bb1db0e38d8b4b587d5755ad9e390f67009964cda813f9263c5863ed8c"
+        },
+        "app/layout.tsx": {
+          "unchanged": true,
+          "sha256": "5652052abc6b2c741549abb0e1908770e305aebe12504ddba84d1604221fd97a"
+        },
+        "content/review-manuscripts.json": {
+          "unchanged": true,
+          "sha256": "d12c5e7d15e24430fe4d490a4b987820678cc0c016e4949e79c66d91d661c14e"
+        }
+      },
+      "projectStateOnlyDraftWordCountChanged": true,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-source-identity.json",
+        "sha256": "bf2811fa725170caedc7b0d8be04fe5f9e9b6ba07dc541c565061c0365bdba1f"
+      }
+    }
+  ],
+  "retainedFailures": [
+    {
+      "name": "First integration run",
+      "status": "FAIL_RESOLVED_IN_SEPARATE_RERUN",
+      "tests": 345,
+      "passed": 344,
+      "failed": 1,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/final-tests.log",
+        "sha256": "67adf4ed6f5b2025d7d5163ee414cbda8318b008e2d22eae81d81ddc4820fbfb"
+      },
+      "cause": "Iraq clarity revision no longer matched the frozen imported body",
+      "repair": "Preserved the frozen snapshot, recorded exact source/revision hashes, retained metadata assertions and made the importer preflight all files before writing; repeated imports preserve every existing byte",
+      "regressions": "Seven new exact-hash and import preservation tests; full final suite passes"
+    }
+  ],
+  "resourceAdmission": {
+    "status": "BLOCKED",
+    "requirement": "At least 512 MiB free plus speculative memory and safe pageout pressure before installs, full typecheck, builds or browser processes",
+    "latest": {
+      "freePages": 21171,
+      "speculativePages": 6003,
+      "pageBytes": 16384,
+      "freePlusSpeculativeMiB": 424.59375,
+      "pageouts": 878817,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016/memory-final-2.txt",
+        "sha256": "fcd97dd801f93be46a6b8bd55bdc06852a5f4112970d0c582f1281c28ded7892"
+      }
+    },
+    "noUnrelatedProcessesStopped": true
+  },
+  "blockedChecks": [
+    {
+      "command": "npm run install:ci",
+      "status": "BLOCKED",
+      "reason": "Resource admission; existing lockfile and install preserved"
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "BLOCKED",
+      "reason": "Resource admission"
+    },
+    {
+      "command": "npm run build",
+      "status": "BLOCKED",
+      "reason": "Resource admission; Workers/Vinext build not executed"
+    },
+    {
+      "command": "npm run build:vercel",
+      "status": "BLOCKED",
+      "reason": "Resource admission; Next/Vercel build not executed"
+    },
+    {
+      "command": "node scripts/workers-intake-smoke.mjs",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Workers build and resource admission required"
+    },
+    {
+      "command": "node scripts/next-runtime-smoke.mjs",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Next build and resource admission required"
+    },
+    {
+      "command": "npm run smoke:browser",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Next build and resource admission required"
+    }
+  ],
+  "unrunChecks": [
+    {
+      "command": "npm run lint",
+      "status": "UNRUN",
+      "reason": "Full-repository lint not admitted under resource constraint; focused lint recorded separately"
+    },
+    {
+      "command": "npm run smoke:relaunch",
+      "status": "UNRUN",
+      "reason": "Requires HTTPS target and immutable deployed SHA; no matching authorized deployment exists for this dirty candidate"
+    },
+    {
+      "name": "Browser visual and interaction review",
+      "status": "UNRUN",
+      "sizes": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "reason": "Prepared journeys require blocked browser/build execution"
+    },
+    {
+      "name": "Initial server HTML, actual HTTP behavior, social image delivery, network and console inspection",
+      "status": "UNRUN",
+      "reason": "Source and handler tests do not establish rendering/runtime evidence"
+    },
+    {
+      "name": "Manual keyboard, zoom, screen-reader and physical-device review",
+      "status": "UNRUN"
+    },
+    {
+      "name": "Before/after Lighthouse and field Core Web Vitals",
+      "status": "UNRUN",
+      "measurements": null,
+      "beforeAfterDifference": null
+    }
+  ],
+  "editorial": {
+    "readerFullTextAudits": 28,
+    "readerFeatures": 8,
+    "readerBriefs": 20,
+    "draftFullTextAudits": 7,
+    "draftMetadataOnly": 3238,
+    "readerSubstantiveRevisions": 5,
+    "draftClarityRevisions": 1,
+    "claimPassages": 26,
+    "inspectedSourceRecords": 7,
+    "humanApprovalChanges": 0,
+    "publicationStateChanges": 0,
+    "state": "NEEDS EDITOR REVIEW",
+    "remainingCorpusReview": "INCOMPLETE",
+    "sourceScope": "Claim ledger records exact inspected passages and access limitations; no independent factual certification"
+  },
+  "discovery": {
+    "routeInventoryEntries": 120,
+    "sitemapUrls": 97,
+    "sourceLevelReaderOrphans": 0,
+    "runtimeHttpStatusesObserved": 0,
+    "publicLaunch": "HOLD",
+    "rootNoindexPreserved": true
+  },
+  "externalActions": {
+    "pushes": 0,
+    "pullRequestsCreated": 0,
+    "merges": 0,
+    "deployments": 0,
+    "publications": 0,
+    "accessChanges": 0,
+    "messagesSent": 0,
+    "realEnrollments": 0,
+    "productionDatabaseWrites": 0,
+    "analyticsEnabled": 0,
+    "paidServicesEnabled": 0
+  },
+  "continuation": "docs/READER_IMPROVEMENTS_2026-10-16.md",
+  "editorialContinuation": "docs/EDITORIAL_CHANGELOG_2026-10-16.md",
+  "evidenceBoundary": "Passing source/handler/fixture checks are bounded engineering evidence. No current build, rendered UI, accessibility conformance, measured performance, independent editorial approval or live release is certified."
+}

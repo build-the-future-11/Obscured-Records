@@ -1,0 +1,6 @@
+{
+  "reviewer": "separate same-host agent",
+  "scope": "Read-only typed image route, variants, held-cover projection, import boundaries and hosted smoke assertions",
+  "result": "No new release-blocking defect identified",
+  "limits": "Same-host source review; no independent execution, owner-authenticated browser certification or scientific evidence"
+}

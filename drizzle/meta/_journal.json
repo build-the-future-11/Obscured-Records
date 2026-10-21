@@ -22,6 +22,20 @@
       "when": 1791653353447,
       "tag": "0002_ordinary_sentinels",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792512030975,
+      "tag": "0003_brown_runaways",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1792512593905,
+      "tag": "0004_hot_silver_surfer",
+      "breakpoints": true
     }
   ]
 }

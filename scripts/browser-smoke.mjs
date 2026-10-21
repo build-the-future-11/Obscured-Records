@@ -199,6 +199,8 @@ const paths = ['/', '/article/fedex-flight-705', '/article/air-france-8969', '/w
   pass('repeated search parameters and empty-state search navigation');
 
   await page.goto(`${base}/archive`);
+  const archiveCount = await page.locator('.archive-results .record-card').count();
+  assert.ok(archiveCount > 1, 'archive exposes multiple records before filtering');
   await page.locator('select[name=topic]').selectOption('aviation');
   await page.locator('select[name=format]').selectOption('feature');
   assert.equal(await page.locator('.archive-results .record-card').count(), 1);
@@ -206,13 +208,13 @@ const paths = ['/', '/article/fedex-flight-705', '/article/air-france-8969', '/w
   await page.reload();
   assert.equal(await page.locator('select[name=topic]').inputValue(), 'aviation');
   await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
-  assert.equal(await page.locator('.archive-results .record-card').count(), 28);
+  assert.equal(await page.locator('.archive-results .record-card').count(), archiveCount);
   pass('archive intersects filters, persists URL and restores after reload');
   await page.locator('select[name=sort]').selectOption('title');
-  await page.waitForFunction(() => {
+  await page.waitForFunction((expectedCount) => {
     const titles = [...document.querySelectorAll('.archive-results .record-card h2')].map((heading) => heading.textContent);
-    return titles.length === 28 && JSON.stringify(titles) === JSON.stringify([...titles].sort((a, b) => a.localeCompare(b, 'en')));
-  });
+    return titles.length === expectedCount && JSON.stringify(titles) === JSON.stringify([...titles].sort((a, b) => a.localeCompare(b, 'en')));
+  }, archiveCount);
   const titles = await page.locator('.archive-results .record-card h2').allTextContents();
   assert.deepEqual(titles, [...titles].sort((a, b) => a.localeCompare(b, 'en')));
   assert.match(page.url(), /sort=title/);

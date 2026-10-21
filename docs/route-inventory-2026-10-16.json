@@ -1,0 +1,3472 @@
+{
+  "date": "2026-10-16",
+  "baselineRevision": "831471f11d517f769f2216024dc720ac9f8f4bd8",
+  "origin": "https://obscured-records.ryangomez-hs.chatgpt.site",
+  "evidence": "Source inspection, helper/handler execution and bounded Node regression tests; not a deployed crawl",
+  "publicLaunch": "HOLD",
+  "currentlyIndexableHtmlRoutes": 0,
+  "counts": {
+    "entries": 120,
+    "readerRecords": 28,
+    "features": 8,
+    "topics": 45,
+    "series": 3,
+    "sitemapEntries": 97
+  },
+  "checks": {
+    "metadataAndHandlers": "VERIFIED by scripts/article-metadata.test.mjs",
+    "httpRedirectsAndStatus": "UNRUN",
+    "initialServerHtmlAndRenderedOutput": "BLOCKED by local resource admission",
+    "socialImageDeliveryAndCrop": "UNRUN on this revision; source fallback and rights holds verified",
+    "orphanedReaderRecords": []
+  },
+  "releaseNotes": [
+    "Do not remove root noindex or change private access without explicit launch authorization.",
+    "Robots allow / so an accessible crawler can see the noindex rule; noindex is not access control.",
+    "RSS and news XML carry the HOLD header; reviewed launch must account for these alongside root HTML metadata.",
+    "No custom domain or preview origin was introduced; the existing resolver remains authoritative.",
+    "All HTTP results above are expectations from source, not measured response statuses. Both runtime paths and negative URL cases still require execution."
+  ],
+  "references": [
+    "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "https://developers.google.com/search/docs/crawling-indexing/block-indexing"
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/",
+      "routeType": "homepage",
+      "sourceFile": "app/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Obscured Records",
+      "description": "Documented histories that were overlooked, flattened into trivia or never explained with enough care.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/__not-a-section__",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/__not-a-section__",
+      "routeType": "variant-or-negative-case",
+      "sourceFile": null,
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "404 via dynamic section notFound()",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [
+        "HTTP status and refresh behavior require a server test"
+      ]
+    },
+    {
+      "path": "/about",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/about",
+      "routeType": "reader-page",
+      "sourceFile": "app/about/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "About — Obscured Records",
+      "description": "The purpose, people and editorial process behind Obscured Records.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/about",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/api/member/annotations",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/member/annotations",
+      "routeType": "api",
+      "sourceFile": "app/api/member/annotations/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "401 without authenticated identity; method-dependent success/validation/storage failures",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/member/library",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/member/library",
+      "routeType": "api",
+      "sourceFile": "app/api/member/library/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "401 without authenticated identity; method-dependent success/validation/storage failures",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/member/preferences",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/member/preferences",
+      "routeType": "api",
+      "sourceFile": "app/api/member/preferences/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "401 without authenticated identity; method-dependent success/validation/storage failures",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/member/profile",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/member/profile",
+      "routeType": "api",
+      "sourceFile": "app/api/member/profile/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "401 without authenticated identity; method-dependent success/validation/storage failures",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/newsletter",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/newsletter",
+      "routeType": "api",
+      "sourceFile": "app/api/newsletter/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "POST only; validation/rate/storage failures or synthetic-record receipt; no email delivery",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/revision",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/revision",
+      "routeType": "api",
+      "sourceFile": "app/api/revision/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "GET/HEAD 200 with configured revision, otherwise 503",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/search",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/search",
+      "routeType": "api",
+      "sourceFile": "app/api/search/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "GET 200; reader-only search index",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/submissions",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/api/submissions",
+      "routeType": "api",
+      "sourceFile": "app/api/submissions/route.ts",
+      "intendedVisibility": "API; excluded from sitemap and crawling by /api/ robots rule",
+      "currentlyIndexableByPolicy": false,
+      "robots": "Disallowed in robots.txt",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "POST only; validation/rate/storage failures or synthetic-record receipt; no email delivery",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Application interactions"
+      ],
+      "issues": [],
+      "contentType": "application/json"
+    },
+    {
+      "path": "/archive",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/archive",
+      "routeType": "reader-page",
+      "sourceFile": "app/archive/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The archive — Obscured Records",
+      "description": "Browse every published record by subject, author, publication date and reading series.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/archive",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/archive?q=aviation",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/archive?q=aviation",
+      "routeType": "variant-or-negative-case",
+      "sourceFile": null,
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": null,
+      "description": null,
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/archive",
+      "http": {
+        "expected": "200, filters rendered from query state",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [
+        "Single complete archive, no pagination: canonical consolidates filter variants; not a page-two-to-page-one canonical"
+      ]
+    },
+    {
+      "path": "/article/__not-a-reader-record__",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/__not-a-reader-record__",
+      "routeType": "variant-or-negative-case",
+      "sourceFile": null,
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "404 via notFound()",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [
+        "HTTP status and refresh behavior require a server test"
+      ]
+    },
+    {
+      "path": "/article/1mdb-global-trail",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/1mdb-global-trail",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Tracing the Diversion of Money from Malaysia’s 1MDB Fund — Obscured Records",
+      "description": "A cross-border financial trail linked a development fund to assets far from Malaysia.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/1mdb-global-trail",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/malaysia",
+        "/topic/money-laundering"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/air-france-8969",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/air-france-8969",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Air France 8969: From the Algiers Hijacking to the Marseille Rescue — Obscured Records",
+      "description": "Three hostages were killed before the aircraft left Algiers. The remaining hostages survived the assault in Marseille.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/air-france-8969",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/aviation",
+        "/topic/terrorism"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/aral-sea",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/aral-sea",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Aral Sea: River Diversions, Retreat and Partial Recovery — Obscured Records",
+      "description": "The changing shoreline records decisions about water use as well as changes in the water itself.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/aral-sea",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/central-asia",
+        "/topic/water"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/banqiao-dam-failure",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/banqiao-dam-failure",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Banqiao: Extreme Rainfall and Cascading Dam Failures — Obscured Records",
+      "description": "The immediate flooding and the deaths attributed to its aftermath must be counted separately.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/banqiao-dam-failure",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/china",
+        "/topic/infrastructure"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/centralia-underground-fire",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/centralia-underground-fire",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Centralia: The Mine Fire That Forced a Town’s Relocation — Obscured Records",
+      "description": "The state’s chronology records decades of decisions about a hazard beneath the town.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/centralia-underground-fire",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/underreported",
+        "/topic/mining",
+        "/topic/pennsylvania"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/dawsons-field",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/dawsons-field",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Dawson’s Field Hijackings and the International Response — Obscured Records",
+      "description": "The destruction of evacuated airliners became a highly visible part of a larger hostage crisis.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/dawsons-field",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/aviation",
+        "/topic/diplomacy"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/ethiopian-airlines-961",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/ethiopian-airlines-961",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Ethiopian Airlines 961: A Hijacking, Fuel Exhaustion and a Ditching — Obscured Records",
+      "description": "A demand to fly to Australia collided with the aircraft’s limited fuel supply.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/ethiopian-airlines-961",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/aviation",
+        "/topic/survival"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/fedex-flight-705",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/fedex-flight-705",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Attack the Crew of FedEx Flight 705 Survived — Obscured Records",
+      "description": "The criminal case documents an attack aboard a FedEx DC-10 on 7 April 1994 and the crew’s emergency return.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/fedex-flight-705",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/media/fedex-705.webp",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/underreported",
+        "/topic/aviation",
+        "/topic/crime"
+      ],
+      "issues": [],
+      "documentarySchemaImage": "https://obscured-records.ryangomez-hs.chatgpt.site/media/fedex-705.webp",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-02"
+    },
+    {
+      "path": "/article/fedex-flight-705/",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/fedex-flight-705/",
+      "routeType": "variant-or-negative-case",
+      "sourceFile": null,
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": null,
+      "description": null,
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/fedex-flight-705",
+      "http": {
+        "expected": "Framework trailing-slash normalization expected; unverified on both runtime paths",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [
+        "No new redirect configuration was added; both builds must verify this behavior"
+      ]
+    },
+    {
+      "path": "/article/flight-629-suitcase-bomb",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/flight-629-suitcase-bomb",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "United Flight 629: The Baggage Bomb and the Investigation — Obscured Records",
+      "description": "Investigators connected evidence from the wreckage with Jack Gilbert Graham and his mother’s luggage.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/flight-629-suitcase-bomb",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/aviation",
+        "/topic/investigation"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/goiania-blue-powder",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/goiania-blue-powder",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Goiânia: How an Abandoned Medical Source Spread Radiation — Obscured Records",
+      "description": "The 1987 emergency began with a medical source that had been left outside effective control.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/goiania-blue-powder",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/media/goiania-source.webp",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/science",
+        "/topic/brazil",
+        "/topic/radiation"
+      ],
+      "issues": [],
+      "documentarySchemaImage": "https://obscured-records.ryangomez-hs.chatgpt.site/media/goiania-source.webp",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-16"
+    },
+    {
+      "path": "/article/great-molasses-flood",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/great-molasses-flood",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Boston’s Molasses Flood: An Industrial Tank Failure in a Crowded District — Obscured Records",
+      "description": "Twenty-one people died. The unusual material can distract from the industrial failure that released it.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/great-molasses-flood",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/culture",
+        "/topic/boston",
+        "/topic/industry"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/iraq-poison-grain",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/iraq-poison-grain",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Iraq’s Mercury Poisoning Outbreak from Treated Seed Grain — Obscured Records",
+      "description": "The history includes toxic treatment, distribution, warning labels and the decisions facing recipient families.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/iraq-poison-grain",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/science",
+        "/topic/iraq",
+        "/topic/public-health"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-16"
+    },
+    {
+      "path": "/article/lake-nyos",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/lake-nyos",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Lake Nyos and the Carbon Dioxide Release That Reached Nearby Villages — Obscured Records",
+      "description": "More than 1,700 people died in a disaster that left many buildings standing.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/lake-nyos",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/science",
+        "/topic/cameroon",
+        "/topic/geology"
+      ],
+      "issues": [
+        "Documentary image withheld under existing provenance hold; branded social preview remains"
+      ],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/minamata-food-chain",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/minamata-food-chain",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Minamata: Industrial Mercury in a Community’s Food Supply — Obscured Records",
+      "description": "The history follows neurological illness, delayed protection and a long struggle for recognition.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/minamata-food-chain",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/science",
+        "/topic/japan",
+        "/topic/mercury"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-01"
+    },
+    {
+      "path": "/article/move-bombing",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/move-bombing",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The MOVE Bombing and the Fire That Destroyed a Philadelphia Block — Obscured Records",
+      "description": "The inquiry examined the use of the explosive and the decisions that allowed the fire to spread.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/move-bombing",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/underreported",
+        "/topic/philadelphia",
+        "/topic/policing"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/olympus-two-decade-coverup",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/olympus-two-decade-coverup",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Olympus: Acquisition Payments and a Long-Running Loss Concealment — Obscured Records",
+      "description": "Michael Woodford’s dismissal brought an internal accounting dispute into public view.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/olympus-two-decade-coverup",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/japan",
+        "/topic/governance"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/parmalat-fictional-cash",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/parmalat-fictional-cash",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Parmalat’s Missing Cash and the False Bank Confirmation — Obscured Records",
+      "description": "The central question was straightforward: did the reported money exist?",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/parmalat-fictional-cash",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/fraud",
+        "/topic/italy"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/petrov-false-alarm",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/petrov-false-alarm",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Stanislav Petrov and the Soviet Missile Warning That Was Wrong — Obscured Records",
+      "description": "His decision concerned the interpretation and reporting of a warning; he did not control a nuclear launch.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/petrov-false-alarm",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/technology",
+        "/topic/cold-war",
+        "/topic/systems"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/richard-mccoy-skyjacking",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/richard-mccoy-skyjacking",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Richard McCoy’s Parachute Hijacking and the Evidence He Left — Obscured Records",
+      "description": "The resemblance to D.B. Cooper’s escape did not make the two cases the same case.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/richard-mccoy-skyjacking",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/underreported",
+        "/topic/aviation",
+        "/topic/fbi"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/satyam-confession",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/satyam-confession",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Satyam’s Accounting Confession and the Collapse of Its Reported Cash — Obscured Records",
+      "description": "A letter to the board forced investors to reconsider the accounts of a major Indian technology company.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/satyam-confession",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/accounting",
+        "/topic/india"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/ss-eastland",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/ss-eastland",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Eastland Disaster: A Passenger Ship Capsizes at the Dock — Obscured Records",
+      "description": "The proximity of shore did not prevent hundreds of passengers from becoming trapped.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/ss-eastland",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/culture",
+        "/topic/chicago",
+        "/topic/maritime"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/therac-25",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/therac-25",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Therac-25: Radiation Overdoses and the Limits of Software Safety — Obscured Records",
+      "description": "The published investigation describes several interacting failures, not one bug that explains every accident.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/therac-25",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/technology",
+        "/topic/medicine",
+        "/topic/software"
+      ],
+      "issues": [
+        "Documentary image withheld under existing provenance hold; branded social preview remains"
+      ],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-16"
+    },
+    {
+      "path": "/article/times-beach-dioxin",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/times-beach-dioxin",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Times Beach: Contaminated Road Oil and the Decision to Relocate — Obscured Records",
+      "description": "Sampling, flood damage and the federal buyout shaped the end of the town as a residential community.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/times-beach-dioxin",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/underreported",
+        "/topic/missouri",
+        "/topic/pollution"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/toshiba-impossible-targets",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/toshiba-impossible-targets",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Toshiba’s Profit Overstatements and Pressure to Meet Targets — Obscured Records",
+      "description": "The inquiry examined how earnings targets affected decisions across several business units.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/toshiba-impossible-targets",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/japan",
+        "/topic/accounting"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/uss-akron",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/uss-akron",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "USS Akron: The 1933 Airship Loss and the Rescue at Sea — Obscured Records",
+      "description": "The loss exposed the importance of survival equipment after an aircraft reaches the water.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/uss-akron",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/technology",
+        "/topic/airships",
+        "/topic/navy"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/vela-incident",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/vela-incident",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Vela Incident: A Double Flash and a Disputed Explanation — Obscured Records",
+      "description": "The observation is documented; its cause and any state responsibility remain disputed.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/vela-incident",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/world",
+        "/topic/intelligence",
+        "/topic/nuclear"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-27"
+    },
+    {
+      "path": "/article/wirecard-missing-billions",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/wirecard-missing-billions",
+      "routeType": "feature",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Wirecard and the €1.9 Billion Its Auditors Could Not Verify — Obscured Records",
+      "description": "Missing cash exposed a wider failure of financial reporting and supervision.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/wirecard-missing-billions",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/business",
+        "/topic/fraud",
+        "/topic/fintech"
+      ],
+      "issues": [
+        "Documentary image withheld under existing provenance hold; branded social preview remains"
+      ],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-16"
+    },
+    {
+      "path": "/article/yodogo-hijacking",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/article/yodogo-hijacking",
+      "routeType": "brief",
+      "sourceFile": "app/article/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "The Yodogo Hijacking: A Flight Redirected to North Korea — Obscured Records",
+      "description": "The route from Japan to North Korea became a negotiation involving passengers, crew and several governments.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/article/yodogo-hijacking",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": true,
+      "incomingInternalLinks": [
+        "/archive",
+        "/latest",
+        "/author/ryan-gomez",
+        "/culture",
+        "/topic/aviation",
+        "/topic/japan"
+      ],
+      "issues": [],
+      "documentarySchemaImage": null,
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-10-16"
+    },
+    {
+      "path": "/author/ryan-gomez",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/author/ryan-gomez",
+      "routeType": "author",
+      "sourceFile": "app/author/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Ryan Gomez — Obscured Records",
+      "description": "Filed records by Ryan Gomez at Obscured Records.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/author/ryan-gomez",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [
+        "Person"
+      ],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/authors",
+        "/article/fedex-flight-705",
+        "/article/air-france-8969",
+        "/article/ethiopian-airlines-961",
+        "/article/dawsons-field",
+        "/article/richard-mccoy-skyjacking",
+        "/article/yodogo-hijacking",
+        "/article/wirecard-missing-billions",
+        "/article/satyam-confession",
+        "/article/parmalat-fictional-cash",
+        "/article/olympus-two-decade-coverup",
+        "/article/toshiba-impossible-targets",
+        "/article/1mdb-global-trail",
+        "/article/goiania-blue-powder",
+        "/article/lake-nyos",
+        "/article/minamata-food-chain",
+        "/article/times-beach-dioxin",
+        "/article/great-molasses-flood",
+        "/article/therac-25",
+        "/article/aral-sea",
+        "/article/banqiao-dam-failure",
+        "/article/petrov-false-alarm",
+        "/article/vela-incident",
+        "/article/move-bombing",
+        "/article/ss-eastland",
+        "/article/iraq-poison-grain",
+        "/article/uss-akron",
+        "/article/flight-629-suitcase-bomb",
+        "/article/centralia-underground-fire"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/authors",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/authors",
+      "routeType": "reader-page",
+      "sourceFile": "app/authors/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Authors — Obscured Records",
+      "description": "The people behind Obscured Records.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/authors",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/business",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/business",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Business — Obscured Records",
+      "description": "Accounts, institutions and the distance between what was reported and what could be verified.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/business",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/contribute",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/contribute",
+      "routeType": "reader-page",
+      "sourceFile": "app/contribute/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Contribute — Obscured Records",
+      "description": "Bring an overlooked story or a skill to Obscured Records. Contributor introductions, roles and the editorial process.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/contribute",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/corrections",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/corrections",
+      "routeType": "reader-page",
+      "sourceFile": "app/corrections/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Corrections — Obscured Records",
+      "description": "Request a source-backed correction to an Obscured Records article.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/corrections",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/culture",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/culture",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Culture — Obscured Records",
+      "description": "Ideas, memory and the institutions that shape the public record.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/culture",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/editorial",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/editorial",
+      "routeType": "private-route",
+      "sourceFile": "app/editorial/page.tsx",
+      "intendedVisibility": "Private authenticated route; permanently excluded from public discovery",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, nofollow (route override)",
+      "title": "Private editorial desk — Obscured Records",
+      "description": "Owner-only draft review for Obscured Records.",
+      "canonical": null,
+      "http": {
+        "expected": "Sign-in redirect when anonymous; 404 for non-owner; 200 for owner",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "Inherited publication preview only; no private content metadata",
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Owner-only member/desk links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/editorial/draft/[slug]",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/editorial/draft/[slug]",
+      "routeType": "private-route",
+      "sourceFile": "app/editorial/draft/[slug]/page.tsx",
+      "intendedVisibility": "Private authenticated route; permanently excluded from public discovery",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, nofollow (route override)",
+      "title": "Private draft — Obscured Records",
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "Sign-in redirect when anonymous; 404 for non-owner/unknown slug; 200 for owner and known draft",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "Inherited publication preview only; no private content metadata",
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Owner-only member/desk links"
+      ],
+      "issues": [
+        "Pattern represents the local review corpus; draft titles and bodies are intentionally absent from this inventory"
+      ]
+    },
+    {
+      "path": "/latest",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/latest",
+      "routeType": "reader-page",
+      "sourceFile": "app/latest/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Latest records — Obscured Records",
+      "description": "Published records ordered by publication date, with record number breaking ties.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/latest",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/media/[filename]",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/media/[filename]",
+      "routeType": "image",
+      "sourceFile": "app/media/[filename]/route.ts",
+      "intendedVisibility": "Machine-readable supporting route behind unchanged deployment access policy",
+      "currentlyIndexableByPolicy": false,
+      "robots": "No HTML robots metadata; deployment access policy unchanged",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "200/304 for known images; 404 for unknown filename; GET and HEAD",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Allowed article covers and responsive variants"
+      ],
+      "issues": [],
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/member",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/member",
+      "routeType": "private-route",
+      "sourceFile": "app/member/page.tsx",
+      "intendedVisibility": "Private authenticated route; permanently excluded from public discovery",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, nofollow (route override)",
+      "title": "Member space — Obscured Records",
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "Sign-in redirect for anonymous visitors; 200 for authenticated member when storage is configured",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "Inherited publication preview only; no private content metadata",
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/membership",
+        "/saved"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/membership",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/membership",
+      "routeType": "reader-page",
+      "sourceFile": "app/membership/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Membership — Obscured Records",
+      "description": "A private, cross-device reading library for Obscured Records.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/membership",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/news-sitemap.xml",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/news-sitemap.xml",
+      "routeType": "news-sitemap",
+      "sourceFile": "app/news-sitemap.xml/route.ts",
+      "intendedVisibility": "Machine-readable supporting route behind unchanged deployment access policy",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (X-Robots-Tag)",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "200; empty at snapshot because no reader publication is within 48 hours",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/robots.txt"
+      ],
+      "issues": [
+        "Existing endpoint retained; review news eligibility before any future use. Historical subject matter alone does not establish NewsArticle eligibility."
+      ],
+      "contentType": "application/xml; charset=utf-8"
+    },
+    {
+      "path": "/newsletter",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/newsletter",
+      "routeType": "reader-page",
+      "sourceFile": "app/newsletter/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Newsletter waitlist — Obscured Records",
+      "description": "Join the waitlist for The Obscured Brief. Email delivery is not yet active.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/newsletter",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/privacy",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/privacy",
+      "routeType": "reader-page",
+      "sourceFile": "app/privacy/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Privacy — Obscured Records",
+      "description": "How Obscured Records handles member, newsletter, contact and reading data.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/privacy",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/robots.txt",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/robots.txt",
+      "routeType": "crawler-policy",
+      "sourceFile": "app/robots.ts",
+      "intendedVisibility": "Machine-readable supporting route behind unchanged deployment access policy",
+      "currentlyIndexableByPolicy": false,
+      "robots": "No HTML robots metadata; deployment access policy unchanged",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "200; allow / and disallow /api/; does not replace noindex or access control",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [],
+      "contentType": "text/plain (framework-generated)"
+    },
+    {
+      "path": "/rss.xml",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/rss.xml",
+      "routeType": "feed",
+      "sourceFile": "app/rss.xml/route.ts",
+      "intendedVisibility": "Machine-readable supporting route behind unchanged deployment access policy",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (X-Robots-Tag)",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "200 with 28 current reader items; draft/held/future records excluded",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Footer",
+        "RSS alternate metadata"
+      ],
+      "issues": [],
+      "contentType": "application/rss+xml; charset=utf-8"
+    },
+    {
+      "path": "/saved",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/saved",
+      "routeType": "reader-page",
+      "sourceFile": "app/saved/page.tsx",
+      "intendedVisibility": "Permanently noindex reader utility, including after an authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (route override)",
+      "title": "Your saved stories — Obscured Records",
+      "description": "A quiet place to return to your reading.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/saved",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/science",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/science",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Science — Obscured Records",
+      "description": "Evidence, uncertainty and the consequences of hazards we struggle to see.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/science",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/search",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/search",
+      "routeType": "reader-page",
+      "sourceFile": "app/search/page.tsx",
+      "intendedVisibility": "Permanently noindex reader utility, including after an authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (route override)",
+      "title": "Search the archive — Obscured Records",
+      "description": "Find records by event, topic, author and source context.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/search",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/search?q=aviation",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/search?q=aviation",
+      "routeType": "variant-or-negative-case",
+      "sourceFile": null,
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": null,
+      "description": null,
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/search",
+      "http": {
+        "expected": "200, matching search results; explicitly noindex",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [],
+      "issues": [
+        "Search variants remain noindex after authorized launch"
+      ]
+    },
+    {
+      "path": "/series",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/series",
+      "routeType": "reader-page",
+      "sourceFile": "app/series/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Reading series — Obscured Records",
+      "description": "Ordered reading paths through published records, connected by a question.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/series",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/series/in-the-air",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/series/in-the-air",
+      "routeType": "series",
+      "sourceFile": "app/series/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "In the air, under pressure — Obscured Records",
+      "description": "A reading path from crew survival to hostage negotiation and the evidence recovered after an attack.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/series/in-the-air",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/series",
+        "/article/fedex-flight-705",
+        "/article/air-france-8969",
+        "/article/ethiopian-airlines-961",
+        "/article/flight-629-suitcase-bomb"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/series/invisible-hazards",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/series/invisible-hazards",
+      "routeType": "series",
+      "sourceFile": "app/series/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Hazards out of sight — Obscured Records",
+      "description": "Radiation, software, water and gas: four records about danger that was difficult to recognize before people were harmed.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/series/invisible-hazards",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/series",
+        "/article/goiania-blue-powder",
+        "/article/therac-25",
+        "/article/minamata-food-chain",
+        "/article/lake-nyos"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/series/the-paper-trail",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/series/the-paper-trail",
+      "routeType": "series",
+      "sourceFile": "app/series/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "When the accounts unravel — Obscured Records",
+      "description": "Read across four cases to examine cash balances, confirmations and the limits of institutional oversight.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/series/the-paper-trail",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/series",
+        "/article/wirecard-missing-billions",
+        "/article/satyam-confession",
+        "/article/parmalat-fictional-cash",
+        "/article/olympus-two-decade-coverup"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/sitemap.xml",
+      "routeType": "sitemap",
+      "sourceFile": "app/sitemap.ts",
+      "intendedVisibility": "Machine-readable supporting route behind unchanged deployment access policy",
+      "currentlyIndexableByPolicy": false,
+      "robots": "No HTML robots metadata; deployment access policy unchanged",
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "http": {
+        "expected": "200; canonical reader paths only, with actual latest recorded article updates",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": null,
+      "sitemap": false,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/robots.txt"
+      ],
+      "issues": [],
+      "contentType": "application/xml (framework-generated)"
+    },
+    {
+      "path": "/standards",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/standards",
+      "routeType": "reader-page",
+      "sourceFile": "app/standards/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Editorial standards — Obscured Records",
+      "description": "How Obscured Records researches, labels and updates its work.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/standards",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/submit",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/submit",
+      "routeType": "reader-page",
+      "sourceFile": "app/submit/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Submit a record — Obscured Records",
+      "description": "Submit corrections, documentary leads, rights notes, or evidence-led pitches to Obscured Records.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/submit",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/technology",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/technology",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Technology — Obscured Records",
+      "description": "Systems, machines and the decisions built into them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/technology",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/accounting",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/accounting",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Accounting — Obscured Records",
+      "description": "How financial records are made, challenged and corrected when the numbers cease to hold up.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/accounting",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/satyam-confession",
+        "/article/toshiba-impossible-targets"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/airships",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/airships",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Airships — Obscured Records",
+      "description": "Explore the airships thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/airships",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/uss-akron"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/aviation",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/aviation",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Aviation — Obscured Records",
+      "description": "Aircraft, crews and the decisions made under pressure. Follow the investigation beyond the remembered moment.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/aviation",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/fedex-flight-705",
+        "/article/air-france-8969",
+        "/article/ethiopian-airlines-961",
+        "/article/dawsons-field",
+        "/article/richard-mccoy-skyjacking",
+        "/article/yodogo-hijacking",
+        "/article/flight-629-suitcase-bomb"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/boston",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/boston",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Boston — Obscured Records",
+      "description": "Explore the boston thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/boston",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/great-molasses-flood"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/brazil",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/brazil",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Brazil — Obscured Records",
+      "description": "Explore the brazil thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/brazil",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/goiania-blue-powder"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/cameroon",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/cameroon",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Cameroon — Obscured Records",
+      "description": "Explore the cameroon thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/cameroon",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/lake-nyos"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/central-asia",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/central-asia",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Central Asia — Obscured Records",
+      "description": "Explore the central asia thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/central-asia",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/aral-sea"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/chicago",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/chicago",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Chicago — Obscured Records",
+      "description": "Explore the chicago thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/chicago",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/ss-eastland"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/china",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/china",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "China — Obscured Records",
+      "description": "Explore the china thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/china",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/banqiao-dam-failure"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/cold-war",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/cold-war",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Cold War — Obscured Records",
+      "description": "Explore the cold war thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/cold-war",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/petrov-false-alarm"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/crime",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/crime",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Crime — Obscured Records",
+      "description": "Explore the crime thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/crime",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/fedex-flight-705"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/diplomacy",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/diplomacy",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Diplomacy — Obscured Records",
+      "description": "Explore the diplomacy thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/diplomacy",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/dawsons-field"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/fbi",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fbi",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "FBI — Obscured Records",
+      "description": "Explore the fbi thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fbi",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/richard-mccoy-skyjacking"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/fintech",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fintech",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Fintech — Obscured Records",
+      "description": "Explore the fintech thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fintech",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/wirecard-missing-billions"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/fraud",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fraud",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Fraud — Obscured Records",
+      "description": "Reported balances, missing evidence and the institutions entrusted with checking the accounts.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/fraud",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/wirecard-missing-billions",
+        "/article/parmalat-fictional-cash"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/geology",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/geology",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Geology — Obscured Records",
+      "description": "Explore the geology thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/geology",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/lake-nyos"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/governance",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/governance",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Governance — Obscured Records",
+      "description": "Explore the governance thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/governance",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/olympus-two-decade-coverup"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/india",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/india",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "India — Obscured Records",
+      "description": "Explore the india thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/india",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/satyam-confession"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/industry",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/industry",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Industry — Obscured Records",
+      "description": "Explore the industry thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/industry",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/great-molasses-flood"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/infrastructure",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/infrastructure",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Infrastructure — Obscured Records",
+      "description": "Explore the infrastructure thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/infrastructure",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/banqiao-dam-failure"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/intelligence",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/intelligence",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Intelligence — Obscured Records",
+      "description": "Explore the intelligence thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/intelligence",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/vela-incident"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/investigation",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/investigation",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Investigation — Obscured Records",
+      "description": "Explore the investigation thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/investigation",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/flight-629-suitcase-bomb"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/iraq",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/iraq",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Iraq — Obscured Records",
+      "description": "Explore the iraq thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/iraq",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/iraq-poison-grain"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/italy",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/italy",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Italy — Obscured Records",
+      "description": "Explore the italy thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/italy",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/parmalat-fictional-cash"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/japan",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/japan",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Japan — Obscured Records",
+      "description": "Records of industrial harm, corporate governance and political history in Japan.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/japan",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/yodogo-hijacking",
+        "/article/olympus-two-decade-coverup",
+        "/article/toshiba-impossible-targets",
+        "/article/minamata-food-chain"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/malaysia",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/malaysia",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Malaysia — Obscured Records",
+      "description": "Explore the malaysia thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/malaysia",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/1mdb-global-trail"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/maritime",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/maritime",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Maritime — Obscured Records",
+      "description": "Explore the maritime thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/maritime",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/ss-eastland"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/medicine",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/medicine",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Medicine — Obscured Records",
+      "description": "Explore the medicine thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/medicine",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/therac-25"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/mercury",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/mercury",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Mercury — Obscured Records",
+      "description": "Explore the mercury thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/mercury",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/minamata-food-chain"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/mining",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/mining",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Mining — Obscured Records",
+      "description": "Explore the mining thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/mining",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/centralia-underground-fire"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/missouri",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/missouri",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Missouri — Obscured Records",
+      "description": "Explore the missouri thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/missouri",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/times-beach-dioxin"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/money-laundering",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/money-laundering",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Money Laundering — Obscured Records",
+      "description": "Explore the money laundering thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/money-laundering",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/1mdb-global-trail"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/navy",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/navy",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Navy — Obscured Records",
+      "description": "Explore the navy thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/navy",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/uss-akron"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/nuclear",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/nuclear",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Nuclear — Obscured Records",
+      "description": "Explore the nuclear thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/nuclear",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/vela-incident"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/pennsylvania",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/pennsylvania",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Pennsylvania — Obscured Records",
+      "description": "Explore the pennsylvania thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/pennsylvania",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/centralia-underground-fire"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/philadelphia",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/philadelphia",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Philadelphia — Obscured Records",
+      "description": "Explore the philadelphia thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/philadelphia",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/move-bombing"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/policing",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/policing",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Policing — Obscured Records",
+      "description": "Explore the policing thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/policing",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/move-bombing"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/pollution",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/pollution",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Pollution — Obscured Records",
+      "description": "Explore the pollution thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/pollution",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/times-beach-dioxin"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/public-health",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/public-health",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Public Health — Obscured Records",
+      "description": "Explore the public health thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/public-health",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/iraq-poison-grain"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/radiation",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/radiation",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Radiation — Obscured Records",
+      "description": "Invisible hazards, exposed safeguards and the evidence used to reconstruct what happened.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/radiation",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/goiania-blue-powder"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/software",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/software",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Software — Obscured Records",
+      "description": "Explore the software thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/software",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/therac-25"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/survival",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/survival",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Survival — Obscured Records",
+      "description": "Explore the survival thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/survival",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/ethiopian-airlines-961"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/systems",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/systems",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Systems — Obscured Records",
+      "description": "Explore the systems thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/systems",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/petrov-false-alarm"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/terrorism",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/terrorism",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Terrorism — Obscured Records",
+      "description": "Explore the terrorism thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/terrorism",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/air-france-8969"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topic/water",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/water",
+      "routeType": "topic",
+      "sourceFile": "app/topic/[slug]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Water — Obscured Records",
+      "description": "Explore the water thread through the archive: the events, their consequences and the documents behind them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topic/water",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "/topics",
+        "/article/aral-sea"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/topics",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/topics",
+      "routeType": "reader-page",
+      "sourceFile": "app/topics/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Topics — Obscured Records",
+      "description": "Follow the subjects that connect the Obscured Records archive.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/topics",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared Masthead/Footer navigation"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/underreported",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/underreported",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "Underreported — Obscured Records",
+      "description": "Overlooked histories, missing context and records that reward a closer reading.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/underreported",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/world",
+      "url": "https://obscured-records.ryangomez-hs.chatgpt.site/world",
+      "routeType": "section",
+      "sourceFile": "app/[section]/page.tsx",
+      "intendedVisibility": "Reader route; public launch HOLD; indexing requires separately authorized launch",
+      "currentlyIndexableByPolicy": false,
+      "robots": "noindex, follow (root layout)",
+      "title": "World — Obscured Records",
+      "description": "Power, borders, conflict and the lives caught between them.",
+      "canonical": "https://obscured-records.ryangomez-hs.chatgpt.site/world",
+      "http": {
+        "expected": "200 behind the existing deployment access policy",
+        "observedStatus": null,
+        "verification": "UNRUN: no server or browser started in the resource-constrained pass"
+      },
+      "structuredData": [],
+      "socialImage": "https://obscured-records.ryangomez-hs.chatgpt.site/share-card.png",
+      "sitemap": true,
+      "rss": false,
+      "incomingInternalLinks": [
+        "Shared section navigation",
+        "Article section links"
+      ],
+      "issues": []
+    }
+  ]
+}

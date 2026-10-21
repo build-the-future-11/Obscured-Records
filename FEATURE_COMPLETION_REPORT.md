@@ -1,3 +1,13 @@
+# Membership portal completion — 21 October 2026
+
+The portal now connects the previously missing member and administration controls, adds the remaining bounded participation workflows, and repairs review-state, registration, privacy and transaction defects. See [the current receipt](docs/PORTAL_COMPLETION_2026-10-21.md) and [the updated checklist](MEMBERSHIP_FEATURE_MEGA_CHECKLIST.md#21-october-completion-pass-supersedes-implementation-statuses-above).
+
+The database integration suite runs actual API handlers with isolated SQLite and the pinned D1 driver. Production identity, hosted persistence, real programs, human policies and public release are separate acceptance claims. Newsletter/email sending remains deferred.
+
+The original report below is historical and its implementation/verification gaps are superseded only where the current receipt explicitly records closure.
+
+---
+
 # Membership portal completion report
 
 ## Outcome

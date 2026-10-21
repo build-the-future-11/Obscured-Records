@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-16",
+  "reviewer": "Codex AI-assisted editorial review; no human approval",
+  "scope": "Three existing private review drafts only. No reader registry, metadata, publication status, approvals, checklists, source-verification metadata, bylines or historical records changed.",
+  "hashPolicy": {
+    "body": "SHA-256 of UTF-8 body after the closing frontmatter line, trimmed using the editorial importer convention.",
+    "file": "SHA-256 of exact complete file bytes.",
+    "frontmatter": "SHA-256 of exact raw bytes from opening --- through closing --- and its terminating newline, inclusive."
+  },
+  "verificationBoundary": "Full draft text read and selected source passages inspected. No test suite, build, publication, remote mutation or human approval performed. Mechanical byte/hash and passage comparisons accompany this receipt.",
+  "sources": {
+    "vela_frus_368": {
+      "title": "FRUS 1977–1980, Volume XVI, document 368: Memorandum from Brzezinski to President Carter, with Possible Nuclear Explosion Panel findings",
+      "institution": "U.S. Department of State, Office of the Historian; original Office of Science and Technology Policy panel attachment",
+      "date": "1980-01-09",
+      "attachmentDate": "1980-01-07",
+      "accessDate": "2026-10-16",
+      "section": "Memorandum and Tab A, paragraphs 1–9",
+      "uncertainty": "Not a survey of all later released evidence or agency conclusions; no event attribution established.",
+      "followup": "Compare later assessments using their exact documents, evidence, dates and methods before extending conclusions.",
+      "url": "https://history.state.gov/historicaldocuments/frus1977-80v16/d368",
+      "inspection": "Specific document and full panel attachment inspected; supports dated assessment and its stated limits.",
+      "sourceType": "primary-government-document-transcription"
+    },
+    "ethiopian_final_report": {
+      "title": "Aircraft Accident Investigation Report AI-3/96: Ethiopian Airlines B767 (ET-AIZ), Comoros, 23 November 1996",
+      "institution": "Ethiopian Civil Aviation Authority, Flight Safety Department; copy hosted by Flight Simulation Systems",
+      "date": "1998-05-04",
+      "accessDate": "2026-10-16",
+      "section": "Cover; accident summary pp. 1–2; §1.1 pp. 3–10; §1.11.1–1.11.2 pp. 19–20; §2.3 pp. 30–31; §3.2 p. 34",
+      "uncertainty": "Repository copy rather than current agency-hosted release. OCR present; attempted page screenshots did not expose inspectable pixels. No visual table or figure verification claimed.",
+      "followup": "Obtain an authoritative current copy and inspect relevant page images before adding exact dialogue, timing reconciliation, technical plots or individual fatality mechanisms.",
+      "url": "https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf",
+      "inspection": "Relevant report narrative and analysis inspected in extracted PDF text. Totals use narrative, not a newly interpreted casualty table.",
+      "sourceType": "primary-investigation-report-repository-copy"
+    },
+    "molasses_noaa": {
+      "title": "Molasses and Other Weird Things that Have Spilled",
+      "institution": "NOAA Office of Response and Restoration",
+      "date": "2013-09-17",
+      "updatedDate": "2022-11-08",
+      "accessDate": "2026-10-16",
+      "section": "A Sticky Mess; opening Honolulu comparison",
+      "uncertainty": "A brief later overview, not original casualty records, tank engineering evidence or a quantified environmental investigation.",
+      "followup": "Use original casualty, engineering and environmental records for more detailed claims.",
+      "url": "https://response.restoration.noaa.gov/about/media/molasses-and-other-weird-things-have-spilled.html",
+      "inspection": "Inspected event date, tank-contents wording, reported toll, and explicit uncertainty about Boston fish deaths.",
+      "sourceType": "official-retrospective-overview"
+    },
+    "molasses_boston_post": {
+      "title": "The Boston Post, 16 January 1919, excerpt reproduced in Mass Moments: Great Molasses Flood",
+      "institution": "The Boston Post; transcript reproduced by Mass Humanities",
+      "date": "1919-01-16",
+      "accessDate": "2026-10-16",
+      "section": "Primary Source panel, first and third paragraphs; attribution immediately after excerpt",
+      "uncertainty": "Selected transcription, not original newspaper page image. Early death count is explicitly provisional. Dramatic wave dimensions are not accepted as measured fact.",
+      "followup": "Inspect the original issue and later casualty records before expanding eyewitness or engineering detail.",
+      "url": "https://www.massmoments.org/moment-details/great-molasses-flood/submoment/hugh-ogden-issues-report-on-cause-of-the-molasses-flood.html",
+      "inspection": "Inspected reproduced contemporary excerpt for provisional eleven-known-dead count and reported 2.3 million gallons.",
+      "sourceType": "primary-newspaper-excerpt-transcription"
+    },
+    "molasses_boston_archives": {
+      "title": "100 years ago today: Molasses crashes through Boston's North End",
+      "institution": "City of Boston, Archives and Records Management",
+      "date": null,
+      "updatedDate": "2025-10-30",
+      "accessDate": "2026-10-16",
+      "section": "Opening summary and first narrative paragraph",
+      "uncertainty": "Original publication date not independently established from retrieved page; centennial framing is not treated as a date receipt. Secondary causal and legal summaries were not used as primary findings.",
+      "followup": "Trace the figure to original records and obtain the engineering and court documents before attributing specific failure causes.",
+      "url": "https://www.boston.gov/news/100-years-ago-today-molasses-crashes-through-bostons-north-end",
+      "inspection": "Inspected overview's 2.3 million gallon figure for explicit comparison with NOAA's lower bound.",
+      "sourceType": "official-retrospective-overview"
+    },
+    "molasses_aps_abstract": {
+      "title": "In a sea of sticky molasses: The physics of the Boston Molasses Flood",
+      "institution": "American Physical Society, 69th Annual Meeting of the Division of Fluid Dynamics; authors Nicole Sharp (FYFD), Jordan Kennedy and Shmuel Rubinstein (Harvard University)",
+      "date": "2016-11-21",
+      "accessDate": "2026-10-16",
+      "section": "Abstract, second paragraph; authors and scheduled presentation date",
+      "uncertainty": "Abstract announces a talk; it does not supply a complete method, dataset, calculations or failure attribution. Numerical viscosity, wave-height and speed claims were not imported.",
+      "followup": "Obtain the complete research presentation or publication and its assumptions before adding technical conclusions.",
+      "url": "https://meetings-archive.aps.org/dfd/2016/l27/8/",
+      "inspection": "Inspected authors' statement of research scope concerning temperature and molasses flow behavior.",
+      "sourceType": "primary-author-conference-abstract"
+    }
+  },
+  "reviews": [
+    {
+      "slug": "vela-incident",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-read-and-scoped-primary-source-review",
+      "changed": true,
+      "changeSummary": "Replaced repetitive caution with the exact memorandum and panel dates, Arecibo corroboration limit, modeled meteoroid distinction, and specific recommended further work; retained unresolved status and avoided actor or cover-up attribution.",
+      "remainingReview": [
+        "Compare later declassified assessments by date and method; no conclusion about the full subsequent record was reached.",
+        "Assign a real author and obtain named human editorial approval, metadata approval, and release approval."
+      ],
+      "claims": [
+        {
+          "id": "vela-signal",
+          "passage": "A Vela satellite recorded a light signal over the South Atlantic on 22 September 1979 that resembled signals associated with atmospheric nuclear explosions. An outside scientific panel could not determine whether it was nuclear. Its January 1980 findings preserve an unresolved assessment, not a verdict on every later argument.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶1–2, ¶7",
+          "support": "Supports the event and dated unresolved assessment.",
+          "uncertainty": "This is the panel's January 1980 conclusion, not a current universal verdict.",
+          "followup": "Compare later records before broadening scope."
+        },
+        {
+          "id": "vela-document-dates",
+          "passage": "The [declassified record](https://history.state.gov/historicaldocuments/frus1977-80v16/d368) contains two dated documents: Zbigniew Brzezinski's memorandum to President Carter on 9 January and the attached panel findings of 7 January. The attachment identifies satellite 6911 and distinguishes the signal's resemblance to known nuclear events from a discrepancy that raised doubt.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Document heading; Tab A heading and ¶1–2",
+          "support": "Identifies two dates, satellite 6911 and the signal discrepancy.",
+          "uncertainty": "No later assessment is represented by this document.",
+          "followup": "Retain precise dates when comparing assessments."
+        },
+        {
+          "id": "vela-arecibo",
+          "passage": "The panel considered ionospheric observations from the Arecibo radar in Puerto Rico suggestive, but ambiguous and insufficiently understood to corroborate a nuclear event. That is more specific than saying no other observations existed.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶3",
+          "support": "Distinguishes suggestive Arecibo observations from persuasive corroboration.",
+          "uncertainty": "Ambiguity is the panel's assessment at that date.",
+          "followup": "Read original radar analysis before interpreting its signal independently."
+        },
+        {
+          "id": "vela-model",
+          "passage": "It also considered sunlight reflected from a small meteoroid or satellite debris near the sensors. Computer modeling showed that a meteoroid with specified properties could produce the signal. A possible modeled mechanism is not evidence that the modeled object was actually present.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶5–6",
+          "support": "Supports a modeled possible mechanism, not an observed causal object.",
+          "uncertainty": "No actual meteoroid detection is established here.",
+          "followup": "Obtain model methods and later analysis for quantitative claims."
+        },
+        {
+          "id": "vela-probabilities",
+          "passage": "The panel could not assign relative probabilities to the nuclear and natural explanations. That statement does not mean the alternatives had equal odds. It describes a limit on the assessment the panel was able to make.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶7",
+          "support": "Panel could not assign relative probabilities.",
+          "uncertainty": "No equal-odds inference follows.",
+          "followup": "Do not supply numerical probabilities without further evidence."
+        },
+        {
+          "id": "vela-further-work",
+          "passage": "The panel recommended further searches for corroboration, statistical comparison of signals and review of meteoroid data. Its recommendations describe work still needed at that stage; they do not demonstrate what subsequent inquiries found.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶8",
+          "support": "Supports recommendations rather than completed outcomes.",
+          "uncertainty": "No claim that the recommended work was subsequently performed.",
+          "followup": "Locate the subsequent records if describing outcomes."
+        },
+        {
+          "id": "vela-attribution-boundary",
+          "passage": "A claim about responsibility would require additional evidence connecting an event to an actor. The January attachment does not provide that connection. Nor does the existence of an unresolved signal by itself establish concealment.",
+          "sourceIds": [
+            "vela_frus_368"
+          ],
+          "locator": "Tab A ¶1–9",
+          "support": "Editorial inference: attachment lacks the event-to-actor evidence needed for attribution.",
+          "uncertainty": "Does not prove that no attribution evidence exists elsewhere.",
+          "followup": "Inspect specific attribution documents before adding actor claims."
+        }
+      ],
+      "path": "content/drafts/vela-incident.md",
+      "originalBackupPath": ".cache/ux-seo-editorial-20261016-continuation/vela-incident.original.md",
+      "sourceBodySha256": "f05ae034952ac3db1af0713313e3882ac5e5f6699005a2d664fccd6a1a18bf0b",
+      "revisedBodySha256": "02ca0c7efdb5f8018a661bc29fabf1e9159fed8d44064bc40ea341b7cb10c781",
+      "sourceFileSha256": "6bcd0a1cb935cdbd6f8ccc4cebd21b039de1ddf304f58c9b5ab4c48baea73b60",
+      "revisedFileSha256": "8f9f0667b0948a373776a701366272e72ad247af3c94b5fe549dcdf7ed8824dc",
+      "frontmatterSha256": "a9667e0dc69db75e2116a2f616ea5bae8c6404e34d957bc3e362c1032ecdf9bd",
+      "frontmatterPreserved": true,
+      "sourceWordCount": 370,
+      "revisedWordCount": 383,
+      "readingTimePreserved": "2 min",
+      "publicationStatusPreserved": "review",
+      "approvalChanged": false,
+      "completedChecksChanged": false,
+      "sourceVerificationMetadataChanged": false,
+      "bylineChanged": false,
+      "historyChanged": false
+    },
+    {
+      "slug": "ethiopian-airlines-961",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-read-and-scoped-primary-source-review",
+      "changed": true,
+      "changeSummary": "Made recorder coverage and report date explicit; replaced general life-jacket wording with the report's particular observation and retained limits on comprehension, cabin preparation and individual fatality causation.",
+      "remainingReview": [
+        "Confirm repository copy against the authoritative report and inspect relevant page images before adding disputed transcripts, exact timing or table-derived findings.",
+        "The reviewed life-jacket observations do not quantify a causal share of fatalities.",
+        "Assign a real author and obtain named human editorial approval, metadata approval, and release approval."
+      ],
+      "claims": [
+        {
+          "id": "ethiopian-event-and-toll",
+          "passage": "The Boeing 767 carrying Ethiopian Airlines Flight 961 exhausted its fuel and ditched near the Comoros on 23 November 1996. Of 175 people aboard, 125 died and 50 survived. Three hijackers had demanded Australia despite the crew's warnings about fuel.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "Accident summary pp. 1–2; §1.1 narrative pp. 3–4, 10",
+          "support": "Supports event, hijacker demand and narrative totals; 50 survivors is 175 minus 125.",
+          "uncertainty": "Totals are from report narrative; no new visual table interpretation.",
+          "followup": "Check authoritative current report before publication."
+        },
+        {
+          "id": "ethiopian-cause",
+          "passage": "The investigating committee attributed the accident to unlawful interference leading to fuel exhaustion. The hijackers' destination demand exceeded the aircraft's remaining capability. Coercion also obstructed the crew's attempts to manage the emergency as the fuel available for any response continued to diminish.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "Accident summary p. 2; §1.1 pp. 4–9; §3.2 p. 34",
+          "support": "Supports unlawful interference and fuel exhaustion causal chain.",
+          "uncertainty": "This is the investigation's finding.",
+          "followup": "Keep event cause distinct from individual fatality mechanisms."
+        },
+        {
+          "id": "ethiopian-recorder-limits",
+          "passage": "The [Ethiopian Civil Aviation Authority's final report](https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf), dated 4 May 1998, says both flight recorders stopped before impact. Its cockpit voice recorder section also describes heavy distortion on the public-address and third-crew-member channel. The investigation therefore cannot be read as an uninterrupted recording of the final cockpit and cabin exchanges.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "Cover; §1.11.1 p. 19; §1.11.2 p. 20",
+          "support": "Supports report date and gaps in recording coverage.",
+          "uncertainty": "OCR narrative inspected; no complete audiovisual reconstruction claimed.",
+          "followup": "Review authoritative copy and original recordings if exact final exchanges are needed."
+        },
+        {
+          "id": "ethiopian-life-jackets",
+          "passage": "In its flight history, the report describes the first officer finding some passengers with already inflated life jackets. He and cabin crew helped deflate them and demonstrated reinflation and bracing. The report says these instructions were given only in English and may not have been understood by some passengers.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "§1.1 p. 9",
+          "support": "Supports reported inflation, crew assistance and possible language difficulty.",
+          "uncertainty": "Reported observation does not establish every passenger's action or comprehension.",
+          "followup": "Avoid enlarging this into a universal passenger-behavior account."
+        },
+        {
+          "id": "ethiopian-fatality-inference",
+          "passage": "Those observations do not identify how many deaths, if any, resulted from premature inflation. They should not be expanded into a claim that every drowning, or a specified share of the fatalities, had that cause.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "§1.1 pp. 9–10; §2.3 pp. 30–31",
+          "support": "Editorial limit: cited observations do not quantify deaths caused by early inflation.",
+          "uncertainty": "No assertion that early inflation caused zero deaths.",
+          "followup": "Require case-specific fatality evidence for a numerical causal claim."
+        },
+        {
+          "id": "ethiopian-cabin-qualification",
+          "passage": "The committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence.",
+          "sourceIds": [
+            "ethiopian_final_report"
+          ],
+          "locator": "§2.3 pp. 30–31",
+          "support": "Preserves the report's stated difficulty evaluating preparation.",
+          "uncertainty": "Does not independently determine crew or individual passenger responsibility.",
+          "followup": "Retain qualification; do not improvise passenger safety guidance."
+        }
+      ],
+      "path": "content/drafts/ethiopian-airlines-961.md",
+      "originalBackupPath": ".cache/ux-seo-editorial-20261016-continuation/ethiopian-airlines-961.original.md",
+      "sourceBodySha256": "d1a6ca281b1e1264cf32f9f400debde03002579c1c5e1a146c469dfd5963b859",
+      "revisedBodySha256": "0986179605da297026bda074a38c4ad9100affd7b9f142b9b863b5882b7fd555",
+      "sourceFileSha256": "e3599b48621e4fab8d8dd0713753b0fb0168f0784501a3031c3274b6c957fc22",
+      "revisedFileSha256": "745d8e4e6e4a4018a03466f902000e37e5bd7ecbe5439f1f2fdaf71d430ea68a",
+      "frontmatterSha256": "241e1fc5b53fb50d638801d359b9d5ebb8f34c3fdf63f80bb890b84eac24380b",
+      "frontmatterPreserved": true,
+      "sourceWordCount": 422,
+      "revisedWordCount": 434,
+      "readingTimePreserved": "3 min",
+      "publicationStatusPreserved": "review",
+      "approvalChanged": false,
+      "completedChecksChanged": false,
+      "sourceVerificationMetadataChanged": false,
+      "bylineChanged": false,
+      "historyChanged": false
+    },
+    {
+      "slug": "great-molasses-flood",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-read-with-contemporary-excerpt-and-primary-research-abstract-review",
+      "changed": true,
+      "changeSummary": "Corrected tank-contents versus released-volume wording; attributed provisional versus later death counts; made lower-bound volume comparison explicit; replaced repetitive scale discussion with research-scope and primary-record limits.",
+      "remainingReview": [
+        "Inspect original newspaper pages and casualty records before expanding detailed human accounts.",
+        "Read the actual tank engineering investigation and civil-trial record; catalogues and retrospective legal summaries were not accepted as causal evidence.",
+        "Obtain complete fluid-mechanics research before using wave-speed, viscosity, temperature or failure-cause estimates.",
+        "Assign a real author and obtain named human editorial approval, metadata approval, and release approval."
+      ],
+      "claims": [
+        {
+          "id": "molasses-event-toll",
+          "passage": "A Boston storage tank burst on 15 January 1919. NOAA's historical spill overview describes a tank holding at least 2.2 million gallons of molasses and reports 21 deaths and 150 injuries. These are attributed historical figures, not measurements made for this article.",
+          "sourceIds": [
+            "molasses_noaa"
+          ],
+          "locator": "A Sticky Mess",
+          "support": "Supports date, tank contents and attributed reported toll.",
+          "uncertainty": "Later overview rather than original measurement or casualty ledger.",
+          "followup": "Trace precise totals to original records."
+        },
+        {
+          "id": "molasses-provisional-toll",
+          "passage": "A [Boston Post report of 16 January 1919](https://www.massmoments.org/moment-details/great-molasses-flood/submoment/hugh-ogden-issues-report-on-cause-of-the-molasses-flood.html), reproduced in Mass Humanities' primary-source excerpt, counted eleven known dead at midnight. That was an early count, not the final toll. Its timing matters when comparing it with NOAA's later figure of 21.",
+          "sourceIds": [
+            "molasses_boston_post",
+            "molasses_noaa"
+          ],
+          "locator": "Boston Post excerpt, third paragraph; NOAA A Sticky Mess",
+          "support": "Distinguishes midnight known-dead count from later reported total.",
+          "uncertainty": "Early count is provisional; no original scan inspected.",
+          "followup": "Verify original newspaper and casualty records."
+        },
+        {
+          "id": "molasses-volume",
+          "passage": "The newspaper excerpt gave 2.3 million gallons. [Boston's Archives and Records Management overview](https://www.boston.gov/news/100-years-ago-today-molasses-crashes-through-bostons-north-end) also uses 2.3 million, while NOAA says at least 2.2 million. The lower-bound wording does not contradict the larger figure, but the sources do not establish an independently measured exact volume here. Converting one of those figures into more decimal places would add precision without resolving its evidentiary basis.",
+          "sourceIds": [
+            "molasses_boston_post",
+            "molasses_boston_archives",
+            "molasses_noaa"
+          ],
+          "locator": "Post excerpt first paragraph; Boston opening; NOAA A Sticky Mess",
+          "support": "Shows reported values and lower-bound wording without inventing precision.",
+          "uncertainty": "Sources do not establish an independently measured exact volume here; gallon-unit conversion is not attempted.",
+          "followup": "Find primary tank inventory and measurement records before precise conversions."
+        },
+        {
+          "id": "molasses-newspaper-limit",
+          "passage": "The newspaper's account is evidence of what was reported immediately after the event. It should not be treated as a completed engineering investigation. Its dramatic descriptions of the wave require the same scrutiny as its provisional casualty count.",
+          "sourceIds": [
+            "molasses_boston_post"
+          ],
+          "locator": "Primary Source excerpt as a whole",
+          "support": "Editorial distinction between early reporting and engineering evidence.",
+          "uncertainty": "Descriptive wave dimensions were not accepted as measurements.",
+          "followup": "Inspect original issue and engineering evidence before using dimensions."
+        },
+        {
+          "id": "molasses-research-scope",
+          "passage": "A [2016 American Physical Society conference abstract](https://meetings-archive.aps.org/dfd/2016/l27/8/) by Nicole Sharp, Jordan Kennedy and Shmuel Rubinstein proposed examining temperature and the flow behavior of molasses. The abstract is a statement of research scope, not a complete engineering report with the methods and results needed to independently assess a failure reconstruction.",
+          "sourceIds": [
+            "molasses_aps_abstract"
+          ],
+          "locator": "Abstract second paragraph; authors list",
+          "support": "Supports author identities and stated scope of research.",
+          "uncertainty": "A conference abstract is not a complete evidentiary basis for engineering attribution.",
+          "followup": "Obtain full methods and results before technical claims."
+        },
+        {
+          "id": "molasses-environmental-limit",
+          "passage": "[NOAA's discussion](https://response.restoration.noaa.gov/about/media/molasses-and-other-weird-things-have-spilled.html) also calls fish deaths in Boston likely, while noting the lack of detailed documentation in 1919. That qualification should remain attached. Its discussion of a later Honolulu spill does not establish an identical Boston environmental outcome.",
+          "sourceIds": [
+            "molasses_noaa"
+          ],
+          "locator": "A Sticky Mess and opening Honolulu discussion",
+          "support": "Retains agency's likely qualifier and comparison limit.",
+          "uncertainty": "No measured Boston fish mortality is claimed.",
+          "followup": "Use Boston-specific environmental records before quantification."
+        }
+      ],
+      "path": "content/drafts/great-molasses-flood.md",
+      "originalBackupPath": ".cache/ux-seo-editorial-20261016-continuation/great-molasses-flood.original.md",
+      "sourceBodySha256": "34bb968d5b5dfdbb1cb57f937deb620ccaf7a2e9c804aeece84d6af3d304c18d",
+      "revisedBodySha256": "b064afccd79947296f621e15a55b4c0164d38bececc5f247e0407db05c873435",
+      "sourceFileSha256": "6845b084c61e6fb364c61b7fbef03c55f621b6b1219ada9a3e01c474196a9bdd",
+      "revisedFileSha256": "0b4f109b4ce03ca52176804ee1c935c2a9c097376b76dc4bebeec4528598bf84",
+      "frontmatterSha256": "fa62e79e4a12a5a8dd7a4b9a500e22d0dd0020ecb41148b68d83ad61a60d593d",
+      "frontmatterPreserved": true,
+      "sourceWordCount": 479,
+      "revisedWordCount": 443,
+      "readingTimePreserved": "3 min",
+      "publicationStatusPreserved": "review",
+      "approvalChanged": false,
+      "completedChecksChanged": false,
+      "sourceVerificationMetadataChanged": false,
+      "bylineChanged": false,
+      "historyChanged": false
+    }
+  ],
+  "excludedOrBlockedSources": [
+    {
+      "slug": "vela-incident",
+      "sourceURL": "https://www.cia.gov/readingroom/docs/DOC_0000037625.pdf",
+      "title": "The 22 September 1979 Event (search result label)",
+      "institution": "CIA Electronic Reading Room",
+      "date": null,
+      "accessDate": "2026-10-16",
+      "section": "Specific PDF retrieval attempt",
+      "outcome": "Opening the purported PDF redirected to the generic reading-room catalogue; document not inspected.",
+      "uncertainty": "Search snippet is not accepted as proof of document content or date.",
+      "followup": "Retrieve the actual assessment before any CIA conclusion or conditional-attribution claim."
+    },
+    {
+      "slug": "great-molasses-flood",
+      "sourceURL": "https://www.fireengineering.com/wp-content/uploads/2014/01/FE011919BostonMolassesTank.pdf",
+      "title": "Molasses Tank Explodes in Boston",
+      "institution": "Fire and Water Engineering",
+      "date": "1919-01-29",
+      "accessDate": "2026-10-16",
+      "section": "Three-page historical scan",
+      "outcome": "PDF extraction yielded no text; screenshot attempt did not expose inspectable pixels. Search-index text was not imported as new draft evidence.",
+      "uncertainty": "Full original scan not read.",
+      "followup": "Inspect readable page images before relying on the reproduced fire-commissioner report."
+    }
+  ],
+  "schemaNote": "Source field names normalized to url, inspection and sourceType after the first integration test exposed a naming mismatch. Evidence text, manuscript passages and hashes are unchanged."
+}

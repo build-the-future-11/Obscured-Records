@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-21",
   "productKind": "publication-website",
   "scientificModel": {
     "applicable": false,
@@ -9,28 +9,28 @@
   "release": {
     "publicLaunch": "HOLD",
     "audience": "owner-private",
-    "deploymentReceipt": "docs/WEBSITE_COMPLETION_2026-10-16.md"
+    "deploymentReceipt": "docs/PORTAL_COMPLETION_2026-10-21.md"
   },
   "content": {
-    "drafts": 3245,
+    "drafts": 3248,
     "explicitReportingPlans": 3000,
-    "otherDrafts": 245,
-    "draftWords": 2955788,
+    "otherDrafts": 248,
+    "draftWords": 2958174,
     "draftStates": {
-      "draft": 3203,
+      "draft": 3206,
       "review": 42,
       "approved": 0,
       "held": 0
     },
-    "readerRecords": 28,
+    "readerRecords": 31,
     "readerStates": {
       "draft": 0,
       "review": 0,
-      "published": 28,
+      "published": 31,
       "held": 0
     }
   },
-  "evidenceBoundary": "Counts, source-link reachability, tests and deployment receipts establish bounded engineering evidence. They do not establish factual correctness, original reporting, image rights, human editorial approval or completed operational acceptance. A reader record marked published is a registry state, not certification. The 245 other drafts are not certified finished articles.",
+  "evidenceBoundary": "Counts, source-link reachability, tests and deployment receipts establish bounded engineering evidence. They do not establish factual correctness, original reporting, image rights, human editorial approval or completed operational acceptance. A reader record marked published is a registry state, not certification. The 248 other drafts are not certified finished articles.",
   "channels": {
     "newsletter": "capture-only",
     "emailSending": "deferred",

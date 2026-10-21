@@ -1,0 +1,280 @@
+{
+  "asOf": "2026-10-16",
+  "basisRevision": "831471f",
+  "scope": "Full reading and qualitative audit of all 28 reader records and all 8 expanded features; 19 drafts explicitly listed below have been fully read. Draft source checks are limited to the cited review receipts. Other drafts retain machine metadata triage only. No human editorial approval is implied.",
+  "readerReviews": {
+    "fedex-flight-705": [
+      "P1",
+      "keep",
+      "Judicial disposition is now precise and security interpretation is separated. Retain 2 October correction. Follow up on DOJ bulletin and access-policy records before adding manoeuvres or prevention claims."
+    ],
+    "air-france-8969": [
+      "P1",
+      "verification needed",
+      "Useful concise rescue chronology; 24–26 December date framing is clear. Gendarmerie retrospective is a participant source. Independently map hostage deaths, survival and assault outcome before approval."
+    ],
+    "ethiopian-airlines-961": [
+      "P0",
+      "verification needed",
+      "Clear physical-limit framing, but the claim about inflated life vests trapping passengers requires the actual investigation passage. Recheck 175 aboard, 50 survivors, cockpit struggle and fuel sequence; ASN access was previously unresolved."
+    ],
+    "dawsons-field": [
+      "P1",
+      "light edit",
+      "Retains the corrected multi-day sequence and separates ICAO legal history from hostage evidence. Causal wording that the crisis fed directly into Jordan’s confrontation needs a separate historical source."
+    ],
+    "richard-mccoy-skyjacking": [
+      "P1",
+      "verification needed",
+      "Cooper comparison is appropriately bounded. Match flight number, amount, weapons, equipment, typewriter evidence and arrest timing to FBI passages; do not infer shared identity."
+    ],
+    "yodogo-hijacking": [
+      "P0",
+      "substantial revision",
+      "Revised organizational attribution and bounded later testimony to NPA’s dated account. Removed unverified weapons, routing and hostage-exchange details. Still needs independent contemporary chronology and current legal records before extending later-history claims."
+    ],
+    "wirecard-missing-billions": [
+      "P0",
+      "substantial revision",
+      "Replaced broad prestige and technology framing with named ESMA findings and added its dated 2024 follow-up. Chronology distinguishes 22 June statement from 25 June insolvency. Criminal liability, human approval and held image provenance remain open."
+    ],
+    "satyam-confession": [
+      "P1",
+      "verification needed",
+      "Specific confession frame works. Verify original letter, proposed Maytas transaction chronology and sale-of-control sequence rather than assuming SEC enforcement page supports every sentence."
+    ],
+    "parmalat-fictional-cash": [
+      "P0",
+      "verification needed",
+      "Clear verification question. Attribute sham transactions and diversion to the SEC allegations unless independently adjudicated; a complaint is not a judgment. Replace hindsight phrase warning hiding in plain sight only with supported interpretation."
+    ],
+    "olympus-two-decade-coverup": [
+      "P1",
+      "verification needed",
+      "Avoids national-cultural generalization. Map Woodford appointment/dismissal and investment-loss concealment timing to actual report sections; report title and local URL alone are insufficient."
+    ],
+    "toshiba-impossible-targets": [
+      "P0",
+      "verification needed",
+      "Management-pressure theme is relevant, but universal language about targets employees could not refuse needs exact attribution. Confirm cited December PDF is the intended independent investigation and supports each accounting method."
+    ],
+    "1mdb-global-trail": [
+      "P0",
+      "verification needed",
+      "Opening and significance preserve allegation-versus-verdict boundary. Context should keep attribution for every asset and intermediary. Specifically check whether the cited 2016 complaint supports the yacht, or requires a later forfeiture record."
+    ],
+    "goiania-blue-powder": [
+      "P0",
+      "substantial revision",
+      "Clarified monitored, contaminated and fatality populations from IAEA summary; corrected timing reference to hospital admission. Preserve 28–29 September distinction. Full source security narrative, later outcomes and human rights/provenance review remain open."
+    ],
+    "lake-nyos": [
+      "P0",
+      "verification needed",
+      "Mechanism/trigger distinction is useful. Feature adds survivor experiences, gas totals, degassing and ongoing-risk interpretation needing exact research passages. WHO session document is too broad a primary pointer; image remains held."
+    ],
+    "minamata-food-chain": [
+      "P0",
+      "verification needed",
+      "Registry source correction is retained. Expanded feature adds symptom, prenatal, stigma, treaty and precaution claims beyond the brief. Map them individually and reconcile feature updated date with 1 October registry before a future substantive feature pass."
+    ],
+    "times-beach-dioxin": [
+      "P1",
+      "light edit",
+      "Readable separation of oil contamination, flood and relocation. Check sampling/flood timing and more-than-2000 population definition against EPA history; retain uncertainty instead of implying all residents had identical advice or choices."
+    ],
+    "great-molasses-flood": [
+      "P0",
+      "verification needed",
+      "Industrial framing avoids novelty clickbait. Tank built quickly, leaked from beginning and modern engineering counterfactual exceed what a general spill article may establish; seek engineering/litigation record. Verify casualty and volume units."
+    ],
+    "therac-25": [
+      "P0",
+      "substantial revision",
+      "Corrected commercial-availability/clinical-use timeline and added a specific Hamilton display example with unresolved cause preserved. Narrowed universal warning-signal wording and removed singular-fault causal conclusion. Complete multi-part technical review and image hold remain open."
+    ],
+    "aral-sea": [
+      "P0",
+      "verification needed",
+      "Northern/southern distinction is strong. Feature climate, health, canal-loss and livelihoods claims require sources beyond satellite imagery. Keep 2014 eastern-basin observation dated; do not imply a permanently dry or uniform whole sea."
+    ],
+    "banqiao-dam-failure": [
+      "P0",
+      "verification needed",
+      "Distinctive cascade question, but far-more aftermath deaths lacks named estimate/method. The reviewed same-slug draft appropriately separates weather modelling from engineering and mortality evidence; do not substitute or approve it automatically."
+    ],
+    "petrov-false-alarm": [
+      "P1",
+      "verification needed",
+      "Avoids certain nuclear-war prevention claim and correctly separates reporting from launch control. Map radar corroboration and high-cloud explanation to the Chatham House case passage; primary corroboration still needed."
+    ],
+    "vela-incident": [
+      "P0",
+      "verification needed",
+      "Uncertainty and attribution are restrained. CIA search page is discovery, not an identifiable supporting document. Locate specific sensor/panel records before treating the double-flash explanation as verified."
+    ],
+    "move-bombing": [
+      "P0",
+      "verification needed",
+      "Finding-aid boundary is correctly disclosed. Obtain actual 1986 Commission text for tactical reasoning/command failures and exact 61 homes. Root inspected 2022 city report pp1–2 (PDF pages6–7), with scope limit p73: victims’ remains, not a new bombing inquiry. Its p2 quotes Commission indirectly."
+    ],
+    "ss-eastland": [
+      "P1",
+      "verification needed",
+      "Readable dockside framing. Confirm 844 total, demographic description and loading/stability implications against archival/technical records. Prior source-host access issue remains unresolved in this pass."
+    ],
+    "iraq-poison-grain": [
+      "P0",
+      "substantial revision",
+      "Replaced generic mercury source with 1976 incident-specific abstract; now gives hospital denominator, outpatient boundary and attributed latency interpretation. Removed shipment/warning claims pending full-study/distribution evidence. Same-slug draft remains review."
+    ],
+    "uss-akron": [
+      "P1",
+      "verification needed",
+      "Preserves correction separating Akron from the program’s later end. Check life-saving equipment, survivor recovery and deadliest comparative claim; Navy source had unresolved direct access in prior notes."
+    ],
+    "flight-629-suitcase-bomb": [
+      "P1",
+      "verification needed",
+      "Clear event and bounded policy implications. Check insurance purchase/validity, confession and exact conviction against FBI account and legal record; avoid treating motive as fully established by one retrospective."
+    ],
+    "centralia-underground-fire": [
+      "P1",
+      "keep",
+      "Narrow state chronology framing avoids unsupported map-erasure story and distinguishes residents’ experiences from official actions. Confirm fire-origin uncertainty, acquisition scope and any present-tense fire claim before expanding."
+    ]
+  },
+  "draftReviews": {
+    "iraq-poison-grain": [
+      "P0",
+      "light edit",
+      "Fully read; removed three repeated interpretive paragraphs only. All metadata/review state bytes preserved. Abstract reinspected; complete scanned study and distribution/warning evidence remain unread."
+    ],
+    "banqiao-dam-failure": [
+      "P0",
+      "verification needed",
+      "Fully read; rainfall model is correctly separated from engineering responsibility and mortality counts. Repetition in weather/model boundaries can be tightened later. No source reinspection this pass."
+    ],
+    "yodogo-hijacking": [
+      "P0",
+      "verification needed",
+      "Fully read; useful separation of 1970 event, 2002 testimony and 2019 source. NPA paragraph reinspected. Independent route chronology, translation and current legal status remain open."
+    ],
+    "goiania-accident-record": [
+      "P1",
+      "proposed consolidation",
+      "Fully read reporting plan; overlaps existing Goiânia feature despite different slug. Wikipedia/Wikidata orientation only; reconcile scope and preserve source discovery history before any editorial consolidation."
+    ],
+    "therac-25-record": [
+      "P1",
+      "proposed consolidation",
+      "Fully read reporting plan; overlaps existing technical feature. Generic public-health prompts should become incident-specific questions anchored to engineering study. No deletion or state transition."
+    ],
+    "wirecard-record": [
+      "P1",
+      "proposed consolidation",
+      "Fully read reporting plan; distinguish company history from existing collapse feature and Wirecard-scandal plan. Two orientation sources do not establish narrative facts."
+    ],
+    "wirecard-scandal-record": [
+      "P1",
+      "proposed consolidation",
+      "Fully read reporting plan; overlaps collapse feature and company plan. Preserve distinct discovery identifiers, then choose one publication scope; no merge/deletion authorized."
+    ],
+    "challenger-warning-and-decision": [
+      "P0",
+      "light edit",
+      "Fully read; Named Thiokol and the predicted O-ring temperature boundary explicitly, added exact Commission locators and tightened testimony-versus-finding attribution. Peer review caught and corrected the initial ambiguity between seal and ambient temperature before integration. Named human editor and technical review remain open; do not infer every participant shared one motive or expand O-ring mechanism without a separate technical pass. Exact passages and source scope: docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json"
+    ],
+    "columbia-evidence-not-requested": [
+      "P0",
+      "light edit",
+      "Fully read; Specified the thermal-tile/RCC scope of F3.4-6, clarified the imagery-request antecedent, added exact finding links and removed a repetitive closing paragraph. Complete imagery-request chronology and supporting exhibits still need human review. No repair/rescue feasibility claim is established; historical agency summary is not independent corroboration. Exact passages and source scope: docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json"
+    ],
+    "dhahran-running-clock": [
+      "P0",
+      "light edit",
+      "Fully read; Specified that the battery did not engage the Scud, retained casualty attribution and added the dated software-release/warning/arrival sequence from printed page 9. Technical editor to review the explanatory interpretation; no overall system effectiveness or precise numerical drift calculation is supplied. Direct GAO binary download failed; page-image review used the recorded mirror. Exact passages and source scope: docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json"
+    ],
+    "1mdb-global-trail": [
+      "P0",
+      "verification needed",
+      "Fully read; Removed a seizure implication, gave separate dated alleged-diversion and recovery-request figures, and added a specifically bounded 2019 civil settlement. Kept all current-outcome and individual-liability claims out of the text. Obtain a readable underlying forfeiture complaint and trace one alleged transfer with account/date/amount references; the garbled jet PDF did not satisfy this check. Read the 2019 settlement agreement and relevant individual disposition orders before claiming that a particular transaction was proved or a particular asset recovered. Verify later criminal and civil outcomes separately if extending beyond the dated releases; this draft is not a 2026 case-status account. If adding Equanimity, inspect the full June 15, 2017 announcement/complaint and later disposition; do not attribute the yacht to the July 2016 asset list. Named human author, editorial approval, visuals/rights and release checks remain pending. Exact passages and source scope: docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json"
+    ],
+    "parmalat-fictional-cash": [
+      "P0",
+      "verification needed",
+      "Fully read; Mapped the stated assets, bank, subsidiary and consolidation dates to complaint paragraph 16; replaced a repeated warning with the dated 2004 consent and its court-entry condition. Inspect the entered judgment and any later adjudicated findings before describing the 2004 proposed settlement as entered or the allegations as proved. Compare the amended complaint and later judgments with the original account before reconciling changing cash, asset and debt totals. If assigning responsibility for the confirmation, inspect primary audit correspondence and relevant adjudications; the draft does not establish who forged or accepted it. Named human author, editorial approval, visuals/rights and release checks remain pending. Exact passages and source scope: docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json"
+    ],
+    "toshiba-impossible-targets": [
+      "P0",
+      "verification needed",
+      "Fully read; Replaced repeated general discussion with the Visual Products invoice-timing example and a case-specific distinction between business-unit instructions and corporate oversight. Added the translation hierarchy and retained the limits of the inquiry. Compare the Japanese original for the cited Chapter 4 passages before final wording; only the reference translation was inspected. Verify any future overstatement amount and period against the relevant tables and later restated accounts; no new total is claimed here. Keep corporate oversight and business-unit instructions distinct; do not extend the Chapter 4 negative evidence statement to all Toshiba practices or executives. Account for the inquiry limitations: missing earlier materials, unavailable former personnel, and carry-over classifications requiring judgment. Named human author, editorial approval, visuals/rights and release checks remain pending. Exact passages and source scope: docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json"
+    ],
+    "bhopal-where-the-shift-ends": [
+      "P0",
+      "verification needed",
+      "Fully read; Make offsite safety scope an explicit editorial question rather than imply an independently reconstructed worker/responder exposure map. Separate exposure, injury and fatality totals and require compatible time windows and populations. Identify ILO's 2004 retrospective scope and remove an unsupported generalization about the usual endpoint of industrial timelines. State that settlement, current contamination and present-day health claims need their own evidence. Named human editor must review the body and assign the real author; existing approval, checklist and publication HOLD remain unchanged. Before adding numbers, use clearly defined source-specific casualty populations and time periods, with independent primary epidemiological evidence. Any current health, environmental or legal assertion needs separate contemporary records; no such claim was verified here. An editor should compare the ILO account with original technical investigations before expanding the causal reconstruction. Exact passages and source scope: docs/DRAFT_REVIEW_HEALTH_2026-10-16.json"
+    ],
+    "tuskegee-observation-is-intervention": [
+      "P0",
+      "verification needed",
+      "Fully read; Separate the study period from the cohort total; do not assert that all 600 men enrolled at one moment in 1932. State CDC's explicit no-deliberate-infection distinction and identify the initial case/control groups. Replace a repeated group-count paragraph with the advisory panel's documented distinction between outside therapy and study-offered treatment, with direct primary-report link and printed page locators. Use level-two article headings and align the ending with the qualified treatment account. Named human editor must review the primary report, its qualifications and addenda; no checklist item or approval state is marked complete. The newly linked panel report is documented here without rewriting the preserved frontmatter source-verification history; a human editor should reconcile the source list before release. Individual treatment adequacy and patient outcomes were not reconstructed. Do not add claims about current mistrust or health behavior without separate evidence and community perspectives. Exact passages and source scope: docs/DRAFT_REVIEW_HEALTH_2026-10-16.json"
+    ],
+    "seveso-boundary-of-the-factory": [
+      "P0",
+      "verification needed",
+      "Fully read; Consolidate the approximate time, TCDD-containing release duration and communication account into the attributed opening. Replace repeated chronology with an explicit release-duration versus personal exposure/dose boundary. Ground the safeguard analysis in HSE's specific account of absent discharge collection/destruction equipment and an unfitted recovery receiver. Identify HSE's retrospective source scope, require separate resident-response evidence and use level-two article headings. Named human editor must review and approve the body; approval, source-verification history and publication HOLD remain unchanged. Original plant/technical investigation records are needed for an independent vent-system or causal reconstruction; the cited Lees text was not independently inspected. Evacuation chronology, individual dose and long-term health outcomes require their own primary records or studies. No source in this pass verifies subsequent legislative history or residents' specific instructions and experience. Exact passages and source scope: docs/DRAFT_REVIEW_HEALTH_2026-10-16.json"
+    ],
+    "vela-incident": [
+      "P0",
+      "verification needed",
+      "Fully read; Replaced repetitive caution with the exact memorandum and panel dates, Arecibo corroboration limit, modeled meteoroid distinction, and specific recommended further work; retained unresolved status and avoided actor or cover-up attribution. Compare later declassified assessments by date and method; no conclusion about the full subsequent record was reached. Assign a real author and obtain named human editorial approval, metadata approval, and release approval. Exact passages and source scope: docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json"
+    ],
+    "ethiopian-airlines-961": [
+      "P0",
+      "verification needed",
+      "Fully read; Made recorder coverage and report date explicit; replaced general life-jacket wording with the report's particular observation and retained limits on comprehension, cabin preparation and individual fatality causation. Confirm repository copy against the authoritative report and inspect relevant page images before adding disputed transcripts, exact timing or table-derived findings. The reviewed life-jacket observations do not quantify a causal share of fatalities. Assign a real author and obtain named human editorial approval, metadata approval, and release approval. Exact passages and source scope: docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json"
+    ],
+    "great-molasses-flood": [
+      "P0",
+      "verification needed",
+      "Fully read; Corrected tank-contents versus released-volume wording; attributed provisional versus later death counts; made lower-bound volume comparison explicit; replaced repetitive scale discussion with research-scope and primary-record limits. Inspect original newspaper pages and casualty records before expanding detailed human accounts. Read the actual tank engineering investigation and civil-trial record; catalogues and retrospective legal summaries were not accepted as causal evidence. Obtain complete fluid-mechanics research before using wave-speed, viscosity, temperature or failure-cause estimates. Assign a real author and obtain named human editorial approval, metadata approval, and release approval. Exact passages and source scope: docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json"
+    ]
+  },
+  "knownSubjectOverlaps": {
+    "goiania-accident-record": "goiania-blue-powder",
+    "therac-25-record": "therac-25",
+    "wirecard-record": "wirecard-missing-billions",
+    "wirecard-scandal-record": "wirecard-missing-billions"
+  },
+  "remainingQueue": [
+    "P0 unread draft batch: satyam-confession, olympus-two-decade-coverup, enron-reading-the-entity and barings-control-and-prestige; map allegations and responsibility to exact dated records.",
+    "P0 unread draft batch: love-canal-home-as-evidence, london-smog-ordinary-fuel, windscale-long-after-fire and aberfan-landscape-of-authority; separate exposure, mortality, engineering and present-tense claims.",
+    "P0 unread draft batch: hyatt-load-path, flixborough-temporary-pipe, station-nightclub-available-seconds and triangle-exits-and-power; inspect original investigation findings before causal or quantitative expansion.",
+    "P0 reviewed draft follow-up: readable 1MDB transaction complaint and disposition orders; Parmalat entered judgment; Toshiba Japanese original; later Vela records; Ethiopian report page-image validation; Boston engineering/court record; original Bhopal/Seveso investigations; Tuskegee qualifications and individual-treatment boundary.",
+    "P0 previous review follow-up: full Iraq study, Banqiao engineering/mortality sources and independent Yodogo chronology. Reader MOVE, Lake Nyos, Minamata and Aral Sea source work remains separately open.",
+    "P1: Resolve known differently-slugged subject overlaps before claiming a distinct-subject total or commissioning duplicate expansions.",
+    "Continue the other 3226 drafts in machine risk/value order; a metadata priority is not a truth or publication judgment."
+  ],
+  "draftReviewReceipts": [
+    "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+    "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+    "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+    "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json"
+  ],
+  "revisedDrafts": [
+    "1mdb-global-trail",
+    "bhopal-where-the-shift-ends",
+    "challenger-warning-and-decision",
+    "columbia-evidence-not-requested",
+    "dhahran-running-clock",
+    "ethiopian-airlines-961",
+    "great-molasses-flood",
+    "iraq-poison-grain",
+    "parmalat-fictional-cash",
+    "seveso-boundary-of-the-factory",
+    "toshiba-impossible-targets",
+    "tuskegee-observation-is-intervention",
+    "vela-incident"
+  ]
+}

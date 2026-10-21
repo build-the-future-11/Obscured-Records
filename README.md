@@ -1,5 +1,7 @@
 # Obscured Records
 
+**Local candidate, 16 October 2026:** reader navigation, SEO metadata, five reader-record revisions and 13 draft revisions are implemented but not deployed. Full-text review covers 19 of 3,245 drafts; all 355 bounded tests pass. See the [reader-improvement handoff](docs/READER_IMPROVEMENTS_2026-10-16.md) and [editorial queue](docs/EDITORIAL_CHANGELOG_2026-10-16.md) for source limits, remaining review and blocked build/browser verification. The deployment receipts below describe the preceding release; public launch remains HOLD.
+
 **16 October 2026:** owner-private **version 27** is deployed. The website repairs editorial scaling and approval integrity, member-library reliability, keyboard search and image delivery; **331 tests and 78 live checks pass**. Start with [canonical project state](PROJECT_STATE.json), [current status](STATUS.md) and the [completion checklist and evidence](docs/WEBSITE_COMPLETION_2026-10-16.md). All 28 reader records and 3,245 unapproved private drafts (3,000 reporting plans) are preserved. Public launch remains on HOLD for the documented human and operational gates.
 
 The dated summaries below preserve earlier results; they are not the current release identity.

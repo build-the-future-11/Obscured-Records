@@ -5,10 +5,13 @@ import { createHash } from "node:crypto";
 // Deliberate allowlist: additions need review, rather than embedding arbitrary
 // files discovered in public/. Existing source bytes are never modified.
 const filenames = [
+  "apollo-1-illustration-480.webp", "apollo-1-illustration-960.webp", "apollo-1-illustration.webp",
   "fedex-705-480.webp", "fedex-705-960.webp", "fedex-705.webp",
   "goiania-source-480.webp", "goiania-source-960.webp", "goiania-source.webp",
+  "ixtoc-1-illustration-480.webp", "ixtoc-1-illustration-960.webp", "ixtoc-1-illustration.webp",
   "lake-nyos-480.webp", "lake-nyos.webp",
   "therac-25-480.webp", "therac-25.webp",
+  "triangle-factory-illustration-480.webp", "triangle-factory-illustration-960.webp", "triangle-factory-illustration.webp",
   "wirecard-480.webp", "wirecard-960.webp", "wirecard.webp",
 ];
 const publicDirectory = path.resolve("public");

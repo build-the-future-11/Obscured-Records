@@ -15,6 +15,24 @@ const sectionLinks = [
   ["Science", "/science"], ["Culture", "/culture"], ["Underreported", "/underreported"],
 ];
 
+export function SectionMenu({ sections }: { sections: readonly string[] }) {
+  const disclosure = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    const outside = (event: PointerEvent) => {
+      if (event.target instanceof Node && !disclosure.current?.contains(event.target) && disclosure.current) disclosure.current.open = false;
+    };
+    document.addEventListener("pointerdown", outside);
+    return () => document.removeEventListener("pointerdown", outside);
+  }, []);
+  return <details ref={disclosure} className="section-nav" onKeyDown={(event) => {
+    if (event.key === "Escape" && disclosure.current?.open) {
+      event.preventDefault(); disclosure.current.open = false; disclosure.current.querySelector("summary")?.focus();
+    }
+  }} onBlur={(event) => {
+    if (!event.currentTarget.contains(event.relatedTarget) && disclosure.current) disclosure.current.open = false;
+  }}><summary>Sections</summary><div>{sections.map((section) => <Link key={section} href={`/${section.toLowerCase()}`} onClick={() => { if (disclosure.current) disclosure.current.open = false; }}>{section}</Link>)}</div></details>;
+}
+
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
   const dialogId = useId();
@@ -77,7 +95,7 @@ export function MobileMenu() {
       <div className="menu-panel-top"><span>Browse the record</span><button type="button" aria-label="Close menu" onClick={() => setOpen(false)}><X /></button></div>
       <nav>{sectionLinks.map(([label, href], index) => <Link key={href} href={href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{label}</Link>)}</nav>
       <div className="menu-panel-meta">
-        <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link><Link href="/archive" onClick={() => setOpen(false)}>Archive</Link><Link href="/topics" onClick={() => setOpen(false)}>Topics</Link><Link href="/series" onClick={() => setOpen(false)}>Reading series</Link><Link href="/authors" onClick={() => setOpen(false)}>Authors</Link><Link href="/saved" onClick={() => setOpen(false)}>Saved stories</Link>
+        <Link href="/latest" onClick={() => setOpen(false)}>Latest records</Link><Link href="/desks" onClick={() => setOpen(false)}>Editorial desks</Link><Link href="/archive" onClick={() => setOpen(false)}>Archive</Link><Link href="/topics" onClick={() => setOpen(false)}>Topics</Link><Link href="/series" onClick={() => setOpen(false)}>Reading series</Link><Link href="/authors" onClick={() => setOpen(false)}>Authors</Link><Link href="/saved" onClick={() => setOpen(false)}>Saved stories</Link>
         <Link href="/membership" onClick={() => setOpen(false)}>Membership</Link>
         <Link href="/search" onClick={() => setOpen(false)}><Search /> Search the archive</Link>
         <Link href="/newsletter" onClick={() => setOpen(false)}>Newsletter waitlist</Link>
@@ -115,6 +133,7 @@ export function ReadingProgress() {
 }
 
 export function ShareTools({ title, url }: { title: string; url: string }) {
+  const fallbackId = useId();
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState("");
   const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -145,7 +164,7 @@ export function ShareTools({ title, url }: { title: string; url: string }) {
       catch { success = false; }
       finally { input.remove(); returnFocus?.focus(); }
     }
-    if (!success) { setCopyError("Copy unavailable. Copy the address from your browser."); return; }
+    if (!success) { setCopyError("Copy unavailable. Select and copy the canonical article link below."); return; }
     setCopied(true);
     editorialEvent("share", { action: "copy" });
     resetTimer.current = setTimeout(() => setCopied(false), 1800);
@@ -159,7 +178,7 @@ export function ShareTools({ title, url }: { title: string; url: string }) {
     <a href={links.x} target="_blank" rel="noreferrer" aria-label="Share on X" title="Share on X"><Send /></a>
     <a href={links.whatsapp} target="_blank" rel="noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp"><MessageCircle /></a>
     {copied && <small role="status">Copied</small>}
-    {copyError && <small role="alert">{copyError}</small>}
+    {copyError && <div className="share-copy-fallback"><small id={`${fallbackId}-help`} role="alert">{copyError}</small><label htmlFor={fallbackId}>Article link</label><input id={fallbackId} type="text" value={url} readOnly aria-describedby={`${fallbackId}-help`} onFocus={(event) => event.currentTarget.select()} onClick={(event) => event.currentTarget.select()} /></div>}
   </aside>;
 }
 

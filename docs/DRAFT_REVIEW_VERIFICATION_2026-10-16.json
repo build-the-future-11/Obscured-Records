@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-16T06:47:57.640571+00:00",
+  "state": "IMPLEMENTED_WITH_BOUNDED_VERIFICATION",
+  "scope": "Local high-risk draft continuation; not complete corpus verification, human editorial approval, publication or deployment.",
+  "identity": {
+    "repository": "https://github.com/build-the-future-11/Obscured-Records.git",
+    "branch": "codex/website-completion-20261016",
+    "startingRevision": "831471f11d517f769f2216024dc720ac9f8f4bd8",
+    "sourceDigest": "055b701a3ed63e068c7e0f8db2c0c886f3c7f91413b54787ee024295b124ba63",
+    "sourceDigestScript": "scripts/source-identity.mjs",
+    "sourceDigestScope": "app, components, lib, content, db, drizzle, public, scripts and selected build/package config; documentation excluded and separately hashed below.",
+    "commitsCreated": 0,
+    "preExistingUntrackedDirectory": "verification/"
+  },
+  "priorPass": {
+    "receipt": {
+      "path": "docs/READER_VERIFICATION_2026-10-16.json",
+      "sha256": "5a643796ba9b25d768813882ccbc9e6b3945908497927f4184229842f742bc80"
+    },
+    "sourceDigest": "85e6a7674336162c0509e5df8e5361f40dcad360d0a35175e56ffd0bd9f13da4",
+    "tests": 352,
+    "boundary": "Unmodified prior first-pass evidence; does not identify the current draft continuation."
+  },
+  "environment": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": "v26.8.2",
+    "npm": "11.19.1",
+    "dependencies": "Existing installation retained; package and lockfile byte-identical to HEAD.",
+    "testNodeHeapMiB": 128,
+    "testConcurrency": 1,
+    "node22Execution": "UNRUN"
+  },
+  "checks": [
+    {
+      "name": "Full Node test suite",
+      "status": "PASS",
+      "command": "rtk proxy env NODE_OPTIONS=--max-old-space-size=128 npm test -- --test-concurrency=1",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/tests-02.log",
+        "sha256": "c74c6f2617d22626f63c15d9bf911d5da03a52bac62af0f4fdd7a7d43be085f9"
+      },
+      "tests": 355,
+      "passed": 355,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 15081.173125
+    },
+    {
+      "name": "Draft evidence tests after final receipt locator correction",
+      "status": "PASS",
+      "command": "rtk proxy node --max-old-space-size=128 --experimental-strip-types --test --test-concurrency=1 scripts/draft-review-continuation.test.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/tests-03-targeted.log",
+        "sha256": "5802184458bdc103c9e4aa6b016c5b7ebd8b2b43608323bf164d428f89d04fb7"
+      },
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "scope": "Exact current draft/frontmatter/frozen-body hashes, claim passages, source scope and coverage; receipt-only CDC FAQ locator corrected after full suite."
+    },
+    {
+      "name": "Editorial integrity",
+      "status": "PASS",
+      "command": "rtk proxy env NODE_OPTIONS=--max-old-space-size=128 npm run check:editorial",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/editorial.log",
+        "sha256": "fa7561a63f283b5b10d61941929fd96600af11f8facc7df024546e3d61548bae"
+      },
+      "readerRecords": 28,
+      "unpublishedDrafts": 3245,
+      "draftWords": 2955957,
+      "uniqueSlugKeys": 3253,
+      "semanticDistinctSubjectCount": null
+    },
+    {
+      "name": "Project-state consistency",
+      "status": "PASS",
+      "command": "rtk proxy env NODE_OPTIONS=--max-old-space-size=128 npm run check:state",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/state.log",
+        "sha256": "48dc10443259f22a4c561b8684e353fceb9524988157f52f921302b066db6603"
+      },
+      "boundary": "Structural consistency only; all eight acceptance gates remain OPEN, launch HOLD."
+    },
+    {
+      "name": "Focused ESLint",
+      "status": "PASS",
+      "command": "rtk proxy node --max-old-space-size=128 node_modules/eslint/bin/eslint.js <31 changed/new JavaScript and TypeScript files listed here>",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/targeted-lint.log",
+        "sha256": "c54a55a9e7fbaec78101e63fe2089ec776300b8d52775e853c1860de7ca9ba61"
+      },
+      "files": [
+        "app/article/[slug]/page.tsx",
+        "app/news-sitemap.xml/route.ts",
+        "app/rss.xml/route.ts",
+        "app/sitemap.ts",
+        "components/archive-browser.tsx",
+        "components/editorial.tsx",
+        "components/publication-client.tsx",
+        "components/search-palette.tsx",
+        "components/story-card.tsx",
+        "lib/article-metadata.ts",
+        "lib/articles.ts",
+        "lib/catalog-filter.ts",
+        "lib/corrections.ts",
+        "lib/features.ts",
+        "lib/site.ts",
+        "scripts/article-metadata.test.mjs",
+        "scripts/browser-smoke.mjs",
+        "scripts/catalog.test.mjs",
+        "scripts/content-index.mjs",
+        "scripts/draft-review-continuation.test.mjs",
+        "scripts/editorial-audit.mjs",
+        "scripts/editorial-integrity.mjs",
+        "scripts/editorial-revision.test.mjs",
+        "scripts/import-review-manuscripts.mjs",
+        "scripts/local-smoke-environment.mjs",
+        "scripts/local-smoke-environment.test.mjs",
+        "scripts/next-runtime-smoke.mjs",
+        "scripts/review-revisions.mjs",
+        "scripts/review-revisions.test.mjs",
+        "scripts/review-transfer.test.mjs",
+        "scripts/route-inventory.mjs"
+      ],
+      "excluded": "Generated projections and pre-existing verification directory; full repository lint UNRUN."
+    },
+    {
+      "name": "Draft projection regeneration",
+      "status": "PASS",
+      "command": "rtk proxy node --max-old-space-size=96 scripts/generate-editorial-drafts.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/generation.log",
+        "sha256": "3d2a4a98aded8b168cf45fc3ac815e726da1b5d0fbd0e854c646aac75931005f"
+      },
+      "summaries": 3245,
+      "manuscriptShards": 64
+    },
+    {
+      "name": "Editorial inventory regeneration",
+      "status": "PASS",
+      "command": "rtk proxy node --max-old-space-size=96 --experimental-strip-types scripts/editorial-audit.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/audit.log",
+        "sha256": "6380360e7b71ac02c665c46af68d73cd9256b75c1ab333b79ea6813be4ed1543"
+      },
+      "fullTextDraftAudits": 19,
+      "machineOnlyDrafts": 3226,
+      "companionDiscrepancies": 0
+    },
+    {
+      "name": "Diff whitespace/error check",
+      "status": "PASS",
+      "command": "rtk proxy git diff --check",
+      "exitCode": 0,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/diff-check.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "Preserved source/release inputs",
+      "status": "PASS",
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/source-identity.json",
+        "sha256": "e7a6a504dafebe8fa174a21e0000619ba6cf02dab27f9226990b78e0a8bd0af6"
+      },
+      "preserved": {
+        "package.json": {
+          "unchanged": true,
+          "sha256": "d34d394befcc2b6a413948878c9d47ed6a92080d2158b368838a398de72506b3"
+        },
+        "package-lock.json": {
+          "unchanged": true,
+          "sha256": "90f365bb1db0e38d8b4b587d5755ad9e390f67009964cda813f9263c5863ed8c"
+        },
+        "app/layout.tsx": {
+          "unchanged": true,
+          "sha256": "5652052abc6b2c741549abb0e1908770e305aebe12504ddba84d1604221fd97a"
+        },
+        "content/review-manuscripts.json": {
+          "unchanged": true,
+          "sha256": "d12c5e7d15e24430fe4d490a4b987820678cc0c016e4949e79c66d91d661c14e"
+        }
+      },
+      "projectStateChanges": [
+        {
+          "path": "content.draftWords",
+          "before": 2955688,
+          "after": 2955957
+        }
+      ],
+      "priorVerificationReceiptUnchanged": true
+    }
+  ],
+  "retainedFailures": [
+    {
+      "name": "First continuation integration test run",
+      "status": "FAIL_RESOLVED_IN_SEPARATE_RERUN",
+      "tests": 355,
+      "passed": 354,
+      "failed": 1,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/tests-01.log",
+        "sha256": "3ef2520c7d6c72c8756ed0f390b12b817ac1930c87f2165ab11d0270b0492199"
+      },
+      "cause": "Incident source records used sourceURL/outcome/type names instead of url/inspection/sourceType; new exact claim-map test rejected undefined URL.",
+      "repair": "Normalized receipt field names without changing inspected evidence or manuscript text; added explicit source URL presence assertion.",
+      "beforeReceipt": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/incident-receipt-before-source-schema.json",
+        "sha256": "2664b98544ca3f5a9f01a743c1a81a1ce56c911869a83438ff6226932b503670"
+      },
+      "rerun": "tests-02.log"
+    },
+    {
+      "name": "Initial receipt preflight hash mismatch",
+      "status": "RESOLVED_BEFORE_INTEGRATION_WRITE",
+      "cause": "Health receipt body hashes included surrounding whitespace; revision contract hashes normalize CRLF and trim body.",
+      "repair": "Retained raw hashes as sourceBodyRawSha256 and revisedBodyRawSha256, and computed normalized hashes from saved originals/current bodies. File and frontmatter hashes were already correct.",
+      "evidence": "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+      "boundary": "Preflight failure was observed in tool output; no separate local failure log was captured."
+    }
+  ],
+  "resourceAdmission": {
+    "status": "BLOCKED",
+    "rule": "REPRODUCE.md:15",
+    "minimumFreePlusSpeculativeMiB": 512,
+    "requirement": "At least 512 MiB free plus speculative memory and safe pageout pressure before installs, full typecheck, builds or browser processes.",
+    "samples": [
+      {
+        "freePages": 3560,
+        "speculativePages": 6949,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 164.203125,
+        "pageouts": 1053229,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-01.txt",
+          "sha256": "e963d4fed56d5fbf5d70d8220e1dadeaa47428f441a900440b401b820a3e2cc4"
+        }
+      },
+      {
+        "freePages": 5799,
+        "speculativePages": 3332,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 142.671875,
+        "pageouts": 1054773,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-02.txt",
+          "sha256": "b1bb8885c9ed2f5a67224fecd91aed162af229e96ab7d2a288d26fd990ef2c68"
+        }
+      },
+      {
+        "freePages": 5127,
+        "speculativePages": 3064,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 127.984375,
+        "pageouts": 1055350,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-03.txt",
+          "sha256": "a4703a43b7145eb3a0f30ba7920896299a79ff321aed4fd219646cbefbe6439e"
+        }
+      },
+      {
+        "freePages": 6494,
+        "speculativePages": 3416,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 154.84375,
+        "pageouts": 1057125,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-04.txt",
+          "sha256": "5276d26a0ccdc4d4a8c441288ce3e5c6066dd550335e2ef318a51cedc96bf170"
+        }
+      },
+      {
+        "freePages": 4088,
+        "speculativePages": 4295,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 130.984375,
+        "pageouts": 1058674,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-05.txt",
+          "sha256": "6858e949566049004fe022956addba995d2b8bf7b7ee337a85c1f751826fa5bb"
+        }
+      },
+      {
+        "freePages": 3499,
+        "speculativePages": 6615,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 158.03125,
+        "pageouts": 1061347,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-06.txt",
+          "sha256": "f8ff923474847f93f309bd9d7fa115a33abea39193fc49a969c90bcab6695f87"
+        }
+      },
+      {
+        "freePages": 4122,
+        "speculativePages": 4395,
+        "pageBytes": 16384,
+        "freePlusSpeculativeMiB": 133.078125,
+        "pageouts": 1063505,
+        "log": {
+          "path": ".cache/ux-seo-editorial-20261016-continuation/memory-07.txt",
+          "sha256": "5605fd96090b55d6bd53f5a51a5a22d31ab33bd3f315acb6107ef7447a538e7c"
+        }
+      }
+    ],
+    "latest": {
+      "freePages": 4122,
+      "speculativePages": 4395,
+      "pageBytes": 16384,
+      "freePlusSpeculativeMiB": 133.078125,
+      "pageouts": 1063505,
+      "log": {
+        "path": ".cache/ux-seo-editorial-20261016-continuation/memory-07.txt",
+        "sha256": "5605fd96090b55d6bd53f5a51a5a22d31ab33bd3f315acb6107ef7447a538e7c"
+      }
+    },
+    "pageoutsIncreasedAcrossRecordedSamples": true,
+    "noUnrelatedProcessesStopped": true
+  },
+  "blockedChecks": [
+    {
+      "command": "npm run install:ci",
+      "status": "BLOCKED",
+      "reason": "Resource admission; existing locked installation retained."
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "BLOCKED",
+      "reason": "Resource admission."
+    },
+    {
+      "command": "npm run build",
+      "status": "BLOCKED",
+      "reason": "Resource admission; no new Workers/Vinext build."
+    },
+    {
+      "command": "npm run build:vercel",
+      "status": "BLOCKED",
+      "reason": "Resource admission; no new Next/Vercel build."
+    },
+    {
+      "command": "node scripts/workers-intake-smoke.mjs",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Workers build and resource admission required."
+    },
+    {
+      "command": "node scripts/next-runtime-smoke.mjs",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Next build and resource admission required."
+    },
+    {
+      "command": "npm run smoke:browser",
+      "status": "BLOCKED",
+      "reason": "Fresh matching Next build and resource admission required; installed Playwright/axe and Chrome were located but not launched."
+    }
+  ],
+  "unrunChecks": [
+    {
+      "name": "Full repository ESLint",
+      "command": "npm run lint",
+      "status": "UNRUN",
+      "reason": "Resource constraint; focused lint is separate evidence."
+    },
+    {
+      "name": "Relaunch smoke",
+      "command": "npm run smoke:relaunch",
+      "status": "UNRUN",
+      "reason": "Requires HTTPS origin and immutable deployed SHA; publishing/deployment prohibited for this request."
+    },
+    {
+      "name": "Browser UI screenshots, runtime HTTP, console/network and interaction review",
+      "status": "UNRUN"
+    },
+    {
+      "name": "Manual keyboard, zoom, screen-reader and physical-device review",
+      "status": "UNRUN"
+    },
+    {
+      "name": "Lighthouse and field Core Web Vitals",
+      "status": "UNRUN",
+      "measurements": null
+    }
+  ],
+  "editorial": {
+    "additionalDraftsFullyRead": 12,
+    "additionalDraftsRevised": 12,
+    "additionalExactClaimPassages": 59,
+    "additionalInspectedSourceRecords": 19,
+    "additionalIncompleteFinancialRetrievalRecords": 2,
+    "sourceScope": "Receipts distinguish inspected prose/page images, excluded or incomplete retrievals, uncertainty and required follow-up. Neither source reachability nor AI review establishes complete fact verification.",
+    "readerFullTextAudits": 28,
+    "readerFeatures": 8,
+    "readerBriefs": 20,
+    "draftFullTextAudits": 19,
+    "draftMetadataOnly": 3226,
+    "draftsRevisedAcrossBothPasses": 13,
+    "readerRevisionsAcrossBothPasses": 5,
+    "draftWordsBeforeContinuation": 2955688,
+    "draftWordsAfterContinuation": 2955957,
+    "frontmatterOfAll12ContinuationDraftsBytePreserved": true,
+    "humanApprovalChanges": 0,
+    "publicationStateChanges": 0,
+    "sourceStatusUpgrades": 0,
+    "completedChecklistUpgrades": 0,
+    "state": "NEEDS EDITOR REVIEW",
+    "remainingCorpusReview": "INCOMPLETE",
+    "draftReviewReceipts": [
+      {
+        "path": "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+        "sha256": "df4fb8a4becce3e87f75602ff1e59b97e94d213b68fda413fb774f22715887e9"
+      },
+      {
+        "path": "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+        "sha256": "4d67c0c3b60ed7fe5c10f12370dd036512ac118d7e3067ac59e5e6aa20704534"
+      },
+      {
+        "path": "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+        "sha256": "4d657d16e736c19162bec7148fd6a0cc17f1d1043c7a0cb61ddc799c843e0c71"
+      },
+      {
+        "path": "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json",
+        "sha256": "4e43f8e8b91cac7110f3ae544134427853b349b6e640197a5c67883e7a1d8c96"
+      }
+    ],
+    "revisionManifest": {
+      "path": "content/review-local-revisions.json",
+      "sha256": "aff26f385d81a278053cc55153c5d339a3b7bcb9164fad40b683f08b322b2dcc"
+    },
+    "reviewRegistry": {
+      "path": "docs/EDITORIAL_REVIEW_2026-10-16.json",
+      "sha256": "f6cc6420322f49d76fad012ce4da5d1617ebe91735a584ee4553a2d2f1fa2b65"
+    },
+    "auditSummary": {
+      "path": "docs/ARTICLE_AUDIT_2026-10-16.json",
+      "sha256": "6380360e7b71ac02c665c46af68d73cd9256b75c1ab333b79ea6813be4ed1543"
+    },
+    "auditRows": {
+      "path": "docs/ARTICLE_AUDIT_2026-10-16.csv",
+      "sha256": "f40a1b35511e3b68c5dfec0fd8639d908f59f93dbd1eeee62a08d48422889025"
+    }
+  },
+  "peerReview": {
+    "kind": "AI source/receipt review, not human editorial acceptance",
+    "resolved": [
+      "Challenger 53 F threshold clarified as predicted O-ring temperature, not ambient temperature.",
+      "Tuskegee infection FAQ locator corrected to the inspected CDC heading.",
+      "Changelog import invariant updated to include all 13 exact-hash revisions."
+    ],
+    "scope": "Incident, health and aerospace source/claim spot checks plus aggregate receipt/approval consistency."
+  },
+  "discovery": {
+    "publicLaunch": "HOLD",
+    "rootNoindexPreserved": true,
+    "newReaderRoutes": 0,
+    "newPublicDrafts": 0
+  },
+  "externalActions": {
+    "pushes": 0,
+    "pullRequestsCreated": 0,
+    "merges": 0,
+    "deployments": 0,
+    "publications": 0,
+    "accessChanges": 0,
+    "messagesSent": 0,
+    "realEnrollments": 0,
+    "productionDatabaseWrites": 0,
+    "analyticsEnabled": 0,
+    "paidServicesEnabled": 0
+  },
+  "continuation": "docs/READER_IMPROVEMENTS_2026-10-16.md",
+  "editorialContinuation": "docs/EDITORIAL_CHANGELOG_2026-10-16.md",
+  "nextUnreadDrafts": [
+    "Satyam",
+    "Olympus",
+    "Enron",
+    "Barings"
+  ],
+  "nextQueueBoundary": "Consult the changelog and actual inventory for canonical filenames before opening subsequent drafts; this is a priority plan, not completed review.",
+  "evidenceBoundary": "Passing bounded tests, source hashes and fixture checks do not certify a current build, rendered UI, accessibility conformance, measured performance, complete historical fact verification, human editorial approval or release."
+}

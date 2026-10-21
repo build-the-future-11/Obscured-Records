@@ -152,7 +152,7 @@ export const portalProgramEnrollments = sqliteTable("portal_program_enrollments"
 
 export const portalEvents = sqliteTable("portal_events", {
   id: text("id").primaryKey(), title: text("title").notNull(), description: text("description").notNull(),
-  startsAt: text("starts_at").notNull(), location: text("location").notNull(), status: text("status").notNull().default("draft"),
+  capacity: integer("capacity"), startsAt: text("starts_at").notNull(), location: text("location").notNull(), status: text("status").notNull().default("draft"),
   createdBy: text("created_by").notNull(), createdAt: text("created_at").notNull(), updatedAt: text("updated_at").notNull(),
 });
 
@@ -184,7 +184,7 @@ export const portalComments = sqliteTable("portal_comments", {
 
 export const portalResources = sqliteTable("portal_resources", {
   id: text("id").primaryKey(), title: text("title").notNull(), description: text("description").notNull(), url: text("url").notNull(),
-  path: text("path").notNull(), status: text("status").notNull().default("draft"), createdBy: text("created_by").notNull(), createdAt: text("created_at").notNull(),
+  position: integer("position").notNull().default(0), path: text("path").notNull(), status: text("status").notNull().default("draft"), createdBy: text("created_by").notNull(), createdAt: text("created_at").notNull(),
 });
 
 export const portalLearningProgress = sqliteTable("portal_learning_progress", {
@@ -253,3 +253,22 @@ export const portalAchievements = sqliteTable("portal_achievements", {
 export const portalRoles = sqliteTable("portal_roles", {
   id: text("id").primaryKey(), userId: text("user_id").notNull(), role: text("role").notNull(), scope: text("scope").notNull().default("membership"), grantedBy: text("granted_by").notNull(), createdAt: text("created_at").notNull(),
 }, (table) => [uniqueIndex("idx_portal_role").on(table.userId, table.role, table.scope)]);
+
+export const portalNotificationPreferences = sqliteTable("portal_notification_preferences", {
+  userId: text("user_id").primaryKey(), reminders: integer("reminders", { mode: "boolean" }).notNull().default(false), updatedAt: text("updated_at").notNull(),
+});
+export const portalAudit = sqliteTable("portal_audit", {
+  id: text("id").primaryKey(), actorUserId: text("actor_user_id").notNull(), action: text("action").notNull(), referenceId: text("reference_id").notNull(), reason: text("reason").notNull(), createdAt: text("created_at").notNull(),
+});
+export const portalProjectEvidence = sqliteTable("portal_project_evidence", {
+  id: text("id").primaryKey(), projectId: text("project_id").notNull(), authorUserId: text("author_user_id").notNull(), title: text("title").notNull(), url: text("url").notNull(), uncertainty: text("uncertainty").notNull(), status: text("status").notNull().default("unreviewed"), createdAt: text("created_at").notNull(), updatedAt: text("updated_at").notNull(),
+});
+export const portalProjectMessages = sqliteTable("portal_project_messages", {
+  id: text("id").primaryKey(), projectId: text("project_id").notNull(), authorUserId: text("author_user_id").notNull(), authorName: text("author_name").notNull(), body: text("body").notNull(), createdAt: text("created_at").notNull(),
+});
+export const portalTaskProgress = sqliteTable("portal_task_progress", {
+  id: text("id").primaryKey(), taskId: text("task_id").notNull(), userId: text("user_id").notNull(), status: text("status").notNull(), updatedAt: text("updated_at").notNull(),
+}, (table) => [uniqueIndex("idx_portal_task_progress").on(table.taskId, table.userId)]);
+export const portalAttendance = sqliteTable("portal_attendance", {
+  id: text("id").primaryKey(), eventId: text("event_id").notNull(), userId: text("user_id").notNull(), evidenceUrl: text("evidence_url").notNull(), verifiedBy: text("verified_by").notNull(), verifiedAt: text("verified_at").notNull(),
+}, (table) => [uniqueIndex("idx_portal_attendance").on(table.eventId, table.userId)]);

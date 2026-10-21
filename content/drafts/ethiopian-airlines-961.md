@@ -64,18 +64,18 @@ The investigating committee attributed the accident to unlawful interference lea
 
 A demand made aboard an aircraft does not change what the aircraft can physically do. Range depends on fuel, conditions and the aircraft's state, not on the urgency or confidence of the person giving an order. That mismatch is central to understanding this event.
 
-Fuel warnings needed to reach people who could change the aircraft's course. The report records interference continuing as the available options narrowed; unrecorded exchanges cannot be reconstructed from what later appeared inevitable.
+The [Ethiopian Civil Aviation Authority's final report](https://www.fss.aero/accident-reports/dvdfiles/ET/1996-11-23-ET.pdf), dated 4 May 1998, says both flight recorders stopped before impact. Its cockpit voice recorder section also describes heavy distortion on the public-address and third-crew-member channel. The investigation therefore cannot be read as an uninterrupted recording of the final cockpit and cabin exchanges.
 
-A ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. The behavior of an aircraft on contact with water depends on many factors. Images of the outcome do not establish what would have happened under a different approach or at another location.
+A ditching also needs to be described as an emergency under specific conditions, not as a general safety demonstration. Images of the outcome do not establish what would have happened under a different approach or at another location.
 
-Passenger actions deserve the same care. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence. The people aboard were acting with less information and less time than a later reader possesses.
+## What the report says about life jackets
 
-## Communication inside a damaged situation
+In its flight history, the report describes the first officer finding some passengers with already inflated life jackets. He and cabin crew helped deflate them and demonstrated reinflation and bracing. The report says these instructions were given only in English and may not have been understood by some passengers.
 
-The report describes cabin crew and the first officer helping passengers with life jackets before impact. It also notes that instructions were given in English and may not have been understood by everyone. Communication was taking place amid interference, limited access and a deteriorating emergency.
+Those observations do not identify how many deaths, if any, resulted from premature inflation. They should not be expanded into a claim that every drowning, or a specified share of the fatalities, had that cause.
 
 A statement appearing in the final investigation does not establish that everyone in the cabin heard or understood it. The completed sequence available to a later reader was unavailable to people acting inside it.
 
-The committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. It should not take selected observations and turn them into an individual explanation for every death.
+The committee itself records difficulty evaluating cabin preparations with certainty under the unusual conditions. A responsible account should preserve that qualification. Advice about survival should not be improvised from a historical narrative, and a casualty should never be explained through an individual's supposed mistake without evidence.
 
-The demand did not increase the fuel aboard. Interference narrowed the crew's choices as that fuel ran out. The film shows the ditching; the investigation supplies the cockpit and cabin evidence needed to explain the conditions that preceded it.
+The report connects coercion to the exhaustion of fuel. Its evidence about cabin actions is more limited. Keeping those two levels of certainty separate allows the investigation's causal finding to stand without turning selected observations into an unsupported explanation for each person's fate.

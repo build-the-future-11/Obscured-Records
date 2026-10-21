@@ -6,8 +6,9 @@ export const mediaHolds: Readonly<Record<string, string>> = {
   "wirecard-missing-billions": "Cover withheld pending review of the retained image derivative and its provenance.",
   "lake-nyos": "Cover withheld pending review of the retained image derivative and its provenance.",
 };
-const hostedCovers = new Set(["/fedex-705.webp", "/wirecard.webp", "/goiania-source.webp", "/lake-nyos.webp", "/therac-25.webp"]);
+const hostedCovers = new Set(["/triangle-factory-illustration.webp", "/apollo-1-illustration.webp", "/ixtoc-1-illustration.webp", "/fedex-705.webp", "/wirecard.webp", "/goiania-source.webp", "/lake-nyos.webp", "/therac-25.webp"]);
 const coverDimensions: Readonly<Record<string, readonly [number, number]>> = {
+  "/triangle-factory-illustration.webp": [1536, 1024], "/apollo-1-illustration.webp": [1536, 1024], "/ixtoc-1-illustration.webp": [1536, 1024],
   "/fedex-705.webp": [1280, 853], "/wirecard.webp": [1800, 1199],
   "/goiania-source.webp": [1403, 1174], "/lake-nyos.webp": [532, 402], "/therac-25.webp": [850, 1138],
 };

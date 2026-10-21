@@ -9,7 +9,7 @@ import "./publication.css";
 import "./launch.css";
 export const metadata: Metadata = {
   title: { default: "Obscured Records", template: "%s — Obscured Records" },
-  description: "Documented histories that were overlooked, flattened into trivia or never explained with enough care.",
+  description: "Independent, youth-led journalism for overlooked stories, original reporting and evidence-driven investigations.",
   metadataBase: new URL(siteUrl),
   // Private relaunch remains on HOLD. Remove only with the approved public release.
   robots: { index: false, follow: true },

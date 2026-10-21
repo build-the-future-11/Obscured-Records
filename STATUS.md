@@ -1,4 +1,18 @@
-# Current execution state — website completion, 16 October 2026
+# Current private release — 21 October 2026
+
+**Owner-private version 28 is deployed. Public launch remains HOLD.** The membership portal now includes the missing participation and administration workflows, durable event waitlisting, ordered learning, team evidence/messages, personal export and scoped moderation. The local suite passes 382/382 tests, including 16 real-handler SQLite/D1-driver scenarios; focused lint/typechecking and state/editorial checks pass. The provider completed the full production build and additive migrations for source `58ecb8416a55bfeceb6c78d2566b06ae5f5e7069`.
+
+All 104 read-only live checks pass against that revision; [runtime receipt](docs/PORTAL_RUNTIME_2026-10-21.json).
+
+See [the current portal release receipt](docs/PORTAL_COMPLETION_2026-10-21.md), [validation](docs/PORTAL_VALIDATION_2026-10-21.json) and [deployment](docs/PORTAL_DEPLOYMENT_2026-10-21.json). Real multi-account browser acceptance and the named human/operational public-launch gates remain open. Existing newsletter operation remains capture-only. The reader catalogue contains 31 records; 3,248 private drafts remain unpublished with zero recorded human approvals.
+
+Earlier dated reports follow.
+
+# Local reader-improvement candidate — 16 October 2026
+
+UI/UX, SEO, five reader-record revisions and 13 draft revisions are implemented locally and remain undeployed. Full-text audit now covers 28 reader records and 19 drafts; the other 3,226 drafts have machine metadata triage only. The continuation revised twelve high-risk drafts with 59 passages mapped to scoped sources. The exact draft word count is now 2,955,957. All 355 bounded tests, editorial/state checks and focused lint pass; both builds and browser tests remain resource-blocked. No approval or publication state changed. See the [handoff and remaining checks](docs/READER_IMPROVEMENTS_2026-10-16.md) and [continuation verification](docs/DRAFT_REVIEW_VERIFICATION_2026-10-16.json). Public launch remains **HOLD**. The previous deployment evidence below does not verify this candidate.
+
+# Previous deployed state — website completion, 16 October 2026
 
 **The website engineering update is deployed as owner-private version 27; public launch remains HOLD.** The exact private source is `5b1b32fe00b55154d7d6bdd7ab4b04645667d58e`, environment revision **15**. All **331 tests** and **78/78 live checks** pass, the provider full TypeScript/Workers build succeeded, and the fresh production dependency audit reports zero advisories. The live checks verify all 28 reader records, feeds/discovery, draft isolation, sign-in and anonymous restrictions, plus correct MIME and byte identity for all 13 typed image routes.
 

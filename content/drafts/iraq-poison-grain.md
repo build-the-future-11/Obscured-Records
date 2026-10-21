@@ -70,8 +70,6 @@ The incident-specific medical account supplies an important distinction between 
 
 Hospital admissions, outpatient visits and deaths count different outcomes. Estimates of unrecorded cases require a method rather than simply a larger total.
 
-A product's intended use does not establish how it will be handled after distribution. Whether a warning was understood, or could be acted on, requires evidence about the circumstances in which recipients encountered it.
-
 ## The delay before symptoms
 
 Al-Tikriti and Al-Mufti identify a latency of as much as sixty days between consumption and symptoms as probably a major contributor to the outbreak's size. That statement is an interpretation by the authors. It connects the timing of illness with the difficulty of recognizing a dangerous practice while it continues.
@@ -79,9 +77,5 @@ Al-Tikriti and Al-Mufti identify a latency of as much as sixty days between cons
 An immediate unpleasant effect can provide rapid feedback. Delayed illness leaves a longer interval in which a material may appear harmless. A household's experience during that interval cannot be described as knowledge of the later outcome. The relevant question is what warning and evidence were available before symptoms made the danger apparent.
 
 The medical account's denominator is just as important as its timing. The 459 deaths occurred among the hospitalized cases it reports. People seen only as outpatients belong to the account too, but not to that hospital denominator. Adding them requires information about a different population.
-
-This gives the historical record two boundaries: the time between exposure and recognition, and the boundary of the institutions counting cases. Both affect what becomes visible. Neither implies that the suffering outside a recorded category was unimportant.
-
-The available medical abstract supports the account of consumption, illness, delayed symptoms and counted hospital cases. It cannot establish the warning language, distribution history or decisions of every household.
 
 Families could consume the grain before illness revealed the danger. Some cases reached hospitals; milder ones were treated outside them. The delay and the hospital denominator explain why the published figures must be read as a defined count, not a complete measure of everyone affected.

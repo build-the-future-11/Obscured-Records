@@ -6,10 +6,10 @@ import { readerImages } from "../lib/reader-images.generated.ts";
 import { readerImageResponse } from "../lib/reader-image-response.ts";
 import { displayCover, mediaHolds, readerImagePath, readerImageSources } from "../lib/media-policy.ts";
 
-const expected = ["fedex-705-480.webp", "fedex-705-960.webp", "fedex-705.webp", "goiania-source-480.webp", "goiania-source-960.webp", "goiania-source.webp", "lake-nyos-480.webp", "lake-nyos.webp", "therac-25-480.webp", "therac-25.webp", "wirecard-480.webp", "wirecard-960.webp", "wirecard.webp"];
+const expected = ["apollo-1-illustration-480.webp", "apollo-1-illustration-960.webp", "apollo-1-illustration.webp", "fedex-705-480.webp", "fedex-705-960.webp", "fedex-705.webp", "goiania-source-480.webp", "goiania-source-960.webp", "goiania-source.webp", "ixtoc-1-illustration-480.webp", "ixtoc-1-illustration-960.webp", "ixtoc-1-illustration.webp", "lake-nyos-480.webp", "lake-nyos.webp", "therac-25-480.webp", "therac-25.webp", "triangle-factory-illustration-480.webp", "triangle-factory-illustration-960.webp", "triangle-factory-illustration.webp", "wirecard-480.webp", "wirecard-960.webp", "wirecard.webp"];
 const request = (filename, options) => new Request(`https://publication.example/media/${filename}`, options);
 
-test("reader image projection contains exactly the thirteen reviewed filenames", () => {
+test("reader image projection contains exactly the reviewed filenames", () => {
   assert.deepEqual(Object.keys(readerImages).sort(), expected);
   assert.deepEqual(fs.readdirSync(new URL("../public/", import.meta.url)).filter((file) => file.endsWith(".webp")).sort(), expected);
 });
@@ -81,7 +81,7 @@ test("reader and shared cover projections use typed URLs without mutating source
 });
 
 test("responsive display sources preserve dimensions and resolve exclusively to allowed typed variants", () => {
-  for (const [filename, width, height] of [["fedex-705.webp", 1280, 853], ["wirecard.webp", 1800, 1199], ["goiania-source.webp", 1403, 1174], ["lake-nyos.webp", 532, 402], ["therac-25.webp", 850, 1138]]) {
+  for (const [filename, width, height] of [["apollo-1-illustration.webp", 1536, 1024], ["ixtoc-1-illustration.webp", 1536, 1024], ["triangle-factory-illustration.webp", 1536, 1024], ["fedex-705.webp", 1280, 853], ["wirecard.webp", 1800, 1199], ["goiania-source.webp", 1403, 1174], ["lake-nyos.webp", 532, 402], ["therac-25.webp", 850, 1138]]) {
     const projection = readerImageSources(`/${filename}`);
     assert.deepEqual(readerImageSources(`/media/${filename}`), projection);
     assert.equal(projection.src, `/media/${filename}`);

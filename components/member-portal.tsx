@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { MemberTools, InviteMember, PortalManagement } from "@/components/portal-workflows";
 import Link from "next/link";
 import { memberRequest } from "@/lib/member-client";
+import { preparePortalPayload } from "@/lib/portal-client";
 
 type Portal = Record<string, any>;
 type View = "home" | "inbox" | "opportunities" | "projects" | "programs" | "mentorship" | "community" | "events" | "learning" | "directory" | "profile" | "admin";
@@ -43,7 +44,7 @@ export function MemberPortal({ initialView = "home" }: { initialView?: View }) {
   useEffect(() => { load().catch(() => undefined); }, [load]);
   const submit = async (action: string, payload: Record<string, unknown>) => {
     setBusy(true); setStatus("Saving…");
-    try { const result = await memberRequest<{ ok: boolean; portal: Portal }>("/api/member/portal", { method: "POST", body: JSON.stringify({ action, ...payload }) }); setPortal(result.portal); setStatus("Saved."); return true; }
+    try { const result = await memberRequest<{ ok: boolean; portal: Portal }>("/api/member/portal", { method: "POST", body: JSON.stringify({ action, ...preparePortalPayload(action, payload) }) }); setPortal(result.portal); setStatus("Saved."); return true; }
     catch (error) { setStatus(error instanceof Error ? error.message : "That change could not be saved."); return false; }
     finally { setBusy(false); }
   };
@@ -52,7 +53,7 @@ export function MemberPortal({ initialView = "home" }: { initialView?: View }) {
   return <div className="portal-shell">
     <nav className="portal-nav" aria-label="Member workspace">{nav.map((item) => <Link key={item.id} href={item.id === "home" ? "/member" : `/member/${item.id}`} aria-current={view === item.id ? "page" : undefined} className={view === item.id ? "active" : ""}>{item.label}</Link>)}</nav>
     <p className="member-status" role="status">{status}</p>
-    {!portal ? <div className="portal-empty"><h2>{loadFailed ? "Workspace could not load" : "Preparing your workspace"}</h2>{loadFailed ? <button disabled={loading} onClick={() => load(true).catch(() => undefined)}>{loading ? "Trying again…" : "Try again"}</button> : <p>Account data is loading securely.</p>}</div> : <><PortalView portal={portal} view={view} submit={submit} busy={busy} directory={directory} query={query} setQuery={setQuery} searchDirectory={searchDirectory} /><MemberTools portal={portal} submit={submit} busy={busy} view={view} /></>}
+    {!portal ? <div className="portal-empty"><h2>{loadFailed ? "Workspace could not load" : "Preparing your workspace"}</h2>{loadFailed ? <button disabled={loading} onClick={() => load(true).catch(() => undefined)}>{loading ? "Trying again…" : "Try again"}</button> : <p>Account data is loading securely.</p>}</div> : <>{["admin", "mentorship", "directory"].includes(view) && <p>Date and time fields use your device&apos;s time zone: {Intl.DateTimeFormat().resolvedOptions().timeZone}.</p>}<PortalView portal={portal} view={view} submit={submit} busy={busy} directory={directory} query={query} setQuery={setQuery} searchDirectory={searchDirectory} /><MemberTools portal={portal} submit={submit} busy={busy} view={view} /></>}
   </div>;
 }
 

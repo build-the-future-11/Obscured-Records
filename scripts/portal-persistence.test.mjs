@@ -88,6 +88,14 @@ test("portal denies anonymous and cross-origin writes", async () => {
   member(); const response = await portal.POST(new Request("https://obscured.example.test/api/member/portal", { method: "POST", headers: { "content-type": "application/json", origin: "https://evil.example" }, body: JSON.stringify({ action: "create-project" }) })); assert.equal(response.status, 403);
   await act("admin-publish", { type: "announcement", title: "Invalid admin", summary: statement }, 403);
 });
+test("portal persists the submitted instant and rejects timezone-free or impossible event times", async () => {
+  const eventId = await publish("event", { startsAt: "2099-10-24T19:30:00+05:30" });
+  assert.equal(sqlite.prepare("SELECT starts_at FROM portal_events WHERE id=?").get(eventId).starts_at, "2099-10-24T14:00:00.000Z");
+  for (const startsAt of ["2099-10-24T19:30", "2099-02-30T19:30:00Z"]) {
+    await act("admin-publish", { type: "event", title: "Invalid time fixture", summary: statement, startsAt, location: "Online" }, 400);
+  }
+  assert.equal(sqlite.prepare("SELECT count(*) n FROM portal_events").get().n, 1);
+});
 test("reviewed applications and accepted memberships survive repeat submission", async () => {
   const opportunityId = await publish("opportunity"); member(); let state = await act("apply-opportunity", { opportunityId, statement }); const application = state.applications[0];
   member("owner"); await act("admin-review", { kind: "opportunity", id: application.id, status: "accepted", note: "Reviewed evidence" });

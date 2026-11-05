@@ -1,5 +1,6 @@
 import { IntakeRateLimit } from "./intake-policy.ts";
 const maxRequestBytes = 4096;
+const intakeBodyTimeoutMs = 5_000;
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function intakeJson(message: string, status = 200) {
@@ -13,32 +14,56 @@ const json = intakeJson;
 export class RequestTooLarge extends Error {}
 
 export async function readBody(request: Request, limit = maxRequestBytes) {
+  const unavailable = () => new Error("Request body is unavailable.");
+  if (request.signal.aborted || request.bodyUsed) {
+    try { void request.body?.cancel().catch(() => {}); } catch {}
+    throw unavailable();
+  }
   if (!request.body) return "";
   const reader = request.body.getReader();
+  let interrupt: () => void = () => {};
+  let interrupted = false;
+  const interruption = new Promise<never>((_, reject) => {
+    interrupt = () => { interrupted = true; reject(unavailable()); };
+  });
+  // Cover an abort between listener registration and the first pending read.
+  void interruption.catch(() => {});
+  const timer = setTimeout(interrupt, intakeBodyTimeoutMs);
+  request.signal.addEventListener("abort", interrupt, { once: true });
+  if (request.signal.aborted) interrupt();
   const chunks: Uint8Array[] = [];
   let size = 0;
   try {
     while (true) {
-      const { done, value } = await reader.read();
+      if (interrupted) throw unavailable();
+      const { done, value } = await Promise.race([reader.read(), interruption]);
+      if (interrupted) throw unavailable();
       if (done) break;
+      if (!(value instanceof Uint8Array)) throw unavailable();
       size += value.byteLength;
-      if (size > limit) {
-        // Do not wait for an untrusted stream's cancellation hook.
-        void reader.cancel().catch(() => {});
-        throw new RequestTooLarge();
+      if (size > limit) throw new RequestTooLarge();
+      if (!value.byteLength) {
+        // Empty synchronous chunks must yield to the abort/deadline callbacks.
+        await Promise.race([new Promise<void>((resolve) => setTimeout(resolve, 0)), interruption]);
+        continue;
       }
-      chunks.push(value);
+      chunks.push(new Uint8Array(value));
     }
+    const bytes = new Uint8Array(size);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   } finally {
-    reader.releaseLock();
+    clearTimeout(timer);
+    request.signal.removeEventListener("abort", interrupt);
+    chunks.length = 0;
+    // An untrusted source's cancellation hook must not extend the deadline.
+    try { void reader.cancel().catch(() => {}); } catch {}
+    try { reader.releaseLock(); } catch {}
   }
-  const bytes = new Uint8Array(size);
-  let offset = 0;
-  for (const chunk of chunks) {
-    bytes.set(chunk, offset);
-    offset += chunk.byteLength;
-  }
-  return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
 }
 
 /** Compare the browser's origin with the actual request authority. Next.js may

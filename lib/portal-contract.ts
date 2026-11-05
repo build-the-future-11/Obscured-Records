@@ -18,7 +18,15 @@ export function portalUrl(value: unknown) {
 
 export function portalDate(value: unknown, required = false) {
   if (value === "" || value === null || value === undefined) return required ? null : "";
-  if (typeof value !== "string" || !Number.isFinite(Date.parse(value))) return null;
+  if (typeof value !== "string") return null;
+  // A calendar-only milestone is UTC midnight. A timestamp must carry an
+  // explicit offset; interpreting a browser's local time on the server shifts it.
+  const parts = /^(\d{4}-\d{2}-\d{2})(?:T(\d{2}):(\d{2})(?::(\d{2})(?:\.\d{1,3})?)?(Z|[+-]\d{2}:\d{2}))?$/.exec(value);
+  if (!parts) return null;
+  const calendar = new Date(`${parts[1]}T00:00:00.000Z`);
+  if (!Number.isFinite(calendar.getTime()) || calendar.toISOString().slice(0, 10) !== parts[1] ||
+      Number(parts[2] || 0) > 23 || Number(parts[3] || 0) > 59 || Number(parts[4] || 0) > 59 ||
+      !Number.isFinite(Date.parse(value))) return null;
   return new Date(value).toISOString();
 }
 

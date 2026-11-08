@@ -6,7 +6,7 @@ import { portalDate } from "../lib/portal-contract.ts";
 const client = new URL("../lib/portal-client.ts", import.meta.url).href;
 function inZone(zone, expression) {
   const result = spawnSync(process.execPath, ["--experimental-strip-types", "--input-type=module", "-e",
-    `import { localPortalDateTime, preparePortalPayload } from ${JSON.stringify(client)}; console.log(JSON.stringify(${expression}));`],
+    `import { localPortalDateTime, preparePortalPayload, formatPortalMilestoneDate } from ${JSON.stringify(client)}; console.log(JSON.stringify(${expression}));`],
   { env: { ...process.env, TZ: zone }, encoding: "utf8" });
   assert.equal(result.status, 0, result.stderr);
   return JSON.parse(result.stdout);
@@ -73,4 +73,12 @@ test("server requires a timezone for timestamps and rejects invalid dates withou
   assert.equal(portalDate("2026-11-05"), "2026-11-05T00:00:00.000Z");
   assert.equal(portalDate(""), "");
   assert.equal(portalDate("", true), null);
+});
+
+test("date-only milestone targets display the selected day in every contributor's time zone", () => {
+  const expected = ["11/8/2026", "11/8/2026", "1/1/2027", "2/29/2028", "3/8/2026", "No deadline", "Date unavailable"];
+  for (const zone of ["America/New_York", "America/Los_Angeles", "Asia/Kolkata", "Pacific/Kiritimati", "UTC"]) {
+    const displayed = inZone(zone, `["2026-11-08", "2026-11-08T00:00:00.000Z", "2027-01-01T00:00:00.000Z", "2028-02-29T00:00:00.000Z", "2026-03-08T00:00:00.000Z", null, "unavailable"].map(value => formatPortalMilestoneDate(value, "en-US"))`);
+    assert.deepEqual(displayed, expected, zone);
+  }
 });

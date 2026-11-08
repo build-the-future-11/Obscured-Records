@@ -110,7 +110,9 @@ jobs:
       - name: Browser interaction and responsive checks
         env:
           BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
-        run: node scripts/browser-smoke.mjs
+        run: |
+          node scripts/browser-smoke.mjs
+          npm run smoke:browser:portal-retry
 
       - name: Retain browser evidence
         if: always()

@@ -32,3 +32,11 @@ export function preparePortalPayload(action: string, payload: Record<string, unk
   }
   return prepared;
 }
+
+/** Milestone targets are calendar dates, persisted by the API at UTC midnight. */
+export function formatPortalMilestoneDate(value?: string | null, locales?: Intl.LocalesArgument): string {
+  if (!value) return "No deadline";
+  const target = new Date(value);
+  if (!Number.isFinite(target.getTime())) return "Date unavailable";
+  return target.toLocaleDateString(locales, { timeZone: "UTC" });
+}

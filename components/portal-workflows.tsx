@@ -1,12 +1,19 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { formatPortalMilestoneDate } from "@/lib/portal-client";
 type Props = { portal: any; submit: (action: string, values: Record<string, unknown>) => Promise<boolean>; busy: boolean };
 type Field = { name: string; label: string; type?: string; options?: { value: string; label: string }[]; optional?: boolean };
 function ActionForm({ action, title, fields, values = {}, submit, busy }: { action: string; title: string; fields: Field[]; values?: Record<string, unknown>; submit: Props["submit"]; busy: boolean }) {
   const [draft, setDraft] = useState<Record<string, string>>({});
-  return <form onSubmit={async event => { event.preventDefault(); if (await submit(action, { ...Object.fromEntries(fields.map(field => [field.name, draft[field.name] || ""])), ...values })) setDraft({}); }}>
+  const draftRevision = useRef(0);
+  return <form onChange={() => { draftRevision.current += 1; }} onSubmit={async event => {
+    event.preventDefault();
+    const submittedRevision = draftRevision.current;
+    const saved = await submit(action, { ...Object.fromEntries(fields.map(field => [field.name, draft[field.name] || ""])), ...values });
+    // A completed request acknowledges its snapshot, not edits made while saving.
+    if (saved && draftRevision.current === submittedRevision) setDraft({});
+  }}>
     <h4>{title}</h4>{fields.map(field => <label key={field.name}>{field.label}{field.options ? <select required={!field.optional} value={draft[field.name] || ""} onChange={e => setDraft({ ...draft, [field.name]: e.target.value })}><option value="">Select…</option>{field.options.map(option => <option value={option.value} key={option.value}>{option.label}</option>)}</select> : field.type === "textarea" ? <textarea required={!field.optional} maxLength={1200} value={draft[field.name] || ""} onChange={e => setDraft({ ...draft, [field.name]: e.target.value })} /> : <input required={!field.optional} type={field.type || "text"} value={draft[field.name] || ""} onChange={e => setDraft({ ...draft, [field.name]: e.target.value })} />}</label>)}<button disabled={busy}>{title}</button>
   </form>;
 }

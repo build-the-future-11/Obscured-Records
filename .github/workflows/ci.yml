@@ -18,6 +18,16 @@ env:
 jobs:
   verify:
     runs-on: ubuntu-24.04
+    # Official image supplies the matching browser engines and OS libraries.
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.0-noble@sha256:35246d87a7c88ea9b771c65d33171b2611b02a8253b4b12ce6f94376c55f99f2
+      options: --user 1001 --init --ipc=host
+    defaults:
+      run:
+        shell: bash
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
     timeout-minutes: 20
     steps:
       - name: Checkout exact source
@@ -99,13 +109,24 @@ jobs:
       - name: Smoke test built Next.js application
         run: node scripts/next-runtime-smoke.mjs
 
-      - name: Install isolated browser test tools
+      - name: Install isolated tools and verify pinned Chromium
         env:
           BROWSER_TOOLS_DIR: ${{ runner.temp }}/obscured-browser
         run: |
           mkdir -p "$BROWSER_TOOLS_DIR"
           npm install --prefix "$BROWSER_TOOLS_DIR" --no-save --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.56.0 axe-core@4.10.3
-          node "$BROWSER_TOOLS_DIR/node_modules/playwright/cli.js" install --with-deps chromium
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import { createRequire } from 'node:module';
+          import { resolve } from 'node:path';
+          const requireTools = createRequire(resolve(process.env.BROWSER_TOOLS_DIR, 'package.json'));
+          assert.equal(requireTools('playwright/package.json').version, '1.56.0',
+            'Keep the Playwright package and container image versions identical.');
+          const { chromium } = requireTools('playwright');
+          const browser = await chromium.launch();
+          console.log(`chromium ${browser.version()} at ${chromium.executablePath()}`);
+          await browser.close();
+          NODE
 
       - name: Browser interaction and responsive checks
         env:
@@ -122,3 +143,4 @@ jobs:
           path: browser-artifacts/
           if-no-files-found: ignore
           retention-days: 7
+

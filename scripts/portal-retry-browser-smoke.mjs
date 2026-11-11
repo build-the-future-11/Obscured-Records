@@ -5,6 +5,7 @@ import { createRequire } from "node:module";
 import { resolve } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { verifyPortalSaveDrafts } from "./portal-save-browser-checks.mjs";
+import { verifyMemberDashboardDrafts } from "./member-dashboard-browser-checks.mjs";
 
 assert.ok(process.env.BROWSER_TOOLS_DIR, "Set BROWSER_TOOLS_DIR to a repository with Playwright installed.");
 const requireTools = createRequire(resolve(process.env.BROWSER_TOOLS_DIR, "package.json"));
@@ -150,6 +151,7 @@ try {
   }
   console.log("PASS portal milestone browser: selected day, leap day, and absent target for lead and contributor in five time zones");
   await verifyPortalSaveDrafts({ browser, base });
+  await verifyMemberDashboardDrafts({ browser, base });
 } finally {
   await browser?.close();
   server.kill("SIGTERM");

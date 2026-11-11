@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LIBRARY_KEY, NOTES_KEY, readNotes, readSaved, type Annotation, type ReadingState, type SavedRecord } from "@/lib/reader-storage";
-import { deleteMemberRecord, importMemberReading, loadMemberSnapshot, memberRequest as api, updateMemberReadingState, type MemberSnapshot } from "@/lib/member-client";
+import { deleteMemberRecord, importMemberReading, loadMemberSnapshot, saveMemberPreferences, saveMemberProfile, updateMemberReadingState, type MemberPreferences, type MemberProfile, type MemberSnapshot } from "@/lib/member-client";
 import { readingStates } from "@/lib/member-contract";
 
-type Profile = { displayName: string; email: string; bio: string; digestFrequency: string };
-type Preferences = { textSize: string; theme: string };
+type Profile = MemberProfile;
+type Preferences = MemberPreferences;
 type Story = { slug: string; title: string; section: string };
 
 export function MemberDashboard({ initialProfile, stories }: { initialProfile: Profile; stories: Story[] }) {
@@ -72,9 +72,9 @@ export function MemberDashboard({ initialProfile, stories }: { initialProfile: P
   async function saveProfile(event: React.FormEvent) {
     event.preventDefault(); const controller = beginOperation(); if (!controller) return; setStatus("Saving profile…");
     const submittedRevision = profileRevision.current;
-    try { const data = await api<{ profile: Profile }>("/api/member/profile", { method: "PATCH", body: JSON.stringify(profile), signal: controller.signal }); if (!controller.signal.aborted) {
+    try { const saved = await saveMemberProfile(profile, controller.signal); if (!controller.signal.aborted) {
       const hasNewerEdits = profileRevision.current !== submittedRevision;
-      if (!hasNewerEdits) setProfile(data.profile);
+      if (!hasNewerEdits) setProfile(saved);
       setStatus(hasNewerEdits ? "Submitted profile saved. Your newer edits are still unsaved." : "Profile saved.");
     } }
     catch (error) { if (!controller.signal.aborted) setStatus(error instanceof Error ? error.message : "Profile could not be saved."); }
@@ -84,8 +84,8 @@ export function MemberDashboard({ initialProfile, stories }: { initialProfile: P
   async function savePreferences(next = preferences) {
     const controller = beginOperation(); if (!controller) return; setStatus("Saving reading settings…");
     const submittedRevision = preferencesRevision.current;
-    try { const data = await api<{ preferences: Preferences }>("/api/member/preferences", { method: "PUT", body: JSON.stringify(next), signal: controller.signal }); if (!controller.signal.aborted) {
-      const hasNewerEdits = applyPreferences(data.preferences, submittedRevision);
+    try { const saved = await saveMemberPreferences(next, controller.signal); if (!controller.signal.aborted) {
+      const hasNewerEdits = applyPreferences(saved, submittedRevision);
       savedPreferencesRevision.current = submittedRevision;
       setStatus(hasNewerEdits ? "Submitted reading settings saved. Your newer edits are still unsaved." : "Reading settings saved.");
     } }

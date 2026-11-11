@@ -1,8 +1,26 @@
 import type { Annotation, ReadingState, SavedRecord } from "./reader-storage.ts";
 import { LIBRARY_KEY, NOTES_KEY } from "./reader-storage.ts";
+import { digestFrequencies, isOneOf, readerSizes, readerThemes } from "./member-contract.ts";
 
+export type MemberProfile = { displayName: string; email: string; bio: string; digestFrequency: string };
 export type MemberPreferences = { textSize: string; theme: string };
 export type MemberSnapshot = { library: SavedRecord[]; annotations: Annotation[]; preferences: MemberPreferences };
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value && typeof value === "object" && !Array.isArray(value));
+}
+
+function isMemberProfile(value: unknown): value is MemberProfile {
+  return isRecord(value) &&
+    typeof value.displayName === "string" && value.displayName.trim().length > 0 && value.displayName.length <= 80 &&
+    typeof value.email === "string" && value.email.trim().length > 0 &&
+    typeof value.bio === "string" && value.bio.length <= 500 &&
+    isOneOf(value.digestFrequency, digestFrequencies);
+}
+
+function isMemberPreferences(value: unknown): value is MemberPreferences {
+  return isRecord(value) && isOneOf(value.textSize, readerSizes) && isOneOf(value.theme, readerThemes);
+}
 
 /** Bound the whole exchange, including a response body that never completes. */
 export async function memberRequest<T>(path: string, init: RequestInit = {}, timeoutMs = 10_000): Promise<T> {
@@ -43,11 +61,31 @@ export async function loadMemberSnapshot(signal?: AbortSignal): Promise<MemberSn
     memberRequest<{ items: Annotation[] }>("/api/member/annotations", { signal }),
     memberRequest<{ preferences: MemberPreferences }>("/api/member/preferences", { signal }),
   ]);
-  if (!Array.isArray(library.items) || !Array.isArray(annotations.items) || !preferences.preferences ||
-      typeof preferences.preferences.textSize !== "string" || typeof preferences.preferences.theme !== "string") {
+  if (!Array.isArray(library.items) || !Array.isArray(annotations.items) || !isMemberPreferences(preferences.preferences)) {
     throw new Error("The member library response was incomplete. Please try again.");
   }
   return { library: library.items, annotations: annotations.items, preferences: preferences.preferences };
+}
+
+/** A successful HTTP exchange alone must not replace an editable account draft. */
+export async function saveMemberProfile(profile: MemberProfile, signal?: AbortSignal): Promise<MemberProfile> {
+  const receipt = await memberRequest<unknown>("/api/member/profile", {
+    method: "PATCH", body: JSON.stringify(profile), signal,
+  });
+  if (!isRecord(receipt) || receipt.ok !== true || !isMemberProfile(receipt.profile)) {
+    throw new Error("The member service could not confirm your profile save. Your draft is still here. Check your account before saving again.");
+  }
+  return receipt.profile;
+}
+
+export async function saveMemberPreferences(preferences: MemberPreferences, signal?: AbortSignal): Promise<MemberPreferences> {
+  const receipt = await memberRequest<unknown>("/api/member/preferences", {
+    method: "PUT", body: JSON.stringify(preferences), signal,
+  });
+  if (!isRecord(receipt) || receipt.ok !== true || !isMemberPreferences(receipt.preferences)) {
+    throw new Error("The member service could not confirm your reading settings save. Your draft is still here. Check your account before saving again.");
+  }
+  return receipt.preferences;
 }
 
 export async function updateMemberReadingState(item: SavedRecord, state: ReadingState, signal?: AbortSignal): Promise<SavedRecord> {

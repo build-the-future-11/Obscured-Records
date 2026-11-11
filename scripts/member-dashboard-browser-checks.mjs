@@ -67,10 +67,10 @@ async function accountFixture(browser, base, { heldInitial = false } = {}) {
       writes[index].release({ status, json: payload });
       await settled();
     },
-    async finishRead() {
+    async finishRead(payload = { preferences: state.preferences }) {
       await waitFor(() => pendingReads.length > 0, "No held account read");
       state.holdPreferences = false;
-      pendingReads.shift()({ status: 200, json: { preferences: state.preferences } });
+      pendingReads.shift()({ status: 200, json: payload });
       await settled();
     },
     async importReading() {
@@ -97,12 +97,12 @@ for (const [fieldName, label, oldValue, newValue] of [
   await f.mount(); await f.edit(label, oldValue); await f.clickSave("Save profile");
   assert.equal(f.writes[0].body[fieldName], oldValue);
   assert.equal(f.writes[0].method, "PATCH");
-  await f.edit(label, newValue); await f.confirm(0, { profile: f.writes[0].body });
+  await f.edit(label, newValue); await f.confirm(0, { ok: true, profile: f.writes[0].body });
   assert.equal(await f.field(label).inputValue(), newValue);
   assert.match(await f.status(), /newer edits.*unsaved/i);
   assert.equal(f.writes.length, 1, "Receipt must not automatically resubmit newer edits");
   await f.clickSave("Save profile"); assert.equal(f.writes[1].body[fieldName], newValue);
-  await f.confirm(1, { profile: f.writes[1].body }); assert.equal(await f.status(), "Profile saved.");
+  await f.confirm(1, { ok: true, profile: f.writes[1].body }); assert.equal(await f.status(), "Profile saved.");
 });
 
 for (const [fieldName, label, oldValue, newValue] of [
@@ -110,22 +110,22 @@ for (const [fieldName, label, oldValue, newValue] of [
 ]) test(`settings preserve newer ${fieldName} and submit it only on manual retry`, async f => {
   await f.mount(); await f.edit(label, oldValue); await f.clickSave("Save settings");
   assert.equal(f.writes[0].body[fieldName], oldValue); assert.equal(f.writes[0].method, "PUT");
-  await f.edit(label, newValue); await f.confirm(0, { preferences: f.writes[0].body });
+  await f.edit(label, newValue); await f.confirm(0, { ok: true, preferences: f.writes[0].body });
   assert.equal(await f.field(label).inputValue(), newValue);
   assert.match(await f.status(), /newer edits.*unsaved/i); assert.equal(f.writes.length, 1);
   await f.clickSave("Save settings"); assert.equal(f.writes[1].body[fieldName], newValue);
-  await f.confirm(1, { preferences: f.writes[1].body }); assert.equal(await f.status(), "Reading settings saved.");
+  await f.confirm(1, { ok: true, preferences: f.writes[1].body }); assert.equal(await f.status(), "Reading settings saved.");
 });
 
 test("unchanged profile accepts canonical server normalization", async f => {
   await f.mount(); await f.edit("Display name", "  Submitted  "); await f.clickSave("Save profile");
-  await f.confirm(0, { profile: { ...f.writes[0].body, displayName: "Submitted" } });
+  await f.confirm(0, { ok: true, profile: { ...f.writes[0].body, displayName: "Submitted" } });
   assert.equal(await f.field("Display name").inputValue(), "Submitted");
   assert.equal(await f.status(), "Profile saved."); assert.equal(f.writes.length, 1);
 });
 test("unchanged settings accept canonical server values", async f => {
   await f.mount(); await f.edit("Text size", "large"); await f.clickSave("Save settings");
-  await f.confirm(0, { preferences: { textSize: "large", theme: "dark" } });
+  await f.confirm(0, { ok: true, preferences: { textSize: "large", theme: "dark" } });
   assert.equal(await f.field("Theme").inputValue(), "dark"); assert.equal(await f.status(), "Reading settings saved.");
 });
 test("profile failure preserves edits for a manual retry", async f => {
@@ -134,7 +134,7 @@ test("profile failure preserves edits for a manual retry", async f => {
   assert.equal(await f.field("About you").inputValue(), "New draft");
   assert.match(await f.status(), /Fixture storage failure/); assert.equal(f.writes.length, 1);
   await f.clickSave("Save profile"); assert.equal(f.writes[1].body.bio, "New draft");
-  await f.confirm(1, { profile: f.writes[1].body });
+  await f.confirm(1, { ok: true, profile: f.writes[1].body });
 });
 test("settings failure preserves edits for a manual retry", async f => {
   await f.mount(); await f.edit("Text size", "large"); await f.clickSave("Save settings");
@@ -142,7 +142,7 @@ test("settings failure preserves edits for a manual retry", async f => {
   assert.equal(await f.field("Theme").inputValue(), "dark");
   assert.match(await f.status(), /Fixture storage failure/); assert.equal(f.writes.length, 1);
   await f.clickSave("Save settings"); assert.equal(f.writes[1].body.theme, "dark");
-  await f.confirm(1, { preferences: f.writes[1].body });
+  await f.confirm(1, { ok: true, preferences: f.writes[1].body });
 });
 test("initial read preserves edited theme and merges untouched text size", async f => {
   f.state.holdPreferences = true; f.state.preferences = { textSize: "large", theme: "light" };
@@ -170,7 +170,7 @@ test("import refresh preserves a field edited while its read is pending", async 
 test("clean settings refresh after import and an acknowledged save", async f => {
   await f.mount(); f.state.preferences = { textSize: "large", theme: "light" }; await f.importReading();
   assert.equal(await f.field("Theme").inputValue(), "light");
-  await f.edit("Theme", "dark"); await f.clickSave("Save settings"); await f.confirm(0, { preferences: f.writes[0].body });
+  await f.edit("Theme", "dark"); await f.clickSave("Save settings"); await f.confirm(0, { ok: true, preferences: f.writes[0].body });
   f.state.preferences = { textSize: "larger", theme: "system" }; await f.importReading();
   assert.equal(await f.field("Theme").inputValue(), "system"); assert.equal(await f.field("Text size").inputValue(), "larger");
 });
@@ -179,14 +179,70 @@ test("initial read merges untouched theme and the next request includes both int
   await f.mount(); await f.edit("Text size", "larger"); await f.finishRead();
   assert.equal(await f.field("Theme").inputValue(), "light"); assert.equal(await f.field("Text size").inputValue(), "larger");
   await f.clickSave("Save settings"); assert.deepEqual(f.writes[0].body, { textSize: "larger", theme: "light" });
-  await f.confirm(0, { preferences: f.writes[0].body });
+  await f.confirm(0, { ok: true, preferences: f.writes[0].body });
 });
 test("save receipt merges a canonical untouched field and preserves the newer edit", async f => {
   await f.mount(); await f.edit("Text size", "large"); await f.clickSave("Save settings"); await f.edit("Theme", "dark");
-  await f.confirm(0, { preferences: { textSize: "larger", theme: "light" } });
+  await f.confirm(0, { ok: true, preferences: { textSize: "larger", theme: "light" } });
   assert.equal(await f.field("Text size").inputValue(), "larger"); assert.equal(await f.field("Theme").inputValue(), "dark");
   await f.clickSave("Save settings"); assert.deepEqual(f.writes[1].body, { textSize: "larger", theme: "dark" });
-  await f.confirm(1, { preferences: f.writes[1].body });
+  await f.confirm(1, { ok: true, preferences: f.writes[1].body });
+});
+
+for (const [name, receipt] of [
+  ["missing profile", () => ({ ok: true })],
+  ["negative acknowledgement", body => ({ ok: false, profile: body })],
+  ["invalid profile fields", body => ({ ok: true, profile: { ...body, displayName: 42 } })],
+]) test(`profile rejects ${name} without losing the draft or crashing`, async f => {
+  await f.mount(); await f.edit("Display name", "Unconfirmed name"); await f.clickSave("Save profile");
+  await f.confirm(0, receipt(f.writes[0].body));
+  assert.equal(await f.field("Display name").inputValue(), "Unconfirmed name");
+  assert.equal(await f.field("About you").inputValue(), "Initial bio");
+  assert.match(await f.status(), /could not confirm.*profile/i);
+  assert.equal(f.writes.length, 1, "An unconfirmed receipt must not trigger automatic resubmission");
+  await f.edit("Display name", "Deliberate retry"); await f.clickSave("Save profile");
+  assert.equal(f.writes[1].body.displayName, "Deliberate retry");
+  await f.confirm(1, { ok: true, profile: f.writes[1].body });
+  assert.equal(await f.status(), "Profile saved.");
+});
+
+for (const [name, receipt] of [
+  ["missing theme", { ok: true, preferences: { textSize: "standard" } }],
+  ["invalid theme", { ok: true, preferences: { textSize: "large", theme: "unsupported" } }],
+  ["negative acknowledgement", { ok: false, preferences: { textSize: "standard", theme: "system" } }],
+]) test(`settings reject ${name} and preserve both fields for manual recovery`, async f => {
+  await f.mount(); await f.edit("Text size", "large"); await f.edit("Theme", "dark"); await f.clickSave("Save settings");
+  await f.confirm(0, receipt);
+  assert.equal(await f.field("Text size").inputValue(), "large");
+  assert.equal(await f.field("Theme").inputValue(), "dark");
+  assert.match(await f.status(), /could not confirm.*reading settings/i);
+  assert.equal(f.writes.length, 1);
+  await f.clickSave("Save settings");
+  assert.deepEqual(f.writes[1].body, { textSize: "large", theme: "dark" });
+  await f.confirm(1, { ok: true, preferences: f.writes[1].body });
+  assert.equal(await f.status(), "Reading settings saved.");
+});
+
+test("a malformed settings receipt cannot acknowledge edits hidden by newer draft fields", async f => {
+  await f.mount(); await f.edit("Text size", "large"); await f.edit("Theme", "dark"); await f.clickSave("Save settings");
+  await f.edit("Text size", "larger"); await f.edit("Theme", "light");
+  await f.confirm(0, { ok: true });
+  assert.equal(await f.field("Text size").inputValue(), "larger");
+  assert.equal(await f.field("Theme").inputValue(), "light");
+  assert.match(await f.status(), /could not confirm.*reading settings/i);
+  assert.equal(f.writes.length, 1);
+});
+
+test("invalid initial settings leave the edited field and valid defaults usable", async f => {
+  f.state.holdPreferences = true;
+  await f.mount(); await f.edit("Theme", "dark");
+  await f.finishRead({ preferences: { textSize: "unsupported", theme: "light" } });
+  assert.equal(await f.field("Text size").inputValue(), "standard");
+  assert.equal(await f.field("Theme").inputValue(), "dark");
+  assert.match(await f.status(), /library response was incomplete/i);
+  await f.clickSave("Save settings");
+  assert.deepEqual(f.writes[0].body, { textSize: "standard", theme: "dark" });
+  await f.confirm(0, { ok: true, preferences: f.writes[0].body });
 });
 
 export async function verifyMemberDashboardDrafts({ browser, base }) {

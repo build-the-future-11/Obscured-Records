@@ -53,7 +53,9 @@ export async function readMemberJson(request: Request, maximumBytes = 12_000): P
     const bytes = new Uint8Array(total);
     let offset = 0;
     for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
-    return JSON.parse(new TextDecoder().decode(bytes));
+    // Reject corrupted transport bytes instead of accepting silently changed
+    // profile, annotation or portal text through replacement characters.
+    return JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
   } catch {
     return null;
   } finally {

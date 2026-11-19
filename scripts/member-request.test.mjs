@@ -44,6 +44,41 @@ test("member JSON accepts a multibyte codepoint split between chunks", async () 
   assert.deepEqual(await readMemberJson(makeRequest(body)), value);
 });
 
+// Otherwise valid JSON must not become different, accepted text when its UTF-8
+// transport bytes are malformed. Exercise both one chunk and every-byte splits.
+for (const [name, invalid] of [
+  ["isolated continuation byte", [0x80]],
+  ["overlong encoding", [0xc0, 0xaf]],
+  ["truncated multibyte sequence", [0xe2, 0x82]],
+  ["invalid continuation", [0xe2, 0x28, 0xa1]],
+  ["UTF-16 surrogate codepoint", [0xed, 0xa0, 0x80]],
+  ["codepoint beyond Unicode range", [0xf4, 0x90, 0x80, 0x80]],
+]) {
+  test(`member JSON rejects ${name} instead of changing the saved text`, async () => {
+    const bytes = Uint8Array.from([...encode('{"note":"Before '), ...invalid, ...encode(' after"}')]);
+    for (const split of [false, true]) {
+      const body = new ReadableStream({ start(controller) {
+        if (split) for (const byte of bytes) controller.enqueue(Uint8Array.of(byte));
+        else controller.enqueue(bytes);
+        controller.close();
+      } });
+      const request = makeRequest(body);
+      assert.equal(await readMemberJson(request), null, split ? "split bytes" : "one chunk");
+      assert.equal(request.body.locked, false);
+    }
+  });
+}
+
+test("member JSON rejects corrupted object keys before accepting a different identity", async () => {
+  const bytes = Uint8Array.from([...encode('{"'), 0xff, ...encode('":"note"}')]);
+  assert.equal(await readMemberJson(makeRequest(bytes)), null);
+});
+
+test("member JSON preserves genuine replacement characters and multilingual text", async () => {
+  const value = { note: "Literal \uFFFD, café, 中文, العربية, हिंदी and 🌍" };
+  assert.deepEqual(await readMemberJson(makeRequest(JSON.stringify(value))), value);
+});
+
 test("the default 12,000-byte ceiling allows the boundary and rejects the next byte", async () => {
   assert.equal((await readMemberJson(makeRequest(JSON.stringify("a".repeat(11998))))).length, 11998);
   assert.equal(await readMemberJson(makeRequest(JSON.stringify("a".repeat(11999)))), null);

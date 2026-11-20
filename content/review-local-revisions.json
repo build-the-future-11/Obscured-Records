@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "iraq-poison-grain",
+    "sourceBodySha256": "aeb617f62f86a30fd8f44ca95a2f537df20ced2a12bced78365c73aa69e86121",
+    "revisedBodySha256": "100155c79265a3148d99272da813b669879a70afa179261b99c26080510014ce",
+    "recordedAt": "2026-10-16",
+    "reason": "Removed three repeated interpretive paragraphs (100 words) after full local reading. No factual claim, source status, review checklist, history, author or approval metadata changed.",
+    "reviewKind": "AI-assisted local clarity review; not human editorial approval",
+    "evidence": "docs/EDITORIAL_CHANGELOG_2026-10-16.md"
+  },
+  {
+    "slug": "challenger-warning-and-decision",
+    "sourceBodySha256": "9860fbeb17924f07c057d7fd2183a9fd39d0f42eedf5d04badcc78a770d4de3f",
+    "revisedBodySha256": "17c2c4368fbdc6a098b49266880d019b487e36e9ca776f8a0c533fd56e0e8de4",
+    "recordedAt": "2026-10-16",
+    "reason": "Named Thiokol and the predicted O-ring temperature boundary explicitly, added exact Commission locators and tightened testimony-versus-finding attribution. Peer review caught and corrected the initial ambiguity between seal and ambient temperature before integration.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+    "frontmatterSha256": "cacd023dff41a7b7525a69b23732af95124a1abfcce691f6b056888e803d4073"
+  },
+  {
+    "slug": "columbia-evidence-not-requested",
+    "sourceBodySha256": "2e928fc7f00929a5e328f5888ef18c231b53bbe897f5a45c13205632d8e4c83d",
+    "revisedBodySha256": "35ed03e3b439e74dc2537e2575202037511dad03ccefbee4680d0b92c84295e0",
+    "recordedAt": "2026-10-16",
+    "reason": "Specified the thermal-tile/RCC scope of F3.4-6, clarified the imagery-request antecedent, added exact finding links and removed a repetitive closing paragraph.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+    "frontmatterSha256": "ed0b8753ef27bfc885dacbac580709a0ee5e0867c8eaf9da3532982523e81b65"
+  },
+  {
+    "slug": "dhahran-running-clock",
+    "sourceBodySha256": "48e9d76550d39e63d25989edd9389260df1245e708d02820155d9b51b3a9947e",
+    "revisedBodySha256": "66f2d7cbdc3efef7c96912d9b6ee8bbe14caba9801053f6c8892a8a289653e0e",
+    "recordedAt": "2026-10-16",
+    "reason": "Specified that the battery did not engage the Scud, retained casualty attribution and added the dated software-release/warning/arrival sequence from printed page 9.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+    "frontmatterSha256": "06298b9c7bbe676511429727e56c790c8b6e9d158e592f72bb3b94e6f63c151f"
+  },
+  {
+    "slug": "1mdb-global-trail",
+    "sourceBodySha256": "7314076d94a64752d752cfaceeb843e7cc5e3e082c50e37fcaca5db5e2bde57a",
+    "revisedBodySha256": "b734bfe9acf26ccf830d8f7eac5afe49311bbf754e8f8d0a1f681aa49968fcea",
+    "recordedAt": "2026-10-16",
+    "reason": "Removed a seizure implication, gave separate dated alleged-diversion and recovery-request figures, and added a specifically bounded 2019 civil settlement. Kept all current-outcome and individual-liability claims out of the text.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+    "frontmatterSha256": "a56f8447814524daf982c9a1650318634a8e9b17aba487fb4ed933393d792c82"
+  },
+  {
+    "slug": "parmalat-fictional-cash",
+    "sourceBodySha256": "3166ec9fd30ebbc935c541a2fdca6f436ddb44e0f2cc49fb874a4f9ca1c96e90",
+    "revisedBodySha256": "9e8263a0f86f75805e0cda791ae797b8c4f7ce85daf734fcfcc6a16bd74237a5",
+    "recordedAt": "2026-10-16",
+    "reason": "Mapped the stated assets, bank, subsidiary and consolidation dates to complaint paragraph 16; replaced a repeated warning with the dated 2004 consent and its court-entry condition.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+    "frontmatterSha256": "d55aa7b5f1b40a2a08d39dceeee3ce7c2d0a0c9c72abd528ddc5281608d31733"
+  },
+  {
+    "slug": "toshiba-impossible-targets",
+    "sourceBodySha256": "a4d429372d6fc1779582ea6f9214a5f189b4eef16bcb04bcd5622027ca86ad8a",
+    "revisedBodySha256": "e45d2cb1b5c9f62fbfbf3a255f028f639d81bc1c11e22dabede51facebb7a622",
+    "recordedAt": "2026-10-16",
+    "reason": "Replaced repeated general discussion with the Visual Products invoice-timing example and a case-specific distinction between business-unit instructions and corporate oversight. Added the translation hierarchy and retained the limits of the inquiry.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+    "frontmatterSha256": "0c0cc348da6ae89a4b954a7379a41bed45b3e896bb8ff4e1fe4bbee66decf4cb"
+  },
+  {
+    "slug": "bhopal-where-the-shift-ends",
+    "sourceBodySha256": "0598bf3de4415e4eb7bc5270b09d0d322366aaea832e484f3c1d05110f81da83",
+    "revisedBodySha256": "7b2f902eb30b18f7c14c14ae14f7d42c1f8be54c793847a0c8340dd877ae64e5",
+    "recordedAt": "2026-10-16",
+    "reason": "Make offsite safety scope an explicit editorial question rather than imply an independently reconstructed worker/responder exposure map. Separate exposure, injury and fatality totals and require compatible time windows and populations. Identify ILO's 2004 retrospective scope and remove an unsupported generalization about the usual endpoint of industrial timelines. State that settlement, current contamination and present-day health claims need their own evidence.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+    "frontmatterSha256": "c7ab905d0dddf2a0f3ded232f7e67cb947973727ebc14fd314136ca572859673"
+  },
+  {
+    "slug": "tuskegee-observation-is-intervention",
+    "sourceBodySha256": "b7b54db36c7c1d8620b125c6b87632e8d70f3910e3d87346b6282bed42a1f158",
+    "revisedBodySha256": "2bcb5a87ad500f144eed5abfcfd16f396a369b47750291e87818baca974af551",
+    "recordedAt": "2026-10-16",
+    "reason": "Separate the study period from the cohort total; do not assert that all 600 men enrolled at one moment in 1932. State CDC's explicit no-deliberate-infection distinction and identify the initial case/control groups. Replace a repeated group-count paragraph with the advisory panel's documented distinction between outside therapy and study-offered treatment, with direct primary-report link and printed page locators. Use level-two article headings and align the ending with the qualified treatment account.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+    "frontmatterSha256": "f07dca9f26644def072b19aac8b220351e9238cf2a68129d2d4c0965b157a3cc"
+  },
+  {
+    "slug": "seveso-boundary-of-the-factory",
+    "sourceBodySha256": "471630fdaa9069d68ec13977203ddc42eeddd6c39acd242e6d61c515dfce63e4",
+    "revisedBodySha256": "8b1f0064db7758fdc990961e17486d9a58bb658208b9274dc746abbfb5b32be7",
+    "recordedAt": "2026-10-16",
+    "reason": "Consolidate the approximate time, TCDD-containing release duration and communication account into the attributed opening. Replace repeated chronology with an explicit release-duration versus personal exposure/dose boundary. Ground the safeguard analysis in HSE's specific account of absent discharge collection/destruction equipment and an unfitted recovery receiver. Identify HSE's retrospective source scope, require separate resident-response evidence and use level-two article headings.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+    "frontmatterSha256": "463a3209a13084ceaaf43699cc7f4b99288dd31bfe38dfae3167ee00f5cb55d5"
+  },
+  {
+    "slug": "vela-incident",
+    "sourceBodySha256": "f05ae034952ac3db1af0713313e3882ac5e5f6699005a2d664fccd6a1a18bf0b",
+    "revisedBodySha256": "02ca0c7efdb5f8018a661bc29fabf1e9159fed8d44064bc40ea341b7cb10c781",
+    "recordedAt": "2026-10-16",
+    "reason": "Replaced repetitive caution with the exact memorandum and panel dates, Arecibo corroboration limit, modeled meteoroid distinction, and specific recommended further work; retained unresolved status and avoided actor or cover-up attribution.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json",
+    "frontmatterSha256": "a9667e0dc69db75e2116a2f616ea5bae8c6404e34d957bc3e362c1032ecdf9bd"
+  },
+  {
+    "slug": "ethiopian-airlines-961",
+    "sourceBodySha256": "d1a6ca281b1e1264cf32f9f400debde03002579c1c5e1a146c469dfd5963b859",
+    "revisedBodySha256": "0986179605da297026bda074a38c4ad9100affd7b9f142b9b863b5882b7fd555",
+    "recordedAt": "2026-10-16",
+    "reason": "Made recorder coverage and report date explicit; replaced general life-jacket wording with the report's particular observation and retained limits on comprehension, cabin preparation and individual fatality causation.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json",
+    "frontmatterSha256": "241e1fc5b53fb50d638801d359b9d5ebb8f34c3fdf63f80bb890b84eac24380b"
+  },
+  {
+    "slug": "great-molasses-flood",
+    "sourceBodySha256": "34bb968d5b5dfdbb1cb57f937deb620ccaf7a2e9c804aeece84d6af3d304c18d",
+    "revisedBodySha256": "b064afccd79947296f621e15a55b4c0164d38bececc5f247e0407db05c873435",
+    "recordedAt": "2026-10-16",
+    "reason": "Corrected tank-contents versus released-volume wording; attributed provisional versus later death counts; made lower-bound volume comparison explicit; replaced repetitive scale discussion with research-scope and primary-record limits.",
+    "reviewKind": "AI-assisted local source and clarity review; not human editorial approval",
+    "evidence": "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json",
+    "frontmatterSha256": "fa62e79e4a12a5a8dd7a4b9a500e22d0dd0020ecb41148b68d83ad61a60d593d"
+  }
+]

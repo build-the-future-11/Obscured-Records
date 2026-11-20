@@ -53,13 +53,13 @@
 }
 ---
 
-A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. A cloud containing TCDD escaped for about twenty minutes, according to HSE's case history. Confusion followed as the company and authorities failed to communicate adequately.
+A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. The resulting cloud carried 2,3,7,8-tetrachlorodibenzo-p-dioxin, usually abbreviated TCDD, beyond the site. HSE's case history puts the release at about twenty minutes and describes inadequate communication between the company and authorities afterward.
 
 The cloud escaped for a limited period. The need for information lasted longer. Residents and responders required an account of what had been released and where it had travelled, even after the plant had stopped emitting it.
 
 Ownership, equipment and exposure describe different boundaries. The fence marked control of the site; it could not contain the consequences of the release.
 
-### Knowing enough to act
+## Knowing enough to act
 
 After a release, information has several jobs. Operators need to understand the process failure. Responders need to identify practical measures. Residents need information that speaks to everyday decisions: where to go, what to avoid and whom to contact.
 
@@ -67,17 +67,17 @@ Those needs are related but not identical. A technically accurate description ca
 
 The response chronology needs to distinguish when information was detected, interpreted, shared and acted on. Decisions must be judged against the evidence available at their time.
 
-### A release has an information trail
+## A release has an information trail
 
-HSE describes a reactor's bursting disc rupturing around 12:37 on 10 July. A visible cloud left the plant, carrying TCDD among its constituents. The case history states that the release lasted about twenty minutes and that confusion followed because communication between the company and authorities was inadequate.
+The twenty-minute estimate describes the release, not the duration of anyone's exposure. A description of the cloud does not establish an individual's dose or later diagnosis. Those questions need separate exposure and health evidence.
 
 These details establish two different intervals. One concerns material leaving the process. The other concerns institutions acquiring and sharing a usable understanding of what had happened. Ending the first interval does not automatically end the second. A cloud can stop emerging while questions about where it went and what it contained remain urgent.
 
-The distinction also changes how a technical safeguard is evaluated. Relieving pressure can protect a vessel while directing its contents somewhere else. The safety question must follow that route to its destination. A device cannot be judged solely by whether the equipment immediately around it survives.
+The distinction also changes how a technical safeguard is evaluated. HSE records that no equipment collected or destroyed the vented toxic material and that a recovery receiver recommended by the bursting-disc manufacturer was not fitted. A pressure-relief device and a system for containing its discharge serve different purposes. Protecting a vessel is not, by itself, protection for people downwind.
 
-HSE's account establishes an offsite release accompanied by inadequate communication. Residents' instructions, their timing and their reception require separate response records and testimony.
+HSE's page is a retrospective accident summary that cites a 1996 loss-prevention text. It supports this bounded process and communication account. Residents' instructions, their timing and their reception require separate response records and testimony; the summary cannot substitute for them.
 
-### A place has more than one recovery date
+## A place has more than one recovery date
 
 Industrial narratives often favor restart dates. A community may measure recovery through other events: returning home, regaining access to land, receiving an explanation or knowing how future health questions will be followed. There is no reason to assume that these calendars coincide.
 

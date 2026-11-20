@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-16T03:02:23.513580+00:00",
+  "exitCode": 1,
+  "summary": [
+    "        at TestContext.<anonymous> (file:///Volumes/PRO-BLADE/GitHubRepos/Obscured-Records/scripts/article-expansion-batch.test.mjs:66:17)",
+    "        at Test.runInAsyncScope (node:async_hooks:226:14)",
+    "        at Test.run (node:internal/test_runner/test:1402:25)",
+    "        at Test.start (node:internal/test_runner/test:1262:17)",
+    "        at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17),",
+    "    expected: undefined,",
+    "    operator: 'strictEqual',",
+    "    diff: 'simple'",
+    "  }"
+  ],
+  "tests": 312,
+  "passed": 311,
+  "failed": 1,
+  "failure": "Batch fixture child Node startup exceeded its existing 10-second timeout during host resource pressure (ETIMEDOUT). No assertion about manuscript content failed. Receipt retained before unchanged focused rerun."
+}

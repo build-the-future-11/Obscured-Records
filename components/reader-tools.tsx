@@ -2,7 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { SaveStory } from "./reader-library";
-import { NOTES_KEY, readNotes, writeLocal } from "@/lib/reader-storage";
+import { NOTES_KEY, readNotes, writeLocal, type Annotation } from "@/lib/reader-storage";
+import { memberRequest, saveReaderAnnotation } from "@/lib/member-client";
 type Heading = { id: string; label: string };
 export function ReaderTools({ slug, headings }: { slug: string; headings: Heading[] }) {
   const [active, setActive] = useState(headings[0]?.id || "");
@@ -13,6 +14,9 @@ export function ReaderTools({ slug, headings }: { slug: string; headings: Headin
   const [noteError, setNoteError] = useState("");
   const [message, setMessage] = useState("");
   const [accountSync, setAccountSync] = useState(false);
+  const [savingNote, setSavingNote] = useState(false);
+  const noteDraft = useRef<Annotation | null>(null);
+  const noteRequest = useRef<AbortController | null>(null);
   const notebook = useRef<HTMLDialogElement>(null);
   const highlightButton = useRef<HTMLButtonElement>(null);
   useEffect(() => {
@@ -27,9 +31,12 @@ export function ReaderTools({ slug, headings }: { slug: string; headings: Headin
     return () => { media.removeEventListener("change", apply); window.removeEventListener("or-reader-preference", apply); window.removeEventListener("scroll", update); document.removeEventListener("selectionchange", selected); };
   }, [headings]);
   useEffect(() => {
-    Promise.all([fetch("/api/member/preferences"), fetch(`/api/member/annotations?slug=${encodeURIComponent(slug)}`)]).then(async ([preferenceResponse, annotationResponse]) => {
-      if (!preferenceResponse.ok || !annotationResponse.ok) return;
-      const [{ preferences }, { items }] = await Promise.all([preferenceResponse.json(), annotationResponse.json()]) as [{ preferences: { textSize: string; theme: string } }, { items: import("@/lib/reader-storage").Annotation[] }];
+    const controller = new AbortController();
+    Promise.all([
+      memberRequest<{ preferences: { textSize: string; theme: string } }>("/api/member/preferences", { signal: controller.signal }),
+      memberRequest<{ items: Annotation[] }>(`/api/member/annotations?slug=${encodeURIComponent(slug)}`, { signal: controller.signal }),
+    ]).then(([{ preferences }, { items }]) => {
+      if (controller.signal.aborted) return;
       setAccountSync(true);
       try {
         localStorage.setItem("or-reader-theme", preferences.theme); localStorage.setItem("or-reader-size", preferences.textSize);
@@ -38,6 +45,7 @@ export function ReaderTools({ slug, headings }: { slug: string; headings: Headin
         writeLocal(NOTES_KEY, [...merged.values()]); window.dispatchEvent(new Event("or-reader-preference"));
       } catch { setMessage("Account settings loaded, but this browser could not cache them."); }
     }).catch(() => {});
+    return () => { controller.abort(); noteRequest.current?.abort(); noteRequest.current = null; };
   }, [slug]);
   useEffect(() => {
     // CSS Highlights paints stored passages without modifying React's article DOM.
@@ -72,14 +80,40 @@ export function ReaderTools({ slug, headings }: { slug: string; headings: Headin
     try { localStorage.setItem(key, value); window.dispatchEvent(new Event("or-reader-preference")); } catch { setMessage("Settings could not be saved on this device."); }
     if (accountSync) {
       const next = { textSize: key === "or-reader-size" ? value : size, theme: key === "or-reader-theme" ? value : theme };
-      fetch("/api/member/preferences", { method: "PUT", headers: { "content-type": "application/json" }, body: JSON.stringify(next) }).then((response) => { if (!response.ok) setMessage("Saved on this device; account sync is temporarily unavailable."); }).catch(() => setMessage("Saved on this device; account sync is temporarily unavailable."));
+      memberRequest("/api/member/preferences", { method: "PUT", body: JSON.stringify(next) }).catch(() => setMessage("Saved on this device; account sync is temporarily unavailable."));
+    }
+  }
+  async function saveHighlight() {
+    if (!selection || noteRequest.current) return;
+    // Reuse this identity after an uncertain network response: the server
+    // updates the same note instead of creating another one on each retry.
+    const item = { ...(noteDraft.current || { id: crypto.randomUUID(), slug, text: selection.text, anchor: selection.anchor, createdAt: new Date().toISOString() }), note };
+    noteDraft.current = item;
+    const controller = new AbortController();
+    noteRequest.current = controller;
+    setSavingNote(true);
+    try {
+      const result = await saveReaderAnnotation(item, accountSync, (saved) => {
+        const previous = readNotes(localStorage.getItem(NOTES_KEY));
+        writeLocal(NOTES_KEY, [...previous.filter((entry) => entry.id !== saved.id), saved]);
+      }, controller.signal);
+      if (controller.signal.aborted) return;
+      setNoteError("");
+      setMessage(result.accountSaved ? result.deviceCached ? "Passage saved to your private member notebook." : "Passage saved to your private member notebook. This browser could not cache it; view it in your member space." : "Passage saved in your highlights.");
+      noteDraft.current = null;
+      notebook.current?.close();
+      highlightButton.current?.focus();
+    } catch (error) {
+      if (!controller.signal.aborted) setNoteError(`${error instanceof Error ? error.message : "Could not confirm this highlight."} Your text is still here. Retry to update the same note.`);
+    } finally {
+      if (noteRequest.current === controller) { noteRequest.current = null; setSavingNote(false); }
     }
   }
   return <aside className="reader-rail" aria-label="Reader tools"><SaveStory slug={slug} />
     <details className="contents" open><summary>In this record</summary><nav aria-label="Table of contents">{headings.map((heading) => <a key={heading.id} href={`#${heading.id}`} aria-current={active === heading.id ? "location" : undefined}>{heading.label}</a>)}</nav></details>
     <details className="reader-settings"><summary>Reading settings</summary><label>Text size<select aria-label="Text size" value={size} onChange={(e) => preference("or-reader-size", e.target.value)}><option value="standard">Standard</option><option value="large">Large</option><option value="larger">Larger</option></select></label><label>Reading theme<select aria-label="Reading theme" value={theme} onChange={(e) => preference("or-reader-theme", e.target.value)}><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></details>
-    <button className="highlight-trigger" ref={highlightButton} onMouseDown={(e) => e.preventDefault()} onClick={() => { if (!selection) { setMessage("Select text within a paragraph first, up to 2,000 characters."); return; } setNote(""); setNoteError(""); setMessage(""); notebook.current?.showModal(); }}>Highlight selected text</button><small>{accountSync ? "Private to your member account." : "Private to this browser."} <Link href={accountSync ? "/member" : "/saved"}>Your notes →</Link></small><p className="reader-status" role="status">{message}</p>
-    <dialog ref={notebook} className="source-dialog" aria-labelledby="note-title" onClose={() => highlightButton.current?.focus()}><h2 id="note-title">Keep this passage</h2><blockquote>{selection?.text}</blockquote><label htmlFor="private-note">Private note (optional)</label><textarea id="private-note" value={note} maxLength={3000} onChange={(e) => setNote(e.target.value)} rows={4} /><p>{accountSync ? "Saved privately to your member account and cached on this device." : "Saved only on this device. Visible to anyone who uses this browser."}</p>{noteError && <p role="alert">{noteError}</p>}<div className="dialog-actions"><button onClick={async () => { if (!selection) return; const item = { id: crypto.randomUUID(), slug, text: selection.text, anchor: selection.anchor, note, createdAt: new Date().toISOString() }; try { if (accountSync) { const response = await fetch("/api/member/annotations", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(item) }); if (!response.ok) throw new Error(); } writeLocal(NOTES_KEY, [...readNotes(localStorage.getItem(NOTES_KEY)), item]); setNoteError(""); setMessage(accountSync ? "Passage saved to your private member notebook." : "Passage saved in your highlights."); notebook.current?.close(); highlightButton.current?.focus(); } catch { setNoteError("Could not save this highlight. Your text is still here. Check storage access and try again."); } }}>Save highlight</button><button onClick={() => notebook.current?.close()}>Cancel</button></div></dialog>
+    <button className="highlight-trigger" ref={highlightButton} onMouseDown={(e) => e.preventDefault()} onClick={() => { if (!selection) { setMessage("Select text within a paragraph first, up to 2,000 characters."); return; } noteDraft.current = null; setNote(""); setNoteError(""); setMessage(""); notebook.current?.showModal(); }}>Highlight selected text</button><small>{accountSync ? "Private to your member account." : "Private to this browser."} <Link href={accountSync ? "/member" : "/saved"}>Your notes →</Link></small><p className="reader-status" role="status">{message}</p>
+    <dialog ref={notebook} className="source-dialog" aria-labelledby="note-title" aria-busy={savingNote} onCancel={(event) => { if (savingNote) event.preventDefault(); }} onClose={() => highlightButton.current?.focus()}><h2 id="note-title">Keep this passage</h2><blockquote>{selection?.text}</blockquote><label htmlFor="private-note">Private note (optional)</label><textarea id="private-note" value={note} maxLength={3000} disabled={savingNote} onChange={(e) => setNote(e.target.value)} rows={4} /><p>{accountSync ? "Saved privately to your member account and cached on this device. Anyone using this browser can see cached notes." : "Saved only on this device. Visible to anyone who uses this browser."}</p>{noteError && <p role="alert">{noteError}</p>}<div className="dialog-actions"><button disabled={savingNote} onClick={saveHighlight}>{savingNote ? "Saving…" : "Save highlight"}</button><button disabled={savingNote} onClick={() => notebook.current?.close()}>Cancel</button></div></dialog>
   </aside>;
 }
 export function SourcePreview({ source, index }: { source: { label: string; url: string; kind: string; publisher: string }; index: number }) {

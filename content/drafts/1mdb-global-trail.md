@@ -62,7 +62,7 @@ A property purchase was the visible end of an alleged chain of transfers. Prosec
 
 ## An asset is not the whole money trail
 
-A seized asset makes a financial investigation visible. A building, artwork or other object can be photographed and named. The transaction history connecting it to alleged wrongdoing is usually less photogenic and more important.
+An asset named in a forfeiture complaint makes a financial investigation visible. A building, artwork or other object can be photographed and named. The transaction history connecting it to alleged wrongdoing is usually less photogenic and more important.
 
 Following funds requires distinctions that popular accounts often collapse. Money can pass through an entity without that entity being the ultimate beneficiary. A person may control an account without appearing as its nominal owner. A purchase may be connected to a chain of transfers that includes legitimate as well as disputed funds. Each connection needs evidence.
 
@@ -72,10 +72,10 @@ Property sought in forfeiture, property recovered and transactions still contest
 
 ## The date attached to an allegation
 
-The Justice Department's July 2016 announcement divides the alleged diversion into several phases, including funds intended for an energy-related investment and proceeds from later bond offerings. That distinction matters because the sum raised, the sum allegedly diverted and the value of assets sought in forfeiture answer different questions.
+In the [20 July 2016 announcement](https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign), prosecutors alleged more than $3.5 billion had been misappropriated from 2009 to 2015, while the complaints sought property worth more than $1 billion. The announcement separated an alleged 2009 diversion connected with an energy investment from later bond proceeds. Money allegedly diverted, money raised and assets targeted for recovery are different measures.
 
 An asset-recovery announcement can name more than a billion dollars of property without claiming that this property equals every dollar diverted. It identifies what the government is seeking at a particular procedural stage. Comparing that figure with a later recovery total requires checking which assets and proceedings each includes.
 
-A transaction map needs both the movement of money and the status of the evidence: an allegation in a complaint, an acknowledgment in an agreement or a finding in a judgment.
+On [30 October 2019](https://www.justice.gov/archives/opa/pr/united-states-reaches-settlement-recover-more-700-million-assets-allegedly-traceable), DOJ announced a civil settlement involving assets estimated above $700 million. The release said the agreement did not release any person or entity from filed or potential criminal charges. That settlement should not be read as a criminal verdict or as an update to every claim in the 2016 complaints.
 
-The assets made the alleged diversion visible; the transaction records had to connect them to it. Later agreements or judgments could change the status of individual claims. The 2016 announcement establishes the case prosecutors brought at that date.
+The assets made the alleged diversion visible; the transaction records had to connect them to it. The 2016 announcement records what prosecutors alleged then, while the 2019 release describes a later civil resolution with its own scope.

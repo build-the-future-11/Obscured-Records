@@ -14,12 +14,12 @@
   ],
   "description": "The 2019 Philadelphia refinery explosion exposed the consequences of a hydrofluoric-acid release and long-lived equipment.",
   "socialPreview": "The 2019 Philadelphia refinery explosion exposed the consequences of a hydrofluoric-acid release and long-lived equipment.",
-  "readingTime": "3 min",
+  "readingTime": "4 min",
   "genre": "Archival analysis — not original reporting",
   "sources": [
     {
-      "title": "CSB Philadelphia Energy Solutions investigation",
-      "url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/",
+      "title": "CSB Philadelphia Energy Solutions final report",
+      "url": "https://www.csb.gov/assets/1/20/pes_final_report_published_october_2022_r1.pdf",
       "status": "orientation-source-not-verified",
       "supports": "Initial chronology, terminology and source discovery only; every material claim remains open for claim-level review."
     }
@@ -70,6 +70,6 @@ This draft treats obscurity as a reporting problem, not as proof of a conspiracy
 
 ## What remains to verify
 
-The source trail begins with CSB Philadelphia Energy Solutions investigation. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.
+The source trail begins with CSB Philadelphia Energy Solutions final report. It is an orientation source, not claim-level certification. Before publication, an editor must locate the underlying investigation or contemporaneous records, verify every material date and number, identify contrary evidence, and determine whether later findings changed the initial account.
 
 The article also needs a rights-cleared visual or a deliberate text-only decision, a named author, a named human approver and a final fairness review. Until those steps are complete, this manuscript remains private editorial inventory. Its value is the reporting map it creates: a distinct question, a bounded source trail and a visible list of what the record still cannot support.

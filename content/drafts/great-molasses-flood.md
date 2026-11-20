@@ -56,30 +56,26 @@
 }
 ---
 
-A Boston storage tank burst on 15 January 1919, releasing at least 2.2 million gallons of molasses. NOAA's historical spill overview reports 21 deaths and 150 injuries. The familiar food material had been stored at a scale far removed from its ordinary use.
+A Boston storage tank burst on 15 January 1919. NOAA's historical spill overview describes a tank holding at least 2.2 million gallons of molasses and reports 21 deaths and 150 injuries. These are attributed historical figures, not measurements made for this article.
 
-Molasses made the disaster memorable. The scale of its storage made it dangerous: an industrial inventory escaped containment into an inhabited district. Understanding the tank and the people around it requires setting aside the household quantities with which the material was familiar.
+The familiar food material had been stored at an industrial scale beside an inhabited district. The disaster is easier to understand as a failure of containment than as a curiosity about an unusual substance.
 
-## The material matters
+## Counts belong to dated records
 
-A stored liquid has weight. A large volume released into streets can impose forces and create conditions that are entirely unlike its behavior in a jar. Familiarity with a household quantity is not an adequate intuition for an industrial inventory.
+A [Boston Post report of 16 January 1919](https://www.massmoments.org/moment-details/great-molasses-flood/submoment/hugh-ogden-issues-report-on-cause-of-the-molasses-flood.html), reproduced in Mass Humanities' primary-source excerpt, counted eleven known dead at midnight. That was an early count, not the final toll. Its timing matters when comparing it with NOAA's later figure of 21.
 
-Explaining the failure requires the tank's design, condition and supporting engineering evidence. NOAA's short overview establishes the release and reported toll, but cannot settle every structural or legal claim.
+The newspaper excerpt gave 2.3 million gallons. [Boston's Archives and Records Management overview](https://www.boston.gov/news/100-years-ago-today-molasses-crashes-through-bostons-north-end) also uses 2.3 million, while NOAA says at least 2.2 million. The lower-bound wording does not contradict the larger figure, but the sources do not establish an independently measured exact volume here. Converting one of those figures into more decimal places would add precision without resolving its evidentiary basis.
 
-NOAA's spill history helps locate the event within a wider class of releases. Its breadth is also a limitation for a detailed article. A short agency overview cannot establish every claim about the tank, the legal aftermath or the people killed. Those details should be sourced to records specific to Boston's disaster.
+The newspaper's account is evidence of what was reported immediately after the event. It should not be treated as a completed engineering investigation. Its dramatic descriptions of the wave require the same scrutiny as its provisional casualty count.
 
-The streets around a storage tank are occupied routes, not empty capacity for a spill. People using them need not know the condition of the industrial inventory beside them.
+## Explaining a flow is different from establishing a failure
 
-## Familiarity changes with quantity
+A stored liquid has weight. A large release into streets can create conditions unlike those associated with a household quantity. That general physical explanation does not identify which part of Boston's tank failed first or determine legal responsibility.
 
-A jar and a storage tank contain the same named material in very different arrangements. The tank places a large inventory above and beside people who may not be involved in using it. Once containment is lost, the surroundings become part of the event.
+A [2016 American Physical Society conference abstract](https://meetings-archive.aps.org/dfd/2016/l27/8/) by Nicole Sharp, Jordan Kennedy and Shmuel Rubinstein proposed examining temperature and the flow behavior of molasses. The abstract is a statement of research scope, not a complete engineering report with the methods and results needed to independently assess a failure reconstruction.
 
-This is a general explanation of why an industrial spill can be dangerous, rather than a calculation of the Boston flow. A numerical reconstruction would need the tank geometry, release conditions, terrain and changing properties of the material. The unusual name cannot supply those inputs.
+A numerical account would need tank geometry, release conditions, terrain and material properties under relevant conditions. A legal account would need the findings and reasoning of the case itself. Neither can be supplied simply by repeating a number from a short overview.
 
-NOAA's overview also discusses a much later molasses release in Honolulu. The comparison is useful because it shows that a familiar food material can pose different kinds of harm in different settings. It does not establish that the Boston and Honolulu events shared a cause or an identical environmental outcome.
+[NOAA's discussion](https://response.restoration.noaa.gov/about/media/molasses-and-other-weird-things-have-spilled.html) also calls fish deaths in Boston likely, while noting the lack of detailed documentation in 1919. That qualification should remain attached. Its discussion of a later Honolulu spill does not establish an identical Boston environmental outcome.
 
-In particular, NOAA distinguishes its suggestion of possible historical fish impacts in Boston from detailed documentation. That qualification should stay attached to the claim rather than becoming another assured consequence in a retelling.
-
-Scale changed the consequences of losing containment. A numerical account of the Boston flow would need geometry, terrain and material conditions that the overview does not supply.
-
-The tank failed and an industrial quantity entered the streets. That is the established event. Its structural causes require engineering records, and its influence on later standards requires a documented connection to the rules that followed.
+The available accounts establish a destructive release and a reported human toll. Precise claims about construction defects, flow speed or the disaster's influence on later building rules remain outside this draft's verified scope until the relevant engineering, court and regulatory records are examined.

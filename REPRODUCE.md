@@ -1,4 +1,24 @@
-# Reproduce the local checks
+# Reproduce the current website checks — 16 October 2026
+
+This is a Git checkout. Read `PROJECT_STATE.json`, `STATUS.md` and `docs/WEBSITE_COMPLETION_2026-10-16.md` first; the dated export notes below are retained historical evidence, not current repository or release identity. The local and private Sites repositories have separate commit histories, bound by byte-for-byte source comparisons and the deployment receipts. `/api/revision` must match the recorded private source commit.
+
+The current bounded suite runs on Node v26.8.2, macOS arm64, with existing installed dependencies. Use sequential tests and an inherited heap limit:
+
+```sh
+rtk proxy env NODE_OPTIONS=--max-old-space-size=128 node --experimental-strip-types --test --test-concurrency=1 scripts/*.test.mjs
+rtk proxy env NODE_OPTIONS=--max-old-space-size=128 npm run check:editorial
+rtk proxy env NODE_OPTIONS=--max-old-space-size=128 npm run check:state
+rtk proxy npm audit --omit=dev --audit-level=low --json
+rtk proxy git diff --check
+```
+
+Do not start installs, full typechecks/builds or browser processes below the 512 MiB free-plus-speculative-memory admission floor or during unsafe pageout pressure. Bounded tests do not replace the full release build. Both build prehooks generate the editorial shards and exact-byte image module, then explicitly run `tsc --noEmit --incremental false`. The current private Sites provider runs the full Workers build. The completion receipt records the exact candidate; it does not claim a new Vercel, owner-authenticated browser, physical-device or screen-reader certification.
+
+`scripts/private-release-smoke.mjs` is the explicitly hosted, read-only exception to the local-only scripts below. It targets the fixed existing private Site, takes its existing access credential through hidden terminal input, checks the exact source revision, reader routes, draft isolation, access restrictions and image bytes/headers, and writes a fresh non-overwriting receipt. Never put credentials in command arguments, files or documentation. The script cannot substitute for an owner-authenticated visual review or database write/restore exercise. Preserve failed receipts before repairing and rerunning affected checks.
+
+# Historical export-era reproduction notes — September 2026
+
+The following notes preserve their original environment and outcomes. Claims about absent `.git`, null runtime revision and unverified CI apply to that earlier export only.
 
 Run from the repository root. Install requires network access; runtime/browser checks require loopback sockets. Do not point local smoke scripts at production. All requests use reserved `.invalid` email addresses; no email is sent.
 

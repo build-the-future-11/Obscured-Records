@@ -74,7 +74,7 @@ test('media holds suppress reader cover projections without altering the source 
     assert.equal(displayCover(original), undefined); assert.equal(getCatalog().find((s) => s.slug === slug).cover, undefined);
     assert.equal(getArticle(slug), original);
   }
-  assert.equal(displayCover(getArticle('fedex-flight-705')), '/fedex-705.webp');
+  assert.equal(displayCover(getArticle('fedex-flight-705')), '/media/fedex-705.webp');
 });
 test('branded share image is a real 1200x630 PNG, not a missing or mislabelled asset', () => {
   const png = readFileSync('public/share-card.png');

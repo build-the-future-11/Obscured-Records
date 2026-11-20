@@ -64,13 +64,13 @@
 
 Columbia and its seven crew members were lost during re-entry on 1 February 2003. The Columbia Accident Investigation Board found that a foam strike had damaged the left wing. Its inquiry also traced three independent attempts to obtain better images of the damage while the shuttle was still in orbit.
 
-Launch imagery revealed a strike near the left wing's leading edge, but did not conclusively show the damage. Better pictures could have helped. They were not the only route to an answer: CAIB finding F3.4-6 states that the information already available during the mission was adequate to determine the impact's effect. The failure involved both obtaining evidence and using it.
+Launch imagery revealed a strike near the left wing's leading edge, but did not conclusively show the damage. Better pictures could have helped. They were not the only route to an answer: CAIB finding F3.4-6 states that the information already available during the mission was adequate to determine the impact's effect on the thermal tiles and reinforced carbon-carbon wing components. The failure involved both obtaining evidence and using it. [CAIB findings F3.4-2 and F3.4-6, p. 62](https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM).
 
 ## The missing view
 
 The CAIB found that the photo working group was concerned about the impact and that no conclusive image of the strike existed. A Debris Assessment Team formed to analyze the event. During its early work, the team discussed the value of on-orbit imagery for bounding its analysis and tasked its NASA co-chair with seeking such imagery.
 
-According to the Board's findings, it moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request.
+According to the Board's findings, the imagery request moved through an engineering channel rather than the operational mission channel, which diluted its urgency. Managers treated it more like a non-critical engineering request than an operational safety need. Team members, meanwhile, did not understand that management's decision not to pursue imagery was not meant as a direct or final response to their request. [CAIB findings F6.3-7–9, p. 171](https://www.nasa.gov/wp-content/uploads/static/history/columbia/Troxell/Columbia%20Web%20Site/CAIB/COLUMB~1.HTM).
 
 The CAIB ultimately counted three independent imagery requests.
 
@@ -101,7 +101,5 @@ The engineering question is therefore not just whether an analysis has produced 
 ## What a better image could and could not establish
 
 Detection, interpretation and an effective response are separate problems. Better imagery could have changed the information available to decision-makers. It does not follow automatically that a feasible repair or rescue would then have succeeded.
-
-The missed imagery requests matter without a guaranteed rescue counterfactual. They show how an organization handled a request for more evidence when the available assessment remained uncertain.
 
 A better image would have supplied evidence, not a guaranteed rescue. The missed requests nevertheless exposed a consequential weakness: uncertainty could remain unresolved while the mission's decision process continued.

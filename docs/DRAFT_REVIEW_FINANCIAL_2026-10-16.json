@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-16",
+  "scope": "Continuation review of exactly three held financial drafts. All three original and revised manuscripts read; source verification limited to mapped primary-record passages. No human approval or completed checklist item asserted.",
+  "summary": {
+    "draftsReadInFull": 3,
+    "draftsRevised": 3,
+    "mappedClaims": 14,
+    "primarySourcesInspected": 5,
+    "incompleteSourceRetrievals": 2
+  },
+  "hashConventions": {
+    "body": "SHA-256 of UTF-8 body after CRLF-to-LF normalization and outer whitespace trim; matches reviewBodyHash in scripts/review-revisions.mjs.",
+    "file": "SHA-256 of exact complete file bytes.",
+    "frontmatter": "SHA-256 of exact raw bytes from opening --- plus newline through closing --- plus its trailing newline; excludes the following blank line/body. No JSON reserialization."
+  },
+  "releaseBoundary": {
+    "humanApproval": false,
+    "checklistCompletion": false,
+    "publication": false,
+    "externalWrites": false,
+    "sourceMetadataChanged": false,
+    "generatedFilesChanged": false,
+    "testsOrBuildsRun": false
+  },
+  "integrationRequired": "Root must add exact source/revised hash receipts without changing the frozen Page import, and synchronize generated draft projections when resource admission permits. This report does not itself authorize release.",
+  "sources": {
+    "doj-1mdb-2016": {
+      "title": "United States Seeks to Recover More Than $1 Billion Obtained from Corruption Involving Malaysian Sovereign Wealth Fund",
+      "institution": "U.S. Department of Justice, Office of Public Affairs",
+      "url": "https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign",
+      "date": "2016-07-20",
+      "accessDate": "2026-10-16",
+      "sourceType": "Civil-forfeiture announcement summarizing allegations",
+      "inspection": "Announcement body read in full; dated headline, opening allegations, three alleged phases, assets list and linked complaint index inspected.",
+      "limits": "Agency account of complaints, not a judgment. The 2025 webpage update is not the date of the announced action. Underlying transaction evidence not independently reconstructed."
+    },
+    "doj-1mdb-2019": {
+      "title": "United States Reaches Settlement to Recover More Than $700 Million in Assets Allegedly Traceable to Corruption Involving Malaysian Sovereign Wealth Fund",
+      "institution": "U.S. Department of Justice, Office of Public Affairs",
+      "url": "https://www.justice.gov/archives/opa/pr/united-states-reaches-settlement-recover-more-700-million-assets-allegedly-traceable",
+      "date": "2019-10-30",
+      "accessDate": "2026-10-16",
+      "sourceType": "Announcement of civil-forfeiture settlement",
+      "inspection": "Announcement body read, including settlement scope, criminal-charge reservation, and distinction from previously recovered assets.",
+      "limits": "Dated agency description; the underlying agreement and individual court disposition orders were not inspected. Not a current case-status report."
+    },
+    "sec-parmalat-2003": {
+      "title": "SEC v. Parmalat Finanziaria S.p.A., complaint, Case No. 03 CV 10266 (PKC)",
+      "institution": "U.S. Securities and Exchange Commission; filed in U.S. District Court, Southern District of New York",
+      "url": "https://www.sec.gov/litigation/complaints/comp18527.htm",
+      "date": "2003-12-29",
+      "accessDate": "2026-10-16",
+      "sourceType": "Civil complaint",
+      "inspection": "Complete complaint read; paragraphs 12 and 16 inspected for cash/securities, account, subsidiary, consolidation periods and debt-repurchase allegations.",
+      "limits": "HTML browser title incorrectly says Stipulation Order; actual document is headed Complaint and ends with the December 29 date. Allegations are not treated as trial findings."
+    },
+    "sec-parmalat-2004": {
+      "title": "Litigation Release No. 18803: Parmalat Finanziaria, S.p.A.",
+      "institution": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18803",
+      "date": "2004-07-28",
+      "accessDate": "2026-10-16",
+      "sourceType": "Civil-settlement announcement accompanying amended complaint",
+      "inspection": "Release read in full; consent, proposed judgment, court-entry condition and no-admission language inspected.",
+      "limits": "The release does not establish later court entry. New allegations and totals in the amended pleading are not silently substituted for the original complaint."
+    },
+    "toshiba-inquiry-2015": {
+      "title": "Investigation Report, English reference translation, July 20, 2015",
+      "institution": "Independent Investigation Committee for Toshiba Corporation; hosted by Toshiba",
+      "url": "https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf",
+      "date": "2015-07-20",
+      "accessDate": "2026-10-16",
+      "sourceType": "Independent committee inquiry commissioned for the company; English reference translation",
+      "inspection": "Title/translation notice and targeted Chapter 4 prose inspected: printed pages 199–203 and 215–216, including the expense example and both management findings. Not a full reading of all 334 PDF pages.",
+      "limits": "Japanese original governs; no bilingual comparison or independent court finding. Numerical adjustment tables were not verified and supply no new figure in the draft. Chapter-specific findings must not be extended to every business unit."
+    },
+    "doj-jet-complaint-2016-unreadable": {
+      "title": "Bombardier Jet complaint, Case 2:16-cv-05367, Document 1",
+      "institution": "U.S. Department of Justice; filed in U.S. District Court, Central District of California",
+      "url": "https://www.justice.gov/archives/page/file/877121/dl?inline=",
+      "date": "2016-07-20",
+      "accessDate": "2026-10-16",
+      "sourceType": "Civil-forfeiture complaint; incomplete inspection",
+      "inspection": "Reached from DOJ July 20, 2016 documents index. 136-page PDF extraction had garbled glyphs; PDF screenshot retrieval failed.",
+      "limits": "No transaction claim is supported by this retrieval. Obtain a readable primary copy and trace the relevant paragraphs before completing the transfer checklist."
+    },
+    "doj-yacht-2017-incomplete": {
+      "title": "United States Seeks to Recover Approximately $540 Million Obtained From Corruption Involving Malaysian Sovereign Wealth Fund",
+      "institution": "U.S. Department of Justice, U.S. Attorney's Office, Central District of California",
+      "url": "https://www.justice.gov/usao-cdca/pr/united-states-seeks-recover-approximately-540-million-obtained-corruption-involving",
+      "date": "2017-06-15",
+      "accessDate": "2026-10-16",
+      "sourceType": "Additional civil-forfeiture announcement; incomplete inspection",
+      "inspection": "Official search result identifies June 15, 2017 and Equanimity; full-page fetch timed out, and alternate OPA archive path failed.",
+      "limits": "Discovery only, not full claim verification. No yacht amount or transaction added to the draft, and this later announcement is not conflated with July 2016."
+    }
+  },
+  "reviews": [
+    {
+      "slug": "1mdb-global-trail",
+      "path": "content/drafts/1mdb-global-trail.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-reading-with-scoped-primary-source-claim-review",
+      "changed": true,
+      "recordedAt": "2026-10-16",
+      "reviewKind": "AI-assisted editorial review; not named human approval",
+      "sourceBodySha256": "7314076d94a64752d752cfaceeb843e7cc5e3e082c50e37fcaca5db5e2bde57a",
+      "revisedBodySha256": "b734bfe9acf26ccf830d8f7eac5afe49311bbf754e8f8d0a1f681aa49968fcea",
+      "sourceFileSha256": "2f9be19e23819d28ea07a86810ccc8bbd68bc407e1c9dc0b024e2fc52d1ef793",
+      "revisedFileSha256": "83c673215b710abec6309a706dfda193c065d3e17b8262d291a44d8ca141a03c",
+      "frontmatterSha256": "a56f8447814524daf982c9a1650318634a8e9b17aba487fb4ed933393d792c82",
+      "frontmatterBytes": 3278,
+      "frontmatterPreserved": true,
+      "originalSnapshot": ".cache/ux-seo-editorial-20261016-continuation/1mdb-global-trail.md",
+      "fullTextReviewEvidence": {
+        "originalReadInFull": true,
+        "revisedReadInFull": true,
+        "sourceWordCountWhitespaceSplit": 423,
+        "revisedWordCountWhitespaceSplit": 459,
+        "originalOpening": "Real estate, artwork and film-related investments featured in the U.S. Justice Department's July 2016 effort to recover property associated with Malaysia's 1MDB fund. The civil forfeiture complaints alleged that billions of dollars raised for national development had instead been diverted through international transactions.",
+        "revisedClosing": "The assets made the alleged diversion visible; the transaction records had to connect them to it. The 2016 announcement records what prosecutors alleged then, while the 2019 release describes a later civil resolution with its own scope.",
+        "sectionsReviewed": [
+          "An asset is not the whole money trail",
+          "The date attached to an allegation"
+        ],
+        "scope": "All prose in this draft was read for clarity, attribution, repetition, causal claims, figures and chronology. Source inspection covers the explicitly mapped passages, not every fact in the historical case."
+      },
+      "preservedReviewState": {
+        "status": "review",
+        "completedChecks": [],
+        "approvedBy": null,
+        "approvedAt": null,
+        "author": "Unassigned — AI-assisted editorial draft",
+        "createdAt": "2026-09-27",
+        "updatedAt": "2026-10-02",
+        "sourceStatuses": [
+          "scoped-source-pass-recorded"
+        ]
+      },
+      "changeSummary": "Removed a seizure implication, gave separate dated alleged-diversion and recovery-request figures, and added a specifically bounded 2019 civil settlement. Kept all current-outcome and individual-liability claims out of the text.",
+      "remainingReview": [
+        "Obtain a readable underlying forfeiture complaint and trace one alleged transfer with account/date/amount references; the garbled jet PDF did not satisfy this check.",
+        "Read the 2019 settlement agreement and relevant individual disposition orders before claiming that a particular transaction was proved or a particular asset recovered.",
+        "Verify later criminal and civil outcomes separately if extending beyond the dated releases; this draft is not a 2026 case-status account.",
+        "If adding Equanimity, inspect the full June 15, 2017 announcement/complaint and later disposition; do not attribute the yacht to the July 2016 asset list.",
+        "Named human author, editorial approval, visuals/rights and release checks remain pending."
+      ],
+      "claims": [
+        {
+          "id": "1mdb-retained-allegation-frame",
+          "passage": "Real estate, artwork and film-related investments featured in the U.S. Justice Department's July 2016 effort to recover property associated with Malaysia's 1MDB fund. The civil forfeiture complaints alleged that billions of dollars raised for national development had instead been diverted through international transactions.",
+          "sourceIds": [
+            "doj-1mdb-2016"
+          ],
+          "locator": "Opening paragraphs and alleged phases/assets paragraph (release 16-839).",
+          "support": "The source identifies the same asset classes and civil procedural stage.",
+          "uncertainty": "Agency allegations; no adjudication of every named person.",
+          "followup": "Inspect underlying pleadings before treating a transfer as independently established.",
+          "passageKind": "retained"
+        },
+        {
+          "id": "1mdb-request-not-seizure",
+          "passage": "An asset named in a forfeiture complaint makes a financial investigation visible.",
+          "sourceIds": [
+            "doj-1mdb-2016"
+          ],
+          "locator": "Opening announcement of complaints seeking forfeiture.",
+          "support": "Revision avoids implying that every requested asset was already seized.",
+          "uncertainty": "Editorial framing, not a verified seizure inventory.",
+          "followup": "Use dated seizure and disposition orders for any asset-specific recovery statement.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "1mdb-distinct-dated-amounts",
+          "passage": "In the [20 July 2016 announcement](https://www.justice.gov/archives/opa/pr/united-states-seeks-recover-more-1-billion-obtained-corruption-involving-malaysian-sovereign), prosecutors alleged more than $3.5 billion had been misappropriated from 2009 to 2015, while the complaints sought property worth more than $1 billion. The announcement separated an alleged 2009 diversion connected with an energy investment from later bond proceeds. Money allegedly diverted, money raised and assets targeted for recovery are different measures.",
+          "sourceIds": [
+            "doj-1mdb-2016"
+          ],
+          "locator": "Opening allegation totals and paragraph beginning In seeking recovery; 2009/2012/2013 phases.",
+          "support": "Keeps alleged diversion and requested assets separate.",
+          "uncertainty": "Neither figure states the full amount ultimately recovered.",
+          "followup": "Reconcile scope before comparing with later amounts.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "1mdb-2019-civil-scope",
+          "passage": "On [30 October 2019](https://www.justice.gov/archives/opa/pr/united-states-reaches-settlement-recover-more-700-million-assets-allegedly-traceable), DOJ announced a civil settlement involving assets estimated above $700 million. The release said the agreement did not release any person or entity from filed or potential criminal charges. That settlement should not be read as a criminal verdict or as an update to every claim in the 2016 complaints.",
+          "sourceIds": [
+            "doj-1mdb-2019"
+          ],
+          "locator": "Opening settlement estimate and paragraph beginning Low separately faces charges.",
+          "support": "Maps civil scope and express criminal-charge reservation.",
+          "uncertainty": "Announcement of settlement, not a criminal verdict or proof of each earlier allegation.",
+          "followup": "Inspect agreement and disposition orders.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "1mdb-retained-stage-distinction",
+          "passage": "Property sought in forfeiture, property recovered and transactions still contested belong to different stages of the case.",
+          "sourceIds": [
+            "doj-1mdb-2016",
+            "doj-1mdb-2019"
+          ],
+          "locator": "2016 opening; 2019 settlement terms and previously recovered assets paragraphs.",
+          "support": "Editorial distinction consistent with the two dated records.",
+          "uncertainty": "No present-tense classification of every asset has been verified.",
+          "followup": "Keep status and amount attached to a document date.",
+          "passageKind": "retained"
+        }
+      ]
+    },
+    {
+      "slug": "parmalat-fictional-cash",
+      "path": "content/drafts/parmalat-fictional-cash.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-reading-with-scoped-primary-source-claim-review",
+      "changed": true,
+      "recordedAt": "2026-10-16",
+      "reviewKind": "AI-assisted editorial review; not named human approval",
+      "sourceBodySha256": "3166ec9fd30ebbc935c541a2fdca6f436ddb44e0f2cc49fb874a4f9ca1c96e90",
+      "revisedBodySha256": "9e8263a0f86f75805e0cda791ae797b8c4f7ce85daf734fcfcc6a16bd74237a5",
+      "sourceFileSha256": "24f9272b1d27e775b79112299c2f460eb17412039798f7bcb9d6ddd864df2289",
+      "revisedFileSha256": "e6ec27b459892528d9ef372c370ed1861cee916031076fa98ce93cabdbb6eec3",
+      "frontmatterSha256": "d55aa7b5f1b40a2a08d39dceeee3ce7c2d0a0c9c72abd528ddc5281608d31733",
+      "frontmatterBytes": 3069,
+      "frontmatterPreserved": true,
+      "originalSnapshot": ".cache/ux-seo-editorial-20261016-continuation/parmalat-fictional-cash.md",
+      "fullTextReviewEvidence": {
+        "originalReadInFull": true,
+        "revisedReadInFull": true,
+        "sourceWordCountWhitespaceSplit": 467,
+        "revisedWordCountWhitespaceSplit": 495,
+        "originalOpening": "A purported bank confirmation stood behind billions of euros reported as Parmalat cash and securities. In a December 2003 complaint, the SEC alleged that the confirmation was forged and the account and assets did not exist.",
+        "revisedClosing": "The reported balance depended on the confirmation. According to the complaint, the document was forged and the assets did not exist. The evidentiary failure lay in the claimed connection to a bank account, not in the subsidiary's offshore address alone.",
+        "sectionsReviewed": [
+          "The document and the money",
+          "From a subsidiary into the group accounts"
+        ],
+        "scope": "All prose in this draft was read for clarity, attribution, repetition, causal claims, figures and chronology. Source inspection covers the explicitly mapped passages, not every fact in the historical case."
+      },
+      "preservedReviewState": {
+        "status": "review",
+        "completedChecks": [],
+        "approvedBy": null,
+        "approvedAt": null,
+        "author": "Unassigned — AI-assisted editorial draft",
+        "createdAt": "2026-09-27",
+        "updatedAt": "2026-10-02",
+        "sourceStatuses": [
+          "scoped-source-pass-recorded"
+        ]
+      },
+      "changeSummary": "Mapped the stated assets, bank, subsidiary and consolidation dates to complaint paragraph 16; replaced a repeated warning with the dated 2004 consent and its court-entry condition.",
+      "remainingReview": [
+        "Inspect the entered judgment and any later adjudicated findings before describing the 2004 proposed settlement as entered or the allegations as proved.",
+        "Compare the amended complaint and later judgments with the original account before reconciling changing cash, asset and debt totals.",
+        "If assigning responsibility for the confirmation, inspect primary audit correspondence and relevant adjudications; the draft does not establish who forged or accepted it.",
+        "Named human author, editorial approval, visuals/rights and release checks remain pending."
+      ],
+      "claims": [
+        {
+          "id": "parmalat-forged-confirmation",
+          "passage": "A purported bank confirmation stood behind billions of euros reported as Parmalat cash and securities. In a December 2003 complaint, the SEC alleged that the confirmation was forged and the account and assets did not exist.",
+          "sourceIds": [
+            "sec-parmalat-2003"
+          ],
+          "locator": "Paragraph 16; document dated December 29, 2003.",
+          "support": "The alleged forgery remains attributed to the SEC.",
+          "uncertainty": "Complaint rather than a final finding.",
+          "followup": "Read later judgments before removing allegation language.",
+          "passageKind": "retained"
+        },
+        {
+          "id": "parmalat-account-and-consolidation",
+          "passage": "Paragraph 16 of the [29 December 2003 complaint](https://www.sec.gov/litigation/complaints/comp18527.htm) locates the purported €3.95 billion in cash and securities at Bank of America in New York, in an account held by Bonlat, a Cayman Islands subsidiary. The SEC alleged that nonexistent assets entered Bonlat's 2002 records and Parmalat's consolidated accounts for 2002 and June 2003.",
+          "sourceIds": [
+            "sec-parmalat-2003"
+          ],
+          "locator": "Paragraph 16.",
+          "support": "Connects assets, account and consolidation periods.",
+          "uncertainty": "Cash and securities together, not a cash-only balance; underlying bank records not independently inspected.",
+          "followup": "Trace the confirmation and court findings before assigning individual responsibility.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "parmalat-debt-separate",
+          "passage": "The complaint also alleges misrepresentations about debt repurchases. That is a separate issue from the existence of cash. Combining both into a single enormous missing-money figure would obscure the distinction between an overstated asset and a liability that had not been removed as represented.",
+          "sourceIds": [
+            "sec-parmalat-2003"
+          ],
+          "locator": "Paragraph 12, debt-repurchase allegation.",
+          "support": "Preserves separate treatment of assets and liabilities.",
+          "uncertainty": "The explanatory distinction is editorial analysis, not a calculated total loss.",
+          "followup": "Do not sum changing complaint totals as one missing-money figure.",
+          "passageKind": "retained"
+        },
+        {
+          "id": "parmalat-consent-not-entered-judgment",
+          "passage": "The [SEC's 28 July 2004 announcement](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18803) records Parmalat's consent to a proposed judgment without admitting or denying the amended allegations. At that date, the settlement still depended on the court entering the judgment. The announcement documents a procedural step; it does not supply a trial finding that every allegation was proved.",
+          "sourceIds": [
+            "sec-parmalat-2004"
+          ],
+          "locator": "Opening consent and court-entry paragraphs; later consent paragraph.",
+          "support": "Keeps consent, entry condition and no-admission status together.",
+          "uncertainty": "No later court-entry record inspected.",
+          "followup": "Obtain the entered judgment and its date.",
+          "passageKind": "revised"
+        }
+      ]
+    },
+    {
+      "slug": "toshiba-impossible-targets",
+      "path": "content/drafts/toshiba-impossible-targets.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "full-draft-reading-with-scoped-primary-source-claim-review",
+      "changed": true,
+      "recordedAt": "2026-10-16",
+      "reviewKind": "AI-assisted editorial review; not named human approval",
+      "sourceBodySha256": "a4d429372d6fc1779582ea6f9214a5f189b4eef16bcb04bcd5622027ca86ad8a",
+      "revisedBodySha256": "e45d2cb1b5c9f62fbfbf3a255f028f639d81bc1c11e22dabede51facebb7a622",
+      "sourceFileSha256": "dd1597adbbd2fd423b7b59e2eb3a24c556473c1e406703f87d8ccfd0c19b1c16",
+      "revisedFileSha256": "a3b995d886cf748428a398fca617988101adc2067d0bc9f8330b217c39ceb2cc",
+      "frontmatterSha256": "0c0cc348da6ae89a4b954a7379a41bed45b3e896bb8ff4e1fe4bbee66decf4cb",
+      "frontmatterBytes": 3280,
+      "frontmatterPreserved": true,
+      "originalSnapshot": ".cache/ux-seo-editorial-20261016-continuation/toshiba-impossible-targets.md",
+      "fullTextReviewEvidence": {
+        "originalReadInFull": true,
+        "revisedReadInFull": true,
+        "sourceWordCountWhitespaceSplit": 457,
+        "revisedWordCountWhitespaceSplit": 481,
+        "originalOpening": "Toshiba's 2015 independent investigation described accounting practices that brought profits forward or postponed costs, alongside management pressure for late-period results. A reported improvement could leave the next period carrying an expense or shortfall hidden by the earlier account.",
+        "revisedClosing": "Bringing profit forward could make the present period look better while burdening the next. The inquiry traced that pattern through specific practices, management pressure and oversight failures. Its findings concern that combination, not a presumption that ambition alone produces fraud.",
+        "sectionsReviewed": [
+          "The number demanded before the number was known",
+          "Borrowing profit from the next period"
+        ],
+        "scope": "All prose in this draft was read for clarity, attribution, repetition, causal claims, figures and chronology. Source inspection covers the explicitly mapped passages, not every fact in the historical case."
+      },
+      "preservedReviewState": {
+        "status": "review",
+        "completedChecks": [],
+        "approvedBy": null,
+        "approvedAt": null,
+        "author": "Unassigned — AI-assisted editorial draft",
+        "createdAt": "2026-09-27",
+        "updatedAt": "2026-10-02",
+        "sourceStatuses": [
+          "scoped-source-pass-recorded"
+        ]
+      },
+      "changeSummary": "Replaced repeated general discussion with the Visual Products invoice-timing example and a case-specific distinction between business-unit instructions and corporate oversight. Added the translation hierarchy and retained the limits of the inquiry.",
+      "remainingReview": [
+        "Compare the Japanese original for the cited Chapter 4 passages before final wording; only the reference translation was inspected.",
+        "Verify any future overstatement amount and period against the relevant tables and later restated accounts; no new total is claimed here.",
+        "Keep corporate oversight and business-unit instructions distinct; do not extend the Chapter 4 negative evidence statement to all Toshiba practices or executives.",
+        "Account for the inquiry limitations: missing earlier materials, unavailable former personnel, and carry-over classifications requiring judgment.",
+        "Named human author, editorial approval, visuals/rights and release checks remain pending."
+      ],
+      "claims": [
+        {
+          "id": "toshiba-translation-boundary",
+          "passage": "The July 2015 inquiry examined accounting practices and ineffective oversight across business units. The English document is a reference translation of those findings, not a court's determination; the report states that the Japanese original governs if the texts differ. It traces how demands for results interacted with the practices used to report them.",
+          "sourceIds": [
+            "toshiba-inquiry-2015"
+          ],
+          "locator": "Title page (PDF page 1) and Chapter 4.",
+          "support": "Date and translation hierarchy are explicit.",
+          "uncertainty": "Japanese original not compared; inquiry is not a court judgment.",
+          "followup": "Compare Japanese text before final publication.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "toshiba-delayed-service-expenses",
+          "passage": "Chapter 4's [account of the Visual Products business](https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf#page=201) gives a concrete example. The committee found that some advertising, logistics and other service expenses were shifted to the next quarter because invoices had not arrived or suppliers were asked to delay them. It said those expenses belonged in the period when the services were provided.",
+          "sourceIds": [
+            "toshiba-inquiry-2015"
+          ],
+          "locator": "Chapter 4 IV.2(1)(A)(b), printed page 201 (PDF index 200).",
+          "support": "Uses the specific invoice-timing example.",
+          "uncertainty": "Finding attributed to the committee; no independent invoice review.",
+          "followup": "Retain chapter attribution and verify original Japanese wording.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "toshiba-carryover-caveat",
+          "passage": "The service had already been used; moving its expense changed the reported timing, not that underlying event. The committee treated these delays as part of the carry-over practices used to adjust profits. It also cautioned that some balances gathered under that label did not amount to improper accounting.",
+          "sourceIds": [
+            "toshiba-inquiry-2015"
+          ],
+          "locator": "Chapter 4 IV.2(1), printed pages 199–200; IV.3(1), printed page 203.",
+          "support": "Distinguishes timing effect and classification caveat.",
+          "uncertainty": "The first sentence is editorial explanation. Some balances were not improper; not all carry-over labels establish misstatement.",
+          "followup": "Preserve this caveat when adding quantities.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "toshiba-oversight-not-direct-instruction",
+          "passage": "On [pages 215–216](https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf#page=215), the committee linked excessive targets to the conditions encouraging those practices. It distinguished instructions within the business unit from corporate oversight: it found no evidence that corporate top management directed or participated in executing the inappropriate carry-overs, but concluded that management should have checked their accounting treatment. That distinction matters when assessing responsibility.",
+          "sourceIds": [
+            "toshiba-inquiry-2015"
+          ],
+          "locator": "Chapter 4 IV.4(1)–(2), printed pages 215–216 (PDF indices 214–215).",
+          "support": "Maps separate instruction and oversight findings.",
+          "uncertainty": "Negative evidence is confined to execution of the inappropriate Visual Products carry-overs; it is not blanket exoneration.",
+          "followup": "Check original text and avoid broadening to other practices.",
+          "passageKind": "revised"
+        },
+        {
+          "id": "toshiba-retained-nonuniversal-cause",
+          "passage": "Bringing profit forward could make the present period look better while burdening the next. The inquiry traced that pattern through specific practices, management pressure and oversight failures. Its findings concern that combination, not a presumption that ambition alone produces fraud.",
+          "sourceIds": [
+            "toshiba-inquiry-2015"
+          ],
+          "locator": "Chapter 4 IV.3(1), page 203; IV.4(1)–(2), pages 215–216.",
+          "support": "Retains a bounded editorial causal conclusion.",
+          "uncertainty": "Does not claim that targets alone cause fraud.",
+          "followup": "Any named-person claim needs its own finding.",
+          "passageKind": "retained"
+        }
+      ]
+    }
+  ]
+}

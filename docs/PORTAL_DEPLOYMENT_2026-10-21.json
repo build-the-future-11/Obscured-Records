@@ -1,0 +1,15 @@
+{
+  "id": "appgdep_6ad8643951288191ac43777819b6b9c8",
+  "project_id": "appgprj_6aa79b45dd308191b3b887c293729f00",
+  "title": "Obscured Records",
+  "version_id": "appgprj_6aa79b45dd308191b3b887c293729f00~appgver_d92bd7c5ac4081918091a893a5c70699",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://obscured-records.ryangomez-hs.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6aa79b45dd308191b3b887c293729f00",
+  "failure_message": null,
+  "env_set_revision": 16,
+  "updated_at": "2026-10-21T07:08:48.290861+00:00"
+}

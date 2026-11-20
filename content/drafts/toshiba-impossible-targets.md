@@ -58,7 +58,7 @@
 
 Toshiba's 2015 independent investigation described accounting practices that brought profits forward or postponed costs, alongside management pressure for late-period results. A reported improvement could leave the next period carrying an expense or shortfall hidden by the earlier account.
 
-The July 2015 inquiry examined accounting practices and ineffective oversight across business units. The English document is a reference translation of those findings, not a court's determination. It traces how demands for results interacted with the practices used to report them.
+The July 2015 inquiry examined accounting practices and ineffective oversight across business units. The English document is a reference translation of those findings, not a court's determination; the report states that the Japanese original governs if the texts differ. It traces how demands for results interacted with the practices used to report them.
 
 ## The number demanded before the number was known
 
@@ -74,8 +74,10 @@ A report can disappoint management and still accurately describe the business. I
 
 ## Borrowing profit from the next period
 
-The independent investigation described pressure for late-period results and practices that brought profits forward or delayed costs. Such shifts can create a recurring problem: a later period must absorb costs or make up income already claimed. A reported improvement can therefore make the next target harder to meet while concealing why.
+Chapter 4's [account of the Visual Products business](https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf#page=201) gives a concrete example. The committee found that some advertising, logistics and other service expenses were shifted to the next quarter because invoices had not arrived or suppliers were asked to delay them. It said those expenses belonged in the period when the services were provided.
 
-This is also a problem of feedback. Managers use reported figures to judge whether operations are working. If those figures reflect timing manipulations, the apparent evidence of success encourages demands that the underlying business cannot satisfy. The report's criticism of particular late-quarter “Challenges” should not be expanded into a claim that all financial targets are inherently improper. Its findings concerned how pressure interacted with the accounting practices it examined. The English document is a reference translation of the July 2015 report; the investigation's findings should be attributed accordingly, rather than presented as a court's determination.
+The service had already been used; moving its expense changed the reported timing, not that underlying event. The committee treated these delays as part of the carry-over practices used to adjust profits. It also cautioned that some balances gathered under that label did not amount to improper accounting.
+
+On [pages 215–216](https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20151208_2.pdf#page=215), the committee linked excessive targets to the conditions encouraging those practices. It distinguished instructions within the business unit from corporate oversight: it found no evidence that corporate top management directed or participated in executing the inappropriate carry-overs, but concluded that management should have checked their accounting treatment. That distinction matters when assessing responsibility.
 
 Bringing profit forward could make the present period look better while burdening the next. The inquiry traced that pattern through specific practices, management pressure and oversight failures. Its findings concern that combination, not a presumption that ambition alone produces fraud.

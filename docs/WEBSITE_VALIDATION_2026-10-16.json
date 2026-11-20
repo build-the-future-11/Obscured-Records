@@ -1,0 +1,48 @@
+{
+  "nodeTests": 312,
+  "failed": 0,
+  "nodeHeapMiB": 128,
+  "testConcurrency": 1,
+  "productionAudit": {
+    "advisories": 0,
+    "command": "npm audit --omit=dev --audit-level=low --json"
+  },
+  "editorialIndex": {
+    "beforeBytes": 29805082,
+    "afterBytes": 1838464,
+    "reductionPercent": 93.83,
+    "renderedCardsPerPage": 36,
+    "lazyShards": 64
+  },
+  "content": {
+    "readerRecords": 28,
+    "privateDrafts": 3245,
+    "explicitReportingPlans": 3000,
+    "approvedDrafts": 0,
+    "sourceContentChanged": false
+  },
+  "checks": [
+    "editorial-integrity",
+    "check-project-state",
+    "targeted ESLint",
+    "targeted TS transpile syntax",
+    "all draft projection body and metadata comparisons",
+    "provider production build with explicit prebuild typecheck gate"
+  ],
+  "limits": [
+    "No new Vercel/browser/owner UI or physical-device certification",
+    "Lazy imports remain cached; no lifetime Worker memory guarantee"
+  ],
+  "localCandidate": "e2fda459278b0a8b13f723de19c928c99cd3eb8c",
+  "privateSource": "e4afc8cb15dd3cbfa2e7d371cb797b3c7f235629",
+  "sourceFilesCompared": 3693,
+  "sourceMismatches": 0,
+  "savedVersionNumber": 26,
+  "savedVersionId": "appgprj_6aa79b45dd308191b3b887c293729f00~appgver_5adbaac75758819189b90536dc550f71",
+  "deploymentId": "appgdep_6ad194b46b608191baa13ee7dcc57349",
+  "deploymentStatus": "succeeded",
+  "environmentRevision": 14,
+  "packagingLimit": "Local packaging returned Missing dist/server/index.js because production build admission was blocked. Exact private source was pushed successfully; native remote-build fallback succeeded.",
+  "deployedAt": "2026-10-16T03:12:38.537799+00:00",
+  "sourceDigest": "097ff36018170dee7524362ae719d5fd6aa1dce5c5ef8dc938ee35916263686c"
+}

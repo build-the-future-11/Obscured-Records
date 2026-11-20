@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-15T16:15:29.258Z",
+  "expectedRevision": "8e8cb6a4cb0ac1254353fe96ae5bd83f579fa107",
+  "checks": [
+    {
+      "check": "deployed revision",
+      "passed": true,
+      "status": 200,
+      "revision": "8e8cb6a4cb0ac1254353fe96ae5bd83f579fa107"
+    },
+    {
+      "check": "reader RSS remains at 28 records",
+      "passed": true,
+      "status": 200,
+      "items": 28
+    },
+    {
+      "check": "new private draft excluded from reader route",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "check": "editorial desk requires owner identity beyond site bypass",
+      "passed": true,
+      "status": 307
+    },
+    {
+      "check": "anonymous access denied",
+      "passed": true,
+      "status": 401
+    }
+  ]
+}

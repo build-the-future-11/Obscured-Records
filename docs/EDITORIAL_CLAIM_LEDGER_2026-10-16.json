@@ -1,0 +1,455 @@
+{
+  "asOf": "2026-10-16",
+  "status": "IMPLEMENTED LOCAL REVISIONS; NEEDS EDITOR REVIEW; NOT PUBLISHED OR APPROVED BY THIS PASS",
+  "sources": {
+    "esmaReport": {
+      "title": "Fast Track Peer Review — Wirecard, ESMA42-111-5349",
+      "institution": "European Securities and Markets Authority",
+      "date": "2020-11-03",
+      "url": "https://www.esma.europa.eu/sites/default/files/library/esma42-111-5349_fast_track_peer_review_report_-_wirecard.pdf",
+      "inspected": "Executive summary paragraphs1–18, printed pp7–9; timeline printed pp41–42 (PDF indexes40–41). Text inspected; no chart/table-derived claim added.",
+      "supportExcerpt": "FREP did not pick up signals in the international media"
+    },
+    "esmaFindings": {
+      "title": "ESMA identifies deficiencies in German supervision of Wirecard’s financial reporting",
+      "institution": "European Securities and Markets Authority",
+      "date": "2020-11-03",
+      "url": "https://www.esma.europa.eu/de/press-news/esma-news/esma-identifies-deficiencies-in-german-supervision-wirecard%E2%80%99s-financial",
+      "inspected": "Deficiencies identified by the Peer Review: examination procedures and effectiveness subsections",
+      "supportExcerpt": "the level of professional scepticism"
+    },
+    "esmaFollowup": {
+      "title": "ESMA publishes its follow-up report to the Fast Track Peer Review on Wirecard",
+      "institution": "European Securities and Markets Authority",
+      "date": "2024-07-18",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-its-follow-report-fast-track-peer-review-wirecard",
+      "inspected": "Key findings bullets on ending the two-tier arrangement, examination procedures, powers and exchange of information",
+      "supportExcerpt": "discontinuing the 2-tier system"
+    },
+    "iaea": {
+      "title": "The Radiological Accident in Goiânia, STI/PUB/815",
+      "institution": "International Atomic Energy Agency",
+      "date": "1988-09",
+      "url": "https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf",
+      "inspected": "Summary, PartII, printed p2 (PDF index13): hospital admissions, death timing, monitored and contaminated populations. Text paragraphs inspected. Screenshot requests returned no inspectable pixels; no table/chart claim used.",
+      "supportExcerpt": "112 000 persons were monitored"
+    },
+    "therac": {
+      "title": "An Investigation of the Therac-25 Accidents",
+      "institution": "Nancy G. Leveson and Clark S. Turner; IEEE Computer 26(7), pp18–41; MIT-hosted text",
+      "date": "1993-07",
+      "url": "https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html",
+      "inspected": "PartI: Genesis of the Therac-25; Kennestone Regional Oncology Center,1985; Ontario Cancer Foundation,1985; Manufacturer response. Other parts not fully reread in this pass.",
+      "supportExcerpt": "the completely computerized commercial version was available in late 1982"
+    },
+    "iraq": {
+      "title": "An outbreak of organomercury poisoning among Iraqi farmers",
+      "institution": "K. Al-Tikriti and A. W. Al-Mufti; Bulletin of the World Health Organization 53(Suppl), pp15–21",
+      "date": "1976",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2366398/",
+      "inspected": "Abstract paragraphs1–2 only. Full seven-page scanned study not inspected; no claims drawn from its charts, tables or uninspected pages.",
+      "supportExcerpt": "of these 459 died"
+    },
+    "yodogo": {
+      "title": "Police of Japan 2019 — Section2 Counter-Terrorism",
+      "institution": "National Police Agency of Japan",
+      "date": "2019",
+      "url": "https://www.npa.go.jp/hakusyo/r01/english/p6-11.pdf",
+      "inspected": "Printed p6 (PDF index0), separate Japanese Red Army and Yodo-go Hijacking Group paragraphs. Plain text inspected, no table-based claims used.",
+      "supportExcerpt": "nine members of the Red Army Faction"
+    }
+  },
+  "claims": [
+    {
+      "id": "W01",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "evidenceNote",
+      "passage": "The 2020 ESMA review examined financial-reporting supervision from January 2015 to August 2020. Its 2024 follow-up assesses reforms. Neither is a criminal judgment; findings about supervision should not be treated as a verdict against every individual involved.",
+      "sourceIds": [
+        "esmaReport",
+        "esmaFollowup"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "2020 executive summary paragraphs3–5 defines financial-reporting scope and January2015–August2020 period; 2024 release defines follow-up scope. Legal-outcome limitation is an editorial scope boundary.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W-T1",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "timeline.1.event",
+      "passage": "Wirecard says the reported €1.9 billion probably does not exist.",
+      "sourceIds": [
+        "esmaReport"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Report timeline:22 and25 June2020 entries; statement and insolvency are separate events.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W-T2",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "timeline.2.event",
+      "passage": "Wirecard files for insolvency.",
+      "sourceIds": [
+        "esmaReport"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Report timeline:22 and25 June2020 entries; statement and insolvency are separate events.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W-T3",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "timeline.3.event",
+      "passage": "ESMA publishes its review of German financial-reporting supervision.",
+      "sourceIds": [
+        "esmaFindings"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Publication date shown on the inspected source.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W-T4",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "timeline.4.event",
+      "passage": "ESMA publishes a follow-up assessing changes to that supervisory system.",
+      "sourceIds": [
+        "esmaFollowup"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Publication date shown on the inspected source.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W02",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.0.paragraphs.0",
+      "passage": "The June 2020 announcements concerned cash supposedly held for Wirecard in trustee accounts. On 22 June the company said the €1.9 billion probably did not exist; it filed for insolvency on 25 June. ESMA’s chronology preserves that sequence rather than treating the first warning and the collapse as one event.",
+      "sourceIds": [
+        "esmaReport"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Report timeline printed pp41–42: company statement on22 June and insolvency25 June; facts attributed to the report chronology.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W03",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.0.paragraphs.1",
+      "passage": "The distinction is useful beyond this case: a figure in an account and independent evidence for that figure answer different questions. The record invites readers to ask who supplied a confirmation, who checked it and what happened when those accounts conflicted.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Reader-facing analytical questions about verification; no claim that a particular alternative safeguard would necessarily have prevented the collapse.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W04",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.1.paragraphs.0",
+      "passage": "At the time, financial-reporting enforcement used two tiers: FREP examined reports first, with BaFin responsible for the second tier and enforcement measures. ESMA found that Wirecard was not selected for examination in 2016–2018 despite relevant risks. Its review also identifies examinations that were appropriately selected; it does not say that no scrutiny occurred.",
+      "sourceIds": [
+        "esmaReport"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Executive summary paragraphs4,12,13: two-tier roles; failure to select in2016–2018; other appropriately selected examinations.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "A supervisory review is not a complete audit of Wirecard or a criminal judgment.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W05",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.1.paragraphs.1",
+      "passage": "ESMA’s published findings identify insufficient examination scope and professional scepticism, shortcomings in handling media and whistleblower allegations, and barriers to sharing information. BaFin and FREP also understood their respective roles differently. These are specific findings about supervision, not proof that one institutional failing alone caused the collapse.",
+      "sourceIds": [
+        "esmaFindings"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Findings subsections identify scope/scepticism, allegations, role perceptions and information barriers; final sentence limits causal inference.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W06",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.2.paragraphs.0",
+      "passage": "In its July 2024 follow-up, ESMA reported that Germany had ended the two-tier arrangement and assigned financial-reporting supervision to BaFin. It found improvements in examination procedures, investigative powers and information exchange. That dated assessment should accompany descriptions of the system that existed in 2020.",
+      "sourceIds": [
+        "esmaFollowup"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "18 July2024 key findings: two-tier arrangement ended, BaFin supervision, procedures/powers/information exchange improved.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Dated2024 assessment only; this pass does not independently evaluate current supervisory performance.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W07",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/features.ts",
+      "passagePath": "sections.2.paragraphs.1",
+      "passage": "A reformed procedure is not evidence that future failures are impossible. The useful question is whether warnings can now lead to timely examination and independent checks. Assessing that requires evidence of how the revised system operates, alongside the historical account of what went wrong.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Analytical limitation: reform description is not a guarantee; future effectiveness remains a question.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "W08",
+      "slug": "wirecard-missing-billions",
+      "file": "lib/articles.ts",
+      "passagePath": "context",
+      "passage": "ESMA’s 2020 review identified weaknesses in how BaFin and FREP examined financial reports and exchanged information. Its July 2024 follow-up reported that Germany had replaced the two-tier arrangement and strengthened supervision. These are assessments of financial-reporting oversight, not criminal judgments.",
+      "sourceIds": [
+        "esmaFindings",
+        "esmaFollowup"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Brief summarizes the two attributed supervisory reviews; no findings of personal criminal guilt.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "G01",
+      "slug": "goiania-blue-powder",
+      "file": "lib/features.ts",
+      "passagePath": "sections.1.paragraphs.1",
+      "passage": "The IAEA’s 1988 report records about 112,000 people monitored and 249 found to have internal or external contamination. Four patients died within four weeks of admission to hospital. These are different measures: the number screened is not the number contaminated, and contamination is not itself a count of deaths or severe injuries.",
+      "sourceIds": [
+        "iaea"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Summary PartII, printed p2/PDF index13: four deaths within four weeks of admission; approximately112000 monitored and249 internally or externally contaminated.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Approximate monitored count and early report scope retained; not lifetime morbidity or a full later death count.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "G02",
+      "slug": "goiania-blue-powder",
+      "file": "lib/features.ts",
+      "passagePath": "sections.1.paragraphs.2",
+      "passage": "Those distinctions matter when the scale of an emergency is summarized. Broad screening describes the search for people needing help; individual measurements and clinical findings describe what happened to them. The report’s early counts should not be presented as a complete account of every later health or social consequence.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Explains why the reported denominators answer different questions and limits extrapolation beyond the1988 account.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "G03",
+      "slug": "goiania-blue-powder",
+      "file": "lib/articles.ts",
+      "passagePath": "context",
+      "passage": "Fragments travelled through families and neighbourhoods before the source was recognized. The IAEA’s 1988 report records about 112,000 people monitored, 249 with internal or external contamination and four deaths. Screening, contamination and deaths describe different outcomes; these early figures do not measure every later consequence.",
+      "sourceIds": [
+        "iaea"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Same summary passage; existing material-movement sentence retained, quantitative clarification added.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Underlying full chronology has not been recertified; no inference about every later consequence.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "T01",
+      "slug": "therac-25",
+      "file": "lib/features.ts",
+      "passagePath": "timeline.0.event",
+      "passage": "The computerized commercial version becomes available; the study records clinical operation from 1983.",
+      "sourceIds": [
+        "therac"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Genesis gives commercial availability late1982; Kennestone paragraph says other machines operating since1983.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Availability and documented operation are different dates; no exact first-treatment day claimed.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "T02",
+      "slug": "therac-25",
+      "file": "lib/features.ts",
+      "passagePath": "sections.2.paragraphs.0",
+      "passage": "At Hamilton in July 1985, the study records a display indicating no dose after a treatment pause. The operator retried; the patient subsequently showed evidence of overexposure. A control message was therefore not reliable confirmation of what the patient had received.",
+      "sourceIds": [
+        "therac"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Ontario Cancer Foundation1985: no-dose/treatment-pause display, repeated proceed commands and later overexposure evidence.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "T03",
+      "slug": "therac-25",
+      "file": "lib/features.ts",
+      "passagePath": "sections.2.paragraphs.1",
+      "passage": "The manufacturer could not establish the exact cause of that incident. Leveson and Turner describe suspected hardware faults and reasons to consider a software explanation. This uncertainty is part of their reconstruction, and is why the rapid-editing fault associated with later accidents must not be assigned to every case.",
+      "sourceIds": [
+        "therac"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Manufacturer response says cause uncertain, microswitch testing inconclusive and later evidence suggested software; no definitive cause assigned.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Interpretive contrast to later rapid-editing cases retains uncertainty; full multi-part source review pending.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "T04",
+      "slug": "therac-25",
+      "file": "lib/features.ts",
+      "passagePath": "sections.1.paragraphs.1",
+      "passage": "In this reconstruction, patient reports and unexplained machine behaviour were warning signals that needed to be shared and investigated. The case invites a specific question: could a hospital or manufacturer connect a new report with incidents already observed elsewhere?",
+      "sourceIds": [
+        "therac"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Kennestone account and user-response passages describe failure to connect reports; revised language is limited to this reconstruction rather than a universal law of safety-critical systems.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "T05",
+      "slug": "therac-25",
+      "file": "lib/features.ts",
+      "passagePath": "sections.3.paragraphs.1",
+      "passage": "The study’s central warning concerns the combined design and handling of incidents. Checking one fault in isolation would leave questions about feedback, independent safeguards and communication unanswered. The six accidents should remain separate records within that wider analysis.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Editorial synthesis preserves multiple accidents and questions instead of one lethal software state or a ranking of causes.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "I-opening",
+      "slug": "iraq-poison-grain",
+      "file": "lib/articles.ts",
+      "passagePath": "opening",
+      "passage": "Farmers and their families developed mercury poisoning after consuming treated grain in Iraq in 1971–1972. A 1976 account by K. Al-Tikriti and A. W. Al-Mufti records 6,530 hospital admissions and 459 deaths among those admitted.",
+      "sourceIds": [
+        "iraq"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Abstract:1971–72 consumption,6530 hospital cases/459 deaths among admitted patients, milder outpatients; up-to60-day latency and authors’ probable contribution judgment.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Abstract only; no claim to have read full scanned study or verified warning/distribution history.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "I-context",
+      "slug": "iraq-poison-grain",
+      "file": "lib/articles.ts",
+      "passagePath": "context",
+      "passage": "The authors also describe people with milder symptoms treated as outpatients. Their hospital figures therefore do not count everyone affected. The abstract identifies a delay of up to sixty days between consumption and symptoms as probably a major contributor to the outbreak’s scale.",
+      "sourceIds": [
+        "iraq"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Abstract:1971–72 consumption,6530 hospital cases/459 deaths among admitted patients, milder outpatients; up-to60-day latency and authors’ probable contribution judgment.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Abstract only; no claim to have read full scanned study or verified warning/distribution history.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "I-significance",
+      "slug": "iraq-poison-grain",
+      "file": "lib/articles.ts",
+      "passagePath": "significance",
+      "passage": "The hospital denominator and the delay before illness are central to interpreting the figures. The abstract does not establish shipment timing, warning languages or what individual families understood. Those questions require the full study and separate distribution records.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Scope limitation and next research questions; removes claims the inspected abstract cannot establish.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "Y-opening",
+      "slug": "yodogo-hijacking",
+      "file": "lib/articles.ts",
+      "passagePath": "opening",
+      "passage": "In March 1970, nine members of the Red Army Faction hijacked Japan Airlines Flight 351 from Tokyo to Fukuoka and took refuge in North Korea, according to Japan’s National Police Agency.",
+      "sourceIds": [
+        "yodogo"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Printed p6 Yodo-go paragraph identifies March1970, nine Red Army Faction members, Flight351 Tokyo–Fukuoka and refuge in North Korea.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "Y-context",
+      "slug": "yodogo-hijacking",
+      "file": "lib/articles.ts",
+      "passagePath": "context",
+      "passage": "The agency’s 2019 history identifies the Yodo-go group separately from the Japanese Red Army. Its brief account also cites testimony given in 2002 concerning later abductions. That retrospective testimony is a separate evidentiary stage from the 1970 hijacking, not a current legal finding about every person involved.",
+      "sourceIds": [
+        "yodogo"
+      ],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Separate headings distinguish organizational names; same paragraph reports2002 testimony.",
+      "verificationOutcome": "SOURCE PASSAGE INSPECTED; wording aligned within stated scope; NEEDS EDITOR REVIEW",
+      "uncertainty": "Dated police retrospective; no independent corroboration or current legal-status determination.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    },
+    {
+      "id": "Y-significance",
+      "slug": "yodogo-hijacking",
+      "file": "lib/articles.ts",
+      "passagePath": "significance",
+      "passage": "The hijacking and the later allegations require different records. A police retrospective identifies the agency’s account; a fuller chronology needs contemporary records and independent reporting. It cannot establish every weapon, stop or negotiation in the journey.",
+      "sourceIds": [],
+      "accessDate": "2026-10-16",
+      "supportingLocationAndReason": "Evidence-bound editorial conclusion; weapons/stops/negotiation details removed rather than inferred from the short source.",
+      "verificationOutcome": "EDITORIAL INTERPRETATION; not an independently verified historical fact",
+      "uncertainty": "Named human claim-level approval remains required.",
+      "editorialFollowup": "Read final rendered copy; verify inherited surrounding claims and qualified review needs; record a real approval separately. No approval granted by this ledger."
+    }
+  ],
+  "unchangedClaims": "Inherited passages outside this ledger are not recertified. Complete factual audit of revised features remains open.",
+  "accessFailures": [
+    "Initial guessed ESMA press-release URL failed; corrected official URL located through search.",
+    "PDF screenshot requests for IAEA returned no inspectable pixels in this tool session. New claims use readable prose passages only."
+  ],
+  "relatedHeldPackets": [
+    "GitHub PR31 Wirecard",
+    "GitHub PR29 Goiânia",
+    "GitHub PR24 Therac-25"
+  ],
+  "rights": "All existing media holds remain; textual source inspection does not grant image rights."
+}

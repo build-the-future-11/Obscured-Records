@@ -1,0 +1,58 @@
+{
+  "asOf": "2026-10-16",
+  "basisRevision": "831471f",
+  "readerRecords": 28,
+  "expandedFeatures": 8,
+  "briefs": 20,
+  "companions": 28,
+  "drafts": 3245,
+  "draftStatuses": {
+    "draft": 3203,
+    "review": 42
+  },
+  "fullTextReaderAudits": 28,
+  "fullTextDraftAudits": 19,
+  "machineOnlyDrafts": 3226,
+  "exactSlugExpansionPairs": 20,
+  "uniqueSlugKeys": 3253,
+  "knownAdditionalSubjectOverlaps": 4,
+  "distinctSubjects": null,
+  "distinctSubjectBoundary": "Slug identifiers are not semantic subjects. Known differently-slugged overlaps are retained for editorial consolidation; exhaustive subject deduplication remains open.",
+  "companionDiscrepancies": [],
+  "substantiveReaderRevisions": [
+    "wirecard-missing-billions",
+    "goiania-blue-powder",
+    "therac-25",
+    "iraq-poison-grain",
+    "yodogo-hijacking"
+  ],
+  "clarityOnlyDraftRevisions": [
+    "iraq-poison-grain"
+  ],
+  "revisedDrafts": [
+    "1mdb-global-trail",
+    "bhopal-where-the-shift-ends",
+    "challenger-warning-and-decision",
+    "columbia-evidence-not-requested",
+    "dhahran-running-clock",
+    "ethiopian-airlines-961",
+    "great-molasses-flood",
+    "iraq-poison-grain",
+    "parmalat-fictional-cash",
+    "seveso-boundary-of-the-factory",
+    "toshiba-impossible-targets",
+    "tuskegee-observation-is-intervention",
+    "vela-incident"
+  ],
+  "draftReviewReceipts": [
+    "docs/DRAFT_REVIEW_AEROSPACE_2026-10-16.json",
+    "docs/DRAFT_REVIEW_FINANCIAL_2026-10-16.json",
+    "docs/DRAFT_REVIEW_HEALTH_2026-10-16.json",
+    "docs/DRAFT_REVIEW_INCIDENTS_2026-10-16.json"
+  ],
+  "approvalChanges": 0,
+  "publicationChanges": 0,
+  "csv": "docs/ARTICLE_AUDIT_2026-10-16.csv",
+  "csvSha256": "f40a1b35511e3b68c5dfec0fd8639d908f59f93dbd1eeee62a08d48422889025",
+  "method": "Manually recorded full-text dispositions joined to deterministic metadata inventory; priorities for unread drafts are heuristics, never claim verification."
+}

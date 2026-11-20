@@ -58,7 +58,7 @@
 
 A purported bank confirmation stood behind billions of euros reported as Parmalat cash and securities. In a December 2003 complaint, the SEC alleged that the confirmation was forged and the account and assets did not exist.
 
-The cash and securities were supposedly held by Bonlat, a Cayman Islands subsidiary, at Bank of America in New York. The complaint alleged that the nonexistent assets passed from Bonlat's records into Parmalat's consolidated statements. Investors reading the group accounts therefore depended on a confirmation whose origin was itself in question.
+Paragraph 16 of the [29 December 2003 complaint](https://www.sec.gov/litigation/complaints/comp18527.htm) locates the purported €3.95 billion in cash and securities at Bank of America in New York, in an account held by Bonlat, a Cayman Islands subsidiary. The SEC alleged that nonexistent assets entered Bonlat's 2002 records and Parmalat's consolidated accounts for 2002 and June 2003.
 
 ## The document and the money
 
@@ -80,6 +80,6 @@ The route begins with the asserted balance, passes through its supporting confir
 
 The complaint also alleges misrepresentations about debt repurchases. That is a separate issue from the existence of cash. Combining both into a single enormous missing-money figure would obscure the distinction between an overstated asset and a liability that had not been removed as represented.
 
-An overstated cash asset and a misrepresented debt repurchase require separate explanations. Combining them into one missing-money total would blur how each affected the accounts.
+The [SEC's 28 July 2004 announcement](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18803) records Parmalat's consent to a proposed judgment without admitting or denying the amended allegations. At that date, the settlement still depended on the court entering the judgment. The announcement documents a procedural step; it does not supply a trial finding that every allegation was proved.
 
 The reported balance depended on the confirmation. According to the complaint, the document was forged and the assets did not exist. The evidentiary failure lay in the claimed connection to a bank account, not in the subsidiary's offshore address alone.

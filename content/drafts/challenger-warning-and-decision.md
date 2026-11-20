@@ -62,7 +62,7 @@
 }
 ---
 
-Challenger launched on 28 January 1986 after its contractor reversed a recommendation against launch. The Rogers Commission found that senior decision-makers lacked crucial information about O-ring problems, the initial recommendation not to launch below 53 degrees Fahrenheit and the engineers' continuing opposition.
+Challenger launched on 28 January 1986 after its solid rocket motor contractor, Thiokol, reversed a recommendation against launch. The Rogers Commission found that senior decision-makers lacked crucial information about O-ring problems, the initial recommendation not to launch with predicted O-ring temperatures below 53 degrees Fahrenheit and the engineers' continuing opposition. [Commission, Chapter V, pp. 82 and 91](https://www.nasa.gov/history/rogersrep/v1ch5.htm).
 
 The warning weakened as it moved toward the decision to launch. Engineers were debating what the available data could establish; senior managers were deciding whether to authorize flight without receiving the full account of that debate. The Commission traced the break between those two groups.
 
@@ -70,13 +70,13 @@ The warning weakened as it moved toward the decision to launch. Engineers were d
 
 Thiokol engineers were working from incomplete and contested data. They were concerned about how low temperature would affect the field-joint seals, but witnesses also described difficulty quantifying the effect from the available evidence. During the teleconferences, different participants heard the meaning of the concern differently. The Commission's chapter preserves those disagreements rather than turning them into a single unanimous narrative.
 
-What is clear is that Thiokol initially recommended against launching outside its prior temperature experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers.
+Thiokol initially recommended against launch with predicted O-ring temperatures below 53 degrees Fahrenheit, the lower boundary of its prior O-ring flight experience. During an internal management caucus, that position changed. The Commission later concluded that Thiokol management reversed its recommendation at Marshall's urging and contrary to the views of its engineers. [Commission, Chapter V, pp. 90–91 and 104, finding 4](https://www.nasa.gov/history/rogersrep/v1ch5.htm).
 
 ## Who had to prove what?
 
 Testimony describes a further change in the standard applied to that evidence.
 
-Engineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to demonstrate that launch would fail. Thiokol engineering executive Robert Lund later described a similar reversal in the group's thinking.
+Engineer Roger Boisjoly described feeling that the burden had shifted: instead of demonstrating enough evidence to support launch, opponents were being asked to establish that it was unsafe. Thiokol engineering executive Robert Lund described a similar reversal in the group's thinking. These are their accounts of the decision process, not direct evidence of every participant's reasoning. [Commission testimony, Chapter V, pp. 93–94](https://www.nasa.gov/history/rogersrep/v1ch5.htm).
 
 Under a rule that requires adequate evidence of safety, an unresolved safety concern can justify delay. Under a rule that requires opponents to prove failure, the same gap in evidence can be used to justify proceeding. These are different decision standards; neither makes uncertainty disappear.
 

@@ -65,48 +65,51 @@ export const features: Record<string, FeatureRecord> = {
   },
   "wirecard-missing-billions": {
     label: "Feature",
-    updated: "27 Sep 2026",
+    updated: "16 Oct 2026",
     location: "Aschheim, Germany",
     standfirst: "Wirecard’s collapse exposed a gap between cash reported in company accounts and evidence that auditors could obtain. Later inquiries examined how supervision failed to resolve warning signs.",
-    evidenceNote: "ESMA’s review assesses financial-reporting supervision by BaFin and FREP. It does not decide individual criminal liability or explain every part of Wirecard’s business.",
+    evidenceNote: "The 2020 ESMA review examined financial-reporting supervision from January 2015 to August 2020. Its 2024 follow-up assesses reforms. Neither is a criminal judgment; findings about supervision should not be treated as a verdict against every individual involved.",
     timeline: [
-      { date: "2015", event: "Public reporting begins raising sustained questions about Wirecard's accounting and third-party acquiring business." },
-      { date: "2019", event: "German authorities impose a temporary ban on short selling Wirecard shares while scrutiny of critics intensifies." },
       { date: "18 Jun 2020", event: "Wirecard says auditors cannot confirm €1.9 billion supposedly held in trustee accounts." },
+      { date: "22 Jun 2020", event: "Wirecard says the reported €1.9 billion probably does not exist." },
       { date: "25 Jun 2020", event: "Wirecard files for insolvency." },
+      { date: "3 Nov 2020", event: "ESMA publishes its review of German financial-reporting supervision." },
+      { date: "18 Jul 2024", event: "ESMA publishes a follow-up assessing changes to that supervisory system." },
     ],
     sections: [
       {
-        heading: "The prestige shield",
+        heading: "A reported balance is a claim to test",
         paragraphs: [
-          "Wirecard presented itself as the modern answer to Europe's dependence on foreign payment technology. That story mattered. A fast-growing company with a technology label could be treated as strategically important even when much of its business involved the familiar work of moving card payments between merchants, banks and networks.",
-          "Its complexity became protective. Revenue attributed to third-party partners was difficult for outsiders to verify, yet it helped support profit margins that appeared exceptional for the industry. The more complicated the structure looked, the easier it became to describe basic verification problems as misunderstandings of an innovative company.",
+          "The June 2020 announcements concerned cash supposedly held for Wirecard in trustee accounts. On 22 June the company said the €1.9 billion probably did not exist; it filed for insolvency on 25 June. ESMA’s chronology preserves that sequence rather than treating the first warning and the collapse as one event.",
+          "The distinction is useful beyond this case: a figure in an account and independent evidence for that figure answer different questions. The record invites readers to ask who supplied a confirmation, who checked it and what happened when those accounts conflicted.",
         ],
       },
       {
-        heading: "Warnings met the wrong machinery",
+        heading: "What the supervisory review found",
         paragraphs: [
-          "Journalists and whistle-blowers raised concerns for years. Instead of producing a single, decisive investigation of the company's accounts, the warnings moved through a fragmented system. Wirecard Bank was directly supervised as a bank, while much of the larger group sat within a different reporting and enforcement structure.",
-          "ESMA's fast-track review later identified weaknesses in market monitoring, examination procedures, professional scepticism and information exchange. The failure was distributed. No single omission explains the collapse; the scandal was able to survive because several lines of defence treated another institution as the place where the decisive check would occur.",
+          "At the time, financial-reporting enforcement used two tiers: FREP examined reports first, with BaFin responsible for the second tier and enforcement measures. ESMA found that Wirecard was not selected for examination in 2016–2018 despite relevant risks. Its review also identifies examinations that were appropriately selected; it does not say that no scrutiny occurred.",
+          "ESMA’s published findings identify insufficient examination scope and professional scepticism, shortcomings in handling media and whistleblower allegations, and barriers to sharing information. BaFin and FREP also understood their respective roles differently. These are specific findings about supervision, not proof that one institutional failing alone caused the collapse.",
         ],
       },
       {
-        heading: "The cash that could not be found",
+        heading: "The record continues after the collapse",
         paragraphs: [
-          "In June 2020, auditors could not obtain sufficient evidence for €1.9 billion reported in trustee accounts. Wirecard soon said the money probably did not exist. Insolvency followed within days, turning an argument about aggressive reporting into proof that the balance sheet could not be trusted.",
-          "The lasting record is less about a charismatic fraud than about verification. Cash is one of the simplest assets to confirm. When institutions accepted substitutes for direct evidence, national prestige, market confidence and organizational complexity were allowed to stand in for the thing an audit is meant to demand: proof.",
+          "In its July 2024 follow-up, ESMA reported that Germany had ended the two-tier arrangement and assigned financial-reporting supervision to BaFin. It found improvements in examination procedures, investigative powers and information exchange. That dated assessment should accompany descriptions of the system that existed in 2020.",
+          "A reformed procedure is not evidence that future failures are impossible. The useful question is whether warnings can now lead to timely examination and independent checks. Assessing that requires evidence of how the revised system operates, alongside the historical account of what went wrong.",
         ],
       },
     ],
     sources: [
       { label: "Final report of the Wirecard committee of inquiry", publisher: "German Bundestag", url: "https://www.bundestag.de/presse/hib/849326-849326", kind: "Official report" },
       { label: "Fast Track Peer Review Report — Wirecard", publisher: "European Securities and Markets Authority", url: "https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard", kind: "Official report" },
+      { label: "Findings of the 2020 supervisory review", publisher: "European Securities and Markets Authority", url: "https://www.esma.europa.eu/de/press-news/esma-news/esma-identifies-deficiencies-in-german-supervision-wirecard%E2%80%99s-financial", kind: "Official report" },
+      { label: "July 2024 follow-up on supervisory reforms", publisher: "European Securities and Markets Authority", url: "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-its-follow-report-fast-track-peer-review-wirecard", kind: "Official report" },
       { label: "Wider supervisory implications of the Wirecard case", publisher: "European Parliament", url: "https://op.europa.eu/en/publication-detail/-/publication/af6b6959-1f41-11ec-bd8e-01aa75ed71a1/language-en", kind: "Research" },
     ],
   },
   "goiania-blue-powder": {
     label: "Feature",
-    updated: "27 Sep 2026",
+    updated: "16 Oct 2026",
     location: "Goiânia, Brazil",
     standfirst: "An abandoned radiotherapy source entered the scrap trade in Goiânia in 1987. Radioactive material moved through homes before health authorities recognized the emergency.",
     evidenceNote: "The IAEA report distinguishes the movement of the source, recognition of the radiation hazard and the subsequent response. Its recorded deaths, contamination measurements and screening totals describe different populations.",
@@ -125,10 +128,11 @@ export const features: Record<string, FeatureRecord> = {
         ],
       },
       {
-        heading: "The emergency spread socially",
+        heading: "Following the material, then counting the harm",
         paragraphs: [
           "People became ill with symptoms that initially resembled food poisoning or another common sickness. The source travelled through relationships: family members, neighbours, customers and workers. This is why the accident cannot be understood only as a technical failure. The material acquired social meaning before it acquired a warning label—it was curious, valuable-looking and worth sharing.",
-          "Once authorities identified the source, the response required monitoring tens of thousands of residents, isolating contaminated people, demolishing structures and packaging large quantities of waste. Four people died in the first weeks. Hundreds showed measurable contamination, while fear and stigma spread much farther than the isotope itself.",
+          "The IAEA’s 1988 report records about 112,000 people monitored and 249 found to have internal or external contamination. Four patients died within four weeks of admission to hospital. These are different measures: the number screened is not the number contaminated, and contamination is not itself a count of deaths or severe injuries.",
+          "Those distinctions matter when the scale of an emergency is summarized. Broad screening describes the search for people needing help; individual measurements and clinical findings describe what happened to them. The report’s early counts should not be presented as a complete account of every later health or social consequence.",
         ],
       },
       {
@@ -188,12 +192,12 @@ export const features: Record<string, FeatureRecord> = {
   },
   "therac-25": {
     label: "Feature",
-    updated: "27 Sep 2026",
+    updated: "16 Oct 2026",
     location: "United States and Canada",
     standfirst: "The Therac-25 accidents exposed the consequences of unsafe machine states, unclear feedback and incomplete incident reporting. A detailed engineering study brought the scattered records together.",
     evidenceNote: "Leveson and Turner reconstructed events from available records and acknowledged gaps in the evidence. Different incidents involved different faults; the rapid-editing sequence does not explain the entire series.",
     timeline: [
-      { date: "1982", event: "The Therac-25 enters clinical use as a computer-controlled radiation therapy system." },
+      { date: "Late 1982", event: "The computerized commercial version becomes available; the study records clinical operation from 1983." },
       { date: "1985–1987", event: "Six known accidents expose patients to massive radiation overdoses." },
       { date: "1986", event: "Regulators and hospitals connect incidents that had previously appeared separate." },
       { date: "1993", event: "Nancy Leveson and Clark Turner publish a detailed engineering investigation of the accidents." },
@@ -210,14 +214,21 @@ export const features: Record<string, FeatureRecord> = {
         heading: "Incidents looked local until they did not",
         paragraphs: [
           "Patients reported sudden heat or pain. Hospitals contacted the manufacturer, but early incidents were not immediately assembled into a convincing system-wide pattern. A machine might be checked and returned to service because technicians could not reproduce the exact sequence that produced the failure.",
-          "This fragmentation mattered. Safety-critical systems generate weak signals before they generate a recognized pattern: an unexplained message, a patient report, an operator's unusual observation. If those signals remain inside individual organizations, each event can be dismissed as impossible because no one sees the accumulating record.",
+          "In this reconstruction, patient reports and unexplained machine behaviour were warning signals that needed to be shared and investigated. The case invites a specific question: could a hospital or manufacturer connect a new report with incidents already observed elsewhere?",
+        ],
+      },
+      {
+        heading: "A display could contradict an injury",
+        paragraphs: [
+          "At Hamilton in July 1985, the study records a display indicating no dose after a treatment pause. The operator retried; the patient subsequently showed evidence of overexposure. A control message was therefore not reliable confirmation of what the patient had received.",
+          "The manufacturer could not establish the exact cause of that incident. Leveson and Turner describe suspected hardware faults and reasons to consider a software explanation. This uncertainty is part of their reconstruction, and is why the rapid-editing fault associated with later accidents must not be assigned to every case.",
         ],
       },
       {
         heading: "Why the case still travels",
         paragraphs: [
           "Leveson and Turner's investigation did not argue that software should never control dangerous equipment. It showed why software reliability alone is not a complete safety argument. Safety depends on the surrounding design: independent constraints, understandable interfaces, incident reporting, testing assumptions and the ability to observe the physical state of the system.",
-          "The enduring lesson is organizational. A rare software state became lethal because design decisions, operator feedback and institutional communication aligned in the wrong direction. The bug mattered, but the system that allowed the bug to carry authority mattered more.",
+          "The study’s central warning concerns the combined design and handling of incidents. Checking one fault in isolation would leave questions about feedback, independent safeguards and communication unanswered. The six accidents should remain separate records within that wider analysis.",
         ],
       },
     ],

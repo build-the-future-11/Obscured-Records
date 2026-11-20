@@ -1,4 +1,5 @@
 import { sourceIdentity } from './source-identity.mjs';
+import { localSmokeEnvironment } from './local-smoke-environment.mjs';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
@@ -22,7 +23,7 @@ const { port } = portProbe.address();
 await new Promise((resolve) => portProbe.close(resolve));
 const base = `http://127.0.0.1:${port}`;
 const server = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
-  env: { ...process.env, NODE_ENV: 'production', VERCEL: '1', VERCEL_GIT_COMMIT_SHA: sourceSha ?? "" },
+  env: localSmokeEnvironment(process.env, sourceSha),
   stdio: ['ignore', 'pipe', 'pipe'],
 });
 let serverOutput = '', launchError;
@@ -62,7 +63,7 @@ async function inspectPage(page, path, width) {
     }).slice(0, 8).map((element) => ({ tag: element.tagName, class: element.className })),
   }));
   assert.ok(overflow.extra <= 1, `${path} at ${width}px overflow: ${JSON.stringify(overflow)}`);
-  if ([375, 1440].includes(width)) await auditAccessibility(page, path, width);
+  if ([320, 390, 1440].includes(width)) await auditAccessibility(page, path, width);
   const brokenContact = await page.locator('a[href*="ryangomez.hsl"]').count();
   assert.equal(brokenContact, 0, `${path}: stale contact address`);
   const emptyLinks = await page.locator('a').evaluateAll((links) => links.filter((link) => !link.textContent.trim() && !link.getAttribute('aria-label') && !link.querySelector('img[alt]')).map((link) => link.getAttribute('href')));
@@ -98,9 +99,9 @@ try {
   page.setDefaultTimeout(12000);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') consoleMessages.push(message.text()); });
-const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/membership', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
+const paths = ['/', '/article/fedex-flight-705', '/article/air-france-8969', '/world', '/latest', '/search?q=aviation&q=mercury', '/newsletter', '/submit', '/contribute', '/about', '/standards', '/corrections', '/privacy', '/membership', '/author/ryan-gomez', '/archive', '/topics', '/topic/aviation', '/authors', '/series', '/series/in-the-air', '/saved'];
   const layoutFailures = [];
-  for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 375, 768, 1440])) {
+  for (const width of (process.env.BROWSER_INTERACTIONS_ONLY ? [] : [320, 390, 768, 1440])) {
     await page.setViewportSize({ width, height: 900 });
     for (const path of paths) {
       try { await inspectPage(page, path, width); }
@@ -112,11 +113,36 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
     for (const [path, name] of [['/', 'home'], ['/article/fedex-flight-705', 'article'], ['/newsletter', 'newsletter'], ['/contribute', 'contribute'], ['/about', 'about']]) {
       await page.goto(`${base}${path}`, { waitUntil: 'domcontentloaded' });
       await page.locator('h1').waitFor();
-      await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map((image) => image.decode().catch(() => {}))); });
+      const assetsReady = await page.evaluate(async () => {
+        const assets = Promise.all([document.fonts.ready, ...[...document.images].map((image) => image.decode().catch(() => {}))]).then(() => true);
+        const deadline = new Promise((resolve) => setTimeout(() => resolve(false), 5000));
+        return Promise.race([assets, deadline]);
+      });
+      if (!assetsReady) console.warn(`WARN browser: ${path} visual assets exceeded the 5s screenshot readiness budget`);
       await page.screenshot({ path: resolve(outputDir, `${name}-${width}.png`), fullPage: true, animations: 'disabled' });
     }
   }
   assert.deepEqual(layoutFailures, [], 'Every responsive route must pass all layout and metadata assertions.');
+  for (const width of [320, 390]) {
+    await page.setViewportSize({ width, height: 850 });
+    await page.goto(base); await page.locator('h1').waitFor();
+    await page.locator('.menu-trigger').click();
+    const narrowMenu = page.getByRole('dialog', { name: 'Site navigation' });
+    await narrowMenu.waitFor();
+    await page.keyboard.press('Control+k');
+    assert.equal(await page.getByRole('dialog', { name: 'Search Obscured Records' }).isVisible(), false);
+    assert.equal(await narrowMenu.evaluate((element) => element.contains(document.activeElement)), true);
+    await narrowMenu.getByRole('link', { name: 'Search the archive', exact: true }).click();
+    await page.locator('#archive-q').waitFor();
+    await page.locator('#archive-q').pressSequentially('crew fedex');
+    await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'crew fedex');
+    assert.equal(new URL(page.url()).searchParams.get('q'), 'crew fedex');
+    await page.locator('.archive-results .record-card h2 a').first().click();
+    await page.locator('.article-page').waitFor();
+    assert.match(page.url(), /\/article\/fedex-flight-705$/);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    pass(`${width}px menu/search/article journey, multi-word typing and modal guard`);
+  }
   await page.setViewportSize({ width: 375, height: 850 });
   await page.goto(base); await page.locator('h1').waitFor();
   await page.keyboard.press('Tab');
@@ -148,6 +174,18 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   await dialog.waitFor({ state: 'hidden' });
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   pass('desktop resize releases mobile overlay and scroll lock');
+  const sectionsMenu = page.locator('.section-nav');
+  await sectionsMenu.locator('summary').click();
+  await sectionsMenu.getByRole('link').first().focus();
+  await page.keyboard.press('Escape');
+  assert.equal(await sectionsMenu.getAttribute('open'), null);
+  assert.equal(await sectionsMenu.locator('summary').evaluate((element) => element === document.activeElement), true);
+  await sectionsMenu.locator('summary').click();
+  const beforeOutsideClick = page.url();
+  await page.locator('.edition-line > span').first().click();
+  assert.equal(page.url(), beforeOutsideClick);
+  assert.equal(await sectionsMenu.getAttribute('open'), null);
+  pass('desktop sections dismiss on Escape/outside click and restore keyboard focus');
 
   const sitemap = await (await page.request.get(`${base}/sitemap.xml`)).text();
   assert.match(sitemap, /<loc>[^<]*\/membership<\/loc>/);
@@ -161,6 +199,8 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   pass('repeated search parameters and empty-state search navigation');
 
   await page.goto(`${base}/archive`);
+  const archiveCount = await page.locator('.archive-results .record-card').count();
+  assert.ok(archiveCount > 1, 'archive exposes multiple records before filtering');
   await page.locator('select[name=topic]').selectOption('aviation');
   await page.locator('select[name=format]').selectOption('feature');
   assert.equal(await page.locator('.archive-results .record-card').count(), 1);
@@ -168,8 +208,29 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   await page.reload();
   assert.equal(await page.locator('select[name=topic]').inputValue(), 'aviation');
   await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
-  assert.equal(await page.locator('.archive-results .record-card').count(), 28);
+  assert.equal(await page.locator('.archive-results .record-card').count(), archiveCount);
   pass('archive intersects filters, persists URL and restores after reload');
+  await page.locator('select[name=sort]').selectOption('title');
+  await page.waitForFunction((expectedCount) => {
+    const titles = [...document.querySelectorAll('.archive-results .record-card h2')].map((heading) => heading.textContent);
+    return titles.length === expectedCount && JSON.stringify(titles) === JSON.stringify([...titles].sort((a, b) => a.localeCompare(b, 'en')));
+  }, archiveCount);
+  const titles = await page.locator('.archive-results .record-card h2').allTextContents();
+  assert.deepEqual(titles, [...titles].sort((a, b) => a.localeCompare(b, 'en')));
+  assert.match(page.url(), /sort=title/);
+  await page.locator('select[name=topic]').selectOption('aviation');
+  await page.getByRole('button', { name: 'Remove topic filter: aviation', exact: true }).click();
+  assert.equal(await page.locator('select[name=topic]').inputValue(), '');
+  assert.equal(await page.locator('select[name=sort]').inputValue(), 'title');
+  assert.equal(await page.locator('#archive-q').evaluate((element) => element === document.activeElement), true);
+  await page.locator('select[name=topic]').selectOption('aviation');
+  await page.locator('.archive-results .record-card h2 a').first().click();
+  await page.locator('.article-page').waitFor();
+  await page.goBack();
+  await page.waitForFunction(() => document.querySelector('select[name=topic]')?.value === 'aviation' && document.querySelector('select[name=sort]')?.value === 'title');
+  assert.equal(await page.locator('select[name=topic]').inputValue(), 'aviation');
+  assert.equal(await page.locator('select[name=sort]').inputValue(), 'title');
+  pass('archive sort, removable filters and article/back journey preserve URL state');
 
   await page.goto(base); await page.locator('h1').waitFor();
   await page.keyboard.press('Control+k');
@@ -183,6 +244,37 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   await page.keyboard.press('Escape');
   await palette.waitFor({ state: 'hidden' });
   pass('keyboard search opens a modal, groups real results and supports arrow traversal/Escape');
+
+  await page.keyboard.press('Control+k');
+  await palette.waitFor();
+  await page.locator('#palette-query').fill('mercury');
+  await page.locator('#palette-query').press('Enter');
+  await page.waitForURL('**/search?q=mercury');
+  await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'mercury');
+  assert.equal(await page.locator('#archive-q').inputValue(), 'mercury');
+  await page.keyboard.press('Control+k');
+  await page.locator('#palette-query').fill('aviation');
+  await palette.getByRole('link', { name: 'All results and filters', exact: false }).click();
+  await page.waitForURL('**/search?q=aviation');
+  await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'aviation');
+  assert.equal(await page.locator('#archive-q').inputValue(), 'aviation');
+  pass('palette Enter navigates and synchronizes search controls on the same route');
+  await page.locator('#archive-q').fill('mercury');
+  await page.keyboard.press('Control+k');
+  await page.locator('#palette-query').fill('aviation');
+  await palette.getByRole('link', { name: 'All results and filters', exact: false }).click();
+  await page.waitForURL('**/search?q=aviation');
+  await page.waitForFunction(() => document.querySelector('#archive-q')?.value === 'aviation');
+  await page.locator('.archive-results h2 a[href="/article/fedex-flight-705"]').waitFor();
+  assert.equal(await page.locator('.archive-results h2 a[href="/article/minamata-food-chain"]').count(), 0);
+  pass('same-route link restores the original query after local filter edits');
+
+  const missingResponse = await page.goto(`${base}/article/__missing_reader_record__`);
+  assert.equal(missingResponse.status(), 404);
+  await page.getByRole('heading', { name: /This record is not here/ }).waitFor();
+  await page.locator('#main-content').getByRole('link', { name: 'Search the archive', exact: false }).click();
+  await page.locator('#archive-q').waitFor();
+  pass('genuine not-found response provides working archive recovery');
 
   await page.goto(`${base}/article/fedex-flight-705`);
   const save = page.getByRole('button', { name: '+ Save story', exact: true });
@@ -210,6 +302,9 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   const source = page.locator('.sources dialog[open]');
   await source.waitFor();
   assert.match(await source.getByRole('link', { name: 'Open source' }).getAttribute('href'), /^https:/);
+  await page.keyboard.press('Control+k');
+  assert.equal(await page.getByRole('dialog', { name: 'Search Obscured Records' }).isVisible(), false);
+  assert.equal(await source.evaluate((element) => element.contains(document.activeElement)), true);
   await page.keyboard.press('Escape');
   assert.equal(await page.getByRole('button', { name: /^Preview source 1:/ }).evaluate((e) => e === document.activeElement), true);
   await page.locator('.contents a').nth(1).click();
@@ -235,6 +330,11 @@ const paths = ['/', '/article/fedex-flight-705', '/world', '/latest', '/search?q
   await page.getByRole('button', { name: 'Copy article link' }).click();
   await page.getByRole('alert').filter({ hasText: 'Copy unavailable.' }).waitFor();
   assert.equal(await page.getByText('Copied', { exact: true }).count(), 0);
+  const manualCopy = page.getByLabel('Article link', { exact: true });
+  assert.equal(await manualCopy.inputValue(), canonical);
+  assert.equal(await manualCopy.getAttribute('readonly'), '');
+  await manualCopy.focus();
+  assert.equal(await manualCopy.evaluate((input) => input.selectionEnd - input.selectionStart), canonical.length);
   pass('canonical sharing and honest clipboard-denial feedback');
 
   await page.goto(`${base}/contribute`);

@@ -1,4 +1,29 @@
 export const corrections = [{
+  slug: "yodogo-hijacking",
+  date: "16 Oct 2026",
+  note: "Correction and source narrowing: the brief now uses the National Police Agency’s Red Army Faction designation and separates the hijacking from later reported testimony. Weapon, stop and hostage-exchange details not established by the cited page have been removed pending independent documentation; their removal is not a finding that each was false.",
+  sourceUrl: "https://www.npa.go.jp/hakusyo/r01/english/p6-11.pdf",
+}, {
+  slug: "iraq-poison-grain",
+  date: "16 Oct 2026",
+  note: "Source clarification: the brief now cites the incident-specific 1976 study abstract and identifies 6,530 hospital admissions and 459 deaths among those admitted. It distinguishes outpatient cases and delayed symptoms. Shipment timing and warning details have been removed pending evidence beyond the abstract.",
+  sourceUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2366398/",
+}, {
+  slug: "wirecard-missing-billions",
+  date: "16 Oct 2026",
+  note: "Editorial revision: the feature now identifies the specific findings of ESMA’s 2020 supervisory review and adds its dated July 2024 follow-up. Broad claims about national prestige and the ease of verifying cash have been replaced with attributed findings. This revision does not determine individual criminal responsibility.",
+  sourceUrl: "https://www.esma.europa.eu/document/fast-track-peer-review-report-wirecard",
+}, {
+  slug: "goiania-blue-powder",
+  date: "16 Oct 2026",
+  note: "Clarification: the brief and feature now distinguish the IAEA report’s approximately 112,000 people monitored, 249 people with contamination and four deaths. The feature specifies that the four deaths occurred within four weeks of hospital admission. These early report totals do not establish all later consequences.",
+  sourceUrl: "https://www-pub.iaea.org/mtcd/publications/pdf/pub815_web.pdf",
+}, {
+  slug: "therac-25",
+  date: "16 Oct 2026",
+  note: "Correction and added context: the timeline now distinguishes commercial availability in late 1982 from clinical operation reported from 1983. A new section describes the Hamilton display and overdose without assigning a definitively established cause to that incident. The warning-signal discussion is limited to this reconstruction, and the conclusion no longer reduces the accidents to one software state.",
+  sourceUrl: "https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html",
+}, {
   slug: "fedex-flight-705",
   date: "2 Oct 2026",
   note: "The brief and expanded feature now distinguish the affirmed attempted-aircraft-piracy conviction from the lesser interference conviction vacated on appeal. Unsupported departure timing, manoeuvre details and cockpit-control sequencing have been removed from the expanded account; security interpretation is identified separately from the judicial findings.",

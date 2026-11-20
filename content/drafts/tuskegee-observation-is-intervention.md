@@ -53,11 +53,11 @@
 }
 ---
 
-The U.S. Public Health Service study at Tuskegee enrolled 600 Black men in 1932 without informed consent, according to CDC's history. Participants were not offered penicillin when it became an established treatment. The study continued until 1972.
+The U.S. Public Health Service study at Tuskegee ran from 1932 to 1972. CDC's history describes 600 Black men enrolled without informed consent. The men with syphilis were not offered penicillin through the study after it became an established treatment.
 
-Of the 600 men, 399 had late-latent syphilis and 201 did not. The figures do not establish that researchers infected participants. CDC's documented account concerns a different abuse: men were studied without informed consent and were not offered an established treatment.
+CDC identifies 399 men with pre-existing late-latent syphilis and 201 controls without the disease. It explicitly states that researchers did not deliberately infect the men. The distinction matters: the study's abuse involved deception, lack of informed consent and failure to offer treatment for a disease already present.
 
-### What the study needed
+## What the study needed
 
 Every research design makes something count as useful information. The ethical question is what the design asks people to bear so that this information remains available. If effective treatment would interrupt a desired observation, the conflict belongs in the center of the account, not in a paragraph of caveats after the findings.
 
@@ -65,9 +65,9 @@ The word participant can also mislead when meaningful agreement is absent. It ma
 
 Historical context requires identifying available treatment, institutional knowledge and the alternatives participants were allowed. It cannot make those choices disappear behind a general claim that standards were different.
 
-### What the groups actually counted
+## What untreated meant
 
-CDC distinguishes 399 men who already had late-latent syphilis when recruited from a control group of 201 men without the disease. The total of 600 therefore does not mean 600 men with syphilis. This distinction changes what the study's population describes, while leaving the central ethical finding intact.
+The [1973 advisory panel report](https://digirepo.nlm.nih.gov/ext/mm/2934097RX4/PDF/2934097RX4.pdf), on printed pages 7 and 10, adds a limit to the word untreated: some men received therapy from physicians outside the study, not necessarily in doses sufficient to treat syphilis. This does not establish that the study offered appropriate care. On page 12, the panel concluded that penicillin should have been made available no later than 1953.
 
 CDC also records that community members understood the arrangement as a special government health care program. That understanding belongs beside the absence of informed consent. An institution can know that someone is inside a study while the person understands the relationship as an offer of care. Those descriptions concern the same encounter, but they do not imply the same choices.
 
@@ -75,10 +75,10 @@ The ethical problem becomes sharper when circumstances change. Information suppl
 
 An institution acts through the information and care it controls. Withholding effective treatment changes a person's circumstances even when researchers did not introduce the disease.
 
-### Beyond the emblem
+## Beyond the emblem
 
 Invoking Tuskegee as a symbol can obscure the specific study, populations and decisions involved. The record is strongest when those remain visible.
 
 The case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.
 
-Penicillin changed the medical options. The study continued to pursue observations of untreated disease. Withholding treatment was therefore part of the research decision, not an absence of action outside the study.
+Penicillin changed the medical options. The study's failure to offer it was part of the research decision, not an absence of action outside the study. Therapy obtained elsewhere does not erase that responsibility.

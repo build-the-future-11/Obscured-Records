@@ -53,7 +53,7 @@
 }
 ---
 
-The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to intercept a missile on 25 February 1991. The missile struck a barracks and killed 28 Americans. A General Accounting Office investigation linked the missed interception to a timing calculation whose error grew with continuous operation.
+The Patriot battery at Dhahran had been running continuously for more than 100 hours when it failed to track an incoming Scud on 25 February 1991. According to the General Accounting Office investigation, the battery did not engage the missile, which struck a barracks and killed 28 American soldiers. GAO linked that failure to an inaccurate timing calculation whose effect grew with continuous operation. [GAO report, printed pages 1 and 9](https://www.gao.gov/assets/imtec-92-26.pdf).
 
 A corrected version of the software reached Dhahran after the attack. The failure had developed inside a calculation, but preventing it also depended on getting a working correction into the battery. A release of new code and its installation on a deployed system were separate events.
 
@@ -74,6 +74,8 @@ Limited numerical representation, rather than a corrupted clock count, was the i
 Engineers and operators can work with different assumptions about duration. Deployment under a longer operating interval requires evidence that the original calculations remain adequate.
 
 ### The day a fix arrives
+
+GAO records a software release on 16 February, a message to users on 21 February and the corrected software's arrival in Dhahran on 26 February, the day after the attack. The warning mentioned very long running times without specifying a duration. Those dates distinguish a correction's availability from its arrival at the affected battery; they do not establish that operators received an actionable operating limit. [GAO report, printed page 9](https://www.gao.gov/assets/imtec-92-26.pdf).
 
 A patch has at least two histories. One concerns its design and verification. The other concerns distribution, installation and confirmed use. A release date closes only part of that chain. An organization may possess the corrected code while a particular deployed system still runs the earlier version.
 

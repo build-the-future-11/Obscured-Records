@@ -56,26 +56,24 @@
 }
 ---
 
-A Vela satellite recorded a light signal over the South Atlantic on 22 September 1979 that resembled signals associated with atmospheric nuclear explosions. An outside scientific panel later examined a nuclear event and a natural explanation, but could not assign relative probabilities to them.
+A Vela satellite recorded a light signal over the South Atlantic on 22 September 1979 that resembled signals associated with atmospheric nuclear explosions. An outside scientific panel could not determine whether it was nuclear. Its January 1980 findings preserve an unresolved assessment, not a verdict on every later argument.
 
-The assessment survives in a declassified January 1980 memorandum. The panel identified a discrepancy in the signal and found no clear corroboration. Its inability to assign relative probabilities marks the limits of that inquiry, rather than a verdict on every argument advanced afterward.
+The [declassified record](https://history.state.gov/historicaldocuments/frus1977-80v16/d368) contains two dated documents: Zbigniew Brzezinski's memorandum to President Carter on 9 January and the attached panel findings of 7 January. The attachment identifies satellite 6911 and distinguishes the signal's resemblance to known nuclear events from a discrepancy that raised doubt.
 
-## An unresolved signal is not an empty page
+## What counted as corroboration
 
-An unresolved signal does not justify either a forced verdict or an explanation immune to testing. The question is which observations would distinguish the proposed causes.
+The panel considered ionospheric observations from the Arecibo radar in Puerto Rico suggestive, but ambiguous and insufficiently understood to corroborate a nuclear event. That is more specific than saying no other observations existed.
+
+It also considered sunlight reflected from a small meteoroid or satellite debris near the sensors. Computer modeling showed that a meteoroid with specified properties could produce the signal. A possible modeled mechanism is not evidence that the modeled object was actually present.
+
+The panel could not assign relative probabilities to the nuclear and natural explanations. That statement does not mean the alternatives had equal odds. It describes a limit on the assessment the panel was able to make.
+
+## Reading the finding at its own date
 
 A sensor observation, an intelligence assessment and a later historical argument are different records. The observation establishes that a system registered something under particular conditions. An assessment interprets that registration using available information. A later argument may combine newly released material with assumptions that should be stated explicitly.
 
-The panel's defined inquiry cannot establish the views of every intelligence organization or the weight of evidence released afterward.
+The panel recommended further searches for corroboration, statistical comparison of signals and review of meteoroid data. Its recommendations describe work still needed at that stage; they do not demonstrate what subsequent inquiries found.
 
-The central analytical question is what would discriminate between competing explanations. A theory that can accommodate every possible absence of evidence is difficult to test. Equally, an institution's inability to obtain decisive corroboration does not automatically establish that nothing significant occurred.
+A claim about responsibility would require additional evidence connecting an event to an actor. The January attachment does not provide that connection. Nor does the existence of an unresolved signal by itself establish concealment.
 
-Competing interpretations need identifiable proponents, evidence and limits. Their weight depends on that support, rather than an equal allocation of attention.
-
-## Uncertainty in a dated memorandum
-
-The declassified January 1980 memorandum and attached panel report preserve a particular stage in the assessment. The panel considered both a nuclear event and a natural explanation, but could not assign relative probabilities to them. That is narrower than a finding that either explanation had been proved.
-
-Lack of corroboration can weaken an interpretation without proving that no significant event occurred. A resemblance can support investigation without identifying a location, actor or cause. Each inference requires its own evidence.
-
-The satellite recorded a signal. The panel could not determine its cause with the evidence before it. That is an unresolved finding, rather than proof either of a nuclear test or of a cover-up.
+The useful distinction is between an observation that warranted investigation and a conclusion that the available evidence could sustain. This document records the panel's difficulty making that second step. Comparing later assessments requires reading their evidence, dates and methods, rather than treating this memorandum as a complete history of the dispute.

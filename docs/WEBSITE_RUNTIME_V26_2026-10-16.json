@@ -1,0 +1,479 @@
+{
+  "checkedAt": "2026-10-16T03:13:39.179Z",
+  "expectedRevision": "e4afc8cb15dd3cbfa2e7d371cb797b3c7f235629",
+  "scope": "Read-only hosted routes and assets; no owner-authenticated UI, human editorial review or storage mutation",
+  "checks": [
+    {
+      "name": "exact deployed revision",
+      "route": "/api/revision",
+      "status": 200,
+      "passed": true,
+      "revision": "e4afc8cb15dd3cbfa2e7d371cb797b3c7f235629"
+    },
+    {
+      "name": "reader route available",
+      "route": "/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/archive",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/search?q=aviation",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/business",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/science",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/technology",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/culture",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/underreported",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/topics",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/world",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/latest",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/authors",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/about",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/standards",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/corrections",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/privacy",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/newsletter",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/submit",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/membership",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/contribute",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/saved",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/series",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/air-france-8969",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/dawsons-field",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/fedex-flight-705",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/richard-mccoy-skyjacking",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/yodogo-hijacking",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/ethiopian-airlines-961",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/satyam-confession",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/wirecard-missing-billions",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/parmalat-fictional-cash",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/toshiba-impossible-targets",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/1mdb-global-trail",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/goiania-blue-powder",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/minamata-food-chain",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/times-beach-dioxin",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/great-molasses-flood",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/therac-25",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/aral-sea",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/banqiao-dam-failure",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/petrov-false-alarm",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/olympus-two-decade-coverup",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/move-bombing",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/vela-incident",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/ss-eastland",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/iraq-poison-grain",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/lake-nyos",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/flight-629-suitcase-bomb",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/centralia-underground-fire",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "reader route available",
+      "route": "/article/uss-akron",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "RSS restricted to reader catalogue",
+      "route": "/rss.xml",
+      "status": 200,
+      "passed": true,
+      "items": 28
+    },
+    {
+      "name": "discovery stays private-draft free",
+      "route": "/sitemap.xml",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "discovery stays private-draft free",
+      "route": "/news-sitemap.xml",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "discovery stays private-draft free",
+      "route": "/robots.txt",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "owner or member identity required",
+      "route": "/editorial",
+      "status": 307,
+      "passed": true
+    },
+    {
+      "name": "owner or member identity required",
+      "route": "/editorial/draft/2007-cyberattacks-on-estonia-record",
+      "status": 307,
+      "passed": true
+    },
+    {
+      "name": "owner or member identity required",
+      "route": "/member",
+      "status": 307,
+      "passed": true
+    },
+    {
+      "name": "private draft has no reader page",
+      "route": "/article/2007-cyberattacks-on-estonia-record",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "name": "unknown route is a real 404",
+      "route": "/missing-website-completion-check",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "name": "anonymous access denied",
+      "route": "/",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/fedex-705-480.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 13874
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/fedex-705-960.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 39292
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/fedex-705.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 78446
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/goiania-source-480.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 22992
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/goiania-source-960.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 57304
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/goiania-source.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 111182
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/lake-nyos-480.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 29800
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/lake-nyos.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 44214
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/therac-25-480.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 42980
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/therac-25.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 125390
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/wirecard-480.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 27888
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/wirecard-960.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 84834
+    },
+    {
+      "name": "WebP served with correct MIME and bytes",
+      "route": "/wirecard.webp",
+      "status": 200,
+      "passed": false,
+      "contentType": "application/octet-stream",
+      "bytes": 238188
+    }
+  ]
+}

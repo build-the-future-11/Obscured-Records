@@ -152,3 +152,51 @@ test('unapproved states may have omitted, empty or well-formed completion arrays
     }
   }
 });
+
+test('review progress rejects duplicate checklist entries and unrelated completions', () => {
+  assert.throws(() => validateDraft(draft({ reviewChecklist: ['Read primary source', 'Read primary source'] }), body), /unique/);
+  for (const completedChecks of [['Read primary source', 'Read primary source'], ['Unrelated work']]) {
+    assert.throws(() => validateDraft(draft({ completedChecks }), body), /unique entries from the review checklist/);
+  }
+});
+test('creation and approval require real ISO calendar dates', () => {
+  for (const date of ['2026-02-30', '2026-13-01', '09/30/2026', '2026-09-30T25:00:00Z', '2026-09-30T12:00:00']) {
+    assert.throws(() => validateDraft(draft({ createdAt: date }), body), /createdAt/);
+    assert.throws(() => validateDraft(approved({ approvedAt: date }), body), /Approval/);
+  }
+  assert.throws(() => validateDraft(approved({ approvedAt: '2026-09-29' }), body), /Approval/);
+  assert.doesNotThrow(() => validateDraft(draft({ createdAt: '2024-02-29T09:15:00+05:30' }), body));
+});
+test('partial approval metadata is rejected in every state', () => {
+  for (const status of ['draft', 'review', 'held', 'approved']) {
+    assert.throws(() => validateDraft(draft({ status, approvedBy: 'Reviewer' }), body), /Approval/);
+    assert.throws(() => validateDraft(draft({ status, approvedAt: '2026-09-30' }), body), /Approval/);
+  }
+});
+test('history rejects malformed, disconnected, impossible and out-of-order transitions', () => {
+  const first = { from: 'draft', to: 'review', at: '2026-09-30T12:00:00Z' };
+  for (const history of [null, 'draft -> review', {}, [null], [{ ...first, from: 'constructor' }], [{ ...first, from: ['draft'] }],
+    [{ ...first, from: 'draft', to: 'approved' }], [{ ...first, at: '2026-02-30' }],
+    [{ ...first, at: '2026-09-29' }], [{ ...first, reason: '' }],
+    [first, { from: 'held', to: 'draft', at: '2026-10-01' }],
+    [first, { from: 'review', to: 'draft', at: '2026-09-30T11:00:00Z' }]]) {
+    assert.throws(() => validateDraft(draft({ history }), body), /history/);
+  }
+  assert.throws(() => validateDraft(draft({ history: [first] }), body), /current state/);
+  assert.doesNotThrow(() => validateDraft(draft({ status: 'review', history: [first] }), body));
+});
+test('failed atomic replacement preserves the manuscript and removes temporary output', (t) => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'obscured-editorial-atomic-'));
+  try {
+    const file = path.join(directory, 'fixture.md');
+    writeDraft(file, draft(), body);
+    const original = fs.readFileSync(file, 'utf8');
+    t.mock.method(fs, 'renameSync', () => { throw new Error('Simulated replacement failure'); });
+    assert.throws(() => writeDraft(file, draft({ title: 'Changed' }), body), /Simulated replacement failure/);
+    assert.equal(fs.readFileSync(file, 'utf8'), original);
+    assert.deepEqual(fs.readdirSync(directory), ['fixture.md']);
+  } finally {
+    t.mock.restoreAll();
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});

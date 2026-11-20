@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-16",
+  "reviewer": "AI-assisted editorial source review; no named human approval",
+  "scope": "Three assigned health/history drafts only. This is a source-scoped continuation review, not publication approval or a new clinical, legal or engineering investigation.",
+  "hashConvention": {
+    "algorithm": "SHA-256",
+    "encoding": "Original UTF-8 bytes without newline normalization",
+    "frontmatter": "Bytes from the opening --- delimiter through the closing --- delimiter and its terminating LF, inclusive.",
+    "body": "sourceBodySha256/revisedBodySha256 use scripts/review-revisions.mjs: CRLF normalized to LF and outer whitespace trimmed. sourceBodyRawSha256/revisedBodyRawSha256 retain every byte after the closing delimiter LF, including leading blank line and final LF.",
+    "source": "Ignored original backup captured before these body edits.",
+    "revised": "Current draft bytes after this review.",
+    "integrationNote": "Preflight initially rejected the whitespace-inclusive body digest convention. Exact file/frontmatter bytes matched; both raw digests were retained and normalized contract digests added before integration. No prose was changed by reconciliation."
+  },
+  "preservation": {
+    "frontmatterByteComparison": "Passed for each draft, recorded individually.",
+    "metadata": "Status, byline, approval, completedChecks, source-verification fields, dates and history remain byte-identical.",
+    "publication": "All three remain review drafts; no reader artifact or external publication was changed.",
+    "execution": "No tests, build, browser or publishing run. Only bounded reads, edits, hashing and three individual PDF-page renders."
+  },
+  "sources": {
+    "ilo-2004": {
+      "url": "https://webapps.ilo.org/static/english/protection/safework/worldday/products04/report04_eng.pdf",
+      "title": "Safe Work and Safety Culture: The ILO Report for World Day for Safety and Health at Work 2004",
+      "institution": "International Labour Organization",
+      "date": "2004-04-28",
+      "dateNote": "World Day report date.",
+      "accessDate": "2026-10-16",
+      "pageOrSection": "Major accidents, printed page 10 / PDF page 14",
+      "sourceType": "Institutional retrospective safety report; primary evidence for what ILO stated, not a clinical cohort study.",
+      "inspection": "Relevant text extracted and read. Web PDF screenshot attempts failed; no successful visual-page inspection claimed.",
+      "uncertainty": "The report advocates prevention. Its retrospective estimates and tank description were not independently reconstructed; they are not repeated. It cannot establish current health, contamination or legal status."
+    },
+    "cdc-2024": {
+      "url": "https://www.cdc.gov/tuskegee/about/",
+      "title": "About The Untreated Syphilis Study at Tuskegee",
+      "institution": "Centers for Disease Control and Prevention, Office of Science",
+      "date": "2024-09-04",
+      "dateNote": "Date displayed on the page.",
+      "accessDate": "2026-10-16",
+      "pageOrSection": "Background; Subjects and participation; Frequently asked questions",
+      "sourceType": "Institutional retrospective account by an agency connected to the study history.",
+      "inspection": "Full accessible page read, including the no-purposeful-infection FAQ and source links.",
+      "uncertainty": "Not treated as a neutral or independent account of every participant. Individual records and present-day behavior are outside this source pass."
+    },
+    "hew-1973": {
+      "url": "https://digirepo.nlm.nih.gov/ext/mm/2934097RX4/PDF/2934097RX4.pdf",
+      "title": "Final Report of the Tuskegee Syphilis Study Ad Hoc Advisory Panel",
+      "institution": "U.S. Department of Health, Education, and Welfare, Public Health Service; scan held by National Library of Medicine",
+      "date": "1973-04-28",
+      "dateNote": "Transmittal date; Report on Charge I dated 1973-04-24.",
+      "accessDate": "2026-10-16",
+      "pageOrSection": "Report on Charge I: printed pages 6–12, especially 7, 10 and 12; transmittal letter and signatories/addenda",
+      "sourceType": "Primary advisory-panel report, with institutional remit, reservations and abstention.",
+      "inspection": "Relevant report text read; printed pages 7, 10 and 12 rendered from the complete NLM scan and visually inspected. Page numbers in the manuscript refer to printed pagination.",
+      "uncertainty": "Panel conclusions are attributed; the report was not unanimous. This pass did not inspect every cited patient file or independently determine individual treatment adequacy.",
+      "downloadedPdfSha256": "47eeb43f63ae84e9fc5d59ce816f9f03267f9b1dc79f56cec676c5b00938acf7",
+      "visualEvidence": [
+        ".cache/ux-seo-editorial-20261016-continuation/tuskegee-p7.png",
+        ".cache/ux-seo-editorial-20261016-continuation/tuskegee-p10.png",
+        ".cache/ux-seo-editorial-20261016-continuation/tuskegee-p12.png"
+      ],
+      "accessNotes": "The LSU mirror was text-readable but its local download timed out and remains incomplete in ignored cache. The NLM file completed successfully and is the cited/visually inspected copy. An original 1936 JAMA article was located but only partial abstract access was available, so it was not used for verification."
+    },
+    "hse-seveso": {
+      "url": "https://www.hse.gov.uk/comah/sragtech/caseseveso76.htm",
+      "title": "Icmesa chemical company, Seveso, Italy. 10th July 1976",
+      "institution": "UK Health and Safety Executive",
+      "date": "2020-07-31",
+      "dateNote": "Page footer date; not asserted to be original publication date.",
+      "accessDate": "2026-10-16",
+      "pageOrSection": "Accident summary; Failings in technical measures; References",
+      "sourceType": "Regulator retrospective accident case history, citing Lees, Loss Prevention in the Process Industries, volume 3, appendix 3 (1996).",
+      "inspection": "Full accessible case-history page read, including technical failings and reference list.",
+      "uncertainty": "Primary evidence for HSE's account, not a first-hand reconstruction or longitudinal health study. No lifetime mortality conclusion, dose, evacuation timetable or legislative history inferred."
+    }
+  },
+  "reviews": [
+    {
+      "slug": "bhopal-where-the-shift-ends",
+      "file": "content/drafts/bhopal-where-the-shift-ends.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "Full manuscript and raw frontmatter read; every historical or health-sensitive passage assessed against the cited source scope.",
+      "fullTextRead": true,
+      "changed": true,
+      "changeSummary": [
+        "Make offsite safety scope an explicit editorial question rather than imply an independently reconstructed worker/responder exposure map.",
+        "Separate exposure, injury and fatality totals and require compatible time windows and populations.",
+        "Identify ILO's 2004 retrospective scope and remove an unsupported generalization about the usual endpoint of industrial timelines.",
+        "State that settlement, current contamination and present-day health claims need their own evidence."
+      ],
+      "remainingReview": [
+        "Named human editor must review the body and assign the real author; existing approval, checklist and publication HOLD remain unchanged.",
+        "Before adding numbers, use clearly defined source-specific casualty populations and time periods, with independent primary epidemiological evidence.",
+        "Any current health, environmental or legal assertion needs separate contemporary records; no such claim was verified here.",
+        "An editor should compare the ILO account with original technical investigations before expanding the causal reconstruction."
+      ],
+      "sourceBodySha256": "0598bf3de4415e4eb7bc5270b09d0d322366aaea832e484f3c1d05110f81da83",
+      "revisedBodySha256": "7b2f902eb30b18f7c14c14ae14f7d42c1f8be54c793847a0c8340dd877ae64e5",
+      "sourceFileSha256": "62d66722e6876837784620aafef5e388d91f5fafd9993e7b3a9a6d5fc707be7f",
+      "revisedFileSha256": "00081c1d40dc1a736c6cf2ae9c080f3dcbd7802b3ba2001d5f020f42ddfa53f6",
+      "frontmatterSha256": "c7ab905d0dddf2a0f3ded232f7e67cb947973727ebc14fd314136ca572859673",
+      "sourceFrontmatterSha256": "c7ab905d0dddf2a0f3ded232f7e67cb947973727ebc14fd314136ca572859673",
+      "frontmatterPreserved": true,
+      "originalBackup": ".cache/ux-seo-editorial-20261016-continuation/bhopal-where-the-shift-ends.original.md",
+      "claims": [
+        {
+          "id": "bhopal-release",
+          "action": "retained",
+          "claimType": "attributed historical claim",
+          "passage": "The gas release at Bhopal in December 1984 reached beyond the industrial site into the surrounding city, causing mass death and injury. An International Labour Organization account published in April 2004 describes a runaway reaction involving stored methyl isocyanate and health consequences extending well beyond the release.",
+          "sourceIds": [
+            "ilo-2004"
+          ],
+          "locator": "Major accidents, printed p. 10 / PDF p. 14",
+          "support": "Supports the bounded historical outline attributed to ILO.",
+          "uncertainty": "Retrospective source, not a new causal investigation; precise casualty estimates and tank description intentionally omitted.",
+          "followup": "Human editor to check original investigations before adding technical detail."
+        },
+        {
+          "id": "bhopal-population-counts",
+          "action": "revised",
+          "claimType": "editorial methodological boundary",
+          "passage": "Casualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries are not interchangeable counts. Figures from separate reports should not be combined without reconciling their time periods, definitions and overlapping populations. Exposure and injury totals are not death totals.",
+          "sourceIds": [
+            "ilo-2004"
+          ],
+          "locator": "Major accidents, printed p. 10; manuscript methodological paragraph",
+          "support": "Editorial counting rule that prevents different outcome categories being combined.",
+          "uncertainty": "No quantitative casualty reconciliation was performed.",
+          "followup": "Any future number needs its source definition, time window and overlap assessment."
+        },
+        {
+          "id": "bhopal-source-age",
+          "action": "revised",
+          "claimType": "source-scope statement",
+          "passage": "The ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents places Bhopal within an argument for preventing harm from industrial chemicals. This is a retrospective safety report, not a clinical follow-up of each person exposed.",
+          "sourceIds": [
+            "ilo-2004"
+          ],
+          "locator": "Report title/date and Major accidents, printed p. 10",
+          "support": "Identifies the nature and date of the evidence.",
+          "uncertainty": "Does not validate a survivor-by-survivor clinical record.",
+          "followup": "Use clinical studies for medical outcome claims."
+        },
+        {
+          "id": "bhopal-legal-boundary",
+          "action": "revised",
+          "claimType": "editorial methodological boundary",
+          "passage": "The distinction is methodological: a legal or administrative milestone answers the question assigned to that process. It does not, by itself, answer a medical or exposure question. Establishing what a particular settlement resolved would require its own legal record.",
+          "sourceIds": [
+            "ilo-2004"
+          ],
+          "locator": "Manuscript section A report written twenty years later",
+          "support": "An analytical limit, not a claim that a particular judgment settled specific obligations.",
+          "uncertainty": "No settlement or judicial decision was examined in this pass.",
+          "followup": "Read the actual legal record before naming the effects of any settlement."
+        },
+        {
+          "id": "bhopal-current-limit",
+          "action": "revised",
+          "claimType": "source-scope statement",
+          "passage": "The 2004 account records consequences extending beyond the release. It does not establish present-day health outcomes, contamination levels or unresolved legal obligations. Keeping those limits visible makes the historical point more precise: ending a release is not the same as accounting for everyone it reached.",
+          "sourceIds": [
+            "ilo-2004"
+          ],
+          "locator": "Major accidents, printed p. 10; manuscript conclusion",
+          "support": "Retains the historical point while explicitly limiting current inference.",
+          "uncertainty": "Present-day health, contamination and legal obligations were not assessed.",
+          "followup": "Separate contemporary sources required for any such addition."
+        }
+      ],
+      "edits": [
+        {
+          "operation": "replace",
+          "before": "The factory fence separated the workforce from the city without separating either from the gas. Nearby residents and responders could be exposed through different routes, with different information and access to help. The emergency crossed boundaries that the administration of safety often treats separately.\n\nCasualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries describe different outcomes and populations; adding them together does not produce a meaningful lifetime total.",
+          "after": "The event makes a practical question unavoidable: who belongs inside a factory's safety plan when its hazards can reach people who do not work there? A property boundary cannot answer that question.\n\nCasualty estimates must retain their definitions. Immediate deaths, later deaths attributed to exposure and recorded injuries are not interchangeable counts. Figures from separate reports should not be combined without reconciling their time periods, definitions and overlapping populations. Exposure and injury totals are not death totals."
+        },
+        {
+          "operation": "replace",
+          "before": "The ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents describes a runaway reaction involving stored methyl isocyanate at Bhopal and recognizes health consequences lasting well beyond the release. Its perspective is explicitly that of an organization concerned with preventing harm from work and industrial chemicals.",
+          "after": "The ILO report was issued for World Day for Safety and Health at Work in April 2004. Its section on major accidents places Bhopal within an argument for preventing harm from industrial chemicals. This is a retrospective safety report, not a clinical follow-up of each person exposed."
+        },
+        {
+          "operation": "replace",
+          "before": "An industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. The final entry is usually the end of a selected administrative process. Different questions need different timelines. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.\n\nProduction, emergency communication and medical follow-up operate on different timelines. A settlement or a closed administrative case cannot establish that treatment needs or exposure questions have ended.",
+          "after": "An industrial history can lose that distinction through a deceptively simple timeline: accident, response, settlement, end. Such a sequence can suggest closure even when its entries concern different questions. The production history concerns one set of decisions. Emergency communication concerns another. Medical follow-up and the ability to obtain help concern people whose needs may outlast both.\n\nThe distinction is methodological: a legal or administrative milestone answers the question assigned to that process. It does not, by itself, answer a medical or exposure question. Establishing what a particular settlement resolved would require its own legal record."
+        },
+        {
+          "operation": "replace",
+          "before": "The release stopped; its consequences continued. Medical care, exposure assessment and legal obligations ran on different timetables. Closing the plant's operating history could not close the history of those who had been exposed.\n",
+          "after": "The 2004 account records consequences extending beyond the release. It does not establish present-day health outcomes, contamination levels or unresolved legal obligations. Keeping those limits visible makes the historical point more precise: ending a release is not the same as accounting for everyone it reached.\n"
+        }
+      ],
+      "sourceBodyRawSha256": "37a40dd6050d9e75b58922d3eb11cb5853d3d332746a59ce8db4d703ff5df67a",
+      "revisedBodyRawSha256": "c50894251afc3d646710761463c6fc1cac4e28c8cc3d2bc11cfbf263620a781d"
+    },
+    {
+      "slug": "tuskegee-observation-is-intervention",
+      "file": "content/drafts/tuskegee-observation-is-intervention.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "Full manuscript and raw frontmatter read; every historical or health-sensitive passage assessed against the cited source scope.",
+      "fullTextRead": true,
+      "changed": true,
+      "changeSummary": [
+        "Separate the study period from the cohort total; do not assert that all 600 men enrolled at one moment in 1932.",
+        "State CDC's explicit no-deliberate-infection distinction and identify the initial case/control groups.",
+        "Replace a repeated group-count paragraph with the advisory panel's documented distinction between outside therapy and study-offered treatment, with direct primary-report link and printed page locators.",
+        "Use level-two article headings and align the ending with the qualified treatment account."
+      ],
+      "remainingReview": [
+        "Named human editor must review the primary report, its qualifications and addenda; no checklist item or approval state is marked complete.",
+        "The newly linked panel report is documented here without rewriting the preserved frontmatter source-verification history; a human editor should reconcile the source list before release.",
+        "Individual treatment adequacy and patient outcomes were not reconstructed.",
+        "Do not add claims about current mistrust or health behavior without separate evidence and community perspectives."
+      ],
+      "sourceBodySha256": "b7b54db36c7c1d8620b125c6b87632e8d70f3910e3d87346b6282bed42a1f158",
+      "revisedBodySha256": "2bcb5a87ad500f144eed5abfcfd16f396a369b47750291e87818baca974af551",
+      "sourceFileSha256": "292de1ec588de555f670efd24f81b86c62137f9360f7b100c96d6f13f5813508",
+      "revisedFileSha256": "04399f7a70544aebf3ecb38ddb1ffca5e4ab12b21e95d3a8bc573957b3da2071",
+      "frontmatterSha256": "f07dca9f26644def072b19aac8b220351e9238cf2a68129d2d4c0965b157a3cc",
+      "sourceFrontmatterSha256": "f07dca9f26644def072b19aac8b220351e9238cf2a68129d2d4c0965b157a3cc",
+      "frontmatterPreserved": true,
+      "originalBackup": ".cache/ux-seo-editorial-20261016-continuation/tuskegee-observation-is-intervention.original.md",
+      "claims": [
+        {
+          "id": "tuskegee-period-consent",
+          "action": "revised",
+          "claimType": "attributed historical claim",
+          "passage": "The U.S. Public Health Service study at Tuskegee ran from 1932 to 1972. CDC's history describes 600 Black men enrolled without informed consent. The men with syphilis were not offered penicillin through the study after it became an established treatment.",
+          "sourceIds": [
+            "cdc-2024",
+            "hew-1973"
+          ],
+          "locator": "CDC Background and FAQ; panel printed pp. 7 and 12",
+          "support": "Supports dates, consent failure and the treatment obligation.",
+          "uncertainty": "The total does not establish identical enrollment dates or identical clinical histories.",
+          "followup": "Check underlying enrollment records before more granular chronology."
+        },
+        {
+          "id": "tuskegee-infection-groups",
+          "action": "revised",
+          "claimType": "attributed historical claim",
+          "passage": "CDC identifies 399 men with pre-existing late-latent syphilis and 201 controls without the disease. It explicitly states that researchers did not deliberately infect the men. The distinction matters: the study's abuse involved deception, lack of informed consent and failure to offer treatment for a disease already present.",
+          "sourceIds": [
+            "cdc-2024"
+          ],
+          "locator": "CDC FAQ, Were men purposefully infected for the study?",
+          "support": "CDC explicitly distinguishes pre-existing disease from purposeful infection.",
+          "uncertainty": "Initial groups are not lifetime disease-status categories; the panel notes later group changes.",
+          "followup": "Do not turn the 600 total into a count of men infected by researchers."
+        },
+        {
+          "id": "tuskegee-outside-treatment",
+          "action": "revised",
+          "claimType": "attributed historical claim",
+          "passage": "The [1973 advisory panel report](https://digirepo.nlm.nih.gov/ext/mm/2934097RX4/PDF/2934097RX4.pdf), on printed pages 7 and 10, adds a limit to the word untreated: some men received therapy from physicians outside the study, not necessarily in doses sufficient to treat syphilis. This does not establish that the study offered appropriate care. On page 12, the panel concluded that penicillin should have been made available no later than 1953.",
+          "sourceIds": [
+            "hew-1973"
+          ],
+          "locator": "Printed p. 7 item 4, p. 10 continuation of Charge I-B item 3, p. 12 conclusion 3",
+          "support": "Direct primary-report support; all three printed pages visually inspected.",
+          "uncertainty": "No assertion of individual cure or adequate outside therapy; the report includes reservations and abstention.",
+          "followup": "Named editor to assess the full record and qualifications before release."
+        },
+        {
+          "id": "tuskegee-care-expectation",
+          "action": "retained",
+          "claimType": "historical claim and editorial analysis",
+          "passage": "CDC also records that community members understood the arrangement as a special government health care program. That understanding belongs beside the absence of informed consent. An institution can know that someone is inside a study while the person understands the relationship as an offer of care. Those descriptions concern the same encounter, but they do not imply the same choices.",
+          "sourceIds": [
+            "cdc-2024"
+          ],
+          "locator": "Subjects and participation",
+          "support": "Supports the reported community understanding; the rest is editorial interpretation.",
+          "uncertainty": "CDC is an institutional retrospective, not a complete account of every person's experience.",
+          "followup": "Seek participant records/testimony before making universal claims about understanding."
+        },
+        {
+          "id": "tuskegee-current-behavior",
+          "action": "retained",
+          "claimType": "editorial methodological boundary",
+          "passage": "The case also should not be made to explain every present-day attitude toward medicine. Such claims need their own evidence, including attention to people's current experiences. Turning a historical wrong into a convenient explanation for other people's behavior can reproduce the habit of speaking about them without listening.",
+          "sourceIds": [
+            "cdc-2024"
+          ],
+          "locator": "Manuscript Beyond the emblem; limitation of CDC historical page",
+          "support": "Explicitly avoids causal claims about present-day behavior.",
+          "uncertainty": "No contemporary attitudes or behavioral study was reviewed.",
+          "followup": "Separate contemporary evidence is required for any such claim."
+        },
+        {
+          "id": "tuskegee-conclusion",
+          "action": "revised",
+          "claimType": "editorial analysis",
+          "passage": "Penicillin changed the medical options. The study's failure to offer it was part of the research decision, not an absence of action outside the study. Therapy obtained elsewhere does not erase that responsibility.",
+          "sourceIds": [
+            "hew-1973"
+          ],
+          "locator": "Printed pp. 10 and 12",
+          "support": "Editorial conclusion follows the report's distinction.",
+          "uncertainty": "No claim that nobody obtained therapy anywhere.",
+          "followup": "Retain this qualification through human editing."
+        }
+      ],
+      "edits": [
+        {
+          "operation": "replace",
+          "before": "\nThe U.S. Public Health Service study at Tuskegee enrolled 600 Black men in 1932 without informed consent, according to CDC's history. Participants were not offered penicillin when it became an established treatment. The study continued until 1972.\n\nOf the 600 men, 399 had late-latent syphilis and 201 did not. The figures do not establish that researchers infected participants. CDC's documented account concerns a different abuse: men were studied without informed consent and were not offered an established treatment.\n\n### What the study needed",
+          "after": "\nThe U.S. Public Health Service study at Tuskegee ran from 1932 to 1972. CDC's history describes 600 Black men enrolled without informed consent. The men with syphilis were not offered penicillin through the study after it became an established treatment.\n\nCDC identifies 399 men with pre-existing late-latent syphilis and 201 controls without the disease. It explicitly states that researchers did not deliberately infect the men. The distinction matters: the study's abuse involved deception, lack of informed consent and failure to offer treatment for a disease already present.\n\n## What the study needed"
+        },
+        {
+          "operation": "replace",
+          "before": "### What the groups actually counted\n\nCDC distinguishes 399 men who already had late-latent syphilis when recruited from a control group of 201 men without the disease. The total of 600 therefore does not mean 600 men with syphilis. This distinction changes what the study's population describes, while leaving the central ethical finding intact.",
+          "after": "## What untreated meant\n\nThe [1973 advisory panel report](https://digirepo.nlm.nih.gov/ext/mm/2934097RX4/PDF/2934097RX4.pdf), on printed pages 7 and 10, adds a limit to the word untreated: some men received therapy from physicians outside the study, not necessarily in doses sufficient to treat syphilis. This does not establish that the study offered appropriate care. On page 12, the panel concluded that penicillin should have been made available no later than 1953."
+        },
+        {
+          "operation": "replace",
+          "before": "### Beyond the emblem",
+          "after": "## Beyond the emblem"
+        },
+        {
+          "operation": "replace",
+          "before": "Penicillin changed the medical options. The study continued to pursue observations of untreated disease. Withholding treatment was therefore part of the research decision, not an absence of action outside the study.\n",
+          "after": "Penicillin changed the medical options. The study's failure to offer it was part of the research decision, not an absence of action outside the study. Therapy obtained elsewhere does not erase that responsibility.\n"
+        }
+      ],
+      "sourceBodyRawSha256": "8b6a4300a5098a4741798c3e18f0fd8171ae7f283ff11b5168d8485fd1b561c0",
+      "revisedBodyRawSha256": "49848bbd642e3b6c2e6ef1b57d5b8b23a560b6c74a3e1b35f8b385bad0f44f70"
+    },
+    {
+      "slug": "seveso-boundary-of-the-factory",
+      "file": "content/drafts/seveso-boundary-of-the-factory.md",
+      "priority": "P0",
+      "disposition": "verification needed",
+      "reviewDepth": "Full manuscript and raw frontmatter read; every historical or health-sensitive passage assessed against the cited source scope.",
+      "fullTextRead": true,
+      "changed": true,
+      "changeSummary": [
+        "Consolidate the approximate time, TCDD-containing release duration and communication account into the attributed opening.",
+        "Replace repeated chronology with an explicit release-duration versus personal exposure/dose boundary.",
+        "Ground the safeguard analysis in HSE's specific account of absent discharge collection/destruction equipment and an unfitted recovery receiver.",
+        "Identify HSE's retrospective source scope, require separate resident-response evidence and use level-two article headings."
+      ],
+      "remainingReview": [
+        "Named human editor must review and approve the body; approval, source-verification history and publication HOLD remain unchanged.",
+        "Original plant/technical investigation records are needed for an independent vent-system or causal reconstruction; the cited Lees text was not independently inspected.",
+        "Evacuation chronology, individual dose and long-term health outcomes require their own primary records or studies.",
+        "No source in this pass verifies subsequent legislative history or residents' specific instructions and experience."
+      ],
+      "sourceBodySha256": "471630fdaa9069d68ec13977203ddc42eeddd6c39acd242e6d61c515dfce63e4",
+      "revisedBodySha256": "8b1f0064db7758fdc990961e17486d9a58bb658208b9274dc746abbfb5b32be7",
+      "sourceFileSha256": "abd19c88770a8bf3472e291ff7d64e55509c9cf5534ebb4eea4ba8e77c56f39e",
+      "revisedFileSha256": "69317540fa6aa6d92a10392f9a07d8fd7b45673bf59d1d629b2feb5af503d7f7",
+      "frontmatterSha256": "463a3209a13084ceaaf43699cc7f4b99288dd31bfe38dfae3167ee00f5cb55d5",
+      "sourceFrontmatterSha256": "463a3209a13084ceaaf43699cc7f4b99288dd31bfe38dfae3167ee00f5cb55d5",
+      "frontmatterPreserved": true,
+      "originalBackup": ".cache/ux-seo-editorial-20261016-continuation/seveso-boundary-of-the-factory.original.md",
+      "claims": [
+        {
+          "id": "seveso-release",
+          "action": "revised",
+          "claimType": "attributed historical claim",
+          "passage": "A reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. The resulting cloud carried 2,3,7,8-tetrachlorodibenzo-p-dioxin, usually abbreviated TCDD, beyond the site. HSE's case history puts the release at about twenty minutes and describes inadequate communication between the company and authorities afterward.",
+          "sourceIds": [
+            "hse-seveso"
+          ],
+          "locator": "Accident summary",
+          "support": "Supports approximate timing, substance, release interval and communication account.",
+          "uncertainty": "The time and duration remain approximate; no plume or personal-exposure reconstruction.",
+          "followup": "Original technical records required for expanded mechanism claims."
+        },
+        {
+          "id": "seveso-duration",
+          "action": "revised",
+          "claimType": "editorial methodological boundary",
+          "passage": "The twenty-minute estimate describes the release, not the duration of anyone's exposure. A description of the cloud does not establish an individual's dose or later diagnosis. Those questions need separate exposure and health evidence.",
+          "sourceIds": [
+            "hse-seveso"
+          ],
+          "locator": "Accident summary; manuscript A release has an information trail",
+          "support": "Methodological limit on what the source's interval can establish.",
+          "uncertainty": "No individual dose, exposure duration or diagnosis assessed.",
+          "followup": "Use defined exposure and clinical records for health claims."
+        },
+        {
+          "id": "seveso-discharge-containment",
+          "action": "revised",
+          "claimType": "attributed historical claim",
+          "passage": "The distinction also changes how a technical safeguard is evaluated. HSE records that no equipment collected or destroyed the vented toxic material and that a recovery receiver recommended by the bursting-disc manufacturer was not fitted. A pressure-relief device and a system for containing its discharge serve different purposes. Protecting a vessel is not, by itself, protection for people downwind.",
+          "sourceIds": [
+            "hse-seveso"
+          ],
+          "locator": "Failings in technical measures, absence of collection/destruction device and recommended second receiver",
+          "support": "Specific technical details attributed to HSE; final two sentences are editorial analysis.",
+          "uncertainty": "Not an independently reconstructed design review or equipment certification.",
+          "followup": "Consult original investigation/design documentation before extending the mechanism."
+        },
+        {
+          "id": "seveso-source-boundary",
+          "action": "revised",
+          "claimType": "source-scope statement",
+          "passage": "HSE's page is a retrospective accident summary that cites a 1996 loss-prevention text. It supports this bounded process and communication account. Residents' instructions, their timing and their reception require separate response records and testimony; the summary cannot substitute for them.",
+          "sourceIds": [
+            "hse-seveso"
+          ],
+          "locator": "References and case-history scope",
+          "support": "Identifies the retrospective reference and evidentiary boundary.",
+          "uncertainty": "The 1996 underlying text and resident records were not independently read.",
+          "followup": "Seek response records and testimony for instruction timing or reception."
+        },
+        {
+          "id": "seveso-health-boundary",
+          "action": "retained",
+          "claimType": "editorial methodological boundary",
+          "passage": "Long-term health claims require studies with defined populations. Community accounts can establish experience and concern without serving as quantitative exposure measurements.",
+          "sourceIds": [
+            "hse-seveso"
+          ],
+          "locator": "Manuscript A place has more than one recovery date",
+          "support": "Editorial distinction between testimony and measured exposure.",
+          "uncertainty": "No longitudinal health result or lifetime fatality claim is made.",
+          "followup": "Review defined-population studies before adding outcomes."
+        }
+      ],
+      "edits": [
+        {
+          "operation": "replace",
+          "before": "\nA reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. A cloud containing TCDD escaped for about twenty minutes, according to HSE's case history. Confusion followed as the company and authorities failed to communicate adequately.",
+          "after": "\nA reactor's bursting disc ruptured at the Icmesa plant near Seveso, Italy, around 12:37 on 10 July 1976. The resulting cloud carried 2,3,7,8-tetrachlorodibenzo-p-dioxin, usually abbreviated TCDD, beyond the site. HSE's case history puts the release at about twenty minutes and describes inadequate communication between the company and authorities afterward."
+        },
+        {
+          "operation": "replace",
+          "before": "### Knowing enough to act",
+          "after": "## Knowing enough to act"
+        },
+        {
+          "operation": "replace",
+          "before": "### A release has an information trail\n\nHSE describes a reactor's bursting disc rupturing around 12:37 on 10 July. A visible cloud left the plant, carrying TCDD among its constituents. The case history states that the release lasted about twenty minutes and that confusion followed because communication between the company and authorities was inadequate.",
+          "after": "## A release has an information trail\n\nThe twenty-minute estimate describes the release, not the duration of anyone's exposure. A description of the cloud does not establish an individual's dose or later diagnosis. Those questions need separate exposure and health evidence."
+        },
+        {
+          "operation": "replace",
+          "before": "The distinction also changes how a technical safeguard is evaluated. Relieving pressure can protect a vessel while directing its contents somewhere else. The safety question must follow that route to its destination. A device cannot be judged solely by whether the equipment immediately around it survives.\n\nHSE's account establishes an offsite release accompanied by inadequate communication. Residents' instructions, their timing and their reception require separate response records and testimony.\n\n### A place has more than one recovery date",
+          "after": "The distinction also changes how a technical safeguard is evaluated. HSE records that no equipment collected or destroyed the vented toxic material and that a recovery receiver recommended by the bursting-disc manufacturer was not fitted. A pressure-relief device and a system for containing its discharge serve different purposes. Protecting a vessel is not, by itself, protection for people downwind.\n\nHSE's page is a retrospective accident summary that cites a 1996 loss-prevention text. It supports this bounded process and communication account. Residents' instructions, their timing and their reception require separate response records and testimony; the summary cannot substitute for them.\n\n## A place has more than one recovery date"
+        }
+      ],
+      "sourceBodyRawSha256": "2b3752b03ebb36fd798f72d4f24bba7961c5201ac95cb2d3b09e2afbd871ee00",
+      "revisedBodyRawSha256": "e4ec675f0e2cb7f017178b57e6561f1139a1444314c377a4632ecbff880b9003"
+    }
+  ]
+}
